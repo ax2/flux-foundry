@@ -20,13 +20,13 @@ try{
    await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x:x+30,y:y+60}]});
    await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});
   }else{await page.locator('#game').press('Space');}
-  await page.waitForFunction(()=>window.fluxSnapshot().phase==='volley');check(`${width}: pointer/keyboard fires`,true);
+  await page.waitForFunction(()=>window.fluxSnapshot().phase==='volley');check(`${width}: exactly one ball`,await page.evaluate(()=>window.fluxSnapshot().balls===1&&window.fluxSnapshot().count===1));check(`${width}: pointer/keyboard fires`,true);
   await page.locator('#magnet').click();await page.locator('#game').press('m');
   check(`${width}: magnet deploys`,await page.evaluate(()=>window.fluxSnapshot().magnetUsed));
   await page.locator('#pause').click();const before=await page.evaluate(()=>window.fluxSnapshot());await page.waitForTimeout(250);const after=await page.evaluate(()=>window.fluxSnapshot());check(`${width}: pause freezes state`,JSON.stringify(before)===JSON.stringify(after));
   await page.locator('#resume').click();await page.locator('#recall').click();await page.locator('#game').press('Space');await page.locator('#game').press('r');
-  await page.getByRole('button',{name:'钨芯冲击 每次碰撞伤害 +1'}).click();check(`${width}: upgrade persists`,await page.evaluate(()=>window.fluxSnapshot().power===2));
-  for(let i=0;i<12;i++){const phase=await page.evaluate(()=>window.fluxSnapshot().phase);if(phase==='over')break;if(phase==='upgrade')await page.getByRole('button',{name:'蜂群弹阵 额外增加 6 颗钢珠'}).click();await page.locator('#game').press('Space');await page.locator('#game').press('r');}
+  await page.getByRole('button',{name:'钨芯冲击 每次碰撞伤害 +1'}).click();check(`${width}: upgrade persists`,await page.evaluate(()=>window.fluxSnapshot().power===4));
+  for(let i=0;i<12;i++){const phase=await page.evaluate(()=>window.fluxSnapshot().phase);if(phase==='over')break;if(phase==='upgrade')await page.getByRole('button',{name:'精密回弹 减少碰撞损耗，保留更多动能'}).click();await page.locator('#game').press('Space');await page.locator('#game').press('r');}
   await page.locator('#restart').click();check(`${width}: restart resets`,await page.evaluate(()=>window.fluxSnapshot().wave===1&&window.fluxSnapshot().score===0));
   await page.locator('#help').click();await page.getByRole('button',{name:'开始弹射'}).click();check(`${width}: help resumes`,await page.evaluate(()=>!window.fluxSnapshot().paused));
   await page.locator('#sound').click();await page.waitForFunction(()=>document.querySelector('#sound').getAttribute('aria-pressed')==='true');check(`${width}: sound toggle`,await page.locator('#sound').getAttribute('aria-pressed')==='true');

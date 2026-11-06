@@ -12,3 +12,6 @@
 主提示：portrait 9:16 realistic dark graphite brushed metal playfield; narrow steel rails and screws; shallow V-shaped hopper of chrome balls only in top 15%, central amber nozzle; below y18% entirely empty plate; no targets, no UI, no text. Code-native collision arena and HUD overlay.
 
 Canvas uses source rectangles to sample the transparent atlas; original PNG retained. No generated screenshot is used as a fake interactive UI.
+
+## 单球背景修订
+2026-11-06 使用内置 Image Gen 编辑 arena.png：保持机加工材质、视角、导轨和喷口，仅移除漏斗中全部静态钢珠，留空金属内腔。用户要求单颗活动弹珠，活动球仍由透明图集实时渲染。

@@ -1,6 +1,6 @@
 {
   "name": "flux-foundry", "version": "0.1.0", "private": true,
-  "description": "A tactile portrait ricochet game with magnetic fields and capacitor chain reactions",
+  "description": "A tactile single-ball portrait ricochet game with magnetic fields and capacitor chain reactions",
   "author": "ax2", "license": "MIT", "type": "module", "main": "electron/main.cjs",
   "scripts": {"dev":"vite --host 0.0.0.0", "build":"tsc --noEmit && vite build && node scripts/service-worker.mjs", "test":"tsx --test tests/*.test.ts", "test:browser":"node scripts/browser-test.mjs", "preview":"vite preview --host 0.0.0.0", "desktop":"electron .", "package:win":"npm run build && electron-builder --win portable --x64 --publish never"},
   "devDependencies": {"typescript":"~5.9.3", "vite":"8.3.6", "tsx":"^4.20.6", "electron":"45.2.3", "electron-builder":"26.18.0", "@playwright/test":"^1.56.1", "@types/node":"^24.10.0"},
