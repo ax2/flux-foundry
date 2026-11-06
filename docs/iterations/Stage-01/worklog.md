@@ -69,3 +69,13 @@
 - v0.1.1 便携 EXE 已实际启动并观察到每击减一后的剩余数字 1、单颗较大钢珠、无轨迹/拖尾；对应首屏/撞击画面截图已保存。
 - 页面部署改为取消过时构建，避免旧版部署占用队列阻碍用户最新修订。
 - v0.1.0 已于本次工作中发布；v0.1.1 作为新的标签和 Release 发布，不改写历史版本。
+
+## v0.1.1 发布完成（2026-11-06）
+- 公开 Release：https://github.com/ax2/flux-foundry/releases/tag/v0.1.1 ，非草稿。
+- 标签：v0.1.1，源码 4f3aaf0；源代码 Validate 42226853927、Pages 42226853935、Windows Release 42227139713 均成功。
+- 公开资产：Flux-Foundry-0.1.1-Windows-x64.exe（137404678 字节）和 SHA256SUMS.txt。GitHub 资产 digest 与本地 SHA256 一致：40c0d372d8ec71196b09e8611f3bd47978324734f6b7552d04f168565572ad15。
+- Pages CDN 根路径短时返回旧资源，带 release=0.1.1 的公开 URL 已核验加载 index-B89sKJ_H.js；HTTPS 实际浏览器发射 snapshot 为 balls=1、count=1、power=1，运行异常为0。
+- 内置浏览器对公开地址多次超时，线上检查改用独立 Chromium/Chrome；截图 public-v0.1.1-mobile.png 和报告 public-v0.1.1.json 已保存。未用源码检查冒充浏览器运行验收。
+- 本地目录 releases/v0.1.1/ 保留完整 win-unpacked 与便携 EXE，无项目 ZIP。
+- 长期档案已独立 Git 留档；每周日北京时间20:00检查可发布变更，始终保留单球、无拖尾和每击减1准则。
+- 保留已明确的限制：Windows未签名、手机为Web/PWA、真实手机/低端FPS/长期平衡/人工音频仍待验收。
