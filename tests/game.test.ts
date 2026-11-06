@@ -1,0 +1,17 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {Game,STEP} from '../src/game';
+import {collide,type Target} from '../src/physics';
+const target=(kind:Target['kind'],x=210,y=400):Target=>({id:1,x,y,kind,size:60,hp:8,maxHp:8,flash:0});
+test('square reflection preserves speed and separates ball',()=>{const b={x:210,y:367,vx:30,vy:440,r:5};const speed=Math.hypot(b.vx,b.vy);assert.ok(collide(b,target('steel')));assert.ok(b.vy<0);assert.ok(b.y<=365.1);assert.ok(Math.abs(Math.hypot(b.vx,b.vy)-speed)<.001);});
+test('triangle slope deflects vertically falling ball sideways',()=>{const b={x:195,y:393,vx:0,vy:440,r:5};assert.ok(collide(b,target('prism')));assert.ok(Math.abs(b.vx)>100);assert.ok(Math.abs(Math.hypot(b.vx,b.vy)-440)<.01);});
+test('circle handles center overlap without NaN',()=>{const b={x:210,y:400,vx:0,vy:440,r:5};collide(b,target('capacitor'));assert.ok(Number.isFinite(b.x)&&Number.isFinite(b.vy));});
+test('departing ball does not deal repeated collision damage',()=>{const b={x:210,y:368,vx:0,vy:-440,r:5};assert.equal(collide(b,target('steel')),false);});
+test('seeded levels are reproducible',()=>assert.deepEqual(new Game(42).targets,new Game(42).targets));
+test('pause freezes an active volley and rejects field deployment',()=>{const g=new Game(1);g.fire();g.paused=true;g.update(1);assert.equal(g.pending,g.count);assert.equal(g.field(210,400),false);});
+test('magnet can be deployed once per volley and resets next volley',()=>{const g=new Game(1);assert.equal(g.field(1,1),false);g.fire();assert.ok(g.field(210,400));assert.equal(g.field(210,410),false);g.recall();g.fire();assert.ok(g.field(210,400));});
+test('capacitor death chains once into nearby targets',()=>{const g=new Game(1);g.targets=[{...target('capacitor'),hp:1},{...target('steel',270,400),id:2}];g.damage(g.targets[0],1);assert.equal(g.targets[1].hp,3);const score=g.score;g.damage(g.targets[0],1);assert.equal(g.score,score);});
+test('third wave offers a persistent upgrade',()=>{const g=new Game(1);g.fire();g.recall();g.fire();g.recall();assert.equal(g.phase,'upgrade');g.upgrade('power');assert.equal(g.power,2);assert.equal(g.phase,'aim');});
+test('recalled untouched targets eventually trigger game over',()=>{const g=new Game(1);for(let i=0;i<20&&g.phase!=='over';i++){if(g.phase==='upgrade')g.upgrade('swarm');g.fire();g.recall();}assert.equal(g.phase,'over');assert.equal(g.fire(),false);});
+test('all shot angles terminate within the round limit with finite state',()=>{for(const angle of [.16,.4,.9,1.57,2.3,2.98]){const g=new Game(555);g.angle=angle;g.fire();for(let i=0;i<24/STEP&&g.phase==='volley';i++){g.update(STEP);for(const b of g.balls)assert.ok(Number.isFinite(b.x)&&Number.isFinite(b.vy));}assert.notEqual(g.phase,'volley');}});
+test('rows never overlap after multiple recalls',()=>{const g=new Game(2);for(let n=0;n<3;n++){g.fire();g.recall();if(g.phase==='upgrade')g.upgrade('field');}for(const a of g.targets)for(const b of g.targets)if(a.id!==b.id&&a.x===b.x)assert.ok(Math.abs(a.y-b.y)>=57);});

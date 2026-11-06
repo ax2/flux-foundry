@@ -1,0 +1,35 @@
+name: Release Windows
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - name: Confirm version and stage notes
+        shell: pwsh
+        run: |
+          $version = (Get-Content package.json | ConvertFrom-Json).version
+          if ('${{ github.ref_type }}' -ne 'tag' -or '${{ github.ref_name }}' -ne "v$version") { throw 'Run from the matching version tag.' }
+          if (!(Test-Path 'docs/iterations/Stage-01/worklog.md')) { throw 'Missing stage archive.' }
+      - run: npm run package:win
+      - name: Publish EXE and checksums (no game ZIP)
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          $version = (Get-Content package.json | ConvertFrom-Json).version
+          $exe = Get-ChildItem "releases/v$version/Flux-Foundry-*-Windows-x64.exe" | Select-Object -First 1
+          $hash = (Get-FileHash $exe.FullName -Algorithm SHA256).Hash.ToLower()
+          "$hash  $($exe.Name)" | Set-Content "releases/v$version/SHA256SUMS.txt" -Encoding ascii
+          gh release create "v$version" $exe.FullName "releases/v$version/SHA256SUMS.txt" --title "Flux Foundry v$version" --notes-file CHANGELOG.md --verify-tag
