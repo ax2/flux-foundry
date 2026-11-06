@@ -23,6 +23,7 @@ jobs:
           if ('${{ github.ref_type }}' -ne 'tag' -or '${{ github.ref_name }}' -ne "v$version") { throw 'Run from the matching version tag.' }
           if (!(Test-Path 'docs/iterations/Stage-01/worklog.md')) { throw 'Missing stage archive.' }
       - run: npm run package:win
+      - run: node scripts/desktop-smoke.mjs
       - name: Publish EXE and checksums (no game ZIP)
         shell: pwsh
         env:
@@ -32,4 +33,6 @@ jobs:
           $exe = Get-ChildItem "releases/v$version/Flux-Foundry-*-Windows-x64.exe" | Select-Object -First 1
           $hash = (Get-FileHash $exe.FullName -Algorithm SHA256).Hash.ToLower()
           "$hash  $($exe.Name)" | Set-Content "releases/v$version/SHA256SUMS.txt" -Encoding ascii
+          gh release view "v$version" --json tagName 2>$null
+          if ($LASTEXITCODE -eq 0) { Write-Output 'Existing release preserved; no assets overwritten.'; exit 0 }
           gh release create "v$version" $exe.FullName "releases/v$version/SHA256SUMS.txt" --title "Flux Foundry v$version" --notes-file CHANGELOG.md --verify-tag

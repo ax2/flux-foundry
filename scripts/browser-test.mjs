@@ -7,7 +7,7 @@ let browser;const checks=[];
 const check=(name,ok)=>{assert.ok(ok,name);checks.push(name);};
 try{
  for(let i=0;i<50;i++){try{if((await fetch('http://127.0.0.1:4186')).ok)break;}catch{}await new Promise(r=>setTimeout(r,200));}
- browser=await chromium.launch({headless:true,...(process.platform==='win32'?{channel:'chrome'}:{})});
+ browser=await chromium.launch({headless:true,channel:process.env.PLAYWRIGHT_CHANNEL||(process.platform==='win32'?'chrome':undefined)});
  await mkdir('test-results',{recursive:true});
  for(const [width,height] of [[1440,1000],[390,844],[320,568]]){
   const context=await browser.newContext({viewport:{width,height},hasTouch:width<500,isMobile:width<500});const page=await context.newPage();const errors=[];page.on('pageerror',e=>errors.push(String(e)));page.on('requestfailed',r=>console.error('REQUEST_FAILED',r.url(),r.failure()));page.on('console',m=>{if(m.type()==='error')console.error('BROWSER_ERROR',m.text());});
