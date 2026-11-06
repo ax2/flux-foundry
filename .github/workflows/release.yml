@@ -23,6 +23,8 @@ jobs:
           if ('${{ github.ref_type }}' -ne 'tag' -or '${{ github.ref_name }}' -ne "v$version") { throw 'Run from the matching version tag.' }
           if (!(Test-Path 'docs/iterations/Stage-01/worklog.md')) { throw 'Missing stage archive.' }
       - run: npm run package:win
+        env:
+          ELECTRON_BUILDER_COMPRESSION_LEVEL: '1'
       - run: node scripts/desktop-smoke.mjs
       - name: Publish EXE and checksums (no game ZIP)
         shell: pwsh
