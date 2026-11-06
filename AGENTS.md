@@ -7,5 +7,5 @@
 - 长期档案：C:/Users/ax2/Documents/技术博客/flux-foundry。持续维护 plan/、design/、iterations/、assessments/、screenshots/ 和根 README，代码 docs/ 同步保留可追踪记录。
 - 每阶段独立更新说明；进行中记录目标、发现、修改、测试、遗留问题和发布结果。截图注明视口与结论；历史缺失证据明确未知。
 - 发布前 npm test、npm run build、npm run test:browser，Windows 完整目录与 EXE 启动验证，检查 GitHub CI 与档案同步。不把浏览器模拟写成真机验收。
-- Windows 版本保留完整可运行目录和 EXE，不生成/保留游戏 ZIP；不得覆盖已发布标签或资产。旧多球 releases/v0.1.0 为未发布历史候选，当前单球本地发行目录为 releases/v0.1.0-singleball。
+- Windows 版本保留完整可运行目录和 EXE，不生成/保留游戏 ZIP；不得覆盖已发布标签或资产。旧多球 releases/v0.1.0 为未发布历史候选，当前经典规则本地发行目录为 releases/v0.1.1，releases/v0.1.0-singleball 为已发布的历史单球版。
 - 不在档案中记录密码、私钥、Cookie、令牌或完整账号凭据。MIT 开源，禁止加入来源不明的原作美术/音频。
