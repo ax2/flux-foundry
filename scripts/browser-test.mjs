@@ -25,7 +25,7 @@ try{
   check(`${width}: magnet deploys`,await page.evaluate(()=>window.fluxSnapshot().magnetUsed));
   await page.locator('#pause').click();const before=await page.evaluate(()=>window.fluxSnapshot());await page.waitForTimeout(250);const after=await page.evaluate(()=>window.fluxSnapshot());check(`${width}: pause freezes state`,JSON.stringify(before)===JSON.stringify(after));
   await page.locator('#resume').click();await page.locator('#recall').click();await page.locator('#game').press('Space');await page.locator('#game').press('r');
-  await page.getByRole('button',{name:'钨芯冲击 每次碰撞伤害 +1'}).click();check(`${width}: upgrade persists`,await page.evaluate(()=>window.fluxSnapshot().power===4));
+  await page.getByRole('button',{name:'电磁增幅 磁场吸引力 +20%'}).click();check(`${width}: upgrade persists`,await page.evaluate(()=>window.fluxSnapshot().fieldStrength===1.2&&window.fluxSnapshot().power===1));
   for(let i=0;i<12;i++){const phase=await page.evaluate(()=>window.fluxSnapshot().phase);if(phase==='over')break;if(phase==='upgrade')await page.getByRole('button',{name:'精密回弹 减少碰撞损耗，保留更多动能'}).click();await page.locator('#game').press('Space');await page.locator('#game').press('r');}
   await page.locator('#restart').click();check(`${width}: restart resets`,await page.evaluate(()=>window.fluxSnapshot().wave===1&&window.fluxSnapshot().score===0));
   await page.locator('#help').click();await page.getByRole('button',{name:'开始弹射'}).click();check(`${width}: help resumes`,await page.evaluate(()=>!window.fluxSnapshot().paused));
