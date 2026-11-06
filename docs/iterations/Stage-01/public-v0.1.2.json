@@ -1,0 +1,22 @@
+{
+  "url": "https://ax2.github.io/flux-foundry/?release=0.1.2",
+  "snapshot": {
+    "phase": "volley",
+    "wave": 1,
+    "score": 0,
+    "balls": 1,
+    "targets": 5,
+    "paused": false,
+    "magnetUsed": false,
+    "count": 1,
+    "power": 1,
+    "fieldStrength": 1
+  },
+  "errors": [],
+  "checks": [
+    "live HTTPS page loads",
+    "single ball launches",
+    "fixed damage is one",
+    "no runtime errors"
+  ]
+}
