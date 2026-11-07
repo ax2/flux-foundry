@@ -31,5 +31,5 @@ export function drawAir(target:CanvasRenderingContext2D,z:AirZone,time:number,re
  }
  c.restore();
  c.setTransform(1,0,0,1,0,0);c.globalCompositeOperation='destination-in';c.drawImage(surface.mask,0,0,surface.canvas.width,surface.canvas.height);c.globalCompositeOperation='source-over';target.drawImage(surface.canvas,z.x,z.y,z.w,z.h);
- target.save();target.fillStyle='#cadde4';target.font='8px "Segoe UI",sans-serif';target.textAlign='left';target.fillText(z.fy<0?'上升气流':z.fy>0?'下降气流':'横向气流',z.x+8,z.y+12);target.restore();
+
 }

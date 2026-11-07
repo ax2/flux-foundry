@@ -40,21 +40,13 @@ export class Renderer{
   // Reserve marbles occupy the existing triangular hopper, with no extra HUD row.
   g.queue.slice(g.shots).forEach((q,i)=>{const p=HOPPER_SLOTS[i];this.ball(q.material,p.x,p.y,SIZES[q.size].radius);if(i===0){c.strokeStyle='#eec789';c.lineWidth=1;c.beginPath();c.arc(p.x,p.y,SIZES[q.size].radius+3,0,Math.PI*2);c.stroke();}});
   // Crisp operational overlays sit above the material plate.
-  c.textAlign='center';c.font='10px "Segoe UI",sans-serif';c.fillStyle='#bbada0';if(g.phase!=='volley')c.fillText(`${SIZES[g.size].name}号${MATERIALS[g.material].name}珠  ·  待发 ${g.remainingShots} / ${g.queue.length}`,210,153);
-  c.setLineDash([3,6]);c.strokeStyle=g.mode==='challenge'?'#70c3cb33':'#ce7b6555';c.lineWidth=1;c.beginPath();c.moveTo(29,184);c.lineTo(391,184);c.stroke();c.setLineDash([]);c.fillStyle='#aeaaa0';c.font='9px "Segoe UI",sans-serif';c.fillText(g.mode==='challenge'?`${g.level.goal==='core'?'击碎紫色核心':'清除全部 '+g.targets.length+' 个积木'} · 待发 ${g.remainingShots} 颗`:'过载警戒线 · 不要让积木抵达这里',210,177);
-  // The powered return plate lives inside the existing collector, never in a new HUD row.
-  {const active=g.returnEnabled&&g.returnCharges>0&&!g.safetyReturn&&!g.goalComplete;c.save();const y=active?707:716;
-   const plate=c.createLinearGradient(0,y,0,y+8);plate.addColorStop(0,active?'#c0dacd':'#697573');plate.addColorStop(.35,'#344e48');plate.addColorStop(1,'#101d1b');c.fillStyle=plate;c.fillRect(24,y,372,8);
-   c.strokeStyle=active?'#a2f3c8':'#4c605a';c.shadowColor='#8fffc7';c.shadowBlur=g.returnFlash>0&&!reduced?22:active?4:0;c.lineWidth=2;c.beginPath();c.moveTo(25,y);c.lineTo(395,y);c.stroke();c.shadowBlur=0;
-   for(let x=32;x<395;x+=12){c.strokeStyle='#122b25';c.beginPath();c.moveTo(x,y+3);c.lineTo(x+5,y+7);c.stroke();}
-   for(let i=0;i<2;i++){c.fillStyle=active&&i<g.returnCharges?'#b1ffcf':'#30443e';c.fillRect(176+i*38,697,30,4);}
-   for(let i=0;i<8;i++){c.fillStyle=g.returnRefills<2&&i<g.returnProgress?'#d9e9b1':'#38453f';c.fillRect(183+i*7,688,4,2);}
-   c.fillStyle='#a9bdb3';c.font='9px "Segoe UI",sans-serif';c.fillText(active?`回弹挡板 · ${g.returnCharges} 次`:'回收槽已打开',210,682);c.restore();}
+  c.textAlign='center';c.font='13px "Segoe UI",sans-serif';c.fillStyle='#bbada0';if(g.phase!=='volley')c.fillText(`${SIZES[g.size].name}号${MATERIALS[g.material].name}珠  ·  待发 ${g.remainingShots} / ${g.queue.length}`,210,153);
+  c.setLineDash([3,6]);c.strokeStyle=g.mode==='challenge'?'#70c3cb33':'#ce7b6555';c.lineWidth=1;c.beginPath();c.moveTo(29,184);c.lineTo(391,184);c.stroke();c.setLineDash([]);c.fillStyle='#aeaaa0';c.font='9px "Segoe UI",sans-serif';
   if(g.phase==='aim'){
    // A short direction marker, never a trajectory or a flight trail.
    c.save();c.translate(LAUNCH.x,LAUNCH.y);c.rotate(g.angle);c.fillStyle='#efbd79';c.beginPath();c.moveTo(28,-4);c.lineTo(35,0);c.lineTo(28,4);c.fill();c.restore();
 
-   if(!aiming&&g.wave===1&&g.shots===0){c.fillStyle='#f4dbc0';c.font='13px "Segoe UI",sans-serif';c.fillText('拖动瞄准，松开发射',210,236);c.fillStyle='#aab7b9';c.font='10px "Segoe UI",sans-serif';c.fillText(g.mode==='challenge'?g.level.name+' · 挑战开始':'顶部选珠 · 每局固定库存',210,257);}
+   if(!aiming&&g.wave===1&&g.shots===0){c.fillStyle='#f4dbc0';c.font='13px "Segoe UI",sans-serif';c.fillText('拖动瞄准，松开发射',210,236);c.fillStyle='#aab7b9';c.font='10px "Segoe UI",sans-serif';}
   }
   for(const r of g.rails){c.save();if(g.safetyReturn)c.globalAlpha=.15;const x=r.side==='left'?18:395,active=r.charges>0;c.fillStyle='#161d20';c.fillRect(x,r.y,7,r.h);const metal=c.createLinearGradient(x,0,x+7,0);metal.addColorStop(0,'#57442c');metal.addColorStop(.5,active?'#f5ce82':'#7b776e');metal.addColorStop(1,'#443c2f');c.fillStyle=metal;c.shadowColor='#ffc76b';c.shadowBlur=active&&!reduced?7:0;c.fillRect(x+1,r.y+2,5,r.h-4);c.shadowBlur=0;for(let y=r.y+7;y<r.y+r.h-5;y+=7){c.strokeStyle=active?'#443928':'#363b3d';c.beginPath();c.moveTo(x,y);c.lineTo(x+7,y+3);c.stroke();}for(let i=0;i<r.maxCharges;i++){c.fillStyle=i<r.charges?'#ffecb5':'#3b4546';c.fillRect(r.side==='left'?x+10:x-7,r.y+9+i*9,4,5);}c.restore();}
   for(const z of g.air){c.save();if(g.safetyReturn)c.globalAlpha=.15;drawAir(c,z,time,reduced);c.restore();}
@@ -66,6 +58,6 @@ export class Renderer{
   if(g.safetyReturn||g.rescuePulse||g.goalComplete){c.fillStyle=g.goalComplete?'#e8b6ff':'#a7f5ff';c.textAlign='center';c.font='12px Segoe UI';c.fillText(g.safetyReturn?'救援通道开启 · 积木已退让':g.rescuePulse?'脱困气脉冲运行中':'目标完成 · 落底或收球后结算',210,215);}
   if(!reduced)for(const p of g.effects){c.save();c.globalAlpha=p.life/p.max;c.strokeStyle=p.color;c.fillStyle=p.color;c.shadowColor=p.color;c.shadowBlur=8;if(p.ring){c.lineWidth=1.5;c.beginPath();c.arc(p.x,p.y,8+(1-p.life/p.max)*43,0,Math.PI*2);c.stroke();}else c.fillRect(p.x,p.y,2.5,2.5);c.restore();}
   if(g.liftTime>0){c.save();c.strokeStyle='#c7efff';c.lineWidth=2;c.globalAlpha=.7;for(let i=0;i<9;i++){const x=58+i*38,y=650-(reduced?0:(time*180+i*17)%80);c.beginPath();c.moveTo(x,y);c.bezierCurveTo(x-5,y-12,x+4,y-25,x,y-40);c.stroke();}c.restore();}
-  if(g.phase==='volley'){c.fillStyle='#f9bd72';c.font='600 15px "Bahnschrift",sans-serif';c.fillText(`${g.combo} 连击`,210,145);c.fillStyle=g.pulseUsed?'#8e9c9e':'#c7efff';c.font='9px "Segoe UI",sans-serif';c.fillText(g.pulseUsed?'上冲脉冲已使用':g.safetyReturn?'救援通道已开启':'点击场地 / 空格 · 上冲脉冲 × 1',210,160);}
+  if(g.phase==='volley'){c.fillStyle='#f9bd72';c.font='600 15px "Bahnschrift",sans-serif';c.fillText(`${g.combo} 连击`,210,145);}
  }
 }

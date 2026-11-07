@@ -22,14 +22,17 @@ try{
    await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});
   }else{await page.locator('#game').press('Space');}
   await page.waitForFunction(()=>window.fluxSnapshot().phase==='volley');check(`${width}: exactly one ball`,await page.evaluate(()=>window.fluxSnapshot().balls===1&&window.fluxSnapshot().count===1));check(`${width}: pointer/keyboard fires`,true);
+  await page.locator('#speed').click();await page.locator('#speed').click();check(`${width}: speed cycles to four with an open bottom`,await page.evaluate(()=>window.fluxSnapshot().speed===4&&window.fluxSnapshot().bottomCharges===0));
   if(width<500)await page.locator('#game').tap({position:{x:80,y:130}});else await page.locator('#game').press('Space');
   check(`${width}: in-flight touch or keyboard activates one manual pulse`,await page.evaluate(()=>window.fluxSnapshot().pulseUsed&&window.fluxSnapshot().stats.pulses===1));await page.locator('#game').press('Space');check(`${width}: repeated pulse cannot add charges or marbles`,await page.evaluate(()=>window.fluxSnapshot().stats.pulses===1&&window.fluxSnapshot().balls===1&&window.fluxSnapshot().shots===1));
+  check(`${width}: pulse restores normal speed`,await page.evaluate(()=>window.fluxSnapshot().speed===1));
   await page.locator('#magnet').click();await page.locator('#game').press('m');
   check(`${width}: magnet deploys`,await page.evaluate(()=>window.fluxSnapshot().magnetUsed));
   await page.locator('#pause').click();const before=await page.evaluate(()=>window.fluxSnapshot());await page.waitForTimeout(250);const after=await page.evaluate(()=>window.fluxSnapshot());check(`${width}: pause freezes state`,JSON.stringify(before)===JSON.stringify(after));
   await page.locator('#resume').click();await page.locator('#recall').click();await page.locator('#game').press('Space');await page.locator('#game').press('r');
-  await page.getByRole('button',{name:'电磁增幅 磁场吸引力 +20%'}).click();check(`${width}: upgrade persists`,await page.evaluate(()=>window.fluxSnapshot().fieldStrength===1.2&&window.fluxSnapshot().power===1));
-  for(let i=0;i<12;i++){const phase=await page.evaluate(()=>window.fluxSnapshot().phase);if(phase==='over')break;if(phase==='upgrade')await page.getByRole('button',{name:'精密回弹 减少碰撞损耗，保留更多动能'}).click();await page.locator('#game').press('Space');await page.locator('#game').press('r');}
+  await page.screenshot({path:`test-results/upgrades-${width}x${height}.png`});check(`${width}: upgrade preview shows capacity increase`,await page.locator('[data-upgrade=magnet]').textContent().then(t=>t.includes('2 → 3')));
+  await page.getByRole('button',{name:/脉冲扩容/}).click();check(`${width}: upgrade persists`,await page.evaluate(()=>window.fluxSnapshot().fieldStrength===1.2&&window.fluxSnapshot().power===1));
+  for(let i=0;i<12;i++){const phase=await page.evaluate(()=>window.fluxSnapshot().phase);if(phase==='over')break;if(phase==='upgrade')await page.getByRole('button',{name:/精密回弹/}).click();await page.locator('#game').press('Space');await page.locator('#game').press('r');}
   await page.locator('#restart').click();check(`${width}: restart resets`,await page.evaluate(()=>window.fluxSnapshot().wave===1&&window.fluxSnapshot().score===0));
   await page.locator('#help').click();await page.getByRole('button',{name:'开始弹射'}).click();check(`${width}: help resumes`,await page.evaluate(()=>!window.fluxSnapshot().paused));
   await page.locator('#sound').click();await page.waitForFunction(()=>document.querySelector('#sound').getAttribute('aria-pressed')==='true');check(`${width}: sound toggle`,await page.locator('#sound').getAttribute('aria-pressed')==='true');
@@ -41,7 +44,7 @@ try{
   await page.locator('[data-material="ceramic"]').click();await page.locator('[data-size="small"]').click();
   await page.screenshot({path:`test-results/workshop-${width}x${height}.png`});
   await page.locator('#equip').click();await page.reload();await page.waitForFunction(()=>window.fluxSnapshot?.().material==='ceramic');check(`${width}: loadout persists`,await page.evaluate(()=>window.fluxSnapshot().size==='small'));
-  await page.locator('#levels').click();check(`${width}: twenty-four challenges available`,await page.locator('[data-level]').count()===24);await page.screenshot({path:`test-results/levels-${width}x${height}.png`});
+  await page.locator('#levels').click();check(`${width}: twenty-six challenges available`,await page.locator('[data-level]').count()===26);await page.screenshot({path:`test-results/levels-${width}x${height}.png`});
   await page.locator('[data-level="5"]').click();await page.locator('#beginChallenge').click();
   check(`${width}: challenge starts with a shot budget`,await page.evaluate(()=>window.fluxSnapshot().mode==='challenge'&&window.fluxSnapshot().remainingShots===7));
   const move=solutions[5].moves[0];await page.locator('#workshop').click();await page.locator(`[data-material="${move.material}"]`).click();await page.locator(`[data-size="${move.size}"]`).click();await page.locator('#equip').click();
@@ -65,7 +68,6 @@ try{
   await page.locator('#workshop').click();await page.locator('[data-material="steel"]').click();await page.locator('[data-size="standard"]').click();await page.locator('#equip').click();await page.locator('#game').press('Space');
   await page.waitForFunction(()=>window.fluxSnapshot().airZones.some(z=>z.fy>0),null,{timeout:15000});check(`${width}: actual valve hit reverses the wind`,true);
   await page.waitForFunction(()=>window.fluxSnapshot().phase!=='volley',null,{timeout:60000});check(`${width}: strategy shot naturally collects without recall`,await page.evaluate(()=>window.fluxSnapshot().balls===0&&window.fluxSnapshot().shots===1));
-  check(`${width}: bottom plate visibly-backed mechanism returns the same ball before collection`,await page.evaluate(()=>window.fluxSnapshot().stats.rebounds>=2&&window.fluxSnapshot().stats.rebounds<=4));
   await page.locator('#levels').click();await page.locator('#dailyTrial').click();await page.locator('#beginChallenge').click();const daily=await page.evaluate(()=>window.fluxSnapshot().dailyKey);check(`${width}: daily trial has a stable date and finite reserve`,typeof daily==='string'&&await page.locator('[data-reserve]').count()>0);await page.locator('#levels').click();await page.locator('#dailyTrial').click();await page.locator('#beginChallenge').click();check(`${width}: repeating daily keeps its seed date`,await page.evaluate(()=>window.fluxSnapshot().dailyKey)===daily);
   await page.reload();await page.waitForFunction(()=>window.fluxSnapshot?.().records[5]?.stars===3);check(`${width}: challenge stars survive reload`,true);
   await page.evaluate(()=>navigator.serviceWorker.ready);await page.reload();await page.waitForFunction(()=>navigator.serviceWorker.controller!==null);await context.setOffline(true);await page.reload();await page.locator('#game').waitFor({state:'visible',timeout:10000});check(`${width}: offline reload`,await page.locator('#game').isVisible());await page.waitForFunction(()=>window.fluxSnapshot);await page.locator('#levels').click();await page.locator('[data-level="6"]').click();await page.locator('#beginChallenge').click();check(`${width}: challenge works offline`,await page.evaluate(()=>window.fluxSnapshot().levelIndex===6&&window.fluxSnapshot().air===1));
