@@ -11,7 +11,7 @@ async function launchPortable(){
  // The self-extracting launcher does not pipe Electron's inspector stdout back to Playwright.
  // Use a local CDP connection to the actual extracted app instead.
  const listener=createServer();await new Promise(r=>listener.listen(0,'127.0.0.1',r));const port=listener.address().port;await new Promise(r=>listener.close(r));
- const child=spawn(resolve(`releases/v${version}/Flux-Foundry-${version}-Windows-x64.exe`),[`--remote-debugging-port=${port}`,`--user-data-dir=${resolve('test-results/desktop-portable')}`],{stdio:'ignore'});
+ const child=spawn(resolve(process.env.FLUX_PORTABLE_EXE||`releases/v${version}/Flux-Foundry-${version}-Windows-x64.exe`),[`--remote-debugging-port=${port}`,`--user-data-dir=${resolve('test-results/desktop-portable')}`],{stdio:'ignore'});
  let browser;try{for(let i=0;i<600;i++){try{if((await fetch(`http://127.0.0.1:${port}/json/version`)).ok)break;}catch{}await new Promise(r=>setTimeout(r,100));}
  const {webSocketDebuggerUrl}=await (await fetch(`http://127.0.0.1:${port}/json/version`)).json();browser=await chromium.connectOverCDP(webSocketDebuggerUrl);const page=browser.contexts()[0].pages()[0];return {firstWindow:async()=>page,close:async()=>{await page.close();await browser.close();child.kill();}};
  }catch(error){await browser?.close();child.kill();throw error;}
