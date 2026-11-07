@@ -19,7 +19,8 @@
     "test:endurance": "tsx scripts/arcade-endurance.ts",
     "test:loading": "node scripts/loading-test.mjs",
     "test:active": "tsx scripts/active-endurance.ts",
-    "test:full": "tsx scripts/full-endurance.ts"
+    "test:full": "tsx scripts/full-endurance.ts",
+    "test:expedition": "tsx scripts/endless-audit.ts"
   },
   "devDependencies": {
     "typescript": "~5.9.3",

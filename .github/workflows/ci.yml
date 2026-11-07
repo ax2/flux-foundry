@@ -29,3 +29,4 @@ jobs:
       - run: npm run test:loading
         env:
           PLAYWRIGHT_CHANNEL: chrome
+      - run: npm run test:expedition

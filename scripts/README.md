@@ -17,3 +17,5 @@ Stage-10新增：
 - npm run test:full：120个完整引擎对局，含多发与稀疏末块；不把单球结果当整局。
 - npm run test:play -- --stress：第4/5/22关难例的触控UI；每约1秒记录墙钟、模拟、无命中、后台/暂停/帧信息，超限保留分类现场。
 - python scripts/compress-assets.py：需Pillow/WebP，从art/source重建WebP及字节清单；发行构建只使用已跟踪的生成资源，无需安装Python依赖。
+
+- npm run test:expedition：72局完整远征，保留300秒检查点后继续至900模拟秒观察；有效长回合与60秒无命中分开统计，不强制结束任何球。
