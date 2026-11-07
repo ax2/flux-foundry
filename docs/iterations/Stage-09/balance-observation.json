@@ -1,0 +1,2052 @@
+{
+  "method": "26关×5种布局变体×4种弹珠组合×13个固定角度=6760次首球观察。每球最多观察20秒，仍在飞行记为未结束；不收球或伪造下一回合，胜利只统计自然回收后已获胜的样本。此上限不是游戏寿命。变体分别为设计布局、全方块、耐久平坦（全场总HP与核心HP分别保持）、积木位置循环置换、关闭弹簧供能。均保留其余机关。首球样本不能代替真实玩家通关率；负荷指标=目标HP/(平均目标扣血×库存)，仅用于比较。",
+  "totals": [
+    {
+      "variant": "designed",
+      "meanHits": 4.77,
+      "meanSeconds": 5.78,
+      "meanRescuePercent": 0.89
+    },
+    {
+      "variant": "square",
+      "meanHits": 5.53,
+      "meanSeconds": 6.11,
+      "meanRescuePercent": 0.89
+    },
+    {
+      "variant": "flat",
+      "meanHits": 5.2,
+      "meanSeconds": 5.94,
+      "meanRescuePercent": 0.96
+    },
+    {
+      "variant": "positions",
+      "meanHits": 4.46,
+      "meanSeconds": 5.38,
+      "meanRescuePercent": 0.89
+    },
+    {
+      "variant": "unpowered",
+      "meanHits": 4.49,
+      "meanSeconds": 5.63,
+      "meanRescuePercent": 0.89
+    }
+  ],
+  "levels": [
+    {
+      "level": 1,
+      "name": "耐久阶梯",
+      "goal": "clear",
+      "stock": 5,
+      "par": 3,
+      "totalHP": 10,
+      "tiers": [
+        1,
+        3,
+        6
+      ],
+      "measurements": [
+        {
+          "variant": "designed",
+          "samples": 52,
+          "meanHits": 1.85,
+          "meanSeconds": 4.51,
+          "meanObjectiveDamage": 1.85,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 3.85,
+          "meanBoosts": 1.44,
+          "loadIndex": 1.08
+        },
+        {
+          "variant": "square",
+          "samples": 52,
+          "meanHits": 1.88,
+          "meanSeconds": 3.87,
+          "meanObjectiveDamage": 1.88,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 3.85,
+          "meanBoosts": 1.52,
+          "loadIndex": 1.06
+        },
+        {
+          "variant": "flat",
+          "samples": 52,
+          "meanHits": 2.12,
+          "meanSeconds": 4.7,
+          "meanObjectiveDamage": 2.12,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 1.92,
+          "meanBoosts": 1.4,
+          "loadIndex": 0.95
+        },
+        {
+          "variant": "positions",
+          "samples": 52,
+          "meanHits": 1.42,
+          "meanSeconds": 3.78,
+          "meanObjectiveDamage": 1.42,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 1.92,
+          "meanBoosts": 1.15,
+          "loadIndex": 1.41
+        },
+        {
+          "variant": "unpowered",
+          "samples": 52,
+          "meanHits": 1.73,
+          "meanSeconds": 4.53,
+          "meanObjectiveDamage": 1.73,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 5.77,
+          "meanBoosts": 0.67,
+          "loadIndex": 1.16
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "name": "六面回声",
+      "goal": "clear",
+      "stock": 6,
+      "par": 3,
+      "totalHP": 19,
+      "tiers": [
+        1,
+        2,
+        4,
+        5,
+        7
+      ],
+      "measurements": [
+        {
+          "variant": "designed",
+          "samples": 52,
+          "meanHits": 2.98,
+          "meanSeconds": 3.52,
+          "meanObjectiveDamage": 2.98,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 0,
+          "meanBoosts": 0.6,
+          "loadIndex": 1.06
+        },
+        {
+          "variant": "square",
+          "samples": 52,
+          "meanHits": 3.19,
+          "meanSeconds": 4.63,
+          "meanObjectiveDamage": 3.19,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 3.85,
+          "meanBoosts": 1.08,
+          "loadIndex": 0.99
+        },
+        {
+          "variant": "flat",
+          "samples": 52,
+          "meanHits": 3.6,
+          "meanSeconds": 3.83,
+          "meanObjectiveDamage": 3.6,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 0,
+          "meanBoosts": 0.79,
+          "loadIndex": 0.88
+        },
+        {
+          "variant": "positions",
+          "samples": 52,
+          "meanHits": 2.27,
+          "meanSeconds": 3.19,
+          "meanObjectiveDamage": 2.27,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 0,
+          "meanBoosts": 0.75,
+          "loadIndex": 1.4
+        },
+        {
+          "variant": "unpowered",
+          "samples": 52,
+          "meanHits": 2.98,
+          "meanSeconds": 3.65,
+          "meanObjectiveDamage": 2.98,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 0,
+          "meanBoosts": 0.23,
+          "loadIndex": 1.06
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "name": "薄板穿行",
+      "goal": "clear",
+      "stock": 6,
+      "par": 3,
+      "totalHP": 19,
+      "tiers": [
+        1,
+        2,
+        3,
+        5,
+        8
+      ],
+      "measurements": [
+        {
+          "variant": "designed",
+          "samples": 52,
+          "meanHits": 3.62,
+          "meanSeconds": 5.79,
+          "meanObjectiveDamage": 3.62,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 3.85,
+          "meanBoosts": 1.56,
+          "loadIndex": 0.88
+        },
+        {
+          "variant": "square",
+          "samples": 52,
+          "meanHits": 3.94,
+          "meanSeconds": 5.61,
+          "meanObjectiveDamage": 3.94,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 0,
+          "meanBoosts": 1.48,
+          "loadIndex": 0.8
+        },
+        {
+          "variant": "flat",
+          "samples": 52,
+          "meanHits": 3.73,
+          "meanSeconds": 5.46,
+          "meanObjectiveDamage": 3.73,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 0,
+          "meanBoosts": 1.46,
+          "loadIndex": 0.85
+        },
+        {
+          "variant": "positions",
+          "samples": 52,
+          "meanHits": 2.9,
+          "meanSeconds": 5.36,
+          "meanObjectiveDamage": 2.9,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 3.85,
+          "meanBoosts": 1.4,
+          "loadIndex": 1.09
+        },
+        {
+          "variant": "unpowered",
+          "samples": 52,
+          "meanHits": 3.44,
+          "meanSeconds": 5.32,
+          "meanObjectiveDamage": 3.44,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 1.92,
+          "meanBoosts": 0.79,
+          "loadIndex": 0.92
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "name": "蓄能支点",
+      "goal": "clear",
+      "stock": 7,
+      "par": 4,
+      "totalHP": 27,
+      "tiers": [
+        2,
+        4,
+        5,
+        7,
+        9
+      ],
+      "measurements": [
+        {
+          "variant": "designed",
+          "samples": 52,
+          "meanHits": 5.23,
+          "meanSeconds": 5.78,
+          "meanObjectiveDamage": 5.23,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 1.92,
+          "meanBoosts": 4.38,
+          "loadIndex": 0.74
+        },
+        {
+          "variant": "square",
+          "samples": 52,
+          "meanHits": 5.83,
+          "meanSeconds": 6.11,
+          "meanObjectiveDamage": 5.83,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 5.77,
+          "meanBoosts": 3.4,
+          "loadIndex": 0.66
+        },
+        {
+          "variant": "flat",
+          "samples": 52,
+          "meanHits": 6.25,
+          "meanSeconds": 6.34,
+          "meanObjectiveDamage": 6.25,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 3.85,
+          "meanBoosts": 4.75,
+          "loadIndex": 0.62
+        },
+        {
+          "variant": "positions",
+          "samples": 52,
+          "meanHits": 4.15,
+          "meanSeconds": 4.3,
+          "meanObjectiveDamage": 4.15,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 0,
+          "meanBoosts": 3.71,
+          "loadIndex": 0.93
+        },
+        {
+          "variant": "unpowered",
+          "samples": 52,
+          "meanHits": 5.33,
+          "meanSeconds": 6.28,
+          "meanObjectiveDamage": 5.33,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 1.92,
+          "meanBoosts": 2.23,
+          "loadIndex": 0.72
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "name": "第一道闸",
+      "goal": "clear",
+      "stock": 7,
+      "par": 4,
+      "totalHP": 23,
+      "tiers": [
+        1,
+        2,
+        5,
+        6,
+        9
+      ],
+      "measurements": [
+        {
+          "variant": "designed",
+          "samples": 52,
+          "meanHits": 3.29,
+          "meanSeconds": 4.81,
+          "meanObjectiveDamage": 3.29,
+          "rescuePercent": 7.69,
+          "singleBallWins": 0,
+          "capPercent": 0,
+          "meanBoosts": 0.81,
+          "loadIndex": 1
+        },
+        {
+          "variant": "square",
+          "samples": 52,
+          "meanHits": 3.04,
+          "meanSeconds": 5.25,
+          "meanObjectiveDamage": 3.04,
+          "rescuePercent": 7.69,
+          "singleBallWins": 0,
+          "capPercent": 0,
+          "meanBoosts": 0.44,
+          "loadIndex": 1.08
+        },
+        {
+          "variant": "flat",
+          "samples": 52,
+          "meanHits": 3.56,
+          "meanSeconds": 5.46,
+          "meanObjectiveDamage": 3.56,
+          "rescuePercent": 7.69,
+          "singleBallWins": 0,
+          "capPercent": 3.85,
+          "meanBoosts": 0.54,
+          "loadIndex": 0.92
+        },
+        {
+          "variant": "positions",
+          "samples": 52,
+          "meanHits": 2.06,
+          "meanSeconds": 4.29,
+          "meanObjectiveDamage": 2.06,
+          "rescuePercent": 7.69,
+          "singleBallWins": 0,
+          "capPercent": 0,
+          "meanBoosts": 0.58,
+          "loadIndex": 1.6
+        },
+        {
+          "variant": "unpowered",
+          "samples": 52,
+          "meanHits": 2.96,
+          "meanSeconds": 4.49,
+          "meanObjectiveDamage": 2.96,
+          "rescuePercent": 7.69,
+          "singleBallWins": 0,
+          "capPercent": 0,
+          "meanBoosts": 0.31,
+          "loadIndex": 1.11
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "name": "核心入门",
+      "goal": "core",
+      "stock": 7,
+      "par": 4,
+      "totalHP": 28,
+      "tiers": [
+        1,
+        3,
+        6,
+        8,
+        10
+      ],
+      "measurements": [
+        {
+          "variant": "designed",
+          "samples": 52,
+          "meanHits": 5.27,
+          "meanSeconds": 6.85,
+          "meanObjectiveDamage": 1.63,
+          "rescuePercent": 0,
+          "singleBallWins": 3.85,
+          "capPercent": 9.62,
+          "meanBoosts": 2.54,
+          "loadIndex": 0.87
+        },
+        {
+          "variant": "square",
+          "samples": 52,
+          "meanHits": 5.88,
+          "meanSeconds": 7.5,
+          "meanObjectiveDamage": 2.15,
+          "rescuePercent": 0,
+          "singleBallWins": 3.85,
+          "capPercent": 9.62,
+          "meanBoosts": 2.48,
+          "loadIndex": 0.66
+        },
+        {
+          "variant": "flat",
+          "samples": 52,
+          "meanHits": 5.71,
+          "meanSeconds": 6.61,
+          "meanObjectiveDamage": 1.6,
+          "rescuePercent": 0,
+          "singleBallWins": 3.85,
+          "capPercent": 5.77,
+          "meanBoosts": 2.62,
+          "loadIndex": 0.9
+        },
+        {
+          "variant": "positions",
+          "samples": 52,
+          "meanHits": 4.08,
+          "meanSeconds": 5.42,
+          "meanObjectiveDamage": 0.88,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 5.77,
+          "meanBoosts": 3.12,
+          "loadIndex": 1.61
+        },
+        {
+          "variant": "unpowered",
+          "samples": 52,
+          "meanHits": 4.79,
+          "meanSeconds": 6.29,
+          "meanObjectiveDamage": 1.56,
+          "rescuePercent": 0,
+          "singleBallWins": 3.85,
+          "capPercent": 5.77,
+          "meanBoosts": 0.5,
+          "loadIndex": 0.92
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "name": "顺风铸造",
+      "goal": "clear",
+      "stock": 7,
+      "par": 4,
+      "totalHP": 29,
+      "tiers": [
+        1,
+        2,
+        4,
+        5,
+        7,
+        10
+      ],
+      "measurements": [
+        {
+          "variant": "designed",
+          "samples": 52,
+          "meanHits": 5.35,
+          "meanSeconds": 6.13,
+          "meanObjectiveDamage": 5.35,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 1.92,
+          "meanBoosts": 2.46,
+          "loadIndex": 0.77
+        },
+        {
+          "variant": "square",
+          "samples": 52,
+          "meanHits": 5.85,
+          "meanSeconds": 5.15,
+          "meanObjectiveDamage": 5.85,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 0,
+          "meanBoosts": 2.48,
+          "loadIndex": 0.71
+        },
+        {
+          "variant": "flat",
+          "samples": 52,
+          "meanHits": 6.4,
+          "meanSeconds": 6.1,
+          "meanObjectiveDamage": 6.4,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 1.92,
+          "meanBoosts": 2.81,
+          "loadIndex": 0.65
+        },
+        {
+          "variant": "positions",
+          "samples": 52,
+          "meanHits": 5.44,
+          "meanSeconds": 6.88,
+          "meanObjectiveDamage": 5.44,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 3.85,
+          "meanBoosts": 3.06,
+          "loadIndex": 0.76
+        },
+        {
+          "variant": "unpowered",
+          "samples": 52,
+          "meanHits": 5.75,
+          "meanSeconds": 6.38,
+          "meanObjectiveDamage": 5.75,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 0,
+          "meanBoosts": 2.06,
+          "loadIndex": 0.72
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "name": "逆流闸室",
+      "goal": "clear",
+      "stock": 8,
+      "par": 5,
+      "totalHP": 31,
+      "tiers": [
+        2,
+        3,
+        6,
+        8,
+        12
+      ],
+      "measurements": [
+        {
+          "variant": "designed",
+          "samples": 52,
+          "meanHits": 3.4,
+          "meanSeconds": 4.69,
+          "meanObjectiveDamage": 3.4,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 0,
+          "meanBoosts": 0.73,
+          "loadIndex": 1.14
+        },
+        {
+          "variant": "square",
+          "samples": 52,
+          "meanHits": 3.63,
+          "meanSeconds": 4.99,
+          "meanObjectiveDamage": 3.63,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 0,
+          "meanBoosts": 0.37,
+          "loadIndex": 1.07
+        },
+        {
+          "variant": "flat",
+          "samples": 52,
+          "meanHits": 3.65,
+          "meanSeconds": 5.05,
+          "meanObjectiveDamage": 3.65,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 0,
+          "meanBoosts": 0.62,
+          "loadIndex": 1.06
+        },
+        {
+          "variant": "positions",
+          "samples": 52,
+          "meanHits": 2.62,
+          "meanSeconds": 4.81,
+          "meanObjectiveDamage": 2.62,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 0,
+          "meanBoosts": 0.48,
+          "loadIndex": 1.48
+        },
+        {
+          "variant": "unpowered",
+          "samples": 52,
+          "meanHits": 3.15,
+          "meanSeconds": 4.53,
+          "meanObjectiveDamage": 3.15,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 0,
+          "meanBoosts": 0.27,
+          "loadIndex": 1.23
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "name": "双风核心",
+      "goal": "core",
+      "stock": 8,
+      "par": 5,
+      "totalHP": 35,
+      "tiers": [
+        1,
+        3,
+        7,
+        10,
+        14
+      ],
+      "measurements": [
+        {
+          "variant": "designed",
+          "samples": 52,
+          "meanHits": 5.75,
+          "meanSeconds": 6.9,
+          "meanObjectiveDamage": 1.73,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 3.85,
+          "meanBoosts": 4.33,
+          "loadIndex": 1.01
+        },
+        {
+          "variant": "square",
+          "samples": 52,
+          "meanHits": 6.48,
+          "meanSeconds": 6.17,
+          "meanObjectiveDamage": 1.94,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 3.85,
+          "meanBoosts": 4.42,
+          "loadIndex": 0.9
+        },
+        {
+          "variant": "flat",
+          "samples": 52,
+          "meanHits": 6.44,
+          "meanSeconds": 6.73,
+          "meanObjectiveDamage": 1.67,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 0,
+          "meanBoosts": 4.25,
+          "loadIndex": 1.05
+        },
+        {
+          "variant": "positions",
+          "samples": 52,
+          "meanHits": 4.38,
+          "meanSeconds": 4.51,
+          "meanObjectiveDamage": 0.9,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 1.92,
+          "meanBoosts": 3.42,
+          "loadIndex": 1.94
+        },
+        {
+          "variant": "unpowered",
+          "samples": 52,
+          "meanHits": 4.1,
+          "meanSeconds": 5.54,
+          "meanObjectiveDamage": 1.19,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 1.92,
+          "meanBoosts": 1.29,
+          "loadIndex": 1.47
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "name": "针眼与弹簧",
+      "goal": "clear",
+      "stock": 8,
+      "par": 5,
+      "totalHP": 33,
+      "tiers": [
+        2,
+        4,
+        7,
+        8,
+        12
+      ],
+      "measurements": [
+        {
+          "variant": "designed",
+          "samples": 52,
+          "meanHits": 3.12,
+          "meanSeconds": 4.85,
+          "meanObjectiveDamage": 3.12,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 0,
+          "meanBoosts": 0.65,
+          "loadIndex": 1.32
+        },
+        {
+          "variant": "square",
+          "samples": 52,
+          "meanHits": 4.25,
+          "meanSeconds": 5.95,
+          "meanObjectiveDamage": 4.25,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 3.85,
+          "meanBoosts": 0.98,
+          "loadIndex": 0.97
+        },
+        {
+          "variant": "flat",
+          "samples": 52,
+          "meanHits": 3.13,
+          "meanSeconds": 5.08,
+          "meanObjectiveDamage": 3.13,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 0,
+          "meanBoosts": 0.6,
+          "loadIndex": 1.32
+        },
+        {
+          "variant": "positions",
+          "samples": 52,
+          "meanHits": 3.21,
+          "meanSeconds": 5.32,
+          "meanObjectiveDamage": 3.21,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 3.85,
+          "meanBoosts": 1.48,
+          "loadIndex": 1.28
+        },
+        {
+          "variant": "unpowered",
+          "samples": 52,
+          "meanHits": 3.21,
+          "meanSeconds": 5.03,
+          "meanObjectiveDamage": 3.21,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 0,
+          "meanBoosts": 0.29,
+          "loadIndex": 1.28
+        }
+      ]
+    },
+    {
+      "level": 11,
+      "name": "铜风回廊",
+      "goal": "clear",
+      "stock": 9,
+      "par": 5,
+      "totalHP": 42,
+      "tiers": [
+        1,
+        3,
+        6,
+        8,
+        10,
+        14
+      ],
+      "measurements": [
+        {
+          "variant": "designed",
+          "samples": 52,
+          "meanHits": 3.83,
+          "meanSeconds": 4.35,
+          "meanObjectiveDamage": 3.83,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 0,
+          "meanBoosts": 1.62,
+          "loadIndex": 1.22
+        },
+        {
+          "variant": "square",
+          "samples": 52,
+          "meanHits": 5.1,
+          "meanSeconds": 5.36,
+          "meanObjectiveDamage": 5.1,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 5.77,
+          "meanBoosts": 1.65,
+          "loadIndex": 0.92
+        },
+        {
+          "variant": "flat",
+          "samples": 52,
+          "meanHits": 4.08,
+          "meanSeconds": 4.72,
+          "meanObjectiveDamage": 4.08,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 0,
+          "meanBoosts": 1.27,
+          "loadIndex": 1.14
+        },
+        {
+          "variant": "positions",
+          "samples": 52,
+          "meanHits": 4.33,
+          "meanSeconds": 4.74,
+          "meanObjectiveDamage": 4.33,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 1.92,
+          "meanBoosts": 2.38,
+          "loadIndex": 1.08
+        },
+        {
+          "variant": "unpowered",
+          "samples": 52,
+          "meanHits": 4.08,
+          "meanSeconds": 4.74,
+          "meanObjectiveDamage": 4.08,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 0,
+          "meanBoosts": 0.46,
+          "loadIndex": 1.14
+        }
+      ]
+    },
+    {
+      "level": 12,
+      "name": "双锁熔芯",
+      "goal": "core",
+      "stock": 9,
+      "par": 5,
+      "totalHP": 46,
+      "tiers": [
+        2,
+        3,
+        6,
+        8,
+        11,
+        16
+      ],
+      "measurements": [
+        {
+          "variant": "designed",
+          "samples": 52,
+          "meanHits": 5.62,
+          "meanSeconds": 6.94,
+          "meanObjectiveDamage": 0.88,
+          "rescuePercent": 7.69,
+          "singleBallWins": 0,
+          "capPercent": 1.92,
+          "meanBoosts": 4.27,
+          "loadIndex": 2.01
+        },
+        {
+          "variant": "square",
+          "samples": 52,
+          "meanHits": 7.13,
+          "meanSeconds": 8.71,
+          "meanObjectiveDamage": 1.19,
+          "rescuePercent": 7.69,
+          "singleBallWins": 0,
+          "capPercent": 5.77,
+          "meanBoosts": 4.21,
+          "loadIndex": 1.49
+        },
+        {
+          "variant": "flat",
+          "samples": 52,
+          "meanHits": 6.77,
+          "meanSeconds": 7.68,
+          "meanObjectiveDamage": 0.94,
+          "rescuePercent": 7.69,
+          "singleBallWins": 0,
+          "capPercent": 3.85,
+          "meanBoosts": 4.65,
+          "loadIndex": 1.89
+        },
+        {
+          "variant": "positions",
+          "samples": 52,
+          "meanHits": 5.71,
+          "meanSeconds": 7.89,
+          "meanObjectiveDamage": 0.77,
+          "rescuePercent": 7.69,
+          "singleBallWins": 0,
+          "capPercent": 3.85,
+          "meanBoosts": 5.73,
+          "loadIndex": 2.31
+        },
+        {
+          "variant": "unpowered",
+          "samples": 52,
+          "meanHits": 4.71,
+          "meanSeconds": 6.08,
+          "meanObjectiveDamage": 0.69,
+          "rescuePercent": 7.69,
+          "singleBallWins": 0,
+          "capPercent": 1.92,
+          "meanBoosts": 1.29,
+          "loadIndex": 2.57
+        }
+      ]
+    },
+    {
+      "level": 13,
+      "name": "交错阶梯",
+      "goal": "clear",
+      "stock": 9,
+      "par": 6,
+      "totalHP": 54,
+      "tiers": [
+        1,
+        3,
+        5,
+        8,
+        9,
+        12,
+        16
+      ],
+      "measurements": [
+        {
+          "variant": "designed",
+          "samples": 52,
+          "meanHits": 4.58,
+          "meanSeconds": 4.71,
+          "meanObjectiveDamage": 4.58,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 0,
+          "meanBoosts": 0.63,
+          "loadIndex": 1.31
+        },
+        {
+          "variant": "square",
+          "samples": 52,
+          "meanHits": 5.71,
+          "meanSeconds": 5.66,
+          "meanObjectiveDamage": 5.71,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 3.85,
+          "meanBoosts": 0.87,
+          "loadIndex": 1.05
+        },
+        {
+          "variant": "flat",
+          "samples": 52,
+          "meanHits": 5.1,
+          "meanSeconds": 4.99,
+          "meanObjectiveDamage": 5.1,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 0,
+          "meanBoosts": 0.75,
+          "loadIndex": 1.18
+        },
+        {
+          "variant": "positions",
+          "samples": 52,
+          "meanHits": 5.79,
+          "meanSeconds": 5.66,
+          "meanObjectiveDamage": 5.79,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 0,
+          "meanBoosts": 1.38,
+          "loadIndex": 1.04
+        },
+        {
+          "variant": "unpowered",
+          "samples": 52,
+          "meanHits": 4.58,
+          "meanSeconds": 4.96,
+          "meanObjectiveDamage": 4.58,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 0,
+          "meanBoosts": 0.15,
+          "loadIndex": 1.31
+        }
+      ]
+    },
+    {
+      "level": 14,
+      "name": "折面动力室",
+      "goal": "clear",
+      "stock": 10,
+      "par": 7,
+      "totalHP": 51,
+      "tiers": [
+        2,
+        4,
+        7,
+        10,
+        13,
+        15
+      ],
+      "measurements": [
+        {
+          "variant": "designed",
+          "samples": 52,
+          "meanHits": 5.08,
+          "meanSeconds": 5.44,
+          "meanObjectiveDamage": 5.08,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 1.92,
+          "meanBoosts": 2.29,
+          "loadIndex": 1
+        },
+        {
+          "variant": "square",
+          "samples": 52,
+          "meanHits": 6.75,
+          "meanSeconds": 6.77,
+          "meanObjectiveDamage": 6.75,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 5.77,
+          "meanBoosts": 2.31,
+          "loadIndex": 0.76
+        },
+        {
+          "variant": "flat",
+          "samples": 52,
+          "meanHits": 5.75,
+          "meanSeconds": 5.52,
+          "meanObjectiveDamage": 5.75,
+          "rescuePercent": 1.92,
+          "singleBallWins": 0,
+          "capPercent": 0,
+          "meanBoosts": 2.75,
+          "loadIndex": 0.89
+        },
+        {
+          "variant": "positions",
+          "samples": 52,
+          "meanHits": 6.13,
+          "meanSeconds": 5.99,
+          "meanObjectiveDamage": 6.13,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 0,
+          "meanBoosts": 4.08,
+          "loadIndex": 0.83
+        },
+        {
+          "variant": "unpowered",
+          "samples": 52,
+          "meanHits": 5.67,
+          "meanSeconds": 6.25,
+          "meanObjectiveDamage": 5.67,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 0,
+          "meanBoosts": 1.17,
+          "loadIndex": 0.9
+        }
+      ]
+    },
+    {
+      "level": 15,
+      "name": "三相核心",
+      "goal": "core",
+      "stock": 10,
+      "par": 6,
+      "totalHP": 58,
+      "tiers": [
+        2,
+        4,
+        8,
+        10,
+        14,
+        20
+      ],
+      "measurements": [
+        {
+          "variant": "designed",
+          "samples": 52,
+          "meanHits": 5.38,
+          "meanSeconds": 6.55,
+          "meanObjectiveDamage": 0.75,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 3.85,
+          "meanBoosts": 1.87,
+          "loadIndex": 2.67
+        },
+        {
+          "variant": "square",
+          "samples": 52,
+          "meanHits": 5.9,
+          "meanSeconds": 6.96,
+          "meanObjectiveDamage": 0.75,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 7.69,
+          "meanBoosts": 1.94,
+          "loadIndex": 2.67
+        },
+        {
+          "variant": "flat",
+          "samples": 52,
+          "meanHits": 5.85,
+          "meanSeconds": 6.95,
+          "meanObjectiveDamage": 0.73,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 1.92,
+          "meanBoosts": 1.69,
+          "loadIndex": 2.74
+        },
+        {
+          "variant": "positions",
+          "samples": 52,
+          "meanHits": 6.42,
+          "meanSeconds": 7.25,
+          "meanObjectiveDamage": 0.54,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 5.77,
+          "meanBoosts": 4.35,
+          "loadIndex": 3.71
+        },
+        {
+          "variant": "unpowered",
+          "samples": 52,
+          "meanHits": 5.15,
+          "meanSeconds": 6.55,
+          "meanObjectiveDamage": 0.81,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 0,
+          "meanBoosts": 0.44,
+          "loadIndex": 2.48
+        }
+      ]
+    },
+    {
+      "level": 16,
+      "name": "长廊反射",
+      "goal": "clear",
+      "stock": 10,
+      "par": 6,
+      "totalHP": 64,
+      "tiers": [
+        2,
+        4,
+        7,
+        9,
+        12,
+        18
+      ],
+      "measurements": [
+        {
+          "variant": "designed",
+          "samples": 52,
+          "meanHits": 4.98,
+          "meanSeconds": 4.98,
+          "meanObjectiveDamage": 4.98,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 0,
+          "meanBoosts": 0.4,
+          "loadIndex": 1.28
+        },
+        {
+          "variant": "square",
+          "samples": 52,
+          "meanHits": 8.4,
+          "meanSeconds": 6.75,
+          "meanObjectiveDamage": 8.4,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 1.92,
+          "meanBoosts": 1,
+          "loadIndex": 0.76
+        },
+        {
+          "variant": "flat",
+          "samples": 52,
+          "meanHits": 5.13,
+          "meanSeconds": 4.99,
+          "meanObjectiveDamage": 5.13,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 1.92,
+          "meanBoosts": 0.42,
+          "loadIndex": 1.25
+        },
+        {
+          "variant": "positions",
+          "samples": 52,
+          "meanHits": 5.13,
+          "meanSeconds": 4.75,
+          "meanObjectiveDamage": 5.13,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 0,
+          "meanBoosts": 1.29,
+          "loadIndex": 1.25
+        },
+        {
+          "variant": "unpowered",
+          "samples": 52,
+          "meanHits": 4.75,
+          "meanSeconds": 4.9,
+          "meanObjectiveDamage": 4.75,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 0,
+          "meanBoosts": 0.04,
+          "loadIndex": 1.35
+        }
+      ]
+    },
+    {
+      "level": 17,
+      "name": "风压熔炉",
+      "goal": "core",
+      "stock": 11,
+      "par": 7,
+      "totalHP": 69,
+      "tiers": [
+        3,
+        5,
+        9,
+        12,
+        16,
+        24
+      ],
+      "measurements": [
+        {
+          "variant": "designed",
+          "samples": 52,
+          "meanHits": 5.54,
+          "meanSeconds": 6.85,
+          "meanObjectiveDamage": 0.63,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 3.85,
+          "meanBoosts": 1.69,
+          "loadIndex": 3.44
+        },
+        {
+          "variant": "square",
+          "samples": 52,
+          "meanHits": 6.6,
+          "meanSeconds": 7.34,
+          "meanObjectiveDamage": 0.83,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 7.69,
+          "meanBoosts": 1.67,
+          "loadIndex": 2.64
+        },
+        {
+          "variant": "flat",
+          "samples": 52,
+          "meanHits": 5.56,
+          "meanSeconds": 6.93,
+          "meanObjectiveDamage": 0.63,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 5.77,
+          "meanBoosts": 1.69,
+          "loadIndex": 3.44
+        },
+        {
+          "variant": "positions",
+          "samples": 52,
+          "meanHits": 5.71,
+          "meanSeconds": 6.51,
+          "meanObjectiveDamage": 0.56,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 5.77,
+          "meanBoosts": 3.31,
+          "loadIndex": 3.91
+        },
+        {
+          "variant": "unpowered",
+          "samples": 52,
+          "meanHits": 5.19,
+          "meanSeconds": 6.86,
+          "meanObjectiveDamage": 0.71,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 3.85,
+          "meanBoosts": 0.35,
+          "loadIndex": 3.07
+        }
+      ]
+    },
+    {
+      "level": 18,
+      "name": "铸星终章",
+      "goal": "clear",
+      "stock": 12,
+      "par": 9,
+      "totalHP": 89,
+      "tiers": [
+        2,
+        4,
+        6,
+        10,
+        12,
+        15,
+        18,
+        22
+      ],
+      "measurements": [
+        {
+          "variant": "designed",
+          "samples": 52,
+          "meanHits": 8.5,
+          "meanSeconds": 6.64,
+          "meanObjectiveDamage": 8.5,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 1.92,
+          "meanBoosts": 3.6,
+          "loadIndex": 0.87
+        },
+        {
+          "variant": "square",
+          "samples": 52,
+          "meanHits": 12.92,
+          "meanSeconds": 9.08,
+          "meanObjectiveDamage": 12.92,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 11.54,
+          "meanBoosts": 4.31,
+          "loadIndex": 0.57
+        },
+        {
+          "variant": "flat",
+          "samples": 52,
+          "meanHits": 9.44,
+          "meanSeconds": 6.7,
+          "meanObjectiveDamage": 9.44,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 0,
+          "meanBoosts": 3.75,
+          "loadIndex": 0.79
+        },
+        {
+          "variant": "positions",
+          "samples": 52,
+          "meanHits": 9.02,
+          "meanSeconds": 6.54,
+          "meanObjectiveDamage": 9.02,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 7.69,
+          "meanBoosts": 4.63,
+          "loadIndex": 0.82
+        },
+        {
+          "variant": "unpowered",
+          "samples": 52,
+          "meanHits": 8.25,
+          "meanSeconds": 6.89,
+          "meanObjectiveDamage": 8.25,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 7.69,
+          "meanBoosts": 1.62,
+          "loadIndex": 0.9
+        }
+      ]
+    },
+    {
+      "level": 19,
+      "name": "风井轻舟",
+      "goal": "core",
+      "stock": 8,
+      "par": 6,
+      "totalHP": 31,
+      "tiers": [
+        3,
+        5,
+        6,
+        8,
+        9
+      ],
+      "measurements": [
+        {
+          "variant": "designed",
+          "samples": 52,
+          "meanHits": 3.96,
+          "meanSeconds": 5.08,
+          "meanObjectiveDamage": 1.88,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 1.92,
+          "meanBoosts": 2.15,
+          "loadIndex": 0.86
+        },
+        {
+          "variant": "square",
+          "samples": 52,
+          "meanHits": 3.77,
+          "meanSeconds": 4.66,
+          "meanObjectiveDamage": 1.98,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 0,
+          "meanBoosts": 1.6,
+          "loadIndex": 0.82
+        },
+        {
+          "variant": "flat",
+          "samples": 52,
+          "meanHits": 4.23,
+          "meanSeconds": 5.43,
+          "meanObjectiveDamage": 2.02,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 3.85,
+          "meanBoosts": 2.29,
+          "loadIndex": 0.8
+        },
+        {
+          "variant": "positions",
+          "samples": 52,
+          "meanHits": 2.62,
+          "meanSeconds": 3.19,
+          "meanObjectiveDamage": 1.12,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 0,
+          "meanBoosts": 1.81,
+          "loadIndex": 1.46
+        },
+        {
+          "variant": "unpowered",
+          "samples": 52,
+          "meanHits": 4.35,
+          "meanSeconds": 5.21,
+          "meanObjectiveDamage": 1.94,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 0,
+          "meanBoosts": 0.87,
+          "loadIndex": 0.84
+        }
+      ]
+    },
+    {
+      "level": 20,
+      "name": "风阀择路",
+      "goal": "core",
+      "stock": 9,
+      "par": 7,
+      "totalHP": 30,
+      "tiers": [
+        2,
+        3,
+        6,
+        9,
+        10
+      ],
+      "measurements": [
+        {
+          "variant": "designed",
+          "samples": 52,
+          "meanHits": 4.19,
+          "meanSeconds": 4.55,
+          "meanObjectiveDamage": 0.71,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 0,
+          "meanBoosts": 2.15,
+          "loadIndex": 1.56
+        },
+        {
+          "variant": "square",
+          "samples": 52,
+          "meanHits": 4.46,
+          "meanSeconds": 4.85,
+          "meanObjectiveDamage": 0.67,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 0,
+          "meanBoosts": 1.6,
+          "loadIndex": 1.65
+        },
+        {
+          "variant": "flat",
+          "samples": 52,
+          "meanHits": 4.54,
+          "meanSeconds": 5.16,
+          "meanObjectiveDamage": 0.75,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 1.92,
+          "meanBoosts": 2.04,
+          "loadIndex": 1.48
+        },
+        {
+          "variant": "positions",
+          "samples": 52,
+          "meanHits": 2.63,
+          "meanSeconds": 3.66,
+          "meanObjectiveDamage": 0.62,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 1.92,
+          "meanBoosts": 1.44,
+          "loadIndex": 1.81
+        },
+        {
+          "variant": "unpowered",
+          "samples": 52,
+          "meanHits": 3.87,
+          "meanSeconds": 4.74,
+          "meanObjectiveDamage": 0.75,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 0,
+          "meanBoosts": 0.98,
+          "loadIndex": 1.48
+        }
+      ]
+    },
+    {
+      "level": 21,
+      "name": "窄门双核",
+      "goal": "core",
+      "stock": 9,
+      "par": 7,
+      "totalHP": 29,
+      "tiers": [
+        3,
+        5,
+        9,
+        12
+      ],
+      "measurements": [
+        {
+          "variant": "designed",
+          "samples": 52,
+          "meanHits": 2.79,
+          "meanSeconds": 4.96,
+          "meanObjectiveDamage": 1.46,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 0,
+          "meanBoosts": 1.69,
+          "loadIndex": 1.06
+        },
+        {
+          "variant": "square",
+          "samples": 52,
+          "meanHits": 2.94,
+          "meanSeconds": 3.99,
+          "meanObjectiveDamage": 1.75,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 0,
+          "meanBoosts": 1.56,
+          "loadIndex": 0.89
+        },
+        {
+          "variant": "flat",
+          "samples": 52,
+          "meanHits": 2.81,
+          "meanSeconds": 4.84,
+          "meanObjectiveDamage": 1.56,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 0,
+          "meanBoosts": 1.46,
+          "loadIndex": 1
+        },
+        {
+          "variant": "positions",
+          "samples": 52,
+          "meanHits": 3.33,
+          "meanSeconds": 4.71,
+          "meanObjectiveDamage": 1.48,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 0,
+          "meanBoosts": 2.21,
+          "loadIndex": 1.05
+        },
+        {
+          "variant": "unpowered",
+          "samples": 52,
+          "meanHits": 2.88,
+          "meanSeconds": 4.99,
+          "meanObjectiveDamage": 1.52,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 0,
+          "meanBoosts": 1.13,
+          "loadIndex": 1.02
+        }
+      ]
+    },
+    {
+      "level": 22,
+      "name": "重珠横渡",
+      "goal": "core",
+      "stock": 10,
+      "par": 8,
+      "totalHP": 37,
+      "tiers": [
+        2,
+        3,
+        8,
+        10,
+        14
+      ],
+      "measurements": [
+        {
+          "variant": "designed",
+          "samples": 52,
+          "meanHits": 4.71,
+          "meanSeconds": 5.45,
+          "meanObjectiveDamage": 1.19,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 1.92,
+          "meanBoosts": 2.25,
+          "loadIndex": 1.17
+        },
+        {
+          "variant": "square",
+          "samples": 52,
+          "meanHits": 4.67,
+          "meanSeconds": 5.11,
+          "meanObjectiveDamage": 0.98,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 0,
+          "meanBoosts": 1.56,
+          "loadIndex": 1.43
+        },
+        {
+          "variant": "flat",
+          "samples": 52,
+          "meanHits": 4.9,
+          "meanSeconds": 5.45,
+          "meanObjectiveDamage": 1.12,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 1.92,
+          "meanBoosts": 2.42,
+          "loadIndex": 1.26
+        },
+        {
+          "variant": "positions",
+          "samples": 52,
+          "meanHits": 4.35,
+          "meanSeconds": 4.89,
+          "meanObjectiveDamage": 1.17,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 0,
+          "meanBoosts": 2.65,
+          "loadIndex": 1.19
+        },
+        {
+          "variant": "unpowered",
+          "samples": 52,
+          "meanHits": 4.37,
+          "meanSeconds": 5.21,
+          "meanObjectiveDamage": 1,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 3.85,
+          "meanBoosts": 1.46,
+          "loadIndex": 1.4
+        }
+      ]
+    },
+    {
+      "level": 23,
+      "name": "留住支点",
+      "goal": "core",
+      "stock": 11,
+      "par": 8,
+      "totalHP": 49,
+      "tiers": [
+        2,
+        3,
+        8,
+        10,
+        12,
+        14
+      ],
+      "measurements": [
+        {
+          "variant": "designed",
+          "samples": 52,
+          "meanHits": 7.12,
+          "meanSeconds": 7.91,
+          "meanObjectiveDamage": 2.81,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 5.77,
+          "meanBoosts": 3.38,
+          "loadIndex": 0.65
+        },
+        {
+          "variant": "square",
+          "samples": 52,
+          "meanHits": 6.12,
+          "meanSeconds": 6.25,
+          "meanObjectiveDamage": 2.37,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 1.92,
+          "meanBoosts": 2.48,
+          "loadIndex": 0.77
+        },
+        {
+          "variant": "flat",
+          "samples": 52,
+          "meanHits": 6.81,
+          "meanSeconds": 8.12,
+          "meanObjectiveDamage": 2.56,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 5.77,
+          "meanBoosts": 2.81,
+          "loadIndex": 0.71
+        },
+        {
+          "variant": "positions",
+          "samples": 52,
+          "meanHits": 6.27,
+          "meanSeconds": 7.5,
+          "meanObjectiveDamage": 1.6,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 9.62,
+          "meanBoosts": 4.65,
+          "loadIndex": 1.14
+        },
+        {
+          "variant": "unpowered",
+          "samples": 52,
+          "meanHits": 5.27,
+          "meanSeconds": 6.67,
+          "meanObjectiveDamage": 1.88,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 1.92,
+          "meanBoosts": 1.37,
+          "loadIndex": 0.96
+        }
+      ]
+    },
+    {
+      "level": 24,
+      "name": "气动棋局",
+      "goal": "core",
+      "stock": 12,
+      "par": 9,
+      "totalHP": 66,
+      "tiers": [
+        1,
+        2,
+        3,
+        12,
+        14,
+        16,
+        18
+      ],
+      "measurements": [
+        {
+          "variant": "designed",
+          "samples": 52,
+          "meanHits": 7.08,
+          "meanSeconds": 7.9,
+          "meanObjectiveDamage": 2.44,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 5.77,
+          "meanBoosts": 3.79,
+          "loadIndex": 1.09
+        },
+        {
+          "variant": "square",
+          "samples": 52,
+          "meanHits": 7.63,
+          "meanSeconds": 7.48,
+          "meanObjectiveDamage": 2.63,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 5.77,
+          "meanBoosts": 3.4,
+          "loadIndex": 1.01
+        },
+        {
+          "variant": "flat",
+          "samples": 52,
+          "meanHits": 7.85,
+          "meanSeconds": 7.89,
+          "meanObjectiveDamage": 2.29,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 13.46,
+          "meanBoosts": 3.35,
+          "loadIndex": 1.17
+        },
+        {
+          "variant": "positions",
+          "samples": 52,
+          "meanHits": 6.63,
+          "meanSeconds": 6.03,
+          "meanObjectiveDamage": 1.29,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 3.85,
+          "meanBoosts": 4.65,
+          "loadIndex": 2.07
+        },
+        {
+          "variant": "unpowered",
+          "samples": 52,
+          "meanHits": 6.4,
+          "meanSeconds": 7.41,
+          "meanObjectiveDamage": 1.98,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 3.85,
+          "meanBoosts": 1.67,
+          "loadIndex": 1.35
+        }
+      ]
+    },
+    {
+      "level": 25,
+      "name": "风阀借力",
+      "goal": "core",
+      "stock": 9,
+      "par": 5,
+      "totalHP": 53,
+      "tiers": [
+        2,
+        3,
+        14,
+        16,
+        18
+      ],
+      "measurements": [
+        {
+          "variant": "designed",
+          "samples": 52,
+          "meanHits": 4.98,
+          "meanSeconds": 6.71,
+          "meanObjectiveDamage": 1.67,
+          "rescuePercent": 0,
+          "singleBallWins": 3.85,
+          "capPercent": 5.77,
+          "meanBoosts": 2.92,
+          "loadIndex": 1.06
+        },
+        {
+          "variant": "square",
+          "samples": 52,
+          "meanHits": 5.15,
+          "meanSeconds": 5.93,
+          "meanObjectiveDamage": 1.92,
+          "rescuePercent": 0,
+          "singleBallWins": 3.85,
+          "capPercent": 5.77,
+          "meanBoosts": 2.42,
+          "loadIndex": 0.92
+        },
+        {
+          "variant": "flat",
+          "samples": 52,
+          "meanHits": 4.92,
+          "meanSeconds": 6.37,
+          "meanObjectiveDamage": 1.63,
+          "rescuePercent": 0,
+          "singleBallWins": 3.85,
+          "capPercent": 3.85,
+          "meanBoosts": 2.79,
+          "loadIndex": 1.09
+        },
+        {
+          "variant": "positions",
+          "samples": 52,
+          "meanHits": 5.08,
+          "meanSeconds": 6.49,
+          "meanObjectiveDamage": 0.96,
+          "rescuePercent": 0,
+          "singleBallWins": 0,
+          "capPercent": 5.77,
+          "meanBoosts": 4.81,
+          "loadIndex": 1.85
+        },
+        {
+          "variant": "unpowered",
+          "samples": 52,
+          "meanHits": 4.85,
+          "meanSeconds": 6.22,
+          "meanObjectiveDamage": 1.73,
+          "rescuePercent": 0,
+          "singleBallWins": 3.85,
+          "capPercent": 5.77,
+          "meanBoosts": 1.62,
+          "loadIndex": 1.03
+        }
+      ]
+    },
+    {
+      "level": 26,
+      "name": "双锁蓄能室",
+      "goal": "core",
+      "stock": 10,
+      "par": 6,
+      "totalHP": 56,
+      "tiers": [
+        2,
+        3,
+        4,
+        7,
+        16,
+        24
+      ],
+      "measurements": [
+        {
+          "variant": "designed",
+          "samples": 52,
+          "meanHits": 5.94,
+          "meanSeconds": 7.37,
+          "meanObjectiveDamage": 1.17,
+          "rescuePercent": 7.69,
+          "singleBallWins": 0,
+          "capPercent": 7.69,
+          "meanBoosts": 2.25,
+          "loadIndex": 1.36
+        },
+        {
+          "variant": "square",
+          "samples": 52,
+          "meanHits": 6.54,
+          "meanSeconds": 8.66,
+          "meanObjectiveDamage": 0.96,
+          "rescuePercent": 7.69,
+          "singleBallWins": 0,
+          "capPercent": 7.69,
+          "meanBoosts": 2.27,
+          "loadIndex": 1.66
+        },
+        {
+          "variant": "flat",
+          "samples": 52,
+          "meanHits": 6.79,
+          "meanSeconds": 7.31,
+          "meanObjectiveDamage": 1.31,
+          "rescuePercent": 7.69,
+          "singleBallWins": 0,
+          "capPercent": 3.85,
+          "meanBoosts": 2.12,
+          "loadIndex": 1.22
+        },
+        {
+          "variant": "positions",
+          "samples": 52,
+          "meanHits": 4.27,
+          "meanSeconds": 6.12,
+          "meanObjectiveDamage": 0.69,
+          "rescuePercent": 7.69,
+          "singleBallWins": 0,
+          "capPercent": 1.92,
+          "meanBoosts": 1.48,
+          "loadIndex": 2.31
+        },
+        {
+          "variant": "unpowered",
+          "samples": 52,
+          "meanHits": 5.02,
+          "meanSeconds": 6.58,
+          "meanObjectiveDamage": 0.81,
+          "rescuePercent": 7.69,
+          "singleBallWins": 0,
+          "capPercent": 5.77,
+          "meanBoosts": 1.27,
+          "loadIndex": 1.98
+        }
+      ]
+    }
+  ]
+}
