@@ -2,7 +2,7 @@ import type {Target} from './physics';
 
 // Tuned game parameters, not laboratory measurements. Mass is relative to a 24 mm steel ball.
 export const MATERIALS={
- steel:{name:'钢',subtitle:'均衡 · 可受磁场牵引',density:1,restitution:.94,magnetic:1,color:'#b8c8d1',dark:'#273944'},
+ steel:{name:'钢',subtitle:'均衡 · 金属高回弹',density:1,restitution:.94,magnetic:1,color:'#b8c8d1',dark:'#273944'},
  brass:{name:'黄铜',subtitle:'沉稳 · 气流偏移较小',density:1.08,restitution:.86,magnetic:0,color:'#e7b96d',dark:'#71401a'},
  ceramic:{name:'陶瓷',subtitle:'轻盈 · 高回弹',density:.49,restitution:.97,magnetic:0,color:'#e8f0ef',dark:'#638a91'},
  rubber:{name:'橡胶',subtitle:'极轻 · 强烈响应气流',density:.15,restitution:.80,magnetic:0,color:'#d78364',dark:'#512f29'},
@@ -30,7 +30,7 @@ const stages:Omit<Level,'chapter'>[]=[
  {name:'耐久阶梯',hint:'先打通数字1的入口，再利用弹簧积木补充动能。',shots:5,par:3,goal:'clear',tiles:[tile(135,410,1,'prism'),tile(270,490,3,'capacitor'),tile(210,590,6,'hexagon','spring')],pegs:[],air:[],gates:[]},
  {name:'六面回声',hint:'六边形与菱形有更多斜面；耐久高的积木可保留反射路线。',shots:6,par:3,goal:'clear',tiles:[tile(100,375,1,'diamond'),tile(310,375,2,'prism'),tile(145,485,4,'hexagon'),tile(285,530,7,'capacitor'),tile(200,615,5,'hexagon','spring')],pegs:[],air:[],gates:[]},
  {name:'薄板穿行',hint:'长条积木薄而宽，侧面和顶面的球路不同。',shots:6,par:3,goal:'clear',tiles:[tile(110,365,1,'bar'),tile(290,405,2,'diamond'),tile(160,485,5,'bar'),tile(305,545,8,'hexagon'),tile(95,590,3,'prism','spring')],pegs:[],air:[],gates:[]},
- {name:'蓄能支点',hint:'闪电标记代表弹簧供能，斜射可以多次经过支点。',shots:7,par:4,goal:'clear',tiles:[tile(105,365,2,'prism'),tile(285,415,4,'diamond'),tile(175,495,9,'hexagon'),tile(100,590,5,'capacitor','spring'),tile(315,590,7,'prism','spring')],pegs:[],air:[],gates:[]},
+ {name:'蓄能支点',hint:'金色线圈代表弹簧供能，斜射可以多次经过支点。',shots:7,par:4,goal:'clear',tiles:[tile(105,365,2,'prism'),tile(285,415,4,'diamond'),tile(175,495,9,'hexagon'),tile(100,590,5,'capacitor','spring'),tile(315,590,7,'prism','spring')],pegs:[],air:[],gates:[]},
  {name:'第一道闸',hint:'击碎绿色开关积木，打开无数字闸门；开关仍逐次减1。',shots:7,par:4,goal:'clear',tiles:[tile(95,350,2,'diamond','switch'),tile(305,370,1,'prism'),tile(145,515,5,'steel'),tile(285,530,9,'hexagon'),tile(210,620,6,'capacitor','spring')],pegs:[],air:[],gates:[gate()]},
  {name:'核心入门',hint:'紫色描边是核心。本关只需击碎核心，其余积木可作反射支点。',shots:7,par:4,goal:'core',tiles:[tile(110,360,1,'prism'),tile(295,380,3,'diamond'),tile(210,490,10,'hexagon',undefined,true),tile(100,595,6,'capacitor','spring'),tile(310,595,8,'prism','spring')],pegs:[],air:[],gates:[]},
  {name:'顺风铸造',hint:'轻珠更受气流影响，重珠更稳；先打开低耐久入口。',shots:7,par:4,goal:'clear',tiles:[tile(85,360,1,'bar'),tile(245,360,2,'prism'),tile(150,475,5,'diamond'),tile(315,510,10,'hexagon'),tile(100,615,7,'capacitor','spring'),tile(260,615,4,'prism')],pegs:[],air:[wind(55,400)],gates:[]},
@@ -51,8 +51,8 @@ const stages:Omit<Level,'chapter'>[]=[
  {name:'重珠横渡',hint:'横风吹向左壁，黄铜大珠偏移较小；轻珠也能借风绕过中央支点。',shots:10,par:8,goal:'core',tiles:[tile(105,340,2,'bar'),tile(310,400,3,'diamond'),tile(210,490,10,'hexagon'),tile(310,570,14,'capacitor',undefined,true),tile(100,610,8,'prism','spring')],pegs:[],air:[{x:38,y:355,w:344,h:200,fx:-95,fy:0}],gates:[]},
  {name:'留住支点',hint:'先开闸，再选择是否打碎风阀。核心关不用清空所有积木，保留弹簧作为回程支点。',shots:11,par:8,goal:'core',tiles:[tile(90,335,2,'hexagon','switch'),tile(320,350,3,'diamond','valve'),tile(130,510,12,'hexagon',undefined,true),tile(295,540,8,'capacitor',undefined,true),tile(105,620,10,'bar','spring'),tile(285,625,14,'prism','spring')],pegs:[],air:[wind(55,375),{x:155,y:480,w:105,h:165,fx:0,fy:-45}],gates:[gate(210,435)]},
  {name:'气动棋局',hint:'两道开关、一个风阀、双核心。先选入口，再用不同弹珠接力；只打核心，不必拆光支点。',shots:12,par:9,goal:'core',tiles:[tile(85,330,2,'diamond','switch'),tile(325,335,3,'hexagon','switch'),tile(205,370,1,'bar','valve'),tile(115,510,14,'hexagon',undefined,true),tile(300,540,18,'capacitor',undefined,true),tile(90,625,12,'prism','spring'),tile(265,625,16,'hexagon','spring')],pegs:[],air:[wind(50,405),{x:155,y:480,w:110,h:165,fx:0,fy:-44}],gates:[gate(210,455)]},
- {name:'风阀借力',hint:'击碎低数风阀翻转下降风，再用脉冲进入核心下方；保留两侧蓄能支点。',shots:9,par:5,goal:'core',tiles:[tile(100,345,2,'diamond','valve'),tile(310,350,3,'bar'),tile(210,485,16,'hexagon',undefined,true),tile(105,595,14,'prism','spring'),tile(310,600,18,'capacitor','spring')],pegs:[],air:[{x:105,y:390,w:210,h:210,fx:0,fy:170,plume:true}],gates:[]},
- {name:'双锁蓄能室',hint:'打开两侧开关，用定向脉冲穿过闸口，保留蓄能薄板反射，拆除核心即可。',shots:10,par:6,goal:'core',tiles:[tile(95,330,2,'prism','switch'),tile(325,330,3,'diamond','switch'),tile(210,500,16,'capacitor',undefined,true),tile(210,610,24,'bar','spring'),tile(80,560,4,'hexagon'),tile(340,560,7,'diamond')],pegs:[],air:[wind(40,435)],gates:[gate(210,410)]},
+ {name:'风阀借力',hint:'击碎低数风阀翻转下降风，再用挡板反弹进入核心下方；保留两侧蓄能支点。',shots:9,par:5,goal:'core',tiles:[tile(100,345,2,'diamond','valve'),tile(310,350,3,'bar'),tile(210,485,16,'hexagon',undefined,true),tile(105,595,14,'prism','spring'),tile(310,600,18,'capacitor','spring')],pegs:[],air:[{x:105,y:390,w:210,h:210,fx:0,fy:170,plume:true}],gates:[]},
+ {name:'双锁蓄能室',hint:'打开两侧开关，借挡板边缘反弹穿过闸口，保留蓄能薄板反射，拆除核心即可。',shots:10,par:6,goal:'core',tiles:[tile(95,330,2,'prism','switch'),tile(325,330,3,'diamond','switch'),tile(210,500,16,'capacitor',undefined,true),tile(210,610,24,'bar','spring'),tile(80,560,4,'hexagon'),tile(340,560,7,'diamond')],pegs:[],air:[wind(40,435)],gates:[gate(210,410)]},
 
 ];
 export const LEVELS:readonly Level[]=stages.map((l,i)=>({...l,rails:[3,6,8,11,13,17,18,19,20,21,22,23,24,25].includes(i)?[{side:'left',y:440,h:100,charges:3,maxCharges:3},{side:'right',y:500,h:110,charges:3,maxCharges:3}]:[],air:l.air.map(z=>({...z,plume:true})),chapter:['01 / 动力工坊','02 / 风洞与闸室','03 / 铸星核心','04 / 气动棋局'][Math.min(3,Math.floor(i/6))]}));

@@ -1,7 +1,7 @@
 export type Vec={x:number;y:number};
 export type Body=Vec&{vx:number;vy:number;r:number};
 export type BlockKind='steel'|'prism'|'capacitor'|'diamond'|'hexagon'|'bar';
-export type Target=Vec&{id:number;kind:BlockKind;size:number;hp:number;maxHp:number;flash:number;power?:'spring'|'switch'|'valve';core?:boolean;anchor?:boolean;row?:number};
+export type Target=Vec&{id:number;kind:BlockKind;size:number;hp:number;maxHp:number;flash:number;power?:'spring'|'switch'|'valve';core?:boolean;anchor?:boolean;row?:number;motion?:{baseX:number;amplitude:number;speed:number};vx?:number};
 export const dot=(a:Vec,b:Vec)=>a.x*b.x+a.y*b.y;
 export function vertices(t:Target):Vec[]{
  const r=t.size/2;

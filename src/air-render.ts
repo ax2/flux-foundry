@@ -13,14 +13,14 @@ function layer(z:AirZone){
 export function drawAir(target:CanvasRenderingContext2D,z:AirZone,time:number,reduced:boolean){
  const surface=layer(z),c=surface.ctx;c.setTransform(1,0,0,1,0,0);c.clearRect(0,0,surface.canvas.width,surface.canvas.height);c.translate(-z.x,-z.y);
  const points=airOutline(z),vertical=Math.abs(z.fy)>Math.abs(z.fx),direction=(vertical?z.fy:z.fx)<0?-1:1;
- const length=vertical?z.h:z.w,breadth=vertical?z.w:z.h,t=reduced?0:time;
+ const length=vertical?z.h:z.w,breadth=vertical?z.w:z.h,t=reduced?0:time*1.8;
  c.save();c.beginPath();c.moveTo(points[0].x,points[0].y);for(const p of points.slice(1))c.lineTo(p.x,p.y);c.closePath();c.clip();
  c.translate(z.x+z.w/2,z.y+z.h/2);if(vertical)c.rotate(Math.PI/2);if(direction<0)c.rotate(Math.PI);
- const haze=c.createLinearGradient(0,-breadth/2,0,breadth/2);haze.addColorStop(0,'#c9e6ed00');haze.addColorStop(.24,'#b1d7e716');haze.addColorStop(.5,'#d2e6eb30');haze.addColorStop(.78,'#a6d6e51b');haze.addColorStop(1,'#c9e6ed00');c.fillStyle=haze;c.fillRect(-length/2,-breadth/2,length,breadth);
+ const haze=c.createLinearGradient(0,-breadth/2,0,breadth/2);haze.addColorStop(0,'#c9e6ed00');haze.addColorStop(.24,'#b1d7e732');haze.addColorStop(.5,'#d2e6eb50');haze.addColorStop(.78,'#a6d6e51b');haze.addColorStop(1,'#c9e6ed00');c.fillStyle=haze;c.fillRect(-length/2,-breadth/2,length,breadth);
  // Soft eddies travel at different speeds and disperse near each plume edge.
  for(let i=0;i<9;i++){
   const u=((i*.173+t*(.12+i%3*.025))%1),x=(u-.5)*length,y=Math.sin(i*2.17+t*.6)*breadth*.29,r=breadth*(.23+(i%3)*.07);
-  const fog=c.createRadialGradient(x,y,0,x,y,r);fog.addColorStop(0,'#e6f4f51e');fog.addColorStop(.45,'#bedce810');fog.addColorStop(1,'#aecbdf00');c.fillStyle=fog;c.beginPath();c.arc(x,y,r,0,Math.PI*2);c.fill();
+  const fog=c.createRadialGradient(x,y,0,x,y,r);fog.addColorStop(0,'#e6f4f53a');fog.addColorStop(.45,'#bedce824');fog.addColorStop(1,'#aecbdf00');c.fillStyle=fog;c.beginPath();c.arc(x,y,r,0,Math.PI*2);c.fill();
  }
  for(let i=0;i<15;i++){
   const lane=((i+.5)/15-.5)*breadth*.87,phase=i*1.71,head=(((i*.137+t*(.32+(i%4)*.05))%1)*1.35-.7)*length;

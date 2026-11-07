@@ -16,11 +16,11 @@ try{
  await page.locator('#game').press('Space');
  await page.waitForFunction(()=>window.fluxSnapshot().balls===1,{},{timeout:5000});
  assert.equal(await page.evaluate(()=>window.fluxSnapshot().count),1);
- await page.locator('#game').press('Space');assert.equal(await page.evaluate(()=>window.fluxSnapshot().pulseUsed),true);
+ const r=await page.locator('#game').boundingBox();await page.mouse.move(r.x+r.width*.75,r.y+r.height*.85);assert.ok(await page.evaluate(()=>window.fluxSnapshot().paddle.target>300));assert.equal(await page.locator('.console,#magnet,#pulse,#recall,#speed').count(),0);
  await mkdir('test-results',{recursive:true});
  await page.screenshot({path:`test-results/public-v${version}-mobile.png`});
  const snapshot=await page.evaluate(()=>window.fluxSnapshot());assert.equal(snapshot.material,'brass');assert.equal(snapshot.radius,16);assert.equal(snapshot.levelIndex,16);assert.equal(snapshot.air,2);assert.equal(snapshot.gates,1);assert.equal(snapshot.totalBalls,11);assert.equal(snapshot.remainingShots,10);assert.equal(snapshot.goal,'core');
  assert.equal(errors.length,0);
- await writeFile(`test-results/public-v${version}.json`,JSON.stringify({url:page.url(),snapshot,errors,checks:['live version matches release','workshop selection works','26 challenges available','wind and gate core mission runs','finite reserve decrements once','manual pulse works in flight','live HTTPS page loads','single ball launches','fixed damage is one','no runtime errors']},null,2));
+ await writeFile(`test-results/public-v${version}.json`,JSON.stringify({url:page.url(),snapshot,errors,checks:['live version matches release','workshop selection works','26 challenges available','wind and gate core mission runs','finite reserve decrements once','paddle responds to movement','top-only controls','stronger wind','live HTTPS page loads','single ball launches','fixed damage is one','no runtime errors']},null,2));
  console.log(JSON.stringify({url:page.url(),snapshot,errors}));
 }finally{await browser.close();}

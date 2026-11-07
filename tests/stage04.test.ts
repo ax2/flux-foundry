@@ -1,3 +1,4 @@
+import {collectAtBottom} from './collect';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {Game,STEP} from '../src/game';
@@ -18,7 +19,7 @@ test('wind valves reverse local forces only when their number reaches zero',()=>
 test('powered rails consume finite charges and preserve the tangent component',()=>{
  const g=new Game(1);g.targets=[];g.selectBall('steel','standard');g.fire();const b=g.balls[0],r=g.rails[0];
  for(let i=0;i<4;i++){Object.assign(b,{x:29,y:470,vx:-200,vy:30});g.update(STEP);assert.ok(Math.abs(b.vy-32)<1e-7);assert.equal(r.charges,Math.max(0,2-i));if(i<3)assert.ok(b.vx>200*.94);else assert.ok(Math.abs(b.vx-188)<1e-6);}
- assert.equal(g.stats.boosts,3);assert.equal(g.stats.hits,0);g.recall();g.fire();assert.equal(r.charges,3);
+ assert.equal(g.stats.boosts,3);assert.equal(g.stats.hits,0);collectAtBottom(g);g.fire();assert.equal(r.charges,3);
 });
 test('repeated passive gate bouncing is rescued without deleting the marble',()=>{
  for(const level of [4,11])for(const size of ['small','standard','large'] as const){const g=new Game(1,level);g.selectBall('ceramic',size);g.angle=Math.PI/2;g.fire();const b=g.balls[0];for(let i=0;i<45/STEP&&g.phase==='volley';i++){g.update(STEP);if(g.phase==='volley')assert.equal(g.balls[0],b);}assert.notEqual(g.phase,'volley',`${level}/${size}`);assert.ok(b.y-b.r>=692);assert.ok(g.stats.rescues>0);}

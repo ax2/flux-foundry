@@ -1,23 +1,27 @@
 import {mkdir,writeFile} from 'node:fs/promises';
 import {Game,STEP} from '../src/game';
 import {LEVELS,type Material,type BallSize} from '../src/content';
-type Move={material:Material;size:BallSize;angle:number;steps:number;recall:boolean};
+type Move={material:Material;size:BallSize;angle:number;steps:number};
 const combinations:[Material,BallSize][]=[['steel','standard'],['steel','small'],['ceramic','small'],['ceramic','standard'],['brass','large'],['rubber','standard']];
 const solutions=[];const mirrored=process.argv.includes('--mirror');
 for(let level=0;level<LEVELS.length;level++){
  let game=new Game(1000+level,level);if(mirrored)game.mirror();const moves:Move[]=[];
- for(let shot=0;shot<game.level.shots&&game.phase!=='won';shot++){
+ for(let shot=0;shot<game.level.par&&game.phase!=='won';shot++){
   let best:{game:Game;move:Move;cost:number}|undefined;
-  for(const [material,size] of combinations)for(let a=0;a<=36;a++){
-   const candidate=new Game(1000+level,level);if(mirrored)candidate.mirror();candidate.targets=game.targets.map(t=>({...t}));candidate.shots=game.shots;candidate.score=game.score;candidate.gates=game.gates.map(g=>({...g}));candidate.air=game.air.map(z=>({...z}));candidate.selectBall(material,size);candidate.angle=.18+a*(Math.PI-.36)/36;candidate.fire();
-   let steps=0;while(candidate.phase==='volley'&&steps<20/STEP&&!candidate.goalComplete){candidate.update(STEP);steps++;}
-   const recall=candidate.phase==='volley';if(recall)candidate.recall();
+  search:for(const [material,size] of combinations)for(let a=0;a<=48;a++){
+   // Clone all simulation state (including moving bricks, paddle, random generator and inventory).
+   const candidate=Object.assign(new Game(1000+level,level),structuredClone(game));
+   candidate.selectBall(material,size);candidate.angle=.18+a*(Math.PI-.36)/48;candidate.fire();
+   let steps=0;while(candidate.phase==='volley'&&steps<180/STEP){candidate.update(STEP);steps++;}
+   // Observation ceiling only discards a candidate. It never ends a shot or carries it into the next turn.
+   if(candidate.phase==='volley')continue;
    const cost=candidate.phase==='won'?-1:candidate.targets.reduce((sum,t)=>sum+t.hp*(candidate.level.goal==='core'&&!t.core?1:100)+10,0);
-   if(!best||cost<best.cost)best={game:candidate,move:{material,size,angle:candidate.angle,steps,recall},cost};
+   if(!best||cost<best.cost)best={game:candidate,move:{material,size,angle:candidate.angle,steps},cost};
+   if(candidate.phase==='won')break search;
   }
-  if(!best)throw new Error('No candidate');game=best.game;moves.push(best.move);
+  if(!best)throw new Error(`Level ${level+1}: no naturally ended candidate`);game=best.game;moves.push(best.move);
  }
- if(game.phase!=='won')throw new Error(`Level ${level+1} has no verified greedy solution (${game.targets.length} targets left)`);
- const solution={level,name:game.level.name,shots:moves.length,stars:game.stars,moves};solutions.push(solution);console.log(`${level+1}: ${solution.name}, ${moves.length} shots, ${game.stars} stars`);
+ if(game.phase!=='won'||game.stars!==3)throw new Error(`Level ${level+1}: no verified three-star greedy route (${game.targets.length} targets left)`);
+ const solution={level,name:game.level.name,shots:moves.length,stars:game.stars,moves};solutions.push(solution);console.log(`${mirrored?'mirror':'normal'} ${level+1}: ${moves.length} shots, ${moves.reduce((n,m)=>n+m.steps*STEP,0).toFixed(1)}s`);
 }
 await mkdir('tests/fixtures',{recursive:true});await writeFile(mirrored?'tests/fixtures/challenges-mirrored.json':'tests/fixtures/challenges.json',JSON.stringify(solutions,null,2)+'\n');

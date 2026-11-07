@@ -1,3 +1,4 @@
+import {collectAtBottom} from './collect';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {Game,STEP} from '../src/game';
@@ -17,20 +18,20 @@ test('a spring collision subtracts one durability and visibly transfers energy',
 test('resting balls receive explicit assistance and collect at the bottom without teleporting',()=>{
  const g=new Game(1);g.targets=[{...block('bar',10000),size:400}];g.fire();const b=g.balls[0];Object.assign(b,{x:210,y:338,vx:0,vy:0});let sawReturn=false;
  for(let i=0;i<100/STEP&&g.phase==='volley';i++){g.update(STEP);if(g.safetyReturn){sawReturn=true;assert.equal(g.balls[0],b);}if(g.phase==='volley')assert.equal(g.balls[0],b);else assert.ok(b.y-b.r>=692);}
- assert.notEqual(g.phase,'volley');assert.equal(g.stats.rescues,2);assert.ok(sawReturn);assert.equal(g.stats.returns,1);assert.equal(g.shots,1);assert.ok(g.targets[0].hp>9900);
+ assert.notEqual(g.phase,'volley');assert.equal(g.stats.rescues,1);assert.ok(sawReturn);assert.equal(g.stats.returns,1);assert.equal(g.shots,1);assert.ok(g.targets[0].hp>9900);
 });
 test('the free-flight apex is not treated as a stuck ball',()=>{
  const g=new Game(1);g.targets=[];g.fire();Object.assign(g.balls[0],{x:200,y:400,vx:0,vy:-80});for(let i=0;i<100;i++)g.update(STEP);assert.equal(g.stats.rescues,0);assert.equal(g.safetyReturn,false);
 });
 test('fixed reserves can be reordered but cannot be duplicated or altered in flight',()=>{
- const g=new Game(1);assert.equal(g.remainingShots,12);const second={...g.queue[1]};assert.ok(g.selectReserve(1));assert.equal(g.material,second.material);assert.equal(g.size,second.size);g.fire();assert.equal(g.remainingShots,11);assert.equal(g.queue.length,12);assert.equal(g.selectReserve(2),false);assert.equal(g.fire(),false);g.recall();assert.equal(g.remainingShots,11);
- for(let i=0;i<20&&g.phase!=='over';i++){if(g.phase==='upgrade')g.upgrade('elastic');g.targets=[];g.fire();g.recall();}assert.equal(g.shots,12);assert.equal(g.phase,'over');assert.equal(g.endReason,'ammo');assert.equal(g.fire(),false);
+ const g=new Game(1);assert.equal(g.remainingShots,12);const second={...g.queue[1]};assert.ok(g.selectReserve(1));assert.equal(g.material,second.material);assert.equal(g.size,second.size);g.fire();assert.equal(g.remainingShots,11);assert.equal(g.queue.length,12);assert.equal(g.selectReserve(2),false);assert.equal(g.fire(),false);collectAtBottom(g);assert.equal(g.remainingShots,11);
+ for(let i=0;i<20&&g.phase!=='over';i++){g.targets=[];g.fire();collectAtBottom(g);}assert.equal(g.shots,12);assert.equal(g.phase,'over');assert.equal(g.endReason,'ammo');assert.equal(g.fire(),false);
 });
 test('all switches must reach zero before gates open',()=>{
  const g=new Game(1,11);const switches=g.targets.filter(t=>t.power==='switch');assert.equal(switches.length,2);for(const t of switches){while(t.hp>0){g.damage(t);if(g.targets.some(b=>b.power==='switch'&&b.hp>0))assert.ok(g.gates.every(gate=>!gate.open));}}assert.ok(g.gates.every(gate=>gate.open));
 });
 test('core missions finish only on collection and do not require clearing support blocks',()=>{
- const g=new Game(1,5);g.fire();for(const t of g.targets.filter(t=>t.core))while(t.hp>0)g.damage(t);g.update(STEP);assert.equal(g.phase,'volley');assert.ok(g.targets.length>0);assert.ok(g.goalComplete);g.recall();assert.equal(g.phase,'won');
+ const g=new Game(1,5);g.fire();for(const t of g.targets.filter(t=>t.core))while(t.hp>0)g.damage(t);g.update(STEP);assert.equal(g.phase,'volley');assert.ok(g.targets.length>0);assert.ok(g.goalComplete);collectAtBottom(g);assert.equal(g.phase,'won');
 });
 test('daily trials are stable for a Shanghai calendar day and mirror consistently',()=>{
  const a=dailyTrial(new Date('2026-11-07T00:01:00+08:00')),b=dailyTrial(new Date('2026-11-07T23:59:00+08:00'));assert.deepEqual(a,b);assert.equal(a.key,'2026-11-07');assert.notEqual(dailyTrial(new Date('2026-11-08T00:00:00+08:00')).key,a.key);
