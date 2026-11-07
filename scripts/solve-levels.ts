@@ -9,7 +9,7 @@ for(let level=0;level<LEVELS.length;level++){
  for(let shot=0;shot<game.level.shots&&game.phase!=='won';shot++){
   let best:{game:Game;move:Move;cost:number}|undefined;
   for(const [material,size] of combinations)for(let a=0;a<=36;a++){
-   const candidate=new Game(1000+level,level);if(mirrored)candidate.mirror();candidate.targets=game.targets.map(t=>({...t}));candidate.shots=game.shots;candidate.score=game.score;candidate.gates=game.gates.map(g=>({...g}));candidate.selectBall(material,size);candidate.angle=.18+a*(Math.PI-.36)/36;candidate.fire();
+   const candidate=new Game(1000+level,level);if(mirrored)candidate.mirror();candidate.targets=game.targets.map(t=>({...t}));candidate.shots=game.shots;candidate.score=game.score;candidate.gates=game.gates.map(g=>({...g}));candidate.air=game.air.map(z=>({...z}));candidate.selectBall(material,size);candidate.angle=.18+a*(Math.PI-.36)/36;candidate.fire();
    let steps=0;while(candidate.phase==='volley'&&steps<20/STEP&&!candidate.goalComplete){candidate.update(STEP);steps++;}
    const recall=candidate.phase==='volley';if(recall)candidate.recall();
    const cost=candidate.phase==='won'?-1:candidate.targets.reduce((sum,t)=>sum+t.hp*(candidate.level.goal==='core'&&!t.core?1:100)+10,0);

@@ -79,24 +79,24 @@
     "stars": 3,
     "moves": [
       {
-        "material": "ceramic",
-        "size": "standard",
-        "angle": 2.188928027592629,
-        "steps": 2172,
+        "material": "brass",
+        "size": "large",
+        "angle": 1.9571286397934788,
+        "steps": 2049,
         "recall": false
       },
       {
         "material": "ceramic",
-        "size": "standard",
-        "angle": 1.4162634015954636,
-        "steps": 949,
-        "recall": false
+        "size": "small",
+        "angle": 2.6525268031909275,
+        "steps": 2400,
+        "recall": true
       },
       {
-        "material": "steel",
+        "material": "rubber",
         "size": "standard",
-        "angle": 1.4162634015954636,
-        "steps": 286,
+        "angle": 0.7208652381980154,
+        "steps": 301,
         "recall": true
       }
     ]
@@ -161,22 +161,22 @@
       {
         "material": "ceramic",
         "size": "standard",
-        "angle": 1.4162634015954636,
-        "steps": 1352,
+        "angle": 0.7981317007977318,
+        "steps": 837,
         "recall": false
       },
       {
-        "material": "ceramic",
+        "material": "rubber",
         "size": "standard",
-        "angle": 2.6525268031909275,
-        "steps": 917,
+        "angle": 0.25726646259971647,
+        "steps": 1201,
         "recall": false
       },
       {
         "material": "steel",
         "size": "standard",
-        "angle": 2.729793265790644,
-        "steps": 635,
+        "angle": 0.18,
+        "steps": 178,
         "recall": true
       }
     ]
@@ -188,31 +188,31 @@
     "stars": 3,
     "moves": [
       {
-        "material": "rubber",
+        "material": "ceramic",
         "size": "standard",
-        "angle": 1.0299310885968813,
-        "steps": 1604,
+        "angle": 2.1116615649929122,
+        "steps": 1039,
         "recall": false
       },
       {
         "material": "ceramic",
-        "size": "standard",
-        "angle": 0.7981317007977318,
-        "steps": 1307,
+        "size": "small",
+        "angle": 2.188928027592629,
+        "steps": 799,
         "recall": false
       },
       {
         "material": "brass",
         "size": "large",
-        "angle": 1.8798621771937625,
-        "steps": 1014,
+        "angle": 1.7253292519943295,
+        "steps": 1092,
         "recall": false
       },
       {
         "material": "brass",
         "size": "large",
-        "angle": 1.8798621771937625,
-        "steps": 924,
+        "angle": 1.7253292519943295,
+        "steps": 556,
         "recall": true
       }
     ]
@@ -224,24 +224,24 @@
     "stars": 3,
     "moves": [
       {
-        "material": "rubber",
+        "material": "ceramic",
         "size": "standard",
-        "angle": 1.1071975511965977,
-        "steps": 1161,
+        "angle": 2.0343951023931957,
+        "steps": 1735,
         "recall": false
       },
       {
-        "material": "ceramic",
-        "size": "small",
-        "angle": 1.49352986419518,
-        "steps": 1406,
+        "material": "rubber",
+        "size": "standard",
+        "angle": 0.9526646259971647,
+        "steps": 1911,
         "recall": false
       },
       {
         "material": "steel",
-        "size": "small",
-        "angle": 1.5707963267948966,
-        "steps": 788,
+        "size": "standard",
+        "angle": 2.266194490192345,
+        "steps": 484,
         "recall": true
       }
     ]
@@ -285,35 +285,42 @@
   {
     "level": 10,
     "name": "铜风回廊",
-    "shots": 4,
+    "shots": 5,
     "stars": 3,
     "moves": [
       {
         "material": "ceramic",
-        "size": "small",
-        "angle": 2.4979938779914947,
-        "steps": 2234,
+        "size": "standard",
+        "angle": 1.3389969389957472,
+        "steps": 1670,
         "recall": false
       },
       {
         "material": "ceramic",
         "size": "standard",
-        "angle": 0.4890658503988659,
-        "steps": 2185,
+        "angle": 1.8798621771937625,
+        "steps": 672,
         "recall": false
       },
       {
-        "material": "steel",
-        "size": "small",
-        "angle": 2.6525268031909275,
-        "steps": 451,
+        "material": "ceramic",
+        "size": "standard",
+        "angle": 0.33453292519943295,
+        "steps": 850,
         "recall": false
       },
       {
         "material": "steel",
         "size": "small",
         "angle": 0.33453292519943295,
-        "steps": 213,
+        "steps": 734,
+        "recall": false
+      },
+      {
+        "material": "steel",
+        "size": "standard",
+        "angle": 2.420727415391778,
+        "steps": 850,
         "recall": true
       }
     ]
@@ -321,28 +328,21 @@
   {
     "level": 11,
     "name": "双锁熔芯",
-    "shots": 3,
+    "shots": 2,
     "stars": 3,
     "moves": [
       {
-        "material": "ceramic",
+        "material": "rubber",
         "size": "standard",
-        "angle": 2.9615926535897934,
-        "steps": 1296,
-        "recall": false
-      },
-      {
-        "material": "ceramic",
-        "size": "standard",
-        "angle": 0.8753981633974484,
+        "angle": 1.8025957145940459,
         "steps": 2400,
         "recall": true
       },
       {
         "material": "steel",
         "size": "standard",
-        "angle": 0.9526646259971647,
-        "steps": 1044,
+        "angle": 0.4890658503988659,
+        "steps": 737,
         "recall": true
       }
     ]
@@ -393,49 +393,28 @@
   {
     "level": 13,
     "name": "折面动力室",
-    "shots": 7,
+    "shots": 4,
     "stars": 3,
     "moves": [
       {
         "material": "steel",
         "size": "standard",
-        "angle": 2.1116615649929122,
-        "steps": 2295,
-        "recall": false
+        "angle": 2.6525268031909275,
+        "steps": 2400,
+        "recall": true
       },
       {
-        "material": "steel",
+        "material": "ceramic",
         "size": "standard",
-        "angle": 1.8025957145940459,
-        "steps": 1912,
+        "angle": 1.49352986419518,
+        "steps": 1374,
         "recall": false
       },
       {
         "material": "ceramic",
         "size": "standard",
-        "angle": 2.266194490192345,
-        "steps": 946,
-        "recall": false
-      },
-      {
-        "material": "steel",
-        "size": "standard",
-        "angle": 1.8025957145940459,
-        "steps": 968,
-        "recall": false
-      },
-      {
-        "material": "steel",
-        "size": "small",
-        "angle": 1.7253292519943295,
-        "steps": 984,
-        "recall": false
-      },
-      {
-        "material": "steel",
-        "size": "small",
-        "angle": 1.7253292519943295,
-        "steps": 984,
+        "angle": 1.49352986419518,
+        "steps": 1959,
         "recall": false
       },
       {
@@ -454,31 +433,31 @@
     "stars": 3,
     "moves": [
       {
-        "material": "steel",
-        "size": "standard",
-        "angle": 2.9615926535897934,
-        "steps": 1584,
-        "recall": false
-      },
-      {
         "material": "ceramic",
         "size": "standard",
-        "angle": 2.80705972839036,
-        "steps": 1226,
-        "recall": false
-      },
-      {
-        "material": "ceramic",
-        "size": "standard",
-        "angle": 2.80705972839036,
-        "steps": 1226,
+        "angle": 2.3434609527920616,
+        "steps": 1579,
         "recall": false
       },
       {
         "material": "steel",
         "size": "standard",
-        "angle": 2.420727415391778,
-        "steps": 1264,
+        "angle": 2.884326190990077,
+        "steps": 1105,
+        "recall": false
+      },
+      {
+        "material": "ceramic",
+        "size": "standard",
+        "angle": 1.2617304763960306,
+        "steps": 1903,
+        "recall": false
+      },
+      {
+        "material": "steel",
+        "size": "standard",
+        "angle": 0.33453292519943295,
+        "steps": 571,
         "recall": true
       }
     ]
@@ -492,36 +471,36 @@
       {
         "material": "ceramic",
         "size": "small",
-        "angle": 0.5663323129985824,
-        "steps": 1916,
-        "recall": false
-      },
-      {
-        "material": "ceramic",
-        "size": "small",
-        "angle": 2.6525268031909275,
-        "steps": 677,
-        "recall": false
-      },
-      {
-        "material": "ceramic",
-        "size": "small",
-        "angle": 2.575260340591211,
-        "steps": 1357,
+        "angle": 0.41179938779914943,
+        "steps": 1335,
         "recall": false
       },
       {
         "material": "brass",
         "size": "large",
-        "angle": 2.1116615649929122,
-        "steps": 1473,
+        "angle": 2.729793265790644,
+        "steps": 2230,
         "recall": false
+      },
+      {
+        "material": "ceramic",
+        "size": "small",
+        "angle": 0.4890658503988659,
+        "steps": 1985,
+        "recall": false
+      },
+      {
+        "material": "ceramic",
+        "size": "standard",
+        "angle": 2.80705972839036,
+        "steps": 2400,
+        "recall": true
       },
       {
         "material": "steel",
         "size": "small",
-        "angle": 0.7981317007977318,
-        "steps": 229,
+        "angle": 1.1844640137963143,
+        "steps": 447,
         "recall": true
       }
     ]
@@ -533,38 +512,38 @@
     "stars": 3,
     "moves": [
       {
-        "material": "rubber",
+        "material": "ceramic",
         "size": "standard",
-        "angle": 1.9571286397934788,
-        "steps": 855,
+        "angle": 0.18,
+        "steps": 1484,
         "recall": false
       },
       {
-        "material": "ceramic",
+        "material": "rubber",
         "size": "standard",
-        "angle": 1.0299310885968813,
+        "angle": 1.4162634015954636,
         "steps": 2400,
         "recall": true
       },
       {
-        "material": "steel",
-        "size": "small",
-        "angle": 0.25726646259971647,
-        "steps": 664,
+        "material": "rubber",
+        "size": "standard",
+        "angle": 1.7253292519943295,
+        "steps": 907,
         "recall": false
       },
       {
-        "material": "steel",
-        "size": "small",
-        "angle": 0.25726646259971647,
-        "steps": 664,
+        "material": "rubber",
+        "size": "standard",
+        "angle": 1.8025957145940459,
+        "steps": 1990,
         "recall": false
       },
       {
         "material": "steel",
         "size": "standard",
-        "angle": 0.8753981633974484,
-        "steps": 1017,
+        "angle": 1.7253292519943295,
+        "steps": 504,
         "recall": true
       }
     ]
@@ -572,56 +551,230 @@
   {
     "level": 17,
     "name": "铸星终章",
-    "shots": 7,
+    "shots": 6,
+    "stars": 3,
+    "moves": [
+      {
+        "material": "steel",
+        "size": "standard",
+        "angle": 0.7208652381980154,
+        "steps": 2084,
+        "recall": false
+      },
+      {
+        "material": "steel",
+        "size": "small",
+        "angle": 1.7253292519943295,
+        "steps": 1520,
+        "recall": false
+      },
+      {
+        "material": "steel",
+        "size": "standard",
+        "angle": 1.3389969389957472,
+        "steps": 998,
+        "recall": false
+      },
+      {
+        "material": "ceramic",
+        "size": "small",
+        "angle": 0.5663323129985824,
+        "steps": 701,
+        "recall": false
+      },
+      {
+        "material": "ceramic",
+        "size": "small",
+        "angle": 0.5663323129985824,
+        "steps": 701,
+        "recall": false
+      },
+      {
+        "material": "ceramic",
+        "size": "small",
+        "angle": 1.4162634015954636,
+        "steps": 474,
+        "recall": true
+      }
+    ]
+  },
+  {
+    "level": 18,
+    "name": "风井轻舟",
+    "shots": 2,
     "stars": 3,
     "moves": [
       {
         "material": "ceramic",
-        "size": "small",
-        "angle": 0.7981317007977318,
-        "steps": 2400,
-        "recall": true
+        "size": "standard",
+        "angle": 0.4890658503988659,
+        "steps": 1314,
+        "recall": false
       },
       {
         "material": "ceramic",
-        "size": "small",
-        "angle": 1.8025957145940459,
-        "steps": 1968,
-        "recall": false
-      },
-      {
-        "material": "steel",
         "size": "standard",
-        "angle": 0.7981317007977318,
-        "steps": 2400,
+        "angle": 1.2617304763960306,
+        "steps": 926,
         "recall": true
-      },
+      }
+    ]
+  },
+  {
+    "level": 19,
+    "name": "风阀择路",
+    "shots": 3,
+    "stars": 3,
+    "moves": [
       {
         "material": "rubber",
         "size": "standard",
-        "angle": 0.4890658503988659,
-        "steps": 1449,
+        "angle": 0.9526646259971647,
+        "steps": 1699,
+        "recall": false
+      },
+      {
+        "material": "ceramic",
+        "size": "standard",
+        "angle": 0.7208652381980154,
+        "steps": 1073,
         "recall": false
       },
       {
         "material": "steel",
-        "size": "small",
-        "angle": 1.3389969389957472,
-        "steps": 1665,
+        "size": "standard",
+        "angle": 0.6435987755982988,
+        "steps": 118,
+        "recall": true
+      }
+    ]
+  },
+  {
+    "level": 20,
+    "name": "窄门双核",
+    "shots": 2,
+    "stars": 3,
+    "moves": [
+      {
+        "material": "ceramic",
+        "size": "standard",
+        "angle": 1.2617304763960306,
+        "steps": 1351,
         "recall": false
       },
       {
         "material": "brass",
         "size": "large",
-        "angle": 0.4890658503988659,
-        "steps": 568,
+        "angle": 1.4162634015954636,
+        "steps": 862,
+        "recall": true
+      }
+    ]
+  },
+  {
+    "level": 21,
+    "name": "重珠横渡",
+    "shots": 4,
+    "stars": 3,
+    "moves": [
+      {
+        "material": "rubber",
+        "size": "standard",
+        "angle": 2.6525268031909275,
+        "steps": 615,
+        "recall": false
+      },
+      {
+        "material": "rubber",
+        "size": "standard",
+        "angle": 2.0343951023931957,
+        "steps": 1410,
         "recall": false
       },
       {
         "material": "ceramic",
         "size": "standard",
-        "angle": 0.18,
-        "steps": 925,
+        "angle": 2.266194490192345,
+        "steps": 2099,
+        "recall": false
+      },
+      {
+        "material": "steel",
+        "size": "standard",
+        "angle": 1.9571286397934788,
+        "steps": 137,
+        "recall": true
+      }
+    ]
+  },
+  {
+    "level": 22,
+    "name": "留住支点",
+    "shots": 3,
+    "stars": 3,
+    "moves": [
+      {
+        "material": "ceramic",
+        "size": "standard",
+        "angle": 0.25726646259971647,
+        "steps": 1432,
+        "recall": false
+      },
+      {
+        "material": "steel",
+        "size": "standard",
+        "angle": 0.8753981633974484,
+        "steps": 1846,
+        "recall": false
+      },
+      {
+        "material": "steel",
+        "size": "standard",
+        "angle": 0.7208652381980154,
+        "steps": 537,
+        "recall": true
+      }
+    ]
+  },
+  {
+    "level": 23,
+    "name": "气动棋局",
+    "shots": 5,
+    "stars": 3,
+    "moves": [
+      {
+        "material": "rubber",
+        "size": "standard",
+        "angle": 1.3389969389957472,
+        "steps": 1146,
+        "recall": false
+      },
+      {
+        "material": "rubber",
+        "size": "standard",
+        "angle": 2.1116615649929122,
+        "steps": 1134,
+        "recall": false
+      },
+      {
+        "material": "rubber",
+        "size": "standard",
+        "angle": 2.80705972839036,
+        "steps": 2400,
+        "recall": true
+      },
+      {
+        "material": "ceramic",
+        "size": "standard",
+        "angle": 1.7253292519943295,
+        "steps": 1134,
+        "recall": false
+      },
+      {
+        "material": "steel",
+        "size": "standard",
+        "angle": 0.25726646259971647,
+        "steps": 173,
         "recall": true
       }
     ]
