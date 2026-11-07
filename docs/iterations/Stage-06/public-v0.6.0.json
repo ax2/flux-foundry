@@ -1,0 +1,213 @@
+{
+  "url": "https://ax2.github.io/flux-foundry/?release=0.6.0",
+  "snapshot": {
+    "phase": "volley",
+    "wave": 1,
+    "score": 0,
+    "balls": 1,
+    "targets": 6,
+    "paused": false,
+    "magnetUsed": false,
+    "count": 1,
+    "power": 1,
+    "fieldStrength": 1,
+    "material": "brass",
+    "size": "large",
+    "radius": 16,
+    "mode": "challenge",
+    "levelIndex": 16,
+    "shots": 1,
+    "remainingShots": 10,
+    "totalBalls": 11,
+    "queue": [
+      {
+        "material": "brass",
+        "size": "large"
+      },
+      {
+        "material": "ceramic",
+        "size": "small"
+      },
+      {
+        "material": "brass",
+        "size": "standard"
+      },
+      {
+        "material": "rubber",
+        "size": "large"
+      },
+      {
+        "material": "steel",
+        "size": "large"
+      },
+      {
+        "material": "ceramic",
+        "size": "standard"
+      },
+      {
+        "material": "steel",
+        "size": "standard"
+      },
+      {
+        "material": "ceramic",
+        "size": "small"
+      },
+      {
+        "material": "brass",
+        "size": "standard"
+      },
+      {
+        "material": "rubber",
+        "size": "large"
+      },
+      {
+        "material": "steel",
+        "size": "large"
+      }
+    ],
+    "dailyKey": null,
+    "goal": "core",
+    "goalComplete": false,
+    "rescueAttempts": 0,
+    "safetyReturn": false,
+    "speed": 1,
+    "pulseCharges": 1,
+    "pulseMax": 2,
+    "elasticBonus": 0,
+    "fieldLevel": 0,
+    "bottomCharges": 0,
+    "bottomRefills": 0,
+    "bottomProgress": 0,
+    "pulseUsed": true,
+    "rowsCreated": 0,
+    "rails": [],
+    "gates": 1,
+    "stats": {
+      "hits": 0,
+      "flight": 0.275,
+      "boosts": 0,
+      "energy": 0,
+      "rescues": 0,
+      "returns": 0,
+      "rebounds": 0,
+      "recharges": 0,
+      "pulses": 1
+    },
+    "stars": 0,
+    "records": {},
+    "pegs": 0,
+    "air": 2,
+    "airZones": [
+      {
+        "x": 38,
+        "y": 380,
+        "w": 344,
+        "h": 60,
+        "fx": 60,
+        "fy": 0,
+        "plume": true
+      },
+      {
+        "x": 38,
+        "y": 545,
+        "w": 344,
+        "h": 60,
+        "fx": -45,
+        "fy": 0,
+        "plume": true
+      }
+    ],
+    "bricks": [
+      {
+        "x": 85,
+        "y": 340,
+        "hp": 3,
+        "kind": "diamond",
+        "size": 48,
+        "power": "switch",
+        "core": false,
+        "id": 0,
+        "maxHp": 3,
+        "flash": 0
+      },
+      {
+        "x": 325,
+        "y": 350,
+        "hp": 5,
+        "kind": "hexagon",
+        "size": 48,
+        "power": "switch",
+        "core": false,
+        "id": 1,
+        "maxHp": 5,
+        "flash": 0
+      },
+      {
+        "x": 110,
+        "y": 485,
+        "hp": 9,
+        "kind": "prism",
+        "size": 48,
+        "core": false,
+        "id": 2,
+        "maxHp": 9,
+        "flash": 0
+      },
+      {
+        "x": 275,
+        "y": 520,
+        "hp": 24,
+        "kind": "capacitor",
+        "size": 48,
+        "core": true,
+        "id": 3,
+        "maxHp": 24,
+        "flash": 0
+      },
+      {
+        "x": 95,
+        "y": 615,
+        "hp": 12,
+        "kind": "hexagon",
+        "size": 48,
+        "power": "spring",
+        "core": false,
+        "id": 4,
+        "maxHp": 12,
+        "flash": 0
+      },
+      {
+        "x": 290,
+        "y": 625,
+        "hp": 16,
+        "kind": "prism",
+        "size": 48,
+        "power": "spring",
+        "core": false,
+        "id": 5,
+        "maxHp": 16,
+        "flash": 0
+      }
+    ],
+    "activeBall": {
+      "x": 210,
+      "y": 169.73125000000002,
+      "vx": 1.3394574365674177e-14,
+      "vy": 14.750000000000028,
+      "r": 16
+    }
+  },
+  "errors": [],
+  "checks": [
+    "live version matches release",
+    "workshop selection works",
+    "26 challenges available",
+    "wind and gate core mission runs",
+    "finite reserve decrements once",
+    "manual pulse works in flight",
+    "live HTTPS page loads",
+    "single ball launches",
+    "fixed damage is one",
+    "no runtime errors"
+  ]
+}

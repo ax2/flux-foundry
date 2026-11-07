@@ -1,0 +1,39 @@
+{
+  "source": "bfcddab8a77052cf9fcd60ff32ce1b214a4abb0a",
+  "date": "2026-11-07",
+  "release": {
+    "assets": [
+      {
+        "digest": "sha256:364d0f14a74a29bffb55aaff216f3ca98b6725c104078dba6b61719c0fb6783c",
+        "name": "Flux-Foundry-0.6.0-Windows-x64.exe",
+        "size": 137420587,
+        "url": "https://github.com/ax2/flux-foundry/releases/download/v0.6.0/Flux-Foundry-0.6.0-Windows-x64.exe"
+      },
+      {
+        "digest": "sha256:ed9afb8d65062e266f4d6ee2fe84a489e5b6e9cdd9d5cf7e3341dd442d33f2f0",
+        "name": "SHA256SUMS.txt",
+        "size": 102,
+        "url": "https://github.com/ax2/flux-foundry/releases/download/v0.6.0/SHA256SUMS.txt"
+      }
+    ],
+    "draft": false,
+    "prerelease": false,
+    "tag": "v0.6.0",
+    "url": "https://github.com/ax2/flux-foundry/releases/tag/v0.6.0"
+  },
+  "sha256": "364d0f14a74a29bffb55aaff216f3ca98b6725c104078dba6b61719c0fb6783c",
+  "validate": 42352305982,
+  "pages": 42352305975,
+  "windows": 42352485356,
+  "checks": [
+    "59 logic tests",
+    "159 UI checks",
+    "52 replayable routes",
+    "2808 natural collections",
+    "3 UI games / 23 marbles / 14 pulses",
+    "Windows full folder and portable startup",
+    "public mobile browser",
+    "remote digest matches local"
+  ],
+  "workflowConclusion": "All three succeeded"
+}
