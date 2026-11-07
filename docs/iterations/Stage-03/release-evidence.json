@@ -1,0 +1,47 @@
+{
+  "tag": "v0.3.0",
+  "commit": "36a4ee567c450d0b43aa4f71a73b6162b7d9ac76",
+  "url": "https://github.com/ax2/flux-foundry/releases/tag/v0.3.0",
+  "isDraft": false,
+  "isPrerelease": false,
+  "assets": [
+    {
+      "name": "Flux-Foundry-0.3.0-Windows-x64.exe",
+      "size": 137415727,
+      "digest": "sha256:9dfa91963a02a4ad1605655b218feeaf725c87ef91c0d60248add9b08251050c",
+      "state": "uploaded"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "size": 102,
+      "digest": "sha256:03cca7035256685a226798a134973346995a1203a8399ca7d46d0149eb646fb9",
+      "state": "uploaded"
+    }
+  ],
+  "checks": {
+    "unit": 44,
+    "browser": 126,
+    "solutionLayouts": 36,
+    "balanceSamples": 9360,
+    "windowsUnpacked": "passed",
+    "windowsPortableNative": "passed",
+    "publicWeb": "passed"
+  },
+  "workflows": [
+    {
+      "id": 42334406603,
+      "name": "Validate",
+      "conclusion": "success"
+    },
+    {
+      "id": 42334406592,
+      "name": "Deploy web game",
+      "conclusion": "success"
+    },
+    {
+      "id": 42334600843,
+      "name": "Release Windows",
+      "conclusion": "success"
+    }
+  ]
+}
