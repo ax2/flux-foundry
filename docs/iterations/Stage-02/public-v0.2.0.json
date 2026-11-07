@@ -1,0 +1,37 @@
+{
+  "url": "https://ax2.github.io/flux-foundry/?release=0.2.0",
+  "snapshot": {
+    "phase": "volley",
+    "wave": 1,
+    "score": 0,
+    "balls": 1,
+    "targets": 5,
+    "paused": false,
+    "magnetUsed": false,
+    "count": 1,
+    "power": 1,
+    "fieldStrength": 1,
+    "material": "brass",
+    "size": "large",
+    "radius": 16,
+    "mode": "challenge",
+    "levelIndex": 10,
+    "shots": 1,
+    "remainingShots": 8,
+    "stars": 0,
+    "records": {},
+    "pegs": 2,
+    "air": 2
+  },
+  "errors": [],
+  "checks": [
+    "live version matches release",
+    "workshop selection works",
+    "12 challenges available",
+    "wind challenge runs",
+    "live HTTPS page loads",
+    "single ball launches",
+    "fixed damage is one",
+    "no runtime errors"
+  ]
+}

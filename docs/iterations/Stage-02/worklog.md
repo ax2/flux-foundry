@@ -25,3 +25,12 @@
 
 - 首次GitHub Validate 42329144300未通过：发射事件和下一帧DOM更新之间，测试过早读取工坊按钮disabled。逻辑层禁止飞行换珠测试已通过；修正浏览器断言为等待volley且按钮实际禁用，再检查，未放宽功能要求。准备重跑。
 - 修正后的114项浏览器检查本地重跑全部通过；生产游戏代码与已打包版本未变更。
+
+- 修正后GitHub Validate 42329328710与Pages 42329328691均成功；源码标签v0.2.0指向85fdc03。
+- 公网Chrome实际加载v0.2.0并完成工坊选择大号黄铜、打开12关列表、进入第11关、发射单球：radius16、air2、pegs2、每击伤害1，无运行错误。390x844截图与JSON已归档。Release资产上传及独立Windows CI进行中。
+
+## v0.2.0 发布完成 — 2026-11-07
+- Release：https://github.com/ax2/flux-foundry/releases/tag/v0.2.0 ，非草稿；标签85fdc03。EXE大小137410834字节，GitHub资产SHA256与本地7a7c293d0cca26e60591940c802ff5b0bae24bdcc8730fbd3c8bacbeeeb91d91一致。
+- GitHub Validate 42329328710、Pages 42329328691、独立Windows Release 42329429798全部成功；Windows CI包含工坊/风区关卡/发射/暂停验证。
+- 在线地址已实际验证v0.2.0；旧客户端需关闭所有游戏标签后重开以激活Service Worker更新。
+- 代码与长期档案同步完成。真实手机、低端机、长期平衡/人工音频，以及锁屏时未完成的便携原生鼠标复核仍保留为未验收；未生成游戏ZIP。
