@@ -1,3 +1,4 @@
+import {guidedTilt} from './paddle-assist';
 import {advanceFree,collide,reflect,type Body,type Target,type Vec} from './physics';
 import {catchPaddle,sweptPickup,type Paddle,type Treasure,type TreasureKind} from './arcade';
 import {airStrength} from './air';
@@ -6,10 +7,12 @@ export const W=420,H=720,LAUNCH={x:210,y:132},STEP=1/120,GRAVITY=240,BALL_RADIUS
 export type Phase='aim'|'volley'|'over'|'won';
 export type Ball=Body;
 export type Effect={x:number;y:number;life:number;max:number;color:string;vx:number;vy:number;ring:boolean};
+const ASSIST_DELAY=8,ASSIST_MISSES=4;
 const STOCK:Choice[]=[{material:'steel',size:'standard'},{material:'ceramic',size:'small'},{material:'brass',size:'standard'},{material:'rubber',size:'large'},{material:'steel',size:'large'},{material:'ceramic',size:'standard'}];
 export class Game{
- time=0;paddleEnabled=true;paddle:Paddle={x:210,target:210,width:96,vx:0,flash:0,tilt:0};treasures:Treasure[]=[];spawnCount=0;nextTreasure=2.5;treasureClock=0;bonusLives=0;wideTime=0;bigTime=0;ballScale=1;motionEnabled=true;windMultiplier=2.4;
- paddleOrbits:{x:number;vx:number;vy:number}[]=[];orbitRepeats=0;
+ time=0;paddleEnabled=true;paddle:Paddle={x:210,target:210,width:96,vx:0,flash:0,tilt:0,boost:18000};treasures:Treasure[]=[];spawnCount=0;nextTreasure=2.5;treasureClock=0;bonusLives=0;wideTime=0;bigTime=0;ballScale=1;motionEnabled=true;windMultiplier=2.4;
+ paddleOrbits:{x:number;vx:number;vy:number}[]=[];orbitRepeats=0;lastOrbitAdjustmentCatch=0;lastGuideTime=-1;
+ progress={sinceHit:0,maxNoHit:0,catchesWithoutHit:0,maxCatchesWithoutHit:0};
  phase:Phase='aim';wave=1;score=0;bestCombo=0;combo=0;readonly count=1;readonly power=1;
  material:Material='steel';size:BallSize='standard';
  mode:'endless'|'challenge'='endless';levelIndex=0;shots=0;queue:Choice[]=[];dailyKey:string|null=null;mirrorSign=1;
@@ -49,11 +52,11 @@ export class Game{
   }
  }
  aim(x:number,y:number){this.angle=Math.max(.16,Math.min(Math.PI-.16,Math.atan2(Math.max(15,y-LAUNCH.y),x-LAUNCH.x)));}
- fire(){if(this.phase!=='aim'||this.paused||this.remainingShots===0)return false;this.syncNext();this.phase='volley';this.shots++;this.ballScale=1;this.bigTime=0;this.wideTime=0;this.paddle.width=96;this.paddle.tilt=0;this.paddleOrbits=[];this.orbitRepeats=0;this.treasures=[];this.spawnCount=0;this.treasureClock=0;this.nextTreasure=2.5;this.anchorsBroken=0;this.combo=0;this.stalled=0;this.supportedTime=0;this.supportGrace=0;this.anchor={...LAUNCH};this.rescueAttempts=0;this.passiveLoops=0;this.passiveAnchor=null;for(const r of this.rails)r.charges=r.maxCharges;this.safetyReturn=false;
+ fire(){if(this.phase!=='aim'||this.paused||this.remainingShots===0)return false;this.syncNext();this.phase='volley';this.progress.sinceHit=0;this.progress.catchesWithoutHit=0;this.lastOrbitAdjustmentCatch=0;this.shots++;this.ballScale=1;this.bigTime=0;this.wideTime=0;this.paddle.width=96;this.paddle.tilt=0;this.paddle.boost=18000;this.paddleOrbits=[];this.orbitRepeats=0;this.treasures=[];this.spawnCount=0;this.treasureClock=0;this.nextTreasure=2.5;this.anchorsBroken=0;this.combo=0;this.stalled=0;this.supportedTime=0;this.supportGrace=0;this.anchor={...LAUNCH};this.rescueAttempts=0;this.passiveLoops=0;this.passiveAnchor=null;for(const r of this.rails)r.charges=r.maxCharges;this.safetyReturn=false;
   const spec=this.spec;this.balls=[{...LAUNCH,vx:Math.cos(this.angle)*spec.speed,vy:Math.sin(this.angle)*spec.speed,r:spec.r}];return true;
  }
  burst(x:number,y:number,color:string,n=12){for(let i=0;i<n;i++){const a=Math.PI*2*i/n,s=35+(i%4)*33;this.effects.push({x,y,life:.45,max:.45,color,vx:Math.cos(a)*s,vy:Math.sin(a)*s,ring:false});}this.effects.push({x,y,life:.45,max:.45,color,vx:0,vy:0,ring:true});if(this.effects.length>420)this.effects.splice(0,this.effects.length-420);}
- damage(t:Target){if(t.hp<=0)return;this.paddleOrbits=[];this.orbitRepeats=0;this.paddle.tilt=0;this.passiveLoops=0;this.passiveAnchor=null;t.hp--;t.flash=.12;this.score+=10;this.combo++;this.stats.hits++;
+ damage(t:Target){if(t.hp<=0)return;this.progress.sinceHit=0;this.progress.catchesWithoutHit=0;this.lastOrbitAdjustmentCatch=0;this.paddleOrbits=[];this.orbitRepeats=0;this.paddle.tilt=0;this.paddle.boost=18000;this.passiveLoops=0;this.passiveAnchor=null;t.hp--;t.flash=.12;this.score+=10;this.combo++;this.stats.hits++;
   this.bestCombo=Math.max(this.bestCombo,this.combo);this.onHit?.(t.kind);
   if(t.hp===0){if(t.anchor)this.anchorsBroken++;this.score+=75;this.burst(t.x,t.y,t.core?'#ed9fff':t.power==='spring'?'#ffcf70':'#80e8e4');
    if(t.power==='valve'){for(const zone of this.air){zone.fx=-zone.fx;zone.fy=-zone.fy;}this.say('风阀已切换 · 气流反向');}
@@ -63,7 +66,7 @@ export class Game{
  energize(b:Ball,n:Vec,amount=22000){const mass=this.spec.mass,vn=b.vx*n.x+b.vy*n.y,energy=.5*mass*(b.vx*b.vx+b.vy*b.vy);const added=Math.min(amount,Math.max(0,240000-energy));
   if(added<=0||vn<0)return;const dv=Math.sqrt(vn*vn+2*added/mass)-vn;b.vx+=dv*n.x;b.vy+=dv*n.y;this.stats.energy+=added;this.stats.boosts++;this.burst(b.x,b.y,'#ffc369',6);
  }
- finish(){this.wideTime=0;this.bigTime=0;this.ballScale=1;this.paddle.width=96;this.treasures=[];this.balls=[];this.safetyReturn=false;this.targets=this.targets.filter(t=>t.hp>0);this.syncNext();
+ finish(){this.paddle.boost=18000;this.paddle.tilt=0;this.wideTime=0;this.bigTime=0;this.ballScale=1;this.paddle.width=96;this.treasures=[];this.balls=[];this.safetyReturn=false;this.targets=this.targets.filter(t=>t.hp>0);this.syncNext();
   if(this.mode==='challenge'){this.phase=this.goalComplete?'won':this.remainingShots===0?'over':'aim';this.endReason=this.phase==='over'?'ammo':'';return;}
   if(this.remainingShots===0){this.phase='over';this.endReason='ammo';return;}
   const advance=this.anchorsBroken>0?24:39;for(const t of this.targets)t.y-=advance;if(this.anchorsBroken>0)this.say('耐久支点已拆除 · 本轮推进减缓');if(this.targets.some(t=>t.y-t.size/2<184)){this.phase='over';this.endReason='overload';return;}
@@ -82,15 +85,17 @@ export class Game{
   }
  }
  trackPaddleOrbit(incoming:Ball){
+  this.progress.catchesWithoutHit++;this.progress.maxCatchesWithoutHit=Math.max(this.progress.maxCatchesWithoutHit,this.progress.catchesWithoutHit);
   const state={x:incoming.x,vx:incoming.vx,vy:incoming.vy};
   const repeated=this.paddleOrbits.some(p=>Math.abs(p.x-state.x)<10&&Math.abs(p.vx-state.vx)<25&&Math.abs(p.vy-state.vy)<35);
   this.orbitRepeats=repeated?this.orbitRepeats+1:0;this.paddleOrbits.push(state);if(this.paddleOrbits.length>8)this.paddleOrbits.shift();
-  if(this.orbitRepeats<3)return;
+  const missedRallies=this.progress.sinceHit>=ASSIST_DELAY&&this.progress.catchesWithoutHit-this.lastOrbitAdjustmentCatch>=ASSIST_MISSES;
+  if(this.orbitRepeats<3&&!missedRallies)return;this.lastOrbitAdjustmentCatch=this.progress.catchesWithoutHit;
   // Repeated contact states without any durability loss: change the visible metal face,
   // rather than kicking the ball or imposing a lifetime/catch budget. The next catch uses its normal.
   const target=this.targets.filter(t=>t.hp>0).sort((a,b)=>Number(!!b.core)-Number(!!a.core)||Math.abs(a.x-this.paddle.x)-Math.abs(b.x-this.paddle.x))[0];
   const direction=target&&Math.abs(target.x-this.paddle.x)>12?Math.sign(target.x-this.paddle.x):(this.stats.orbitBreaks%2?-1:1);
-  this.paddle.tilt=this.paddle.tilt?-this.paddle.tilt:direction*.18;this.paddleOrbits=[];this.orbitRepeats=0;this.stats.orbitBreaks++;this.say('挡板微倾 · 打破重复球路');
+  this.paddle.tilt=this.paddle.tilt?-this.paddle.tilt:direction*.18;this.paddleOrbits=[];this.orbitRepeats=0;this.stats.orbitBreaks++;if(missedRallies)this.paddle.boost=[28000,40000,22000][this.stats.orbitBreaks%3];this.say(missedRallies?'挡板蓄能 · 打破重复球路':'挡板微倾 · 打破重复球路');
  }
  movePaddle(x:number){if(this.paused||!Number.isFinite(x))return;const h=this.paddle.width/2;this.paddle.target=Math.max(22+h,Math.min(398-h,x));}
  spawnTreasure(kind?:TreasureKind,x?:number,y?:number){
@@ -113,12 +118,13 @@ export class Game{
  }
  update(dt:number){if(this.paused)return;
   for(const t of this.targets)t.flash=Math.max(0,t.flash-dt);for(const p of this.effects){p.life-=dt;p.x+=p.vx*dt;p.y+=p.vy*dt;}this.effects=this.effects.filter(p=>p.life>0);
-  if(this.phase!=='volley')return;this.time+=dt;this.stats.flight+=dt;
+  if(this.phase!=='volley')return;this.time+=dt;this.stats.flight+=dt;if(!this.goalComplete){this.progress.sinceHit+=dt;this.progress.maxNoHit=Math.max(this.progress.maxNoHit,this.progress.sinceHit);}
   this.wideTime=Math.max(0,this.wideTime-dt);this.paddle.width=this.wideTime>0?144:96;this.bigTime=Math.max(0,this.bigTime-dt);if(this.bigTime===0&&this.ballScale>1){this.ballScale=1;for(const b of this.balls)b.r=ballProperties(this.material,this.size).r;}
   const oldPaddleX=this.paddle.x,delta=Math.max(-900*dt,Math.min(900*dt,this.paddle.target-this.paddle.x));this.paddle.x+=delta;const half=this.paddle.width/2;this.paddle.x=Math.max(22+half,Math.min(398-half,this.paddle.x));this.paddle.vx=(this.paddle.x-oldPaddleX)/dt;this.paddle.flash=Math.max(0,this.paddle.flash-dt);
   for(const t of this.targets){const m=t.motion;if(m&&this.motionEnabled){t.x=m.baseX+Math.sin(this.time*m.speed)*m.amplitude;t.vx=Math.cos(this.time*m.speed)*m.amplitude*m.speed;}else t.vx=0;}
   for(const t of this.treasures)t.life-=dt;this.treasures=this.treasures.filter(t=>t.life>0);this.treasureClock+=dt;if(this.treasureClock>=this.nextTreasure&&this.spawnCount<3&&!this.goalComplete){this.spawnTreasure();this.spawnCount++;this.nextTreasure+=7;}
   const spec=this.spec,restitution=this.restitution;
+  const falling=this.balls[0];if(falling&&this.progress.sinceHit>=ASSIST_DELAY&&this.progress.catchesWithoutHit>=ASSIST_MISSES&&falling.vy>0&&falling.y>470&&falling.y<675-falling.r-28&&this.time-this.lastGuideTime>=.08){this.lastGuideTime=this.time;const tilt=guidedTilt(falling,this.paddle,this.targets,spec.mass,restitution,this.time,{air:this.air,gates:this.gates,pegs:this.pegs,wind:this.windMultiplier,response:spec.windResponse});this.paddle.tilt=(this.paddle.tilt||0)+Math.max(-.32,Math.min(.32,tilt-(this.paddle.tilt||0)));}
   for(const b of this.balls){
    let supported=false;
    const steps=Math.max(1,Math.ceil((Math.hypot(b.vx,b.vy)+2000*dt)*dt/(b.r*.45))),h=dt/steps;
@@ -128,7 +134,7 @@ export class Game{
 
     }
     const previous={...b};advanceFree(b,h,ax,ay);
-    const activePaddle={...this.paddle,x:oldPaddleX+this.paddle.vx*h*(sub+1)};if(this.paddleEnabled&&!this.safetyReturn&&!this.goalComplete&&this.targets.length>0&&catchPaddle(b,previous,activePaddle,h)){this.energize(b,{x:0,y:-1},18000);this.stats.paddleHits++;this.paddle.flash=.15;this.trackPaddleOrbit(previous);}
+    const activePaddle={...this.paddle,x:oldPaddleX+this.paddle.vx*h*(sub+1)};if(this.paddleEnabled&&!this.safetyReturn&&!this.goalComplete&&this.targets.length>0&&catchPaddle(b,previous,activePaddle,h)){this.energize(b,{x:0,y:-1},this.paddle.boost||18000);this.paddle.boost=18000;this.stats.paddleHits++;this.paddle.flash=.15;this.trackPaddleOrbit(previous);}
     for(const t of this.treasures)if(t.life>0&&sweptPickup(previous,b,t))this.collectTreasure(t);
     if(b.x<18+b.r){b.x=18+b.r;if(reflect(b,{x:1,y:0},restitution))this.wallCharge(b,'left');}if(b.x>402-b.r){b.x=402-b.r;if(reflect(b,{x:-1,y:0},restitution))this.wallCharge(b,'right');}if(b.y<112+b.r){b.y=112+b.r;reflect(b,{x:0,y:1},restitution);}
     if(!this.safetyReturn){

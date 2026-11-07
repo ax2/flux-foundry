@@ -4,11 +4,19 @@
 
 **[在线游玩](https://ax2.github.io/flux-foundry/)** · **[Windows 下载](https://github.com/ax2/flux-foundry/releases)** · MIT
 
-![手机画面](docs/iterations/Stage-09/390x844.png)
+![手机画面](docs/iterations/Stage-10/390x844.png)
 
-## v0.9.0 自然回放与稳定进度
+## v0.10.0 即刻开局与球路脱困
 
-v0.9.0已发布，公开版本与验收记录见[阶段日志](docs/iterations/Stage-09/worklog.md)。Stage-08的简化挡板玩法纳入本轮，v0.8.0未独立发布。
+本地验收完成，发布状态见[Stage-10日志](docs/iterations/Stage-10/worklog.md)。
+
+- 首屏图片由3.40MB压到约252KB，减少92.6%；场地先以可玩备用材质出现，贴图按真实字节显示进度，失败可重试。
+- 无进展时可见挡板参考气流与障碍调整机械面、准备有上限的供能，保持不限接球与自然落底。
+- 1Mbps/100ms、禁用缓存的受控对照：旧版约27.85秒才出场地，新版约0.6秒先出场地、2.7秒材质完成；不是所有网络/设备的保证。
+
+## 自然回放与稳定进度
+
+v0.9.0为上一公开版本；当前修复继续保留已存星级。Stage-08的简化挡板玩法纳入本轮，v0.8.0未独立发布。
 
 - 正式三星路线只使用合法选珠与瞄准，原球自然落底；不再调用隐藏收球。
 - 无进展的重复球路触发可见挡板微倾，改变下一次碰撞法线；接球次数不设上限。
@@ -33,11 +41,11 @@ v0.9.0已发布，公开版本与验收记录见[阶段日志](docs/iterations/S
 
 ## 交付与验证
 
-Windows x64：`Flux-Foundry-0.9.0-Windows-x64.exe` 便携启动，本地保留 `releases/v0.9.0/win-unpacked/` 完整运行目录，无游戏ZIP。手机为触屏Web/PWA，首次联网加载后可离线重开；未交付APK/iOS原生包。Windows未签名，实体手机/低端性能仍待验收。
+Windows x64：`Flux-Foundry-0.10.0-Windows-x64.exe` 便携启动，本地保留 `releases/v0.10.0/win-unpacked/` 完整运行目录，无游戏ZIP。手机为触屏Web/PWA，首次联网加载后可离线重开；未交付APK/iOS原生包。Windows未签名，实体手机/低端性能仍待验收。
 
-本阶段：66逻辑测试与构建通过；52套正常/镜像三星回放均由自然落底结束；936组首球检查未移动挡板，均自然结束，最长无有效命中间隔24.20模拟秒以内。117项三视口UI检查、两轮10局触控自然通关与Windows完整目录/便携EXE启动通过；共25颗193接球29宝物，最长单颗约107秒。一次中间观察超限的未知原因保留在阶段评估中。算法控制与模拟样本不代表真人胜率。
+本阶段：76项逻辑与构建、117项三视口、16项加载检查；52套自然三星回放、936居中首球、1872主动首球与120完整算法对局通过。触控UI 8局15颗全部通关，无观察超限，最长连续无命中23.30秒。Windows完整目录与便携EXE均启动并确认贴图加载。算法控制不代表真人胜率或实体手机性能；观察上限仅在工具中记录失败，不会结束球。
 
-[当前设计](docs/iterations/Stage-09/design.md) · [阶段日志](docs/iterations/Stage-09/worklog.md) · [阶段计划](docs/roadmap.md)
+[当前设计](docs/iterations/Stage-10/design.md) · [本轮评估](docs/iterations/Stage-10/assessment.md) · [工作日志](docs/iterations/Stage-10/worklog.md)
 
 ## 开发
 

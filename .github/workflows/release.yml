@@ -27,6 +27,7 @@ jobs:
         env:
           ELECTRON_BUILDER_COMPRESSION_LEVEL: '1'
       - run: node scripts/desktop-smoke.mjs
+      - run: node scripts/desktop-smoke.mjs --portable
       - name: Publish EXE and checksums (no game ZIP)
         shell: pwsh
         env:

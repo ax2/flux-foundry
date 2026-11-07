@@ -1,6 +1,6 @@
 {
   "name": "flux-foundry",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "private": true,
   "description": "A tactile single-ball portrait ricochet game with realistic physics and numbered durability",
   "author": "ax2",
@@ -16,7 +16,10 @@
     "desktop": "electron .",
     "package:win": "npm run build && electron-builder --win portable --x64 --publish never",
     "test:play": "node scripts/paddle-play.mjs",
-    "test:endurance": "tsx scripts/arcade-endurance.ts"
+    "test:endurance": "tsx scripts/arcade-endurance.ts",
+    "test:loading": "node scripts/loading-test.mjs",
+    "test:active": "tsx scripts/active-endurance.ts",
+    "test:full": "tsx scripts/full-endurance.ts"
   },
   "devDependencies": {
     "typescript": "~5.9.3",

@@ -1,7 +1,7 @@
 import {reflect,type Body} from './physics';
 export type TreasureKind='life'|'wide'|'slow';
 export type Treasure={id:number;x:number;y:number;r:number;kind:TreasureKind;life:number};
-export type Paddle={x:number;target:number;width:number;vx:number;flash:number;tilt?:number};
+export type Paddle={x:number;target:number;width:number;vx:number;flash:number;tilt?:number;boost?:number};
 export const PADDLE_Y=675;
 // Curved metal face. Surface slope determines the normal, so off-centre catches steer naturally.
 export function catchPaddle(b:Body,previous:Body,p:Paddle,dt:number){
