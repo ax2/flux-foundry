@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-07",
+  "source": "3b539af665eadbf3fcfe6f6f99a3e9c3e138776e",
+  "release": {
+    "assets": [
+      {
+        "digest": "sha256:76abf9d0780a2235f176f556d77cae9e610376b63406ebd90c458665fde80349",
+        "name": "Flux-Foundry-0.5.0-Windows-x64.exe",
+        "size": 137420229,
+        "url": "https://github.com/ax2/flux-foundry/releases/download/v0.5.0/Flux-Foundry-0.5.0-Windows-x64.exe"
+      },
+      {
+        "digest": "sha256:716da3658413ad32f05afa6476e3588f0e1156473f7b29015b75c38c2a97c9bd",
+        "name": "SHA256SUMS.txt",
+        "size": 102,
+        "url": "https://github.com/ax2/flux-foundry/releases/download/v0.5.0/SHA256SUMS.txt"
+      }
+    ],
+    "draft": false,
+    "prerelease": false,
+    "tag": "v0.5.0",
+    "url": "https://github.com/ax2/flux-foundry/releases/tag/v0.5.0"
+  },
+  "localExeSha256": "76abf9d0780a2235f176f556d77cae9e610376b63406ebd90c458665fde80349",
+  "validate": 42341654369,
+  "pages": 42341627720,
+  "windows": 42341859212,
+  "checks": [
+    "58 logic tests",
+    "153 UI checks",
+    "48 normal/mirror replay routes",
+    "2592 challenge natural collections",
+    "864 paired expedition first shots",
+    "72 complete scripted expeditions",
+    "3 real-time UI games / 21 shots",
+    "Windows full-folder smoke",
+    "Windows portable manual launch and pulse",
+    "public Chrome version/loadout/single ball/pulse",
+    "remote asset digest equals local"
+  ],
+  "workflowConclusion": "All three workflows succeeded"
+}
