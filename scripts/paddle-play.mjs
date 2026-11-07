@@ -6,7 +6,7 @@ const url=process.env.PLAY_URL||'http://127.0.0.1:4187';
 const server=process.env.PLAY_URL?null:spawn(process.execPath,['node_modules/vite/bin/vite.js','preview','--host','127.0.0.1','--port','4187'],{stdio:'ignore'});
 for(let i=0;i<60;i++){try{if((await fetch(url)).ok)break;}catch{}await new Promise(r=>setTimeout(r,200));}
 let browser;const sessions=[],errors=[];
-const output=process.env.PLAY_OUTPUT||'test-results/paddle-play';await mkdir(output,{recursive:true});
+const output=process.env.PLAY_OUTPUT||`test-results/paddle-play/${new Date().toISOString().replace(/[:.]/g,'-')}`;await mkdir(output,{recursive:true});console.log(JSON.stringify({output}));
 try{
  browser=await chromium.launch({channel:process.env.PLAYWRIGHT_CHANNEL||(process.platform==='win32'?'chrome':undefined),headless:true});
  const selected=process.argv.find(a=>a.startsWith('--level='));
