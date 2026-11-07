@@ -42,6 +42,7 @@ try{
   check(`${width}: challenge starts with a shot budget`,await page.evaluate(()=>window.fluxSnapshot().mode==='challenge'&&window.fluxSnapshot().remainingShots===5));
   const move=solutions[0].moves[0],box=await page.locator('#game').boundingBox();const px=box.x+(210+Math.cos(move.angle)*180)/420*box.width,py=box.y+(132+Math.sin(move.angle)*180)/720*box.height;
   await page.mouse.move(px,py);await page.mouse.down();await page.mouse.up();await page.waitForFunction(()=>window.fluxSnapshot().shots===1);
+  await page.waitForFunction(()=>window.fluxSnapshot().phase==='volley'&&document.querySelector('#workshop').disabled,{},{timeout:3000});
   check(`${width}: flying ball cannot be changed`,await page.locator('#workshop').isDisabled());check(`${width}: ceramic cannot activate magnet`,await page.locator('#magnet').isDisabled());
   await page.waitForFunction(()=>window.fluxSnapshot().targets===0,{},{timeout:20000});if(await page.evaluate(()=>window.fluxSnapshot().phase==='volley'))await page.locator('#recall').click();
   await page.locator('#nextLevel').waitFor();check(`${width}: actual shot wins and stores three stars`,await page.evaluate(()=>window.fluxSnapshot().phase==='won'&&window.fluxSnapshot().records[0].stars===3));await page.screenshot({path:`test-results/win-${width}x${height}.png`});
