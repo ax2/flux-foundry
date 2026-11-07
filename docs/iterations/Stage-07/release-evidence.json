@@ -1,0 +1,40 @@
+{
+  "source": "f8ead45da5cab109efaf1dd4a2b53df6d9848ced",
+  "release": {
+    "assets": [
+      {
+        "digest": "sha256:89d03db76b917d04d6ec192343bdbed8f904b7d44cc1ed0237b3cd867922efe9",
+        "name": "Flux-Foundry-0.7.0-Windows-x64.exe",
+        "size": 137421702,
+        "url": "https://github.com/ax2/flux-foundry/releases/download/v0.7.0/Flux-Foundry-0.7.0-Windows-x64.exe"
+      },
+      {
+        "digest": "sha256:1ddf9543f62e9563fb6bf170ff9881ea6b5be1233a95bc4666cb12d0209e7481",
+        "name": "SHA256SUMS.txt",
+        "size": 102,
+        "url": "https://github.com/ax2/flux-foundry/releases/download/v0.7.0/SHA256SUMS.txt"
+      }
+    ],
+    "draft": false,
+    "prerelease": false,
+    "tag": "v0.7.0",
+    "url": "https://github.com/ax2/flux-foundry/releases/tag/v0.7.0"
+  },
+  "sha256": "89d03db76b917d04d6ec192343bdbed8f904b7d44cc1ed0237b3cd867922efe9",
+  "validate": 42355838065,
+  "pages": 42355837998,
+  "windows": 42356073437,
+  "checks": [
+    "62 logic tests",
+    "167 UI checks",
+    "52 challenge routes",
+    "2808 natural collections",
+    "9 complete UI games, 90 balls, 182 pulses, candidate/final separately recorded",
+    "12 loadout controlled upgrade comparison",
+    "250ms delayed critical rescue before/after",
+    "Windows full folder and portable launch",
+    "public Chrome version and pulse",
+    "remote EXE digest equals local"
+  ],
+  "workflowConclusion": "All three succeeded"
+}
