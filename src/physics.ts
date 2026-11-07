@@ -1,9 +1,13 @@
 export type Vec={x:number;y:number};
 export type Body=Vec&{vx:number;vy:number;r:number};
-export type Target=Vec&{id:number;kind:'steel'|'prism'|'capacitor';size:number;hp:number;maxHp:number;flash:number};
+export type BlockKind='steel'|'prism'|'capacitor'|'diamond'|'hexagon'|'bar';
+export type Target=Vec&{id:number;kind:BlockKind;size:number;hp:number;maxHp:number;flash:number;power?:'spring'|'switch';core?:boolean};
 export const dot=(a:Vec,b:Vec)=>a.x*b.x+a.y*b.y;
 export function vertices(t:Target):Vec[]{
  const r=t.size/2;
+ if(t.kind==='diamond')return [{x:t.x,y:t.y-r},{x:t.x+r,y:t.y},{x:t.x,y:t.y+r},{x:t.x-r,y:t.y}];
+ if(t.kind==='hexagon')return Array.from({length:6},(_,i)=>({x:t.x+Math.cos(-Math.PI/2+i*Math.PI/3)*r,y:t.y+Math.sin(-Math.PI/2+i*Math.PI/3)*r}));
+ if(t.kind==='bar')return [{x:t.x-r,y:t.y-r*.25},{x:t.x+r,y:t.y-r*.25},{x:t.x+r,y:t.y+r*.25},{x:t.x-r,y:t.y+r*.25}];
  return t.kind==='prism'?[{x:t.x,y:t.y-r},{x:t.x+r,y:t.y+r},{x:t.x-r,y:t.y+r}]:[{x:t.x-r,y:t.y-r},{x:t.x+r,y:t.y-r},{x:t.x+r,y:t.y+r},{x:t.x-r,y:t.y+r}];
 }
 // Frictionless contact: normal energy is reduced, tangential velocity is preserved.

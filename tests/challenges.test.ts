@@ -8,3 +8,8 @@ test('every shipped challenge has a replayable solution within its three-star bu
  assert.equal(solutions.length,LEVELS.length);
  for(const solution of solutions){const g=new Game(1000+solution.level,solution.level);for(const m of solution.moves){assert.ok(g.selectBall(m.material,m.size));g.angle=m.angle;assert.ok(g.fire());for(let i=0;i<m.steps;i++){g.update(STEP);for(const b of g.balls)assert.ok([b.x,b.y,b.vx,b.vy].every(Number.isFinite));}if(m.recall)g.recall();}assert.equal(g.phase,'won',g.level.name);assert.equal(g.stars,3,g.level.name);assert.equal(g.shots,solution.shots);}
 });
+
+test('daily mirrored layouts have independent replayable solutions',()=>{
+ const mirrored=JSON.parse(readFileSync(new URL('./fixtures/challenges-mirrored.json',import.meta.url),'utf8')) as typeof solutions;assert.equal(mirrored.length,LEVELS.length);
+ for(const solution of mirrored){const g=new Game(1000+solution.level,solution.level);g.mirror();for(const m of solution.moves){g.selectBall(m.material,m.size);g.angle=m.angle;g.fire();for(let i=0;i<m.steps;i++)g.update(STEP);if(m.recall)g.recall();}assert.equal(g.phase,'won',g.level.name+' mirrored');}
+});

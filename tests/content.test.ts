@@ -23,17 +23,17 @@ test('passive pegs reflect without damage, scoring, or extra energy',()=>{
  const g=new Game(1);g.targets=[];g.pegs=[{x:210,y:400,r:20}];g.fire();Object.assign(g.balls[0],{x:210,y:366,vx:0,vy:400});g.update(STEP);assert.ok(g.balls[0].vy<0);assert.ok(Math.abs(g.balls[0].vy)<402);assert.equal(g.score,0);assert.equal(g.combo,0);
 });
 test('challenge layouts are isolated and remain fixed across shots',()=>{
- const g=new Game(1,4),other=new Game(1,4),original=JSON.stringify(other.targets);g.fire();g.recall();assert.equal(JSON.stringify(g.targets),original);assert.equal(g.remainingShots,LEVELS[4].shots-1);g.targets[0].hp=0;g.air[0].fx=999;assert.equal(JSON.stringify(other.targets),original);assert.equal(LEVELS[4].air[0].fx,65);
+ const g=new Game(1,6),other=new Game(1,6),original=JSON.stringify(other.targets);g.fire();g.recall();assert.equal(JSON.stringify(g.targets),original);assert.equal(g.remainingShots,LEVELS[6].shots-1);g.targets[0].hp=0;g.air[0].fx=999;assert.equal(JSON.stringify(other.targets),original);assert.equal(LEVELS[6].air[0].fx,55);
 });
 test('clearing the final target does not delete the ball; collection awards a win',()=>{
  const g=new Game(1,0);g.fire();const b=g.balls[0];g.targets=[];g.update(STEP);assert.equal(g.phase,'volley');assert.equal(g.balls[0],b);Object.assign(b,{x:210,y:710,vx:0,vy:10});g.update(STEP);assert.equal(g.phase,'won');assert.equal(g.stars,3);assert.equal(g.fire(),false);
 });
 test('shot budgets include manual recall and permit a final-shot win',()=>{
- const g=new Game(1,0);for(let i=0;i<g.level.shots-1;i++){g.fire();g.recall();}g.fire();assert.equal(g.remainingShots,0);assert.equal(g.phase,'volley');g.targets=[];g.recall();assert.equal(g.phase,'won');assert.equal(g.stars,1);
+ const g=new Game(1,0);for(let i=0;i<g.level.shots-1;i++){g.fire();g.recall();}g.fire();assert.equal(g.remainingShots,0);assert.equal(g.phase,'volley');g.targets=[];g.recall();assert.equal(g.phase,'won');assert.equal(g.stars,g.shots<=g.level.par+2?2:1);
  const failed=new Game(1,0);for(let i=0;i<failed.level.shots;i++){failed.fire();failed.recall();}assert.equal(failed.phase,'over');assert.equal(failed.stars,0);assert.equal(failed.fire(),false);
 });
 test('star tiers reflect shot efficiency',()=>{
- const g=new Game(1,11);g.phase='won';for(const [shots,stars] of [[3,3],[4,2],[5,2],[6,1]]){g.shots=shots;assert.equal(g.stars,stars);}
+ const g=new Game(1,11);g.phase='won';for(const [shots,stars] of [[g.level.par,3],[g.level.par+1,2],[g.level.par+2,2],[g.level.par+3,1]]){g.shots=shots;assert.equal(g.stars,stars);}
 });
 test('endless mode introduces mechanisms without overlapping the initial danger line',()=>{
  const g=new Game(1);g.wave=4;g.setEndlessMechanisms();assert.equal(g.pegs.length,1);assert.equal(g.air.length,0);g.wave=6;g.setEndlessMechanisms();assert.equal(g.air.length,1);assert.ok(g.pegs[0].y-g.pegs[0].r>184);
