@@ -35,7 +35,7 @@ export class Renderer{
   }
   if(t.anchor){c.strokeStyle='#f4d49b';c.lineWidth=2;for(const dx of [-1,1])for(const dy of [-1,1]){const x=t.x+dx*t.size*.29,y=t.y+dy*t.size*.29;c.fillStyle='#544732';c.beginPath();c.arc(x,y,3,0,Math.PI*2);c.fill();c.stroke();}}
  }
- draw(g:Game,time:number,reduced:boolean,aiming:boolean){const c=this.ctx;c.setTransform(this.canvas.width/W,0,0,this.canvas.height/H,0,0);c.clearRect(0,0,W,H);
+ draw(g:Game,time:number,reduced:boolean,aiming:boolean,gesture:{start:{x:number;y:number};end:{x:number;y:number};direction:{x:number;y:number}}|null=null){const c=this.ctx;c.setTransform(this.canvas.width/W,0,0,this.canvas.height/H,0,0);c.clearRect(0,0,W,H);
   if(this.arena.complete&&this.arena.naturalWidth)c.drawImage(this.arena,0,0,W,H);else{c.fillStyle='#171d20';c.fillRect(0,0,W,H);}
   // Reserve marbles occupy the existing triangular hopper, with no extra HUD row.
   g.queue.slice(g.shots).forEach((q,i)=>{const p=HOPPER_SLOTS[i];this.ball(q.material,p.x,p.y,SIZES[q.size].radius);if(i===0){c.strokeStyle='#eec789';c.lineWidth=1;c.beginPath();c.arc(p.x,p.y,SIZES[q.size].radius+3,0,Math.PI*2);c.stroke();}});
@@ -57,7 +57,8 @@ export class Renderer{
   for(const b of g.balls){if(g.rescuePulse){c.save();c.strokeStyle='#9ceeff';c.lineWidth=2;c.beginPath();c.moveTo(b.x-16,b.y+28);c.lineTo(b.x-6,b.y+8);c.moveTo(b.x+16,b.y+28);c.lineTo(b.x+6,b.y+8);c.stroke();c.restore();}this.ball(g.material,b.x,b.y,b.r);}
   if(g.safetyReturn||g.rescuePulse||g.goalComplete){c.fillStyle=g.goalComplete?'#e8b6ff':'#a7f5ff';c.textAlign='center';c.font='12px Segoe UI';c.fillText(g.safetyReturn?'救援通道开启 · 积木已退让':g.rescuePulse?'脱困气脉冲运行中':'目标完成 · 落底或收球后结算',210,215);}
   if(!reduced)for(const p of g.effects){c.save();c.globalAlpha=p.life/p.max;c.strokeStyle=p.color;c.fillStyle=p.color;c.shadowColor=p.color;c.shadowBlur=8;if(p.ring){c.lineWidth=1.5;c.beginPath();c.arc(p.x,p.y,8+(1-p.life/p.max)*43,0,Math.PI*2);c.stroke();}else c.fillRect(p.x,p.y,2.5,2.5);c.restore();}
-  if(g.liftTime>0){c.save();c.strokeStyle='#c7efff';c.lineWidth=2;c.globalAlpha=.7;for(let i=0;i<9;i++){const x=58+i*38,y=650-(reduced?0:(time*180+i*17)%80);c.beginPath();c.moveTo(x,y);c.bezierCurveTo(x-5,y-12,x+4,y-25,x,y-40);c.stroke();}c.restore();}
+  if(g.liftTime>0){c.save();c.translate(210,500);c.rotate(Math.atan2(g.pulseDirection.y,g.pulseDirection.x)+Math.PI/2);c.translate(-210,-500);c.strokeStyle=g.fieldLevel?'#ddbdff':'#c7efff';c.lineWidth=2+Math.min(2,g.fieldLevel);c.globalAlpha=.7;for(let i=0;i<9;i++){const x=58+i*38,y=650-(reduced?0:(time*180+i*17)%80);c.beginPath();c.moveTo(x,y);c.bezierCurveTo(x-5,y-12,x+4,y-25,x,y-40);c.stroke();}c.restore();}
+  if(gesture){const p=gesture.start,n=gesture.direction;c.save();c.translate(p.x,p.y);c.strokeStyle='#a8f5ff';c.lineWidth=2;c.beginPath();c.arc(0,0,27,0,Math.PI*2);c.stroke();c.rotate(Math.atan2(n.y,n.x));c.fillStyle='#dbfbff';c.beginPath();c.moveTo(35,0);c.lineTo(22,-6);c.lineTo(22,6);c.closePath();c.fill();c.restore();c.fillStyle='#bdf5ff';c.font='14px Segoe UI';c.textAlign='center';c.fillText('滑动定向 · 松手施放',210,212);}
   if(g.phase==='volley'){c.fillStyle='#f9bd72';c.font='600 15px "Bahnschrift",sans-serif';c.fillText(`${g.combo} 连击`,210,145);}
  }
 }

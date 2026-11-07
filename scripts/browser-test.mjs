@@ -16,6 +16,7 @@ try{
   check(`${width}: no horizontal overflow`,await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
   check(`${width}: controls fit viewport`,await page.locator('.console').evaluate(el=>el.getBoundingClientRect().bottom<=innerHeight+1));
   await page.screenshot({path:`test-results/${width}x${height}.png`});
+  if(width<500){await page.locator('#game').tap({position:{x:100,y:180}});check(`${width}: an aim tap cannot accidentally fire the next marble`,await page.evaluate(()=>window.fluxSnapshot().shots===0));}
   if(width<500){const box=await page.locator('#game').boundingBox();const cdp=await context.newCDPSession(page);const x=box.x+box.width*.5,y=box.y+box.height*.4;
    await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x,y}]});
    await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x:x+30,y:y+60}]});
@@ -23,7 +24,13 @@ try{
   }else{await page.locator('#game').press('Space');}
   await page.waitForFunction(()=>window.fluxSnapshot().phase==='volley');check(`${width}: exactly one ball`,await page.evaluate(()=>window.fluxSnapshot().balls===1&&window.fluxSnapshot().count===1));check(`${width}: pointer/keyboard fires`,true);
   await page.locator('#speed').click();await page.locator('#speed').click();check(`${width}: speed cycles to four with an open bottom`,await page.evaluate(()=>window.fluxSnapshot().speed===4&&window.fluxSnapshot().bottomCharges===0));
-  if(width<500)await page.locator('#game').tap({position:{x:80,y:130}});else await page.locator('#game').press('Space');
+  if(width<500){const r=await page.locator('#game').boundingBox(),cdp=await context.newCDPSession(page),x=r.x+r.width*.4,y=r.y+r.height*.45;
+   await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x,y}]});await page.waitForTimeout(200);
+   check(`${width}: holding slows to precision aim without spending a pulse`,await page.evaluate(()=>window.fluxSnapshot().steering&&window.fluxSnapshot().effectiveSpeed===.18&&!window.fluxSnapshot().pulseUsed));
+   await cdp.send('Input.dispatchTouchEvent',{type:'touchCancel',touchPoints:[]});check(`${width}: cancellation preserves charges`,await page.evaluate(()=>!window.fluxSnapshot().steering&&window.fluxSnapshot().pulseCharges===2));
+   await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x,y}]});await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x:x+45,y:y-45}]});await page.screenshot({path:`test-results/steering-${width}x${height}.png`});await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});
+   check(`${width}: swipe direction applies on release`,await page.evaluate(()=>window.fluxSnapshot().pulseDirection.x>0&&window.fluxSnapshot().pulseDirection.y<0));
+  }else await page.locator('#game').press('Space');
   check(`${width}: in-flight touch or keyboard activates one manual pulse`,await page.evaluate(()=>window.fluxSnapshot().pulseUsed&&window.fluxSnapshot().stats.pulses===1));await page.locator('#game').press('Space');check(`${width}: repeated pulse cannot add charges or marbles`,await page.evaluate(()=>window.fluxSnapshot().stats.pulses===1&&window.fluxSnapshot().balls===1&&window.fluxSnapshot().shots===1));
   check(`${width}: pulse restores normal speed`,await page.evaluate(()=>window.fluxSnapshot().speed===1));
   await page.locator('#magnet').click();await page.locator('#game').press('m');
@@ -31,7 +38,7 @@ try{
   await page.locator('#pause').click();const before=await page.evaluate(()=>window.fluxSnapshot());await page.waitForTimeout(250);const after=await page.evaluate(()=>window.fluxSnapshot());check(`${width}: pause freezes state`,JSON.stringify(before)===JSON.stringify(after));
   await page.locator('#resume').click();await page.locator('#recall').click();await page.locator('#game').press('Space');await page.locator('#game').press('r');
   await page.screenshot({path:`test-results/upgrades-${width}x${height}.png`});check(`${width}: upgrade preview shows capacity increase`,await page.locator('[data-upgrade=magnet]').textContent().then(t=>t.includes('2 → 3')));
-  await page.getByRole('button',{name:/脉冲扩容/}).click();check(`${width}: upgrade persists`,await page.evaluate(()=>window.fluxSnapshot().fieldStrength===1.2&&window.fluxSnapshot().power===1));
+  await page.getByRole('button',{name:/脉冲扩容/}).click();check(`${width}: upgrade persists`,await page.evaluate(()=>window.fluxSnapshot().fieldStrength===1.2&&window.fluxSnapshot().power===1&&window.fluxSnapshot().pulseCharges===3));
   for(let i=0;i<12;i++){const phase=await page.evaluate(()=>window.fluxSnapshot().phase);if(phase==='over')break;if(phase==='upgrade')await page.getByRole('button',{name:/精密回弹/}).click();await page.locator('#game').press('Space');await page.locator('#game').press('r');}
   await page.locator('#restart').click();check(`${width}: restart resets`,await page.evaluate(()=>window.fluxSnapshot().wave===1&&window.fluxSnapshot().score===0));
   await page.locator('#help').click();await page.getByRole('button',{name:'开始弹射'}).click();check(`${width}: help resumes`,await page.evaluate(()=>!window.fluxSnapshot().paused));

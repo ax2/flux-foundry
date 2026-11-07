@@ -1,0 +1,306 @@
+{
+  "games": 9,
+  "balls": 90.0,
+  "pulses": 182.0,
+  "wins": 2,
+  "maxSeconds": 260.07499999976346,
+  "sessions": [
+    {
+      "file": "mobile-sessions.json",
+      "config": {
+        "width": 390,
+        "height": 844,
+        "level": 25
+      },
+      "shots": 10,
+      "result": "over",
+      "pulses": 14.0,
+      "hits": 28.0,
+      "maxSeconds": 16.916666666666348,
+      "upgrades": []
+    },
+    {
+      "file": "mobile-sessions.json",
+      "config": {
+        "width": 320,
+        "height": 568,
+        "level": 18
+      },
+      "shots": 8,
+      "result": "over",
+      "pulses": 8.0,
+      "hits": 18.0,
+      "maxSeconds": 13.524999999999872,
+      "upgrades": []
+    },
+    {
+      "file": "mobile-sessions.json",
+      "config": {
+        "width": 390,
+        "height": 844,
+        "level": 23
+      },
+      "shots": 12,
+      "result": "over",
+      "pulses": 15.0,
+      "hits": 32.0,
+      "maxSeconds": 13.249999999999888,
+      "upgrades": []
+    },
+    {
+      "file": "mobile-sessions.json",
+      "config": {
+        "width": 390,
+        "height": 844,
+        "upgrade": "elastic"
+      },
+      "shots": 12,
+      "result": "over",
+      "pulses": 39.0,
+      "hits": 352.0,
+      "maxSeconds": 57.024999999948136,
+      "upgrades": [
+        {
+          "wave": 3,
+          "choice": "elastic",
+          "before": {
+            "elastic": 0,
+            "capacity": 2,
+            "pressure": 0
+          },
+          "after": {
+            "elastic": 1,
+            "capacity": 2,
+            "pressure": 0
+          }
+        },
+        {
+          "wave": 6,
+          "choice": "elastic",
+          "before": {
+            "elastic": 1,
+            "capacity": 2,
+            "pressure": 0
+          },
+          "after": {
+            "elastic": 2,
+            "capacity": 2,
+            "pressure": 0
+          }
+        },
+        {
+          "wave": 9,
+          "choice": "elastic",
+          "before": {
+            "elastic": 2,
+            "capacity": 2,
+            "pressure": 0
+          },
+          "after": {
+            "elastic": 3,
+            "capacity": 2,
+            "pressure": 0
+          }
+        },
+        {
+          "wave": 12,
+          "choice": "elastic",
+          "before": {
+            "elastic": 3,
+            "capacity": 2,
+            "pressure": 0
+          },
+          "after": {
+            "elastic": 4,
+            "capacity": 2,
+            "pressure": 0
+          }
+        }
+      ]
+    },
+    {
+      "file": "mobile-sessions-magnet.json",
+      "config": {
+        "width": 320,
+        "height": 568,
+        "upgrade": "magnet"
+      },
+      "shots": 12,
+      "result": "over",
+      "pulses": 41.0,
+      "hits": 267.0,
+      "maxSeconds": 80.34999999992692,
+      "upgrades": [
+        {
+          "wave": 3,
+          "choice": "magnet",
+          "before": {
+            "elastic": 0,
+            "capacity": 2,
+            "pressure": 0
+          },
+          "after": {
+            "elastic": 0,
+            "capacity": 3,
+            "pressure": 0
+          }
+        },
+        {
+          "wave": 6,
+          "choice": "magnet",
+          "before": {
+            "elastic": 0,
+            "capacity": 3,
+            "pressure": 0
+          },
+          "after": {
+            "elastic": 0,
+            "capacity": 4,
+            "pressure": 0
+          }
+        },
+        {
+          "wave": 9,
+          "choice": "magnet",
+          "before": {
+            "elastic": 0,
+            "capacity": 4,
+            "pressure": 0
+          },
+          "after": {
+            "elastic": 0,
+            "capacity": 5,
+            "pressure": 0
+          }
+        },
+        {
+          "wave": 12,
+          "choice": "magnet",
+          "before": {
+            "elastic": 0,
+            "capacity": 5,
+            "pressure": 0
+          },
+          "after": {
+            "elastic": 0,
+            "capacity": 6,
+            "pressure": 0
+          }
+        }
+      ]
+    },
+    {
+      "file": "mobile-sessions-field.json",
+      "config": {
+        "width": 390,
+        "height": 844,
+        "upgrade": "field"
+      },
+      "shots": 12,
+      "result": "over",
+      "pulses": 27.0,
+      "hits": 363.0,
+      "maxSeconds": 260.07499999976346,
+      "upgrades": [
+        {
+          "wave": 3,
+          "choice": "field",
+          "before": {
+            "elastic": 0,
+            "capacity": 2,
+            "pressure": 0
+          },
+          "after": {
+            "elastic": 0,
+            "capacity": 2,
+            "pressure": 1
+          }
+        },
+        {
+          "wave": 6,
+          "choice": "field",
+          "before": {
+            "elastic": 0,
+            "capacity": 2,
+            "pressure": 1
+          },
+          "after": {
+            "elastic": 0,
+            "capacity": 2,
+            "pressure": 2
+          }
+        },
+        {
+          "wave": 9,
+          "choice": "field",
+          "before": {
+            "elastic": 0,
+            "capacity": 2,
+            "pressure": 2
+          },
+          "after": {
+            "elastic": 0,
+            "capacity": 2,
+            "pressure": 3
+          }
+        },
+        {
+          "wave": 12,
+          "choice": "field",
+          "before": {
+            "elastic": 0,
+            "capacity": 2,
+            "pressure": 3
+          },
+          "after": {
+            "elastic": 0,
+            "capacity": 2,
+            "pressure": 4
+          }
+        }
+      ]
+    },
+    {
+      "file": "mobile-sessions-challenges-targeted.json",
+      "config": {
+        "width": 390,
+        "height": 844,
+        "level": 25
+      },
+      "shots": 6,
+      "result": "won",
+      "pulses": 9.0,
+      "hits": 35.0,
+      "maxSeconds": 14.141666666665865,
+      "upgrades": []
+    },
+    {
+      "file": "mobile-sessions-challenges-targeted.json",
+      "config": {
+        "width": 320,
+        "height": 568,
+        "level": 18
+      },
+      "shots": 6,
+      "result": "won",
+      "pulses": 9.0,
+      "hits": 25.0,
+      "maxSeconds": 11.891666666665992,
+      "upgrades": []
+    },
+    {
+      "file": "mobile-sessions-challenges-targeted.json",
+      "config": {
+        "width": 390,
+        "height": 844,
+        "level": 23
+      },
+      "shots": 12,
+      "result": "over",
+      "pulses": 20.0,
+      "hits": 49.0,
+      "maxSeconds": 13.041666666665929,
+      "upgrades": []
+    }
+  ]
+}

@@ -4,15 +4,15 @@
 
 **在线游玩：[ax2.github.io/flux-foundry](https://ax2.github.io/flux-foundry/)** · **[Windows 下载](https://github.com/ax2/flux-foundry/releases)** · MIT
 
-![桌面实机画面](docs/iterations/Stage-06/1440x1000.png)
+![桌面实机画面](docs/iterations/Stage-07/1440x1000.png)
 
-## v0.6.0 主动操控更新
+## v0.7.0 手机操作与救球
 
-- 底部完全开放。飞行中点目标位置施加定向气脉冲，或点↑/空格向上推；所有材质可用，每球初始2次，每8命中补1次、最多补2次。
-- ▶切换1/2/4倍速；使用技能自动恢复1倍，物理保持固定步长。
-- 清理场内和操作区小字，以图标与余量显示操作，详细规则在帮助中。
-- 三选一重做：精密回弹同时提高蓄能供能，脉冲扩容增加每颗操作次数，高压气室增强推力；金/青/紫卡片显示升级前后差异。
-- 新增风阀借力、双锁蓄能室，共26关，52套正常/镜像三星路线。[阶段设计](docs/iterations/Stage-06/design.md) / [更新说明](docs/iterations/Stage-06/v0.6.0.md)。
+- 飞行时轻点救球，按住慢瞄、滑动定向、松手施放，取消不消耗次数。手机待发短点不会误发下一颗。
+- 高速危险下落提供短暂慢镜头；即将撞到支点时继续加速。↑按下即施放，减少操作延迟。
+- 原选珠栏显示增强等级，扩容后立即刷新下一颗余量；脉冲特效与施力方向一致。
+- 微调双锁蓄能室数字，保留高耐久供能支点。累计9局90颗UI实玩，最终按机关顺序选择入口时第19、26关各6颗通关，第24关仍失败。
+- [实玩与验收记录](docs/iterations/Stage-07/assessment.md) / [更新说明](docs/iterations/Stage-07/v0.7.0.md)。浏览器模拟并非真机手感或玩家胜率证据。
 
 ## 游戏内容
 
@@ -40,7 +40,7 @@
 
 ## 运行与平台
 
-Windows x64：Release 的 `Flux-Foundry-0.6.0-Windows-x64.exe` 为便携启动程序，直接双击。完整运行目录保留在本地 `releases/v0.6.0/win-unpacked/`；没有生成游戏 ZIP。初版未签名。
+Windows x64：Release 的 `Flux-Foundry-0.7.0-Windows-x64.exe` 为便携启动程序，直接双击。完整运行目录保留在本地 `releases/v0.7.0/win-unpacked/`；没有生成游戏 ZIP。初版未签名。
 
 手机：打开在线地址，竖屏触控游玩。首次联网加载后可离线重开；支持的浏览器可添加到主屏幕。此阶段交付手机 Web/PWA，未交付 Android APK 或 iOS 原生安装包。真实 Android/iOS 设备兼容性与手感尚待验收。
 

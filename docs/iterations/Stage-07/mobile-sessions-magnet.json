@@ -1,0 +1,219 @@
+{
+  "method": "Six complete real-time touch UI games, mixed loadouts and fixed non-solver angles (or visible weak-switch/core targeting when --targeted), 250ms reaction delay then 150ms directional hold. Start each shot at4x; assistance/skills restore1x, reaccelerate above y350 on upward travel. No recall or state mutation. Three expeditions choose a different upgrade family. This is scripted UI play, not human win rate.",
+  "sessions": [
+    {
+      "config": {
+        "width": 320,
+        "height": 568,
+        "upgrade": "magnet"
+      },
+      "shots": [
+        {
+          "material": "steel",
+          "size": "standard",
+          "seconds": 23.866666666665953,
+          "hits": 16,
+          "pulses": 3,
+          "attempts": 3,
+          "cancels": 0,
+          "assistSlows": 2,
+          "phase": "aim"
+        },
+        {
+          "material": "ceramic",
+          "size": "small",
+          "seconds": 32.38333333333149,
+          "hits": 52,
+          "pulses": 4,
+          "attempts": 4,
+          "cancels": 0,
+          "assistSlows": 2,
+          "phase": "upgrade"
+        },
+        {
+          "material": "brass",
+          "size": "large",
+          "seconds": 27.52500000001529,
+          "hits": 12,
+          "pulses": 4,
+          "attempts": 4,
+          "cancels": 0,
+          "assistSlows": 3,
+          "phase": "aim"
+        },
+        {
+          "material": "rubber",
+          "size": "large",
+          "seconds": 42.92500000003416,
+          "hits": 31,
+          "pulses": 5,
+          "attempts": 5,
+          "cancels": 0,
+          "assistSlows": 5,
+          "phase": "aim"
+        },
+        {
+          "material": "ceramic",
+          "size": "large",
+          "seconds": 18.15833333331902,
+          "hits": 10,
+          "pulses": 4,
+          "attempts": 4,
+          "cancels": 0,
+          "assistSlows": 3,
+          "phase": "upgrade"
+        },
+        {
+          "material": "steel",
+          "size": "small",
+          "seconds": 80.34999999992692,
+          "hits": 68,
+          "pulses": 6,
+          "attempts": 6,
+          "cancels": 0,
+          "assistSlows": 6,
+          "phase": "aim"
+        },
+        {
+          "material": "steel",
+          "size": "standard",
+          "seconds": 7.324999999993338,
+          "hits": 9,
+          "pulses": 4,
+          "attempts": 4,
+          "cancels": 0,
+          "assistSlows": 4,
+          "phase": "aim"
+        },
+        {
+          "material": "ceramic",
+          "size": "small",
+          "seconds": 13.54166666665435,
+          "hits": 29,
+          "pulses": 5,
+          "attempts": 5,
+          "cancels": 0,
+          "assistSlows": 2,
+          "phase": "upgrade"
+        },
+        {
+          "material": "brass",
+          "size": "large",
+          "seconds": 1.5499999999985903,
+          "hits": 0,
+          "pulses": 1,
+          "attempts": 1,
+          "cancels": 0,
+          "assistSlows": 1,
+          "phase": "aim"
+        },
+        {
+          "material": "rubber",
+          "size": "large",
+          "seconds": 3.1749999999971124,
+          "hits": 7,
+          "pulses": 1,
+          "attempts": 1,
+          "cancels": 0,
+          "assistSlows": 1,
+          "phase": "aim"
+        },
+        {
+          "material": "ceramic",
+          "size": "large",
+          "seconds": 8.708333333325413,
+          "hits": 10,
+          "pulses": 2,
+          "attempts": 2,
+          "cancels": 0,
+          "assistSlows": 2,
+          "phase": "upgrade"
+        },
+        {
+          "material": "steel",
+          "size": "small",
+          "seconds": 7.074999999993565,
+          "hits": 23,
+          "pulses": 2,
+          "attempts": 2,
+          "cancels": 0,
+          "assistSlows": 2,
+          "phase": "over"
+        }
+      ],
+      "upgrades": [
+        {
+          "wave": 3,
+          "choice": "magnet",
+          "before": {
+            "elastic": 0,
+            "capacity": 2,
+            "pressure": 0
+          },
+          "after": {
+            "elastic": 0,
+            "capacity": 3,
+            "pressure": 0
+          }
+        },
+        {
+          "wave": 6,
+          "choice": "magnet",
+          "before": {
+            "elastic": 0,
+            "capacity": 3,
+            "pressure": 0
+          },
+          "after": {
+            "elastic": 0,
+            "capacity": 4,
+            "pressure": 0
+          }
+        },
+        {
+          "wave": 9,
+          "choice": "magnet",
+          "before": {
+            "elastic": 0,
+            "capacity": 4,
+            "pressure": 0
+          },
+          "after": {
+            "elastic": 0,
+            "capacity": 5,
+            "pressure": 0
+          }
+        },
+        {
+          "wave": 12,
+          "choice": "magnet",
+          "before": {
+            "elastic": 0,
+            "capacity": 5,
+            "pressure": 0
+          },
+          "after": {
+            "elastic": 0,
+            "capacity": 6,
+            "pressure": 0
+          }
+        }
+      ],
+      "result": "over",
+      "score": 4245,
+      "stats": {
+        "hits": 267,
+        "flight": 266.5833333332552,
+        "boosts": 174,
+        "energy": 3803606.420292234,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 15,
+        "pulses": 41
+      },
+      "remaining": 12
+    }
+  ],
+  "errors": []
+}

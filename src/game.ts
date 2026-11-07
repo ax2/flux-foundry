@@ -76,7 +76,7 @@ export class Game{
   const advance=this.anchorsBroken>0?24:39;for(const t of this.targets)t.y-=advance;if(this.anchorsBroken>0)this.say('耐久支点已拆除 · 本轮推进减缓');if(this.targets.some(t=>t.y-t.size/2<184)){this.phase='over';this.endReason='overload';return;}
   this.wave++;this.setEndlessMechanisms();if(this.wave%2===0||this.targets.length===0)this.addRow(609);this.phase=this.wave%3===0?'upgrade':'aim';
  }
- upgrade(choice:Upgrade){if(this.phase!=='upgrade')return;if(choice==='elastic'){this.elasticBonus=Math.min(.18,this.elasticBonus+.08);this.elasticLevel++;}if(choice==='magnet'){this.fieldStrength+=.2;this.pulseMax++;}if(choice==='field')this.fieldLevel++;this.phase='aim';}
+ upgrade(choice:Upgrade){if(this.phase!=='upgrade')return;if(choice==='elastic'){this.elasticBonus=Math.min(.18,this.elasticBonus+.08);this.elasticLevel++;}if(choice==='magnet'){this.fieldStrength+=.2;this.pulseMax++;}if(choice==='field')this.fieldLevel++;this.pulseCharges=this.pulseMax;this.phase='aim';}
  wallCharge(b:Ball,side:'left'|'right'){
   if(this.safetyReturn)return;const rail=this.rails.find(r=>r.side===side&&b.y>=r.y&&b.y<=r.y+r.h&&r.charges>0);if(!rail)return;
   const before=this.stats.boosts;this.energize(b,{x:side==='left'?1:-1,y:0});if(this.stats.boosts>before)rail.charges--;

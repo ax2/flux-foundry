@@ -1,0 +1,413 @@
+{
+  "method": "12 material/size pairs, four controlled states each: base and one level of each upgrade. Same downward velocity 300, .32s pulse, then powered contact at vy=-100. No UI mutation claimed.",
+  "rows": [
+    {
+      "material": "steel",
+      "size": "small",
+      "runs": [
+        {
+          "choice": "none",
+          "pulseVy": -83.99999999999983,
+          "initialCharges": 2,
+          "restitution": 0.94,
+          "poweredEnergy": 22000
+        },
+        {
+          "choice": "elastic",
+          "pulseVy": -83.99999999999983,
+          "initialCharges": 2,
+          "restitution": 0.99,
+          "poweredEnergy": 33000
+        },
+        {
+          "choice": "magnet",
+          "pulseVy": -83.99999999999983,
+          "initialCharges": 3,
+          "restitution": 0.94,
+          "poweredEnergy": 22000
+        },
+        {
+          "choice": "field",
+          "pulseVy": -218.39999999999978,
+          "initialCharges": 2,
+          "restitution": 0.94,
+          "poweredEnergy": 22000
+        }
+      ]
+    },
+    {
+      "material": "steel",
+      "size": "standard",
+      "runs": [
+        {
+          "choice": "none",
+          "pulseVy": -83.99999999999983,
+          "initialCharges": 2,
+          "restitution": 0.94,
+          "poweredEnergy": 22000
+        },
+        {
+          "choice": "elastic",
+          "pulseVy": -83.99999999999983,
+          "initialCharges": 2,
+          "restitution": 0.99,
+          "poweredEnergy": 33000
+        },
+        {
+          "choice": "magnet",
+          "pulseVy": -83.99999999999983,
+          "initialCharges": 3,
+          "restitution": 0.94,
+          "poweredEnergy": 22000
+        },
+        {
+          "choice": "field",
+          "pulseVy": -218.39999999999978,
+          "initialCharges": 2,
+          "restitution": 0.94,
+          "poweredEnergy": 22000
+        }
+      ]
+    },
+    {
+      "material": "steel",
+      "size": "large",
+      "runs": [
+        {
+          "choice": "none",
+          "pulseVy": -83.99999999999983,
+          "initialCharges": 2,
+          "restitution": 0.94,
+          "poweredEnergy": 22000
+        },
+        {
+          "choice": "elastic",
+          "pulseVy": -83.99999999999983,
+          "initialCharges": 2,
+          "restitution": 0.99,
+          "poweredEnergy": 33000
+        },
+        {
+          "choice": "magnet",
+          "pulseVy": -83.99999999999983,
+          "initialCharges": 3,
+          "restitution": 0.94,
+          "poweredEnergy": 22000
+        },
+        {
+          "choice": "field",
+          "pulseVy": -218.39999999999978,
+          "initialCharges": 2,
+          "restitution": 0.94,
+          "poweredEnergy": 22000
+        }
+      ]
+    },
+    {
+      "material": "brass",
+      "size": "small",
+      "runs": [
+        {
+          "choice": "none",
+          "pulseVy": -83.99999999999983,
+          "initialCharges": 2,
+          "restitution": 0.86,
+          "poweredEnergy": 22000
+        },
+        {
+          "choice": "elastic",
+          "pulseVy": -83.99999999999983,
+          "initialCharges": 2,
+          "restitution": 0.94,
+          "poweredEnergy": 33000
+        },
+        {
+          "choice": "magnet",
+          "pulseVy": -83.99999999999983,
+          "initialCharges": 3,
+          "restitution": 0.86,
+          "poweredEnergy": 22000
+        },
+        {
+          "choice": "field",
+          "pulseVy": -218.39999999999978,
+          "initialCharges": 2,
+          "restitution": 0.86,
+          "poweredEnergy": 22000
+        }
+      ]
+    },
+    {
+      "material": "brass",
+      "size": "standard",
+      "runs": [
+        {
+          "choice": "none",
+          "pulseVy": -83.99999999999983,
+          "initialCharges": 2,
+          "restitution": 0.86,
+          "poweredEnergy": 22000
+        },
+        {
+          "choice": "elastic",
+          "pulseVy": -83.99999999999983,
+          "initialCharges": 2,
+          "restitution": 0.94,
+          "poweredEnergy": 33000
+        },
+        {
+          "choice": "magnet",
+          "pulseVy": -83.99999999999983,
+          "initialCharges": 3,
+          "restitution": 0.86,
+          "poweredEnergy": 22000
+        },
+        {
+          "choice": "field",
+          "pulseVy": -218.39999999999978,
+          "initialCharges": 2,
+          "restitution": 0.86,
+          "poweredEnergy": 22000
+        }
+      ]
+    },
+    {
+      "material": "brass",
+      "size": "large",
+      "runs": [
+        {
+          "choice": "none",
+          "pulseVy": -83.99999999999983,
+          "initialCharges": 2,
+          "restitution": 0.86,
+          "poweredEnergy": 22000
+        },
+        {
+          "choice": "elastic",
+          "pulseVy": -83.99999999999983,
+          "initialCharges": 2,
+          "restitution": 0.94,
+          "poweredEnergy": 33000
+        },
+        {
+          "choice": "magnet",
+          "pulseVy": -83.99999999999983,
+          "initialCharges": 3,
+          "restitution": 0.86,
+          "poweredEnergy": 22000
+        },
+        {
+          "choice": "field",
+          "pulseVy": -218.39999999999978,
+          "initialCharges": 2,
+          "restitution": 0.86,
+          "poweredEnergy": 22000
+        }
+      ]
+    },
+    {
+      "material": "ceramic",
+      "size": "small",
+      "runs": [
+        {
+          "choice": "none",
+          "pulseVy": -83.99999999999983,
+          "initialCharges": 2,
+          "restitution": 0.97,
+          "poweredEnergy": 22000
+        },
+        {
+          "choice": "elastic",
+          "pulseVy": -83.99999999999983,
+          "initialCharges": 2,
+          "restitution": 0.99,
+          "poweredEnergy": 33000
+        },
+        {
+          "choice": "magnet",
+          "pulseVy": -83.99999999999983,
+          "initialCharges": 3,
+          "restitution": 0.97,
+          "poweredEnergy": 22000
+        },
+        {
+          "choice": "field",
+          "pulseVy": -218.39999999999978,
+          "initialCharges": 2,
+          "restitution": 0.97,
+          "poweredEnergy": 22000
+        }
+      ]
+    },
+    {
+      "material": "ceramic",
+      "size": "standard",
+      "runs": [
+        {
+          "choice": "none",
+          "pulseVy": -83.99999999999983,
+          "initialCharges": 2,
+          "restitution": 0.97,
+          "poweredEnergy": 22000
+        },
+        {
+          "choice": "elastic",
+          "pulseVy": -83.99999999999983,
+          "initialCharges": 2,
+          "restitution": 0.99,
+          "poweredEnergy": 33000
+        },
+        {
+          "choice": "magnet",
+          "pulseVy": -83.99999999999983,
+          "initialCharges": 3,
+          "restitution": 0.97,
+          "poweredEnergy": 22000
+        },
+        {
+          "choice": "field",
+          "pulseVy": -218.39999999999978,
+          "initialCharges": 2,
+          "restitution": 0.97,
+          "poweredEnergy": 22000
+        }
+      ]
+    },
+    {
+      "material": "ceramic",
+      "size": "large",
+      "runs": [
+        {
+          "choice": "none",
+          "pulseVy": -83.99999999999983,
+          "initialCharges": 2,
+          "restitution": 0.97,
+          "poweredEnergy": 22000
+        },
+        {
+          "choice": "elastic",
+          "pulseVy": -83.99999999999983,
+          "initialCharges": 2,
+          "restitution": 0.99,
+          "poweredEnergy": 33000
+        },
+        {
+          "choice": "magnet",
+          "pulseVy": -83.99999999999983,
+          "initialCharges": 3,
+          "restitution": 0.97,
+          "poweredEnergy": 22000
+        },
+        {
+          "choice": "field",
+          "pulseVy": -218.39999999999978,
+          "initialCharges": 2,
+          "restitution": 0.97,
+          "poweredEnergy": 22000
+        }
+      ]
+    },
+    {
+      "material": "rubber",
+      "size": "small",
+      "runs": [
+        {
+          "choice": "none",
+          "pulseVy": -83.99999999999983,
+          "initialCharges": 2,
+          "restitution": 0.8,
+          "poweredEnergy": 22000
+        },
+        {
+          "choice": "elastic",
+          "pulseVy": -83.99999999999983,
+          "initialCharges": 2,
+          "restitution": 0.88,
+          "poweredEnergy": 33000
+        },
+        {
+          "choice": "magnet",
+          "pulseVy": -83.99999999999983,
+          "initialCharges": 3,
+          "restitution": 0.8,
+          "poweredEnergy": 22000
+        },
+        {
+          "choice": "field",
+          "pulseVy": -218.39999999999978,
+          "initialCharges": 2,
+          "restitution": 0.8,
+          "poweredEnergy": 22000
+        }
+      ]
+    },
+    {
+      "material": "rubber",
+      "size": "standard",
+      "runs": [
+        {
+          "choice": "none",
+          "pulseVy": -83.99999999999983,
+          "initialCharges": 2,
+          "restitution": 0.8,
+          "poweredEnergy": 22000
+        },
+        {
+          "choice": "elastic",
+          "pulseVy": -83.99999999999983,
+          "initialCharges": 2,
+          "restitution": 0.88,
+          "poweredEnergy": 33000
+        },
+        {
+          "choice": "magnet",
+          "pulseVy": -83.99999999999983,
+          "initialCharges": 3,
+          "restitution": 0.8,
+          "poweredEnergy": 22000
+        },
+        {
+          "choice": "field",
+          "pulseVy": -218.39999999999978,
+          "initialCharges": 2,
+          "restitution": 0.8,
+          "poweredEnergy": 22000
+        }
+      ]
+    },
+    {
+      "material": "rubber",
+      "size": "large",
+      "runs": [
+        {
+          "choice": "none",
+          "pulseVy": -83.99999999999983,
+          "initialCharges": 2,
+          "restitution": 0.8,
+          "poweredEnergy": 22000
+        },
+        {
+          "choice": "elastic",
+          "pulseVy": -83.99999999999983,
+          "initialCharges": 2,
+          "restitution": 0.88,
+          "poweredEnergy": 33000
+        },
+        {
+          "choice": "magnet",
+          "pulseVy": -83.99999999999983,
+          "initialCharges": 3,
+          "restitution": 0.8,
+          "poweredEnergy": 22000
+        },
+        {
+          "choice": "field",
+          "pulseVy": -218.39999999999978,
+          "initialCharges": 2,
+          "restitution": 0.8,
+          "poweredEnergy": 22000
+        }
+      ]
+    }
+  ]
+}
