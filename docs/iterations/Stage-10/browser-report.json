@@ -1,5 +1,5 @@
 {
-  "passed": 117,
+  "passed": 121,
   "checks": [
     "1440: correct page and nonblank canvas",
     "1440: old progress migrates without granting new stars",
@@ -68,6 +68,8 @@
     "390: one ball and one stock spent",
     "390: pointer controls paddle horizontally",
     "390: settings pauses ball, moving bricks and treasures",
+    "390: paused touch capture does not leak through menu",
+    "390: fresh touch after resume controls paddle",
     "390: twenty-six challenges",
     "390: fixed wind challenge contains a moving brick",
     "390: moving brick changes position in flight",
@@ -107,6 +109,8 @@
     "320: one ball and one stock spent",
     "320: pointer controls paddle horizontally",
     "320: settings pauses ball, moving bricks and treasures",
+    "320: paused touch capture does not leak through menu",
+    "320: fresh touch after resume controls paddle",
     "320: twenty-six challenges",
     "320: fixed wind challenge contains a moving brick",
     "320: moving brick changes position in flight",
