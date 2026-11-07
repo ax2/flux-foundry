@@ -33,7 +33,7 @@ export class Renderer{
    else if(t.power==='valve'){const y=t.y+(t.kind==='bar'?t.size/8:t.size/2)+5;c.lineWidth=2;c.beginPath();c.arc(t.x,y,5,.2,Math.PI*1.8);c.moveTo(t.x-8,y);c.lineTo(t.x+8,y);c.stroke();}
    else{const y=t.y+t.size/2+5;c.fillStyle=color;c.beginPath();c.arc(t.x,y,3.5,0,Math.PI*2);c.fill();c.fillStyle='#14332a';c.fillRect(t.x-1,y-2,2,4);}
   }
-
+  if(t.anchor){c.strokeStyle='#f4d49b';c.lineWidth=2;for(const dx of [-1,1])for(const dy of [-1,1]){const x=t.x+dx*t.size*.29,y=t.y+dy*t.size*.29;c.fillStyle='#544732';c.beginPath();c.arc(x,y,3,0,Math.PI*2);c.fill();c.stroke();}}
  }
  draw(g:Game,time:number,reduced:boolean,aiming:boolean){const c=this.ctx;c.setTransform(this.canvas.width/W,0,0,this.canvas.height/H,0,0);c.clearRect(0,0,W,H);
   if(this.arena.complete&&this.arena.naturalWidth)c.drawImage(this.arena,0,0,W,H);else{c.fillStyle='#171d20';c.fillRect(0,0,W,H);}
@@ -42,7 +42,14 @@ export class Renderer{
   // Crisp operational overlays sit above the material plate.
   c.textAlign='center';c.font='10px "Segoe UI",sans-serif';c.fillStyle='#bbada0';if(g.phase!=='volley')c.fillText(`${SIZES[g.size].name}号${MATERIALS[g.material].name}珠  ·  待发 ${g.remainingShots} / ${g.queue.length}`,210,153);
   c.setLineDash([3,6]);c.strokeStyle=g.mode==='challenge'?'#70c3cb33':'#ce7b6555';c.lineWidth=1;c.beginPath();c.moveTo(29,184);c.lineTo(391,184);c.stroke();c.setLineDash([]);c.fillStyle='#aeaaa0';c.font='9px "Segoe UI",sans-serif';c.fillText(g.mode==='challenge'?`${g.level.goal==='core'?'击碎紫色核心':'清除全部 '+g.targets.length+' 个积木'} · 待发 ${g.remainingShots} 颗`:'过载警戒线 · 不要让积木抵达这里',210,177);
-  c.strokeStyle='#9bafaa44';c.beginPath();c.moveTo(40,685);c.lineTo(380,685);c.stroke();c.fillStyle='#9aa9a4';c.fillText('磁  力  回  收  槽',210,703);
+  // The powered return plate lives inside the existing collector, never in a new HUD row.
+  {const active=g.returnEnabled&&g.returnCharges>0&&!g.safetyReturn&&!g.goalComplete;c.save();const y=active?707:716;
+   const plate=c.createLinearGradient(0,y,0,y+8);plate.addColorStop(0,active?'#c0dacd':'#697573');plate.addColorStop(.35,'#344e48');plate.addColorStop(1,'#101d1b');c.fillStyle=plate;c.fillRect(24,y,372,8);
+   c.strokeStyle=active?'#a2f3c8':'#4c605a';c.shadowColor='#8fffc7';c.shadowBlur=g.returnFlash>0&&!reduced?22:active?4:0;c.lineWidth=2;c.beginPath();c.moveTo(25,y);c.lineTo(395,y);c.stroke();c.shadowBlur=0;
+   for(let x=32;x<395;x+=12){c.strokeStyle='#122b25';c.beginPath();c.moveTo(x,y+3);c.lineTo(x+5,y+7);c.stroke();}
+   for(let i=0;i<2;i++){c.fillStyle=active&&i<g.returnCharges?'#b1ffcf':'#30443e';c.fillRect(176+i*38,697,30,4);}
+   for(let i=0;i<8;i++){c.fillStyle=g.returnRefills<2&&i<g.returnProgress?'#d9e9b1':'#38453f';c.fillRect(183+i*7,688,4,2);}
+   c.fillStyle='#a9bdb3';c.font='9px "Segoe UI",sans-serif';c.fillText(active?`回弹挡板 · ${g.returnCharges} 次`:'回收槽已打开',210,682);c.restore();}
   if(g.phase==='aim'){
    // A short direction marker, never a trajectory or a flight trail.
    c.save();c.translate(LAUNCH.x,LAUNCH.y);c.rotate(g.angle);c.fillStyle='#efbd79';c.beginPath();c.moveTo(28,-4);c.lineTo(35,0);c.lineTo(28,4);c.fill();c.restore();
@@ -58,6 +65,7 @@ export class Renderer{
   for(const b of g.balls){if(g.rescuePulse){c.save();c.strokeStyle='#9ceeff';c.lineWidth=2;c.beginPath();c.moveTo(b.x-16,b.y+28);c.lineTo(b.x-6,b.y+8);c.moveTo(b.x+16,b.y+28);c.lineTo(b.x+6,b.y+8);c.stroke();c.restore();}this.ball(g.material,b.x,b.y,b.r);}
   if(g.safetyReturn||g.rescuePulse||g.goalComplete){c.fillStyle=g.goalComplete?'#e8b6ff':'#a7f5ff';c.textAlign='center';c.font='12px Segoe UI';c.fillText(g.safetyReturn?'救援通道开启 · 积木已退让':g.rescuePulse?'脱困气脉冲运行中':'目标完成 · 落底或收球后结算',210,215);}
   if(!reduced)for(const p of g.effects){c.save();c.globalAlpha=p.life/p.max;c.strokeStyle=p.color;c.fillStyle=p.color;c.shadowColor=p.color;c.shadowBlur=8;if(p.ring){c.lineWidth=1.5;c.beginPath();c.arc(p.x,p.y,8+(1-p.life/p.max)*43,0,Math.PI*2);c.stroke();}else c.fillRect(p.x,p.y,2.5,2.5);c.restore();}
-  if(g.phase==='volley'){c.fillStyle='#f9bd72';c.font='600 15px "Bahnschrift",sans-serif';c.fillText(`${g.combo} 连击`,210,145);c.fillStyle='#c6cfd0';c.font='9px "Segoe UI",sans-serif';c.fillText(`单球弹射  ·  重力与真实回弹`,210,160);}
+  if(g.liftTime>0){c.save();c.strokeStyle='#c7efff';c.lineWidth=2;c.globalAlpha=.7;for(let i=0;i<9;i++){const x=58+i*38,y=650-(reduced?0:(time*180+i*17)%80);c.beginPath();c.moveTo(x,y);c.bezierCurveTo(x-5,y-12,x+4,y-25,x,y-40);c.stroke();}c.restore();}
+  if(g.phase==='volley'){c.fillStyle='#f9bd72';c.font='600 15px "Bahnschrift",sans-serif';c.fillText(`${g.combo} 连击`,210,145);c.fillStyle=g.pulseUsed?'#8e9c9e':'#c7efff';c.font='9px "Segoe UI",sans-serif';c.fillText(g.pulseUsed?'上冲脉冲已使用':g.safetyReturn?'救援通道已开启':'点击场地 / 空格 · 上冲脉冲 × 1',210,160);}
  }
 }

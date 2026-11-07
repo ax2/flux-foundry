@@ -15,7 +15,8 @@ export class Game{
  angle=Math.PI/2;paused=false;magnet:{x:number;y:number;life:number}|null=null;magnetUsed=false;nextId=0;seed:number;onHit:((kind:string)=>void)|null=null;
  stalled=0;supportedTime=0;supportGrace=0;anchor:Vec={...LAUNCH};rescuePulse:{life:number;direction:number}|null=null;rescueAttempts=0;safetyReturn=false;
  passiveLoops=0;passiveAnchor:{key:string;x:number;y:number}|null=null;
- eventSerial=0;lastEvent='';endReason='';stats={hits:0,flight:0,boosts:0,energy:0,rescues:0,returns:0};
+ rowsCreated=0;anchorsBroken=0;returnEnabled=true;returnCharges=2;returnRefills=0;returnProgress=0;returnFlash=0;pulseUsed=false;liftTime=0;liftEnergy=0;
+ eventSerial=0;lastEvent='';endReason='';stats={hits:0,flight:0,boosts:0,energy:0,rescues:0,returns:0,rebounds:0,recharges:0,pulses:0};
  constructor(seed=Date.now(),levelIndex?:number){
   this.seed=seed>>>0;
   if(levelIndex!==undefined){this.mode='challenge';this.levelIndex=Math.max(0,Math.min(LEVELS.length-1,Math.floor(levelIndex)));const l=this.level;
@@ -36,30 +37,46 @@ export class Game{
  mirror(){this.mirrorSign*=-1;for(const t of this.targets)t.x=W-t.x;for(const p of this.pegs)p.x=W-p.x;for(const z of this.air){z.x=W-z.x-z.w;z.fx=-z.fx;}for(const g of this.gates)g.x=W-g.x;for(const r of this.rails)r.side=r.side==='left'?'right':'left';}
  setEndlessMechanisms(){this.pegs=this.wave>=4?[{x:this.wave%2?145:275,y:300,r:20}].filter(p=>!this.targets.some(t=>Math.abs(t.x-p.x)<t.size/2+p.r+3&&Math.abs(t.y-p.y)<t.size/2+p.r+3)):[];this.air=this.wave>=6?[{x:45,y:345,w:330,h:65,fx:this.wave%2?35:-35,fy:0,plume:true}]:[];}
  random(){this.seed=(Math.imul(1664525,this.seed)+1013904223)>>>0;return this.seed/4294967296;}
- addRow(y:number){const kinds:Target['kind'][]=['steel','prism','capacitor','diamond','hexagon','bar'];for(let col=0;col<5;col++){
-  if(this.random()<.25&&col!==2)continue;const kind=kinds[Math.floor(this.random()*kinds.length)];const tier=[1,2,4,7,11][(col+this.wave)%5],hp=tier+Math.floor(this.wave/3);
-  this.targets.push({id:this.nextId++,x:66+col*72,y,size:52,kind,hp,maxHp:hp,flash:0,power:col===2?'spring':undefined});
- }}
+ addRow(y:number){
+  const row=++this.rowsCreated,anchorCol=1+row%3,base=2+(row-1)*2,kinds:Target['kind'][]=['steel','prism','capacitor','diamond','hexagon','bar'];
+  for(let col=0;col<5;col++){
+   if(this.random()<.2&&col!==anchorCol&&col!==2)continue;const anchor=col===anchorCol;
+   const kind=anchor?(row%2?'steel':'hexagon'):kinds[Math.floor(this.random()*kinds.length)],hp=anchor?12+(row-1)*4:base+(col+row)%4;
+   this.targets.push({id:this.nextId++,x:66+col*72,y,size:52,kind,hp,maxHp:hp,flash:0,power:anchor||col===2?'spring':undefined,anchor,row});
+  }
+ }
  aim(x:number,y:number){this.angle=Math.max(.16,Math.min(Math.PI-.16,Math.atan2(Math.max(15,y-LAUNCH.y),x-LAUNCH.x)));}
- fire(){if(this.phase!=='aim'||this.paused||this.remainingShots===0)return false;this.syncNext();this.phase='volley';this.shots++;this.combo=0;this.magnetUsed=false;this.stalled=0;this.supportedTime=0;this.supportGrace=0;this.anchor={...LAUNCH};this.rescueAttempts=0;this.passiveLoops=0;this.passiveAnchor=null;for(const r of this.rails)r.charges=r.maxCharges;this.rescuePulse=null;this.safetyReturn=false;
+ fire(){if(this.phase!=='aim'||this.paused||this.remainingShots===0)return false;this.syncNext();this.phase='volley';this.shots++;this.anchorsBroken=0;this.returnCharges=2;this.returnRefills=0;this.returnProgress=0;this.returnFlash=0;this.pulseUsed=false;this.liftTime=0;this.liftEnergy=0;this.combo=0;this.magnetUsed=false;this.stalled=0;this.supportedTime=0;this.supportGrace=0;this.anchor={...LAUNCH};this.rescueAttempts=0;this.passiveLoops=0;this.passiveAnchor=null;for(const r of this.rails)r.charges=r.maxCharges;this.rescuePulse=null;this.safetyReturn=false;
   const spec=this.spec;this.balls=[{...LAUNCH,vx:Math.cos(this.angle)*spec.speed,vy:Math.sin(this.angle)*spec.speed,r:spec.r}];return true;
  }
  field(x:number,y:number){if(this.phase!=='volley'||this.magnetUsed||this.paused||this.safetyReturn||this.spec.magnetic===0)return false;this.magnet={x:Math.max(45,Math.min(375,x)),y:Math.max(185,Math.min(625,y)),life:3.8+this.fieldLevel*.8};this.magnetUsed=true;return true;}
  burst(x:number,y:number,color:string,n=12){for(let i=0;i<n;i++){const a=Math.PI*2*i/n,s=35+(i%4)*33;this.effects.push({x,y,life:.45,max:.45,color,vx:Math.cos(a)*s,vy:Math.sin(a)*s,ring:false});}this.effects.push({x,y,life:.45,max:.45,color,vx:0,vy:0,ring:true});if(this.effects.length>420)this.effects.splice(0,this.effects.length-420);}
- damage(t:Target){if(t.hp<=0)return;this.passiveLoops=0;this.passiveAnchor=null;t.hp--;t.flash=.12;this.score+=10;this.combo++;this.stats.hits++;this.bestCombo=Math.max(this.bestCombo,this.combo);this.onHit?.(t.kind);
-  if(t.hp===0){this.score+=75;this.burst(t.x,t.y,t.core?'#ed9fff':t.power==='spring'?'#ffcf70':'#80e8e4');
+ damage(t:Target){if(t.hp<=0)return;this.passiveLoops=0;this.passiveAnchor=null;t.hp--;t.flash=.12;this.score+=10;this.combo++;this.stats.hits++;
+  if(this.phase==='volley'&&this.returnEnabled&&this.returnRefills<2){this.returnProgress=Math.min(8,this.returnProgress+1);if(this.returnProgress===8&&this.returnCharges<2){this.returnCharges++;this.returnRefills++;this.returnProgress=0;this.stats.recharges++;this.say('连续命中 · 底部挡板补充一次充能');}}this.bestCombo=Math.max(this.bestCombo,this.combo);this.onHit?.(t.kind);
+  if(t.hp===0){if(t.anchor)this.anchorsBroken++;this.score+=75;this.burst(t.x,t.y,t.core?'#ed9fff':t.power==='spring'?'#ffcf70':'#80e8e4');
    if(t.power==='valve'){for(const zone of this.air){zone.fx=-zone.fx;zone.fy=-zone.fy;}this.say('风阀已切换 · 气流反向');}
    if(t.power==='switch'&&!this.targets.some(b=>b.power==='switch'&&b.hp>0)){for(const gate of this.gates)gate.open=true;this.say('开关已清除 · 闸门打开');}
   }
  }
- energize(b:Ball,n:Vec){const mass=this.spec.mass,vn=b.vx*n.x+b.vy*n.y,energy=.5*mass*(b.vx*b.vx+b.vy*b.vy);const added=Math.min(22000,Math.max(0,240000-energy));
+ energize(b:Ball,n:Vec,amount=22000){const mass=this.spec.mass,vn=b.vx*n.x+b.vy*n.y,energy=.5*mass*(b.vx*b.vx+b.vy*b.vy);const added=Math.min(amount,Math.max(0,240000-energy));
   if(added<=0||vn<0)return;const dv=Math.sqrt(vn*vn+2*added/mass)-vn;b.vx+=dv*n.x;b.vy+=dv*n.y;this.stats.energy+=added;this.stats.boosts++;this.burst(b.x,b.y,'#ffc369',6);
  }
+ pulse(){if(this.phase!=='volley'||this.paused||this.pulseUsed||this.safetyReturn)return false;this.pulseUsed=true;this.liftTime=.32;this.liftEnergy=60000;this.stats.pulses++;this.say('上冲气脉冲 · 本颗已使用');return true;}
+ applyLift(b:Ball,dt:number){
+  if(this.liftTime<=0||this.safetyReturn)return;
+  const mass=this.spec.mass,energy=.5*mass*(b.vx*b.vx+b.vy*b.vy),budget=Math.min(this.liftEnergy,Math.max(0,240000-energy));let dv=-1200*dt;
+  if(.5*mass*(2*b.vy*dv+dv*dv)>budget)dv=-b.vy-Math.sqrt(b.vy*b.vy+2*budget/mass);
+  const work=Math.max(0,.5*mass*(2*b.vy*dv+dv*dv));b.vy+=dv;this.liftEnergy=Math.max(0,this.liftEnergy-work);
+ }
+ bottomReturn(b:Ball,previousBottom:number){
+  if(!this.returnEnabled||this.returnCharges<=0||this.safetyReturn||this.goalComplete||b.vy<=0||previousBottom>707||b.y+b.r<707)return;
+  b.y=707-b.r;reflect(b,{x:0,y:-1},.94);this.energize(b,{x:0,y:-1},48000);this.returnCharges--;this.returnFlash=.3;this.stats.rebounds++;this.burst(b.x,704,'#9effcb',8);
+ }
  recall(){if(this.phase==='volley'&&!this.paused){this.balls=[];this.finish();}}
- finish(){this.balls=[];this.magnet=null;this.rescuePulse=null;this.safetyReturn=false;this.targets=this.targets.filter(t=>t.hp>0);this.syncNext();
+ finish(){this.liftTime=0;this.balls=[];this.magnet=null;this.rescuePulse=null;this.safetyReturn=false;this.targets=this.targets.filter(t=>t.hp>0);this.syncNext();
   if(this.mode==='challenge'){this.phase=this.goalComplete?'won':this.remainingShots===0?'over':'aim';this.endReason=this.phase==='over'?'ammo':'';return;}
   if(this.remainingShots===0){this.phase='over';this.endReason='ammo';return;}
-  for(const t of this.targets)t.y-=39;if(this.targets.some(t=>t.y-t.size/2<184)){this.phase='over';this.endReason='overload';return;}
+  const advance=this.anchorsBroken>0?24:39;for(const t of this.targets)t.y-=advance;if(this.anchorsBroken>0)this.say('耐久支点已拆除 · 本轮推进减缓');if(this.targets.some(t=>t.y-t.size/2<184)){this.phase='over';this.endReason='overload';return;}
   this.wave++;this.setEndlessMechanisms();if(this.wave%2===0||this.targets.length===0)this.addRow(609);this.phase=this.wave%3===0?'upgrade':'aim';
  }
  upgrade(choice:Upgrade){if(this.phase!=='upgrade')return;if(choice==='elastic')this.elasticBonus=Math.min(.1,this.elasticBonus+.02);if(choice==='magnet')this.fieldStrength+=.2;if(choice==='field')this.fieldLevel++;this.phase='aim';}
@@ -77,7 +94,7 @@ export class Game{
   if(this.rescueAttempts<2){this.rescueAttempts++;this.stats.rescues++;this.rescuePulse={life:.25,direction:(this.rescueAttempts%2?1:-1)*this.mirrorSign};this.say('检测到停滞 · 脱困气脉冲');}
   else{this.safetyReturn=true;this.magnet=null;this.stats.returns++;this.say('救援通道开启 · 积木退让，弹珠自然落底');}
  }
- update(dt:number){if(this.paused)return;
+ update(dt:number){if(this.paused)return;this.returnFlash=Math.max(0,this.returnFlash-dt);
   for(const t of this.targets)t.flash=Math.max(0,t.flash-dt);for(const p of this.effects){p.life-=dt;p.x+=p.vx*dt;p.y+=p.vy*dt;}this.effects=this.effects.filter(p=>p.life>0);
   if(this.phase!=='volley')return;this.stats.flight+=dt;const spec=this.spec,restitution=this.restitution;
   if(this.magnet){this.magnet.life-=dt;if(this.magnet.life<=0)this.magnet=null;}
@@ -91,7 +108,7 @@ export class Game{
      if(this.magnet){const dx=this.magnet.x-b.x,dy=this.magnet.y-b.y,d2=dx*dx+dy*dy;const strength=3200000*this.fieldStrength*spec.magnetic/Math.pow(d2+80*80,1.5);ax+=dx*strength;ay+=dy*strength;}
      if(this.rescuePulse){ax+=this.rescuePulse.direction*450;ay-=800;}
     }
-    advanceFree(b,h,ax,ay);
+    const previousBottom=b.y+b.r;this.applyLift(b,h);advanceFree(b,h,ax,ay);this.bottomReturn(b,previousBottom);
     if(b.x<18+b.r){b.x=18+b.r;if(reflect(b,{x:1,y:0},restitution))this.wallCharge(b,'left');}if(b.x>402-b.r){b.x=402-b.r;if(reflect(b,{x:-1,y:0},restitution))this.wallCharge(b,'right');}if(b.y<112+b.r){b.y=112+b.r;reflect(b,{x:0,y:1},restitution);}
     if(!this.safetyReturn){
      for(const [i,p] of this.pegs.entries()){const vx=b.vx,vy=b.vy;if(collide(b,{...p,id:-1,kind:'capacitor',size:p.r*2,hp:1,maxHp:1,flash:0},restitution)){this.passiveContact('peg'+i,b);if(Math.hypot(b.vx-vx,b.vy-vy)/(1+restitution)<55)supported=true;}}
@@ -103,6 +120,7 @@ export class Game{
    }
    this.rescue(b,dt,supported);
   }
+  this.liftTime=Math.max(0,this.liftTime-dt);
   // Collection requires the entire ball to enter the bottom slot; never a lifetime cutoff.
   this.balls=this.balls.filter(b=>b.y-b.r<692);this.targets=this.targets.filter(t=>t.hp>0);if(this.balls.length===0)this.finish();
  }

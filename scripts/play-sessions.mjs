@@ -3,11 +3,12 @@ import {mkdir,writeFile} from 'node:fs/promises';
 import assert from 'node:assert/strict';
 const browser=await chromium.launch({channel:'chrome',headless:true});
 const sessions=[],errors=[];
+const stage=process.argv.find(a=>a.startsWith('--stage='))?.slice(8)||'Stage-04';
 const choices=[['steel','standard'],['ceramic','small'],['brass','large'],['rubber','standard'],['ceramic','large'],['steel','small'],['rubber','large'],['brass','small'],['steel','large'],['rubber','small'],['brass','standard'],['ceramic','standard']];
 try{
  const page=await browser.newPage({viewport:{width:390,height:844},hasTouch:true,isMobile:true});page.on('pageerror',e=>errors.push(String(e)));
  await page.goto('http://localhost:5186');await page.waitForFunction(()=>window.fluxSnapshot);
- await mkdir('docs/iterations/Stage-04',{recursive:true});
+ await mkdir(`docs/iterations/${stage}`,{recursive:true});
  for(const level of (process.argv.includes('--wind-well')?[18]:[4,18,23])){
   await page.locator('#levels').click();await page.locator(`[data-level="${level}"]`).click();await page.locator('#beginChallenge').click();const shots=[];
   while(await page.evaluate(()=>window.fluxSnapshot().phase==='aim')){
@@ -22,8 +23,8 @@ try{
    shots.push({material,size,angle,hits:after.stats.hits-before.stats.hits,seconds:after.stats.flight-before.stats.flight,rescues:after.stats.rescues-before.stats.rescues,railChargesRemaining:after.rails.map(r=>r.charges),phase:after.phase,remaining:after.remainingShots});
    console.log(`UI game ${level+1}, shot ${after.shots}: ${material}/${size}, ${shots.at(-1).hits} hits, ${shots.at(-1).seconds.toFixed(2)}s, ${after.phase}`);
   }
-  const result=await page.evaluate(()=>window.fluxSnapshot());await page.screenshot({path:`docs/iterations/Stage-04/play-session-${level+1}.png`});sessions.push({level:level+1,result:result.phase,shots,score:result.score,remainingBricks:result.targets});
+  const result=await page.evaluate(()=>window.fluxSnapshot());await page.screenshot({path:`docs/iterations/${stage}/play-session-${level+1}.png`});sessions.push({level:level+1,result:result.phase,shots,score:result.score,remainingBricks:result.targets});
  }
  assert.equal(errors.length,0);
- await writeFile(`docs/iterations/Stage-04/play-sessions${process.argv.includes('--wind-well')?'-wind-well':''}.json`,JSON.stringify({method:'Three complete UI games, fixed non-solver angles and mixed loadouts, natural collection, no manual recall, no game-state mutation. This is automated real-time UI play, not human win-rate evidence.',viewport:'390x844',sessions,errors},null,2)+'\n');
+ await writeFile(`docs/iterations/${stage}/play-sessions${process.argv.includes('--wind-well')?'-wind-well':''}.json`,JSON.stringify({method:'Three complete UI games, fixed non-solver angles and mixed loadouts, natural collection, no manual recall, no game-state mutation. This is automated real-time UI play, not human win-rate evidence.',viewport:'390x844',sessions,errors},null,2)+'\n');
 }finally{await browser.close();}

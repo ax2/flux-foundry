@@ -1,6 +1,7 @@
 import {writeFile,mkdir} from 'node:fs/promises';
 import {Game,STEP} from '../src/game';
 import {LEVELS,MATERIALS,SIZES,type Material,type BallSize} from '../src/content';
+const stage=process.argv.find(a=>a.startsWith('--stage='))?.slice(8)||'Stage-04';
 const noRails=process.argv.includes('--no-rails');
 const rows=[];const unfinished=[];
 for(let level=0;level<LEVELS.length;level++)for(const material of Object.keys(MATERIALS) as Material[])for(const size of Object.keys(SIZES) as BallSize[]){
@@ -17,5 +18,5 @@ for(let level=0;level<LEVELS.length;level++)for(const material of Object.keys(MA
 }
 const totals=[];for(const material of Object.keys(MATERIALS))for(const size of Object.keys(SIZES)){const group=rows.filter(r=>r.material===material&&r.size===size);totals.push({material,size,meanHits:group.reduce((n,r)=>n+r.hits,0)/group.length,meanSeconds:group.reduce((n,r)=>n+r.seconds,0)/group.length,bestLevels:LEVELS.filter((_,i)=>group.find(r=>r.level===i+1)!.hits===Math.max(...rows.filter(r=>r.level===i+1).map(r=>r.hits))).length});}
 const report={method:`${LEVELS.length} levels × 12 material/size combinations × 9 angles = ${rows.length*9} shots. Natural collection only, no recall; 90 simulated seconds observation bound, not a game timeout. Equal launch energy, no magnet.`,samples:rows.length*9,unfinished,totals,rows};
-await mkdir('docs/iterations/Stage-04',{recursive:true});await writeFile(`docs/iterations/Stage-04/endurance${noRails?'-no-rails':''}.json`,JSON.stringify(report,null,2)+'\n');
+await mkdir(`docs/iterations/${stage}`,{recursive:true});await writeFile(`docs/iterations/${stage}/endurance${noRails?'-no-rails':''}.json`,JSON.stringify(report,null,2)+'\n');
 console.log(JSON.stringify({samples:report.samples,unfinished:unfinished.length,maxSeconds:Math.max(...rows.map(r=>r.maxSeconds)),rescues:rows.reduce((n,r)=>n+r.rescues,0),returns:rows.reduce((n,r)=>n+r.returns,0),totals},null,2));
