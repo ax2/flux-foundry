@@ -21,7 +21,8 @@ jobs:
         run: |
           $version = (Get-Content package.json | ConvertFrom-Json).version
           if ('${{ github.ref_type }}' -ne 'tag' -or '${{ github.ref_name }}' -ne "v$version") { throw 'Run from the matching version tag.' }
-          if (!(Test-Path 'docs/iterations/Stage-01/worklog.md')) { throw 'Missing stage archive.' }
+          $notes = Get-ChildItem 'docs/iterations' -Recurse -Filter "v$version.md" | Select-Object -First 1
+          if (!$notes -or !(Test-Path (Join-Path $notes.DirectoryName 'worklog.md'))) { throw 'Missing version notes or stage archive.' }
       - run: npm run package:win
         env:
           ELECTRON_BUILDER_COMPRESSION_LEVEL: '1'
@@ -37,4 +38,5 @@ jobs:
           "$hash  $($exe.Name)" | Set-Content "releases/v$version/SHA256SUMS.txt" -Encoding ascii
           gh release view "v$version" --json tagName 2>$null
           if ($LASTEXITCODE -eq 0) { Write-Output 'Existing release preserved; no assets overwritten.'; exit 0 }
-          gh release create "v$version" $exe.FullName "releases/v$version/SHA256SUMS.txt" --title "Flux Foundry v$version" --notes-file CHANGELOG.md --verify-tag
+          $notes = Get-ChildItem 'docs/iterations' -Recurse -Filter "v$version.md" | Select-Object -First 1
+          gh release create "v$version" $exe.FullName "releases/v$version/SHA256SUMS.txt" --title "Flux Foundry v$version" --notes-file $notes.FullName --verify-tag
