@@ -1,0 +1,50 @@
+{
+  "tag": "v0.4.0",
+  "commit": "bc47deebee3eac1c7b5ece8b93e734b4f3a4effa",
+  "url": "https://github.com/ax2/flux-foundry/releases/tag/v0.4.0",
+  "isDraft": false,
+  "isPrerelease": false,
+  "assets": [
+    {
+      "name": "Flux-Foundry-0.4.0-Windows-x64.exe",
+      "size": 137420099,
+      "digest": "sha256:0cc7e14c794337b984dc7de32b0ea77b25fb1e2fab0df3c275280b5b27852f79",
+      "state": "uploaded"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "size": 102,
+      "digest": "sha256:22bbe611808ce30515583e8271f28d988d3717a8bdc6a90c8da94358b2939c21",
+      "state": "uploaded"
+    }
+  ],
+  "checks": {
+    "unit": 52,
+    "browser": 144,
+    "solutionLayouts": 48,
+    "finalNaturalCollectionSamples": 2592,
+    "noRailControlSamples": 2592,
+    "completeUIPlayShots": 35,
+    "windowsUnpacked": "passed",
+    "windowsPortableNative": "passed",
+    "publicWebChrome": "passed",
+    "publicIABHandoff": "tool navigation timed out; not claimed passed"
+  },
+  "workflows": [
+    {
+      "id": 42336919374,
+      "name": "Validate",
+      "conclusion": "success"
+    },
+    {
+      "id": 42336919332,
+      "name": "Deploy web game",
+      "conclusion": "success"
+    },
+    {
+      "id": 42337251363,
+      "name": "Release Windows",
+      "conclusion": "success"
+    }
+  ]
+}
