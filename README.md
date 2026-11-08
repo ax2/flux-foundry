@@ -4,7 +4,7 @@
 
 **[在线游玩](https://ax2.github.io/flux-foundry/)** · **[Windows 下载](https://github.com/ax2/flux-foundry/releases)** · MIT
 
-![手机画面](docs/iterations/Stage-17/390x844.png)
+![手机画面](docs/iterations/Stage-18/390x844.png)
 
 ## v0.17.0 接球、撞击与宝物反馈（候选）
 

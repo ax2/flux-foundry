@@ -1,0 +1,209 @@
+{
+  "phase": "volley",
+  "wave": 1,
+  "score": 590,
+  "balls": 1,
+  "targets": 1,
+  "paused": false,
+  "count": 1,
+  "power": 1,
+  "material": "brass",
+  "size": "small",
+  "radius": 9,
+  "mode": "challenge",
+  "levelIndex": 9,
+  "shots": 2,
+  "remainingShots": 6,
+  "totalBalls": 8,
+  "queue": [
+    {
+      "material": "brass",
+      "size": "small"
+    },
+    {
+      "material": "brass",
+      "size": "small"
+    },
+    {
+      "material": "brass",
+      "size": "standard"
+    },
+    {
+      "material": "rubber",
+      "size": "large"
+    },
+    {
+      "material": "steel",
+      "size": "large"
+    },
+    {
+      "material": "ceramic",
+      "size": "standard"
+    },
+    {
+      "material": "steel",
+      "size": "standard"
+    },
+    {
+      "material": "ceramic",
+      "size": "small"
+    }
+  ],
+  "dailyKey": null,
+  "goal": "clear",
+  "goalComplete": false,
+  "safetyReturn": false,
+  "paddle": {
+    "x": 282.0917311448317,
+    "target": 282.0917311448317,
+    "width": 96,
+    "vx": 0,
+    "flash": 0,
+    "tilt": -0.22,
+    "boost": 18000
+  },
+  "treasures": [],
+  "bonusLives": 0,
+  "wideTime": 0,
+  "bigTime": 0,
+  "windMultiplier": 2.4,
+  "rails": [],
+  "gates": 0,
+  "gateStates": [],
+  "stats": {
+    "hits": 29,
+    "flight": 47.27499999999796,
+    "boosts": 18,
+    "energy": 352000,
+    "rescues": 0,
+    "returns": 0,
+    "rebounds": 0,
+    "recharges": 0,
+    "pulses": 0,
+    "pickups": 0,
+    "paddleHits": 11,
+    "orbitBreaks": 0,
+    "gateVents": 0,
+    "pegRetractions": 0
+  },
+  "feedback": {
+    "counts": {
+      "launch": 2,
+      "hit": 25,
+      "break": 4,
+      "catch": 11,
+      "boost": 7,
+      "pickup": 0,
+      "weak": 1,
+      "win": 0,
+      "lose": 0
+    },
+    "last": {
+      "type": "weak",
+      "x": 289.9600007729588,
+      "y": 541.6964128002957,
+      "variant": "",
+      "strength": 1
+    },
+    "pending": 0,
+    "marks": [
+      {
+        "type": "weak",
+        "x": 289.9600007729588,
+        "y": 541.6964128002957,
+        "variant": "",
+        "strength": 1,
+        "life": 0.14833333333333334,
+        "duration": 0.24
+      }
+    ]
+  },
+  "progress": {
+    "sinceHit": 6.11666666666676,
+    "maxNoHit": 7.85000000000018,
+    "catchesWithoutHit": 1,
+    "maxCatchesWithoutHit": 2
+  },
+  "stars": 0,
+  "records": {},
+  "legacy": {},
+  "ranks": [],
+  "pegs": 2,
+  "pegStates": [
+    {
+      "x": 176,
+      "y": 340,
+      "r": 23,
+      "pressure": 1,
+      "lastContact": 42.4916666666649
+    },
+    {
+      "x": 244,
+      "y": 340,
+      "r": 23,
+      "pressure": 0,
+      "lastContact": 40.80833333333166
+    }
+  ],
+  "air": 0,
+  "airZones": [],
+  "bricks": [
+    {
+      "x": 266.12927100044305,
+      "y": 540,
+      "hp": 4,
+      "kind": "capacitor",
+      "size": 48,
+      "core": false,
+      "id": 3,
+      "maxHp": 12,
+      "flash": 0,
+      "motion": {
+        "baseX": 280,
+        "amplitude": 14,
+        "speed": 0.8999999999999999
+      },
+      "vx": 1.7083121456245578
+    }
+  ],
+  "activeBall": {
+    "x": 298.6553818865192,
+    "y": 585.0216913753503,
+    "vx": -3.0775395617504104,
+    "vy": 476.69953209029387,
+    "r": 9
+  },
+  "diagnostics": {
+    "wall": 48705.89999997616,
+    "frames": 10492,
+    "lastFrame": 48704.3,
+    "maxFrameGap": 341.6,
+    "visibility": "visible",
+    "loading": {
+      "phase": "ready",
+      "received": 3399692,
+      "total": 3399692,
+      "percent": 100,
+      "completed": 2,
+      "failed": 0
+    },
+    "audio": {
+      "enabled": true,
+      "state": "running",
+      "voices": 0,
+      "peakVoices": 7,
+      "played": {
+        "launch": 2,
+        "hit": 25,
+        "break": 4,
+        "catch": 10,
+        "boost": 7,
+        "pickup": 0,
+        "weak": 1,
+        "win": 0,
+        "lose": 0
+      },
+      "failures": 0
+    }
+  }
+}
