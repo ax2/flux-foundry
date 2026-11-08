@@ -1,0 +1,217 @@
+{
+  "policy": "mixed",
+  "method": "390×844 touch UI, complete selected challenge games after original PNG decode. Aim at visible switches/core; paddle targets extrapolated landings every120ms with recorded follow/steer policy. Trace includes no-hit duration, simulation time, wall time, frame gaps, visibility, and loading; an inactive page is brought to front and resumed through its menu. No recall, speed change or state mutation. Algorithmic controller, not human win rate.",
+  "sessions": [
+    {
+      "policy": "steer",
+      "level": 16,
+      "material": "steel",
+      "size": "standard",
+      "result": "won",
+      "score": 1165,
+      "shots": [
+        {
+          "hits": 8,
+          "catches": 4,
+          "pickups": 0,
+          "seconds": 8.866666666666804,
+          "moves": 64,
+          "remaining": 9,
+          "phase": "aim"
+        },
+        {
+          "hits": 26,
+          "catches": 6,
+          "pickups": 2,
+          "seconds": 40.08333333333106,
+          "moves": 283,
+          "remaining": 9,
+          "phase": "aim"
+        },
+        {
+          "hits": 30,
+          "catches": 12,
+          "pickups": 2,
+          "seconds": 69.50000000004246,
+          "moves": 500,
+          "remaining": 9,
+          "phase": "won"
+        }
+      ],
+      "bonusLives": 2,
+      "maxSparseGap": 10.291666666666723,
+      "maxMultiGap": 7.275000000000151,
+      "stats": {
+        "hits": 64,
+        "flight": 118.45000000004033,
+        "boosts": 33,
+        "energy": 642000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 4,
+        "paddleHits": 22,
+        "orbitBreaks": 3,
+        "gateVents": 0,
+        "pegRetractions": 0
+      },
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 10.375000000000052,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 2
+      }
+    },
+    {
+      "policy": "follow",
+      "level": 15,
+      "material": "brass",
+      "size": "standard",
+      "result": "won",
+      "score": 850,
+      "shots": [
+        {
+          "hits": 35,
+          "catches": 15,
+          "pickups": 0,
+          "seconds": 53.35833333333095,
+          "moves": 380,
+          "remaining": 9,
+          "phase": "aim"
+        },
+        {
+          "hits": 20,
+          "catches": 9,
+          "pickups": 2,
+          "seconds": 30.82500000001545,
+          "moves": 221,
+          "remaining": 10,
+          "phase": "won"
+        }
+      ],
+      "bonusLives": 2,
+      "maxSparseGap": 0,
+      "maxMultiGap": 10.158333333333397,
+      "stats": {
+        "hits": 55,
+        "flight": 84.1833333333464,
+        "boosts": 47,
+        "energy": 942000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 2,
+        "paddleHits": 24,
+        "orbitBreaks": 0,
+        "gateVents": 1,
+        "pegRetractions": 0
+      },
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 10.22500000000006,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 2
+      }
+    },
+    {
+      "policy": "follow",
+      "level": 22,
+      "material": "rubber",
+      "size": "large",
+      "result": "won",
+      "score": 745,
+      "shots": [
+        {
+          "hits": 37,
+          "catches": 16,
+          "pickups": 2,
+          "seconds": 76.74166666667381,
+          "moves": 550,
+          "remaining": 10,
+          "phase": "won"
+        }
+      ],
+      "bonusLives": 1,
+      "maxSparseGap": 9.58333333333343,
+      "maxMultiGap": 3.799999999999989,
+      "stats": {
+        "hits": 37,
+        "flight": 76.74166666667381,
+        "boosts": 28,
+        "energy": 552000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 2,
+        "paddleHits": 16,
+        "orbitBreaks": 2,
+        "gateVents": 0,
+        "pegRetractions": 0
+      },
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 9.616666666666761,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 3
+      }
+    },
+    {
+      "policy": "follow",
+      "level": 21,
+      "material": "ceramic",
+      "size": "large",
+      "result": "won",
+      "score": 465,
+      "shots": [
+        {
+          "hits": 24,
+          "catches": 7,
+          "pickups": 1,
+          "seconds": 29.124999999998987,
+          "moves": 210,
+          "remaining": 8,
+          "phase": "won"
+        }
+      ],
+      "bonusLives": 0,
+      "maxSparseGap": 0.9249999999999992,
+      "maxMultiGap": 4.450000000000011,
+      "stats": {
+        "hits": 24,
+        "flight": 29.124999999998987,
+        "boosts": 20,
+        "energy": 397808.7920873274,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 1,
+        "paddleHits": 7,
+        "orbitBreaks": 0,
+        "gateVents": 0,
+        "pegRetractions": 0
+      },
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 4.566666666666683,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 1
+      }
+    }
+  ],
+  "errors": [],
+  "summary": {
+    "games": 4,
+    "wins": 4,
+    "balls": 7,
+    "catches": 69,
+    "maxNoHit": 10.375000000000052
+  }
+}

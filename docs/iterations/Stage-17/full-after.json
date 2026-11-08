@@ -1,0 +1,5660 @@
+{
+  "method": "120 complete algorithmic games: levels4/5/14/22/26 ×12 loadouts ×2 legal paddle policies; aim at switch/core/weakest target per shot. Each original ball must naturally collect. A300 simulation second observation ceiling records unfinished, never ends a shot. Not a human win rate.",
+  "summary": {
+    "games": 120,
+    "wins": 120,
+    "losses": 0,
+    "unfinished": 0,
+    "shots": 301,
+    "longIdle": 0,
+    "maxNoHit": 19.466666666666203
+  },
+  "rows": [
+    {
+      "level": 4,
+      "material": "steel",
+      "size": "small",
+      "policy": "follow",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 5.025,
+          "hits": 7,
+          "catches": 2,
+          "phase": "aim"
+        },
+        {
+          "seconds": 48.425,
+          "hits": 20,
+          "catches": 18,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 7.98333333333352,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 3
+      },
+      "stats": {
+        "hits": 27,
+        "flight": 53.44999999999761,
+        "boosts": 35,
+        "energy": 685531.6016879062,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 3,
+        "paddleHits": 20,
+        "orbitBreaks": 3,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 4,
+      "material": "steel",
+      "size": "small",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 6.75,
+          "hits": 8,
+          "catches": 3,
+          "phase": "aim"
+        },
+        {
+          "seconds": 19.133333333333333,
+          "hits": 14,
+          "catches": 3,
+          "phase": "aim"
+        },
+        {
+          "seconds": 18.225,
+          "hits": 5,
+          "catches": 7,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 7.808333333333511,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 4
+      },
+      "stats": {
+        "hits": 27,
+        "flight": 44.10833333333147,
+        "boosts": 36,
+        "energy": 740000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 4,
+        "paddleHits": 13,
+        "orbitBreaks": 2,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 4,
+      "material": "steel",
+      "size": "standard",
+      "policy": "follow",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 37.65,
+          "hits": 27,
+          "catches": 12,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 6.566666666666783,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 3
+      },
+      "stats": {
+        "hits": 27,
+        "flight": 37.649999999998506,
+        "boosts": 28,
+        "energy": 549649.8602146199,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 3,
+        "paddleHits": 12,
+        "orbitBreaks": 2,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 4,
+      "material": "steel",
+      "size": "standard",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 10.366666666666667,
+          "hits": 18,
+          "catches": 4,
+          "phase": "aim"
+        },
+        {
+          "seconds": 24.958333333333332,
+          "hits": 9,
+          "catches": 8,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 6.341666666666772,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 2
+      },
+      "stats": {
+        "hits": 27,
+        "flight": 35.32499999999864,
+        "boosts": 31,
+        "energy": 615908.5223283855,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 3,
+        "paddleHits": 12,
+        "orbitBreaks": 2,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 4,
+      "material": "steel",
+      "size": "large",
+      "policy": "follow",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 32.36666666666667,
+          "hits": 27,
+          "catches": 19,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 4.383333333333341,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 3
+      },
+      "stats": {
+        "hits": 27,
+        "flight": 32.36666666666547,
+        "boosts": 22,
+        "energy": 395582.8567954224,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 1,
+        "paddleHits": 19,
+        "orbitBreaks": 0,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 4,
+      "material": "steel",
+      "size": "large",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 27.591666666666665,
+          "hits": 27,
+          "catches": 12,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 7.100000000000143,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 2
+      },
+      "stats": {
+        "hits": 27,
+        "flight": 27.59166666666574,
+        "boosts": 25,
+        "energy": 496145.5681652789,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 3,
+        "paddleHits": 12,
+        "orbitBreaks": 2,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 4,
+      "material": "brass",
+      "size": "small",
+      "policy": "follow",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 5.391666666666667,
+          "hits": 4,
+          "catches": 1,
+          "phase": "aim"
+        },
+        {
+          "seconds": 41.49166666666667,
+          "hits": 23,
+          "catches": 18,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 7.31666666666682,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 3
+      },
+      "stats": {
+        "hits": 27,
+        "flight": 46.883333333331315,
+        "boosts": 37,
+        "energy": 738000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 1,
+        "paddleHits": 19,
+        "orbitBreaks": 1,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 4,
+      "material": "brass",
+      "size": "small",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 53.9,
+          "hits": 27,
+          "catches": 15,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 9.766666666666753,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 3
+      },
+      "stats": {
+        "hits": 27,
+        "flight": 53.89999999999758,
+        "boosts": 33,
+        "energy": 688000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 3,
+        "paddleHits": 15,
+        "orbitBreaks": 1,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 4,
+      "material": "brass",
+      "size": "standard",
+      "policy": "follow",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 11.308333333333334,
+          "hits": 9,
+          "catches": 4,
+          "phase": "aim"
+        },
+        {
+          "seconds": 6.266666666666667,
+          "hits": 4,
+          "catches": 2,
+          "phase": "aim"
+        },
+        {
+          "seconds": 39.94166666666666,
+          "hits": 14,
+          "catches": 14,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 7.058333333333474,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 3
+      },
+      "stats": {
+        "hits": 27,
+        "flight": 57.516666666664044,
+        "boosts": 38,
+        "energy": 786332.1169248655,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 2,
+        "paddleHits": 20,
+        "orbitBreaks": 3,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 4,
+      "material": "brass",
+      "size": "standard",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 13.208333333333334,
+          "hits": 11,
+          "catches": 4,
+          "phase": "aim"
+        },
+        {
+          "seconds": 42.541666666666664,
+          "hits": 16,
+          "catches": 22,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 6.816666666666795,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 4
+      },
+      "stats": {
+        "hits": 27,
+        "flight": 55.74999999999748,
+        "boosts": 36,
+        "energy": 688587.7653059533,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 3,
+        "paddleHits": 26,
+        "orbitBreaks": 4,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 4,
+      "material": "brass",
+      "size": "large",
+      "policy": "follow",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 60.00833333333333,
+          "hits": 27,
+          "catches": 29,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 6.525000000000114,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 3
+      },
+      "stats": {
+        "hits": 27,
+        "flight": 60.00833333333057,
+        "boosts": 41,
+        "energy": 788471.3980393999,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 1,
+        "paddleHits": 29,
+        "orbitBreaks": 4,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 4,
+      "material": "brass",
+      "size": "large",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 2.216666666666667,
+          "hits": 3,
+          "catches": 1,
+          "phase": "aim"
+        },
+        {
+          "seconds": 2.216666666666667,
+          "hits": 3,
+          "catches": 1,
+          "phase": "aim"
+        },
+        {
+          "seconds": 7.1499999999999995,
+          "hits": 10,
+          "catches": 1,
+          "phase": "aim"
+        },
+        {
+          "seconds": 33.875,
+          "hits": 11,
+          "catches": 12,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 7.191666666666814,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 4
+      },
+      "stats": {
+        "hits": 27,
+        "flight": 45.458333333331396,
+        "boosts": 21,
+        "energy": 414524.2311570673,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 2,
+        "paddleHits": 15,
+        "orbitBreaks": 2,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 4,
+      "material": "ceramic",
+      "size": "small",
+      "policy": "follow",
+      "result": "won",
+      "stars": 2,
+      "shots": [
+        {
+          "seconds": 13.575,
+          "hits": 16,
+          "catches": 6,
+          "phase": "aim"
+        },
+        {
+          "seconds": 4.308333333333334,
+          "hits": 5,
+          "catches": 3,
+          "phase": "aim"
+        },
+        {
+          "seconds": 2.8833333333333333,
+          "hits": 2,
+          "catches": 1,
+          "phase": "aim"
+        },
+        {
+          "seconds": 2.8833333333333333,
+          "hits": 2,
+          "catches": 1,
+          "phase": "aim"
+        },
+        {
+          "seconds": 2.8833333333333333,
+          "hits": 2,
+          "catches": 1,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 2.56666666666666,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 2
+      },
+      "stats": {
+        "hits": 27,
+        "flight": 26.533333333332468,
+        "boosts": 30,
+        "energy": 612000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 1,
+        "paddleHits": 12,
+        "orbitBreaks": 0,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 4,
+      "material": "ceramic",
+      "size": "small",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 4.133333333333333,
+          "hits": 8,
+          "catches": 4,
+          "phase": "aim"
+        },
+        {
+          "seconds": 25.183333333333334,
+          "hits": 19,
+          "catches": 8,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 6.466666666666778,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 2
+      },
+      "stats": {
+        "hits": 27,
+        "flight": 29.316666666665643,
+        "boosts": 29,
+        "energy": 590000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 4,
+        "paddleHits": 12,
+        "orbitBreaks": 1,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 4,
+      "material": "ceramic",
+      "size": "standard",
+      "policy": "follow",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 2.6666666666666665,
+          "hits": 6,
+          "catches": 1,
+          "phase": "aim"
+        },
+        {
+          "seconds": 38.475,
+          "hits": 21,
+          "catches": 8,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 7.016666666666805,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 2
+      },
+      "stats": {
+        "hits": 27,
+        "flight": 41.141666666664975,
+        "boosts": 26,
+        "energy": 522642.40505051444,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 2,
+        "paddleHits": 9,
+        "orbitBreaks": 0,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 4,
+      "material": "ceramic",
+      "size": "standard",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 7.308333333333334,
+          "hits": 16,
+          "catches": 2,
+          "phase": "aim"
+        },
+        {
+          "seconds": 30.591666666666665,
+          "hits": 11,
+          "catches": 8,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 6.391666666666774,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 2
+      },
+      "stats": {
+        "hits": 27,
+        "flight": 37.89999999999849,
+        "boosts": 30,
+        "energy": 563978.3430334309,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 4,
+        "paddleHits": 10,
+        "orbitBreaks": 2,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 4,
+      "material": "ceramic",
+      "size": "large",
+      "policy": "follow",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 24.183333333333334,
+          "hits": 17,
+          "catches": 6,
+          "phase": "aim"
+        },
+        {
+          "seconds": 30.383333333333333,
+          "hits": 10,
+          "catches": 8,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 6.666666666666788,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 2
+      },
+      "stats": {
+        "hits": 27,
+        "flight": 54.56666666666421,
+        "boosts": 27,
+        "energy": 494860.786151074,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 6,
+        "paddleHits": 14,
+        "orbitBreaks": 2,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 4,
+      "material": "ceramic",
+      "size": "large",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 42.25,
+          "hits": 27,
+          "catches": 7,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 3.983333333333322,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 1
+      },
+      "stats": {
+        "hits": 27,
+        "flight": 42.249999999998245,
+        "boosts": 16,
+        "energy": 332000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 3,
+        "paddleHits": 7,
+        "orbitBreaks": 0,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 4,
+      "material": "rubber",
+      "size": "small",
+      "policy": "follow",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 20.066666666666666,
+          "hits": 23,
+          "catches": 14,
+          "phase": "aim"
+        },
+        {
+          "seconds": 3.3666666666666667,
+          "hits": 2,
+          "catches": 2,
+          "phase": "aim"
+        },
+        {
+          "seconds": 3.3666666666666667,
+          "hits": 2,
+          "catches": 2,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 3.1166666666666583,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 2
+      },
+      "stats": {
+        "hits": 27,
+        "flight": 26.79999999999912,
+        "boosts": 36,
+        "energy": 720000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 3,
+        "paddleHits": 18,
+        "orbitBreaks": 0,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 4,
+      "material": "rubber",
+      "size": "small",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 49.94166666666666,
+          "hits": 27,
+          "catches": 19,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 5.483333333333396,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 4
+      },
+      "stats": {
+        "hits": 27,
+        "flight": 49.941666666664474,
+        "boosts": 37,
+        "energy": 738000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 3,
+        "paddleHits": 19,
+        "orbitBreaks": 3,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 4,
+      "material": "rubber",
+      "size": "standard",
+      "policy": "follow",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 37.541666666666664,
+          "hits": 27,
+          "catches": 14,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 5.875000000000082,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 2
+      },
+      "stats": {
+        "hits": 27,
+        "flight": 37.54166666666518,
+        "boosts": 32,
+        "energy": 648000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 1,
+        "paddleHits": 14,
+        "orbitBreaks": 1,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 4,
+      "material": "rubber",
+      "size": "standard",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 31.2,
+          "hits": 27,
+          "catches": 12,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 4.716666666666691,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 1
+      },
+      "stats": {
+        "hits": 27,
+        "flight": 31.19999999999887,
+        "boosts": 27,
+        "energy": 546000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 3,
+        "paddleHits": 12,
+        "orbitBreaks": 0,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 4,
+      "material": "rubber",
+      "size": "large",
+      "policy": "follow",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 15.799999999999999,
+          "hits": 9,
+          "catches": 2,
+          "phase": "aim"
+        },
+        {
+          "seconds": 3.1166666666666667,
+          "hits": 6,
+          "catches": 2,
+          "phase": "aim"
+        },
+        {
+          "seconds": 33.71666666666667,
+          "hits": 12,
+          "catches": 9,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 9.375000000000108,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 2
+      },
+      "stats": {
+        "hits": 27,
+        "flight": 52.63333333333099,
+        "boosts": 33,
+        "energy": 674000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 4,
+        "paddleHits": 13,
+        "orbitBreaks": 1,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 4,
+      "material": "rubber",
+      "size": "large",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 27.358333333333334,
+          "hits": 16,
+          "catches": 7,
+          "phase": "aim"
+        },
+        {
+          "seconds": 24.391666666666666,
+          "hits": 11,
+          "catches": 7,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 7.691666666666839,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 2
+      },
+      "stats": {
+        "hits": 27,
+        "flight": 51.749999999997705,
+        "boosts": 36,
+        "energy": 736000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 5,
+        "paddleHits": 14,
+        "orbitBreaks": 1,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 5,
+      "material": "steel",
+      "size": "small",
+      "policy": "follow",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 52.333333333333336,
+          "hits": 23,
+          "catches": 9,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 6.175000000000097,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 2
+      },
+      "stats": {
+        "hits": 23,
+        "flight": 52.333333333331005,
+        "boosts": 15,
+        "energy": 294000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 3,
+        "paddleHits": 9,
+        "orbitBreaks": 0,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 5,
+      "material": "steel",
+      "size": "small",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 58.28333333333333,
+          "hits": 20,
+          "catches": 15,
+          "phase": "aim"
+        },
+        {
+          "seconds": 17.325,
+          "hits": 3,
+          "catches": 5,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 9.066666666666793,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 3
+      },
+      "stats": {
+        "hits": 23,
+        "flight": 75.60833333333957,
+        "boosts": 26,
+        "energy": 492000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 4,
+        "paddleHits": 20,
+        "orbitBreaks": 4,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 5,
+      "material": "steel",
+      "size": "standard",
+      "policy": "follow",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 73.35833333333333,
+          "hits": 23,
+          "catches": 18,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 14.174999999999836,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 4
+      },
+      "stats": {
+        "hits": 23,
+        "flight": 73.35833333333778,
+        "boosts": 22,
+        "energy": 442000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 2,
+        "paddleHits": 18,
+        "orbitBreaks": 2,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 5,
+      "material": "steel",
+      "size": "standard",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 22.416666666666668,
+          "hits": 18,
+          "catches": 10,
+          "phase": "aim"
+        },
+        {
+          "seconds": 8.3,
+          "hits": 5,
+          "catches": 3,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 4.458333333333345,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 2
+      },
+      "stats": {
+        "hits": 23,
+        "flight": 30.716666666665564,
+        "boosts": 11,
+        "energy": 214000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 4,
+        "paddleHits": 13,
+        "orbitBreaks": 1,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 5,
+      "material": "steel",
+      "size": "large",
+      "policy": "follow",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 39.375,
+          "hits": 23,
+          "catches": 13,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 6.633333333333453,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 3
+      },
+      "stats": {
+        "hits": 23,
+        "flight": 39.37499999999841,
+        "boosts": 19,
+        "energy": 350664.3557317769,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 2,
+        "paddleHits": 13,
+        "orbitBreaks": 1,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 5,
+      "material": "steel",
+      "size": "large",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 33.6,
+          "hits": 23,
+          "catches": 10,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 4.191666666666665,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 2
+      },
+      "stats": {
+        "hits": 23,
+        "flight": 33.59999999999874,
+        "boosts": 16,
+        "energy": 296664.3557317769,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 1,
+        "paddleHits": 10,
+        "orbitBreaks": 0,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 5,
+      "material": "brass",
+      "size": "small",
+      "policy": "follow",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 75.65833333333333,
+          "hits": 23,
+          "catches": 19,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 13.141666666666561,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 4
+      },
+      "stats": {
+        "hits": 23,
+        "flight": 75.65833333333961,
+        "boosts": 25,
+        "energy": 478000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 1,
+        "paddleHits": 19,
+        "orbitBreaks": 4,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 5,
+      "material": "brass",
+      "size": "small",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 80.33333333333333,
+          "hits": 23,
+          "catches": 27,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 8.82500000000014,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 4
+      },
+      "stats": {
+        "hits": 23,
+        "flight": 80.33333333334333,
+        "boosts": 33,
+        "energy": 618000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 1,
+        "paddleHits": 27,
+        "orbitBreaks": 7,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 5,
+      "material": "brass",
+      "size": "standard",
+      "policy": "follow",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 53.28333333333333,
+          "hits": 23,
+          "catches": 20,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 9.025000000000128,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 4
+      },
+      "stats": {
+        "hits": 23,
+        "flight": 53.28333333333095,
+        "boosts": 26,
+        "energy": 492000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 0,
+        "paddleHits": 20,
+        "orbitBreaks": 3,
+        "gateVents": 1,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 5,
+      "material": "brass",
+      "size": "standard",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 59.85,
+          "hits": 23,
+          "catches": 23,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 9.650000000000093,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 3
+      },
+      "stats": {
+        "hits": 23,
+        "flight": 59.849999999997245,
+        "boosts": 29,
+        "energy": 546000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 2,
+        "paddleHits": 23,
+        "orbitBreaks": 0,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 5,
+      "material": "brass",
+      "size": "large",
+      "policy": "follow",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 30.091666666666665,
+          "hits": 23,
+          "catches": 18,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 3.633333333333323,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 2
+      },
+      "stats": {
+        "hits": 23,
+        "flight": 30.0916666666656,
+        "boosts": 23,
+        "energy": 438000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 0,
+        "paddleHits": 18,
+        "orbitBreaks": 0,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 5,
+      "material": "brass",
+      "size": "large",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 27.758333333333333,
+          "hits": 21,
+          "catches": 8,
+          "phase": "aim"
+        },
+        {
+          "seconds": 12.658333333333333,
+          "hits": 2,
+          "catches": 5,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 7.266666666666818,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 3
+      },
+      "stats": {
+        "hits": 23,
+        "flight": 40.416666666665016,
+        "boosts": 16,
+        "energy": 312000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 1,
+        "paddleHits": 13,
+        "orbitBreaks": 2,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 5,
+      "material": "ceramic",
+      "size": "small",
+      "policy": "follow",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 6.15,
+          "hits": 6,
+          "catches": 1,
+          "phase": "aim"
+        },
+        {
+          "seconds": 9.391666666666666,
+          "hits": 10,
+          "catches": 4,
+          "phase": "aim"
+        },
+        {
+          "seconds": 19.991666666666667,
+          "hits": 7,
+          "catches": 12,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 4.716666666666691,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 5
+      },
+      "stats": {
+        "hits": 23,
+        "flight": 35.53333333333196,
+        "boosts": 23,
+        "energy": 438000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 4,
+        "paddleHits": 17,
+        "orbitBreaks": 2,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 5,
+      "material": "ceramic",
+      "size": "small",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 6.15,
+          "hits": 6,
+          "catches": 1,
+          "phase": "aim"
+        },
+        {
+          "seconds": 29.375,
+          "hits": 17,
+          "catches": 13,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 4.741666666666692,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 3
+      },
+      "stats": {
+        "hits": 23,
+        "flight": 35.52499999999863,
+        "boosts": 20,
+        "energy": 384000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 4,
+        "paddleHits": 14,
+        "orbitBreaks": 2,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 5,
+      "material": "ceramic",
+      "size": "standard",
+      "policy": "follow",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 49.11666666666667,
+          "hits": 20,
+          "catches": 19,
+          "phase": "aim"
+        },
+        {
+          "seconds": 8.816666666666666,
+          "hits": 3,
+          "catches": 2,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 8.175000000000177,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 3
+      },
+      "stats": {
+        "hits": 23,
+        "flight": 57.93333333333069,
+        "boosts": 26,
+        "energy": 492000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 3,
+        "paddleHits": 21,
+        "orbitBreaks": 0,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 5,
+      "material": "ceramic",
+      "size": "standard",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 32.4,
+          "hits": 22,
+          "catches": 8,
+          "phase": "aim"
+        },
+        {
+          "seconds": 4.275,
+          "hits": 1,
+          "catches": 0,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 7.441666666666826,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 1
+      },
+      "stats": {
+        "hits": 23,
+        "flight": 36.67499999999856,
+        "boosts": 14,
+        "energy": 276000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 3,
+        "paddleHits": 8,
+        "orbitBreaks": 0,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 5,
+      "material": "ceramic",
+      "size": "large",
+      "policy": "follow",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 40.875,
+          "hits": 23,
+          "catches": 10,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 7.283333333333485,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 2
+      },
+      "stats": {
+        "hits": 23,
+        "flight": 40.87499999999832,
+        "boosts": 12,
+        "energy": 235349.99203680793,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 3,
+        "paddleHits": 10,
+        "orbitBreaks": 1,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 5,
+      "material": "ceramic",
+      "size": "large",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 57.275,
+          "hits": 23,
+          "catches": 13,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 10.208333333333394,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 2
+      },
+      "stats": {
+        "hits": 23,
+        "flight": 57.27499999999739,
+        "boosts": 17,
+        "energy": 330000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 3,
+        "paddleHits": 13,
+        "orbitBreaks": 2,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 5,
+      "material": "rubber",
+      "size": "small",
+      "policy": "follow",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 18.366666666666667,
+          "hits": 8,
+          "catches": 4,
+          "phase": "aim"
+        },
+        {
+          "seconds": 25.616666666666667,
+          "hits": 15,
+          "catches": 15,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 5.275000000000052,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 3
+      },
+      "stats": {
+        "hits": 23,
+        "flight": 43.98333333333148,
+        "boosts": 25,
+        "energy": 474000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 5,
+        "paddleHits": 19,
+        "orbitBreaks": 1,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 5,
+      "material": "rubber",
+      "size": "small",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 34.00833333333333,
+          "hits": 22,
+          "catches": 20,
+          "phase": "aim"
+        },
+        {
+          "seconds": 1.1583333333333332,
+          "hits": 1,
+          "catches": 0,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 3.3083333333333242,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 2
+      },
+      "stats": {
+        "hits": 23,
+        "flight": 35.166666666665314,
+        "boosts": 26,
+        "energy": 492000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 3,
+        "paddleHits": 20,
+        "orbitBreaks": 0,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 5,
+      "material": "rubber",
+      "size": "standard",
+      "policy": "follow",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 35.525,
+          "hits": 23,
+          "catches": 11,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 4.9250000000000345,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 2
+      },
+      "stats": {
+        "hits": 23,
+        "flight": 35.52499999999863,
+        "boosts": 17,
+        "energy": 330000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 1,
+        "paddleHits": 11,
+        "orbitBreaks": 0,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 5,
+      "material": "rubber",
+      "size": "standard",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 51.36666666666667,
+          "hits": 22,
+          "catches": 15,
+          "phase": "aim"
+        },
+        {
+          "seconds": 1.7249999999999999,
+          "hits": 1,
+          "catches": 0,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 5.98333333333342,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 3
+      },
+      "stats": {
+        "hits": 23,
+        "flight": 53.091666666664295,
+        "boosts": 21,
+        "energy": 402000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 3,
+        "paddleHits": 15,
+        "orbitBreaks": 3,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 5,
+      "material": "rubber",
+      "size": "large",
+      "policy": "follow",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 39.983333333333334,
+          "hits": 17,
+          "catches": 9,
+          "phase": "aim"
+        },
+        {
+          "seconds": 26.90833333333333,
+          "hits": 6,
+          "catches": 6,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 7.083333333333475,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 3
+      },
+      "stats": {
+        "hits": 23,
+        "flight": 66.89166666666597,
+        "boosts": 21,
+        "energy": 402000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 5,
+        "paddleHits": 15,
+        "orbitBreaks": 2,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 5,
+      "material": "rubber",
+      "size": "large",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 20.725,
+          "hits": 11,
+          "catches": 5,
+          "phase": "aim"
+        },
+        {
+          "seconds": 17.616666666666667,
+          "hits": 12,
+          "catches": 5,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 6.6083333333334515,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 2
+      },
+      "stats": {
+        "hits": 23,
+        "flight": 38.341666666665134,
+        "boosts": 16,
+        "energy": 312000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 3,
+        "paddleHits": 10,
+        "orbitBreaks": 1,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 14,
+      "material": "steel",
+      "size": "small",
+      "policy": "follow",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 25.016666666666666,
+          "hits": 33,
+          "catches": 7,
+          "phase": "aim"
+        },
+        {
+          "seconds": 33.40833333333333,
+          "hits": 16,
+          "catches": 9,
+          "phase": "aim"
+        },
+        {
+          "seconds": 1.9416666666666667,
+          "hits": 2,
+          "catches": 1,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 10.650000000000036,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 2
+      },
+      "stats": {
+        "hits": 51,
+        "flight": 60.36666666666388,
+        "boosts": 48,
+        "energy": 988000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 3,
+        "paddleHits": 17,
+        "orbitBreaks": 0,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 14,
+      "material": "steel",
+      "size": "small",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 11.766666666666666,
+          "hits": 15,
+          "catches": 4,
+          "phase": "aim"
+        },
+        {
+          "seconds": 7.425,
+          "hits": 6,
+          "catches": 4,
+          "phase": "aim"
+        },
+        {
+          "seconds": 52.21666666666667,
+          "hits": 30,
+          "catches": 22,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 6.2500000000001,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 3
+      },
+      "stats": {
+        "hits": 51,
+        "flight": 71.40833333333623,
+        "boosts": 62,
+        "energy": 1244000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 4,
+        "paddleHits": 30,
+        "orbitBreaks": 1,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 14,
+      "material": "steel",
+      "size": "standard",
+      "policy": "follow",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 11.541666666666666,
+          "hits": 21,
+          "catches": 9,
+          "phase": "aim"
+        },
+        {
+          "seconds": 66.05833333333334,
+          "hits": 30,
+          "catches": 15,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 9.99166666666674,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 2
+      },
+      "stats": {
+        "hits": 51,
+        "flight": 77.60000000000782,
+        "boosts": 46,
+        "energy": 913652.1848326564,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 2,
+        "paddleHits": 24,
+        "orbitBreaks": 2,
+        "gateVents": 0,
+        "pegRetractions": 1
+      }
+    },
+    {
+      "level": 14,
+      "material": "steel",
+      "size": "standard",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 1.6333333333333333,
+          "hits": 3,
+          "catches": 1,
+          "phase": "aim"
+        },
+        {
+          "seconds": 1.6333333333333333,
+          "hits": 3,
+          "catches": 1,
+          "phase": "aim"
+        },
+        {
+          "seconds": 15.366666666666667,
+          "hits": 10,
+          "catches": 0,
+          "phase": "aim"
+        },
+        {
+          "seconds": 51.541666666666664,
+          "hits": 25,
+          "catches": 12,
+          "phase": "aim"
+        },
+        {
+          "seconds": 25.6,
+          "hits": 10,
+          "catches": 13,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 6.8750000000001315,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 3
+      },
+      "stats": {
+        "hits": 51,
+        "flight": 95.77500000002229,
+        "boosts": 62,
+        "energy": 1224824.3573030229,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 6,
+        "paddleHits": 27,
+        "orbitBreaks": 3,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 14,
+      "material": "steel",
+      "size": "large",
+      "policy": "follow",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 29.15833333333333,
+          "hits": 38,
+          "catches": 11,
+          "phase": "aim"
+        },
+        {
+          "seconds": 39.608333333333334,
+          "hits": 13,
+          "catches": 13,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 7.508333333333496,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 3
+      },
+      "stats": {
+        "hits": 51,
+        "flight": 68.76666666666746,
+        "boosts": 30,
+        "energy": 587202.6941884045,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 4,
+        "paddleHits": 24,
+        "orbitBreaks": 3,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 14,
+      "material": "steel",
+      "size": "large",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 24.4,
+          "hits": 26,
+          "catches": 7,
+          "phase": "aim"
+        },
+        {
+          "seconds": 55.90833333333333,
+          "hits": 25,
+          "catches": 18,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 6.491666666666779,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 2
+      },
+      "stats": {
+        "hits": 51,
+        "flight": 80.30833333334331,
+        "boosts": 40,
+        "energy": 785281.0817922242,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 4,
+        "paddleHits": 25,
+        "orbitBreaks": 1,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 14,
+      "material": "brass",
+      "size": "small",
+      "policy": "follow",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 13.358333333333333,
+          "hits": 15,
+          "catches": 4,
+          "phase": "aim"
+        },
+        {
+          "seconds": 5.858333333333333,
+          "hits": 7,
+          "catches": 3,
+          "phase": "aim"
+        },
+        {
+          "seconds": 87.9,
+          "hits": 29,
+          "catches": 27,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 8.583333333333487,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 4
+      },
+      "stats": {
+        "hits": 51,
+        "flight": 107.11666666669798,
+        "boosts": 68,
+        "energy": 1382000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 2,
+        "paddleHits": 34,
+        "orbitBreaks": 4,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 14,
+      "material": "brass",
+      "size": "small",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 22.841666666666665,
+          "hits": 17,
+          "catches": 7,
+          "phase": "aim"
+        },
+        {
+          "seconds": 11.283333333333333,
+          "hits": 10,
+          "catches": 1,
+          "phase": "aim"
+        },
+        {
+          "seconds": 11.6,
+          "hits": 9,
+          "catches": 9,
+          "phase": "aim"
+        },
+        {
+          "seconds": 1.7083333333333333,
+          "hits": 3,
+          "catches": 2,
+          "phase": "aim"
+        },
+        {
+          "seconds": 9.116666666666667,
+          "hits": 3,
+          "catches": 1,
+          "phase": "aim"
+        },
+        {
+          "seconds": 48.575,
+          "hits": 9,
+          "catches": 16,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 13.583333333333202,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 4
+      },
+      "stats": {
+        "hits": 51,
+        "flight": 105.12500000002973,
+        "boosts": 74,
+        "energy": 1532000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 7,
+        "paddleHits": 36,
+        "orbitBreaks": 4,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 14,
+      "material": "brass",
+      "size": "standard",
+      "policy": "follow",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 38.68333333333333,
+          "hits": 31,
+          "catches": 14,
+          "phase": "aim"
+        },
+        {
+          "seconds": 3,
+          "hits": 3,
+          "catches": 2,
+          "phase": "aim"
+        },
+        {
+          "seconds": 3.3833333333333333,
+          "hits": 1,
+          "catches": 1,
+          "phase": "aim"
+        },
+        {
+          "seconds": 30.099999999999998,
+          "hits": 16,
+          "catches": 7,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 6.6750000000001215,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 3
+      },
+      "stats": {
+        "hits": 51,
+        "flight": 75.16666666667255,
+        "boosts": 56,
+        "energy": 1144000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 2,
+        "paddleHits": 24,
+        "orbitBreaks": 1,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 14,
+      "material": "brass",
+      "size": "standard",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 67.99166666666666,
+          "hits": 51,
+          "catches": 28,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 8.258333333333505,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 2
+      },
+      "stats": {
+        "hits": 51,
+        "flight": 67.99166666666684,
+        "boosts": 48,
+        "energy": 956345.1898761048,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 2,
+        "paddleHits": 28,
+        "orbitBreaks": 2,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 14,
+      "material": "brass",
+      "size": "large",
+      "policy": "follow",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 10.583333333333334,
+          "hits": 12,
+          "catches": 5,
+          "phase": "aim"
+        },
+        {
+          "seconds": 14.4,
+          "hits": 13,
+          "catches": 3,
+          "phase": "aim"
+        },
+        {
+          "seconds": 61.266666666666666,
+          "hits": 26,
+          "catches": 18,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 9.791666666666751,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 6
+      },
+      "stats": {
+        "hits": 51,
+        "flight": 86.25000000001471,
+        "boosts": 48,
+        "energy": 1071382.5866304955,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 2,
+        "paddleHits": 26,
+        "orbitBreaks": 4,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 14,
+      "material": "brass",
+      "size": "large",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 38.708333333333336,
+          "hits": 32,
+          "catches": 14,
+          "phase": "aim"
+        },
+        {
+          "seconds": 32.166666666666664,
+          "hits": 14,
+          "catches": 13,
+          "phase": "aim"
+        },
+        {
+          "seconds": 47.50833333333333,
+          "hits": 5,
+          "catches": 16,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 19.466666666666203,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 7
+      },
+      "stats": {
+        "hits": 51,
+        "flight": 118.38333333337361,
+        "boosts": 58,
+        "energy": 1264846.9147785418,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 6,
+        "paddleHits": 43,
+        "orbitBreaks": 6,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 14,
+      "material": "ceramic",
+      "size": "small",
+      "policy": "follow",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 14.491666666666667,
+          "hits": 14,
+          "catches": 7,
+          "phase": "aim"
+        },
+        {
+          "seconds": 16.366666666666667,
+          "hits": 20,
+          "catches": 3,
+          "phase": "aim"
+        },
+        {
+          "seconds": 1.7583333333333333,
+          "hits": 3,
+          "catches": 0,
+          "phase": "aim"
+        },
+        {
+          "seconds": 43.05833333333333,
+          "hits": 14,
+          "catches": 17,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 14.258333333333164,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 5
+      },
+      "stats": {
+        "hits": 51,
+        "flight": 75.67500000000629,
+        "boosts": 65,
+        "energy": 1349738.4193735803,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 6,
+        "paddleHits": 27,
+        "orbitBreaks": 4,
+        "gateVents": 0,
+        "pegRetractions": 2
+      }
+    },
+    {
+      "level": 14,
+      "material": "ceramic",
+      "size": "small",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 21.175,
+          "hits": 18,
+          "catches": 4,
+          "phase": "aim"
+        },
+        {
+          "seconds": 6,
+          "hits": 11,
+          "catches": 2,
+          "phase": "aim"
+        },
+        {
+          "seconds": 5.633333333333333,
+          "hits": 5,
+          "catches": 4,
+          "phase": "aim"
+        },
+        {
+          "seconds": 1.7666666666666666,
+          "hits": 3,
+          "catches": 0,
+          "phase": "aim"
+        },
+        {
+          "seconds": 1.8333333333333333,
+          "hits": 3,
+          "catches": 0,
+          "phase": "aim"
+        },
+        {
+          "seconds": 2.825,
+          "hits": 3,
+          "catches": 2,
+          "phase": "aim"
+        },
+        {
+          "seconds": 15.408333333333333,
+          "hits": 8,
+          "catches": 11,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 4.866666666666698,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 4
+      },
+      "stats": {
+        "hits": 51,
+        "flight": 54.64166666666421,
+        "boosts": 57,
+        "energy": 1162000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 4,
+        "paddleHits": 23,
+        "orbitBreaks": 0,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 14,
+      "material": "ceramic",
+      "size": "standard",
+      "policy": "follow",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 26.40833333333333,
+          "hits": 38,
+          "catches": 8,
+          "phase": "aim"
+        },
+        {
+          "seconds": 3.0416666666666665,
+          "hits": 4,
+          "catches": 0,
+          "phase": "aim"
+        },
+        {
+          "seconds": 4,
+          "hits": 3,
+          "catches": 0,
+          "phase": "aim"
+        },
+        {
+          "seconds": 12.825,
+          "hits": 6,
+          "catches": 7,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 5.758333333333409,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 5
+      },
+      "stats": {
+        "hits": 51,
+        "flight": 46.274999999998016,
+        "boosts": 47,
+        "energy": 925115.8678701832,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 3,
+        "paddleHits": 15,
+        "orbitBreaks": 1,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 14,
+      "material": "ceramic",
+      "size": "standard",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 3.683333333333333,
+          "hits": 14,
+          "catches": 4,
+          "phase": "aim"
+        },
+        {
+          "seconds": 6.466666666666667,
+          "hits": 14,
+          "catches": 6,
+          "phase": "aim"
+        },
+        {
+          "seconds": 5.791666666666667,
+          "hits": 10,
+          "catches": 2,
+          "phase": "aim"
+        },
+        {
+          "seconds": 3.775,
+          "hits": 3,
+          "catches": 0,
+          "phase": "aim"
+        },
+        {
+          "seconds": 36.11666666666667,
+          "hits": 10,
+          "catches": 15,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 5.666666666666738,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 3
+      },
+      "stats": {
+        "hits": 51,
+        "flight": 55.833333333330806,
+        "boosts": 60,
+        "energy": 1129513.502032057,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 1,
+        "paddleHits": 27,
+        "orbitBreaks": 3,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 14,
+      "material": "ceramic",
+      "size": "large",
+      "policy": "follow",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 6.15,
+          "hits": 11,
+          "catches": 2,
+          "phase": "aim"
+        },
+        {
+          "seconds": 60.34166666666667,
+          "hits": 40,
+          "catches": 21,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 7.058333333333474,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 3
+      },
+      "stats": {
+        "hits": 51,
+        "flight": 66.49166666666565,
+        "boosts": 50,
+        "energy": 1004970.7022992368,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 3,
+        "paddleHits": 23,
+        "orbitBreaks": 0,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 14,
+      "material": "ceramic",
+      "size": "large",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 4.3,
+          "hits": 8,
+          "catches": 1,
+          "phase": "aim"
+        },
+        {
+          "seconds": 9.566666666666666,
+          "hits": 7,
+          "catches": 4,
+          "phase": "aim"
+        },
+        {
+          "seconds": 12.066666666666666,
+          "hits": 10,
+          "catches": 6,
+          "phase": "aim"
+        },
+        {
+          "seconds": 13.058333333333334,
+          "hits": 14,
+          "catches": 5,
+          "phase": "aim"
+        },
+        {
+          "seconds": 30.891666666666666,
+          "hits": 12,
+          "catches": 12,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 7.058333333333474,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 3
+      },
+      "stats": {
+        "hits": 51,
+        "flight": 69.88333333333502,
+        "boosts": 51,
+        "energy": 1023990.9128773526,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 5,
+        "paddleHits": 28,
+        "orbitBreaks": 2,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 14,
+      "material": "rubber",
+      "size": "small",
+      "policy": "follow",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 7.433333333333334,
+          "hits": 14,
+          "catches": 5,
+          "phase": "aim"
+        },
+        {
+          "seconds": 3.308333333333333,
+          "hits": 4,
+          "catches": 1,
+          "phase": "aim"
+        },
+        {
+          "seconds": 60.03333333333333,
+          "hits": 33,
+          "catches": 21,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 8.983333333333464,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 3
+      },
+      "stats": {
+        "hits": 51,
+        "flight": 70.7750000000024,
+        "boosts": 59,
+        "energy": 1190000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 2,
+        "paddleHits": 27,
+        "orbitBreaks": 4,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 14,
+      "material": "rubber",
+      "size": "small",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 4.566666666666666,
+          "hits": 6,
+          "catches": 2,
+          "phase": "aim"
+        },
+        {
+          "seconds": 3.3166666666666664,
+          "hits": 4,
+          "catches": 1,
+          "phase": "aim"
+        },
+        {
+          "seconds": 6.925,
+          "hits": 16,
+          "catches": 0,
+          "phase": "aim"
+        },
+        {
+          "seconds": 5.316666666666666,
+          "hits": 10,
+          "catches": 2,
+          "phase": "aim"
+        },
+        {
+          "seconds": 23.03333333333333,
+          "hits": 15,
+          "catches": 11,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 5.98333333333342,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 3
+      },
+      "stats": {
+        "hits": 51,
+        "flight": 43.15833333333153,
+        "boosts": 54,
+        "energy": 1124000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 4,
+        "paddleHits": 16,
+        "orbitBreaks": 1,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 14,
+      "material": "rubber",
+      "size": "standard",
+      "policy": "follow",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 7.233333333333333,
+          "hits": 5,
+          "catches": 1,
+          "phase": "aim"
+        },
+        {
+          "seconds": 68.91666666666667,
+          "hits": 46,
+          "catches": 22,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 6.825000000000129,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 3
+      },
+      "stats": {
+        "hits": 51,
+        "flight": 76.15000000000667,
+        "boosts": 52,
+        "energy": 1056000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 3,
+        "paddleHits": 23,
+        "orbitBreaks": 0,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 14,
+      "material": "rubber",
+      "size": "standard",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 6.283333333333333,
+          "hits": 7,
+          "catches": 3,
+          "phase": "aim"
+        },
+        {
+          "seconds": 14.408333333333333,
+          "hits": 20,
+          "catches": 7,
+          "phase": "aim"
+        },
+        {
+          "seconds": 31.583333333333332,
+          "hits": 18,
+          "catches": 10,
+          "phase": "aim"
+        },
+        {
+          "seconds": 26.775,
+          "hits": 6,
+          "catches": 8,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 8.725000000000145,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 4
+      },
+      "stats": {
+        "hits": 51,
+        "flight": 79.05000000000898,
+        "boosts": 69,
+        "energy": 1406000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 4,
+        "paddleHits": 28,
+        "orbitBreaks": 5,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 14,
+      "material": "rubber",
+      "size": "large",
+      "policy": "follow",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 45.608333333333334,
+          "hits": 45,
+          "catches": 19,
+          "phase": "aim"
+        },
+        {
+          "seconds": 15.816666666666666,
+          "hits": 6,
+          "catches": 2,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 6.908333333333466,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 3
+      },
+      "stats": {
+        "hits": 51,
+        "flight": 61.424999999997155,
+        "boosts": 51,
+        "energy": 1038000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 4,
+        "paddleHits": 21,
+        "orbitBreaks": 1,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 14,
+      "material": "rubber",
+      "size": "large",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 17.975,
+          "hits": 13,
+          "catches": 2,
+          "phase": "aim"
+        },
+        {
+          "seconds": 47.25833333333333,
+          "hits": 38,
+          "catches": 14,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 6.625000000000119,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 2
+      },
+      "stats": {
+        "hits": 51,
+        "flight": 65.23333333333132,
+        "boosts": 44,
+        "energy": 912000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 3,
+        "paddleHits": 16,
+        "orbitBreaks": 1,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 22,
+      "material": "steel",
+      "size": "small",
+      "policy": "follow",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 20.475,
+          "hits": 20,
+          "catches": 6,
+          "phase": "aim"
+        },
+        {
+          "seconds": 17.525,
+          "hits": 9,
+          "catches": 7,
+          "phase": "aim"
+        },
+        {
+          "seconds": 13.85,
+          "hits": 8,
+          "catches": 8,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 6.550000000000115,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 2
+      },
+      "stats": {
+        "hits": 37,
+        "flight": 51.8499999999977,
+        "boosts": 36,
+        "energy": 728000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 4,
+        "paddleHits": 21,
+        "orbitBreaks": 1,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 22,
+      "material": "steel",
+      "size": "small",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 26.991666666666667,
+          "hits": 19,
+          "catches": 6,
+          "phase": "aim"
+        },
+        {
+          "seconds": 14.883333333333333,
+          "hits": 11,
+          "catches": 5,
+          "phase": "aim"
+        },
+        {
+          "seconds": 13.408333333333333,
+          "hits": 5,
+          "catches": 6,
+          "phase": "aim"
+        },
+        {
+          "seconds": 9.791666666666666,
+          "hits": 2,
+          "catches": 4,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 6.991666666666804,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 4
+      },
+      "stats": {
+        "hits": 37,
+        "flight": 65.07499999999786,
+        "boosts": 39,
+        "energy": 790000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 4,
+        "paddleHits": 21,
+        "orbitBreaks": 2,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 22,
+      "material": "steel",
+      "size": "standard",
+      "policy": "follow",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 21.55,
+          "hits": 29,
+          "catches": 18,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 3.8916666666666555,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 2
+      },
+      "stats": {
+        "hits": 29,
+        "flight": 21.549999999999418,
+        "boosts": 28,
+        "energy": 544329.4903002658,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 2,
+        "paddleHits": 18,
+        "orbitBreaks": 0,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 22,
+      "material": "steel",
+      "size": "standard",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 53.55833333333333,
+          "hits": 32,
+          "catches": 14,
+          "phase": "aim"
+        },
+        {
+          "seconds": 14.741666666666667,
+          "hits": 5,
+          "catches": 6,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 7.441666666666826,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 3
+      },
+      "stats": {
+        "hits": 37,
+        "flight": 68.30000000000042,
+        "boosts": 36,
+        "energy": 716000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 4,
+        "paddleHits": 20,
+        "orbitBreaks": 2,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 22,
+      "material": "steel",
+      "size": "large",
+      "policy": "follow",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 56.06666666666666,
+          "hits": 34,
+          "catches": 15,
+          "phase": "aim"
+        },
+        {
+          "seconds": 10.691666666666666,
+          "hits": 3,
+          "catches": 7,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 7.041666666666806,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 4
+      },
+      "stats": {
+        "hits": 37,
+        "flight": 66.75833333333253,
+        "boosts": 21,
+        "energy": 403732.2557930389,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 3,
+        "paddleHits": 22,
+        "orbitBreaks": 2,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 22,
+      "material": "steel",
+      "size": "large",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 9.516666666666666,
+          "hits": 9,
+          "catches": 4,
+          "phase": "aim"
+        },
+        {
+          "seconds": 4.15,
+          "hits": 4,
+          "catches": 2,
+          "phase": "aim"
+        },
+        {
+          "seconds": 32.15,
+          "hits": 16,
+          "catches": 9,
+          "phase": "aim"
+        },
+        {
+          "seconds": 38.7,
+          "hits": 8,
+          "catches": 15,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 8.316666666666835,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 4
+      },
+      "stats": {
+        "hits": 37,
+        "flight": 84.51666666668,
+        "boosts": 21,
+        "energy": 435443.2766193177,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 5,
+        "paddleHits": 30,
+        "orbitBreaks": 5,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 22,
+      "material": "brass",
+      "size": "small",
+      "policy": "follow",
+      "result": "won",
+      "stars": 2,
+      "shots": [
+        {
+          "seconds": 1.125,
+          "hits": 2,
+          "catches": 0,
+          "phase": "aim"
+        },
+        {
+          "seconds": 1.125,
+          "hits": 2,
+          "catches": 0,
+          "phase": "aim"
+        },
+        {
+          "seconds": 1.125,
+          "hits": 2,
+          "catches": 0,
+          "phase": "aim"
+        },
+        {
+          "seconds": 1.125,
+          "hits": 2,
+          "catches": 0,
+          "phase": "aim"
+        },
+        {
+          "seconds": 1.125,
+          "hits": 2,
+          "catches": 0,
+          "phase": "aim"
+        },
+        {
+          "seconds": 1.125,
+          "hits": 2,
+          "catches": 0,
+          "phase": "aim"
+        },
+        {
+          "seconds": 1.125,
+          "hits": 2,
+          "catches": 0,
+          "phase": "aim"
+        },
+        {
+          "seconds": 1.125,
+          "hits": 2,
+          "catches": 0,
+          "phase": "aim"
+        },
+        {
+          "seconds": 12.8,
+          "hits": 6,
+          "catches": 6,
+          "phase": "aim"
+        },
+        {
+          "seconds": 16.958333333333332,
+          "hits": 8,
+          "catches": 5,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 4.441666666666677,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 2
+      },
+      "stats": {
+        "hits": 30,
+        "flight": 38.75833333333178,
+        "boosts": 22,
+        "energy": 440000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 2,
+        "paddleHits": 11,
+        "orbitBreaks": 0,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 22,
+      "material": "brass",
+      "size": "small",
+      "policy": "steer",
+      "result": "won",
+      "stars": 2,
+      "shots": [
+        {
+          "seconds": 1.125,
+          "hits": 2,
+          "catches": 0,
+          "phase": "aim"
+        },
+        {
+          "seconds": 1.125,
+          "hits": 2,
+          "catches": 0,
+          "phase": "aim"
+        },
+        {
+          "seconds": 1.125,
+          "hits": 2,
+          "catches": 0,
+          "phase": "aim"
+        },
+        {
+          "seconds": 1.125,
+          "hits": 2,
+          "catches": 0,
+          "phase": "aim"
+        },
+        {
+          "seconds": 1.125,
+          "hits": 2,
+          "catches": 0,
+          "phase": "aim"
+        },
+        {
+          "seconds": 1.125,
+          "hits": 2,
+          "catches": 0,
+          "phase": "aim"
+        },
+        {
+          "seconds": 1.125,
+          "hits": 2,
+          "catches": 0,
+          "phase": "aim"
+        },
+        {
+          "seconds": 1.125,
+          "hits": 2,
+          "catches": 0,
+          "phase": "aim"
+        },
+        {
+          "seconds": 27.175,
+          "hits": 13,
+          "catches": 10,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 6.000000000000088,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 2
+      },
+      "stats": {
+        "hits": 29,
+        "flight": 36.17499999999859,
+        "boosts": 23,
+        "energy": 466000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 2,
+        "paddleHits": 10,
+        "orbitBreaks": 0,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 22,
+      "material": "brass",
+      "size": "standard",
+      "policy": "follow",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 7.375,
+          "hits": 4,
+          "catches": 2,
+          "phase": "aim"
+        },
+        {
+          "seconds": 7.383333333333333,
+          "hits": 4,
+          "catches": 2,
+          "phase": "aim"
+        },
+        {
+          "seconds": 20.008333333333333,
+          "hits": 12,
+          "catches": 7,
+          "phase": "aim"
+        },
+        {
+          "seconds": 15.566666666666666,
+          "hits": 10,
+          "catches": 5,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 4.02499999999999,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 1
+      },
+      "stats": {
+        "hits": 30,
+        "flight": 50.33333333333112,
+        "boosts": 30,
+        "energy": 596000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 4,
+        "paddleHits": 16,
+        "orbitBreaks": 0,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 22,
+      "material": "brass",
+      "size": "standard",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 49.25833333333333,
+          "hits": 32,
+          "catches": 20,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 7.066666666666808,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 2
+      },
+      "stats": {
+        "hits": 32,
+        "flight": 49.25833333333118,
+        "boosts": 29,
+        "energy": 562000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 1,
+        "paddleHits": 20,
+        "orbitBreaks": 0,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 22,
+      "material": "brass",
+      "size": "large",
+      "policy": "follow",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 93.08333333333333,
+          "hits": 34,
+          "catches": 35,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 9.858333333333414,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 4
+      },
+      "stats": {
+        "hits": 34,
+        "flight": 93.08333333335348,
+        "boosts": 47,
+        "energy": 898634.7407971713,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 1,
+        "paddleHits": 35,
+        "orbitBreaks": 3,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 22,
+      "material": "brass",
+      "size": "large",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 53.416666666666664,
+          "hits": 28,
+          "catches": 22,
+          "phase": "aim"
+        },
+        {
+          "seconds": 41.40833333333333,
+          "hits": 9,
+          "catches": 16,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 10.900000000000022,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 3
+      },
+      "stats": {
+        "hits": 37,
+        "flight": 94.82500000002153,
+        "boosts": 44,
+        "energy": 838281.6064100782,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 4,
+        "paddleHits": 38,
+        "orbitBreaks": 6,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 22,
+      "material": "ceramic",
+      "size": "small",
+      "policy": "follow",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 1.2666666666666666,
+          "hits": 2,
+          "catches": 0,
+          "phase": "aim"
+        },
+        {
+          "seconds": 1.2666666666666666,
+          "hits": 2,
+          "catches": 0,
+          "phase": "aim"
+        },
+        {
+          "seconds": 1.2666666666666666,
+          "hits": 2,
+          "catches": 0,
+          "phase": "aim"
+        },
+        {
+          "seconds": 1.2666666666666666,
+          "hits": 2,
+          "catches": 0,
+          "phase": "aim"
+        },
+        {
+          "seconds": 1.2666666666666666,
+          "hits": 2,
+          "catches": 0,
+          "phase": "aim"
+        },
+        {
+          "seconds": 1.2666666666666666,
+          "hits": 2,
+          "catches": 0,
+          "phase": "aim"
+        },
+        {
+          "seconds": 1.2666666666666666,
+          "hits": 2,
+          "catches": 0,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 0.6166666666666669,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 0
+      },
+      "stats": {
+        "hits": 14,
+        "flight": 8.866666666666804,
+        "boosts": 0,
+        "energy": 0,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 0,
+        "paddleHits": 0,
+        "orbitBreaks": 0,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 22,
+      "material": "ceramic",
+      "size": "small",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 6.183333333333334,
+          "hits": 5,
+          "catches": 4,
+          "phase": "aim"
+        },
+        {
+          "seconds": 17.53333333333333,
+          "hits": 20,
+          "catches": 13,
+          "phase": "aim"
+        },
+        {
+          "seconds": 9.316666666666666,
+          "hits": 10,
+          "catches": 3,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 2.533333333333327,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 2
+      },
+      "stats": {
+        "hits": 35,
+        "flight": 33.0333333333321,
+        "boosts": 38,
+        "energy": 756000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 2,
+        "paddleHits": 20,
+        "orbitBreaks": 0,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 22,
+      "material": "ceramic",
+      "size": "standard",
+      "policy": "follow",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 14.775,
+          "hits": 17,
+          "catches": 7,
+          "phase": "aim"
+        },
+        {
+          "seconds": 38.608333333333334,
+          "hits": 20,
+          "catches": 11,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 5.366666666666723,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 2
+      },
+      "stats": {
+        "hits": 37,
+        "flight": 53.383333333330945,
+        "boosts": 36,
+        "energy": 714300.6731443775,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 3,
+        "paddleHits": 18,
+        "orbitBreaks": 1,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 22,
+      "material": "ceramic",
+      "size": "standard",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 85.8,
+          "hits": 37,
+          "catches": 41,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 9.050000000000127,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 6
+      },
+      "stats": {
+        "hits": 37,
+        "flight": 85.80000000001435,
+        "boosts": 55,
+        "energy": 1046000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 3,
+        "paddleHits": 41,
+        "orbitBreaks": 9,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 22,
+      "material": "ceramic",
+      "size": "large",
+      "policy": "follow",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 39.766666666666666,
+          "hits": 27,
+          "catches": 15,
+          "phase": "aim"
+        },
+        {
+          "seconds": 43.291666666666664,
+          "hits": 10,
+          "catches": 18,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 7.491666666666829,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 3
+      },
+      "stats": {
+        "hits": 37,
+        "flight": 83.0583333333455,
+        "boosts": 36,
+        "energy": 675021.4377298342,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 5,
+        "paddleHits": 33,
+        "orbitBreaks": 4,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 22,
+      "material": "ceramic",
+      "size": "large",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 5.766666666666667,
+          "hits": 6,
+          "catches": 4,
+          "phase": "aim"
+        },
+        {
+          "seconds": 5.766666666666667,
+          "hits": 6,
+          "catches": 4,
+          "phase": "aim"
+        },
+        {
+          "seconds": 50.425,
+          "hits": 24,
+          "catches": 26,
+          "phase": "aim"
+        },
+        {
+          "seconds": 10.85,
+          "hits": 1,
+          "catches": 3,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 10.366666666666719,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 3
+      },
+      "stats": {
+        "hits": 37,
+        "flight": 72.80833333333734,
+        "boosts": 43,
+        "energy": 680193.4282453388,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 3,
+        "paddleHits": 37,
+        "orbitBreaks": 5,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 22,
+      "material": "rubber",
+      "size": "small",
+      "policy": "follow",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 13.025,
+          "hits": 20,
+          "catches": 4,
+          "phase": "aim"
+        },
+        {
+          "seconds": 38.825,
+          "hits": 17,
+          "catches": 14,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 6.591666666666784,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 2
+      },
+      "stats": {
+        "hits": 37,
+        "flight": 51.8499999999977,
+        "boosts": 35,
+        "energy": 698000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 4,
+        "paddleHits": 18,
+        "orbitBreaks": 3,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 22,
+      "material": "rubber",
+      "size": "small",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 3.0666666666666664,
+          "hits": 9,
+          "catches": 1,
+          "phase": "aim"
+        },
+        {
+          "seconds": 5.958333333333333,
+          "hits": 13,
+          "catches": 8,
+          "phase": "aim"
+        },
+        {
+          "seconds": 33.725,
+          "hits": 15,
+          "catches": 22,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 6.000000000000088,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 5
+      },
+      "stats": {
+        "hits": 37,
+        "flight": 42.74999999999822,
+        "boosts": 52,
+        "energy": 1020000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 4,
+        "paddleHits": 31,
+        "orbitBreaks": 3,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 22,
+      "material": "rubber",
+      "size": "standard",
+      "policy": "follow",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 18.316666666666666,
+          "hits": 18,
+          "catches": 6,
+          "phase": "aim"
+        },
+        {
+          "seconds": 47.18333333333333,
+          "hits": 19,
+          "catches": 14,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 8.016666666666852,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 3
+      },
+      "stats": {
+        "hits": 37,
+        "flight": 65.4999999999982,
+        "boosts": 38,
+        "energy": 778000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 4,
+        "paddleHits": 20,
+        "orbitBreaks": 3,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 22,
+      "material": "rubber",
+      "size": "standard",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 15.633333333333333,
+          "hits": 12,
+          "catches": 4,
+          "phase": "aim"
+        },
+        {
+          "seconds": 72.81666666666666,
+          "hits": 25,
+          "catches": 29,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 9.93333333333341,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 5
+      },
+      "stats": {
+        "hits": 37,
+        "flight": 88.45000000001646,
+        "boosts": 50,
+        "energy": 978000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 4,
+        "paddleHits": 33,
+        "orbitBreaks": 5,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 22,
+      "material": "rubber",
+      "size": "large",
+      "policy": "follow",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 15.9,
+          "hits": 19,
+          "catches": 5,
+          "phase": "aim"
+        },
+        {
+          "seconds": 29.016666666666666,
+          "hits": 11,
+          "catches": 9,
+          "phase": "aim"
+        },
+        {
+          "seconds": 30.03333333333333,
+          "hits": 7,
+          "catches": 14,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 11.616666666666648,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 5
+      },
+      "stats": {
+        "hits": 37,
+        "flight": 74.95000000000572,
+        "boosts": 44,
+        "energy": 856000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 6,
+        "paddleHits": 28,
+        "orbitBreaks": 6,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 22,
+      "material": "rubber",
+      "size": "large",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 96.475,
+          "hits": 37,
+          "catches": 27,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 11.15833333333334,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 4
+      },
+      "stats": {
+        "hits": 37,
+        "flight": 96.47500000002285,
+        "boosts": 41,
+        "energy": 816000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 2,
+        "paddleHits": 27,
+        "orbitBreaks": 8,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 26,
+      "material": "steel",
+      "size": "small",
+      "policy": "follow",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 3.225,
+          "hits": 7,
+          "catches": 1,
+          "phase": "aim"
+        },
+        {
+          "seconds": 3.225,
+          "hits": 7,
+          "catches": 1,
+          "phase": "aim"
+        },
+        {
+          "seconds": 10.275,
+          "hits": 19,
+          "catches": 4,
+          "phase": "aim"
+        },
+        {
+          "seconds": 12.316666666666666,
+          "hits": 5,
+          "catches": 3,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 7.033333333333473,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 2
+      },
+      "stats": {
+        "hits": 38,
+        "flight": 29.04166666666566,
+        "boosts": 19,
+        "energy": 386000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 2,
+        "paddleHits": 9,
+        "orbitBreaks": 1,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 26,
+      "material": "steel",
+      "size": "small",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 3.225,
+          "hits": 7,
+          "catches": 1,
+          "phase": "aim"
+        },
+        {
+          "seconds": 3.225,
+          "hits": 7,
+          "catches": 1,
+          "phase": "aim"
+        },
+        {
+          "seconds": 7.6499999999999995,
+          "hits": 12,
+          "catches": 2,
+          "phase": "aim"
+        },
+        {
+          "seconds": 32.075,
+          "hits": 14,
+          "catches": 2,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 7.741666666666841,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 1
+      },
+      "stats": {
+        "hits": 40,
+        "flight": 46.17499999999802,
+        "boosts": 22,
+        "energy": 460000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 3,
+        "paddleHits": 6,
+        "orbitBreaks": 0,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 26,
+      "material": "steel",
+      "size": "standard",
+      "policy": "follow",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 3.3833333333333333,
+          "hits": 9,
+          "catches": 4,
+          "phase": "aim"
+        },
+        {
+          "seconds": 78.74166666666666,
+          "hits": 35,
+          "catches": 18,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 7.200000000000148,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 3
+      },
+      "stats": {
+        "hits": 44,
+        "flight": 82.12500000001143,
+        "boosts": 36,
+        "energy": 716000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 2,
+        "paddleHits": 22,
+        "orbitBreaks": 2,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 26,
+      "material": "steel",
+      "size": "standard",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 39.233333333333334,
+          "hits": 36,
+          "catches": 15,
+          "phase": "aim"
+        },
+        {
+          "seconds": 29.808333333333334,
+          "hits": 10,
+          "catches": 10,
+          "phase": "aim"
+        },
+        {
+          "seconds": 5.191666666666666,
+          "hits": 2,
+          "catches": 0,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 8.441666666666828,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 3
+      },
+      "stats": {
+        "hits": 48,
+        "flight": 74.23333333333848,
+        "boosts": 49,
+        "energy": 982000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 4,
+        "paddleHits": 25,
+        "orbitBreaks": 2,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 26,
+      "material": "steel",
+      "size": "large",
+      "policy": "follow",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 49.43333333333333,
+          "hits": 45,
+          "catches": 24,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 6.816666666666795,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 3
+      },
+      "stats": {
+        "hits": 45,
+        "flight": 49.43333333333117,
+        "boosts": 31,
+        "energy": 601191.1714948181,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 2,
+        "paddleHits": 24,
+        "orbitBreaks": 0,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 26,
+      "material": "steel",
+      "size": "large",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 30.308333333333334,
+          "hits": 27,
+          "catches": 11,
+          "phase": "aim"
+        },
+        {
+          "seconds": 16.03333333333333,
+          "hits": 9,
+          "catches": 3,
+          "phase": "aim"
+        },
+        {
+          "seconds": 13.358333333333333,
+          "hits": 9,
+          "catches": 2,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 7.51666666666683,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 2
+      },
+      "stats": {
+        "hits": 45,
+        "flight": 59.69999999999725,
+        "boosts": 22,
+        "energy": 402472.38908628095,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 6,
+        "paddleHits": 16,
+        "orbitBreaks": 2,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 26,
+      "material": "brass",
+      "size": "small",
+      "policy": "follow",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 27.733333333333334,
+          "hits": 26,
+          "catches": 7,
+          "phase": "aim"
+        },
+        {
+          "seconds": 36.99166666666667,
+          "hits": 17,
+          "catches": 10,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 7.966666666666852,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 3
+      },
+      "stats": {
+        "hits": 43,
+        "flight": 64.72499999999758,
+        "boosts": 37,
+        "energy": 746000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 4,
+        "paddleHits": 17,
+        "orbitBreaks": 2,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 26,
+      "material": "brass",
+      "size": "small",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 51.84166666666667,
+          "hits": 30,
+          "catches": 8,
+          "phase": "aim"
+        },
+        {
+          "seconds": 9.483333333333333,
+          "hits": 7,
+          "catches": 0,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 13.349999999999882,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 3
+      },
+      "stats": {
+        "hits": 37,
+        "flight": 61.32499999999716,
+        "boosts": 20,
+        "energy": 408000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 2,
+        "paddleHits": 8,
+        "orbitBreaks": 0,
+        "gateVents": 1,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 26,
+      "material": "brass",
+      "size": "standard",
+      "policy": "follow",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 128.9,
+          "hits": 49,
+          "catches": 41,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 10.058333333333403,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 3
+      },
+      "stats": {
+        "hits": 49,
+        "flight": 128.9000000000471,
+        "boosts": 62,
+        "energy": 1212000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 2,
+        "paddleHits": 41,
+        "orbitBreaks": 6,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 26,
+      "material": "brass",
+      "size": "standard",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 113.13333333333333,
+          "hits": 48,
+          "catches": 31,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 8.53333333333349,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 3
+      },
+      "stats": {
+        "hits": 48,
+        "flight": 113.13333333336944,
+        "boosts": 52,
+        "energy": 1024000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 2,
+        "paddleHits": 31,
+        "orbitBreaks": 7,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 26,
+      "material": "brass",
+      "size": "large",
+      "policy": "follow",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 8.933333333333334,
+          "hits": 15,
+          "catches": 6,
+          "phase": "aim"
+        },
+        {
+          "seconds": 61.24166666666667,
+          "hits": 36,
+          "catches": 30,
+          "phase": "aim"
+        },
+        {
+          "seconds": 13.983333333333333,
+          "hits": 4,
+          "catches": 3,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 6.98333333333347,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 4
+      },
+      "stats": {
+        "hits": 55,
+        "flight": 84.15833333334638,
+        "boosts": 54,
+        "energy": 1079126.8384434495,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 4,
+        "paddleHits": 39,
+        "orbitBreaks": 3,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 26,
+      "material": "brass",
+      "size": "large",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 67.49166666666666,
+          "hits": 34,
+          "catches": 21,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 9.400000000000107,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 4
+      },
+      "stats": {
+        "hits": 34,
+        "flight": 67.49166666666645,
+        "boosts": 31,
+        "energy": 598000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 1,
+        "paddleHits": 21,
+        "orbitBreaks": 1,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 26,
+      "material": "ceramic",
+      "size": "small",
+      "policy": "follow",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 1.2583333333333333,
+          "hits": 6,
+          "catches": 1,
+          "phase": "aim"
+        },
+        {
+          "seconds": 1.2583333333333333,
+          "hits": 6,
+          "catches": 1,
+          "phase": "aim"
+        },
+        {
+          "seconds": 13.391666666666666,
+          "hits": 12,
+          "catches": 6,
+          "phase": "aim"
+        },
+        {
+          "seconds": 9.308333333333334,
+          "hits": 6,
+          "catches": 4,
+          "phase": "aim"
+        },
+        {
+          "seconds": 4.625,
+          "hits": 3,
+          "catches": 1,
+          "phase": "aim"
+        },
+        {
+          "seconds": 15.975,
+          "hits": 8,
+          "catches": 2,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 3.799999999999989,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 2
+      },
+      "stats": {
+        "hits": 41,
+        "flight": 45.81666666666471,
+        "boosts": 35,
+        "energy": 710000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 5,
+        "paddleHits": 15,
+        "orbitBreaks": 0,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 26,
+      "material": "ceramic",
+      "size": "small",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 1.2583333333333333,
+          "hits": 6,
+          "catches": 1,
+          "phase": "aim"
+        },
+        {
+          "seconds": 3.7416666666666667,
+          "hits": 9,
+          "catches": 4,
+          "phase": "aim"
+        },
+        {
+          "seconds": 17.78333333333333,
+          "hits": 25,
+          "catches": 18,
+          "phase": "aim"
+        },
+        {
+          "seconds": 32.1,
+          "hits": 15,
+          "catches": 9,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 4.29166666666667,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 4
+      },
+      "stats": {
+        "hits": 55,
+        "flight": 54.88333333333086,
+        "boosts": 71,
+        "energy": 1362260.150737902,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 6,
+        "paddleHits": 32,
+        "orbitBreaks": 1,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 26,
+      "material": "ceramic",
+      "size": "standard",
+      "policy": "follow",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 32.516666666666666,
+          "hits": 23,
+          "catches": 11,
+          "phase": "aim"
+        },
+        {
+          "seconds": 8.091666666666667,
+          "hits": 6,
+          "catches": 0,
+          "phase": "aim"
+        },
+        {
+          "seconds": 21.108333333333334,
+          "hits": 8,
+          "catches": 3,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 9.241666666666783,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 5
+      },
+      "stats": {
+        "hits": 37,
+        "flight": 61.716666666663805,
+        "boosts": 26,
+        "energy": 516000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 3,
+        "paddleHits": 14,
+        "orbitBreaks": 1,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 26,
+      "material": "ceramic",
+      "size": "standard",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 61.00833333333333,
+          "hits": 38,
+          "catches": 14,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 7.291666666666819,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 4
+      },
+      "stats": {
+        "hits": 38,
+        "flight": 61.00833333333051,
+        "boosts": 28,
+        "energy": 560000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 3,
+        "paddleHits": 14,
+        "orbitBreaks": 0,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 26,
+      "material": "ceramic",
+      "size": "large",
+      "policy": "follow",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 42.766666666666666,
+          "hits": 43,
+          "catches": 10,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 5.6166666666667355,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 2
+      },
+      "stats": {
+        "hits": 43,
+        "flight": 42.76666666666488,
+        "boosts": 25,
+        "energy": 514000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 3,
+        "paddleHits": 10,
+        "orbitBreaks": 1,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 26,
+      "material": "ceramic",
+      "size": "large",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 67.375,
+          "hits": 42,
+          "catches": 14,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 5.900000000000083,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 2
+      },
+      "stats": {
+        "hits": 42,
+        "flight": 67.37499999999969,
+        "boosts": 26,
+        "energy": 522352.2104618943,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 2,
+        "paddleHits": 14,
+        "orbitBreaks": 1,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 26,
+      "material": "rubber",
+      "size": "small",
+      "policy": "follow",
+      "result": "won",
+      "stars": 2,
+      "shots": [
+        {
+          "seconds": 5.958333333333333,
+          "hits": 7,
+          "catches": 3,
+          "phase": "aim"
+        },
+        {
+          "seconds": 5.616666666666666,
+          "hits": 7,
+          "catches": 2,
+          "phase": "aim"
+        },
+        {
+          "seconds": 25.216666666666665,
+          "hits": 15,
+          "catches": 12,
+          "phase": "aim"
+        },
+        {
+          "seconds": 2.8666666666666667,
+          "hits": 3,
+          "catches": 2,
+          "phase": "aim"
+        },
+        {
+          "seconds": 2.8666666666666667,
+          "hits": 3,
+          "catches": 2,
+          "phase": "aim"
+        },
+        {
+          "seconds": 2.8666666666666667,
+          "hits": 3,
+          "catches": 2,
+          "phase": "aim"
+        },
+        {
+          "seconds": 2.8666666666666667,
+          "hits": 3,
+          "catches": 2,
+          "phase": "aim"
+        },
+        {
+          "seconds": 2.725,
+          "hits": 3,
+          "catches": 0,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 5.091666666666709,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 4
+      },
+      "stats": {
+        "hits": 44,
+        "flight": 50.98333333333108,
+        "boosts": 60,
+        "energy": 1220000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 2,
+        "paddleHits": 25,
+        "orbitBreaks": 1,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 26,
+      "material": "rubber",
+      "size": "small",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 63.75833333333333,
+          "hits": 37,
+          "catches": 25,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 6.31666666666677,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 6
+      },
+      "stats": {
+        "hits": 37,
+        "flight": 63.758333333330356,
+        "boosts": 36,
+        "energy": 692000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 3,
+        "paddleHits": 25,
+        "orbitBreaks": 2,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 26,
+      "material": "rubber",
+      "size": "standard",
+      "policy": "follow",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 5.083333333333333,
+          "hits": 10,
+          "catches": 3,
+          "phase": "aim"
+        },
+        {
+          "seconds": 11.025,
+          "hits": 13,
+          "catches": 3,
+          "phase": "aim"
+        },
+        {
+          "seconds": 56.291666666666664,
+          "hits": 29,
+          "catches": 24,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 4.991666666666704,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 3
+      },
+      "stats": {
+        "hits": 52,
+        "flight": 72.40000000000369,
+        "boosts": 59,
+        "energy": 1178000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 4,
+        "paddleHits": 30,
+        "orbitBreaks": 0,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 26,
+      "material": "rubber",
+      "size": "standard",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 38.583333333333336,
+          "hits": 36,
+          "catches": 23,
+          "phase": "aim"
+        },
+        {
+          "seconds": 8.308333333333334,
+          "hits": 2,
+          "catches": 3,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 4.966666666666703,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 3
+      },
+      "stats": {
+        "hits": 38,
+        "flight": 46.89166666666465,
+        "boosts": 38,
+        "energy": 732000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 3,
+        "paddleHits": 26,
+        "orbitBreaks": 2,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 26,
+      "material": "rubber",
+      "size": "large",
+      "policy": "follow",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 72.29166666666667,
+          "hits": 49,
+          "catches": 27,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 7.758333333333509,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 2
+      },
+      "stats": {
+        "hits": 49,
+        "flight": 72.29166666667027,
+        "boosts": 50,
+        "energy": 992000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 3,
+        "paddleHits": 27,
+        "orbitBreaks": 2,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    },
+    {
+      "level": 26,
+      "material": "rubber",
+      "size": "large",
+      "policy": "steer",
+      "result": "won",
+      "stars": 3,
+      "shots": [
+        {
+          "seconds": 79.65,
+          "hits": 43,
+          "catches": 16,
+          "phase": "won"
+        }
+      ],
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 6.275000000000102,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 2
+      },
+      "stats": {
+        "hits": 43,
+        "flight": 79.65000000000946,
+        "boosts": 33,
+        "energy": 662000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 2,
+        "paddleHits": 16,
+        "orbitBreaks": 4,
+        "gateVents": 0,
+        "pegRetractions": 0
+      }
+    }
+  ]
+}

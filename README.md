@@ -4,7 +4,7 @@
 
 **[在线游玩](https://ax2.github.io/flux-foundry/)** · **[Windows 下载](https://github.com/ax2/flux-foundry/releases)** · MIT
 
-![手机画面](docs/iterations/Stage-16/390x844.png)
+![手机画面](docs/iterations/Stage-17/390x844.png)
 
 ## v0.16.0 接球前准备与可达机械面（候选）
 
@@ -41,7 +41,7 @@ v0.15.0为上一版；当前修复继续保留已存星级。Stage-08的简化�
 
 Windows x64：`Flux-Foundry-0.16.0-Windows-x64.exe` 便携启动，本地保留 `releases/v0.16.0/win-unpacked/` 完整运行目录，无游戏ZIP。手机为触屏Web/PWA，首次联网加载后可离线重开；未交付APK/iOS原生包。Windows未签名，实体手机/低端性能仍待验收。
 
-本轮107项逻辑（含52套严格自然三星回放）和原图校验通过；107项中的新增用例覆盖提前准备、有效命中条件、单次可达倾斜、原球与耐久保持、拒绝过的镜像反例。完整原图3.40MB，低带宽就绪仍会较慢，加载进度持续显示。自动触控和算法数据不代表真人胜率或实体手机性能。
+本轮107项逻辑（含52套严格自然三星回放）、121界面、22加载、原图校验和两种Windows启动通过；4局真实自动触控全部自然通关，7颗/69接球，最长无命中10.38秒。107项中的新增用例覆盖提前准备、有效命中条件、单次可达倾斜、原球与耐久保持、拒绝过的镜像反例。完整原图3.40MB，低带宽就绪仍会较慢，加载进度持续显示。自动触控和算法数据不代表真人胜率或实体手机性能。
 
 [本轮评估](docs/iterations/Stage-17/assessment.md) · [工作日志](docs/iterations/Stage-17/worklog.md)
 
