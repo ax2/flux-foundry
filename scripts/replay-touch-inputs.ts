@@ -1,5 +1,5 @@
-import {readFile,writeFile} from 'node:fs/promises';import assert from 'node:assert/strict';import {Game,STEP,LAUNCH} from '../src/game';
-const path=process.argv[2]||'test-results/stage18-ui-sound/inputs-22-rubber.json',tape=JSON.parse(await readFile(path,'utf8'));
+import {readFile,writeFile,mkdir} from 'node:fs/promises';import assert from 'node:assert/strict';import {Game,STEP,LAUNCH} from '../src/game';
+const path=process.argv[2]||'docs/iterations/Stage-18/inputs-22-rubber.json',tape=JSON.parse(await readFile(path,'utf8'));await mkdir('test-results',{recursive:true});
 const launch=tape.find((e:any)=>e.phase==='volley'&&e.shot===1&&e.ball);assert.equal(launch.flight,0);assert.equal(launch.ball.x,LAUNCH.x);assert.equal(launch.ball.y,LAUNCH.y);
 const g=new Game(1021,21);g.selectBall('rubber','large');g.angle=Math.atan2(launch.ball.vy,launch.ball.vx);g.fire();assert.deepEqual(g.balls[0],launch.ball);
 const moves=tape.filter((e:any)=>e.phase==='volley'&&e.shot===1);let index=0,step=0,peak:any=null;

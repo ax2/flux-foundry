@@ -1,0 +1,186 @@
+{
+  "tag_name": "v0.17.1",
+  "html_url": "https://github.com/ax2/flux-foundry/releases/tag/v0.17.1",
+  "draft": false,
+  "prerelease": false,
+  "published_at": "2026-11-08T10:37:35Z",
+  "assets": [
+    {
+      "name": "Flux-Foundry-0.17.1-Windows-x64.exe",
+      "size": 137345045,
+      "digest": "sha256:5d147ad07b8b55ac0f8cd163a71702517adeaba113fcf8a722d69009aa6a918c",
+      "browser_download_url": "https://github.com/ax2/flux-foundry/releases/download/v0.17.1/Flux-Foundry-0.17.1-Windows-x64.exe"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "size": 103,
+      "digest": "sha256:cc1f91d3fbc0e2c3f52cd5f293624647ac2cfe933b691e2083e0c26fdc20aa3b",
+      "browser_download_url": "https://github.com/ax2/flux-foundry/releases/download/v0.17.1/SHA256SUMS.txt"
+    }
+  ],
+  "releaseCommit": "9b438c888258749dfb14259c8fdba766ca406da6",
+  "sourceCI": {
+    "conclusion": "success",
+    "databaseId": 42472104504,
+    "headSha": "9b438c888258749dfb14259c8fdba766ca406da6",
+    "status": "completed",
+    "url": "https://github.com/ax2/flux-foundry/actions/runs/42472104504"
+  },
+  "correctedFeedbackCI": {
+    "conclusion": "success",
+    "databaseId": 42471060711,
+    "headSha": "1d3986a390adb41357bc0c8870a2fe7025f1ea14",
+    "status": "completed",
+    "url": "https://github.com/ax2/flux-foundry/actions/runs/42471060711"
+  },
+  "windowsRelease": {
+    "attempt": 1,
+    "conclusion": "success",
+    "databaseId": 42472104776,
+    "headSha": "9b438c888258749dfb14259c8fdba766ca406da6",
+    "jobs": [
+      {
+        "completedAt": "2026-11-08T10:37:43Z",
+        "conclusion": "success",
+        "databaseId": 128705055058,
+        "name": "release",
+        "startedAt": "2026-11-08T10:35:55Z",
+        "status": "completed",
+        "steps": [
+          {
+            "completedAt": "2026-11-08T10:35:57Z",
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "startedAt": "2026-11-08T10:35:56Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-08T10:36:05Z",
+            "conclusion": "success",
+            "name": "Run actions/checkout@v4",
+            "number": 2,
+            "startedAt": "2026-11-08T10:35:57Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-08T10:36:09Z",
+            "conclusion": "success",
+            "name": "Run actions/setup-node@v4",
+            "number": 3,
+            "startedAt": "2026-11-08T10:36:05Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-08T10:36:20Z",
+            "conclusion": "success",
+            "name": "Run npm ci",
+            "number": 4,
+            "startedAt": "2026-11-08T10:36:09Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-08T10:36:29Z",
+            "conclusion": "success",
+            "name": "Run npm test",
+            "number": 5,
+            "startedAt": "2026-11-08T10:36:20Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-08T10:36:29Z",
+            "conclusion": "success",
+            "name": "Confirm version and stage notes",
+            "number": 6,
+            "startedAt": "2026-11-08T10:36:29Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-08T10:36:32Z",
+            "conclusion": "success",
+            "name": "Run npm run build",
+            "number": 7,
+            "startedAt": "2026-11-08T10:36:29Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-08T10:37:09Z",
+            "conclusion": "success",
+            "name": "Package with installed Electron and bounded download retries",
+            "number": 8,
+            "startedAt": "2026-11-08T10:36:32Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-08T10:37:12Z",
+            "conclusion": "success",
+            "name": "Run node scripts/desktop-smoke.mjs",
+            "number": 9,
+            "startedAt": "2026-11-08T10:37:09Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-08T10:37:21Z",
+            "conclusion": "success",
+            "name": "Run node scripts/desktop-smoke.mjs --portable",
+            "number": 10,
+            "startedAt": "2026-11-08T10:37:12Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-08T10:37:36Z",
+            "conclusion": "success",
+            "name": "Publish EXE and checksums (no game ZIP)",
+            "number": 11,
+            "startedAt": "2026-11-08T10:37:21Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-08T10:37:39Z",
+            "conclusion": "success",
+            "name": "Post Run actions/setup-node@v4",
+            "number": 21,
+            "startedAt": "2026-11-08T10:37:36Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-08T10:37:41Z",
+            "conclusion": "success",
+            "name": "Post Run actions/checkout@v4",
+            "number": 22,
+            "startedAt": "2026-11-08T10:37:39Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-08T10:37:41Z",
+            "conclusion": "success",
+            "name": "Complete job",
+            "number": 23,
+            "startedAt": "2026-11-08T10:37:41Z",
+            "status": "completed"
+          }
+        ],
+        "url": "https://github.com/ax2/flux-foundry/actions/runs/42472104776/job/128705055058"
+      }
+    ],
+    "status": "completed",
+    "url": "https://github.com/ax2/flux-foundry/actions/runs/42472104776"
+  },
+  "pages": {
+    "conclusion": "success",
+    "databaseId": 42472104526,
+    "headSha": "9b438c888258749dfb14259c8fdba766ca406da6",
+    "status": "completed",
+    "url": "https://github.com/ax2/flux-foundry/actions/runs/42472104526"
+  },
+  "packagingEvidence": "Clean runner: attempt1/3, builder-managed Electron download; both packaged directory and portable EXE passed trusted-gesture audio and menu silence. Network retry recovery is unit-tested; this successful cloud attempt did not require a retry.",
+  "unpublishedAttempt": {
+    "tag": "v0.17.0",
+    "commit": "16a73626e781b9450d759259ae8298a79013483b",
+    "windowsRun": 42471576607,
+    "conclusion": "failure",
+    "reason": "Unconditionally referenced Electron dist absent on the clean runner. Tag retained, no public release/asset overwritten."
+  },
+  "evidenceCorrection": "Initial6336-row report included72 stale expedition rows; superseded. Final report uses current extended output and explicitly rebuilt historical v0.16.0 baseline, and passes clean CI. Stage16/17 original attachments kept with correction notices.",
+  "remainingKnownRoute": "Captured legal22/rubber-large touch tape still has20.6833s no-hit; identical on v0.16.0 and current presentation build. Not fixed in this release."
+}
