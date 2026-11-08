@@ -1,4 +1,4 @@
-import {guidedTilt} from './paddle-assist';
+import {guidedRebound} from './paddle-assist';
 import {advanceFree,collide,reflect,type Body,type Target,type Vec} from './physics';
 import {catchPaddle,sweptPickup,type Paddle,type Treasure,type TreasureKind} from './arcade';
 import {airStrength} from './air';
@@ -138,7 +138,7 @@ export class Game{
   for(const t of this.targets){const m=t.motion;if(m&&this.motionEnabled){t.x=m.baseX+Math.sin(this.time*m.speed)*m.amplitude;t.vx=Math.cos(this.time*m.speed)*m.amplitude*m.speed;}else t.vx=0;}
   for(const t of this.treasures)t.life-=dt;this.treasures=this.treasures.filter(t=>t.life>0);this.treasureClock+=dt;if(this.treasureClock>=this.nextTreasure&&this.spawnCount<3&&!this.goalComplete){this.spawnTreasure();this.spawnCount++;this.nextTreasure+=7;}
   const spec=this.spec,restitution=this.restitution;
-  const falling=this.balls[0];if(falling&&this.progress.sinceHit>=(this.lowEndgame?4:ASSIST_DELAY)&&this.progress.catchesWithoutHit>=(this.lowEndgame?2:ASSIST_MISSES)&&falling.vy>0&&falling.y>470&&falling.y<675-falling.r+10&&this.time-this.lastGuideTime>=(falling.y>620?.025:.08)){this.lastGuideTime=this.time;const tilt=guidedTilt(falling,{...this.paddle,x:oldPaddleX},this.targets,spec.mass,restitution,this.time-dt,{air:this.air,gates:this.gates,pegs:this.pegs,wind:this.windMultiplier,response:spec.windResponse},this.progress.sinceHit>=20||this.lowEndgame?.48:.32);this.paddle.tilt=(this.paddle.tilt||0)+Math.max(-.32,Math.min(.32,tilt-(this.paddle.tilt||0)));}
+  const falling=this.balls[0];if(falling&&this.progress.sinceHit>=(this.lowEndgame?4:ASSIST_DELAY)&&this.progress.catchesWithoutHit>=(this.lowEndgame?2:ASSIST_MISSES)&&falling.vy>0&&falling.y>470&&falling.y<675-falling.r+10&&this.time-this.lastGuideTime>=(falling.y>620?.025:.08)){this.lastGuideTime=this.time;const plan=guidedRebound(falling,{...this.paddle,x:oldPaddleX},this.targets,spec.mass,restitution,this.time-dt,{air:this.air,gates:this.gates,pegs:this.pegs,wind:this.windMultiplier,response:spec.windResponse},this.progress.sinceHit>=20||this.lowEndgame?.48:.32);this.paddle.boost=plan.boost;this.paddle.tilt=(this.paddle.tilt||0)+Math.max(-.32,Math.min(.32,plan.tilt-(this.paddle.tilt||0)));}
   for(const b of this.balls){
    let supported=false;
    const steps=Math.max(1,Math.ceil((Math.hypot(b.vx,b.vy)+2000*dt)*dt/(b.r*.45))),h=dt/steps;

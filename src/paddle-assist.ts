@@ -33,18 +33,23 @@ function targetImpact(b:Body,t:Target,restitution:number){
  return hit?Math.hypot(b.vx-vx,b.vy-vy)/(1+restitution):0;
 }
 // Bounded read-only search. Only a later real collision can change the live ball.
-export function guidedTilt(ball:Body,p:Paddle,targets:Target[],mass:number,restitution:number,time:number,environment:Environment,maxTilt=.32){
+export function guidedRebound(ball:Body,p:Paddle,targets:Target[],mass:number,restitution:number,time:number,environment:Environment,maxTilt=.32){
  function evaluate(tilt:number){
   const b={...ball};let eta=0,px=p.x,caught=false;
   while(eta<1.5&&b.y-b.r<692){
    const dt=Math.min(1/120,b.r*.45/Math.max(1,Math.hypot(b.vx,b.vy))),previous={...b},delta=Math.max(-900*dt,Math.min(900*dt,p.target-px));
    px+=delta;advance(b,dt,environment,restitution);eta+=dt;
    reflectPassive(b,environment,restitution);
-   for(const target of targets)if(target.hp>0&&targetImpact(b,futureTarget(target,time+eta),restitution)>55)return {tilt,score:10000+Math.abs(tilt-(p.tilt||0))};
+   for(const target of targets)if(target.hp>0&&targetImpact(b,futureTarget(target,time+eta),restitution)>55)return {tilt,boost:p.boost||18000,score:10000+Math.abs(tilt-(p.tilt||0))};
    if(catchPaddle(b,previous,{...p,x:px,vx:delta/dt,tilt},dt)){caught=true;break;}
   }
-  if(!caught||b.vy>=0)return {tilt,score:Infinity};
-  const energy=.5*mass*(b.vx*b.vx+b.vy*b.vy),added=Math.min(p.boost||18000,Math.max(0,240000-energy));b.vy=-Math.sqrt(b.vy*b.vy+2*added/mass);
+  if(!caught||b.vy>=0)return {tilt,boost:p.boost||18000,score:Infinity};
+  // A heavy ball can repeatedly fall short of the last high block. Prepare only the
+  // normal work needed for its height plus a useful impact, within the existing limits.
+  const heights=targets.filter(t=>t.hp>0).map(t=>Math.max(0,b.y-(t.y+(t.kind==='bar'?t.size/8:t.size/2)+b.r)));
+  const height=heights.length?Math.min(...heights):0,required=mass*(240*height+90*90/2),vertical=.5*mass*b.vy*b.vy;
+  const boost=Math.ceil(Math.min(40000,Math.max(18000,p.boost||0,required-vertical)));
+  const energy=.5*mass*(b.vx*b.vx+b.vy*b.vy),added=Math.min(boost,Math.max(0,240000-energy));b.vy=-Math.sqrt(b.vy*b.vy+2*added/mass);
   let elapsed=0,score=10000;
   while(elapsed<2.5&&b.y-b.r<692){
    const dt=Math.min(1/120,b.r*.45/Math.max(1,Math.hypot(b.vx,b.vy)));advance(b,dt,environment,restitution);elapsed+=dt;
@@ -54,11 +59,11 @@ export function guidedTilt(ball:Body,p:Paddle,targets:Target[],mass:number,resti
     score=Math.min(score,20+clearance(b,t));
     // Even a weak graze reflects the forecast ball; never predict through the solid block.
     const impact=targetImpact(b,t,restitution);
-    if(impact>55)return {tilt,score:elapsed*2+12/impact+Math.abs(tilt-(p.tilt||0))*.2};
+    if(impact>55)return {tilt,boost,score:elapsed*2+12/impact+Math.abs(tilt-(p.tilt||0))*.2};
     if(impact>0)score=Math.max(score,22+(55-impact)*.1);
    }
   }
-  return {tilt,score:score+Math.abs(tilt-(p.tilt||0))*.2};
+  return {tilt,boost,score:score+Math.abs(tilt-(p.tilt||0))*.2};
  }
  const coarse=Array.from({length:17},(_,i)=>evaluate(-maxTilt+i*maxTilt/8));
  coarse.push(evaluate(Math.max(-maxTilt,Math.min(maxTilt,p.tilt||0))));
@@ -69,5 +74,8 @@ export function guidedTilt(ball:Body,p:Paddle,targets:Target[],mass:number,resti
   const tilt=Math.max(-maxTilt,Math.min(maxTilt,candidate.tilt+offset*maxTilt/8)),choice=evaluate(tilt);
   if(choice.score<best.score)best=choice;
  }
- return Number.isFinite(best.score)?best.tilt:p.tilt||0;
+ return Number.isFinite(best.score)?{tilt:best.tilt,boost:best.boost}:{tilt:p.tilt||0,boost:p.boost||18000};
 }
+
+// Retain the read-only angle API for existing diagnostics.
+export function guidedTilt(...args:Parameters<typeof guidedRebound>){return guidedRebound(...args).tilt;}
