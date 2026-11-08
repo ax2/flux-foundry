@@ -3,7 +3,7 @@ import {catchPaddle,type Paddle} from './arcade';
 import {airStrength} from './air';
 import {type AirZone,type Gate,type Peg} from './content';
 export const GUIDE_TILT_STEP=.32;
-export type Environment={air:AirZone[];gates:Gate[];pegs:Peg[];wind:number;response:number;allowLowerWork?:boolean};
+export type Environment={air:AirZone[];gates:Gate[];pegs:Peg[];wind:number;response:number;energyLimit?:number;allowLowerWork?:boolean};
 function advance(b:Body,dt:number,e:Environment,restitution:number){
  let ax=0,ay=240;for(const zone of e.air){const strength=airStrength(zone,b);ax+=zone.fx*e.response*strength*e.wind;ay+=zone.fy*e.response*strength*e.wind;}advanceFree(b,dt,ax,ay);
  if(b.x<18+b.r){b.x=18+b.r;reflect(b,{x:1,y:0},restitution);}if(b.x>402-b.r){b.x=402-b.r;reflect(b,{x:-1,y:0},restitution);}if(b.y<112+b.r){b.y=112+b.r;reflect(b,{x:0,y:1},restitution);}
@@ -49,7 +49,7 @@ export function forecastRebound(ball:Body,p:Paddle,targets:Target[],mass:number,
   const heights=targets.filter(t=>t.hp>0).map(t=>Math.max(0,b.y-(t.y+(t.kind==='bar'?t.size/8:t.size/2)+b.r)));
   const height=heights.length?Math.min(...heights):0,required=mass*(240*height+90*90/2),vertical=.5*mass*b.vy*b.vy;
   const boost=workOverride===undefined?Math.ceil(Math.min(40000,Math.max(18000,p.boost||0,required-vertical))):Math.max(0,Math.min(40000,workOverride));
-  const energy=.5*mass*(b.vx*b.vx+b.vy*b.vy),added=Math.min(boost,Math.max(0,240000-energy));b.vy=-Math.sqrt(b.vy*b.vy+2*added/mass);
+  const energy=.5*mass*(b.vx*b.vx+b.vy*b.vy),added=Math.min(boost,Math.max(0,(environment.energyLimit??240000)-energy));b.vy=-Math.sqrt(b.vy*b.vy+2*added/mass);
   const outgoing=inspect?{...b}:undefined;
   let elapsed=0,score=10000;
   while(elapsed<2.5&&b.y-b.r<692){
@@ -85,9 +85,12 @@ export function guidedRebound(ball:Body,p:Paddle,targets:Target[],mass:number,re
  }
  let best=search();
  // Preserve the standard rebound when it can hit. A low target can need less extra
- // work so the existing momentum is not sent back into a strong side-flow layer.
- if(environment.allowLowerWork&&!best.hit&&targets.length>0&&targets.length<=2&&targets.every(t=>t.y>=540)&&environment.air.some(z=>Math.abs(z.fx*environment.response*environment.wind)>240)){
-  for(const work of [0,6000,12000]){const candidate=search(work);if(candidate.hit){best=candidate;break;}}
+ // work to stay below a strong side-flow layer or meet a moving block's low face.
+ const lowMoving=targets.some(t=>t.motion);
+ if(environment.allowLowerWork&&!best.hit&&targets.length>0&&targets.length<=2&&targets.every(t=>t.y>=540)&&(lowMoving||environment.air.some(z=>Math.abs(z.fx*environment.response*environment.wind)>240))){
+  // A previous failed rally may have queued 40k. Include the ordinary 18k charge
+  // for moving blocks as well; the default search otherwise inherits that 40k.
+  for(const work of lowMoving?[0,6000,12000,18000]:[0,6000,12000]){const candidate=search(work);if(candidate.hit){best=candidate;break;}}
  }
  return Number.isFinite(best.score)?{tilt:best.tilt,boost:best.boost,hit:best.hit}:{tilt:p.tilt||0,boost:p.boost??18000,hit:false};
 }

@@ -32,6 +32,14 @@ export class Game{
   this.queue=Array.from({length:this.mode==='challenge'?this.level.shots:12},(_,i)=>({...STOCK[i%STOCK.length]}));
  }
  get spec(){const p=ballProperties(this.material,this.size),s=this.ballScale;return {...p,r:p.r*s,mass:p.mass*s*s*s,windResponse:p.windResponse/s};}
+ get energyCapacity(){
+  if(this.ballScale===1||!this.sparseEndgame||this.progress.sinceHit<4||this.progress.catchesWithoutHit<2)return 240000;
+  const s=this.spec,height=Math.min(...this.targets.map(t=>Math.max(0,675-s.r-(t.y+(t.kind==='bar'?t.size/8:t.size/2)+s.r))));
+  // Growth adds volume/mass; the ordinary capacity can make even a perfectly
+  // vertical rebound fall short. Keep per-contact work bounded and only restore
+  // the base ball's capacity per unit mass after the existing failed rallies.
+  return s.mass*(GRAVITY*height+55*55/2)>240000?240000*this.ballScale**3:240000;
+ }
  get sparseEndgame(){return this.targets.length>0&&this.targets.length<=2;}
  get lowEndgame(){return this.sparseEndgame&&this.targets.every(t=>t.y>=540);}
  get restitution(){return this.spec.restitution;}
@@ -67,7 +75,7 @@ export class Game{
    if(t.power==='switch'&&!this.targets.some(b=>b.power==='switch'&&b.hp>0)){for(const gate of this.gates)gate.open=true;this.say('开关已清除 · 闸门打开');}
   }
  }
- energize(b:Ball,n:Vec,amount=22000){const mass=this.spec.mass,vn=b.vx*n.x+b.vy*n.y,energy=.5*mass*(b.vx*b.vx+b.vy*b.vy);const added=Math.min(amount,Math.max(0,240000-energy));
+ energize(b:Ball,n:Vec,amount=22000){const mass=this.spec.mass,vn=b.vx*n.x+b.vy*n.y,energy=.5*mass*(b.vx*b.vx+b.vy*b.vy);const added=Math.min(amount,Math.max(0,this.energyCapacity-energy));
   if(added<=0||vn<0)return;const dv=Math.sqrt(vn*vn+2*added/mass)-vn;b.vx+=dv*n.x;b.vy+=dv*n.y;this.stats.energy+=added;this.stats.boosts++;this.burst(b.x,b.y,'#ffc369',6);
  }
  finish(){this.resetGatePressure();this.paddle.boost=18000;this.paddle.tilt=0;this.wideTime=0;this.bigTime=0;this.ballScale=1;this.paddle.width=96;this.treasures=[];this.balls=[];this.safetyReturn=false;this.targets=this.targets.filter(t=>t.hp>0);this.syncNext();
@@ -155,7 +163,7 @@ export class Game{
   const falling=this.balls[0],misses=this.sparseEndgame?2:ASSIST_MISSES;
   if(falling&&this.progress.sinceHit>=(this.sparseEndgame?4:ASSIST_DELAY)&&this.progress.catchesWithoutHit+1>=misses&&falling.vy>0&&falling.y>470&&falling.y<675-falling.r+10&&this.time-this.lastGuideTime>=(falling.y>620?.025:.08)){
    this.lastGuideTime=this.time;
-   const plan=guidedRebound(falling,{...this.paddle,x:oldPaddleX},this.targets,spec.mass,restitution,this.time-dt,{air:this.air,gates:this.gates,pegs:this.pegs,wind:this.windMultiplier,response:spec.windResponse,allowLowerWork:this.progress.catchesWithoutHit>=misses},this.progress.sinceHit>=20||this.lowEndgame?.48:.32);
+   const plan=guidedRebound(falling,{...this.paddle,x:oldPaddleX},this.targets,spec.mass,restitution,this.time-dt,{air:this.air,gates:this.gates,pegs:this.pegs,wind:this.windMultiplier,response:spec.windResponse,energyLimit:this.energyCapacity,allowLowerWork:this.progress.catchesWithoutHit>=misses},this.progress.sinceHit>=20||this.lowEndgame?.48:.32);
    // A closest miss is not enough for early steering. Keep the existing later fallback.
    if(plan.hit||this.progress.catchesWithoutHit>=misses){
     this.paddle.boost=plan.boost;this.paddle.tilt=(this.paddle.tilt||0)+Math.max(-GUIDE_TILT_STEP,Math.min(GUIDE_TILT_STEP,plan.tilt-(this.paddle.tilt||0)));

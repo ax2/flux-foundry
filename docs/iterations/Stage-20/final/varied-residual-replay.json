@@ -1,0 +1,46 @@
+{
+  "input": {
+    "level": 22,
+    "seed": 9049,
+    "material": "rubber",
+    "size": "large",
+    "mirror": true,
+    "cadence": 36,
+    "angle": 0.9210388678941157
+  },
+  "shots": [
+    {
+      "phase": "aim",
+      "seconds": 47.78333333333333,
+      "hits": 29,
+      "remaining": [
+        {
+          "id": 3,
+          "hp": 8
+        }
+      ]
+    },
+    {
+      "phase": "aim",
+      "seconds": 30.983333333333334,
+      "hits": 7,
+      "remaining": [
+        {
+          "id": 3,
+          "hp": 1
+        }
+      ]
+    },
+    {
+      "phase": "won",
+      "seconds": 9.108333333333333,
+      "hits": 1,
+      "remaining": []
+    }
+  ],
+  "result": "won",
+  "stars": 3,
+  "used": 3,
+  "par": 8,
+  "gap": 10.125000000000066
+}

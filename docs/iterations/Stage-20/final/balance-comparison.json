@@ -1,0 +1,336 @@
+{
+  "method": "Stage20 versus published v0.18.0 Stage19 final data. Same6336 inputs, natural termination, no worse individual or matrix no-hit peaks, every existing first-ball/full-game win preserved, no greater winning full-game ball counts or lower stars, and no lower expedition wave reach. This is evidence for these fixed inputs, not all possible play. Stage19 captured touch/varied continuations remain independent gates. One of52 natural fixtures improved from two balls to one at the same first angle; it was re-timed only at actual collection; the original is archived. Earlier exact-parity reports remain historical.",
+  "continuation": {
+    "input": {
+      "level": 22,
+      "seed": 9049,
+      "material": "rubber",
+      "size": "large",
+      "mirror": true,
+      "cadence": 36,
+      "angle": 0.9210388678941157
+    },
+    "shots": [
+      {
+        "phase": "aim",
+        "seconds": 47.78333333333333,
+        "hits": 29,
+        "remaining": [
+          {
+            "id": 3,
+            "hp": 8
+          }
+        ]
+      },
+      {
+        "phase": "aim",
+        "seconds": 30.983333333333334,
+        "hits": 7,
+        "remaining": [
+          {
+            "id": 3,
+            "hp": 1
+          }
+        ]
+      },
+      {
+        "phase": "won",
+        "seconds": 9.108333333333333,
+        "hits": 1,
+        "remaining": []
+      }
+    ],
+    "result": "won",
+    "stars": 3,
+    "used": 3,
+    "par": 8,
+    "gap": 10.125000000000066
+  },
+  "checks": [
+    {
+      "matrix": "active-endurance.json",
+      "baseline": "Stage-19/final/active-endurance.json",
+      "rows": 1872,
+      "beforeMax": 15.758333333333079,
+      "afterMax": 15.758333333333079,
+      "changed": 1,
+      "changes": [
+        {
+          "index": 77,
+          "level": 3,
+          "material": "steel",
+          "size": "standard",
+          "policy": "follow",
+          "beforeGap": 12.541666666666595,
+          "afterGap": 9.141666666666788,
+          "beforePhase": "won",
+          "afterPhase": "won"
+        }
+      ],
+      "summary": {
+        "samples": 1872,
+        "natural": 1872,
+        "ongoingAt300": 0,
+        "longIdle": 0,
+        "over20": 0,
+        "over25": 0,
+        "maxNoHit": 15.758333333333079,
+        "stagnantAtEnd": 0
+      }
+    },
+    {
+      "matrix": "varied-endurance.json",
+      "baseline": "Stage-19/final/varied-endurance.json",
+      "rows": 2496,
+      "beforeMax": 18.49999999999959,
+      "afterMax": 18.49999999999959,
+      "changed": 3,
+      "changes": [
+        {
+          "index": 338,
+          "level": 8,
+          "material": "steel",
+          "size": "small",
+          "beforeGap": 9.566666666666764,
+          "afterGap": 7.45000000000016,
+          "beforePhase": "won",
+          "afterPhase": "won"
+        },
+        {
+          "index": 582,
+          "level": 13,
+          "material": "steel",
+          "size": "standard",
+          "beforeGap": 13.708333333333195,
+          "afterGap": 12.124999999999952,
+          "beforePhase": "aim",
+          "afterPhase": "won"
+        },
+        {
+          "index": 1379,
+          "level": 3,
+          "material": "ceramic",
+          "size": "large",
+          "beforeGap": 10.066666666666736,
+          "afterGap": 10.066666666666736,
+          "beforePhase": "won",
+          "afterPhase": "won"
+        }
+      ],
+      "summary": {
+        "samples": 2496,
+        "natural": 2496,
+        "unfinished": 0,
+        "longIdle": 0,
+        "over20": 0,
+        "over30": 0,
+        "maxNoHit": 18.49999999999959,
+        "maxBallSeconds": 184.65
+      }
+    },
+    {
+      "matrix": "endurance.json",
+      "baseline": "Stage-19/final/endurance.json",
+      "rows": 936,
+      "beforeMax": 13.033333333333333,
+      "afterMax": 13.033333333333333,
+      "changed": 0,
+      "changes": [],
+      "summary": {
+        "samples": 936,
+        "naturallyEnded": 936,
+        "ongoingAt600": 0,
+        "stagnantAt600": 0,
+        "orbitBreaks": 43,
+        "maxNoHitSeconds": 13.033333333333333
+      }
+    },
+    {
+      "matrix": "sparse-endurance.json",
+      "baseline": "Stage-19/final/sparse-endurance.json",
+      "rows": 360,
+      "beforeMax": 19.45833333333287,
+      "afterMax": 14.108333333333173,
+      "changed": 5,
+      "changes": [
+        {
+          "index": 154,
+          "level": 13,
+          "material": "steel",
+          "size": "standard",
+          "beforeGap": 19.45833333333287,
+          "afterGap": 12.083333333333288,
+          "beforePhase": "won",
+          "afterPhase": "won",
+          "beforeShots": 2,
+          "afterShots": 2
+        },
+        {
+          "index": 157,
+          "level": 13,
+          "material": "steel",
+          "size": "large",
+          "beforeGap": 16.766666666666357,
+          "afterGap": 9.850000000000081,
+          "beforePhase": "won",
+          "afterPhase": "won",
+          "beforeShots": 3,
+          "afterShots": 3
+        },
+        {
+          "index": 160,
+          "level": 13,
+          "material": "steel",
+          "size": "large",
+          "beforeGap": 13.758333333333193,
+          "afterGap": 10.950000000000019,
+          "beforePhase": "won",
+          "afterPhase": "won",
+          "beforeShots": 1,
+          "afterShots": 1
+        },
+        {
+          "index": 194,
+          "level": 13,
+          "material": "ceramic",
+          "size": "large",
+          "beforeGap": 12.61666666666659,
+          "afterGap": 11.891666666666632,
+          "beforePhase": "won",
+          "afterPhase": "won",
+          "beforeShots": 5,
+          "afterShots": 4
+        },
+        {
+          "index": 197,
+          "level": 13,
+          "material": "ceramic",
+          "size": "large",
+          "beforeGap": 14.933333333333126,
+          "afterGap": 11.441666666666658,
+          "beforePhase": "won",
+          "afterPhase": "won",
+          "beforeShots": 2,
+          "afterShots": 2
+        }
+      ],
+      "summary": {
+        "games": 360,
+        "finished": 360,
+        "wins": 359,
+        "maxNoHit": 14.108333333333173,
+        "maxSparseGap": 12.26666666666661,
+        "over20": 0,
+        "over30": 0
+      }
+    },
+    {
+      "matrix": "multi-after.json",
+      "baseline": "Stage-19/final/multi-after.json",
+      "rows": 480,
+      "beforeMax": 17.608333333332975,
+      "afterMax": 17.608333333332975,
+      "changed": 1,
+      "changes": [
+        {
+          "index": 214,
+          "level": 14,
+          "material": "brass",
+          "size": "large",
+          "beforeGap": 14.124999999999838,
+          "afterGap": 11.483333333333322,
+          "beforePhase": "won",
+          "afterPhase": "won",
+          "beforeShots": 3,
+          "afterShots": 3
+        }
+      ],
+      "summary": {
+        "games": 480,
+        "natural": 480,
+        "wins": 475,
+        "maxMultiGap": 17.599999999999643,
+        "over20": 0,
+        "over30": 0,
+        "maxNoHit": 17.608333333332975
+      }
+    },
+    {
+      "matrix": "full-endurance.json",
+      "baseline": "Stage-19/final/full-endurance.json",
+      "rows": 120,
+      "beforeMax": 19.466666666666203,
+      "afterMax": 14.74166666666647,
+      "changed": 1,
+      "changes": [
+        {
+          "index": 59,
+          "level": 14,
+          "material": "brass",
+          "size": "large",
+          "policy": "steer",
+          "beforeGap": 19.466666666666203,
+          "afterGap": 14.74166666666647,
+          "beforePhase": "won",
+          "afterPhase": "won",
+          "beforeShots": 3,
+          "afterShots": 3,
+          "beforeStars": 3,
+          "afterStars": 3
+        }
+      ],
+      "summary": {
+        "games": 120,
+        "wins": 120,
+        "losses": 0,
+        "unfinished": 0,
+        "shots": 301,
+        "longIdle": 0,
+        "maxNoHit": 14.74166666666647
+      }
+    },
+    {
+      "matrix": "endless-audit-extended.json",
+      "baseline": "Stage-19/final/endless-audit-extended.json",
+      "rows": 72,
+      "beforeMax": 17.84999999999963,
+      "afterMax": 17.249999999999662,
+      "changed": 2,
+      "changes": [
+        {
+          "index": 9,
+          "material": "brass",
+          "size": "standard",
+          "policy": "steer",
+          "beforeGap": 17.84999999999963,
+          "afterGap": 15.883333333333072,
+          "beforePhase": "over",
+          "afterPhase": "over",
+          "beforeShots": 15,
+          "afterShots": 15
+        },
+        {
+          "index": 57,
+          "material": "brass",
+          "size": "standard",
+          "policy": "steer",
+          "beforeGap": 14.733333333333137,
+          "afterGap": 11.966666666666628,
+          "beforePhase": "over",
+          "afterPhase": "over",
+          "beforeShots": 15,
+          "afterShots": 15
+        }
+      ],
+      "summary": {
+        "games": 72,
+        "naturallyConcluded": 72,
+        "unresolved": 0,
+        "longIdle": 0,
+        "maxNoHit": 17.249999999999662,
+        "checkpointsAt300": 0,
+        "maxBallSeconds": 277.225
+      }
+    }
+  ]
+}

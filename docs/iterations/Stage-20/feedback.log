@@ -1,0 +1,4 @@
+npm warn Unknown env config "devdir". This will error in a future major version of npm. See `npm help npmrc` for supported config options.
+npm notice run flux-foundry@0.19.0 test:feedback
+npm notice run node scripts/feedback-test.mjs
+{"passed":14,"audio":{"enabled":true,"state":"running","voices":4,"peakVoices":4,"played":{"launch":1,"hit":9,"break":1,"catch":0,"boost":0,"pickup":0,"weak":0,"win":1,"lose":0},"failures":0},"errors":[]}
