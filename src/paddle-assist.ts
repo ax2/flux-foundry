@@ -7,8 +7,8 @@ function advance(b:Body,dt:number,e:Environment,restitution:number){
  let ax=0,ay=240;for(const zone of e.air){const strength=airStrength(zone,b);ax+=zone.fx*e.response*strength*e.wind;ay+=zone.fy*e.response*strength*e.wind;}advanceFree(b,dt,ax,ay);
  if(b.x<18+b.r){b.x=18+b.r;reflect(b,{x:1,y:0},restitution);}if(b.x>402-b.r){b.x=402-b.r;reflect(b,{x:-1,y:0},restitution);}if(b.y<112+b.r){b.y=112+b.r;reflect(b,{x:0,y:1},restitution);}
 }
-function blocked(b:Body,e:Environment,restitution:number){
- for(const g of e.gates)if(!g.open&&Math.abs(b.x-g.x)<g.size/2+b.r&&Math.abs(b.y-g.y)<g.size/8+b.r&&collide(b,{...g,id:-1,kind:'bar',hp:1,maxHp:1,flash:0},restitution))return true;
+function reflectPassive(b:Body,e:Environment,restitution:number){
+ for(const g of e.gates)if(!g.open&&!g.venting&&Math.abs(b.x-g.x)<g.size/2+b.r&&Math.abs(b.y-g.y)<g.size/8+b.r&&collide(b,{...g,id:-1,kind:'bar',hp:1,maxHp:1,flash:0},restitution))return true;
  for(const p of e.pegs)if(Math.hypot(b.x-p.x,b.y-p.y)<p.r+b.r&&collide(b,{...p,id:-2,kind:'capacitor',size:p.r*2,hp:1,maxHp:1,flash:0},restitution))return true;
  return false;
 }
@@ -39,7 +39,7 @@ export function guidedTilt(ball:Body,p:Paddle,targets:Target[],mass:number,resti
   while(eta<1.5&&b.y-b.r<692){
    const dt=Math.min(1/120,b.r*.45/Math.max(1,Math.hypot(b.vx,b.vy))),previous={...b},delta=Math.max(-900*dt,Math.min(900*dt,p.target-px));
    px+=delta;advance(b,dt,environment,restitution);eta+=dt;
-   if(blocked(b,environment,restitution))return {tilt,score:Infinity};
+   reflectPassive(b,environment,restitution);
    for(const target of targets)if(target.hp>0&&targetImpact(b,futureTarget(target,time+eta),restitution)>55)return {tilt,score:10000+Math.abs(tilt-(p.tilt||0))};
    if(catchPaddle(b,previous,{...p,x:px,vx:delta/dt,tilt},dt)){caught=true;break;}
   }
@@ -48,7 +48,7 @@ export function guidedTilt(ball:Body,p:Paddle,targets:Target[],mass:number,resti
   let elapsed=0,score=10000;
   while(elapsed<2.5&&b.y-b.r<692){
    const dt=Math.min(1/120,b.r*.45/Math.max(1,Math.hypot(b.vx,b.vy)));advance(b,dt,environment,restitution);elapsed+=dt;
-   if(blocked(b,environment,restitution)){score+=2000;break;}
+   reflectPassive(b,environment,restitution);
    for(const target of targets){
     if(target.hp<=0)continue;const t=futureTarget(target,time+eta+elapsed);
     score=Math.min(score,20+clearance(b,t));

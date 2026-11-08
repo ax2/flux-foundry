@@ -1,0 +1,163 @@
+[
+  {
+    "wall": 1794113232005,
+    "diagnostics": {
+      "wall": 27540.19999998808,
+      "frames": 4262,
+      "lastFrame": 27537.5,
+      "maxFrameGap": 83.30000000000001,
+      "visibility": "visible",
+      "loading": {
+        "phase": "ready",
+        "received": 3399692,
+        "total": 3399692,
+        "percent": 100,
+        "completed": 2,
+        "failed": 0
+      }
+    },
+    "progress": {
+      "sinceHit": 0.016666666666666666,
+      "maxNoHit": 5.025000000000039,
+      "catchesWithoutHit": 0,
+      "maxCatchesWithoutHit": 1
+    },
+    "paddle": {
+      "x": 197.5,
+      "target": 210,
+      "width": 96,
+      "vx": 900,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "flight": 26.108333333332492,
+    "hits": 24,
+    "catches": 4,
+    "orbitBreaks": 0,
+    "paused": false,
+    "ball": {
+      "x": 206.3517064616106,
+      "y": 154.9333958299953,
+      "vx": -218.89761230336083,
+      "vy": 1378.0037497997198,
+      "r": 9
+    },
+    "gateStates": [],
+    "airZones": [
+      {
+        "x": 95,
+        "y": 360,
+        "w": 230,
+        "h": 270,
+        "fx": 12,
+        "fy": -48,
+        "plume": true
+      }
+    ],
+    "bricks": [
+      {
+        "id": 2,
+        "hp": 1
+      },
+      {
+        "id": 3,
+        "hp": 2
+      },
+      {
+        "id": 4,
+        "hp": 4
+      }
+    ]
+  },
+  {
+    "wall": 1794113233038,
+    "diagnostics": {
+      "wall": 28572.5,
+      "frames": 4422,
+      "lastFrame": 28566.6,
+      "maxFrameGap": 83.30000000000001,
+      "visibility": "visible",
+      "loading": {
+        "phase": "ready",
+        "received": 3399692,
+        "total": 3399692,
+        "percent": 100,
+        "completed": 2,
+        "failed": 0
+      }
+    },
+    "progress": {
+      "sinceHit": 0,
+      "maxNoHit": 5.025000000000039,
+      "catchesWithoutHit": 0,
+      "maxCatchesWithoutHit": 1
+    },
+    "paddle": {
+      "x": 322.94017380934497,
+      "target": 323.5560960036058,
+      "width": 96,
+      "vx": 900,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "flight": 27.133333333332434,
+    "hits": 25,
+    "catches": 4,
+    "orbitBreaks": 0,
+    "paused": false,
+    "ball": {
+      "x": 364.8196009266299,
+      "y": 502.9178075625463,
+      "vx": -289.85553332609345,
+      "vy": 966.6027381501084,
+      "r": 9
+    },
+    "gateStates": [],
+    "airZones": [
+      {
+        "x": 95,
+        "y": 360,
+        "w": 230,
+        "h": 270,
+        "fx": 12,
+        "fy": -48,
+        "plume": true
+      }
+    ],
+    "bricks": [
+      {
+        "x": 275.84525772185134,
+        "y": 610,
+        "hp": 2,
+        "kind": "prism",
+        "size": 48,
+        "power": "spring",
+        "core": false,
+        "id": 3,
+        "maxHp": 9,
+        "flash": 0,
+        "motion": {
+          "baseX": 285,
+          "amplitude": 14,
+          "speed": 0.8999999999999999
+        },
+        "vx": 9.532809763902165
+      },
+      {
+        "x": 210,
+        "y": 630,
+        "hp": 4,
+        "kind": "bar",
+        "size": 48,
+        "power": "spring",
+        "core": false,
+        "id": 4,
+        "maxHp": 6,
+        "flash": 0,
+        "vx": 0
+      }
+    ]
+  }
+]

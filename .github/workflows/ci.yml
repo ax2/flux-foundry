@@ -26,6 +26,7 @@ jobs:
       - run: npm run test:endurance
       - run: npm run test:varied
       - run: npm run test:sparse
+      - run: npm run test:multi
       - run: npm run test:active
       - run: npm run test:full
       - run: npm run test:loading

@@ -20,7 +20,7 @@ export type Choice={material:Material;size:BallSize};
 // Slots occupy the existing triangular hopper; first slot is nearest its outlet.
 export const HOPPER_SLOTS=[{x:210,y:88},{x:145,y:55},{x:188,y:55},{x:231,y:55},{x:274,y:55},{x:70,y:24},{x:116,y:24},{x:162,y:24},{x:208,y:24},{x:254,y:24},{x:300,y:24},{x:346,y:24}] as const;
 export type Rail={side:'left'|'right';y:number;h:number;charges:number;maxCharges:number};
-export type Gate={x:number;y:number;size:number;open:boolean};
+export type Gate={x:number;y:number;size:number;open:boolean;pressure?:number;lastContact?:number;venting?:'above'|'below'};
 type Tile={x:number;y:number;kind:Target['kind'];hp:number;size:number;power?:Target['power'];core?:boolean};
 export type Level={name:string;chapter:string;hint:string;shots:number;par:number;goal:'clear'|'core';rails?:Rail[];tiles:Tile[];pegs:Peg[];air:AirZone[];gates:Gate[]};
 const tile=(x:number,y:number,hp:number,kind:Target['kind']='steel',power?:Target['power'],core=false):Tile=>({x,y,hp,kind,size:48,power,core});

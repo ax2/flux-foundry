@@ -21,7 +21,7 @@ export class Game{
  stalled=0;supportedTime=0;supportGrace=0;anchor:Vec={...LAUNCH};rescueAttempts=0;safetyReturn=false;
  passiveLoops=0;passiveAnchor:{key:string;x:number;y:number}|null=null;
  rowsCreated=0;anchorsBroken=0;
- eventSerial=0;lastEvent='';endReason='';stats={hits:0,flight:0,boosts:0,energy:0,rescues:0,returns:0,rebounds:0,recharges:0,pulses:0,pickups:0,paddleHits:0,orbitBreaks:0};
+ eventSerial=0;lastEvent='';endReason='';stats={hits:0,flight:0,boosts:0,energy:0,rescues:0,returns:0,rebounds:0,recharges:0,pulses:0,pickups:0,paddleHits:0,orbitBreaks:0,gateVents:0};
  constructor(seed=Date.now(),levelIndex?:number){
   this.seed=seed>>>0;
   if(levelIndex!==undefined){this.mode='challenge';this.levelIndex=Math.max(0,Math.min(LEVELS.length-1,Math.floor(levelIndex)));const l=this.level;
@@ -53,11 +53,12 @@ export class Game{
   }
  }
  aim(x:number,y:number){this.angle=Math.max(.16,Math.min(Math.PI-.16,Math.atan2(Math.max(15,y-LAUNCH.y),x-LAUNCH.x)));}
- fire(){if(this.phase!=='aim'||this.paused||this.remainingShots===0)return false;this.syncNext();this.phase='volley';this.progress.sinceHit=0;this.progress.catchesWithoutHit=0;this.lastOrbitAdjustmentCatch=0;this.shots++;this.ballScale=1;this.bigTime=0;this.wideTime=0;this.paddle.width=96;this.paddle.tilt=0;this.paddle.boost=18000;this.paddleOrbits=[];this.orbitRepeats=0;this.treasures=[];this.spawnCount=0;this.treasureClock=0;this.nextTreasure=2.5;this.anchorsBroken=0;this.combo=0;this.stalled=0;this.supportedTime=0;this.supportGrace=0;this.anchor={...LAUNCH};this.rescueAttempts=0;this.passiveLoops=0;this.passiveAnchor=null;for(const r of this.rails)r.charges=r.maxCharges;this.safetyReturn=false;
+ resetGatePressure(){for(const gate of this.gates){gate.pressure=0;gate.lastContact=-1;gate.venting=undefined;}}
+ fire(){if(this.phase!=='aim'||this.paused||this.remainingShots===0)return false;this.syncNext();this.phase='volley';this.resetGatePressure();this.progress.sinceHit=0;this.progress.catchesWithoutHit=0;this.lastOrbitAdjustmentCatch=0;this.shots++;this.ballScale=1;this.bigTime=0;this.wideTime=0;this.paddle.width=96;this.paddle.tilt=0;this.paddle.boost=18000;this.paddleOrbits=[];this.orbitRepeats=0;this.treasures=[];this.spawnCount=0;this.treasureClock=0;this.nextTreasure=2.5;this.anchorsBroken=0;this.combo=0;this.stalled=0;this.supportedTime=0;this.supportGrace=0;this.anchor={...LAUNCH};this.rescueAttempts=0;this.passiveLoops=0;this.passiveAnchor=null;for(const r of this.rails)r.charges=r.maxCharges;this.safetyReturn=false;
   const spec=this.spec;this.balls=[{...LAUNCH,vx:Math.cos(this.angle)*spec.speed,vy:Math.sin(this.angle)*spec.speed,r:spec.r}];return true;
  }
  burst(x:number,y:number,color:string,n=12){for(let i=0;i<n;i++){const a=Math.PI*2*i/n,s=35+(i%4)*33;this.effects.push({x,y,life:.45,max:.45,color,vx:Math.cos(a)*s,vy:Math.sin(a)*s,ring:false});}this.effects.push({x,y,life:.45,max:.45,color,vx:0,vy:0,ring:true});if(this.effects.length>420)this.effects.splice(0,this.effects.length-420);}
- damage(t:Target){if(t.hp<=0)return;this.progress.sinceHit=0;this.progress.catchesWithoutHit=0;this.lastOrbitAdjustmentCatch=0;this.paddleOrbits=[];this.orbitRepeats=0;this.paddle.tilt=0;this.paddle.boost=18000;this.passiveLoops=0;this.passiveAnchor=null;t.hp--;t.flash=.12;this.score+=10;this.combo++;this.stats.hits++;
+ damage(t:Target){if(t.hp<=0)return;for(const gate of this.gates)gate.pressure=0;this.progress.sinceHit=0;this.progress.catchesWithoutHit=0;this.lastOrbitAdjustmentCatch=0;this.paddleOrbits=[];this.orbitRepeats=0;this.paddle.tilt=0;this.paddle.boost=18000;this.passiveLoops=0;this.passiveAnchor=null;t.hp--;t.flash=.12;this.score+=10;this.combo++;this.stats.hits++;
   this.bestCombo=Math.max(this.bestCombo,this.combo);this.onHit?.(t.kind);
   if(t.hp===0){if(t.anchor)this.anchorsBroken++;this.score+=75;this.burst(t.x,t.y,t.core?'#ed9fff':t.power==='spring'?'#ffcf70':'#80e8e4');
    if(t.power==='valve'){for(const zone of this.air){zone.fx=-zone.fx;zone.fy=-zone.fy;}this.say('风阀已切换 · 气流反向');}
@@ -67,7 +68,7 @@ export class Game{
  energize(b:Ball,n:Vec,amount=22000){const mass=this.spec.mass,vn=b.vx*n.x+b.vy*n.y,energy=.5*mass*(b.vx*b.vx+b.vy*b.vy);const added=Math.min(amount,Math.max(0,240000-energy));
   if(added<=0||vn<0)return;const dv=Math.sqrt(vn*vn+2*added/mass)-vn;b.vx+=dv*n.x;b.vy+=dv*n.y;this.stats.energy+=added;this.stats.boosts++;this.burst(b.x,b.y,'#ffc369',6);
  }
- finish(){this.paddle.boost=18000;this.paddle.tilt=0;this.wideTime=0;this.bigTime=0;this.ballScale=1;this.paddle.width=96;this.treasures=[];this.balls=[];this.safetyReturn=false;this.targets=this.targets.filter(t=>t.hp>0);this.syncNext();
+ finish(){this.resetGatePressure();this.paddle.boost=18000;this.paddle.tilt=0;this.wideTime=0;this.bigTime=0;this.ballScale=1;this.paddle.width=96;this.treasures=[];this.balls=[];this.safetyReturn=false;this.targets=this.targets.filter(t=>t.hp>0);this.syncNext();
   if(this.mode==='challenge'){this.phase=this.goalComplete?'won':this.remainingShots===0?'over':'aim';this.endReason=this.phase==='over'?'ammo':'';return;}
   if(this.remainingShots===0){this.phase='over';this.endReason='ammo';return;}
   const advance=this.anchorsBroken>0?24:39;for(const t of this.targets)t.y-=advance;if(this.anchorsBroken>0)this.say('耐久支点已拆除 · 本轮推进减缓');if(this.targets.some(t=>t.y-t.size/2<184)){this.phase='over';this.endReason='overload';return;}
@@ -76,6 +77,18 @@ export class Game{
  wallCharge(b:Ball,side:'left'|'right'){
   if(this.safetyReturn)return;const rail=this.rails.find(r=>r.side===side&&b.y>=r.y&&b.y<=r.y+r.h&&r.charges>0);if(!rail)return;
   const before=this.stats.boosts;this.energize(b,{x:side==='left'?1:-1,y:0});if(this.stats.boosts>before)rail.charges--;
+ }
+ gateContact(gate:Gate,b:Ball){
+  if(gate.open||gate.venting)return;
+  // Count distinct physical rebounds anywhere on this gate, rather than a 12px anchor.
+  if(this.time-(gate.lastContact??-1)<.25)return;
+  gate.lastContact=this.time;gate.pressure=(gate.pressure||0)+1;
+  if(gate.pressure<3||this.progress.sinceHit<8)return;
+  gate.venting=b.y<gate.y?'above':'below';this.stats.gateVents++;
+  this.passiveLoops=0;this.passiveAnchor=null;this.say('闸门卸压 · 临时通行');
+ }
+ closePassedVents(b:Ball){
+  for(const gate of this.gates)if(gate.venting&&((gate.venting==='above'&&b.y-b.r>gate.y+gate.size/8+3)||(gate.venting==='below'&&b.y+b.r<gate.y-gate.size/8-3))){gate.venting=undefined;gate.pressure=0;}
  }
  passiveContact(key:string,b:Ball){const a=this.passiveAnchor;if(a&&a.key===key&&Math.hypot(a.x-b.x,a.y-b.y)<12)this.passiveLoops++;else{this.passiveAnchor={key,x:b.x,y:b.y};this.passiveLoops=1;}}
  initMotion(){
@@ -134,13 +147,13 @@ export class Game{
     if(!this.safetyReturn){for(const z of this.air){const strength=airStrength(z,b);ax+=z.fx*spec.windResponse*strength*this.windMultiplier;ay+=z.fy*spec.windResponse*strength*this.windMultiplier;}
 
     }
-    const previous={...b};advanceFree(b,h,ax,ay);
+    const previous={...b};advanceFree(b,h,ax,ay);this.closePassedVents(b);
     const activePaddle={...this.paddle,x:oldPaddleX+this.paddle.vx*h*(sub+1)};if(this.paddleEnabled&&!this.safetyReturn&&!this.goalComplete&&this.targets.length>0&&catchPaddle(b,previous,activePaddle,h)){this.energize(b,{x:0,y:-1},this.paddle.boost||18000);this.paddle.boost=18000;this.stats.paddleHits++;this.paddle.flash=.15;this.trackPaddleOrbit(previous);}
     for(const t of this.treasures)if(t.life>0&&sweptPickup(previous,b,t))this.collectTreasure(t);
     if(b.x<18+b.r){b.x=18+b.r;if(reflect(b,{x:1,y:0},restitution))this.wallCharge(b,'left');}if(b.x>402-b.r){b.x=402-b.r;if(reflect(b,{x:-1,y:0},restitution))this.wallCharge(b,'right');}if(b.y<112+b.r){b.y=112+b.r;reflect(b,{x:0,y:1},restitution);}
     if(!this.safetyReturn){
      for(const [i,p] of this.pegs.entries()){const vx=b.vx,vy=b.vy;if(collide(b,{...p,id:-1,kind:'capacitor',size:p.r*2,hp:1,maxHp:1,flash:0},restitution)){this.passiveContact('peg'+i,b);if(Math.hypot(b.vx-vx,b.vy-vy)/(1+restitution)<55)supported=true;}}
-     for(const [i,gate] of this.gates.entries())if(!gate.open){const vx=b.vx,vy=b.vy;if(collide(b,{...gate,id:-2,kind:'bar',hp:1,maxHp:1,flash:0},restitution)){this.passiveContact('gate'+i,b);if(Math.hypot(b.vx-vx,b.vy-vy)/(1+restitution)<55)supported=true;}}
+     for(const [i,gate] of this.gates.entries())if(!gate.open&&!gate.venting){const vx=b.vx,vy=b.vy;if(collide(b,{...gate,id:-2,kind:'bar',hp:1,maxHp:1,flash:0},restitution)){this.passiveContact('gate'+i,b);this.gateContact(gate,b);if(Math.hypot(b.vx-vx,b.vy-vy)/(1+restitution)<55)supported=true;}}
      for(const t of this.targets){if(t.hp<=0)continue;const vx=b.vx,vy=b.vy,tvx=t.vx||0;b.vx-=tvx;const hit=collide(b,t,restitution);b.vx+=tvx;if(hit){
       const dx=b.vx-vx,dy=b.vy-vy,impulse=Math.hypot(dx,dy);if(impulse/(1+restitution)<55)supported=true;if(impulse/(1+restitution)>55){this.damage(t);if(t.power==='spring')this.energize(b,{x:dx/impulse,y:dy/impulse});}
      }}
