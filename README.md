@@ -61,4 +61,3 @@ npm run package:win
 按阶段发布；每周检查实际变更与验证结果，有可发布内容才发版本，不发布空版本，不覆盖已发布标签/资产。
 
 源码MIT。背景、图集为项目原创生成，音效由Web Audio合成，无原作角色、平台UI、广告、账号或追踪。素材记录见 [assets.md](docs/design/assets.md)。
-
