@@ -1,5 +1,5 @@
-import {type Body,reflect,advanceFree,collide,type Target} from './physics';
-import {PADDLE_Y,catchPaddle,type Paddle} from './arcade';
+import {type Body,reflect,advanceFree,collide,vertices,type Target} from './physics';
+import {catchPaddle,type Paddle} from './arcade';
 import {airStrength} from './air';
 import {type AirZone,type Gate,type Peg} from './content';
 type Environment={air:AirZone[];gates:Gate[];pegs:Peg[];wind:number;response:number};
@@ -12,32 +12,62 @@ function blocked(b:Body,e:Environment,restitution:number){
  for(const p of e.pegs)if(Math.hypot(b.x-p.x,b.y-p.y)<p.r+b.r&&collide(b,{...p,id:-2,kind:'capacitor',size:p.r*2,hp:1,maxHp:1,flash:0},restitution))return true;
  return false;
 }
-// A bounded read-only search chooses a metal-face slope. Only the later real collision can change the ball.
+// Distance to the actual silhouette, rather than a box which includes empty triangle corners.
+function clearance(b:Body,t:Target){
+ if(t.kind==='capacitor')return Math.max(0,Math.hypot(b.x-t.x,b.y-t.y)-t.size/2-b.r);
+ const v=vertices(t);let distance=Infinity,inside=true;
+ for(let i=0;i<v.length;i++){
+  const a=v[i],z=v[(i+1)%v.length],dx=z.x-a.x,dy=z.y-a.y;
+  if((b.x-a.x)*dy-(b.y-a.y)*dx>0)inside=false;
+  const u=Math.max(0,Math.min(1,((b.x-a.x)*dx+(b.y-a.y)*dy)/(dx*dx+dy*dy)));
+  distance=Math.min(distance,Math.hypot(b.x-a.x-u*dx,b.y-a.y-u*dy));
+ }
+ return inside?0:Math.max(0,distance-b.r);
+}
+function futureTarget(t:Target,time:number){
+ return t.motion?{...t,x:t.motion.baseX+Math.sin(time*t.motion.speed)*t.motion.amplitude,vx:Math.cos(time*t.motion.speed)*t.motion.amplitude*t.motion.speed}:t;
+}
+function targetImpact(b:Body,t:Target,restitution:number){
+ if(Math.abs(b.x-t.x)>t.size/2+b.r||Math.abs(b.y-t.y)>t.size/2+b.r)return 0;
+ const vx=b.vx,vy=b.vy;b.vx-=t.vx||0;const hit=collide(b,t,restitution);b.vx+=t.vx||0;
+ return hit?Math.hypot(b.vx-vx,b.vy-vy)/(1+restitution):0;
+}
+// Bounded read-only search. Only a later real collision can change the live ball.
 export function guidedTilt(ball:Body,p:Paddle,targets:Target[],mass:number,restitution:number,time:number,environment:Environment,maxTilt=.32){
- let best=p.tilt||0,bestScore=Infinity;
- for(let i=0;i<=16;i++){
-  const tilt=-maxTilt+i*maxTilt/8,b={...ball};let eta=0,px=p.x,caught=false;
-  // Use the actual curved surface and moving-frame collision, including its contact height.
-  // The old flat-plane estimate selected slopes whose real rebound missed low targets.
+ function evaluate(tilt:number){
+  const b={...ball};let eta=0,px=p.x,caught=false;
   while(eta<1.5&&b.y-b.r<692){
    const dt=Math.min(1/120,b.r*.45/Math.max(1,Math.hypot(b.vx,b.vy))),previous={...b},delta=Math.max(-900*dt,Math.min(900*dt,p.target-px));
    px+=delta;advance(b,dt,environment,restitution);eta+=dt;
-   if(blocked(b,environment,restitution))break;
+   if(blocked(b,environment,restitution))return {tilt,score:Infinity};
+   for(const target of targets)if(target.hp>0&&targetImpact(b,futureTarget(target,time+eta),restitution)>55)return {tilt,score:10000+Math.abs(tilt-(p.tilt||0))};
    if(catchPaddle(b,previous,{...p,x:px,vx:delta/dt,tilt},dt)){caught=true;break;}
   }
-  if(!caught||b.vy>=0)continue;
+  if(!caught||b.vy>=0)return {tilt,score:Infinity};
   const energy=.5*mass*(b.vx*b.vx+b.vy*b.vy),added=Math.min(p.boost||18000,Math.max(0,240000-energy));b.vy=-Math.sqrt(b.vy*b.vy+2*added/mass);
   let elapsed=0,score=10000;
-  while(elapsed<2.5&&b.y-b.r<692){const dt=Math.min(1/120,b.r*.6/Math.max(1,Math.hypot(b.vx,b.vy)));advance(b,dt,environment,restitution);elapsed+=dt;
+  while(elapsed<2.5&&b.y-b.r<692){
+   const dt=Math.min(1/120,b.r*.45/Math.max(1,Math.hypot(b.vx,b.vy)));advance(b,dt,environment,restitution);elapsed+=dt;
    if(blocked(b,environment,restitution)){score+=2000;break;}
-   let hit=false;for(const t of targets){if(t.hp<=0)continue;const tx=t.motion?t.motion.baseX+Math.sin((time+eta+elapsed)*t.motion.speed)*t.motion.amplitude:t.x,dx=Math.max(0,Math.abs(b.x-tx)-t.size*.35-b.r),dy=Math.max(0,Math.abs(b.y-t.y)-t.size*.35-b.r);score=Math.min(score,Math.hypot(dx,dy)+20);
-    if(Math.abs(b.x-tx)<t.size/2+b.r&&Math.abs(b.y-t.y)<t.size/2+b.r){
-     const tvx=t.motion?Math.cos((time+eta+elapsed)*t.motion.speed)*t.motion.amplitude*t.motion.speed:0,probe={...b,vx:b.vx-tvx},vx=probe.vx,vy=probe.vy;
-     if(collide(probe,{...t,x:tx},restitution)&&Math.hypot(probe.vx-vx,probe.vy-vy)/(1+restitution)>55){score=elapsed*2;hit=true;break;}
-    }
-   }if(hit)break;
+   for(const target of targets){
+    if(target.hp<=0)continue;const t=futureTarget(target,time+eta+elapsed);
+    score=Math.min(score,20+clearance(b,t));
+    // Even a weak graze reflects the forecast ball; never predict through the solid block.
+    const impact=targetImpact(b,t,restitution);
+    if(impact>55)return {tilt,score:elapsed*2+12/impact+Math.abs(tilt-(p.tilt||0))*.2};
+    if(impact>0)score=Math.max(score,22+(55-impact)*.1);
+   }
   }
-  score+=Math.abs(tilt-(p.tilt||0))*.5;if(score<bestScore){bestScore=score;best=tilt;}
+  return {tilt,score:score+Math.abs(tilt-(p.tilt||0))*.2};
  }
- return best;
+ const coarse=Array.from({length:17},(_,i)=>evaluate(-maxTilt+i*maxTilt/8));
+ coarse.push(evaluate(Math.max(-maxTilt,Math.min(maxTilt,p.tilt||0))));
+ coarse.sort((a,b)=>a.score-b.score);let best=coarse[0];
+ // Refine two promising angles: a low moving block's reachable contact window can be
+ // narrower than the old 0.04/0.06 slope grid. No extra energy or ball impulse is added.
+ for(const candidate of coarse.slice(0,2))for(const offset of [-.5,-.25,.25,.5]){
+  const tilt=Math.max(-maxTilt,Math.min(maxTilt,candidate.tilt+offset*maxTilt/8)),choice=evaluate(tilt);
+  if(choice.score<best.score)best=choice;
+ }
+ return Number.isFinite(best.score)?best.tilt:p.tilt||0;
 }

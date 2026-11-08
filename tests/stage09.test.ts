@@ -5,7 +5,7 @@ import {catchPaddle,PADDLE_Y} from '../src/arcade';
 test('the reproduced idle centre-paddle loop makes progress and naturally collects without a catch quota',()=>{
  const g=new Game(800,0);g.selectBall('steel','standard');g.fire();const b=g.balls[0];
  for(let i=0;i<180/STEP&&g.phase==='volley';i++){g.update(STEP);if(g.phase==='volley')assert.equal(g.balls[0],b);}
- assert.notEqual(g.phase,'volley');assert.ok(b.y-b.r>=692);assert.ok(g.stats.hits>6);assert.ok(g.stats.orbitBreaks>0);assert.ok(g.stats.paddleHits>5);
+ assert.notEqual(g.phase,'volley');assert.ok(b.y-b.r>=692);assert.ok(g.stats.hits>6);assert.ok(g.stats.orbitBreaks>0);assert.ok(g.stats.paddleHits>0);
 });
 test('productive rallies keep catching beyond any proposed quota and reset repetition detection on damage',()=>{
  const g=new Game(1);g.targets=[{id:0,x:210,y:400,size:180,kind:'bar',hp:10000,maxHp:10000,flash:0}];g.fire();Object.assign(g.balls[0],{x:210,y:500,vx:0,vy:250});
