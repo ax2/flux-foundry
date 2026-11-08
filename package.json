@@ -1,6 +1,6 @@
 {
   "name": "flux-foundry",
-  "version": "0.16.0",
+  "version": "0.17.0",
   "private": true,
   "description": "A tactile single-ball portrait ricochet game with realistic physics and numbered durability",
   "author": "ax2",
@@ -23,7 +23,8 @@
     "test:expedition": "tsx scripts/endless-audit.ts",
     "test:varied": "tsx scripts/varied-endurance.ts",
     "test:sparse": "tsx scripts/sparse-endurance.ts",
-    "test:multi": "tsx scripts/multi-endurance.ts"
+    "test:multi": "tsx scripts/multi-endurance.ts",
+    "test:feedback": "node scripts/feedback-test.mjs"
   },
   "devDependencies": {
     "typescript": "~5.9.3",

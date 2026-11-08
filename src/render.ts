@@ -74,6 +74,20 @@ export class Renderer{
   for(const b of g.balls)this.ball(g.material,b.x,b.y,b.r);
   if(g.safetyReturn||g.goalComplete){c.fillStyle=g.goalComplete?'#e8b6ff':'#a7f5ff';c.textAlign='center';c.font=`${uiFont}px Segoe UI`;c.fillText(g.safetyReturn?'积木让位 · 自然回收':'目标完成 · 等待落底',210,215);}
   if(!reduced)for(const p of g.effects){c.save();c.globalAlpha=p.life/p.max;c.strokeStyle=p.color;c.fillStyle=p.color;c.shadowColor=p.color;c.shadowBlur=8;if(p.ring){c.lineWidth=1.5;c.beginPath();c.arc(p.x,p.y,8+(1-p.life/p.max)*43,0,Math.PI*2);c.stroke();}else c.fillRect(p.x,p.y,2.5,2.5);c.restore();}
+  for(const mark of g.feedback.marks){
+   c.save();c.translate(mark.x,mark.y);c.globalAlpha=reduced?1:Math.min(1,mark.life/mark.duration*2);c.lineWidth=2;
+   if(mark.type==='weak'){
+    c.strokeStyle='#b8c5c9';c.setLineDash([3,4]);c.beginPath();c.arc(0,0,9,0,Math.PI*2);c.stroke();
+   }else if(mark.type==='pickup'){
+    const color=mark.variant==='life'?'#a5f2bb':mark.variant==='wide'?'#ffdb9e':'#b8d5ff';
+    c.fillStyle='#10262ef0';c.strokeStyle=color;c.beginPath();c.arc(0,0,24,0,Math.PI*2);c.fill();c.stroke();
+    c.fillStyle=color;c.textAlign='center';c.textBaseline='middle';c.font='700 28px Segoe UI';c.fillText(mark.variant==='life'?'♥':mark.variant==='wide'?'↔':'●',0,0);
+   }else{
+    c.strokeStyle=mark.type==='boost'?'#ffd077':'#c1f5fa';c.beginPath();c.arc(0,6,13,.15,Math.PI-.15);c.stroke();
+    if(mark.type==='boost'){c.beginPath();c.arc(0,0,18,-.6,-Math.PI+.6,true);c.stroke();}
+   }
+   c.restore();
+  }
   if(g.phase==='volley'){c.fillStyle='#f9bd72';c.font='600 15px "Bahnschrift",sans-serif';c.fillText(`${g.combo} 连击`,210,145);}
  }
 }

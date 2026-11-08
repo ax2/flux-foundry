@@ -1,0 +1,358 @@
+{
+  "method": "Browser plugin not available. Chromium390×844 touch. Offline PCM + isolated audio/renderer fixtures are separate from an actual UI-only natural challenge. No forced collection or speed/state mutation in the challenge.",
+  "checks": [
+    "all nine exact cue envelopes render non-silent, unclipped PCM",
+    "preview ends in silence",
+    "trusted gesture unlocks real context and hit spam does not suppress pickup",
+    "mixed feedback caps live oscillators at12",
+    "finished voices are released",
+    "mute immediately stops future and active terminal notes",
+    "production app starts silent without constructing a context",
+    "menu freezes the ball and clears active sounds",
+    "muted flight emits no sound",
+    "natural challenge completion plays victory after result menu opens",
+    "sound preference persists but reload respects the gesture lock",
+    "mobile tap unlocks audio without spending a marble",
+    "weak collision leaves durability unchanged and reduced-motion marks stay static",
+    "no runtime error or framework overlay"
+  ],
+  "metrics": [
+    {
+      "type": "launch",
+      "peak": 0.03375013917684555,
+      "rms": 0.003044484968754973
+    },
+    {
+      "type": "hit",
+      "peak": 0.03227125480771065,
+      "rms": 0.0022445891527573068
+    },
+    {
+      "type": "break",
+      "peak": 0.02662498876452446,
+      "rms": 0.002912582087343905
+    },
+    {
+      "type": "catch",
+      "peak": 0.046158283948898315,
+      "rms": 0.0035827480326567195
+    },
+    {
+      "type": "boost",
+      "peak": 0.024919897317886353,
+      "rms": 0.003065202510347076
+    },
+    {
+      "type": "pickup",
+      "peak": 0.02341674454510212,
+      "rms": 0.004246414916883104
+    },
+    {
+      "type": "weak",
+      "peak": 0.011699242517352104,
+      "rms": 0.0007036978328700583
+    },
+    {
+      "type": "win",
+      "peak": 0.025673342868685722,
+      "rms": 0.00584944429585781
+    },
+    {
+      "type": "lose",
+      "peak": 0.02397855371236801,
+      "rms": 0.004182012037347194
+    }
+  ],
+  "live": {
+    "enabled": true,
+    "state": "running",
+    "voices": 12,
+    "peakVoices": 12,
+    "played": {
+      "launch": 0,
+      "hit": 1,
+      "break": 1,
+      "catch": 1,
+      "boost": 1,
+      "pickup": 1,
+      "weak": 0,
+      "win": 0,
+      "lose": 0
+    },
+    "failures": 0
+  },
+  "muted": {
+    "enabled": false,
+    "state": "running",
+    "voices": 0,
+    "peakVoices": 12,
+    "played": {
+      "launch": 0,
+      "hit": 1,
+      "break": 1,
+      "catch": 1,
+      "boost": 1,
+      "pickup": 1,
+      "weak": 0,
+      "win": 1,
+      "lose": 0
+    },
+    "failures": 0
+  },
+  "result": {
+    "game": {
+      "phase": "won",
+      "wave": 1,
+      "score": 175,
+      "balls": 0,
+      "targets": 4,
+      "paused": true,
+      "count": 1,
+      "power": 1,
+      "material": "ceramic",
+      "size": "small",
+      "radius": 9,
+      "mode": "challenge",
+      "levelIndex": 5,
+      "shots": 1,
+      "remainingShots": 6,
+      "totalBalls": 7,
+      "queue": [
+        {
+          "material": "steel",
+          "size": "standard"
+        },
+        {
+          "material": "ceramic",
+          "size": "small"
+        },
+        {
+          "material": "brass",
+          "size": "standard"
+        },
+        {
+          "material": "rubber",
+          "size": "large"
+        },
+        {
+          "material": "steel",
+          "size": "large"
+        },
+        {
+          "material": "ceramic",
+          "size": "standard"
+        },
+        {
+          "material": "steel",
+          "size": "standard"
+        }
+      ],
+      "dailyKey": null,
+      "goal": "core",
+      "goalComplete": true,
+      "safetyReturn": false,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "treasures": [],
+      "bonusLives": 0,
+      "wideTime": 0,
+      "bigTime": 0,
+      "windMultiplier": 2.4,
+      "rails": [],
+      "gates": 0,
+      "gateStates": [],
+      "stats": {
+        "hits": 10,
+        "flight": 27.00833333333244,
+        "boosts": 0,
+        "energy": 0,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 0,
+        "paddleHits": 0,
+        "orbitBreaks": 0,
+        "gateVents": 0,
+        "pegRetractions": 0
+      },
+      "feedback": {
+        "counts": {
+          "launch": 1,
+          "hit": 9,
+          "break": 1,
+          "catch": 0,
+          "boost": 0,
+          "pickup": 0,
+          "weak": 0,
+          "win": 1,
+          "lose": 0
+        },
+        "last": {
+          "type": "win",
+          "x": 210,
+          "y": 215,
+          "variant": "",
+          "strength": 1
+        },
+        "pending": 0,
+        "marks": []
+      },
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 3.3083333333333242,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 0
+      },
+      "stars": 3,
+      "records": {
+        "5": {
+          "stars": 3,
+          "shots": 1
+        }
+      },
+      "legacy": {},
+      "ranks": [
+        {
+          "score": 175,
+          "wave": 1,
+          "shots": 1,
+          "mode": "核心入门",
+          "date": "2026-11-08"
+        }
+      ],
+      "pegs": 0,
+      "pegStates": [],
+      "air": 0,
+      "airZones": [],
+      "bricks": [
+        {
+          "x": 110,
+          "y": 360,
+          "hp": 1,
+          "kind": "prism",
+          "size": 48,
+          "core": false,
+          "id": 0,
+          "maxHp": 1,
+          "flash": 0,
+          "vx": 0
+        },
+        {
+          "x": 295,
+          "y": 380,
+          "hp": 3,
+          "kind": "diamond",
+          "size": 48,
+          "core": false,
+          "id": 1,
+          "maxHp": 3,
+          "flash": 0,
+          "vx": 0
+        },
+        {
+          "x": 89.7140397237925,
+          "y": 595,
+          "hp": 6,
+          "kind": "capacitor",
+          "size": 48,
+          "power": "spring",
+          "core": false,
+          "id": 3,
+          "maxHp": 6,
+          "flash": 0,
+          "motion": {
+            "baseX": 100,
+            "amplitude": 14,
+            "speed": 0.8999999999999999
+          },
+          "vx": 8.54758487345915
+        },
+        {
+          "x": 310,
+          "y": 595,
+          "hp": 8,
+          "kind": "prism",
+          "size": 48,
+          "power": "spring",
+          "core": false,
+          "id": 4,
+          "maxHp": 8,
+          "flash": 0,
+          "vx": 0
+        }
+      ],
+      "activeBall": null
+    },
+    "audio": {
+      "enabled": true,
+      "state": "running",
+      "voices": 4,
+      "peakVoices": 4,
+      "played": {
+        "launch": 1,
+        "hit": 9,
+        "break": 1,
+        "catch": 0,
+        "boost": 0,
+        "pickup": 0,
+        "weak": 0,
+        "win": 1,
+        "lose": 0
+      },
+      "failures": 0
+    }
+  },
+  "visual": {
+    "static": true,
+    "weak": 1,
+    "hp": 3,
+    "marks": [
+      {
+        "type": "weak",
+        "x": 140,
+        "y": 446,
+        "variant": "",
+        "strength": 1,
+        "life": 0.05,
+        "duration": 0.24
+      },
+      {
+        "type": "pickup",
+        "x": 85,
+        "y": 350,
+        "variant": "life",
+        "strength": 1,
+        "life": 0.05,
+        "duration": 0.65
+      },
+      {
+        "type": "pickup",
+        "x": 210,
+        "y": 350,
+        "variant": "wide",
+        "strength": 1,
+        "life": 0.05,
+        "duration": 0.65
+      },
+      {
+        "type": "pickup",
+        "x": 335,
+        "y": 350,
+        "variant": "slow",
+        "strength": 1,
+        "life": 0.05,
+        "duration": 0.65
+      }
+    ]
+  },
+  "errors": []
+}

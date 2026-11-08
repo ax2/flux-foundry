@@ -23,6 +23,9 @@ jobs:
       - run: npm run test:browser
         env:
           PLAYWRIGHT_CHANNEL: chrome
+      - run: npm run test:feedback
+        env:
+          PLAYWRIGHT_CHANNEL: chrome
       - run: npm run test:endurance
       - run: npm run test:varied
       - run: npm run test:sparse
@@ -33,3 +36,4 @@ jobs:
         env:
           PLAYWRIGHT_CHANNEL: chrome
       - run: npm run test:expedition
+      - run: node scripts/compare-physics.mjs

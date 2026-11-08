@@ -23,7 +23,9 @@ jobs:
           if ('${{ github.ref_type }}' -ne 'tag' -or '${{ github.ref_name }}' -ne "v$version") { throw 'Run from the matching version tag.' }
           $notes = Get-ChildItem 'docs/iterations' -Recurse -Filter "v$version.md" | Select-Object -First 1
           if (!$notes -or !(Test-Path (Join-Path $notes.DirectoryName 'worklog.md'))) { throw 'Missing version notes or stage archive.' }
-      - run: npm run package:win
+      - run: npm run build
+      - name: Package with installed Electron and bounded download retries
+        run: node scripts/package-windows.mjs
         env:
           ELECTRON_BUILDER_COMPRESSION_LEVEL: '1'
       - run: node scripts/desktop-smoke.mjs

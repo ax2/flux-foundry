@@ -1,3 +1,4 @@
+import {Feedback} from './feedback';
 import {guidedRebound,GUIDE_TILT_STEP} from './paddle-assist';
 import {advanceFree,collide,reflect,type Body,type Target,type Vec} from './physics';
 import {catchPaddle,sweptPickup,type Paddle,type Treasure,type TreasureKind} from './arcade';
@@ -10,14 +11,14 @@ export type Effect={x:number;y:number;life:number;max:number;color:string;vx:num
 const ASSIST_DELAY=8,ASSIST_MISSES=4;
 const STOCK:Choice[]=[{material:'steel',size:'standard'},{material:'ceramic',size:'small'},{material:'brass',size:'standard'},{material:'rubber',size:'large'},{material:'steel',size:'large'},{material:'ceramic',size:'standard'}];
 export class Game{
- time=0;paddleEnabled=true;paddle:Paddle={x:210,target:210,width:96,vx:0,flash:0,tilt:0,boost:18000};treasures:Treasure[]=[];spawnCount=0;nextTreasure=2.5;treasureClock=0;bonusLives=0;wideTime=0;bigTime=0;ballScale=1;motionEnabled=true;windMultiplier=2.4;
+ feedback=new Feedback();time=0;paddleEnabled=true;paddle:Paddle={x:210,target:210,width:96,vx:0,flash:0,tilt:0,boost:18000};treasures:Treasure[]=[];spawnCount=0;nextTreasure=2.5;treasureClock=0;bonusLives=0;wideTime=0;bigTime=0;ballScale=1;motionEnabled=true;windMultiplier=2.4;
  paddleOrbits:{x:number;vx:number;vy:number}[]=[];orbitRepeats=0;lastOrbitAdjustmentCatch=0;lastGuideTime=-1;
  progress={sinceHit:0,maxNoHit:0,catchesWithoutHit:0,maxCatchesWithoutHit:0};
  phase:Phase='aim';wave=1;score=0;bestCombo=0;combo=0;readonly count=1;readonly power=1;
  material:Material='steel';size:BallSize='standard';
  mode:'endless'|'challenge'='endless';levelIndex=0;shots=0;queue:Choice[]=[];dailyKey:string|null=null;mirrorSign=1;
  pegs:Peg[]=[];air:AirZone[]=[];gates:Gate[]=[];rails:Rail[]=[];balls:Ball[]=[];targets:Target[]=[];effects:Effect[]=[];
- angle=Math.PI/2;paused=false;nextId=0;seed:number;onHit:((kind:string)=>void)|null=null;
+ angle=Math.PI/2;paused=false;nextId=0;seed:number;
  stalled=0;supportedTime=0;supportGrace=0;anchor:Vec={...LAUNCH};rescueAttempts=0;safetyReturn=false;
  passiveLoops=0;passiveAnchor:{key:string;x:number;y:number}|null=null;
  rowsCreated=0;anchorsBroken=0;
@@ -56,11 +57,11 @@ export class Game{
  aim(x:number,y:number){this.angle=Math.max(.16,Math.min(Math.PI-.16,Math.atan2(Math.max(15,y-LAUNCH.y),x-LAUNCH.x)));}
  resetGatePressure(){for(const gate of this.gates){gate.pressure=0;gate.lastContact=-1;gate.venting=undefined;}for(const peg of this.pegs){peg.pressure=0;peg.lastContact=-1;peg.retractedFrom=undefined;}}
  fire(){if(this.phase!=='aim'||this.paused||this.remainingShots===0)return false;this.syncNext();this.phase='volley';this.resetGatePressure();this.progress.sinceHit=0;this.progress.catchesWithoutHit=0;this.lastOrbitAdjustmentCatch=0;this.shots++;this.ballScale=1;this.bigTime=0;this.wideTime=0;this.paddle.width=96;this.paddle.tilt=0;this.paddle.boost=18000;this.paddleOrbits=[];this.orbitRepeats=0;this.treasures=[];this.spawnCount=0;this.treasureClock=0;this.nextTreasure=2.5;this.anchorsBroken=0;this.combo=0;this.stalled=0;this.supportedTime=0;this.supportGrace=0;this.anchor={...LAUNCH};this.rescueAttempts=0;this.passiveLoops=0;this.passiveAnchor=null;for(const r of this.rails)r.charges=r.maxCharges;this.safetyReturn=false;
-  const spec=this.spec;this.balls=[{...LAUNCH,vx:Math.cos(this.angle)*spec.speed,vy:Math.sin(this.angle)*spec.speed,r:spec.r}];return true;
+  const spec=this.spec;this.balls=[{...LAUNCH,vx:Math.cos(this.angle)*spec.speed,vy:Math.sin(this.angle)*spec.speed,r:spec.r}];this.feedback.emit('launch',LAUNCH.x,LAUNCH.y,this.material,spec.r/12);return true;
  }
  burst(x:number,y:number,color:string,n=12){for(let i=0;i<n;i++){const a=Math.PI*2*i/n,s=35+(i%4)*33;this.effects.push({x,y,life:.45,max:.45,color,vx:Math.cos(a)*s,vy:Math.sin(a)*s,ring:false});}this.effects.push({x,y,life:.45,max:.45,color,vx:0,vy:0,ring:true});if(this.effects.length>420)this.effects.splice(0,this.effects.length-420);}
  damage(t:Target){if(t.hp<=0)return;for(const gate of this.gates)gate.pressure=0;for(const peg of this.pegs)peg.pressure=0;this.progress.sinceHit=0;this.progress.catchesWithoutHit=0;this.lastOrbitAdjustmentCatch=0;this.paddleOrbits=[];this.orbitRepeats=0;this.paddle.tilt=0;this.paddle.boost=18000;this.passiveLoops=0;this.passiveAnchor=null;t.hp--;t.flash=.12;this.score+=10;this.combo++;this.stats.hits++;
-  this.bestCombo=Math.max(this.bestCombo,this.combo);this.onHit?.(t.kind);
+  this.bestCombo=Math.max(this.bestCombo,this.combo);this.feedback.emit(t.hp===0?'break':'hit',t.x,t.y,t.kind);
   if(t.hp===0){if(t.anchor)this.anchorsBroken++;this.score+=75;this.burst(t.x,t.y,t.core?'#ed9fff':t.power==='spring'?'#ffcf70':'#80e8e4');
    if(t.power==='valve'){for(const zone of this.air){zone.fx=-zone.fx;zone.fy=-zone.fy;}this.say('风阀已切换 · 气流反向');}
    if(t.power==='switch'&&!this.targets.some(b=>b.power==='switch'&&b.hp>0)){for(const gate of this.gates)gate.open=true;this.say('开关已清除 · 闸门打开');}
@@ -70,14 +71,15 @@ export class Game{
   if(added<=0||vn<0)return;const dv=Math.sqrt(vn*vn+2*added/mass)-vn;b.vx+=dv*n.x;b.vy+=dv*n.y;this.stats.energy+=added;this.stats.boosts++;this.burst(b.x,b.y,'#ffc369',6);
  }
  finish(){this.resetGatePressure();this.paddle.boost=18000;this.paddle.tilt=0;this.wideTime=0;this.bigTime=0;this.ballScale=1;this.paddle.width=96;this.treasures=[];this.balls=[];this.safetyReturn=false;this.targets=this.targets.filter(t=>t.hp>0);this.syncNext();
-  if(this.mode==='challenge'){this.phase=this.goalComplete?'won':this.remainingShots===0?'over':'aim';this.endReason=this.phase==='over'?'ammo':'';return;}
-  if(this.remainingShots===0){this.phase='over';this.endReason='ammo';return;}
-  const advance=this.anchorsBroken>0?24:39;for(const t of this.targets)t.y-=advance;if(this.anchorsBroken>0)this.say('耐久支点已拆除 · 本轮推进减缓');if(this.targets.some(t=>t.y-t.size/2<184)){this.phase='over';this.endReason='overload';return;}
+  if(this.mode==='challenge'){this.phase=this.goalComplete?'won':this.remainingShots===0?'over':'aim';this.endReason=this.phase==='over'?'ammo':'';this.endFeedback();return;}
+  if(this.remainingShots===0){this.phase='over';this.endReason='ammo';this.endFeedback();return;}
+  const advance=this.anchorsBroken>0?24:39;for(const t of this.targets)t.y-=advance;if(this.anchorsBroken>0)this.say('耐久支点已拆除 · 本轮推进减缓');if(this.targets.some(t=>t.y-t.size/2<184)){this.phase='over';this.endReason='overload';this.endFeedback();return;}
   this.wave++;this.setEndlessMechanisms();if(this.wave%2===0||this.targets.length===0)this.addRow(609);this.initMotion();this.phase='aim';
  }
+ endFeedback(){if(this.phase==='won'||this.phase==='over')this.feedback.emit(this.phase==='won'?'win':'lose',210,215);}
  wallCharge(b:Ball,side:'left'|'right'){
   if(this.safetyReturn)return;const rail=this.rails.find(r=>r.side===side&&b.y>=r.y&&b.y<=r.y+r.h&&r.charges>0);if(!rail)return;
-  const before=this.stats.boosts;this.energize(b,{x:side==='left'?1:-1,y:0});if(this.stats.boosts>before)rail.charges--;
+  const before=this.stats.boosts;this.energize(b,{x:side==='left'?1:-1,y:0});if(this.stats.boosts>before){rail.charges--;this.feedback.emit('boost',b.x,b.y,'rail');}
  }
  gateContact(gate:Gate,b:Ball){
   if(gate.open||gate.venting)return;
@@ -129,10 +131,10 @@ export class Game{
    if(x!==undefined||this.targets.every(t=>Math.abs(t.x-px)>t.size/2+20||Math.abs(t.y-py)>t.size/2+20)){this.treasures.push({id:this.nextId++,x:px,y:py,r:14,kind,life:12});return true;}
   }return false;
  }
- collectTreasure(t:Treasure){if(t.life<=0)return;t.life=0;this.stats.pickups++;
+ collectTreasure(t:Treasure){if(t.life<=0)return;t.life=0;this.stats.pickups++;this.feedback.emit('pickup',t.x,t.y,t.kind);
   if(t.kind==='life'){if(this.remainingShots<12&&this.bonusLives<3){this.queue.push({material:this.material,size:this.size});this.bonusLives++;this.say('生命 +1');}else{this.score+=100;this.say('补给已满 · +100');}}
-  if(t.kind==='wide'){this.wideTime=14;this.paddle.width=144;this.movePaddle(this.paddle.target);this.say('挡板加长');}
-  if(t.kind==='slow'){this.bigTime=12;if(this.ballScale===1){this.ballScale=1.35;for(const b of this.balls){b.r*=1.35;b.vx*=.7;b.vy*=.7;}}this.say('大慢球');}
+  if(t.kind==='wide'){this.wideTime=14;this.paddle.width=144;this.movePaddle(this.paddle.target);this.say('挡板加长 · 14秒');}
+  if(t.kind==='slow'){this.bigTime=12;if(this.ballScale===1){this.ballScale=1.35;for(const b of this.balls){b.r*=1.35;b.vx*=.7;b.vy*=.7;}}this.say('大慢球 · 12秒');}
   this.burst(t.x,t.y,t.kind==='life'?'#9ff0b4':t.kind==='wide'?'#ffdc9d':'#b9caff',8);
  }
  rescue(b:Ball,dt:number,supported:boolean){
@@ -141,7 +143,7 @@ export class Game{
   if(this.stalled<2.4&&this.supportedTime<2.4&&this.passiveLoops<4)return;
   this.safetyReturn=true;this.stats.rescues++;this.stats.returns++;this.say('积木让位 · 自然回收');
  }
- update(dt:number){if(this.paused)return;
+ update(dt:number){if(this.paused)return;this.feedback.update(dt);
   for(const t of this.targets)t.flash=Math.max(0,t.flash-dt);for(const p of this.effects){p.life-=dt;p.x+=p.vx*dt;p.y+=p.vy*dt;}this.effects=this.effects.filter(p=>p.life>0);
   if(this.phase!=='volley')return;this.time+=dt;this.stats.flight+=dt;if(!this.goalComplete){this.progress.sinceHit+=dt;this.progress.maxNoHit=Math.max(this.progress.maxNoHit,this.progress.sinceHit);}
   this.wideTime=Math.max(0,this.wideTime-dt);this.paddle.width=this.wideTime>0?144:96;this.bigTime=Math.max(0,this.bigTime-dt);if(this.bigTime===0&&this.ballScale>1){this.ballScale=1;for(const b of this.balls)b.r=ballProperties(this.material,this.size).r;}
@@ -168,14 +170,14 @@ export class Game{
 
     }
     const previous={...b};advanceFree(b,h,ax,ay);this.closePassedVents(b);
-    const activePaddle={...this.paddle,x:oldPaddleX+this.paddle.vx*h*(sub+1)};if(this.paddleEnabled&&!this.safetyReturn&&!this.goalComplete&&this.targets.length>0&&catchPaddle(b,previous,activePaddle,h)){this.energize(b,{x:0,y:-1},this.paddle.boost||18000);this.paddle.boost=18000;this.stats.paddleHits++;this.paddle.flash=.15;this.trackPaddleOrbit(previous);}
+    const activePaddle={...this.paddle,x:oldPaddleX+this.paddle.vx*h*(sub+1)};if(this.paddleEnabled&&!this.safetyReturn&&!this.goalComplete&&this.targets.length>0&&catchPaddle(b,previous,activePaddle,h)){this.feedback.emit('catch',b.x,b.y,(this.paddle.boost||0)>18000?'charged':this.material);this.energize(b,{x:0,y:-1},this.paddle.boost||18000);this.paddle.boost=18000;this.stats.paddleHits++;this.paddle.flash=.15;this.trackPaddleOrbit(previous);}
     for(const t of this.treasures)if(t.life>0&&sweptPickup(previous,b,t))this.collectTreasure(t);
     if(b.x<18+b.r){b.x=18+b.r;if(reflect(b,{x:1,y:0},restitution))this.wallCharge(b,'left');}if(b.x>402-b.r){b.x=402-b.r;if(reflect(b,{x:-1,y:0},restitution))this.wallCharge(b,'right');}if(b.y<112+b.r){b.y=112+b.r;reflect(b,{x:0,y:1},restitution);}
     if(!this.safetyReturn){
      for(const [i,p] of this.pegs.entries())if(!p.retractedFrom){const vx=b.vx,vy=b.vy;if(collide(b,{...p,id:-1,kind:'capacitor',size:p.r*2,hp:1,maxHp:1,flash:0},restitution)){this.passiveContact('peg'+i,b);this.pegContact(p,b);if(Math.hypot(b.vx-vx,b.vy-vy)/(1+restitution)<55)supported=true;}}
      for(const [i,gate] of this.gates.entries())if(!gate.open&&!gate.venting){const vx=b.vx,vy=b.vy;if(collide(b,{...gate,id:-2,kind:'bar',hp:1,maxHp:1,flash:0},restitution)){this.passiveContact('gate'+i,b);this.gateContact(gate,b);if(Math.hypot(b.vx-vx,b.vy-vy)/(1+restitution)<55)supported=true;}}
      for(const t of this.targets){if(t.hp<=0)continue;const vx=b.vx,vy=b.vy,tvx=t.vx||0;b.vx-=tvx;const hit=collide(b,t,restitution);b.vx+=tvx;if(hit){
-      const dx=b.vx-vx,dy=b.vy-vy,impulse=Math.hypot(dx,dy);if(impulse/(1+restitution)<55)supported=true;if(impulse/(1+restitution)>55){this.damage(t);if(t.power==='spring')this.energize(b,{x:dx/impulse,y:dy/impulse});}
+      const dx=b.vx-vx,dy=b.vy-vy,impulse=Math.hypot(dx,dy);if(impulse/(1+restitution)<55)supported=true;if(impulse>0&&impulse/(1+restitution)<=55)this.feedback.emit('weak',b.x-dx/impulse*b.r,b.y-dy/impulse*b.r);if(impulse/(1+restitution)>55){this.damage(t);if(t.power==='spring'){const before=this.stats.boosts;this.energize(b,{x:dx/impulse,y:dy/impulse});if(this.stats.boosts>before)this.feedback.emit('boost',b.x,b.y,'spring');}}
      }}
     }
    }
