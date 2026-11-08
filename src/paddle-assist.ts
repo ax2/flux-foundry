@@ -9,7 +9,7 @@ function advance(b:Body,dt:number,e:Environment,restitution:number){
 }
 function reflectPassive(b:Body,e:Environment,restitution:number){
  for(const g of e.gates)if(!g.open&&!g.venting&&Math.abs(b.x-g.x)<g.size/2+b.r&&Math.abs(b.y-g.y)<g.size/8+b.r&&collide(b,{...g,id:-1,kind:'bar',hp:1,maxHp:1,flash:0},restitution))return true;
- for(const p of e.pegs)if(Math.hypot(b.x-p.x,b.y-p.y)<p.r+b.r&&collide(b,{...p,id:-2,kind:'capacitor',size:p.r*2,hp:1,maxHp:1,flash:0},restitution))return true;
+ for(const p of e.pegs)if(!p.retractedFrom&&Math.hypot(b.x-p.x,b.y-p.y)<p.r+b.r&&collide(b,{...p,id:-2,kind:'capacitor',size:p.r*2,hp:1,maxHp:1,flash:0},restitution))return true;
  return false;
 }
 // Distance to the actual silhouette, rather than a box which includes empty triangle corners.

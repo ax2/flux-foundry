@@ -21,7 +21,7 @@ export class Game{
  stalled=0;supportedTime=0;supportGrace=0;anchor:Vec={...LAUNCH};rescueAttempts=0;safetyReturn=false;
  passiveLoops=0;passiveAnchor:{key:string;x:number;y:number}|null=null;
  rowsCreated=0;anchorsBroken=0;
- eventSerial=0;lastEvent='';endReason='';stats={hits:0,flight:0,boosts:0,energy:0,rescues:0,returns:0,rebounds:0,recharges:0,pulses:0,pickups:0,paddleHits:0,orbitBreaks:0,gateVents:0};
+ eventSerial=0;lastEvent='';endReason='';stats={hits:0,flight:0,boosts:0,energy:0,rescues:0,returns:0,rebounds:0,recharges:0,pulses:0,pickups:0,paddleHits:0,orbitBreaks:0,gateVents:0,pegRetractions:0};
  constructor(seed=Date.now(),levelIndex?:number){
   this.seed=seed>>>0;
   if(levelIndex!==undefined){this.mode='challenge';this.levelIndex=Math.max(0,Math.min(LEVELS.length-1,Math.floor(levelIndex)));const l=this.level;
@@ -31,7 +31,8 @@ export class Game{
   this.queue=Array.from({length:this.mode==='challenge'?this.level.shots:12},(_,i)=>({...STOCK[i%STOCK.length]}));
  }
  get spec(){const p=ballProperties(this.material,this.size),s=this.ballScale;return {...p,r:p.r*s,mass:p.mass*s*s*s,windResponse:p.windResponse/s};}
- get lowEndgame(){return this.targets.length>0&&this.targets.length<=2&&this.targets.every(t=>t.y>=540);}
+ get sparseEndgame(){return this.targets.length>0&&this.targets.length<=2;}
+ get lowEndgame(){return this.sparseEndgame&&this.targets.every(t=>t.y>=540);}
  get restitution(){return this.spec.restitution;}
  get level(){return LEVELS[this.levelIndex];}
  get remainingShots(){return Math.max(0,this.queue.length-this.shots);}
@@ -53,12 +54,12 @@ export class Game{
   }
  }
  aim(x:number,y:number){this.angle=Math.max(.16,Math.min(Math.PI-.16,Math.atan2(Math.max(15,y-LAUNCH.y),x-LAUNCH.x)));}
- resetGatePressure(){for(const gate of this.gates){gate.pressure=0;gate.lastContact=-1;gate.venting=undefined;}}
+ resetGatePressure(){for(const gate of this.gates){gate.pressure=0;gate.lastContact=-1;gate.venting=undefined;}for(const peg of this.pegs){peg.pressure=0;peg.lastContact=-1;peg.retractedFrom=undefined;}}
  fire(){if(this.phase!=='aim'||this.paused||this.remainingShots===0)return false;this.syncNext();this.phase='volley';this.resetGatePressure();this.progress.sinceHit=0;this.progress.catchesWithoutHit=0;this.lastOrbitAdjustmentCatch=0;this.shots++;this.ballScale=1;this.bigTime=0;this.wideTime=0;this.paddle.width=96;this.paddle.tilt=0;this.paddle.boost=18000;this.paddleOrbits=[];this.orbitRepeats=0;this.treasures=[];this.spawnCount=0;this.treasureClock=0;this.nextTreasure=2.5;this.anchorsBroken=0;this.combo=0;this.stalled=0;this.supportedTime=0;this.supportGrace=0;this.anchor={...LAUNCH};this.rescueAttempts=0;this.passiveLoops=0;this.passiveAnchor=null;for(const r of this.rails)r.charges=r.maxCharges;this.safetyReturn=false;
   const spec=this.spec;this.balls=[{...LAUNCH,vx:Math.cos(this.angle)*spec.speed,vy:Math.sin(this.angle)*spec.speed,r:spec.r}];return true;
  }
  burst(x:number,y:number,color:string,n=12){for(let i=0;i<n;i++){const a=Math.PI*2*i/n,s=35+(i%4)*33;this.effects.push({x,y,life:.45,max:.45,color,vx:Math.cos(a)*s,vy:Math.sin(a)*s,ring:false});}this.effects.push({x,y,life:.45,max:.45,color,vx:0,vy:0,ring:true});if(this.effects.length>420)this.effects.splice(0,this.effects.length-420);}
- damage(t:Target){if(t.hp<=0)return;for(const gate of this.gates)gate.pressure=0;this.progress.sinceHit=0;this.progress.catchesWithoutHit=0;this.lastOrbitAdjustmentCatch=0;this.paddleOrbits=[];this.orbitRepeats=0;this.paddle.tilt=0;this.paddle.boost=18000;this.passiveLoops=0;this.passiveAnchor=null;t.hp--;t.flash=.12;this.score+=10;this.combo++;this.stats.hits++;
+ damage(t:Target){if(t.hp<=0)return;for(const gate of this.gates)gate.pressure=0;for(const peg of this.pegs)peg.pressure=0;this.progress.sinceHit=0;this.progress.catchesWithoutHit=0;this.lastOrbitAdjustmentCatch=0;this.paddleOrbits=[];this.orbitRepeats=0;this.paddle.tilt=0;this.paddle.boost=18000;this.passiveLoops=0;this.passiveAnchor=null;t.hp--;t.flash=.12;this.score+=10;this.combo++;this.stats.hits++;
   this.bestCombo=Math.max(this.bestCombo,this.combo);this.onHit?.(t.kind);
   if(t.hp===0){if(t.anchor)this.anchorsBroken++;this.score+=75;this.burst(t.x,t.y,t.core?'#ed9fff':t.power==='spring'?'#ffcf70':'#80e8e4');
    if(t.power==='valve'){for(const zone of this.air){zone.fx=-zone.fx;zone.fy=-zone.fy;}this.say('风阀已切换 · 气流反向');}
@@ -89,6 +90,16 @@ export class Game{
  }
  closePassedVents(b:Ball){
   for(const gate of this.gates)if(gate.venting&&((gate.venting==='above'&&b.y-b.r>gate.y+gate.size/8+3)||(gate.venting==='below'&&b.y+b.r<gate.y-gate.size/8-3))){gate.venting=undefined;gate.pressure=0;}
+  for(const peg of this.pegs)if(peg.retractedFrom&&((peg.retractedFrom==='above'&&b.y-b.r>peg.y+peg.r+3)||(peg.retractedFrom==='below'&&b.y+b.r<peg.y-peg.r-3))){peg.retractedFrom=undefined;peg.pressure=0;}
+ }
+ pegContact(peg:Peg,b:Ball){
+  if(peg.retractedFrom||this.time-(peg.lastContact??-1)<.25)return;
+  peg.lastContact=this.time;peg.pressure=(peg.pressure||0)+1;
+  // Real contacts across the entire cylinder count, including alternating peg orbits.
+  // Retraction changes the next collision, never the current ball's state.
+  if(peg.pressure<3||this.progress.sinceHit<8)return;
+  peg.retractedFrom=b.y<peg.y?'above':'below';this.stats.pegRetractions++;
+  this.passiveLoops=0;this.passiveAnchor=null;this.say('反弹柱回缩 · 原球继续');
  }
  passiveContact(key:string,b:Ball){const a=this.passiveAnchor;if(a&&a.key===key&&Math.hypot(a.x-b.x,a.y-b.y)<12)this.passiveLoops++;else{this.passiveAnchor={key,x:b.x,y:b.y};this.passiveLoops=1;}}
  initMotion(){
@@ -103,7 +114,7 @@ export class Game{
   const state={x:incoming.x,vx:incoming.vx,vy:incoming.vy};
   const repeated=this.paddleOrbits.some(p=>Math.abs(p.x-state.x)<10&&Math.abs(p.vx-state.vx)<25&&Math.abs(p.vy-state.vy)<35);
   this.orbitRepeats=repeated?this.orbitRepeats+1:0;this.paddleOrbits.push(state);if(this.paddleOrbits.length>8)this.paddleOrbits.shift();
-  const missedRallies=this.progress.sinceHit>=(this.lowEndgame?4:ASSIST_DELAY)&&this.progress.catchesWithoutHit-this.lastOrbitAdjustmentCatch>=(this.lowEndgame?2:ASSIST_MISSES);
+  const missedRallies=this.progress.sinceHit>=(this.sparseEndgame?4:ASSIST_DELAY)&&this.progress.catchesWithoutHit-this.lastOrbitAdjustmentCatch>=(this.sparseEndgame?2:ASSIST_MISSES);
   if(this.orbitRepeats<3&&!missedRallies)return;this.lastOrbitAdjustmentCatch=this.progress.catchesWithoutHit;
   // Repeated contact states without any durability loss: change the visible metal face,
   // rather than kicking the ball or imposing a lifetime/catch budget. The next catch uses its normal.
@@ -138,7 +149,7 @@ export class Game{
   for(const t of this.targets){const m=t.motion;if(m&&this.motionEnabled){t.x=m.baseX+Math.sin(this.time*m.speed)*m.amplitude;t.vx=Math.cos(this.time*m.speed)*m.amplitude*m.speed;}else t.vx=0;}
   for(const t of this.treasures)t.life-=dt;this.treasures=this.treasures.filter(t=>t.life>0);this.treasureClock+=dt;if(this.treasureClock>=this.nextTreasure&&this.spawnCount<3&&!this.goalComplete){this.spawnTreasure();this.spawnCount++;this.nextTreasure+=7;}
   const spec=this.spec,restitution=this.restitution;
-  const falling=this.balls[0];if(falling&&this.progress.sinceHit>=(this.lowEndgame?4:ASSIST_DELAY)&&this.progress.catchesWithoutHit>=(this.lowEndgame?2:ASSIST_MISSES)&&falling.vy>0&&falling.y>470&&falling.y<675-falling.r+10&&this.time-this.lastGuideTime>=(falling.y>620?.025:.08)){this.lastGuideTime=this.time;const plan=guidedRebound(falling,{...this.paddle,x:oldPaddleX},this.targets,spec.mass,restitution,this.time-dt,{air:this.air,gates:this.gates,pegs:this.pegs,wind:this.windMultiplier,response:spec.windResponse},this.progress.sinceHit>=20||this.lowEndgame?.48:.32);this.paddle.boost=plan.boost;this.paddle.tilt=(this.paddle.tilt||0)+Math.max(-.32,Math.min(.32,plan.tilt-(this.paddle.tilt||0)));}
+  const falling=this.balls[0];if(falling&&this.progress.sinceHit>=(this.sparseEndgame?4:ASSIST_DELAY)&&this.progress.catchesWithoutHit>=(this.sparseEndgame?2:ASSIST_MISSES)&&falling.vy>0&&falling.y>470&&falling.y<675-falling.r+10&&this.time-this.lastGuideTime>=(falling.y>620?.025:.08)){this.lastGuideTime=this.time;const plan=guidedRebound(falling,{...this.paddle,x:oldPaddleX},this.targets,spec.mass,restitution,this.time-dt,{air:this.air,gates:this.gates,pegs:this.pegs,wind:this.windMultiplier,response:spec.windResponse},this.progress.sinceHit>=20||this.lowEndgame?.48:.32);this.paddle.boost=plan.boost;this.paddle.tilt=(this.paddle.tilt||0)+Math.max(-.32,Math.min(.32,plan.tilt-(this.paddle.tilt||0)));}
   for(const b of this.balls){
    let supported=false;
    const steps=Math.max(1,Math.ceil((Math.hypot(b.vx,b.vy)+2000*dt)*dt/(b.r*.45))),h=dt/steps;
@@ -152,7 +163,7 @@ export class Game{
     for(const t of this.treasures)if(t.life>0&&sweptPickup(previous,b,t))this.collectTreasure(t);
     if(b.x<18+b.r){b.x=18+b.r;if(reflect(b,{x:1,y:0},restitution))this.wallCharge(b,'left');}if(b.x>402-b.r){b.x=402-b.r;if(reflect(b,{x:-1,y:0},restitution))this.wallCharge(b,'right');}if(b.y<112+b.r){b.y=112+b.r;reflect(b,{x:0,y:1},restitution);}
     if(!this.safetyReturn){
-     for(const [i,p] of this.pegs.entries()){const vx=b.vx,vy=b.vy;if(collide(b,{...p,id:-1,kind:'capacitor',size:p.r*2,hp:1,maxHp:1,flash:0},restitution)){this.passiveContact('peg'+i,b);if(Math.hypot(b.vx-vx,b.vy-vy)/(1+restitution)<55)supported=true;}}
+     for(const [i,p] of this.pegs.entries())if(!p.retractedFrom){const vx=b.vx,vy=b.vy;if(collide(b,{...p,id:-1,kind:'capacitor',size:p.r*2,hp:1,maxHp:1,flash:0},restitution)){this.passiveContact('peg'+i,b);this.pegContact(p,b);if(Math.hypot(b.vx-vx,b.vy-vy)/(1+restitution)<55)supported=true;}}
      for(const [i,gate] of this.gates.entries())if(!gate.open&&!gate.venting){const vx=b.vx,vy=b.vy;if(collide(b,{...gate,id:-2,kind:'bar',hp:1,maxHp:1,flash:0},restitution)){this.passiveContact('gate'+i,b);this.gateContact(gate,b);if(Math.hypot(b.vx-vx,b.vy-vy)/(1+restitution)<55)supported=true;}}
      for(const t of this.targets){if(t.hp<=0)continue;const vx=b.vx,vy=b.vy,tvx=t.vx||0;b.vx-=tvx;const hit=collide(b,t,restitution);b.vx+=tvx;if(hit){
       const dx=b.vx-vx,dy=b.vy-vy,impulse=Math.hypot(dx,dy);if(impulse/(1+restitution)<55)supported=true;if(impulse/(1+restitution)>55){this.damage(t);if(t.power==='spring')this.energize(b,{x:dx/impulse,y:dy/impulse});}

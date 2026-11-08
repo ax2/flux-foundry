@@ -15,7 +15,7 @@ export function ballProperties(material:Material,size:BallSize){
  return {...m,r,mass,speed:350/Math.sqrt(mass),windResponse:(r/12)**2/mass};
 }
 export type AirZone={x:number;y:number;w:number;h:number;fx:number;fy:number;plume?:boolean};
-export type Peg={x:number;y:number;r:number};
+export type Peg={x:number;y:number;r:number;pressure?:number;lastContact?:number;retractedFrom?:'above'|'below'};
 export type Choice={material:Material;size:BallSize};
 // Slots occupy the existing triangular hopper; first slot is nearest its outlet.
 export const HOPPER_SLOTS=[{x:210,y:88},{x:145,y:55},{x:188,y:55},{x:231,y:55},{x:274,y:55},{x:70,y:24},{x:116,y:24},{x:162,y:24},{x:208,y:24},{x:254,y:24},{x:300,y:24},{x:346,y:24}] as const;
