@@ -12,5 +12,7 @@ for(const seed of [8137,9049])for(let level=0;level<LEVELS.length;level++)for(co
  if(g.phase!=='volley')assert.ok(ball.y-ball.r>=692,'Only natural collection ends the ball');
  rows.push({seed,level:level+1,material,size,mirror,cadence,angle,phase:g.phase,seconds:step*STEP,hits:g.stats.hits,catches:g.stats.paddleHits,orbitBreaks:g.stats.orbitBreaks,...g.progress,firstIdle});
 }
-const summary={samples:rows.length,natural:rows.filter(r=>r.phase!=='volley').length,unfinished:rows.filter(r=>r.phase==='volley').length,longIdle:rows.filter(r=>r.firstIdle).length,over30:rows.filter(r=>r.maxNoHit>=30).length,maxNoHit:Math.max(...rows.map(r=>r.maxNoHit)),maxBallSeconds:Math.max(...rows.map(r=>r.seconds))};
+const summary={samples:rows.length,natural:rows.filter(r=>r.phase!=='volley').length,unfinished:rows.filter(r=>r.phase==='volley').length,longIdle:rows.filter(r=>r.firstIdle).length,over20:rows.filter(r=>r.maxNoHit>=20).length,over30:rows.filter(r=>r.maxNoHit>=30).length,maxNoHit:Math.max(...rows.map(r=>r.maxNoHit)),maxBallSeconds:Math.max(...rows.map(r=>r.seconds))};
 await mkdir('test-results',{recursive:true});await writeFile('test-results/varied-endurance.json',JSON.stringify({method:'Seeds8137/9049 ×26 levels ×12 loadouts ×mirror ×150/300ms legal paddle inputs, seeded oblique angles,600 simulation seconds per ball. No recall/speed/state injection;60s without durability loss flagged even if later recovered. Algorithm, not human win rate.',summary,rows},null,2));console.log(JSON.stringify(summary));console.log(JSON.stringify(rows.filter(r=>r.firstIdle).slice(0,4)));assert.equal(summary.longIdle,0);assert.equal(summary.unfinished,0);
+
+assert.equal(summary.over20,0,'A varied first-ball no-hit interval reached20s; inspect seed/cadence/angle');

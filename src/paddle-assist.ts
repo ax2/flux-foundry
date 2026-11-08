@@ -2,6 +2,7 @@ import {type Body,reflect,advanceFree,collide,vertices,type Target} from './phys
 import {catchPaddle,type Paddle} from './arcade';
 import {airStrength} from './air';
 import {type AirZone,type Gate,type Peg} from './content';
+export const GUIDE_TILT_STEP=.32;
 type Environment={air:AirZone[];gates:Gate[];pegs:Peg[];wind:number;response:number};
 function advance(b:Body,dt:number,e:Environment,restitution:number){
  let ax=0,ay=240;for(const zone of e.air){const strength=airStrength(zone,b);ax+=zone.fx*e.response*strength*e.wind;ay+=zone.fy*e.response*strength*e.wind;}advanceFree(b,dt,ax,ay);
@@ -34,16 +35,18 @@ function targetImpact(b:Body,t:Target,restitution:number){
 }
 // Bounded read-only search. Only a later real collision can change the live ball.
 export function guidedRebound(ball:Body,p:Paddle,targets:Target[],mass:number,restitution:number,time:number,environment:Environment,maxTilt=.32){
+ const lower=Math.max(-maxTilt,(p.tilt||0)-GUIDE_TILT_STEP),upper=Math.min(maxTilt,(p.tilt||0)+GUIDE_TILT_STEP),spacing=(upper-lower)/16;
  function evaluate(tilt:number){
+  tilt=Math.max(lower,Math.min(upper,tilt));
   const b={...ball};let eta=0,px=p.x,caught=false;
   while(eta<1.5&&b.y-b.r<692){
    const dt=Math.min(1/120,b.r*.45/Math.max(1,Math.hypot(b.vx,b.vy))),previous={...b},delta=Math.max(-900*dt,Math.min(900*dt,p.target-px));
    px+=delta;advance(b,dt,environment,restitution);eta+=dt;
    reflectPassive(b,environment,restitution);
-   for(const target of targets)if(target.hp>0&&targetImpact(b,futureTarget(target,time+eta),restitution)>55)return {tilt,boost:p.boost||18000,score:10000+Math.abs(tilt-(p.tilt||0))};
+   for(const target of targets)if(target.hp>0&&targetImpact(b,futureTarget(target,time+eta),restitution)>55)return {tilt,boost:p.boost||18000,hit:false,score:10000+Math.abs(tilt-(p.tilt||0))};
    if(catchPaddle(b,previous,{...p,x:px,vx:delta/dt,tilt},dt)){caught=true;break;}
   }
-  if(!caught||b.vy>=0)return {tilt,boost:p.boost||18000,score:Infinity};
+  if(!caught||b.vy>=0)return {tilt,boost:p.boost||18000,hit:false,score:Infinity};
   // A heavy ball can repeatedly fall short of the last high block. Prepare only the
   // normal work needed for its height plus a useful impact, within the existing limits.
   const heights=targets.filter(t=>t.hp>0).map(t=>Math.max(0,b.y-(t.y+(t.kind==='bar'?t.size/8:t.size/2)+b.r)));
@@ -59,22 +62,22 @@ export function guidedRebound(ball:Body,p:Paddle,targets:Target[],mass:number,re
     score=Math.min(score,20+clearance(b,t));
     // Even a weak graze reflects the forecast ball; never predict through the solid block.
     const impact=targetImpact(b,t,restitution);
-    if(impact>55)return {tilt,boost,score:elapsed*2+12/impact+Math.abs(tilt-(p.tilt||0))*.2};
+    if(impact>55)return {tilt,boost,hit:true,score:elapsed*2+12/impact+Math.abs(tilt-(p.tilt||0))*.2};
     if(impact>0)score=Math.max(score,22+(55-impact)*.1);
    }
   }
-  return {tilt,boost,score:score+Math.abs(tilt-(p.tilt||0))*.2};
+  return {tilt,boost,hit:false,score:score+Math.abs(tilt-(p.tilt||0))*.2};
  }
- const coarse=Array.from({length:17},(_,i)=>evaluate(-maxTilt+i*maxTilt/8));
+ const coarse=Array.from({length:17},(_,i)=>evaluate(lower+i*spacing));
  coarse.push(evaluate(Math.max(-maxTilt,Math.min(maxTilt,p.tilt||0))));
  coarse.sort((a,b)=>a.score-b.score);let best=coarse[0];
  // Refine two promising angles: a low moving block's reachable contact window can be
  // narrower than the old 0.04/0.06 slope grid. No extra energy or ball impulse is added.
  for(const candidate of coarse.slice(0,2))for(const offset of [-.5,-.25,.25,.5]){
-  const tilt=Math.max(-maxTilt,Math.min(maxTilt,candidate.tilt+offset*maxTilt/8)),choice=evaluate(tilt);
+  const tilt=Math.max(-maxTilt,Math.min(maxTilt,candidate.tilt+offset*spacing)),choice=evaluate(tilt);
   if(choice.score<best.score)best=choice;
  }
- return Number.isFinite(best.score)?{tilt:best.tilt,boost:best.boost}:{tilt:p.tilt||0,boost:p.boost||18000};
+ return Number.isFinite(best.score)?{tilt:best.tilt,boost:best.boost,hit:best.hit}:{tilt:p.tilt||0,boost:p.boost||18000,hit:false};
 }
 
 // Retain the read-only angle API for existing diagnostics.

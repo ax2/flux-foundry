@@ -18,5 +18,5 @@ test('peg relief needs real contacts without hits, does not run while paused, an
 for(const [level,material,size,angle,limit] of [[9,'brass','small',2.59,12],[20,'ceramic','large',Math.PI/2,18]] as const)test(`original no-hit first-ball route ${level+1} stays below ${limit}s and collects naturally`,()=>{
  const g=new Game(1000+level,level);g.selectBall(material,size);g.angle=angle;g.fire();const b=g.balls[0];let step=0;
  while(g.phase==='volley'&&step<300/STEP){if(step%14===0)steer(g,'follow');g.update(STEP);step++;if(g.phase==='volley')assert.equal(g.balls[0],b);}
- assert.notEqual(g.phase,'volley');assert.ok(b.y-b.r>=692);assert.ok(g.progress.maxNoHit<limit,`No-hit ${g.progress.maxNoHit}s`);if(level===20)assert.ok(g.stats.pegRetractions>0);
+ assert.notEqual(g.phase,'volley');assert.ok(b.y-b.r>=692);assert.ok(g.progress.maxNoHit<limit,`No-hit ${g.progress.maxNoHit}s`);if(level===20)assert.equal(g.phase,'won');
 });
