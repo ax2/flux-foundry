@@ -1,10 +1,11 @@
 {
-  "method": "Exact deep comparison of every serialized matrix row with the published Stage-17 baseline, including timing, hits, catches, natural phases, peak states and seeded parameters. Formal52 natural fixtures are also retained byte-for-byte. Algorithmic evidence, not every possible continuous input or human win rate.",
+  "method": "Exact deep comparison of every serialized matrix row against v0.16.0: six published Stage-17 records and72 expedition rows explicitly rebuilt from the historical Game/900s script during the Stage-18 evidence audit. Uses the current extended expedition output; rejects unresolved/stale300s records. Formal52 natural fixtures are retained. Algorithmic evidence, not all continuous inputs or human win rate.",
   "checks": [
     {
       "matrix": "active-endurance.json",
+      "baseline": "Stage-17/active-after.json",
       "rows": 1872,
-      "identicalToPublishedStage17": true,
+      "identicalToV016Baseline": true,
       "rowsSha256": "d0dcb869dc7f22182f9ad0567a52644a285ebd5f368eb6aa961bceb4b9d92aff",
       "summary": {
         "samples": 1872,
@@ -19,8 +20,9 @@
     },
     {
       "matrix": "varied-endurance.json",
+      "baseline": "Stage-17/varied-after.json",
       "rows": 2496,
-      "identicalToPublishedStage17": true,
+      "identicalToV016Baseline": true,
       "rowsSha256": "3fba40fb2a1c3991e243880718fa7f48221256389b6e6747cc9de162023cd107",
       "summary": {
         "samples": 2496,
@@ -35,8 +37,9 @@
     },
     {
       "matrix": "endurance.json",
+      "baseline": "Stage-17/endurance-after.json",
       "rows": 936,
-      "identicalToPublishedStage17": true,
+      "identicalToV016Baseline": true,
       "rowsSha256": "6ce4ce0c1ce55b09f05643bc7978bf81b008b4b4f61a01cc23316c7354260044",
       "summary": {
         "samples": 936,
@@ -49,8 +52,9 @@
     },
     {
       "matrix": "sparse-endurance.json",
+      "baseline": "Stage-17/sparse-after.json",
       "rows": 360,
-      "identicalToPublishedStage17": true,
+      "identicalToV016Baseline": true,
       "rowsSha256": "aee230208f1446da483b5f390ae23dcdad8d7dd514f97fff4f458c43c2ca72b6",
       "summary": {
         "games": 360,
@@ -64,8 +68,9 @@
     },
     {
       "matrix": "multi-after.json",
+      "baseline": "Stage-17/multi-after.json",
       "rows": 480,
-      "identicalToPublishedStage17": true,
+      "identicalToV016Baseline": true,
       "rowsSha256": "6519dc5454cd800d4c0c0a2a18f906cfe24617b3f31097ea03d693652cae8b24",
       "summary": {
         "games": 480,
@@ -79,8 +84,9 @@
     },
     {
       "matrix": "full-endurance.json",
+      "baseline": "Stage-17/full-after.json",
       "rows": 120,
-      "identicalToPublishedStage17": true,
+      "identicalToV016Baseline": true,
       "rowsSha256": "28c11b2a36ec67819d76b70d433264eaba8108ab8cade51a9357f957afbe7adb",
       "summary": {
         "games": 120,
@@ -93,15 +99,19 @@
       }
     },
     {
-      "matrix": "endless-audit.json",
+      "matrix": "endless-audit-extended.json",
+      "baseline": "Stage-18/expedition-v016-rebuilt.json",
       "rows": 72,
-      "identicalToPublishedStage17": true,
-      "rowsSha256": "6ba283a2b853524cda8ca5bf28595e3ffb9bf1d5cad2b1d30d1187e58ba4221d",
+      "identicalToV016Baseline": true,
+      "rowsSha256": "eceb06bffa1eb18add444d6f9e186a7fd63b2114a607fc7f1b1572f2de035278",
       "summary": {
         "games": 72,
-        "unresolved": 3,
+        "naturallyConcluded": 72,
+        "unresolved": 0,
         "longIdle": 0,
-        "maxNoHit": 40.27499999999836
+        "maxNoHit": 17.84999999999963,
+        "checkpointsAt300": 0,
+        "maxBallSeconds": 277.225
       }
     }
   ]
