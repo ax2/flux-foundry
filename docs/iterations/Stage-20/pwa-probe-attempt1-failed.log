@@ -1,0 +1,12 @@
+node:internal/modules/run_main:111
+    triggerUncaughtException(
+    ^
+
+page.evaluate: TypeError: Cannot read properties of undefined (reading 'update')
+    at eval (eval at evaluate (:370:30), <anonymous>:1:75)
+    at async <anonymous>:381:23
+    at D:\Work\games\flux-foundry\test-results\stage20-pwa-update-probe.mjs:5:548 {
+  log: []
+}
+
+Node.js v26.10.0

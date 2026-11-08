@@ -1,0 +1,137 @@
+{
+  "environment": "Chrome desktop/CDP Emulation.setCPUThrottlingRate rate4,390x844 touch; simulated CPU stress, not a physical mobile device or a FPS qualification",
+  "policy": "mixed",
+  "method": "390×844 touch UI, complete selected challenge games after original PNG decode. Aim at visible switches/core; paddle targets extrapolated landings every120ms with recorded follow/steer policy. Trace includes no-hit duration, simulation time, wall time, frame gaps, visibility, and loading; an inactive page is brought to front and resumed through its menu. No recall, speed change or state mutation. Algorithmic controller, not human win rate.",
+  "sessions": [
+    {
+      "policy": "steer",
+      "level": 13,
+      "material": "steel",
+      "size": "standard",
+      "result": "won",
+      "score": 1065,
+      "shots": [
+        {
+          "hits": 3,
+          "catches": 0,
+          "pickups": 1,
+          "seconds": 3.4999999999999902,
+          "moves": 19,
+          "remaining": 8,
+          "phase": "aim"
+        },
+        {
+          "hits": 7,
+          "catches": 2,
+          "pickups": 0,
+          "seconds": 8.44999999999997,
+          "moves": 46,
+          "remaining": 7,
+          "phase": "aim"
+        },
+        {
+          "hits": 8,
+          "catches": 4,
+          "pickups": 0,
+          "seconds": 9.774999999999446,
+          "moves": 53,
+          "remaining": 6,
+          "phase": "aim"
+        },
+        {
+          "hits": 11,
+          "catches": 3,
+          "pickups": 0,
+          "seconds": 7.066666666666265,
+          "moves": 39,
+          "remaining": 5,
+          "phase": "aim"
+        },
+        {
+          "hits": 12,
+          "catches": 4,
+          "pickups": 1,
+          "seconds": 12.833333333332607,
+          "moves": 77,
+          "remaining": 4,
+          "phase": "aim"
+        },
+        {
+          "hits": 13,
+          "catches": 7,
+          "pickups": 2,
+          "seconds": 22.316666666665398,
+          "moves": 136,
+          "remaining": 3,
+          "phase": "won"
+        }
+      ],
+      "bonusLives": 0,
+      "maxSparseGap": 4.250000000000001,
+      "maxMultiGap": 3.8333333333333224,
+      "stats": {
+        "hits": 54,
+        "flight": 63.94166666666368,
+        "boosts": 22,
+        "energy": 428000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 4,
+        "paddleHits": 20,
+        "orbitBreaks": 1,
+        "gateVents": 0,
+        "pegRetractions": 0
+      },
+      "feedback": {
+        "counts": {
+          "launch": 6,
+          "hit": 47,
+          "break": 7,
+          "catch": 20,
+          "boost": 8,
+          "pickup": 4,
+          "weak": 0,
+          "win": 1,
+          "lose": 0
+        },
+        "last": {
+          "type": "win",
+          "x": 210,
+          "y": 215,
+          "variant": "",
+          "strength": 1
+        },
+        "pending": 0,
+        "marks": []
+      },
+      "audio": {
+        "enabled": false,
+        "state": "locked",
+        "voices": 0,
+        "peakVoices": 0,
+        "played": {
+          "launch": 0,
+          "hit": 0,
+          "break": 0,
+          "catch": 0,
+          "boost": 0,
+          "pickup": 0,
+          "weak": 0,
+          "win": 0,
+          "lose": 0
+        },
+        "failures": 0
+      },
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 4.275000000000002,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 2
+      }
+    }
+  ],
+  "errors": []
+}
