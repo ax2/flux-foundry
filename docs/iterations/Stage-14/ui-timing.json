@@ -1,0 +1,125 @@
+{
+  "method": "Read-only touch traces, includes diagnostic screenshot overhead. Startup/menu cumulative frame gaps do not prove in-flight or phone FPS.",
+  "rows": [
+    {
+      "trace": "trace-17-ceramic-small-1.json",
+      "wallSeconds": 3.983,
+      "simulationSeconds": 3.9749999999999885,
+      "ratio": 0.9979914637208106,
+      "firstCumulativeFrameGap": 158.39999999999998,
+      "lastCumulativeFrameGap": 158.39999999999998
+    },
+    {
+      "trace": "trace-17-ceramic-small-2.json",
+      "wallSeconds": 13.09,
+      "simulationSeconds": 13.091666666666324,
+      "ratio": 1.0001273236567092,
+      "firstCumulativeFrameGap": 158.39999999999998,
+      "lastCumulativeFrameGap": 158.39999999999998
+    },
+    {
+      "trace": "trace-17-ceramic-small-3.json",
+      "wallSeconds": 8.212,
+      "simulationSeconds": 8.208333333332867,
+      "ratio": 0.9995534989445771,
+      "firstCumulativeFrameGap": 158.39999999999998,
+      "lastCumulativeFrameGap": 158.39999999999998
+    },
+    {
+      "trace": "trace-17-ceramic-small-4.json",
+      "wallSeconds": 5.117,
+      "simulationSeconds": 5.116666666666376,
+      "ratio": 0.999934857663939,
+      "firstCumulativeFrameGap": 158.39999999999998,
+      "lastCumulativeFrameGap": 158.39999999999998
+    },
+    {
+      "trace": "trace-17-ceramic-small-5.json",
+      "wallSeconds": 13.483,
+      "simulationSeconds": 13.483333333332567,
+      "ratio": 1.0000247224899923,
+      "firstCumulativeFrameGap": 158.39999999999998,
+      "lastCumulativeFrameGap": 158.39999999999998
+    },
+    {
+      "trace": "trace-17-ceramic-small-6.json",
+      "wallSeconds": 13.432,
+      "simulationSeconds": 13.424999999999237,
+      "ratio": 0.999478856462123,
+      "firstCumulativeFrameGap": 158.39999999999998,
+      "lastCumulativeFrameGap": 158.39999999999998
+    },
+    {
+      "trace": "trace-17-ceramic-small-7.json",
+      "wallSeconds": 23.4,
+      "simulationSeconds": 23.400000000015723,
+      "ratio": 1.000000000000672,
+      "firstCumulativeFrameGap": 158.39999999999998,
+      "lastCumulativeFrameGap": 158.39999999999998
+    },
+    {
+      "trace": "trace-19-rubber-small-1.json",
+      "wallSeconds": 3.022,
+      "simulationSeconds": 3.0166666666666586,
+      "ratio": 0.9982351643503172,
+      "firstCumulativeFrameGap": 83.30000000000001,
+      "lastCumulativeFrameGap": 83.30000000000001
+    },
+    {
+      "trace": "trace-19-rubber-small-2.json",
+      "wallSeconds": 8.046,
+      "simulationSeconds": 8.049999999999999,
+      "ratio": 1.0004971414367387,
+      "firstCumulativeFrameGap": 83.30000000000001,
+      "lastCumulativeFrameGap": 83.30000000000001
+    },
+    {
+      "trace": "trace-19-rubber-small-3.json",
+      "wallSeconds": 13.098,
+      "simulationSeconds": 13.099999999999257,
+      "ratio": 1.0001526950678925,
+      "firstCumulativeFrameGap": 83.30000000000001,
+      "lastCumulativeFrameGap": 83.30000000000001
+    },
+    {
+      "trace": "trace-19-rubber-small-4.json",
+      "wallSeconds": 1.033,
+      "simulationSeconds": 1.0249999999999417,
+      "ratio": 0.9922555663116571,
+      "firstCumulativeFrameGap": 83.30000000000001,
+      "lastCumulativeFrameGap": 83.30000000000001
+    },
+    {
+      "trace": "trace-26-brass-small-1.json",
+      "wallSeconds": 56.801,
+      "simulationSeconds": 56.74999999999742,
+      "ratio": 0.999102128483608,
+      "firstCumulativeFrameGap": 100.1,
+      "lastCumulativeFrameGap": 104.30000000000291
+    },
+    {
+      "trace": "trace-26-brass-small-2.json",
+      "wallSeconds": 33.455,
+      "simulationSeconds": 33.48333333335465,
+      "ratio": 1.0008469087835794,
+      "firstCumulativeFrameGap": 104.30000000000291,
+      "lastCumulativeFrameGap": 104.30000000000291
+    },
+    {
+      "trace": "trace-5-ceramic-standard-1.json",
+      "wallSeconds": 15.958,
+      "simulationSeconds": 15.924999999999736,
+      "ratio": 0.9979320716881649,
+      "firstCumulativeFrameGap": 283.29999999999995,
+      "lastCumulativeFrameGap": 283.29999999999995
+    },
+    {
+      "trace": "trace-5-ceramic-standard-2.json",
+      "wallSeconds": 15.378,
+      "simulationSeconds": 15.374999999999126,
+      "ratio": 0.9998049161138721,
+      "firstCumulativeFrameGap": 283.29999999999995,
+      "lastCumulativeFrameGap": 283.29999999999995
+    }
+  ]
+}
