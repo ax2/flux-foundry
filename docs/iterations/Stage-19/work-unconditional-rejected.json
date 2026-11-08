@@ -1,0 +1,103 @@
+{
+  "method": "Replay captured legal UI paddle targets at recorded fixed simulation times, original1021 challenge seed/loadout and angle derived from the initial launch. Never assign body/target state or force collection. 300s is a failure observer only.",
+  "source": "docs/iterations/Stage-18/inputs-22-rubber.json",
+  "moves": 326,
+  "phase": "aim",
+  "stats": {
+    "hits": 32,
+    "flight": 57.15833333333073,
+    "boosts": 24,
+    "energy": 476000,
+    "rescues": 0,
+    "returns": 0,
+    "rebounds": 0,
+    "recharges": 0,
+    "pulses": 0,
+    "pickups": 2,
+    "paddleHits": 13,
+    "orbitBreaks": 2,
+    "gateVents": 0,
+    "pegRetractions": 0
+  },
+  "progress": {
+    "sinceHit": 6.758333333333459,
+    "maxNoHit": 9.616666666666761,
+    "catchesWithoutHit": 1,
+    "maxCatchesWithoutHit": 3
+  },
+  "peak": {
+    "gap": 9.608333333333428,
+    "time": 43.533333333331505,
+    "ball": {
+      "x": 309.35312007490114,
+      "y": 528.0526141799367,
+      "vx": -41.064839630803974,
+      "vy": 488.9876007470029,
+      "r": 16
+    },
+    "paddle": {
+      "x": 315.92202993539667,
+      "target": 315.92202993539667,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0.2475,
+      "boost": 40000
+    },
+    "targets": [
+      {
+        "x": 310,
+        "y": 570,
+        "hp": 7,
+        "kind": "capacitor",
+        "size": 48,
+        "core": true,
+        "id": 3,
+        "maxHp": 14,
+        "flash": 0,
+        "vx": 0
+      }
+    ],
+    "air": [
+      {
+        "x": 38,
+        "y": 355,
+        "w": 344,
+        "h": 200,
+        "fx": -95,
+        "fy": 0,
+        "plume": true
+      }
+    ],
+    "stats": {
+      "hits": 30,
+      "flight": 43.533333333331505,
+      "boosts": 21,
+      "energy": 422000,
+      "rescues": 0,
+      "returns": 0,
+      "rebounds": 0,
+      "recharges": 0,
+      "pulses": 0,
+      "pickups": 2,
+      "paddleHits": 10,
+      "orbitBreaks": 1,
+      "gateVents": 0,
+      "pegRetractions": 0
+    }
+  },
+  "targets": [
+    {
+      "x": 310,
+      "y": 570,
+      "hp": 5,
+      "kind": "capacitor",
+      "size": 48,
+      "core": true,
+      "id": 3,
+      "maxHp": 14,
+      "flash": 0,
+      "vx": 0
+    }
+  ]
+}

@@ -155,7 +155,7 @@ export class Game{
   const falling=this.balls[0],misses=this.sparseEndgame?2:ASSIST_MISSES;
   if(falling&&this.progress.sinceHit>=(this.sparseEndgame?4:ASSIST_DELAY)&&this.progress.catchesWithoutHit+1>=misses&&falling.vy>0&&falling.y>470&&falling.y<675-falling.r+10&&this.time-this.lastGuideTime>=(falling.y>620?.025:.08)){
    this.lastGuideTime=this.time;
-   const plan=guidedRebound(falling,{...this.paddle,x:oldPaddleX},this.targets,spec.mass,restitution,this.time-dt,{air:this.air,gates:this.gates,pegs:this.pegs,wind:this.windMultiplier,response:spec.windResponse},this.progress.sinceHit>=20||this.lowEndgame?.48:.32);
+   const plan=guidedRebound(falling,{...this.paddle,x:oldPaddleX},this.targets,spec.mass,restitution,this.time-dt,{air:this.air,gates:this.gates,pegs:this.pegs,wind:this.windMultiplier,response:spec.windResponse,allowLowerWork:this.progress.catchesWithoutHit>=misses},this.progress.sinceHit>=20||this.lowEndgame?.48:.32);
    // A closest miss is not enough for early steering. Keep the existing later fallback.
    if(plan.hit||this.progress.catchesWithoutHit>=misses){
     this.paddle.boost=plan.boost;this.paddle.tilt=(this.paddle.tilt||0)+Math.max(-GUIDE_TILT_STEP,Math.min(GUIDE_TILT_STEP,plan.tilt-(this.paddle.tilt||0)));
@@ -170,7 +170,7 @@ export class Game{
 
     }
     const previous={...b};advanceFree(b,h,ax,ay);this.closePassedVents(b);
-    const activePaddle={...this.paddle,x:oldPaddleX+this.paddle.vx*h*(sub+1)};if(this.paddleEnabled&&!this.safetyReturn&&!this.goalComplete&&this.targets.length>0&&catchPaddle(b,previous,activePaddle,h)){this.feedback.emit('catch',b.x,b.y,(this.paddle.boost||0)>18000?'charged':this.material);this.energize(b,{x:0,y:-1},this.paddle.boost||18000);this.paddle.boost=18000;this.stats.paddleHits++;this.paddle.flash=.15;this.trackPaddleOrbit(previous);}
+    const activePaddle={...this.paddle,x:oldPaddleX+this.paddle.vx*h*(sub+1)};if(this.paddleEnabled&&!this.safetyReturn&&!this.goalComplete&&this.targets.length>0&&catchPaddle(b,previous,activePaddle,h)){this.feedback.emit('catch',b.x,b.y,(this.paddle.boost||0)>18000?'charged':this.material);this.energize(b,{x:0,y:-1},this.paddle.boost??18000);this.paddle.boost=18000;this.stats.paddleHits++;this.paddle.flash=.15;this.trackPaddleOrbit(previous);}
     for(const t of this.treasures)if(t.life>0&&sweptPickup(previous,b,t))this.collectTreasure(t);
     if(b.x<18+b.r){b.x=18+b.r;if(reflect(b,{x:1,y:0},restitution))this.wallCharge(b,'left');}if(b.x>402-b.r){b.x=402-b.r;if(reflect(b,{x:-1,y:0},restitution))this.wallCharge(b,'right');}if(b.y<112+b.r){b.y=112+b.r;reflect(b,{x:0,y:1},restitution);}
     if(!this.safetyReturn){

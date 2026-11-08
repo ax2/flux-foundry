@@ -1,0 +1,23 @@
+{
+  "method": "Local Node desktop single-thread CPU microbenchmark, 10 warmup plus100 calls per pose. Not browser FPS or mobile evidence.",
+  "rows": [
+    {
+      "tilt": 0,
+      "medianMs": 2.7094999999999914,
+      "p95Ms": 3.4321000000000197,
+      "maxMs": 4.0478999999999985
+    },
+    {
+      "tilt": -0.48,
+      "medianMs": 5.688100000000077,
+      "p95Ms": 6.207899999999881,
+      "maxMs": 6.333300000000008
+    },
+    {
+      "tilt": 0.1,
+      "medianMs": 2.8956000000000586,
+      "p95Ms": 3.271199999999908,
+      "maxMs": 3.6497000000001663
+    }
+  ]
+}

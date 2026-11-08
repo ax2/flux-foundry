@@ -1,0 +1,89 @@
+{
+  "method": "Replay captured legal UI paddle targets at recorded fixed simulation times, original1021 challenge seed/loadout and angle derived from the initial launch. Never assign body/target state or force collection. 300s is a failure observer only.",
+  "source": "test-results/stage18-ui-sound/inputs-22-rubber.json",
+  "moves": 326,
+  "phase": "won",
+  "stats": {
+    "hits": 37,
+    "flight": 94.99166666668833,
+    "boosts": 36,
+    "energy": 706000,
+    "rescues": 0,
+    "returns": 0,
+    "rebounds": 0,
+    "recharges": 0,
+    "pulses": 0,
+    "pickups": 2,
+    "paddleHits": 25,
+    "orbitBreaks": 8,
+    "gateVents": 0,
+    "pegRetractions": 0
+  },
+  "progress": {
+    "sinceHit": 0,
+    "maxNoHit": 20.6833333333328,
+    "catchesWithoutHit": 0,
+    "maxCatchesWithoutHit": 6
+  },
+  "peak": {
+    "gap": 20.674999999999468,
+    "time": 86.90000000001523,
+    "ball": {
+      "x": 268.4102915942969,
+      "y": 584.9757829669181,
+      "vx": 484.65230701440134,
+      "vy": -316.53371952810005,
+      "r": 16
+    },
+    "paddle": {
+      "x": 243.57316237229566,
+      "target": 243.57316237229566,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": -0.2787112855911255,
+      "boost": 40000
+    },
+    "targets": [
+      {
+        "x": 310,
+        "y": 570,
+        "hp": 3,
+        "kind": "capacitor",
+        "size": 48,
+        "core": true,
+        "id": 3,
+        "maxHp": 14,
+        "flash": 0,
+        "vx": 0
+      }
+    ],
+    "air": [
+      {
+        "x": 38,
+        "y": 355,
+        "w": 344,
+        "h": 200,
+        "fx": -95,
+        "fy": 0,
+        "plume": true
+      }
+    ],
+    "stats": {
+      "hits": 34,
+      "flight": 86.90000000001523,
+      "boosts": 33,
+      "energy": 652000,
+      "rescues": 0,
+      "returns": 0,
+      "rebounds": 0,
+      "recharges": 0,
+      "pulses": 0,
+      "pickups": 2,
+      "paddleHits": 22,
+      "orbitBreaks": 7,
+      "gateVents": 0,
+      "pegRetractions": 0
+    }
+  }
+}

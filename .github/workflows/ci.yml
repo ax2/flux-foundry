@@ -36,4 +36,6 @@ jobs:
         env:
           PLAYWRIGHT_CHANNEL: chrome
       - run: npm run test:expedition
-      - run: node scripts/compare-physics.mjs
+      - run: npm run test:touch
+      - run: npm run test:residual
+      - run: node scripts/compare-balance.mjs
