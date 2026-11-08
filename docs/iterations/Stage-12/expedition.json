@@ -1,0 +1,5652 @@
+{
+  "method": "72 complete expedition runs, seeds42/739/2217 ×12 loadouts ×2 legal paddle policies. Keep300-second checkpoints and continue productive shots up to900 simulation seconds, without ending the ball. A no-hit interval>=60 is flagged separately.",
+  "summary": {
+    "games": 72,
+    "naturallyConcluded": 72,
+    "unresolved": 0,
+    "longIdle": 0,
+    "maxNoHit": 25.449999999999196,
+    "checkpointsAt300": 6,
+    "maxBallSeconds": 595.5166666666667
+  },
+  "checkpoints": [
+    {
+      "seed": 42,
+      "material": "rubber",
+      "size": "large",
+      "policy": "steer",
+      "wave": 14,
+      "shot": 14,
+      "hitsDuringShot": 130,
+      "progress": {
+        "sinceHit": 1.9666666666666621,
+        "maxNoHit": 18.016666666666286,
+        "catchesWithoutHit": 1,
+        "maxCatchesWithoutHit": 5
+      },
+      "remainingHP": 35
+    },
+    {
+      "seed": 739,
+      "material": "steel",
+      "size": "large",
+      "policy": "steer",
+      "wave": 10,
+      "shot": 10,
+      "hitsDuringShot": 142,
+      "progress": {
+        "sinceHit": 11.883333333333299,
+        "maxNoHit": 21.449999999999424,
+        "catchesWithoutHit": 3,
+        "maxCatchesWithoutHit": 7
+      },
+      "remainingHP": 26
+    },
+    {
+      "seed": 739,
+      "material": "rubber",
+      "size": "large",
+      "policy": "follow",
+      "wave": 12,
+      "shot": 12,
+      "hitsDuringShot": 139,
+      "progress": {
+        "sinceHit": 0.974999999999999,
+        "maxNoHit": 17.541666666666313,
+        "catchesWithoutHit": 1,
+        "maxCatchesWithoutHit": 5
+      },
+      "remainingHP": 6
+    },
+    {
+      "seed": 2217,
+      "material": "brass",
+      "size": "standard",
+      "policy": "steer",
+      "wave": 6,
+      "shot": 6,
+      "hitsDuringShot": 72,
+      "progress": {
+        "sinceHit": 4.683333333333356,
+        "maxNoHit": 23.866666666665953,
+        "catchesWithoutHit": 1,
+        "maxCatchesWithoutHit": 6
+      },
+      "remainingHP": 3
+    },
+    {
+      "seed": 2217,
+      "material": "brass",
+      "size": "standard",
+      "policy": "steer",
+      "wave": 8,
+      "shot": 8,
+      "hitsDuringShot": 135,
+      "progress": {
+        "sinceHit": 10.86666666666669,
+        "maxNoHit": 25.449999999999196,
+        "catchesWithoutHit": 3,
+        "maxCatchesWithoutHit": 7
+      },
+      "remainingHP": 12
+    },
+    {
+      "seed": 2217,
+      "material": "rubber",
+      "size": "large",
+      "policy": "follow",
+      "wave": 8,
+      "shot": 8,
+      "hitsDuringShot": 90,
+      "progress": {
+        "sinceHit": 3.633333333333323,
+        "maxNoHit": 19.19999999999955,
+        "catchesWithoutHit": 1,
+        "maxCatchesWithoutHit": 5
+      },
+      "remainingHP": 3
+    }
+  ],
+  "rows": [
+    {
+      "seed": 42,
+      "material": "steel",
+      "size": "small",
+      "policy": "follow",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 81.41666666666667,
+          "hits": 55
+        },
+        {
+          "seconds": 48.6,
+          "hits": 30
+        },
+        {
+          "seconds": 20.491666666666667,
+          "hits": 7
+        },
+        {
+          "seconds": 6.741666666666666,
+          "hits": 19
+        },
+        {
+          "seconds": 37.041666666666664,
+          "hits": 26
+        },
+        {
+          "seconds": 18.175,
+          "hits": 17
+        },
+        {
+          "seconds": 5.225,
+          "hits": 8
+        },
+        {
+          "seconds": 24.208333333333332,
+          "hits": 82
+        },
+        {
+          "seconds": 25.083333333333332,
+          "hits": 35
+        },
+        {
+          "seconds": 132.08333333333334,
+          "hits": 110
+        },
+        {
+          "seconds": 30.483333333333334,
+          "hits": 11
+        },
+        {
+          "seconds": 54.108333333333334,
+          "hits": 47
+        },
+        {
+          "seconds": 4.833333333333333,
+          "hits": 8
+        },
+        {
+          "seconds": 8.941666666666666,
+          "hits": 14
+        },
+        {
+          "seconds": 32.11666666666667,
+          "hits": 72
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.12499999999999999,
+        "maxNoHit": 10.40000000000005,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 5
+      }
+    },
+    {
+      "seed": 42,
+      "material": "steel",
+      "size": "small",
+      "policy": "steer",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 75.10833333333333,
+          "hits": 47
+        },
+        {
+          "seconds": 28.008333333333333,
+          "hits": 27
+        },
+        {
+          "seconds": 25.633333333333333,
+          "hits": 19
+        },
+        {
+          "seconds": 23.25,
+          "hits": 33
+        },
+        {
+          "seconds": 27.791666666666668,
+          "hits": 10
+        },
+        {
+          "seconds": 9.616666666666667,
+          "hits": 6
+        },
+        {
+          "seconds": 61.28333333333333,
+          "hits": 44
+        },
+        {
+          "seconds": 33.833333333333336,
+          "hits": 38
+        },
+        {
+          "seconds": 5.45,
+          "hits": 6
+        },
+        {
+          "seconds": 3.6,
+          "hits": 15
+        },
+        {
+          "seconds": 28.75,
+          "hits": 52
+        },
+        {
+          "seconds": 50.6,
+          "hits": 85
+        },
+        {
+          "seconds": 44.11666666666667,
+          "hits": 40
+        },
+        {
+          "seconds": 51.975,
+          "hits": 77
+        },
+        {
+          "seconds": 56.375,
+          "hits": 69
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.10833333333333332,
+        "maxNoHit": 8.550000000000155,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 5
+      }
+    },
+    {
+      "seed": 42,
+      "material": "steel",
+      "size": "standard",
+      "policy": "follow",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 42.90833333333333,
+          "hits": 44
+        },
+        {
+          "seconds": 23.53333333333333,
+          "hits": 26
+        },
+        {
+          "seconds": 12.691666666666666,
+          "hits": 3
+        },
+        {
+          "seconds": 44.333333333333336,
+          "hits": 39
+        },
+        {
+          "seconds": 96.45833333333333,
+          "hits": 56
+        },
+        {
+          "seconds": 99.48333333333333,
+          "hits": 53
+        },
+        {
+          "seconds": 27.758333333333333,
+          "hits": 22
+        },
+        {
+          "seconds": 61,
+          "hits": 37
+        },
+        {
+          "seconds": 1.6083333333333334,
+          "hits": 5
+        },
+        {
+          "seconds": 30,
+          "hits": 41
+        },
+        {
+          "seconds": 59.5,
+          "hits": 55
+        },
+        {
+          "seconds": 66.74166666666666,
+          "hits": 46
+        },
+        {
+          "seconds": 56.21666666666667,
+          "hits": 31
+        },
+        {
+          "seconds": 107.75833333333333,
+          "hits": 81
+        },
+        {
+          "seconds": 19.666666666666668,
+          "hits": 29
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.2833333333333334,
+        "maxNoHit": 17.308333333332993,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 5
+      }
+    },
+    {
+      "seed": 42,
+      "material": "steel",
+      "size": "standard",
+      "policy": "steer",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 8.983333333333333,
+          "hits": 15
+        },
+        {
+          "seconds": 107.625,
+          "hits": 82
+        },
+        {
+          "seconds": 17.475,
+          "hits": 2
+        },
+        {
+          "seconds": 171.35833333333332,
+          "hits": 51
+        },
+        {
+          "seconds": 48.78333333333333,
+          "hits": 6
+        },
+        {
+          "seconds": 29.358333333333334,
+          "hits": 16
+        },
+        {
+          "seconds": 19.866666666666667,
+          "hits": 10
+        },
+        {
+          "seconds": 59.15833333333333,
+          "hits": 31
+        },
+        {
+          "seconds": 41.766666666666666,
+          "hits": 20
+        },
+        {
+          "seconds": 260.2083333333333,
+          "hits": 138
+        },
+        {
+          "seconds": 4.275,
+          "hits": 6
+        },
+        {
+          "seconds": 189.03333333333333,
+          "hits": 97
+        },
+        {
+          "seconds": 57.583333333333336,
+          "hits": 11
+        },
+        {
+          "seconds": 59.99166666666667,
+          "hits": 37
+        },
+        {
+          "seconds": 28.558333333333334,
+          "hits": 18
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.18333333333333332,
+        "maxNoHit": 19.39999999999954,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 7
+      }
+    },
+    {
+      "seed": 42,
+      "material": "steel",
+      "size": "large",
+      "policy": "follow",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 107.53333333333333,
+          "hits": 54
+        },
+        {
+          "seconds": 133.81666666666666,
+          "hits": 54
+        },
+        {
+          "seconds": 33.81666666666666,
+          "hits": 28
+        },
+        {
+          "seconds": 100.13333333333333,
+          "hits": 52
+        },
+        {
+          "seconds": 39.13333333333333,
+          "hits": 20
+        },
+        {
+          "seconds": 200.875,
+          "hits": 62
+        },
+        {
+          "seconds": 30.849999999999998,
+          "hits": 12
+        },
+        {
+          "seconds": 57.06666666666666,
+          "hits": 66
+        },
+        {
+          "seconds": 21.916666666666668,
+          "hits": 21
+        },
+        {
+          "seconds": 48.7,
+          "hits": 55
+        },
+        {
+          "seconds": 11.641666666666666,
+          "hits": 15
+        },
+        {
+          "seconds": 110.33333333333333,
+          "hits": 62
+        },
+        {
+          "seconds": 41.2,
+          "hits": 58
+        },
+        {
+          "seconds": 180.91666666666666,
+          "hits": 123
+        },
+        {
+          "seconds": 22.2,
+          "hits": 9
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.21666666666666665,
+        "maxNoHit": 18.03333333333295,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 6
+      }
+    },
+    {
+      "seed": 42,
+      "material": "steel",
+      "size": "large",
+      "policy": "steer",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 90.225,
+          "hits": 55
+        },
+        {
+          "seconds": 86.675,
+          "hits": 30
+        },
+        {
+          "seconds": 24.833333333333332,
+          "hits": 17
+        },
+        {
+          "seconds": 38.416666666666664,
+          "hits": 27
+        },
+        {
+          "seconds": 40.016666666666666,
+          "hits": 26
+        },
+        {
+          "seconds": 8.625,
+          "hits": 4
+        },
+        {
+          "seconds": 20.816666666666666,
+          "hits": 11
+        },
+        {
+          "seconds": 197.60833333333332,
+          "hits": 138
+        },
+        {
+          "seconds": 27.058333333333334,
+          "hits": 8
+        },
+        {
+          "seconds": 56.791666666666664,
+          "hits": 66
+        },
+        {
+          "seconds": 9.216666666666667,
+          "hits": 5
+        },
+        {
+          "seconds": 204.26666666666665,
+          "hits": 136
+        },
+        {
+          "seconds": 102.86666666666666,
+          "hits": 36
+        },
+        {
+          "seconds": 19.958333333333332,
+          "hits": 14
+        },
+        {
+          "seconds": 59.266666666666666,
+          "hits": 64
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.29166666666666674,
+        "maxNoHit": 13.366666666666548,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 6
+      }
+    },
+    {
+      "seed": 42,
+      "material": "brass",
+      "size": "small",
+      "policy": "follow",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 79.85833333333333,
+          "hits": 48
+        },
+        {
+          "seconds": 117.74166666666666,
+          "hits": 54
+        },
+        {
+          "seconds": 11.341666666666667,
+          "hits": 4
+        },
+        {
+          "seconds": 80.41666666666667,
+          "hits": 50
+        },
+        {
+          "seconds": 60.68333333333333,
+          "hits": 12
+        },
+        {
+          "seconds": 29.208333333333332,
+          "hits": 15
+        },
+        {
+          "seconds": 3.1666666666666665,
+          "hits": 1
+        },
+        {
+          "seconds": 14.383333333333333,
+          "hits": 9
+        },
+        {
+          "seconds": 48.108333333333334,
+          "hits": 55
+        },
+        {
+          "seconds": 50.583333333333336,
+          "hits": 48
+        },
+        {
+          "seconds": 3.7083333333333335,
+          "hits": 3
+        },
+        {
+          "seconds": 39.03333333333333,
+          "hits": 24
+        },
+        {
+          "seconds": 74.725,
+          "hits": 75
+        },
+        {
+          "seconds": 53.525,
+          "hits": 92
+        },
+        {
+          "seconds": 68.38333333333333,
+          "hits": 49
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.12499999999999999,
+        "maxNoHit": 12.549999999999928,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 5
+      }
+    },
+    {
+      "seed": 42,
+      "material": "brass",
+      "size": "small",
+      "policy": "steer",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 105.85,
+          "hits": 55
+        },
+        {
+          "seconds": 20.991666666666667,
+          "hits": 13
+        },
+        {
+          "seconds": 30.466666666666665,
+          "hits": 14
+        },
+        {
+          "seconds": 2.9916666666666667,
+          "hits": 2
+        },
+        {
+          "seconds": 13.525,
+          "hits": 26
+        },
+        {
+          "seconds": 35.891666666666666,
+          "hits": 59
+        },
+        {
+          "seconds": 6.55,
+          "hits": 11
+        },
+        {
+          "seconds": 64.675,
+          "hits": 99
+        },
+        {
+          "seconds": 92.03333333333333,
+          "hits": 36
+        },
+        {
+          "seconds": 156.6,
+          "hits": 84
+        },
+        {
+          "seconds": 119.31666666666666,
+          "hits": 16
+        },
+        {
+          "seconds": 11.708333333333334,
+          "hits": 13
+        },
+        {
+          "seconds": 14.883333333333333,
+          "hits": 22
+        },
+        {
+          "seconds": 87.01666666666667,
+          "hits": 77
+        },
+        {
+          "seconds": 5.741666666666666,
+          "hits": 8
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.12499999999999999,
+        "maxNoHit": 17.083333333333005,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 6
+      }
+    },
+    {
+      "seed": 42,
+      "material": "brass",
+      "size": "standard",
+      "policy": "follow",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 43.15833333333333,
+          "hits": 55
+        },
+        {
+          "seconds": 173.5,
+          "hits": 53
+        },
+        {
+          "seconds": 179.3,
+          "hits": 46
+        },
+        {
+          "seconds": 109.64999999999999,
+          "hits": 37
+        },
+        {
+          "seconds": 28.425,
+          "hits": 17
+        },
+        {
+          "seconds": 45.69166666666666,
+          "hits": 33
+        },
+        {
+          "seconds": 116.73333333333333,
+          "hits": 35
+        },
+        {
+          "seconds": 56.449999999999996,
+          "hits": 60
+        },
+        {
+          "seconds": 76.45833333333333,
+          "hits": 46
+        },
+        {
+          "seconds": 63.99166666666667,
+          "hits": 53
+        },
+        {
+          "seconds": 18.683333333333334,
+          "hits": 21
+        },
+        {
+          "seconds": 192.45,
+          "hits": 111
+        },
+        {
+          "seconds": 2.3833333333333333,
+          "hits": 3
+        },
+        {
+          "seconds": 18.5,
+          "hits": 23
+        },
+        {
+          "seconds": 38.25,
+          "hits": 33
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 2.291666666666661,
+        "maxNoHit": 19.45833333333287,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 6
+      }
+    },
+    {
+      "seed": 42,
+      "material": "brass",
+      "size": "standard",
+      "policy": "steer",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 26.599999999999998,
+          "hits": 33
+        },
+        {
+          "seconds": 120.13333333333333,
+          "hits": 65
+        },
+        {
+          "seconds": 63.199999999999996,
+          "hits": 10
+        },
+        {
+          "seconds": 2.591666666666667,
+          "hits": 9
+        },
+        {
+          "seconds": 8.725,
+          "hits": 9
+        },
+        {
+          "seconds": 118.39166666666667,
+          "hits": 85
+        },
+        {
+          "seconds": 154.94166666666666,
+          "hits": 32
+        },
+        {
+          "seconds": 37.4,
+          "hits": 22
+        },
+        {
+          "seconds": 42.175,
+          "hits": 9
+        },
+        {
+          "seconds": 115.25,
+          "hits": 109
+        },
+        {
+          "seconds": 28.508333333333333,
+          "hits": 17
+        },
+        {
+          "seconds": 6.666666666666667,
+          "hits": 8
+        },
+        {
+          "seconds": 22.241666666666667,
+          "hits": 17
+        },
+        {
+          "seconds": 94.01666666666667,
+          "hits": 89
+        },
+        {
+          "seconds": 29.258333333333333,
+          "hits": 29
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.3166666666666668,
+        "maxNoHit": 20.233333333332826,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 6
+      }
+    },
+    {
+      "seed": 42,
+      "material": "brass",
+      "size": "large",
+      "policy": "follow",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 102.29166666666667,
+          "hits": 55
+        },
+        {
+          "seconds": 43.30833333333333,
+          "hits": 12
+        },
+        {
+          "seconds": 25.141666666666666,
+          "hits": 17
+        },
+        {
+          "seconds": 107.94166666666666,
+          "hits": 82
+        },
+        {
+          "seconds": 13.783333333333333,
+          "hits": 2
+        },
+        {
+          "seconds": 128.88333333333333,
+          "hits": 75
+        },
+        {
+          "seconds": 66.825,
+          "hits": 38
+        },
+        {
+          "seconds": 30.65833333333333,
+          "hits": 23
+        },
+        {
+          "seconds": 76.10833333333333,
+          "hits": 38
+        },
+        {
+          "seconds": 42.45,
+          "hits": 46
+        },
+        {
+          "seconds": 17.358333333333334,
+          "hits": 14
+        },
+        {
+          "seconds": 11.35,
+          "hits": 6
+        },
+        {
+          "seconds": 15.633333333333333,
+          "hits": 19
+        },
+        {
+          "seconds": 40.90833333333333,
+          "hits": 61
+        },
+        {
+          "seconds": 138.65833333333333,
+          "hits": 160
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.33333333333333354,
+        "maxNoHit": 15.483333333333094,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 5
+      }
+    },
+    {
+      "seed": 42,
+      "material": "brass",
+      "size": "large",
+      "policy": "steer",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 101.95833333333333,
+          "hits": 55
+        },
+        {
+          "seconds": 202.625,
+          "hits": 53
+        },
+        {
+          "seconds": 75.88333333333333,
+          "hits": 44
+        },
+        {
+          "seconds": 93.49166666666666,
+          "hits": 39
+        },
+        {
+          "seconds": 64.075,
+          "hits": 29
+        },
+        {
+          "seconds": 142.63333333333333,
+          "hits": 62
+        },
+        {
+          "seconds": 28.28333333333333,
+          "hits": 20
+        },
+        {
+          "seconds": 17.483333333333334,
+          "hits": 20
+        },
+        {
+          "seconds": 67.26666666666667,
+          "hits": 72
+        },
+        {
+          "seconds": 37.85,
+          "hits": 41
+        },
+        {
+          "seconds": 105.45833333333333,
+          "hits": 114
+        },
+        {
+          "seconds": 19.891666666666666,
+          "hits": 43
+        },
+        {
+          "seconds": 8.425,
+          "hits": 20
+        },
+        {
+          "seconds": 46.31666666666666,
+          "hits": 53
+        },
+        {
+          "seconds": 59.59166666666667,
+          "hits": 61
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 2.449999999999994,
+        "maxNoHit": 21.083333333332778,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 6
+      }
+    },
+    {
+      "seed": 42,
+      "material": "ceramic",
+      "size": "small",
+      "policy": "follow",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 5.983333333333333,
+          "hits": 10
+        },
+        {
+          "seconds": 17.383333333333333,
+          "hits": 56
+        },
+        {
+          "seconds": 4.425,
+          "hits": 12
+        },
+        {
+          "seconds": 31.683333333333334,
+          "hits": 44
+        },
+        {
+          "seconds": 14.924999999999999,
+          "hits": 13
+        },
+        {
+          "seconds": 9.591666666666667,
+          "hits": 9
+        },
+        {
+          "seconds": 10.333333333333334,
+          "hits": 25
+        },
+        {
+          "seconds": 13.5,
+          "hits": 23
+        },
+        {
+          "seconds": 16.883333333333333,
+          "hits": 12
+        },
+        {
+          "seconds": 8.133333333333333,
+          "hits": 36
+        },
+        {
+          "seconds": 25.916666666666668,
+          "hits": 48
+        },
+        {
+          "seconds": 34.13333333333333,
+          "hits": 66
+        },
+        {
+          "seconds": 36.15,
+          "hits": 52
+        },
+        {
+          "seconds": 7.141666666666667,
+          "hits": 11
+        },
+        {
+          "seconds": 3.225,
+          "hits": 20
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.09999999999999999,
+        "maxNoHit": 5.033333333333373,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 1
+      }
+    },
+    {
+      "seed": 42,
+      "material": "ceramic",
+      "size": "small",
+      "policy": "steer",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 5.65,
+          "hits": 9
+        },
+        {
+          "seconds": 23.55,
+          "hits": 39
+        },
+        {
+          "seconds": 10.633333333333333,
+          "hits": 26
+        },
+        {
+          "seconds": 50.291666666666664,
+          "hits": 58
+        },
+        {
+          "seconds": 3.1166666666666667,
+          "hits": 6
+        },
+        {
+          "seconds": 62.358333333333334,
+          "hits": 62
+        },
+        {
+          "seconds": 15.633333333333333,
+          "hits": 14
+        },
+        {
+          "seconds": 6.016666666666667,
+          "hits": 13
+        },
+        {
+          "seconds": 22.166666666666668,
+          "hits": 34
+        },
+        {
+          "seconds": 100.91666666666667,
+          "hits": 112
+        },
+        {
+          "seconds": 57.19166666666666,
+          "hits": 30
+        },
+        {
+          "seconds": 48.958333333333336,
+          "hits": 25
+        },
+        {
+          "seconds": 4.441666666666666,
+          "hits": 4
+        },
+        {
+          "seconds": 5.425,
+          "hits": 8
+        },
+        {
+          "seconds": 36.05,
+          "hits": 77
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.175,
+        "maxNoHit": 5.433333333333393,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 2
+      }
+    },
+    {
+      "seed": 42,
+      "material": "ceramic",
+      "size": "standard",
+      "policy": "follow",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 5.608333333333333,
+          "hits": 4
+        },
+        {
+          "seconds": 20.8,
+          "hits": 19
+        },
+        {
+          "seconds": 32.233333333333334,
+          "hits": 42
+        },
+        {
+          "seconds": 73.10833333333333,
+          "hits": 63
+        },
+        {
+          "seconds": 46.38333333333333,
+          "hits": 23
+        },
+        {
+          "seconds": 55.84166666666667,
+          "hits": 33
+        },
+        {
+          "seconds": 5.391666666666667,
+          "hits": 3
+        },
+        {
+          "seconds": 43.833333333333336,
+          "hits": 48
+        },
+        {
+          "seconds": 8.6,
+          "hits": 10
+        },
+        {
+          "seconds": 65.14166666666667,
+          "hits": 72
+        },
+        {
+          "seconds": 72.25,
+          "hits": 33
+        },
+        {
+          "seconds": 122.16666666666667,
+          "hits": 115
+        },
+        {
+          "seconds": 66.41666666666667,
+          "hits": 19
+        },
+        {
+          "seconds": 38.50833333333333,
+          "hits": 34
+        },
+        {
+          "seconds": 84.38333333333333,
+          "hits": 75
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.21666666666666665,
+        "maxNoHit": 11.774999999999972,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 5
+      }
+    },
+    {
+      "seed": 42,
+      "material": "ceramic",
+      "size": "standard",
+      "policy": "steer",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 5.908333333333333,
+          "hits": 5
+        },
+        {
+          "seconds": 20.8,
+          "hits": 19
+        },
+        {
+          "seconds": 35.575,
+          "hits": 37
+        },
+        {
+          "seconds": 75.64166666666667,
+          "hits": 69
+        },
+        {
+          "seconds": 10.025,
+          "hits": 5
+        },
+        {
+          "seconds": 114,
+          "hits": 67
+        },
+        {
+          "seconds": 7.941666666666666,
+          "hits": 5
+        },
+        {
+          "seconds": 48.99166666666667,
+          "hits": 47
+        },
+        {
+          "seconds": 66.21666666666667,
+          "hits": 40
+        },
+        {
+          "seconds": 80.20833333333333,
+          "hits": 79
+        },
+        {
+          "seconds": 3.908333333333333,
+          "hits": 1
+        },
+        {
+          "seconds": 34.85,
+          "hits": 30
+        },
+        {
+          "seconds": 105.39999999999999,
+          "hits": 55
+        },
+        {
+          "seconds": 104.64999999999999,
+          "hits": 83
+        },
+        {
+          "seconds": 17.475,
+          "hits": 70
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.30833333333333346,
+        "maxNoHit": 9.725000000000088,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 6
+      }
+    },
+    {
+      "seed": 42,
+      "material": "ceramic",
+      "size": "large",
+      "policy": "follow",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 17.708333333333332,
+          "hits": 18
+        },
+        {
+          "seconds": 103.96666666666667,
+          "hits": 85
+        },
+        {
+          "seconds": 21.525,
+          "hits": 5
+        },
+        {
+          "seconds": 69.775,
+          "hits": 33
+        },
+        {
+          "seconds": 7.375,
+          "hits": 4
+        },
+        {
+          "seconds": 202.76666666666665,
+          "hits": 90
+        },
+        {
+          "seconds": 93.61666666666666,
+          "hits": 53
+        },
+        {
+          "seconds": 56.06666666666666,
+          "hits": 48
+        },
+        {
+          "seconds": 111.225,
+          "hits": 54
+        },
+        {
+          "seconds": 45.575,
+          "hits": 34
+        },
+        {
+          "seconds": 9.608333333333333,
+          "hits": 22
+        },
+        {
+          "seconds": 80.15833333333333,
+          "hits": 39
+        },
+        {
+          "seconds": 45.358333333333334,
+          "hits": 28
+        },
+        {
+          "seconds": 92,
+          "hits": 102
+        },
+        {
+          "seconds": 93.49166666666666,
+          "hits": 61
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.14166666666666666,
+        "maxNoHit": 13.133333333333228,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 5
+      }
+    },
+    {
+      "seed": 42,
+      "material": "ceramic",
+      "size": "large",
+      "policy": "steer",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 74.075,
+          "hits": 55
+        },
+        {
+          "seconds": 70.30833333333334,
+          "hits": 24
+        },
+        {
+          "seconds": 16.991666666666667,
+          "hits": 13
+        },
+        {
+          "seconds": 191.21666666666667,
+          "hits": 76
+        },
+        {
+          "seconds": 99.775,
+          "hits": 57
+        },
+        {
+          "seconds": 145.09166666666667,
+          "hits": 82
+        },
+        {
+          "seconds": 50.333333333333336,
+          "hits": 14
+        },
+        {
+          "seconds": 123.66666666666667,
+          "hits": 82
+        },
+        {
+          "seconds": 48.125,
+          "hits": 24
+        },
+        {
+          "seconds": 67.23333333333333,
+          "hits": 38
+        },
+        {
+          "seconds": 68.04166666666667,
+          "hits": 37
+        },
+        {
+          "seconds": 197.15833333333333,
+          "hits": 109
+        },
+        {
+          "seconds": 9.216666666666667,
+          "hits": 6
+        },
+        {
+          "seconds": 5.791666666666667,
+          "hits": 8
+        },
+        {
+          "seconds": 121,
+          "hits": 68
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.11666666666666665,
+        "maxNoHit": 19.524999999999533,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 5
+      }
+    },
+    {
+      "seed": 42,
+      "material": "rubber",
+      "size": "small",
+      "policy": "follow",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 1.5333333333333332,
+          "hits": 2
+        },
+        {
+          "seconds": 32.083333333333336,
+          "hits": 65
+        },
+        {
+          "seconds": 47.43333333333333,
+          "hits": 27
+        },
+        {
+          "seconds": 47.9,
+          "hits": 42
+        },
+        {
+          "seconds": 12.841666666666667,
+          "hits": 8
+        },
+        {
+          "seconds": 36.925,
+          "hits": 27
+        },
+        {
+          "seconds": 83.16666666666667,
+          "hits": 52
+        },
+        {
+          "seconds": 1.4166666666666667,
+          "hits": 2
+        },
+        {
+          "seconds": 9.866666666666667,
+          "hits": 17
+        },
+        {
+          "seconds": 29.491666666666667,
+          "hits": 35
+        },
+        {
+          "seconds": 6.441666666666666,
+          "hits": 16
+        },
+        {
+          "seconds": 17.116666666666667,
+          "hits": 81
+        },
+        {
+          "seconds": 39.09166666666667,
+          "hits": 62
+        },
+        {
+          "seconds": 49.291666666666664,
+          "hits": 78
+        },
+        {
+          "seconds": 24.733333333333334,
+          "hits": 22
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.19166666666666665,
+        "maxNoHit": 8.925000000000134,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 7
+      }
+    },
+    {
+      "seed": 42,
+      "material": "rubber",
+      "size": "small",
+      "policy": "steer",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 3.7583333333333333,
+          "hits": 15
+        },
+        {
+          "seconds": 15.141666666666666,
+          "hits": 22
+        },
+        {
+          "seconds": 15.45,
+          "hits": 15
+        },
+        {
+          "seconds": 45.875,
+          "hits": 65
+        },
+        {
+          "seconds": 25.825,
+          "hits": 20
+        },
+        {
+          "seconds": 1.9416666666666667,
+          "hits": 4
+        },
+        {
+          "seconds": 44.88333333333333,
+          "hits": 43
+        },
+        {
+          "seconds": 5.716666666666667,
+          "hits": 14
+        },
+        {
+          "seconds": 4.016666666666667,
+          "hits": 8
+        },
+        {
+          "seconds": 82.06666666666666,
+          "hits": 85
+        },
+        {
+          "seconds": 35.266666666666666,
+          "hits": 44
+        },
+        {
+          "seconds": 23.875,
+          "hits": 61
+        },
+        {
+          "seconds": 27.808333333333334,
+          "hits": 31
+        },
+        {
+          "seconds": 11.291666666666666,
+          "hits": 18
+        },
+        {
+          "seconds": 30.391666666666666,
+          "hits": 43
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.11666666666666665,
+        "maxNoHit": 8.391666666666831,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 7
+      }
+    },
+    {
+      "seed": 42,
+      "material": "rubber",
+      "size": "standard",
+      "policy": "follow",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 2.8166666666666664,
+          "hits": 5
+        },
+        {
+          "seconds": 78.75,
+          "hits": 86
+        },
+        {
+          "seconds": 13.45,
+          "hits": 8
+        },
+        {
+          "seconds": 49.075,
+          "hits": 33
+        },
+        {
+          "seconds": 100.6,
+          "hits": 27
+        },
+        {
+          "seconds": 34.80833333333333,
+          "hits": 29
+        },
+        {
+          "seconds": 8.7,
+          "hits": 11
+        },
+        {
+          "seconds": 17.825,
+          "hits": 17
+        },
+        {
+          "seconds": 24.741666666666667,
+          "hits": 29
+        },
+        {
+          "seconds": 40.225,
+          "hits": 48
+        },
+        {
+          "seconds": 119.625,
+          "hits": 92
+        },
+        {
+          "seconds": 52.708333333333336,
+          "hits": 52
+        },
+        {
+          "seconds": 24.575,
+          "hits": 7
+        },
+        {
+          "seconds": 75.725,
+          "hits": 107
+        },
+        {
+          "seconds": 26.78333333333333,
+          "hits": 25
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.16666666666666666,
+        "maxNoHit": 14.641666666666476,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 5
+      }
+    },
+    {
+      "seed": 42,
+      "material": "rubber",
+      "size": "standard",
+      "policy": "steer",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 6.225,
+          "hits": 12
+        },
+        {
+          "seconds": 60.583333333333336,
+          "hits": 72
+        },
+        {
+          "seconds": 55.858333333333334,
+          "hits": 15
+        },
+        {
+          "seconds": 67.30833333333334,
+          "hits": 38
+        },
+        {
+          "seconds": 2.183333333333333,
+          "hits": 2
+        },
+        {
+          "seconds": 73.73333333333333,
+          "hits": 58
+        },
+        {
+          "seconds": 30.083333333333332,
+          "hits": 21
+        },
+        {
+          "seconds": 65.025,
+          "hits": 36
+        },
+        {
+          "seconds": 48.891666666666666,
+          "hits": 23
+        },
+        {
+          "seconds": 44.90833333333333,
+          "hits": 39
+        },
+        {
+          "seconds": 63.78333333333333,
+          "hits": 39
+        },
+        {
+          "seconds": 127.975,
+          "hits": 79
+        },
+        {
+          "seconds": 53.291666666666664,
+          "hits": 32
+        },
+        {
+          "seconds": 100.13333333333333,
+          "hits": 82
+        },
+        {
+          "seconds": 2.183333333333333,
+          "hits": 2
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.18333333333333332,
+        "maxNoHit": 12.166666666666616,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 6
+      }
+    },
+    {
+      "seed": 42,
+      "material": "rubber",
+      "size": "large",
+      "policy": "follow",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 22.966666666666665,
+          "hits": 21
+        },
+        {
+          "seconds": 164.39166666666665,
+          "hits": 87
+        },
+        {
+          "seconds": 193.74166666666667,
+          "hits": 60
+        },
+        {
+          "seconds": 138.51666666666665,
+          "hits": 64
+        },
+        {
+          "seconds": 31.125,
+          "hits": 11
+        },
+        {
+          "seconds": 95.525,
+          "hits": 39
+        },
+        {
+          "seconds": 51.99166666666667,
+          "hits": 18
+        },
+        {
+          "seconds": 67.9,
+          "hits": 29
+        },
+        {
+          "seconds": 170.19166666666666,
+          "hits": 71
+        },
+        {
+          "seconds": 51.6,
+          "hits": 38
+        },
+        {
+          "seconds": 146.325,
+          "hits": 52
+        },
+        {
+          "seconds": 73.85833333333333,
+          "hits": 27
+        },
+        {
+          "seconds": 113.23333333333333,
+          "hits": 57
+        },
+        {
+          "seconds": 64.85833333333333,
+          "hits": 48
+        },
+        {
+          "seconds": 26.191666666666666,
+          "hits": 17
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 1.6999999999999964,
+        "maxNoHit": 19.066666666666226,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 5
+      }
+    },
+    {
+      "seed": 42,
+      "material": "rubber",
+      "size": "large",
+      "policy": "steer",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 22.966666666666665,
+          "hits": 21
+        },
+        {
+          "seconds": 149.94166666666666,
+          "hits": 87
+        },
+        {
+          "seconds": 176.58333333333334,
+          "hits": 60
+        },
+        {
+          "seconds": 168.94166666666666,
+          "hits": 75
+        },
+        {
+          "seconds": 96.35833333333333,
+          "hits": 35
+        },
+        {
+          "seconds": 108.54166666666667,
+          "hits": 58
+        },
+        {
+          "seconds": 139.50833333333333,
+          "hits": 61
+        },
+        {
+          "seconds": 18.516666666666666,
+          "hits": 19
+        },
+        {
+          "seconds": 268.9083333333333,
+          "hits": 88
+        },
+        {
+          "seconds": 33.641666666666666,
+          "hits": 39
+        },
+        {
+          "seconds": 16.375,
+          "hits": 6
+        },
+        {
+          "seconds": 187.50833333333333,
+          "hits": 147
+        },
+        {
+          "seconds": 87.76666666666667,
+          "hits": 47
+        },
+        {
+          "seconds": 595.5166666666667,
+          "hits": 165
+        },
+        {
+          "seconds": 258.1583333333333,
+          "hits": 50
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.19999999999999998,
+        "maxNoHit": 18.016666666666286,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 6
+      }
+    },
+    {
+      "seed": 739,
+      "material": "steel",
+      "size": "small",
+      "policy": "follow",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 12.816666666666666,
+          "hits": 18
+        },
+        {
+          "seconds": 27.45,
+          "hits": 20
+        },
+        {
+          "seconds": 2.25,
+          "hits": 3
+        },
+        {
+          "seconds": 41.03333333333333,
+          "hits": 64
+        },
+        {
+          "seconds": 6.25,
+          "hits": 10
+        },
+        {
+          "seconds": 2.3583333333333334,
+          "hits": 8
+        },
+        {
+          "seconds": 77.05833333333334,
+          "hits": 72
+        },
+        {
+          "seconds": 5.508333333333333,
+          "hits": 18
+        },
+        {
+          "seconds": 4.333333333333333,
+          "hits": 5
+        },
+        {
+          "seconds": 55.06666666666666,
+          "hits": 109
+        },
+        {
+          "seconds": 4.233333333333333,
+          "hits": 7
+        },
+        {
+          "seconds": 28.466666666666665,
+          "hits": 32
+        },
+        {
+          "seconds": 1.075,
+          "hits": 3
+        },
+        {
+          "seconds": 43.93333333333333,
+          "hits": 65
+        },
+        {
+          "seconds": 27.508333333333333,
+          "hits": 42
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.19999999999999998,
+        "maxNoHit": 9.625000000000094,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 5
+      }
+    },
+    {
+      "seed": 739,
+      "material": "steel",
+      "size": "small",
+      "policy": "steer",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 81.51666666666667,
+          "hits": 47
+        },
+        {
+          "seconds": 10.95,
+          "hits": 10
+        },
+        {
+          "seconds": 93.675,
+          "hits": 49
+        },
+        {
+          "seconds": 11.983333333333333,
+          "hits": 6
+        },
+        {
+          "seconds": 47.483333333333334,
+          "hits": 31
+        },
+        {
+          "seconds": 5.041666666666667,
+          "hits": 4
+        },
+        {
+          "seconds": 89.31666666666666,
+          "hits": 86
+        },
+        {
+          "seconds": 17.558333333333334,
+          "hits": 10
+        },
+        {
+          "seconds": 64.9,
+          "hits": 49
+        },
+        {
+          "seconds": 8.683333333333334,
+          "hits": 14
+        },
+        {
+          "seconds": 27.425,
+          "hits": 29
+        },
+        {
+          "seconds": 88.73333333333333,
+          "hits": 95
+        },
+        {
+          "seconds": 8.383333333333333,
+          "hits": 9
+        },
+        {
+          "seconds": 57.61666666666667,
+          "hits": 55
+        },
+        {
+          "seconds": 3.4166666666666665,
+          "hits": 2
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.12499999999999999,
+        "maxNoHit": 10.775000000000029,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 7
+      }
+    },
+    {
+      "seed": 739,
+      "material": "steel",
+      "size": "standard",
+      "policy": "follow",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 114.13333333333333,
+          "hits": 49
+        },
+        {
+          "seconds": 4.308333333333334,
+          "hits": 6
+        },
+        {
+          "seconds": 65.60833333333333,
+          "hits": 40
+        },
+        {
+          "seconds": 107.31666666666666,
+          "hits": 53
+        },
+        {
+          "seconds": 25.958333333333332,
+          "hits": 11
+        },
+        {
+          "seconds": 2.2416666666666667,
+          "hits": 12
+        },
+        {
+          "seconds": 183.525,
+          "hits": 63
+        },
+        {
+          "seconds": 51.125,
+          "hits": 32
+        },
+        {
+          "seconds": 17.741666666666667,
+          "hits": 12
+        },
+        {
+          "seconds": 55.61666666666667,
+          "hits": 45
+        },
+        {
+          "seconds": 150.425,
+          "hits": 52
+        },
+        {
+          "seconds": 10.075,
+          "hits": 8
+        },
+        {
+          "seconds": 37.78333333333333,
+          "hits": 24
+        },
+        {
+          "seconds": 81.90833333333333,
+          "hits": 49
+        },
+        {
+          "seconds": 3.558333333333333,
+          "hits": 6
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.15,
+        "maxNoHit": 15.599999999999755,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 5
+      }
+    },
+    {
+      "seed": 739,
+      "material": "steel",
+      "size": "standard",
+      "policy": "steer",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 107.925,
+          "hits": 51
+        },
+        {
+          "seconds": 10.583333333333334,
+          "hits": 19
+        },
+        {
+          "seconds": 38.38333333333333,
+          "hits": 16
+        },
+        {
+          "seconds": 43.69166666666666,
+          "hits": 35
+        },
+        {
+          "seconds": 28.741666666666667,
+          "hits": 12
+        },
+        {
+          "seconds": 86.21666666666667,
+          "hits": 62
+        },
+        {
+          "seconds": 16.391666666666666,
+          "hits": 5
+        },
+        {
+          "seconds": 70.05,
+          "hits": 59
+        },
+        {
+          "seconds": 20.458333333333332,
+          "hits": 26
+        },
+        {
+          "seconds": 8.041666666666666,
+          "hits": 10
+        },
+        {
+          "seconds": 128.46666666666667,
+          "hits": 85
+        },
+        {
+          "seconds": 29.058333333333334,
+          "hits": 29
+        },
+        {
+          "seconds": 12.016666666666666,
+          "hits": 6
+        },
+        {
+          "seconds": 174.88333333333333,
+          "hits": 110
+        },
+        {
+          "seconds": 9.491666666666667,
+          "hits": 6
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.26666666666666666,
+        "maxNoHit": 12.608333333333258,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 5
+      }
+    },
+    {
+      "seed": 739,
+      "material": "steel",
+      "size": "large",
+      "policy": "follow",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 88.54166666666667,
+          "hits": 54
+        },
+        {
+          "seconds": 51,
+          "hits": 18
+        },
+        {
+          "seconds": 39.083333333333336,
+          "hits": 18
+        },
+        {
+          "seconds": 68.83333333333333,
+          "hits": 71
+        },
+        {
+          "seconds": 2.4916666666666667,
+          "hits": 2
+        },
+        {
+          "seconds": 2.325,
+          "hits": 3
+        },
+        {
+          "seconds": 105.55833333333334,
+          "hits": 53
+        },
+        {
+          "seconds": 26.208333333333332,
+          "hits": 12
+        },
+        {
+          "seconds": 42.425,
+          "hits": 36
+        },
+        {
+          "seconds": 93.95833333333333,
+          "hits": 55
+        },
+        {
+          "seconds": 25.058333333333334,
+          "hits": 22
+        },
+        {
+          "seconds": 60.916666666666664,
+          "hits": 56
+        },
+        {
+          "seconds": 34.88333333333333,
+          "hits": 24
+        },
+        {
+          "seconds": 56.666666666666664,
+          "hits": 37
+        },
+        {
+          "seconds": 20.558333333333334,
+          "hits": 11
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.3416666666666669,
+        "maxNoHit": 19.01666666666623,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 5
+      }
+    },
+    {
+      "seed": 739,
+      "material": "steel",
+      "size": "large",
+      "policy": "steer",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 110.75,
+          "hits": 54
+        },
+        {
+          "seconds": 57.21666666666667,
+          "hits": 20
+        },
+        {
+          "seconds": 99.00833333333333,
+          "hits": 33
+        },
+        {
+          "seconds": 51.975,
+          "hits": 46
+        },
+        {
+          "seconds": 68.59166666666667,
+          "hits": 14
+        },
+        {
+          "seconds": 61.78333333333333,
+          "hits": 17
+        },
+        {
+          "seconds": 2.5666666666666664,
+          "hits": 1
+        },
+        {
+          "seconds": 2.1166666666666667,
+          "hits": 4
+        },
+        {
+          "seconds": 36.075,
+          "hits": 15
+        },
+        {
+          "seconds": 343.0333333333333,
+          "hits": 164
+        },
+        {
+          "seconds": 5.591666666666667,
+          "hits": 4
+        },
+        {
+          "seconds": 27.733333333333334,
+          "hits": 9
+        },
+        {
+          "seconds": 2.5666666666666664,
+          "hits": 1
+        },
+        {
+          "seconds": 23.325,
+          "hits": 20
+        },
+        {
+          "seconds": 49.65,
+          "hits": 38
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.43333333333333385,
+        "maxNoHit": 21.449999999999424,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 7
+      }
+    },
+    {
+      "seed": 739,
+      "material": "brass",
+      "size": "small",
+      "policy": "follow",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 92.93333333333334,
+          "hits": 54
+        },
+        {
+          "seconds": 33.7,
+          "hits": 14
+        },
+        {
+          "seconds": 19.766666666666666,
+          "hits": 23
+        },
+        {
+          "seconds": 30.216666666666665,
+          "hits": 37
+        },
+        {
+          "seconds": 1.5583333333333333,
+          "hits": 3
+        },
+        {
+          "seconds": 28.416666666666668,
+          "hits": 25
+        },
+        {
+          "seconds": 36.6,
+          "hits": 28
+        },
+        {
+          "seconds": 5.325,
+          "hits": 5
+        },
+        {
+          "seconds": 8.308333333333334,
+          "hits": 5
+        },
+        {
+          "seconds": 102.05,
+          "hits": 96
+        },
+        {
+          "seconds": 10.766666666666666,
+          "hits": 29
+        },
+        {
+          "seconds": 63.483333333333334,
+          "hits": 69
+        },
+        {
+          "seconds": 40.25833333333333,
+          "hits": 24
+        },
+        {
+          "seconds": 68.75833333333333,
+          "hits": 55
+        },
+        {
+          "seconds": 3.0833333333333335,
+          "hits": 3
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.15833333333333333,
+        "maxNoHit": 11.458333333333323,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 6
+      }
+    },
+    {
+      "seed": 739,
+      "material": "brass",
+      "size": "small",
+      "policy": "steer",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 46.925,
+          "hits": 43
+        },
+        {
+          "seconds": 49.09166666666667,
+          "hits": 41
+        },
+        {
+          "seconds": 81.71666666666667,
+          "hits": 23
+        },
+        {
+          "seconds": 23.633333333333333,
+          "hits": 29
+        },
+        {
+          "seconds": 35.88333333333333,
+          "hits": 23
+        },
+        {
+          "seconds": 96.21666666666667,
+          "hits": 33
+        },
+        {
+          "seconds": 79.41666666666667,
+          "hits": 22
+        },
+        {
+          "seconds": 64.35833333333333,
+          "hits": 26
+        },
+        {
+          "seconds": 107.01666666666667,
+          "hits": 31
+        },
+        {
+          "seconds": 33.93333333333333,
+          "hits": 29
+        },
+        {
+          "seconds": 51.8,
+          "hits": 25
+        },
+        {
+          "seconds": 284.93333333333334,
+          "hits": 124
+        },
+        {
+          "seconds": 42.05,
+          "hits": 24
+        },
+        {
+          "seconds": 137.425,
+          "hits": 88
+        },
+        {
+          "seconds": 31.483333333333334,
+          "hits": 30
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.19999999999999998,
+        "maxNoHit": 15.84999999999974,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 6
+      }
+    },
+    {
+      "seed": 739,
+      "material": "brass",
+      "size": "standard",
+      "policy": "follow",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 66.25833333333333,
+          "hits": 54
+        },
+        {
+          "seconds": 63.15,
+          "hits": 34
+        },
+        {
+          "seconds": 63.699999999999996,
+          "hits": 19
+        },
+        {
+          "seconds": 2.85,
+          "hits": 15
+        },
+        {
+          "seconds": 112.73333333333333,
+          "hits": 26
+        },
+        {
+          "seconds": 133.26666666666665,
+          "hits": 77
+        },
+        {
+          "seconds": 31.28333333333333,
+          "hits": 13
+        },
+        {
+          "seconds": 135.975,
+          "hits": 89
+        },
+        {
+          "seconds": 72.94166666666666,
+          "hits": 7
+        },
+        {
+          "seconds": 23.091666666666665,
+          "hits": 27
+        },
+        {
+          "seconds": 240.13333333333333,
+          "hits": 95
+        },
+        {
+          "seconds": 32.275,
+          "hits": 23
+        },
+        {
+          "seconds": 6.841666666666667,
+          "hits": 6
+        },
+        {
+          "seconds": 17.541666666666668,
+          "hits": 49
+        },
+        {
+          "seconds": 64.075,
+          "hits": 52
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.24999999999999997,
+        "maxNoHit": 22.533333333332696,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 7
+      }
+    },
+    {
+      "seed": 739,
+      "material": "brass",
+      "size": "standard",
+      "policy": "steer",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 155.55833333333334,
+          "hits": 54
+        },
+        {
+          "seconds": 265.75,
+          "hits": 53
+        },
+        {
+          "seconds": 7.508333333333333,
+          "hits": 4
+        },
+        {
+          "seconds": 29.008333333333333,
+          "hits": 21
+        },
+        {
+          "seconds": 11.95,
+          "hits": 13
+        },
+        {
+          "seconds": 28.391666666666666,
+          "hits": 29
+        },
+        {
+          "seconds": 15.441666666666666,
+          "hits": 15
+        },
+        {
+          "seconds": 37.733333333333334,
+          "hits": 69
+        },
+        {
+          "seconds": 51.61666666666667,
+          "hits": 30
+        },
+        {
+          "seconds": 23.525,
+          "hits": 23
+        },
+        {
+          "seconds": 126.40833333333333,
+          "hits": 121
+        },
+        {
+          "seconds": 93.35,
+          "hits": 63
+        },
+        {
+          "seconds": 22.258333333333333,
+          "hits": 26
+        },
+        {
+          "seconds": 6.508333333333333,
+          "hits": 6
+        },
+        {
+          "seconds": 33.358333333333334,
+          "hits": 43
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.33333333333333354,
+        "maxNoHit": 20.29999999999949,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 6
+      }
+    },
+    {
+      "seed": 739,
+      "material": "brass",
+      "size": "large",
+      "policy": "follow",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 81.925,
+          "hits": 54
+        },
+        {
+          "seconds": 38.083333333333336,
+          "hits": 11
+        },
+        {
+          "seconds": 21.666666666666668,
+          "hits": 13
+        },
+        {
+          "seconds": 16.741666666666667,
+          "hits": 26
+        },
+        {
+          "seconds": 4.108333333333333,
+          "hits": 8
+        },
+        {
+          "seconds": 79.93333333333334,
+          "hits": 83
+        },
+        {
+          "seconds": 27.616666666666667,
+          "hits": 18
+        },
+        {
+          "seconds": 18.925,
+          "hits": 28
+        },
+        {
+          "seconds": 46.275,
+          "hits": 44
+        },
+        {
+          "seconds": 20.766666666666666,
+          "hits": 15
+        },
+        {
+          "seconds": 69.15,
+          "hits": 42
+        },
+        {
+          "seconds": 37.1,
+          "hits": 46
+        },
+        {
+          "seconds": 11.225,
+          "hits": 7
+        },
+        {
+          "seconds": 18.233333333333334,
+          "hits": 21
+        },
+        {
+          "seconds": 25.308333333333334,
+          "hits": 39
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.18333333333333332,
+        "maxNoHit": 15.483333333333094,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 5
+      }
+    },
+    {
+      "seed": 739,
+      "material": "brass",
+      "size": "large",
+      "policy": "steer",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 63.36666666666667,
+          "hits": 54
+        },
+        {
+          "seconds": 117.80833333333334,
+          "hits": 48
+        },
+        {
+          "seconds": 25.458333333333332,
+          "hits": 5
+        },
+        {
+          "seconds": 55.983333333333334,
+          "hits": 44
+        },
+        {
+          "seconds": 78.9,
+          "hits": 16
+        },
+        {
+          "seconds": 45.38333333333333,
+          "hits": 30
+        },
+        {
+          "seconds": 61.125,
+          "hits": 20
+        },
+        {
+          "seconds": 87.63333333333333,
+          "hits": 64
+        },
+        {
+          "seconds": 2.7,
+          "hits": 5
+        },
+        {
+          "seconds": 27.95,
+          "hits": 46
+        },
+        {
+          "seconds": 38.31666666666666,
+          "hits": 36
+        },
+        {
+          "seconds": 76.6,
+          "hits": 89
+        },
+        {
+          "seconds": 46.34166666666667,
+          "hits": 29
+        },
+        {
+          "seconds": 48.55,
+          "hits": 47
+        },
+        {
+          "seconds": 74.55,
+          "hits": 43
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.33333333333333354,
+        "maxNoHit": 17.67499999999964,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 5
+      }
+    },
+    {
+      "seed": 739,
+      "material": "ceramic",
+      "size": "small",
+      "policy": "follow",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 27.008333333333333,
+          "hits": 38
+        },
+        {
+          "seconds": 23.5,
+          "hits": 38
+        },
+        {
+          "seconds": 22.508333333333333,
+          "hits": 21
+        },
+        {
+          "seconds": 68.225,
+          "hits": 70
+        },
+        {
+          "seconds": 2.558333333333333,
+          "hits": 3
+        },
+        {
+          "seconds": 9.991666666666667,
+          "hits": 29
+        },
+        {
+          "seconds": 1.7833333333333332,
+          "hits": 3
+        },
+        {
+          "seconds": 2.4416666666666664,
+          "hits": 2
+        },
+        {
+          "seconds": 4.5,
+          "hits": 13
+        },
+        {
+          "seconds": 21.53333333333333,
+          "hits": 102
+        },
+        {
+          "seconds": 44.40833333333333,
+          "hits": 92
+        },
+        {
+          "seconds": 1.5166666666666666,
+          "hits": 9
+        },
+        {
+          "seconds": 5.191666666666666,
+          "hits": 30
+        },
+        {
+          "seconds": 60.28333333333333,
+          "hits": 105
+        },
+        {
+          "seconds": 13.441666666666666,
+          "hits": 37
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.12499999999999999,
+        "maxNoHit": 8.350000000000167,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 5
+      }
+    },
+    {
+      "seed": 739,
+      "material": "ceramic",
+      "size": "small",
+      "policy": "steer",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 24.433333333333334,
+          "hits": 40
+        },
+        {
+          "seconds": 160.23333333333332,
+          "hits": 67
+        },
+        {
+          "seconds": 33.61666666666667,
+          "hits": 19
+        },
+        {
+          "seconds": 67.33333333333333,
+          "hits": 73
+        },
+        {
+          "seconds": 4.125,
+          "hits": 13
+        },
+        {
+          "seconds": 29.358333333333334,
+          "hits": 25
+        },
+        {
+          "seconds": 35.99166666666667,
+          "hits": 24
+        },
+        {
+          "seconds": 5.1,
+          "hits": 6
+        },
+        {
+          "seconds": 30.8,
+          "hits": 30
+        },
+        {
+          "seconds": 2.3,
+          "hits": 8
+        },
+        {
+          "seconds": 8.9,
+          "hits": 58
+        },
+        {
+          "seconds": 6.841666666666667,
+          "hits": 17
+        },
+        {
+          "seconds": 30.258333333333333,
+          "hits": 44
+        },
+        {
+          "seconds": 4.6,
+          "hits": 18
+        },
+        {
+          "seconds": 2.5416666666666665,
+          "hits": 5
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.14166666666666666,
+        "maxNoHit": 9.775000000000086,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 9
+      }
+    },
+    {
+      "seed": 739,
+      "material": "ceramic",
+      "size": "standard",
+      "policy": "follow",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 7.158333333333333,
+          "hits": 8
+        },
+        {
+          "seconds": 48.05,
+          "hits": 67
+        },
+        {
+          "seconds": 25.974999999999998,
+          "hits": 16
+        },
+        {
+          "seconds": 23.425,
+          "hits": 16
+        },
+        {
+          "seconds": 15.941666666666666,
+          "hits": 12
+        },
+        {
+          "seconds": 96.90833333333333,
+          "hits": 68
+        },
+        {
+          "seconds": 14.958333333333334,
+          "hits": 16
+        },
+        {
+          "seconds": 28.55,
+          "hits": 29
+        },
+        {
+          "seconds": 26.691666666666666,
+          "hits": 19
+        },
+        {
+          "seconds": 56.46666666666667,
+          "hits": 61
+        },
+        {
+          "seconds": 8.425,
+          "hits": 18
+        },
+        {
+          "seconds": 135.23333333333332,
+          "hits": 130
+        },
+        {
+          "seconds": 48.25833333333333,
+          "hits": 25
+        },
+        {
+          "seconds": 89.925,
+          "hits": 53
+        },
+        {
+          "seconds": 81.53333333333333,
+          "hits": 41
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.11666666666666665,
+        "maxNoHit": 7.483333333333495,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 5
+      }
+    },
+    {
+      "seed": 739,
+      "material": "ceramic",
+      "size": "standard",
+      "policy": "steer",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 7.616666666666666,
+          "hits": 10
+        },
+        {
+          "seconds": 81.325,
+          "hits": 87
+        },
+        {
+          "seconds": 40.19166666666666,
+          "hits": 9
+        },
+        {
+          "seconds": 10.6,
+          "hits": 6
+        },
+        {
+          "seconds": 46.15833333333333,
+          "hits": 30
+        },
+        {
+          "seconds": 9.4,
+          "hits": 10
+        },
+        {
+          "seconds": 14.475,
+          "hits": 14
+        },
+        {
+          "seconds": 64.00833333333333,
+          "hits": 50
+        },
+        {
+          "seconds": 16.566666666666666,
+          "hits": 19
+        },
+        {
+          "seconds": 208.71666666666667,
+          "hits": 129
+        },
+        {
+          "seconds": 27.191666666666666,
+          "hits": 11
+        },
+        {
+          "seconds": 36.13333333333333,
+          "hits": 36
+        },
+        {
+          "seconds": 4.283333333333333,
+          "hits": 25
+        },
+        {
+          "seconds": 89.43333333333334,
+          "hits": 78
+        },
+        {
+          "seconds": 27.108333333333334,
+          "hits": 26
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.15,
+        "maxNoHit": 11.324999999999998,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 7
+      }
+    },
+    {
+      "seed": 739,
+      "material": "ceramic",
+      "size": "large",
+      "policy": "follow",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 39.108333333333334,
+          "hits": 29
+        },
+        {
+          "seconds": 111.36666666666666,
+          "hits": 75
+        },
+        {
+          "seconds": 32,
+          "hits": 3
+        },
+        {
+          "seconds": 70.91666666666667,
+          "hits": 48
+        },
+        {
+          "seconds": 22.175,
+          "hits": 12
+        },
+        {
+          "seconds": 1.6916666666666667,
+          "hits": 5
+        },
+        {
+          "seconds": 5.683333333333334,
+          "hits": 3
+        },
+        {
+          "seconds": 59.96666666666667,
+          "hits": 64
+        },
+        {
+          "seconds": 19.766666666666666,
+          "hits": 17
+        },
+        {
+          "seconds": 86.14166666666667,
+          "hits": 95
+        },
+        {
+          "seconds": 51.4,
+          "hits": 42
+        },
+        {
+          "seconds": 146.03333333333333,
+          "hits": 79
+        },
+        {
+          "seconds": 133.76666666666665,
+          "hits": 35
+        },
+        {
+          "seconds": 209.13333333333333,
+          "hits": 91
+        },
+        {
+          "seconds": 17.65,
+          "hits": 12
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.15,
+        "maxNoHit": 20.191666666666162,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 6
+      }
+    },
+    {
+      "seed": 739,
+      "material": "ceramic",
+      "size": "large",
+      "policy": "steer",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 109.46666666666667,
+          "hits": 54
+        },
+        {
+          "seconds": 29.708333333333332,
+          "hits": 16
+        },
+        {
+          "seconds": 37.31666666666666,
+          "hits": 20
+        },
+        {
+          "seconds": 211.79999999999998,
+          "hits": 77
+        },
+        {
+          "seconds": 4.083333333333333,
+          "hits": 2
+        },
+        {
+          "seconds": 182.03333333333333,
+          "hits": 105
+        },
+        {
+          "seconds": 24.391666666666666,
+          "hits": 11
+        },
+        {
+          "seconds": 159.60833333333332,
+          "hits": 76
+        },
+        {
+          "seconds": 55.375,
+          "hits": 43
+        },
+        {
+          "seconds": 22.116666666666667,
+          "hits": 14
+        },
+        {
+          "seconds": 43.78333333333333,
+          "hits": 21
+        },
+        {
+          "seconds": 158.825,
+          "hits": 122
+        },
+        {
+          "seconds": 58.74166666666667,
+          "hits": 21
+        },
+        {
+          "seconds": 207.16666666666666,
+          "hits": 109
+        },
+        {
+          "seconds": 2.716666666666667,
+          "hits": 2
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.3250000000000002,
+        "maxNoHit": 21.391666666666094,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 6
+      }
+    },
+    {
+      "seed": 739,
+      "material": "rubber",
+      "size": "small",
+      "policy": "follow",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 9.45,
+          "hits": 26
+        },
+        {
+          "seconds": 16.225,
+          "hits": 16
+        },
+        {
+          "seconds": 2.783333333333333,
+          "hits": 10
+        },
+        {
+          "seconds": 2.475,
+          "hits": 6
+        },
+        {
+          "seconds": 28.016666666666666,
+          "hits": 29
+        },
+        {
+          "seconds": 52.458333333333336,
+          "hits": 77
+        },
+        {
+          "seconds": 0.7583333333333333,
+          "hits": 3
+        },
+        {
+          "seconds": 99.24166666666666,
+          "hits": 84
+        },
+        {
+          "seconds": 88.40833333333333,
+          "hits": 46
+        },
+        {
+          "seconds": 10.175,
+          "hits": 12
+        },
+        {
+          "seconds": 8.016666666666666,
+          "hits": 7
+        },
+        {
+          "seconds": 2.183333333333333,
+          "hits": 27
+        },
+        {
+          "seconds": 2.4916666666666667,
+          "hits": 9
+        },
+        {
+          "seconds": 4.475,
+          "hits": 30
+        },
+        {
+          "seconds": 50.68333333333333,
+          "hits": 126
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.16666666666666666,
+        "maxNoHit": 9.70000000000009,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 6
+      }
+    },
+    {
+      "seed": 739,
+      "material": "rubber",
+      "size": "small",
+      "policy": "steer",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 9.45,
+          "hits": 26
+        },
+        {
+          "seconds": 33.825,
+          "hits": 48
+        },
+        {
+          "seconds": 0.6083333333333333,
+          "hits": 3
+        },
+        {
+          "seconds": 14.766666666666666,
+          "hits": 19
+        },
+        {
+          "seconds": 5.958333333333333,
+          "hits": 11
+        },
+        {
+          "seconds": 28.733333333333334,
+          "hits": 18
+        },
+        {
+          "seconds": 15.575,
+          "hits": 27
+        },
+        {
+          "seconds": 35.61666666666667,
+          "hits": 57
+        },
+        {
+          "seconds": 5.175,
+          "hits": 14
+        },
+        {
+          "seconds": 8.775,
+          "hits": 14
+        },
+        {
+          "seconds": 8.65,
+          "hits": 38
+        },
+        {
+          "seconds": 3.6083333333333334,
+          "hits": 10
+        },
+        {
+          "seconds": 2.808333333333333,
+          "hits": 7
+        },
+        {
+          "seconds": 7.291666666666667,
+          "hits": 18
+        },
+        {
+          "seconds": 35.583333333333336,
+          "hits": 125
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.20833333333333331,
+        "maxNoHit": 4.300000000000003,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 3
+      }
+    },
+    {
+      "seed": 739,
+      "material": "rubber",
+      "size": "standard",
+      "policy": "follow",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 68.28333333333333,
+          "hits": 53
+        },
+        {
+          "seconds": 52.36666666666667,
+          "hits": 43
+        },
+        {
+          "seconds": 54.50833333333333,
+          "hits": 11
+        },
+        {
+          "seconds": 6.191666666666666,
+          "hits": 7
+        },
+        {
+          "seconds": 17.466666666666665,
+          "hits": 7
+        },
+        {
+          "seconds": 46.30833333333333,
+          "hits": 38
+        },
+        {
+          "seconds": 96.65,
+          "hits": 56
+        },
+        {
+          "seconds": 13.875,
+          "hits": 19
+        },
+        {
+          "seconds": 21.65,
+          "hits": 16
+        },
+        {
+          "seconds": 30.683333333333334,
+          "hits": 26
+        },
+        {
+          "seconds": 64.16666666666667,
+          "hits": 44
+        },
+        {
+          "seconds": 4.333333333333333,
+          "hits": 29
+        },
+        {
+          "seconds": 53.53333333333333,
+          "hits": 68
+        },
+        {
+          "seconds": 8.316666666666666,
+          "hits": 37
+        },
+        {
+          "seconds": 110.38333333333333,
+          "hits": 71
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.11666666666666665,
+        "maxNoHit": 9.650000000000093,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 5
+      }
+    },
+    {
+      "seed": 739,
+      "material": "rubber",
+      "size": "standard",
+      "policy": "steer",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 38.45,
+          "hits": 48
+        },
+        {
+          "seconds": 51.958333333333336,
+          "hits": 37
+        },
+        {
+          "seconds": 64.525,
+          "hits": 22
+        },
+        {
+          "seconds": 59.35,
+          "hits": 40
+        },
+        {
+          "seconds": 14.141666666666666,
+          "hits": 6
+        },
+        {
+          "seconds": 8.125,
+          "hits": 11
+        },
+        {
+          "seconds": 13.058333333333334,
+          "hits": 12
+        },
+        {
+          "seconds": 32.80833333333333,
+          "hits": 44
+        },
+        {
+          "seconds": 31.791666666666668,
+          "hits": 31
+        },
+        {
+          "seconds": 10.075,
+          "hits": 12
+        },
+        {
+          "seconds": 3.2416666666666667,
+          "hits": 10
+        },
+        {
+          "seconds": 9.15,
+          "hits": 10
+        },
+        {
+          "seconds": 34.78333333333333,
+          "hits": 79
+        },
+        {
+          "seconds": 2.058333333333333,
+          "hits": 10
+        },
+        {
+          "seconds": 20.433333333333334,
+          "hits": 44
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.09999999999999999,
+        "maxNoHit": 10.775000000000029,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 6
+      }
+    },
+    {
+      "seed": 739,
+      "material": "rubber",
+      "size": "large",
+      "policy": "follow",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 24.791666666666668,
+          "hits": 25
+        },
+        {
+          "seconds": 71.30833333333334,
+          "hits": 58
+        },
+        {
+          "seconds": 5.833333333333333,
+          "hits": 5
+        },
+        {
+          "seconds": 145.5,
+          "hits": 68
+        },
+        {
+          "seconds": 29.916666666666668,
+          "hits": 23
+        },
+        {
+          "seconds": 20.975,
+          "hits": 19
+        },
+        {
+          "seconds": 247.51666666666665,
+          "hits": 97
+        },
+        {
+          "seconds": 46.88333333333333,
+          "hits": 27
+        },
+        {
+          "seconds": 29.775,
+          "hits": 13
+        },
+        {
+          "seconds": 120.14166666666667,
+          "hits": 89
+        },
+        {
+          "seconds": 69.44166666666666,
+          "hits": 30
+        },
+        {
+          "seconds": 308.3833333333333,
+          "hits": 145
+        },
+        {
+          "seconds": 98.325,
+          "hits": 63
+        },
+        {
+          "seconds": 42.733333333333334,
+          "hits": 23
+        },
+        {
+          "seconds": 225.25833333333333,
+          "hits": 101
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.175,
+        "maxNoHit": 17.541666666666313,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 5
+      }
+    },
+    {
+      "seed": 739,
+      "material": "rubber",
+      "size": "large",
+      "policy": "steer",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 29.40833333333333,
+          "hits": 35
+        },
+        {
+          "seconds": 65.3,
+          "hits": 49
+        },
+        {
+          "seconds": 83.64166666666667,
+          "hits": 23
+        },
+        {
+          "seconds": 17.866666666666667,
+          "hits": 25
+        },
+        {
+          "seconds": 80.05,
+          "hits": 35
+        },
+        {
+          "seconds": 207.11666666666667,
+          "hits": 41
+        },
+        {
+          "seconds": 212.67499999999998,
+          "hits": 51
+        },
+        {
+          "seconds": 82.65,
+          "hits": 65
+        },
+        {
+          "seconds": 30.208333333333332,
+          "hits": 12
+        },
+        {
+          "seconds": 48.99166666666667,
+          "hits": 42
+        },
+        {
+          "seconds": 86.98333333333333,
+          "hits": 36
+        },
+        {
+          "seconds": 9.208333333333334,
+          "hits": 7
+        },
+        {
+          "seconds": 2.875,
+          "hits": 4
+        },
+        {
+          "seconds": 39.7,
+          "hits": 80
+        },
+        {
+          "seconds": 108.40833333333333,
+          "hits": 98
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.3000000000000001,
+        "maxNoHit": 17.27499999999966,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 5
+      }
+    },
+    {
+      "seed": 2217,
+      "material": "steel",
+      "size": "small",
+      "policy": "follow",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 68.775,
+          "hits": 52
+        },
+        {
+          "seconds": 31.866666666666667,
+          "hits": 20
+        },
+        {
+          "seconds": 89.84166666666667,
+          "hits": 41
+        },
+        {
+          "seconds": 43.85,
+          "hits": 31
+        },
+        {
+          "seconds": 5.475,
+          "hits": 2
+        },
+        {
+          "seconds": 47.75,
+          "hits": 37
+        },
+        {
+          "seconds": 17.816666666666666,
+          "hits": 12
+        },
+        {
+          "seconds": 9.183333333333334,
+          "hits": 51
+        },
+        {
+          "seconds": 5.433333333333334,
+          "hits": 7
+        },
+        {
+          "seconds": 1.7833333333333332,
+          "hits": 25
+        },
+        {
+          "seconds": 66.275,
+          "hits": 80
+        },
+        {
+          "seconds": 50.9,
+          "hits": 37
+        },
+        {
+          "seconds": 27.266666666666666,
+          "hits": 17
+        },
+        {
+          "seconds": 84.29166666666667,
+          "hits": 86
+        },
+        {
+          "seconds": 43.791666666666664,
+          "hits": 35
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.10833333333333332,
+        "maxNoHit": 13.899999999999851,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 5
+      }
+    },
+    {
+      "seed": 2217,
+      "material": "steel",
+      "size": "small",
+      "policy": "steer",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 51.13333333333333,
+          "hits": 48
+        },
+        {
+          "seconds": 28.058333333333334,
+          "hits": 26
+        },
+        {
+          "seconds": 21.766666666666666,
+          "hits": 21
+        },
+        {
+          "seconds": 4.725,
+          "hits": 13
+        },
+        {
+          "seconds": 1.8416666666666666,
+          "hits": 11
+        },
+        {
+          "seconds": 35.266666666666666,
+          "hits": 48
+        },
+        {
+          "seconds": 55.199999999999996,
+          "hits": 33
+        },
+        {
+          "seconds": 7.325,
+          "hits": 12
+        },
+        {
+          "seconds": 23.683333333333334,
+          "hits": 27
+        },
+        {
+          "seconds": 83.46666666666667,
+          "hits": 121
+        },
+        {
+          "seconds": 44.96666666666667,
+          "hits": 24
+        },
+        {
+          "seconds": 4.333333333333333,
+          "hits": 8
+        },
+        {
+          "seconds": 30.716666666666665,
+          "hits": 25
+        },
+        {
+          "seconds": 35.675,
+          "hits": 37
+        },
+        {
+          "seconds": 23.833333333333332,
+          "hits": 35
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.10833333333333332,
+        "maxNoHit": 13.666666666666531,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 3
+      }
+    },
+    {
+      "seed": 2217,
+      "material": "steel",
+      "size": "standard",
+      "policy": "follow",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 40.725,
+          "hits": 52
+        },
+        {
+          "seconds": 52.416666666666664,
+          "hits": 35
+        },
+        {
+          "seconds": 9.066666666666666,
+          "hits": 6
+        },
+        {
+          "seconds": 83.6,
+          "hits": 49
+        },
+        {
+          "seconds": 52.141666666666666,
+          "hits": 14
+        },
+        {
+          "seconds": 147.88333333333333,
+          "hits": 88
+        },
+        {
+          "seconds": 8.666666666666666,
+          "hits": 4
+        },
+        {
+          "seconds": 32.608333333333334,
+          "hits": 23
+        },
+        {
+          "seconds": 18.091666666666665,
+          "hits": 15
+        },
+        {
+          "seconds": 86.975,
+          "hits": 75
+        },
+        {
+          "seconds": 4.183333333333334,
+          "hits": 6
+        },
+        {
+          "seconds": 120.25,
+          "hits": 105
+        },
+        {
+          "seconds": 15.2,
+          "hits": 15
+        },
+        {
+          "seconds": 18.75,
+          "hits": 52
+        },
+        {
+          "seconds": 9.525,
+          "hits": 11
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.19999999999999998,
+        "maxNoHit": 12.87499999999991,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 2
+      }
+    },
+    {
+      "seed": 2217,
+      "material": "steel",
+      "size": "standard",
+      "policy": "steer",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 79.81666666666666,
+          "hits": 60
+        },
+        {
+          "seconds": 93.75,
+          "hits": 38
+        },
+        {
+          "seconds": 50.916666666666664,
+          "hits": 15
+        },
+        {
+          "seconds": 6.083333333333333,
+          "hits": 3
+        },
+        {
+          "seconds": 3.8666666666666667,
+          "hits": 16
+        },
+        {
+          "seconds": 6.55,
+          "hits": 24
+        },
+        {
+          "seconds": 65.25833333333333,
+          "hits": 51
+        },
+        {
+          "seconds": 21.566666666666666,
+          "hits": 20
+        },
+        {
+          "seconds": 38.88333333333333,
+          "hits": 19
+        },
+        {
+          "seconds": 139.4,
+          "hits": 87
+        },
+        {
+          "seconds": 42.88333333333333,
+          "hits": 22
+        },
+        {
+          "seconds": 93.55,
+          "hits": 99
+        },
+        {
+          "seconds": 99.63333333333333,
+          "hits": 38
+        },
+        {
+          "seconds": 70.75833333333333,
+          "hits": 43
+        },
+        {
+          "seconds": 19.65,
+          "hits": 16
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.12499999999999999,
+        "maxNoHit": 19.77499999999952,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 5
+      }
+    },
+    {
+      "seed": 2217,
+      "material": "steel",
+      "size": "large",
+      "policy": "follow",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 73.14166666666667,
+          "hits": 60
+        },
+        {
+          "seconds": 61.65833333333333,
+          "hits": 19
+        },
+        {
+          "seconds": 28.125,
+          "hits": 12
+        },
+        {
+          "seconds": 5.533333333333333,
+          "hits": 6
+        },
+        {
+          "seconds": 48.958333333333336,
+          "hits": 36
+        },
+        {
+          "seconds": 120.43333333333334,
+          "hits": 86
+        },
+        {
+          "seconds": 50.05833333333333,
+          "hits": 13
+        },
+        {
+          "seconds": 4.141666666666667,
+          "hits": 3
+        },
+        {
+          "seconds": 92.01666666666667,
+          "hits": 43
+        },
+        {
+          "seconds": 19.091666666666665,
+          "hits": 19
+        },
+        {
+          "seconds": 59.833333333333336,
+          "hits": 42
+        },
+        {
+          "seconds": 148.19166666666666,
+          "hits": 109
+        },
+        {
+          "seconds": 27.608333333333334,
+          "hits": 21
+        },
+        {
+          "seconds": 258.18333333333334,
+          "hits": 148
+        },
+        {
+          "seconds": 36.49166666666667,
+          "hits": 5
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 1.0416666666666654,
+        "maxNoHit": 19.041666666666227,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 5
+      }
+    },
+    {
+      "seed": 2217,
+      "material": "steel",
+      "size": "large",
+      "policy": "steer",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 98,
+          "hits": 56
+        },
+        {
+          "seconds": 89.525,
+          "hits": 57
+        },
+        {
+          "seconds": 113.85,
+          "hits": 60
+        },
+        {
+          "seconds": 80.51666666666667,
+          "hits": 34
+        },
+        {
+          "seconds": 48.275,
+          "hits": 11
+        },
+        {
+          "seconds": 114.43333333333334,
+          "hits": 84
+        },
+        {
+          "seconds": 43.641666666666666,
+          "hits": 16
+        },
+        {
+          "seconds": 86.85,
+          "hits": 61
+        },
+        {
+          "seconds": 20.041666666666668,
+          "hits": 9
+        },
+        {
+          "seconds": 132.475,
+          "hits": 92
+        },
+        {
+          "seconds": 101.98333333333333,
+          "hits": 28
+        },
+        {
+          "seconds": 91.5,
+          "hits": 52
+        },
+        {
+          "seconds": 30.65833333333333,
+          "hits": 14
+        },
+        {
+          "seconds": 145.09166666666667,
+          "hits": 93
+        },
+        {
+          "seconds": 62.525,
+          "hits": 39
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.21666666666666665,
+        "maxNoHit": 18.391666666666264,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 6
+      }
+    },
+    {
+      "seed": 2217,
+      "material": "brass",
+      "size": "small",
+      "policy": "follow",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 76.64166666666667,
+          "hits": 54
+        },
+        {
+          "seconds": 11.966666666666667,
+          "hits": 23
+        },
+        {
+          "seconds": 97.425,
+          "hits": 36
+        },
+        {
+          "seconds": 27,
+          "hits": 15
+        },
+        {
+          "seconds": 29.849999999999998,
+          "hits": 9
+        },
+        {
+          "seconds": 33.166666666666664,
+          "hits": 20
+        },
+        {
+          "seconds": 49.791666666666664,
+          "hits": 32
+        },
+        {
+          "seconds": 67,
+          "hits": 59
+        },
+        {
+          "seconds": 67.6,
+          "hits": 38
+        },
+        {
+          "seconds": 76.54166666666667,
+          "hits": 62
+        },
+        {
+          "seconds": 118.56666666666666,
+          "hits": 60
+        },
+        {
+          "seconds": 32.375,
+          "hits": 19
+        },
+        {
+          "seconds": 52.61666666666667,
+          "hits": 29
+        },
+        {
+          "seconds": 38.49166666666667,
+          "hits": 35
+        },
+        {
+          "seconds": 6.366666666666666,
+          "hits": 5
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.175,
+        "maxNoHit": 15.416666666666432,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 5
+      }
+    },
+    {
+      "seed": 2217,
+      "material": "brass",
+      "size": "small",
+      "policy": "steer",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 90.175,
+          "hits": 60
+        },
+        {
+          "seconds": 157.66666666666666,
+          "hits": 53
+        },
+        {
+          "seconds": 1.35,
+          "hits": 6
+        },
+        {
+          "seconds": 27.45,
+          "hits": 20
+        },
+        {
+          "seconds": 120.24166666666666,
+          "hits": 68
+        },
+        {
+          "seconds": 19.633333333333333,
+          "hits": 36
+        },
+        {
+          "seconds": 50.125,
+          "hits": 51
+        },
+        {
+          "seconds": 18.458333333333332,
+          "hits": 22
+        },
+        {
+          "seconds": 59.925,
+          "hits": 37
+        },
+        {
+          "seconds": 53.449999999999996,
+          "hits": 64
+        },
+        {
+          "seconds": 16.133333333333333,
+          "hits": 12
+        },
+        {
+          "seconds": 33.49166666666667,
+          "hits": 37
+        },
+        {
+          "seconds": 92.66666666666667,
+          "hits": 64
+        },
+        {
+          "seconds": 67.9,
+          "hits": 56
+        },
+        {
+          "seconds": 66.75,
+          "hits": 61
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.2833333333333334,
+        "maxNoHit": 14.674999999999807,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 6
+      }
+    },
+    {
+      "seed": 2217,
+      "material": "brass",
+      "size": "standard",
+      "policy": "follow",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 59.81666666666666,
+          "hits": 51
+        },
+        {
+          "seconds": 70.45833333333333,
+          "hits": 32
+        },
+        {
+          "seconds": 30.925,
+          "hits": 26
+        },
+        {
+          "seconds": 32.275,
+          "hits": 25
+        },
+        {
+          "seconds": 81.49166666666666,
+          "hits": 31
+        },
+        {
+          "seconds": 27.991666666666667,
+          "hits": 23
+        },
+        {
+          "seconds": 3.4916666666666667,
+          "hits": 3
+        },
+        {
+          "seconds": 204.75,
+          "hits": 120
+        },
+        {
+          "seconds": 56.31666666666666,
+          "hits": 34
+        },
+        {
+          "seconds": 43.15,
+          "hits": 43
+        },
+        {
+          "seconds": 69.19166666666666,
+          "hits": 54
+        },
+        {
+          "seconds": 22.416666666666668,
+          "hits": 26
+        },
+        {
+          "seconds": 299.1166666666667,
+          "hits": 157
+        },
+        {
+          "seconds": 83.58333333333333,
+          "hits": 54
+        },
+        {
+          "seconds": 42.525,
+          "hits": 23
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.275,
+        "maxNoHit": 19.274999999999547,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 6
+      }
+    },
+    {
+      "seed": 2217,
+      "material": "brass",
+      "size": "standard",
+      "policy": "steer",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 90.85,
+          "hits": 60
+        },
+        {
+          "seconds": 33.68333333333333,
+          "hits": 11
+        },
+        {
+          "seconds": 25.933333333333334,
+          "hits": 24
+        },
+        {
+          "seconds": 22.425,
+          "hits": 49
+        },
+        {
+          "seconds": 111.8,
+          "hits": 21
+        },
+        {
+          "seconds": 325.225,
+          "hits": 75
+        },
+        {
+          "seconds": 22.425,
+          "hits": 21
+        },
+        {
+          "seconds": 331.26666666666665,
+          "hits": 139
+        },
+        {
+          "seconds": 56.18333333333333,
+          "hits": 8
+        },
+        {
+          "seconds": 26.941666666666666,
+          "hits": 22
+        },
+        {
+          "seconds": 17.766666666666666,
+          "hits": 25
+        },
+        {
+          "seconds": 31.15,
+          "hits": 28
+        },
+        {
+          "seconds": 29.25,
+          "hits": 22
+        },
+        {
+          "seconds": 40.34166666666667,
+          "hits": 48
+        },
+        {
+          "seconds": 67.575,
+          "hits": 95
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.2333333333333333,
+        "maxNoHit": 25.449999999999196,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 7
+      }
+    },
+    {
+      "seed": 2217,
+      "material": "brass",
+      "size": "large",
+      "policy": "follow",
+      "phase": "over",
+      "wave": 14,
+      "shots": [
+        {
+          "seconds": 74.84166666666667,
+          "hits": 60
+        },
+        {
+          "seconds": 63.55833333333333,
+          "hits": 31
+        },
+        {
+          "seconds": 53.61666666666667,
+          "hits": 22
+        },
+        {
+          "seconds": 24.391666666666666,
+          "hits": 19
+        },
+        {
+          "seconds": 132.275,
+          "hits": 33
+        },
+        {
+          "seconds": 20.541666666666668,
+          "hits": 24
+        },
+        {
+          "seconds": 56.43333333333333,
+          "hits": 37
+        },
+        {
+          "seconds": 23.808333333333334,
+          "hits": 31
+        },
+        {
+          "seconds": 140.075,
+          "hits": 68
+        },
+        {
+          "seconds": 27.066666666666666,
+          "hits": 23
+        },
+        {
+          "seconds": 33.63333333333333,
+          "hits": 29
+        },
+        {
+          "seconds": 16.116666666666667,
+          "hits": 19
+        },
+        {
+          "seconds": 134.96666666666667,
+          "hits": 71
+        },
+        {
+          "seconds": 110.25833333333333,
+          "hits": 104
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.2333333333333333,
+        "maxNoHit": 18.166666666666277,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 6
+      }
+    },
+    {
+      "seed": 2217,
+      "material": "brass",
+      "size": "large",
+      "policy": "steer",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 93.46666666666667,
+          "hits": 60
+        },
+        {
+          "seconds": 101.36666666666666,
+          "hits": 35
+        },
+        {
+          "seconds": 41.78333333333333,
+          "hits": 18
+        },
+        {
+          "seconds": 65.8,
+          "hits": 39
+        },
+        {
+          "seconds": 85.325,
+          "hits": 13
+        },
+        {
+          "seconds": 31.28333333333333,
+          "hits": 29
+        },
+        {
+          "seconds": 112.78333333333333,
+          "hits": 43
+        },
+        {
+          "seconds": 55.53333333333333,
+          "hits": 47
+        },
+        {
+          "seconds": 200.875,
+          "hits": 41
+        },
+        {
+          "seconds": 20.28333333333333,
+          "hits": 16
+        },
+        {
+          "seconds": 83.875,
+          "hits": 56
+        },
+        {
+          "seconds": 293.975,
+          "hits": 118
+        },
+        {
+          "seconds": 40.916666666666664,
+          "hits": 34
+        },
+        {
+          "seconds": 219.975,
+          "hits": 127
+        },
+        {
+          "seconds": 16.208333333333332,
+          "hits": 15
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.20833333333333331,
+        "maxNoHit": 20.549999999999475,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 6
+      }
+    },
+    {
+      "seed": 2217,
+      "material": "ceramic",
+      "size": "small",
+      "policy": "follow",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 4.941666666666666,
+          "hits": 16
+        },
+        {
+          "seconds": 5.083333333333333,
+          "hits": 34
+        },
+        {
+          "seconds": 5.341666666666667,
+          "hits": 19
+        },
+        {
+          "seconds": 13.816666666666666,
+          "hits": 34
+        },
+        {
+          "seconds": 4.925,
+          "hits": 27
+        },
+        {
+          "seconds": 30.991666666666667,
+          "hits": 38
+        },
+        {
+          "seconds": 3.058333333333333,
+          "hits": 3
+        },
+        {
+          "seconds": 5.25,
+          "hits": 24
+        },
+        {
+          "seconds": 21.141666666666666,
+          "hits": 43
+        },
+        {
+          "seconds": 1.5833333333333333,
+          "hits": 9
+        },
+        {
+          "seconds": 2.7583333333333333,
+          "hits": 4
+        },
+        {
+          "seconds": 15.941666666666666,
+          "hits": 80
+        },
+        {
+          "seconds": 2.475,
+          "hits": 13
+        },
+        {
+          "seconds": 65.58333333333333,
+          "hits": 148
+        },
+        {
+          "seconds": 43.31666666666666,
+          "hits": 33
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.08333333333333333,
+        "maxNoHit": 4.716666666666691,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 1
+      }
+    },
+    {
+      "seed": 2217,
+      "material": "ceramic",
+      "size": "small",
+      "policy": "steer",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 4.933333333333334,
+          "hits": 16
+        },
+        {
+          "seconds": 7,
+          "hits": 35
+        },
+        {
+          "seconds": 2.2333333333333334,
+          "hits": 8
+        },
+        {
+          "seconds": 16.65833333333333,
+          "hits": 45
+        },
+        {
+          "seconds": 18.35,
+          "hits": 17
+        },
+        {
+          "seconds": 6.283333333333333,
+          "hits": 27
+        },
+        {
+          "seconds": 9.308333333333334,
+          "hits": 31
+        },
+        {
+          "seconds": 51.50833333333333,
+          "hits": 112
+        },
+        {
+          "seconds": 25.03333333333333,
+          "hits": 31
+        },
+        {
+          "seconds": 91.71666666666667,
+          "hits": 74
+        },
+        {
+          "seconds": 34.38333333333333,
+          "hits": 20
+        },
+        {
+          "seconds": 4.366666666666666,
+          "hits": 5
+        },
+        {
+          "seconds": 103.06666666666666,
+          "hits": 82
+        },
+        {
+          "seconds": 37.325,
+          "hits": 38
+        },
+        {
+          "seconds": 57.81666666666666,
+          "hits": 55
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.15,
+        "maxNoHit": 9.016666666666795,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 7
+      }
+    },
+    {
+      "seed": 2217,
+      "material": "ceramic",
+      "size": "standard",
+      "policy": "follow",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 40.825,
+          "hits": 56
+        },
+        {
+          "seconds": 92.275,
+          "hits": 49
+        },
+        {
+          "seconds": 4.833333333333333,
+          "hits": 3
+        },
+        {
+          "seconds": 60.525,
+          "hits": 40
+        },
+        {
+          "seconds": 10.958333333333334,
+          "hits": 7
+        },
+        {
+          "seconds": 90.30833333333334,
+          "hits": 72
+        },
+        {
+          "seconds": 21.15833333333333,
+          "hits": 10
+        },
+        {
+          "seconds": 62.13333333333333,
+          "hits": 38
+        },
+        {
+          "seconds": 17.166666666666668,
+          "hits": 10
+        },
+        {
+          "seconds": 46.6,
+          "hits": 38
+        },
+        {
+          "seconds": 28.241666666666667,
+          "hits": 45
+        },
+        {
+          "seconds": 20.1,
+          "hits": 23
+        },
+        {
+          "seconds": 15.358333333333333,
+          "hits": 18
+        },
+        {
+          "seconds": 49.69166666666666,
+          "hits": 82
+        },
+        {
+          "seconds": 6.633333333333333,
+          "hits": 23
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.15833333333333333,
+        "maxNoHit": 12.724999999999918,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 4
+      }
+    },
+    {
+      "seed": 2217,
+      "material": "ceramic",
+      "size": "standard",
+      "policy": "steer",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 43.55833333333333,
+          "hits": 57
+        },
+        {
+          "seconds": 85.375,
+          "hits": 42
+        },
+        {
+          "seconds": 35.958333333333336,
+          "hits": 10
+        },
+        {
+          "seconds": 17.85,
+          "hits": 29
+        },
+        {
+          "seconds": 16.1,
+          "hits": 15
+        },
+        {
+          "seconds": 55.175,
+          "hits": 50
+        },
+        {
+          "seconds": 49.5,
+          "hits": 22
+        },
+        {
+          "seconds": 6.45,
+          "hits": 9
+        },
+        {
+          "seconds": 25.358333333333334,
+          "hits": 16
+        },
+        {
+          "seconds": 142.55833333333334,
+          "hits": 129
+        },
+        {
+          "seconds": 18.525,
+          "hits": 4
+        },
+        {
+          "seconds": 250.29999999999998,
+          "hits": 135
+        },
+        {
+          "seconds": 168.54166666666666,
+          "hits": 78
+        },
+        {
+          "seconds": 17.433333333333334,
+          "hits": 15
+        },
+        {
+          "seconds": 149.55,
+          "hits": 106
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.13333333333333333,
+        "maxNoHit": 12.99166666666657,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 7
+      }
+    },
+    {
+      "seed": 2217,
+      "material": "ceramic",
+      "size": "large",
+      "policy": "follow",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 50.625,
+          "hits": 34
+        },
+        {
+          "seconds": 143.8,
+          "hits": 78
+        },
+        {
+          "seconds": 3.6333333333333333,
+          "hits": 1
+        },
+        {
+          "seconds": 20.308333333333334,
+          "hits": 23
+        },
+        {
+          "seconds": 14.166666666666666,
+          "hits": 15
+        },
+        {
+          "seconds": 120.86666666666666,
+          "hits": 82
+        },
+        {
+          "seconds": 7.725,
+          "hits": 4
+        },
+        {
+          "seconds": 156.33333333333334,
+          "hits": 77
+        },
+        {
+          "seconds": 50.95,
+          "hits": 14
+        },
+        {
+          "seconds": 112.01666666666667,
+          "hits": 53
+        },
+        {
+          "seconds": 4.125,
+          "hits": 4
+        },
+        {
+          "seconds": 186.9,
+          "hits": 94
+        },
+        {
+          "seconds": 33.65833333333333,
+          "hits": 18
+        },
+        {
+          "seconds": 6.858333333333333,
+          "hits": 2
+        },
+        {
+          "seconds": 8.05,
+          "hits": 7
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.18333333333333332,
+        "maxNoHit": 12.774999999999915,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 5
+      }
+    },
+    {
+      "seed": 2217,
+      "material": "ceramic",
+      "size": "large",
+      "policy": "steer",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 52.041666666666664,
+          "hits": 36
+        },
+        {
+          "seconds": 83.25833333333333,
+          "hits": 56
+        },
+        {
+          "seconds": 99.15,
+          "hits": 21
+        },
+        {
+          "seconds": 40.916666666666664,
+          "hits": 24
+        },
+        {
+          "seconds": 51.641666666666666,
+          "hits": 19
+        },
+        {
+          "seconds": 284.1583333333333,
+          "hits": 84
+        },
+        {
+          "seconds": 183.03333333333333,
+          "hits": 78
+        },
+        {
+          "seconds": 168.05,
+          "hits": 63
+        },
+        {
+          "seconds": 66.10833333333333,
+          "hits": 22
+        },
+        {
+          "seconds": 108.79166666666667,
+          "hits": 60
+        },
+        {
+          "seconds": 30.25,
+          "hits": 9
+        },
+        {
+          "seconds": 45.791666666666664,
+          "hits": 28
+        },
+        {
+          "seconds": 38.916666666666664,
+          "hits": 36
+        },
+        {
+          "seconds": 232.71666666666667,
+          "hits": 149
+        },
+        {
+          "seconds": 17.15,
+          "hits": 7
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.21666666666666665,
+        "maxNoHit": 17.85833333333296,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 5
+      }
+    },
+    {
+      "seed": 2217,
+      "material": "rubber",
+      "size": "small",
+      "policy": "follow",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 35.21666666666667,
+          "hits": 48
+        },
+        {
+          "seconds": 27.516666666666666,
+          "hits": 24
+        },
+        {
+          "seconds": 12.683333333333334,
+          "hits": 14
+        },
+        {
+          "seconds": 3.7916666666666665,
+          "hits": 10
+        },
+        {
+          "seconds": 24.733333333333334,
+          "hits": 48
+        },
+        {
+          "seconds": 22.258333333333333,
+          "hits": 57
+        },
+        {
+          "seconds": 5.875,
+          "hits": 7
+        },
+        {
+          "seconds": 47.25833333333333,
+          "hits": 30
+        },
+        {
+          "seconds": 18.433333333333334,
+          "hits": 18
+        },
+        {
+          "seconds": 57.675,
+          "hits": 52
+        },
+        {
+          "seconds": 1.4083333333333332,
+          "hits": 3
+        },
+        {
+          "seconds": 7.975,
+          "hits": 19
+        },
+        {
+          "seconds": 45.35,
+          "hits": 110
+        },
+        {
+          "seconds": 24.991666666666667,
+          "hits": 38
+        },
+        {
+          "seconds": 9.091666666666667,
+          "hits": 14
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.10833333333333332,
+        "maxNoHit": 6.350000000000105,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 6
+      }
+    },
+    {
+      "seed": 2217,
+      "material": "rubber",
+      "size": "small",
+      "policy": "steer",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 15.858333333333333,
+          "hits": 26
+        },
+        {
+          "seconds": 9.591666666666667,
+          "hits": 23
+        },
+        {
+          "seconds": 28.633333333333333,
+          "hits": 35
+        },
+        {
+          "seconds": 3.0833333333333335,
+          "hits": 7
+        },
+        {
+          "seconds": 22.066666666666666,
+          "hits": 29
+        },
+        {
+          "seconds": 21.866666666666667,
+          "hits": 39
+        },
+        {
+          "seconds": 9.658333333333333,
+          "hits": 19
+        },
+        {
+          "seconds": 1.2583333333333333,
+          "hits": 7
+        },
+        {
+          "seconds": 18.65,
+          "hits": 26
+        },
+        {
+          "seconds": 54.1,
+          "hits": 103
+        },
+        {
+          "seconds": 89.33333333333333,
+          "hits": 65
+        },
+        {
+          "seconds": 46.475,
+          "hits": 55
+        },
+        {
+          "seconds": 23.8,
+          "hits": 29
+        },
+        {
+          "seconds": 54.025,
+          "hits": 58
+        },
+        {
+          "seconds": 7.941666666666666,
+          "hits": 18
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.10833333333333332,
+        "maxNoHit": 9.766666666666753,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 8
+      }
+    },
+    {
+      "seed": 2217,
+      "material": "rubber",
+      "size": "standard",
+      "policy": "follow",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 83.24166666666666,
+          "hits": 59
+        },
+        {
+          "seconds": 17.466666666666665,
+          "hits": 22
+        },
+        {
+          "seconds": 25.575,
+          "hits": 12
+        },
+        {
+          "seconds": 8.108333333333333,
+          "hits": 7
+        },
+        {
+          "seconds": 25.083333333333332,
+          "hits": 24
+        },
+        {
+          "seconds": 30.825,
+          "hits": 31
+        },
+        {
+          "seconds": 24.716666666666665,
+          "hits": 12
+        },
+        {
+          "seconds": 98.65833333333333,
+          "hits": 78
+        },
+        {
+          "seconds": 68.98333333333333,
+          "hits": 57
+        },
+        {
+          "seconds": 7.016666666666667,
+          "hits": 12
+        },
+        {
+          "seconds": 62.675,
+          "hits": 59
+        },
+        {
+          "seconds": 39.05,
+          "hits": 30
+        },
+        {
+          "seconds": 30.53333333333333,
+          "hits": 22
+        },
+        {
+          "seconds": 114.80833333333334,
+          "hits": 156
+        },
+        {
+          "seconds": 8.816666666666666,
+          "hits": 7
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.09999999999999999,
+        "maxNoHit": 9.783333333333418,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 6
+      }
+    },
+    {
+      "seed": 2217,
+      "material": "rubber",
+      "size": "standard",
+      "policy": "steer",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 63.275,
+          "hits": 51
+        },
+        {
+          "seconds": 185.14166666666665,
+          "hits": 62
+        },
+        {
+          "seconds": 14.091666666666667,
+          "hits": 14
+        },
+        {
+          "seconds": 68.05833333333334,
+          "hits": 52
+        },
+        {
+          "seconds": 20.375,
+          "hits": 24
+        },
+        {
+          "seconds": 30.833333333333332,
+          "hits": 50
+        },
+        {
+          "seconds": 6.616666666666666,
+          "hits": 15
+        },
+        {
+          "seconds": 170.1,
+          "hits": 125
+        },
+        {
+          "seconds": 44,
+          "hits": 16
+        },
+        {
+          "seconds": 46.74166666666667,
+          "hits": 38
+        },
+        {
+          "seconds": 64.19166666666666,
+          "hits": 35
+        },
+        {
+          "seconds": 61.03333333333333,
+          "hits": 92
+        },
+        {
+          "seconds": 7.125,
+          "hits": 6
+        },
+        {
+          "seconds": 195.40833333333333,
+          "hits": 177
+        },
+        {
+          "seconds": 11.841666666666667,
+          "hits": 4
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.275,
+        "maxNoHit": 10.300000000000056,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 7
+      }
+    },
+    {
+      "seed": 2217,
+      "material": "rubber",
+      "size": "large",
+      "policy": "follow",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 29.166666666666668,
+          "hits": 40
+        },
+        {
+          "seconds": 71.76666666666667,
+          "hits": 56
+        },
+        {
+          "seconds": 20.858333333333334,
+          "hits": 8
+        },
+        {
+          "seconds": 94.34166666666667,
+          "hits": 55
+        },
+        {
+          "seconds": 17.966666666666665,
+          "hits": 4
+        },
+        {
+          "seconds": 240.1,
+          "hits": 77
+        },
+        {
+          "seconds": 129.68333333333334,
+          "hits": 75
+        },
+        {
+          "seconds": 317.325,
+          "hits": 93
+        },
+        {
+          "seconds": 14.566666666666666,
+          "hits": 11
+        },
+        {
+          "seconds": 142.86666666666667,
+          "hits": 79
+        },
+        {
+          "seconds": 31.133333333333333,
+          "hits": 24
+        },
+        {
+          "seconds": 16.858333333333334,
+          "hits": 17
+        },
+        {
+          "seconds": 27.466666666666665,
+          "hits": 29
+        },
+        {
+          "seconds": 266.93333333333334,
+          "hits": 209
+        },
+        {
+          "seconds": 70.26666666666667,
+          "hits": 35
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 4.016666666666656,
+        "maxNoHit": 19.19999999999955,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 5
+      }
+    },
+    {
+      "seed": 2217,
+      "material": "rubber",
+      "size": "large",
+      "policy": "steer",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 115.86666666666666,
+          "hits": 60
+        },
+        {
+          "seconds": 160.175,
+          "hits": 53
+        },
+        {
+          "seconds": 189.60833333333332,
+          "hits": 60
+        },
+        {
+          "seconds": 4.908333333333333,
+          "hits": 2
+        },
+        {
+          "seconds": 121.73333333333333,
+          "hits": 43
+        },
+        {
+          "seconds": 85.43333333333334,
+          "hits": 67
+        },
+        {
+          "seconds": 52.725,
+          "hits": 23
+        },
+        {
+          "seconds": 33.36666666666667,
+          "hits": 23
+        },
+        {
+          "seconds": 54.291666666666664,
+          "hits": 31
+        },
+        {
+          "seconds": 53.78333333333333,
+          "hits": 42
+        },
+        {
+          "seconds": 94.60833333333333,
+          "hits": 68
+        },
+        {
+          "seconds": 179.91666666666666,
+          "hits": 107
+        },
+        {
+          "seconds": 69.58333333333333,
+          "hits": 38
+        },
+        {
+          "seconds": 20.375,
+          "hits": 11
+        },
+        {
+          "seconds": 40.708333333333336,
+          "hits": 23
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.18333333333333332,
+        "maxNoHit": 15.933333333333069,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 6
+      }
+    }
+  ]
+}

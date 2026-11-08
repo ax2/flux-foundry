@@ -24,6 +24,7 @@ jobs:
         env:
           PLAYWRIGHT_CHANNEL: chrome
       - run: npm run test:endurance
+      - run: npm run test:varied
       - run: npm run test:active
       - run: npm run test:full
       - run: npm run test:loading

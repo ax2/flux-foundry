@@ -4,17 +4,17 @@
 
 **[在线游玩](https://ax2.github.io/flux-foundry/)** · **[Windows 下载](https://github.com/ax2/flux-foundry/releases)** · MIT
 
-![手机画面](docs/iterations/Stage-11/390x844.png)
+![手机画面](docs/iterations/Stage-12/390x844.png)
 
-## v0.10.1 恢复原画质
+## v0.11.0 原画质加载与球路修复（本地候选）
 
 使用与v0.9.0逐字节一致的原始PNG：场地941×1672，图集2172×724。不压缩、不缩图、不转WebP。保留加载进度与重试，加载预览明确标注，完整画面以原图解码后为准。球路修复、玩法和已有存档继续保留。
 
-已发布[v0.10.1](https://github.com/ax2/flux-foundry/releases/tag/v0.10.1)，发布记录见[Stage-11日志](docs/iterations/Stage-11/worklog.md)。
+HTML启动屏先于脚本显示；原图下载、解码和慢网状态明确，网络恢复自动重试，离线缓存延后安装。修复一条91.82秒无命中球路，原球自然结束；不限制接球。当前发布进度见[Stage-12日志](docs/iterations/Stage-12/worklog.md)。
 
 ## 自然回放与稳定进度
 
-v0.10.0为上一版；当前修复继续保留已存星级。Stage-08的简化挡板玩法纳入本轮，v0.8.0未独立发布。
+v0.10.1为上一版；当前修复继续保留已存星级。Stage-08的简化挡板玩法纳入本轮，v0.8.0未独立发布。
 
 - 正式三星路线只使用合法选珠与瞄准，原球自然落底；不再调用隐藏收球。
 - 无进展的重复球路触发可见挡板微倾，改变下一次碰撞法线；接球次数不设上限。
@@ -39,11 +39,11 @@ v0.10.0为上一版；当前修复继续保留已存星级。Stage-08的简化�
 
 ## 交付与验证
 
-Windows x64：`Flux-Foundry-0.10.1-Windows-x64.exe` 便携启动，本地保留 `releases/v0.10.1/win-unpacked/` 完整运行目录，无游戏ZIP。手机为触屏Web/PWA，首次联网加载后可离线重开；未交付APK/iOS原生包。Windows未签名，实体手机/低端性能仍待验收。
+Windows x64：`Flux-Foundry-0.11.0-Windows-x64.exe` 便携启动，本地保留 `releases/v0.11.0/win-unpacked/` 完整运行目录，无游戏ZIP。手机为触屏Web/PWA，首次联网加载后可离线重开；未交付APK/iOS原生包。Windows未签名，实体手机/低端性能仍待验收。
 
-本轮原图哈希和分辨率检查、78项逻辑、121项三视口界面、16项加载检查及Windows目录/EXE原图加载均通过；第14关触控自然通关。原有球路、库存、星级规则未变，936/1872首球、120挑战与72远征回归继续通过。当前原始PNG总3.40MB，低带宽完整加载会较慢；加载进度会持续显示。
+本轮原图哈希和分辨率检查、80项逻辑、121项三视口界面、22项加载检查及Windows目录/EXE原图加载均通过；修复后第4/5/22关触控压力复玩均自然通关。原有球路、库存、星级规则未变，936/1872首球、120挑战与72远征回归继续通过。当前原始PNG总3.40MB，低带宽完整加载会较慢；加载进度会持续显示。
 
-[本轮评估](docs/iterations/Stage-11/assessment.md) · [工作日志](docs/iterations/Stage-11/worklog.md)
+[本轮评估](docs/iterations/Stage-12/assessment.md) · [工作日志](docs/iterations/Stage-12/worklog.md)
 
 ## 开发
 

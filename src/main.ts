@@ -7,10 +7,10 @@ import {loadSave,SAVE_KEY,RULESET} from './save';
 const $=<T extends HTMLElement=HTMLElement>(id:string)=>document.getElementById(id) as T;
 const gear='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3h6l1 3 3 1 2 5-2 5-3 1-1 3H9l-1-3-3-1-2-5 2-5 3-1z"/><circle cx="12" cy="12" r="3"/></svg>';
 const podium='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20v-7h6v7m0 0V8h6v12m0 0v-9h6v9M10 3l2-2 2 2-2 2z"/></svg>';
-document.querySelector('#app')!.innerHTML=`<aside class="intro"><div class="wordmark">FLUX<br><span>FOUNDRY</span></div><h1>磁核弹阵</h1><p class="tagline">一颗弹珠，<br>一块挡板。</p><div class="rule"><b>01 / 发射</b><p>拖动瞄准，松开发射。<br>每次撞击减1，归零消除。</p></div><div class="rule"><b>02 / 救球</b><p>左右移动挡板，接住下落弹珠。<br>偏离中心的反弹能改变球路。</p></div><div class="rule"><b>03 / 收集</b><p>撞到宝物立即生效。<br>生命、加长挡板与大慢球。</p></div><small>原创物理弹射 · v0.10.1<br>WINDOWS / MOBILE WEB</small></aside>
+document.querySelector('#app')!.innerHTML=`<aside class="intro"><div class="wordmark">FLUX<br><span>FOUNDRY</span></div><h1>磁核弹阵</h1><p class="tagline">一颗弹珠，<br>一块挡板。</p><div class="rule"><b>01 / 发射</b><p>拖动瞄准，松开发射。<br>每次撞击减1，归零消除。</p></div><div class="rule"><b>02 / 救球</b><p>左右移动挡板，接住下落弹珠。<br>偏离中心的反弹能改变球路。</p></div><div class="rule"><b>03 / 收集</b><p>撞到宝物立即生效。<br>生命、加长挡板与大慢球。</p></div><small>原创物理弹射 · v0.11.0<br>WINDOWS / MOBILE WEB</small></aside>
 <section class="machine" aria-label="磁核弹阵游戏"><header class="hud"><div class="brand"><span class="monogram">FF</span></div><div class="score"><span>得分</span><b id="score">000000</b></div><div class="wave"><span id="waveLabel">波次</span><b id="wave">01</b></div><button id="ranking" class="top-icon" aria-label="本机排行">${podium}</button><button id="settings" class="top-icon" aria-label="设置">${gear}</button></header>
 <nav class="loadout-bar" aria-label="玩法选择"><button id="workshop"><span class="ball-mini steel" id="ballIcon"></span><span id="loadoutLabel">中号钢珠</span></button><button id="levels" class="expedition"><span class="mode-orbit">◇</span><span id="modeLabel">限珠远征</span><span aria-hidden="true">›</span></button></nav>
-<div class="arena"><section class="reserve-rack" aria-label="三角出球仓待发弹珠"><span id="reserveCount" class="sr-only"></span><div id="reserveBalls" class="reserve-balls"></div></section><canvas id="game" tabindex="0" aria-label="拖动瞄准发射；飞行中左右滑动控制挡板；方向键移动挡板，空格发射"></canvas><div id="assetLoading" class="asset-loading" role="status" aria-live="polite"><span id="assetLabel">原画质加载中 · 暂用简化预览</span><div id="assetProgress" class="asset-progress" role="progressbar" aria-label="材质加载进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i></i></div><button id="retryTextures" hidden>重试原画质</button></div><div id="overlay" class="overlay" hidden></div><div id="toast" class="toast" role="status" aria-live="polite"></div></div></section>`;
+<div class="arena"><section class="reserve-rack" aria-label="三角出球仓待发弹珠"><span id="reserveCount" class="sr-only"></span><div id="reserveBalls" class="reserve-balls"></div></section><canvas id="game" tabindex="0" aria-label="拖动瞄准发射；飞行中左右滑动控制挡板；方向键移动挡板，空格发射"></canvas><div id="assetLoading" class="asset-loading" hidden role="status" aria-live="polite"><span id="assetLabel">原画质加载中 · 暂用简化预览</span><div id="assetProgress" class="asset-progress" role="progressbar" aria-label="材质加载进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i></i></div><span id="assetDetail" class="asset-detail">原图正在下载，可直接发射先玩</span><button id="retryTextures" hidden>重试原画质</button></div><div id="overlay" class="overlay" hidden></div><div id="toast" class="toast" role="status" aria-live="polite"></div></div></section>`;
 let game=new Game();const canvas=$<HTMLCanvasElement>('game'),renderer=new Renderer(canvas),sound=new Sound();
 const save=loadSave({getItem:key=>{try{return localStorage.getItem(key);}catch{return null;}}},['限珠远征',...LEVELS.map(l=>l.name)]);
 let {records,ranks}=save.rulesets[RULESET];
@@ -48,8 +48,38 @@ function ui(){if(game.eventSerial>seenEvent){seenEvent=game.eventSerial;toast(ga
  const rack=JSON.stringify([game.queue,game.shots,game.phase,game.paused]);if(rackKey!==rack){rackKey=rack;$('reserveCount').textContent=`待发${game.remainingShots}颗`;$('reserveBalls').innerHTML=game.queue.slice(game.shots).map((q,i)=>{const p=HOPPER_SLOTS[i];return `<button data-reserve="${game.shots+i}" style="left:${p.x/420*100}%;top:${p.y/720*100}%" ${game.phase!=='aim'||game.paused?'disabled':''} aria-label="第${game.shots+i+1}颗 ${SIZES[q.size].name}号${MATERIALS[q.material].name}珠${i===0?' 下一发':''}"></button>`;}).join('');for(const e of document.querySelectorAll<HTMLButtonElement>('[data-reserve]'))e.onclick=()=>game.selectReserve(Number(e.dataset.reserve));}
  $('score').textContent=String(game.score).padStart(6,'0');$('wave').textContent=String(game.mode==='challenge'?game.levelIndex+1:game.wave).padStart(2,'0');$('waveLabel').textContent=game.mode==='challenge'?'关卡':'波次';$('loadoutLabel').textContent=`${SIZES[game.size].name}号${MATERIALS[game.material].name}珠`;$('ballIcon').className=`ball-mini ${game.material}`;$<HTMLButtonElement>('workshop').disabled=game.phase!=='aim';$('modeLabel').textContent=game.mode==='challenge'?`${game.dailyKey?'每日':String(game.levelIndex+1).padStart(2,'0')} · ${game.level.name}`:'限珠远征';}
 let last=0,accumulator=0,frameCount=0,frameAt=0,maxFrameGap=0;function frame(t:number){frameCount++;if(frameAt)maxFrameGap=Math.max(maxFrameGap,t-frameAt);frameAt=t;const dt=Math.min((t-last)/1000,.05);last=t;accumulator+=game.paused?0:dt;while(accumulator>=STEP){if(game.phase==='volley'&&keys.size)game.movePaddle(game.paddle.target+((keys.has('ArrowRight')?1:0)-(keys.has('ArrowLeft')?1:0))*540*STEP);game.update(STEP);accumulator-=STEP;}renderer.draw(game,t/1000,reduced,dragging||renderer.textures.state.phase!=='ready');ui();requestAnimationFrame(frame);}
-new ResizeObserver(()=>renderer.resize()).observe(canvas);let loadingTimer=0;function loadingUI(){const state=renderer.textures.state;clearTimeout(loadingTimer);$('assetLoading').hidden=false;$('assetLabel').textContent=state.phase==='ready'?'原画质已就绪':state.phase==='fallback'?'暂用简化预览 · 可重试原画质':`原画质加载 ${state.percent}% · 暂用简化预览`;$('assetProgress').setAttribute('aria-valuenow',String(state.percent));$('assetProgress').querySelector('i')!.style.width=state.percent+'%';$('retryTextures').hidden=state.phase!=='fallback';if(state.phase==='ready')loadingTimer=window.setTimeout(()=>$('assetLoading').hidden=true,400);}
-renderer.textures.onChange=loadingUI;$('retryTextures').onclick=()=>void renderer.textures.load();loadingUI();renderer.resize();requestAnimationFrame(frame);if('serviceWorker' in navigator&&location.protocol!=='file:'&&!import.meta.env.DEV)void navigator.serviceWorker.register('./sw.js').catch(()=>{});
+new ResizeObserver(()=>renderer.resize()).observe(canvas);
+let loadingTimer=0,lastLoadingKey='',lastReceived=0,lastTransfer=performance.now(),offlineScheduled=false,loadingShown=false;
+function scheduleOffline(){
+ if(offlineScheduled||!('serviceWorker' in navigator)||location.protocol==='file:'||import.meta.env.DEV)return;
+ offlineScheduled=true;
+ // Warm the offline cache after the original textures have finished; never compete with the first download.
+ setTimeout(()=>void navigator.serviceWorker.register('./sw.js').catch(()=>{}),1000);
+}
+function loadingUI(){
+ const state=renderer.textures.state,now=performance.now();
+ if(state.received!==lastReceived){lastReceived=state.received;lastTransfer=now;}
+ const decoding=state.phase==='loading'&&state.received>=state.total;
+ const stalled=state.phase==='loading'&&now-lastTransfer>6000;
+ const key=[state.phase,state.percent,state.completed,state.failed,navigator.onLine,decoding,stalled].join(':');
+ if(key===lastLoadingKey)return;lastLoadingKey=key;clearTimeout(loadingTimer);
+ if(state.phase==='fallback')loadingShown=true;
+ $('assetLoading').hidden=!loadingShown;
+ $('assetLabel').textContent=state.phase==='ready'?'原画质已就绪':state.phase==='fallback'?'原图加载未完成':!navigator.onLine?'网络已断开 · 等待连接':decoding?'原图下载完成 · 正在解码':`原画质加载 ${state.percent}%`;
+ $('assetProgress').setAttribute('aria-valuenow',String(state.percent));
+ $('assetProgress').setAttribute('aria-valuetext',decoding?'下载完成，正在解码':`${state.percent}%`);
+ $('assetProgress').querySelector('i')!.style.width=state.percent+'%';
+ $('assetDetail').textContent=state.phase==='ready'?'原始PNG · 未压缩':state.phase==='fallback'?`已就绪${state.completed}/2张 · 仅重试未完成的原图`:!navigator.onLine?'当前为简化预览，联网后自动重试':decoding?'正在准备完整材质，请稍候':stalled?'网络较慢，仍在等待 · 可先玩简化预览':`${(state.received/1000000).toFixed(2)} / ${(state.total/1000000).toFixed(2)} MB · 可先玩简化预览`;
+ $('retryTextures').hidden=state.phase!=='fallback';
+ if(state.phase==='ready'){loadingTimer=window.setTimeout(()=>{$('assetLoading').hidden=true;loadingShown=false;},400);scheduleOffline();}
+}
+renderer.textures.onChange=loadingUI;
+$('retryTextures').onclick=()=>{lastTransfer=performance.now();void renderer.textures.load();};
+window.addEventListener('online',()=>{lastTransfer=performance.now();if(renderer.textures.state.phase==='fallback')void renderer.textures.load();loadingUI();});
+window.addEventListener('offline',loadingUI);
+setTimeout(()=>{if(renderer.textures.state.phase!=='ready'){loadingShown=true;lastLoadingKey='';loadingUI();}},200);
+setInterval(()=>{if(renderer.textures.state.phase!=='ready')loadingUI();},1000);
+loadingUI();renderer.resize();requestAnimationFrame(frame);
 Object.defineProperty(window,'fluxSnapshot',{value:()=>({phase:game.phase,wave:game.wave,score:game.score,balls:game.balls.length,targets:game.targets.length,paused:game.paused,count:1,power:1,material:game.material,size:game.size,radius:game.spec.r,mode:game.mode,levelIndex:game.levelIndex,shots:game.shots,remainingShots:game.remainingShots,totalBalls:game.queue.length,queue:structuredClone(game.queue),dailyKey:game.dailyKey,goal:game.mode==='challenge'?game.level.goal:'survive',goalComplete:game.goalComplete,safetyReturn:game.safetyReturn,paddle:{...game.paddle},treasures:structuredClone(game.treasures),bonusLives:game.bonusLives,wideTime:game.wideTime,bigTime:game.bigTime,windMultiplier:game.windMultiplier,rails:structuredClone(game.rails),gates:game.gates.filter(g=>!g.open).length,stats:{...game.stats},progress:{...game.progress},stars:game.stars,records:structuredClone(records),legacy:structuredClone(save.legacy),ranks:structuredClone(ranks),pegs:game.pegs.length,air:game.air.length,airZones:structuredClone(game.air),bricks:structuredClone(game.targets),activeBall:game.balls[0]?{...game.balls[0]}:null})});
 
 Object.defineProperty(window,'fluxDiagnostics',{value:()=>({wall:performance.now(),frames:frameCount,lastFrame:frameAt,maxFrameGap,visibility:document.visibilityState,loading:renderer.textures.state})});
