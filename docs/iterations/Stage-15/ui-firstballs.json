@@ -1,0 +1,57 @@
+{
+  "method": "For multi-shot games, the first snapshot of shot2 retains the exact previous-shot cumulative maxNoHit before any further collision. For single-shot wins use the final cumulative max. Original raw UI traces retained.",
+  "rows": [
+    {
+      "level": 13,
+      "material": "brass",
+      "size": "large",
+      "policy": "follow",
+      "firstBallMaxNoHit": 9.275000000000114,
+      "wholeGameMaxNoHit": 13.849999999999854,
+      "firstBallSeconds": 60.35833333333055,
+      "shots": 2,
+      "catches": 55,
+      "seconds": 141.00833333336942,
+      "result": "won"
+    },
+    {
+      "level": 18,
+      "material": "steel",
+      "size": "large",
+      "policy": "follow",
+      "firstBallMaxNoHit": 3.7499999999999893,
+      "wholeGameMaxNoHit": 11.524999999999986,
+      "firstBallSeconds": 38.99999999999843,
+      "shots": 3,
+      "catches": 24,
+      "seconds": 123.15000000004407,
+      "result": "won"
+    },
+    {
+      "level": 2,
+      "material": "brass",
+      "size": "large",
+      "policy": "follow",
+      "firstBallMaxNoHit": 5.950000000000085,
+      "wholeGameMaxNoHit": 5.950000000000085,
+      "firstBallSeconds": 35.40833333333197,
+      "shots": 1,
+      "catches": 9,
+      "seconds": 35.40833333333197,
+      "result": "won"
+    },
+    {
+      "level": 16,
+      "material": "brass",
+      "size": "large",
+      "policy": "follow",
+      "firstBallMaxNoHit": 14.883333333333129,
+      "wholeGameMaxNoHit": 14.883333333333129,
+      "firstBallSeconds": 160.00000000001882,
+      "shots": 1,
+      "catches": 64,
+      "seconds": 160.00000000001882,
+      "result": "won"
+    }
+  ]
+}
