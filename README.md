@@ -4,7 +4,7 @@
 
 **[在线游玩](https://ax2.github.io/flux-foundry/)** · **[Windows 下载](https://github.com/ax2/flux-foundry/releases)** · MIT
 
-![手机画面](docs/iterations/Stage-15/390x844.png)
+![手机画面](docs/iterations/Stage-16/390x844.png)
 
 ## v0.15.0 双柱空弹与稀疏残局（候选）
 
@@ -41,7 +41,7 @@ v0.14.0为上一版；当前修复继续保留已存星级。Stage-08的简化�
 
 Windows x64：`Flux-Foundry-0.15.0-Windows-x64.exe` 便携启动，本地保留 `releases/v0.15.0/win-unpacked/` 完整运行目录，无游戏ZIP。手机为触屏Web/PWA，首次联网加载后可离线重开；未交付APK/iOS原生包。Windows未签名，实体手机/低端性能仍待验收。
 
-本轮97项逻辑（含52套严格自然三星回放）、构建、原图校验、Windows目录与EXE启动已通过；广样本与UI复玩结果持续更新在评估中。完整原图3.40MB，低带宽就绪仍会较慢，加载进度持续显示。
+本轮97项逻辑（含52套严格自然三星回放）、121界面、22加载、原图校验、Windows目录与EXE启动通过；4局真实自动触控全自然通关，5颗/77接球，整局最长无命中12.70秒。算法/触控并非真人胜率或实体手机性能。完整原图3.40MB，低带宽就绪仍会较慢，加载进度持续显示。
 
 [本轮评估](docs/iterations/Stage-16/assessment.md) · [工作日志](docs/iterations/Stage-16/worklog.md)
 
