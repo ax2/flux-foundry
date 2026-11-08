@@ -1,3 +1,4 @@
+// Standard-work counterfactual only. Stage19 live assistance may choose lower work.
 import {Game,STEP} from '../src/game';import {guidedRebound,forecastRebound} from '../src/paddle-assist';import {readFile,writeFile} from 'node:fs/promises';
 const tape=JSON.parse(await readFile('docs/iterations/Stage-18/inputs-22-rubber.json','utf8')).filter((e:any)=>e.phase==='volley'&&e.shot===1);const g=new Game(1021,21);g.selectBall('rubber','large');g.angle=Math.PI/2;g.fire();let index=0,step=0,last:any=null;const catches:any[]=[];
 while(g.phase==='volley'&&step<300/STEP){
@@ -10,5 +11,5 @@ while(g.phase==='volley'&&step<300/STEP){
  }
  if(g.stats.paddleHits>before.catches&&before.time>65&&before.time<88)catches.push({before,after:{ball:{...g.balls[0]},paddle:{...g.paddle},gap:g.progress.sinceHit},last});
 }
-const result={method:'Exact captured legal touch replay, readonly extra forecasts calculated after each real planning step. No outcome, body, target or timing intervention. Inspect optional forecast metadata for the last plan before each catch.',phase:g.phase,maxNoHit:g.progress.maxNoHit,catches};await writeFile('test-results/touch-forecast-diagnostic.json',JSON.stringify(result,null,2));
+const result={method:'Captured legal touch replay with read-only STANDARD-WORK counterfactual forecasts. allowLowerWork is deliberately omitted here; after Stage19 these are not the actual live adaptive plan. Archived Stage19/forecast-before.json records the pre-change diagnostic. No body/target/outcome intervention.',phase:g.phase,maxNoHit:g.progress.maxNoHit,catches};await writeFile('test-results/touch-forecast-diagnostic.json',JSON.stringify(result,null,2));
 console.log(JSON.stringify(catches.map(c=>({time:c.before.time,gap:c.before.progress.sinceHit,tilt:c.before.paddle.tilt,boost:c.before.paddle.boost,plan:c.last?.plan,active:c.last?.active,predicted:c.last?.forecast.outgoing,actual:c.after.ball,predictedHit:c.last?.forecast.hit,score:c.last?.forecast.score,impact:c.last?.forecast.impact}))));

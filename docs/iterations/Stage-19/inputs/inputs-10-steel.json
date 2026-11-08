@@ -1,0 +1,4873 @@
+[
+  {
+    "event": "pointerdown",
+    "flight": 0,
+    "shot": 0,
+    "phase": "aim",
+    "target": 210,
+    "paddle": {
+      "x": 210,
+      "target": 210,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 0,
+    "catches": 0,
+    "ball": null,
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 0,
+    "shot": 0,
+    "phase": "aim",
+    "target": 210,
+    "paddle": {
+      "x": 210,
+      "target": 210,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 0,
+    "catches": 0,
+    "ball": null,
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointerup",
+    "flight": 0,
+    "shot": 1,
+    "phase": "volley",
+    "target": 210,
+    "paddle": {
+      "x": 210,
+      "target": 210,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 0,
+    "catches": 0,
+    "ball": {
+      "x": 210,
+      "y": 132,
+      "vx": -193.6163288138192,
+      "vy": 119.13187951450719,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": -1
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": -1
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointerdown",
+    "flight": 0.008333333333333333,
+    "shot": 1,
+    "phase": "volley",
+    "target": 210,
+    "paddle": {
+      "x": 210,
+      "target": 210,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 0,
+    "catches": 0,
+    "ball": {
+      "x": 208.38653059321817,
+      "y": 133.00109899595424,
+      "vx": -193.6163288138192,
+      "vy": 121.13187951450719,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": -1
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": -1
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 0.03333333333333333,
+    "shot": 1,
+    "phase": "volley",
+    "target": 178.867431640625,
+    "paddle": {
+      "x": 210,
+      "target": 178.867431640625,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 0,
+    "catches": 0,
+    "ball": {
+      "x": 203.54612237287267,
+      "y": 136.10439598381691,
+      "vx": -193.6163288138192,
+      "vy": 127.13187951450719,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": -1
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": -1
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 1.0249999999999988,
+    "shot": 1,
+    "phase": "volley",
+    "target": 168.78264911358173,
+    "paddle": {
+      "x": 178.867431640625,
+      "target": 168.78264911358173,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 0,
+    "catches": 0,
+    "ball": {
+      "x": 53.716596150873904,
+      "y": 380.18517650236976,
+      "vx": 181.99934908499,
+      "vy": 365.1318795145072,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": -1
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": -1
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 1.1583333333333317,
+    "shot": 1,
+    "phase": "volley",
+    "target": 106.92196655273439,
+    "paddle": {
+      "x": 168.78264911358173,
+      "target": 106.92196655273439,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 0,
+    "catches": 0,
+    "ball": {
+      "x": 45.14354941210815,
+      "y": 398.163133820873,
+      "vx": -359.35348383120055,
+      "vy": -144.22095340168335,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": -1
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": -1
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 1.2999999999999978,
+    "shot": 1,
+    "phase": "volley",
+    "target": 70,
+    "paddle": {
+      "x": 106.92196655273439,
+      "target": 70,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 0,
+    "catches": 0,
+    "ball": {
+      "x": 70.59416310347726,
+      "y": 380.1401654223012,
+      "vx": 337.79227480132846,
+      "vy": -110.22095340168335,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": -1
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": -1
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 1.5749999999999968,
+    "shot": 1,
+    "phase": "volley",
+    "target": 70,
+    "paddle": {
+      "x": 70,
+      "target": 70,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 0,
+    "catches": 0,
+    "ball": {
+      "x": 134.2327200962122,
+      "y": 378.78316097679715,
+      "vx": -163.02648448885884,
+      "vy": 296.09306762524926,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 1,
+        "lastContact": 1.5166666666666637
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": -1
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 1.716666666666663,
+    "shot": 1,
+    "phase": "volley",
+    "target": 99.0819103534405,
+    "paddle": {
+      "x": 70,
+      "target": 99.0819103534405,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 0,
+    "catches": 0,
+    "ball": {
+      "x": 140.0381675728208,
+      "y": 394.2371461111771,
+      "vx": 305.50833870247806,
+      "vy": -138.44175556608832,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 1.5166666666666637
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": -1
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 1.8499999999999959,
+    "shot": 1,
+    "phase": "volley",
+    "target": 192.12703059269833,
+    "paddle": {
+      "x": 99.0819103534405,
+      "target": 192.12703059269833,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 0,
+    "catches": 0,
+    "ball": {
+      "x": 180.8640722938068,
+      "y": 379.50552879270737,
+      "vx": 315.59504825766567,
+      "vy": 69.34863191760667,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 1,
+        "lastContact": 1.8416666666666626
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": -1
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 2.2666666666666613,
+    "shot": 1,
+    "phase": "volley",
+    "target": 155.74561251126804,
+    "paddle": {
+      "x": 192.12703059269833,
+      "target": 155.74561251126804,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 0,
+    "catches": 0,
+    "ball": {
+      "x": 294.4790738978673,
+      "y": 404.6756439170494,
+      "vx": -41.815059773379915,
+      "vy": -321.47960435489705,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 1.8416666666666626
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": -1
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 4.6250000000000195,
+    "shot": 1,
+    "phase": "volley",
+    "target": 128.21990497295673,
+    "paddle": {
+      "x": 155.74561251126804,
+      "target": 128.21990497295673,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 0,
+    "catches": 0,
+    "ball": {
+      "x": 202.13104330378474,
+      "y": 304.3061848714111,
+      "vx": 193.94301107919924,
+      "vy": -117.50722362528523,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 1,
+        "lastContact": 4.600000000000018
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": -1
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 5.591666666666734,
+    "shot": 1,
+    "phase": "volley",
+    "target": 144.0409921499399,
+    "paddle": {
+      "x": 128.21990497295673,
+      "target": 144.0409921499399,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 0,
+    "catches": 0,
+    "ball": {
+      "x": 382.9615594930925,
+      "y": 302.8492020336352,
+      "vx": -182.30643041444725,
+      "vy": 114.49277637471477,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 1,
+        "lastContact": 4.600000000000018
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": -1
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 6.98333333333347,
+    "shot": 1,
+    "phase": "volley",
+    "target": 196.65608567457932,
+    "paddle": {
+      "x": 144.0409921499399,
+      "target": 196.65608567457932,
+      "width": 96,
+      "vx": 0,
+      "flash": 0.07500000000000001,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 0,
+    "catches": 1,
+    "ball": {
+      "x": 128.64117412134357,
+      "y": 628.9505143157635,
+      "vx": -190.44780434744428,
+      "vy": -391.7319141836991,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 1,
+        "lastContact": 4.600000000000018
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": -1
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 7.575000000000166,
+    "shot": 1,
+    "phase": "volley",
+    "target": 229.6844764122596,
+    "paddle": {
+      "x": 196.65608567457932,
+      "target": 229.6844764122596,
+      "width": 144,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 0,
+    "catches": 1,
+    "ball": {
+      "x": 50.410252474604775,
+      "y": 439.18413175707485,
+      "vx": 179.0209360865976,
+      "vy": -249.73191418369908,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 1,
+        "lastContact": 4.600000000000018
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": -1
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 8.133333333333512,
+    "shot": 1,
+    "phase": "volley",
+    "target": 319.49531907301684,
+    "paddle": {
+      "x": 229.6844764122596,
+      "target": 319.49531907301684,
+      "width": 144,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 0,
+    "catches": 1,
+    "ball": {
+      "x": 124.24663693856459,
+      "y": 340.91782586023663,
+      "vx": -197.26727398151542,
+      "vy": -61.57279324026641,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 2,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": -1
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 8.691666666666814,
+    "shot": 1,
+    "phase": "volley",
+    "target": 302.20812049278845,
+    "paddle": {
+      "x": 319.49531907301684,
+      "target": 302.20812049278845,
+      "width": 144,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 0,
+    "catches": 1,
+    "ball": {
+      "x": 52.54312375426247,
+      "y": 343.9480163010878,
+      "vx": 185.4312375426245,
+      "vy": 72.4272067597336,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 2,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": -1
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 10.066666666666736,
+    "shot": 1,
+    "phase": "volley",
+    "target": 222.2811725323017,
+    "paddle": {
+      "x": 302.20812049278845,
+      "target": 222.2811725323017,
+      "width": 144,
+      "vx": 0,
+      "flash": 0.125,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 18000,
+    "catches": 2,
+    "ball": {
+      "x": 307.5610141098849,
+      "y": 649.0975684313386,
+      "vx": 187.42878692323006,
+      "vy": -393.13160850815615,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 2,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": -1
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 10.616666666666704,
+    "shot": 1,
+    "phase": "volley",
+    "target": 188.71915142352765,
+    "paddle": {
+      "x": 222.2811725323017,
+      "target": 188.71915142352765,
+      "width": 144,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 18000,
+    "catches": 2,
+    "ball": {
+      "x": 363.9771175365201,
+      "y": 469.1751837518526,
+      "vx": -176.18305970783626,
+      "vy": -261.13160850815615,
+      "r": 16
+    },
+    "bricks": [
+      {
+        "x": 330,
+        "y": 440,
+        "hp": 3,
+        "kind": "bar",
+        "size": 48,
+        "core": false,
+        "id": 1,
+        "maxHp": 4,
+        "flash": 0,
+        "vx": 0
+      },
+      {
+        "x": 145,
+        "y": 530,
+        "hp": 8,
+        "kind": "hexagon",
+        "size": 48,
+        "core": false,
+        "id": 2,
+        "maxHp": 8,
+        "flash": 0,
+        "vx": 0
+      },
+      {
+        "x": 278.18203972912727,
+        "y": 540,
+        "hp": 12,
+        "kind": "capacitor",
+        "size": 48,
+        "core": false,
+        "id": 3,
+        "maxHp": 12,
+        "flash": 0,
+        "motion": {
+          "baseX": 280,
+          "amplitude": 14,
+          "speed": 0.8999999999999999
+        },
+        "vx": -12.49331687612853
+      },
+      {
+        "x": 210,
+        "y": 625,
+        "hp": 7,
+        "kind": "prism",
+        "size": 48,
+        "power": "spring",
+        "core": false,
+        "id": 4,
+        "maxHp": 7,
+        "flash": 0,
+        "vx": 0
+      }
+    ],
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 2,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": -1
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 10.758333333333363,
+    "shot": 1,
+    "phase": "volley",
+    "target": 326,
+    "paddle": {
+      "x": 188.71915142352765,
+      "target": 326,
+      "width": 144,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 18000,
+    "catches": 2,
+    "ball": {
+      "x": 355.8151853729974,
+      "y": 494.3582957556053,
+      "vx": -23.253797786553548,
+      "vy": 317.0226308255928,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": -1
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 11.308333333333332,
+    "shot": 1,
+    "phase": "volley",
+    "target": 289.1194364107572,
+    "paddle": {
+      "x": 326,
+      "target": 289.1194364107572,
+      "width": 144,
+      "vx": 0,
+      "flash": 0.05000000000000002,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 36000,
+    "catches": 3,
+    "ball": {
+      "x": 349.2356088284269,
+      "y": 618.4177341478081,
+      "vx": 38.84632459377916,
+      "vy": -401.04604367692434,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": -1
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 11.866666666666633,
+    "shot": 1,
+    "phase": "volley",
+    "target": 135.9675527719351,
+    "paddle": {
+      "x": 289.1194364107572,
+      "target": 135.9675527719351,
+      "width": 144,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 36000,
+    "catches": 3,
+    "ball": {
+      "x": 382.7859732243591,
+      "y": 437.50614570469946,
+      "vx": 190.6424952491514,
+      "vy": -195.4112789376719,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": -1
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 12.008333333333292,
+    "shot": 1,
+    "phase": "volley",
+    "target": 107.2705829326923,
+    "paddle": {
+      "x": 161.6194364107572,
+      "target": 107.2705829326923,
+      "width": 144,
+      "vx": -900,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 36000,
+    "catches": 3,
+    "ball": {
+      "x": 365.0928730210097,
+      "y": 412.2312145218626,
+      "vx": -179.20394553420232,
+      "vy": -161.4112789376719,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": -1
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 12.55833333333326,
+    "shot": 1,
+    "phase": "volley",
+    "target": 326,
+    "paddle": {
+      "x": 107.2705829326923,
+      "target": 326,
+      "width": 144,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 36000,
+    "catches": 3,
+    "ball": {
+      "x": 280.95534733686196,
+      "y": 369.6149631009617,
+      "vx": 95.16884061851414,
+      "vy": 158.13597926131575,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 1,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 12.841666666666578,
+    "shot": 1,
+    "phase": "volley",
+    "target": 256.1231877253606,
+    "paddle": {
+      "x": 326,
+      "target": 256.1231877253606,
+      "width": 144,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 36000,
+    "catches": 3,
+    "ball": {
+      "x": 307.58573763105704,
+      "y": 412.7616973217582,
+      "vx": 82.38193686732049,
+      "vy": -206.01243894180118,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 13.816666666666523,
+    "shot": 1,
+    "phase": "volley",
+    "target": 264.4187950721154,
+    "paddle": {
+      "x": 256.1231877253606,
+      "target": 264.4187950721154,
+      "width": 144,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 36000,
+    "catches": 3,
+    "ball": {
+      "x": 384.7093496557453,
+      "y": 325.9745693535022,
+      "vx": -77.43902065528127,
+      "vy": 27.98756105819882,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 14.924999999999793,
+    "shot": 1,
+    "phase": "volley",
+    "target": 310.99256310096155,
+    "paddle": {
+      "x": 264.4187950721154,
+      "target": 310.99256310096155,
+      "width": 144,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 36000,
+    "catches": 3,
+    "ball": {
+      "x": 300.2154597624664,
+      "y": 498.7179514073744,
+      "vx": 57.264509053280335,
+      "vy": -279.8629059398976,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 16.45833333333304,
+    "shot": 1,
+    "phase": "volley",
+    "target": 315.5985060471755,
+    "paddle": {
+      "x": 310.99256310096155,
+      "target": 315.5985060471755,
+      "width": 144,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 36000,
+    "catches": 3,
+    "ball": {
+      "x": 384.2057120496638,
+      "y": 351.7281622995313,
+      "vx": -53.82863851008349,
+      "vy": 88.13709406010241,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 17.84999999999963,
+    "shot": 1,
+    "phase": "volley",
+    "target": 136.8355196439303,
+    "paddle": {
+      "x": 315.5985060471755,
+      "target": 136.8355196439303,
+      "width": 144,
+      "vx": 0,
+      "flash": 0.033333333333333354,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 54000,
+    "catches": 4,
+    "ball": {
+      "x": 309.28573810180603,
+      "y": 614.2086371838011,
+      "vx": -53.90108440713024,
+      "vy": -369.925976765892,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 17.991666666666287,
+    "shot": 1,
+    "phase": "volley",
+    "target": 209.7016836313101,
+    "paddle": {
+      "x": 188.09850604717548,
+      "target": 209.7016836313101,
+      "width": 144,
+      "vx": -900,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 54000,
+    "catches": 4,
+    "ball": {
+      "x": 305.25594808063113,
+      "y": 567.6262924607614,
+      "vx": 317.0789300797766,
+      "vy": 15.436690985599796,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 18.26666666666627,
+    "shot": 1,
+    "phase": "volley",
+    "target": 221.3775141789363,
+    "paddle": {
+      "x": 209.7016836313101,
+      "target": 221.3775141789363,
+      "width": 144,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 54000,
+    "catches": 4,
+    "ball": {
+      "x": 381.0324300954169,
+      "y": 580.9463824818014,
+      "vx": -298.05419427499,
+      "vy": 81.4366909855998,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 18.824999999999573,
+    "shot": 1,
+    "phase": "volley",
+    "target": 125.75721740722658,
+    "paddle": {
+      "x": 221.3775141789363,
+      "target": 125.75721740722658,
+      "width": 144,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 76000,
+    "catches": 4,
+    "ball": {
+      "x": 284.4328017414723,
+      "y": 628.9165532239663,
+      "vx": 335.6798052663757,
+      "vy": -101.43030878508162,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 19.241666666666216,
+    "shot": 1,
+    "phase": "volley",
+    "target": 143.1898193359375,
+    "paddle": {
+      "x": 125.75721740722658,
+      "target": 143.1898193359375,
+      "width": 144,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 76000,
+    "catches": 4,
+    "ball": {
+      "x": 351.81660649704105,
+      "y": 607.487257896849,
+      "vx": -315.5390169503931,
+      "vy": -1.4303087850816212,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 19.65833333333286,
+    "shot": 1,
+    "phase": "volley",
+    "target": 94,
+    "paddle": {
+      "x": 143.1898193359375,
+      "target": 94,
+      "width": 144,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 98000,
+    "catches": 4,
+    "ball": {
+      "x": 251.77079737603765,
+      "y": 612.010238598902,
+      "vx": 267.5964503249026,
+      "vy": -192.9980424227281,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 20.21666666666616,
+    "shot": 1,
+    "phase": "volley",
+    "target": 94,
+    "paddle": {
+      "x": 94,
+      "target": 94,
+      "width": 144,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 98000,
+    "catches": 4,
+    "ball": {
+      "x": 373.42296683472944,
+      "y": 541.6613315795456,
+      "vx": -251.5406633054085,
+      "vy": -58.998042422728105,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 20.499999999999478,
+    "shot": 1,
+    "phase": "volley",
+    "target": 118.79589139498198,
+    "paddle": {
+      "x": 94,
+      "target": 118.79589139498198,
+      "width": 144,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 98000,
+    "catches": 4,
+    "ball": {
+      "x": 323.98669530853124,
+      "y": 531.414368957846,
+      "vx": 247.82592488910973,
+      "vy": -63.367645277106604,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 20.774999999999462,
+    "shot": 1,
+    "phase": "volley",
+    "target": 136.71602219801684,
+    "paddle": {
+      "x": 118.79589139498198,
+      "target": 136.71602219801684,
+      "width": 144,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 98000,
+    "catches": 4,
+    "ball": {
+      "x": 382.117393843404,
+      "y": 523.0632665066416,
+      "vx": -232.95636939576315,
+      "vy": 2.632354722893396,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 21.05833333333278,
+    "shot": 1,
+    "phase": "volley",
+    "target": 162.28336510291467,
+    "paddle": {
+      "x": 136.71602219801684,
+      "target": 162.28336510291467,
+      "width": 144,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 98000,
+    "catches": 4,
+    "ball": {
+      "x": 324.62873670375626,
+      "y": 531.7506772513452,
+      "vx": 249.95009116927713,
+      "vy": -25.30399140214162,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 21.333333333332764,
+    "shot": 1,
+    "phase": "volley",
+    "target": 176.75565279447113,
+    "paddle": {
+      "x": 162.28336510291467,
+      "target": 176.75565279447113,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 98000,
+    "catches": 4,
+    "ball": {
+      "x": 380.12617285752196,
+      "y": 533.8670796157562,
+      "vx": -234.9530856991205,
+      "vy": 40.69600859785838,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 21.61666666666608,
+    "shot": 1,
+    "phase": "volley",
+    "target": 350,
+    "paddle": {
+      "x": 176.75565279447113,
+      "target": 350,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 98000,
+    "catches": 4,
+    "ball": {
+      "x": 334.4014063655212,
+      "y": 560.4793772971153,
+      "vx": 165.1924313188212,
+      "vy": 213.28394650797725,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 22.033333333332724,
+    "shot": 1,
+    "phase": "volley",
+    "target": 314.53880427433893,
+    "paddle": {
+      "x": 350,
+      "target": 314.53880427433893,
+      "width": 96,
+      "vx": 0,
+      "flash": 0.125,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 116000,
+    "catches": 5,
+    "ball": {
+      "x": 373.8443593044029,
+      "y": 652.8236560868244,
+      "vx": -20.38297150480747,
+      "vy": -347.02495121533866,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 25.074999999999218,
+    "shot": 1,
+    "phase": "volley",
+    "target": 250.54445472130408,
+    "paddle": {
+      "x": 314.53880427433893,
+      "target": 250.54445472130408,
+      "width": 96,
+      "vx": 0,
+      "flash": 0.025000000000000022,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 134000,
+    "catches": 6,
+    "ball": {
+      "x": 311.7374793336857,
+      "y": 615.809833454128,
+      "vx": -21.252371320230633,
+      "vy": -330.52206017327677,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 25.358333333332535,
+    "shot": 1,
+    "phase": "volley",
+    "target": 76.39169194148137,
+    "paddle": {
+      "x": 250.54445472130408,
+      "target": 76.39169194148137,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 134000,
+    "catches": 6,
+    "ball": {
+      "x": 323.06081757723905,
+      "y": 538.577713901197,
+      "vx": 184.98637010098867,
+      "vy": -181.87521682573083,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 25.816666666665842,
+    "shot": 1,
+    "phase": "volley",
+    "target": 95.2168203500601,
+    "paddle": {
+      "x": 76.39169194148137,
+      "target": 95.2168203500601,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 134000,
+    "catches": 6,
+    "ball": {
+      "x": 365.7131614122585,
+      "y": 480.4265728560703,
+      "vx": -173.88718789492935,
+      "vy": -71.87521682573083,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 27.041666666665773,
+    "shot": 1,
+    "phase": "volley",
+    "target": 263.0824021559495,
+    "paddle": {
+      "x": 95.2168203500601,
+      "target": 263.0824021559495,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 134000,
+    "catches": 6,
+    "ball": {
+      "x": 209.04693579436562,
+      "y": 572.4544322445504,
+      "vx": 163.4539566212336,
+      "vy": 222.12478317426917,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 27.53333333333241,
+    "shot": 1,
+    "phase": "volley",
+    "target": 300.24439885066107,
+    "paddle": {
+      "x": 263.0824021559495,
+      "target": 300.24439885066107,
+      "width": 96,
+      "vx": 0,
+      "flash": 0.10833333333333334,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 152000,
+    "catches": 7,
+    "ball": {
+      "x": 324.51455452600044,
+      "y": 663.6203928773529,
+      "vx": 347.0030877640163,
+      "vy": -113.95719468365247,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 27.683333333332403,
+    "shot": 1,
+    "phase": "volley",
+    "target": 132.68373107910156,
+    "paddle": {
+      "x": 300.24439885066107,
+      "target": 132.68373107910156,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 152000,
+    "catches": 7,
+    "ball": {
+      "x": 376.56501769060264,
+      "y": 649.226813674805,
+      "vx": 347.0030877640163,
+      "vy": -77.95719468365247,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 27.841666666665727,
+    "shot": 1,
+    "phase": "volley",
+    "target": 149.88658963716946,
+    "paddle": {
+      "x": 157.74439885066107,
+      "target": 149.88658963716946,
+      "width": 96,
+      "vx": -900,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 152000,
+    "catches": 7,
+    "ball": {
+      "x": 345.2271371877277,
+      "y": 639.89192451656,
+      "vx": -326.1829024981753,
+      "vy": -39.957194683652475,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 28.2916666666657,
+    "shot": 1,
+    "phase": "volley",
+    "target": 70,
+    "paddle": {
+      "x": 149.88658963716946,
+      "target": 70,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 174000,
+    "catches": 7,
+    "ball": {
+      "x": 279.57226025927804,
+      "y": 605.6474723110513,
+      "vx": 233.7929817434927,
+      "vy": -211.9451368044877,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 28.908333333332333,
+    "shot": 1,
+    "phase": "volley",
+    "target": 70,
+    "paddle": {
+      "x": 70,
+      "target": 70,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 174000,
+    "catches": 7,
+    "ball": {
+      "x": 351.203811217177,
+      "y": 520.5813046149507,
+      "vx": -219.76540283888312,
+      "vy": -63.9451368044877,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 29.058333333332325,
+    "shot": 1,
+    "phase": "volley",
+    "target": 328.66385591947113,
+    "paddle": {
+      "x": 70,
+      "target": 328.66385591947113,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 174000,
+    "catches": 7,
+    "ball": {
+      "x": 322.2204421704463,
+      "y": 510.2736966308821,
+      "vx": 2.7408501758474673,
+      "vy": -218.84213176639392,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 31.474999999998854,
+    "shot": 1,
+    "phase": "volley",
+    "target": 337.15731107271637,
+    "paddle": {
+      "x": 328.66385591947113,
+      "target": 337.15731107271637,
+      "width": 96,
+      "vx": 0,
+      "flash": 0.09166666666666667,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 192000,
+    "catches": 8,
+    "ball": {
+      "x": 328.8512006298379,
+      "y": 638.6809676604289,
+      "vx": 2.8614879090175087,
+      "vy": -341.326299717319,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 34.43333333333202,
+    "shot": 1,
+    "phase": "volley",
+    "target": 346.14640455979566,
+    "paddle": {
+      "x": 337.15731107271637,
+      "target": 346.14640455979566,
+      "width": 96,
+      "vx": 0,
+      "flash": 0.1,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 210000,
+    "catches": 9,
+    "ball": {
+      "x": 337.3213056533759,
+      "y": 641.1045800188639,
+      "vx": 2.95888709638305,
+      "vy": -351.9084219846787,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 37.51666666666518,
+    "shot": 1,
+    "phase": "volley",
+    "target": 350,
+    "paddle": {
+      "x": 346.14640455979566,
+      "target": 350,
+      "width": 96,
+      "vx": 0,
+      "flash": 0.05000000000000002,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 228000,
+    "catches": 10,
+    "ball": {
+      "x": 346.44593316699996,
+      "y": 623.1382698945669,
+      "vx": 2.972810094133937,
+      "vy": -346.6173012735895,
+      "r": 16
+    },
+    "bricks": [
+      {
+        "x": 145,
+        "y": 530,
+        "hp": 7,
+        "kind": "hexagon",
+        "size": 48,
+        "core": false,
+        "id": 2,
+        "maxHp": 8,
+        "flash": 0,
+        "vx": 0
+      },
+      {
+        "x": 289.96973790681966,
+        "y": 540,
+        "hp": 5,
+        "kind": "capacitor",
+        "size": 48,
+        "core": false,
+        "id": 3,
+        "maxHp": 12,
+        "flash": 0,
+        "motion": {
+          "baseX": 280,
+          "amplitude": 14,
+          "speed": 0.8999999999999999
+        },
+        "vx": -8.84587497742039
+      },
+      {
+        "x": 210,
+        "y": 625,
+        "hp": 4,
+        "kind": "prism",
+        "size": 48,
+        "power": "spring",
+        "core": false,
+        "id": 4,
+        "maxHp": 7,
+        "flash": 0,
+        "vx": 0
+      }
+    ],
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 40.62499999999834,
+    "shot": 1,
+    "phase": "volley",
+    "target": 193.55851862980768,
+    "paddle": {
+      "x": 350,
+      "target": 193.55851862980768,
+      "width": 96,
+      "vx": 0,
+      "flash": 0.033333333333333354,
+      "tilt": 0.3,
+      "boost": 40000
+    },
+    "energy": 246000,
+    "catches": 11,
+    "ball": {
+      "x": 335.40680437705754,
+      "y": 619.8106925641795,
+      "vx": -170.8524484705124,
+      "vy": -309.23866041346577,
+      "r": 16
+    },
+    "bricks": [
+      {
+        "x": 145,
+        "y": 530,
+        "hp": 7,
+        "kind": "hexagon",
+        "size": 48,
+        "core": false,
+        "id": 2,
+        "maxHp": 8,
+        "flash": 0,
+        "vx": 0
+      },
+      {
+        "x": 267.2990122916219,
+        "y": 540,
+        "hp": 5,
+        "kind": "capacitor",
+        "size": 48,
+        "core": false,
+        "id": 3,
+        "maxHp": 12,
+        "flash": 0,
+        "motion": {
+          "baseX": 280,
+          "amplitude": 14,
+          "speed": 0.8999999999999999
+        },
+        "vx": 5.3004507447593525
+      },
+      {
+        "x": 210,
+        "y": 625,
+        "hp": 4,
+        "kind": "prism",
+        "size": 48,
+        "power": "spring",
+        "core": false,
+        "id": 4,
+        "maxHp": 7,
+        "flash": 0,
+        "vx": 0
+      }
+    ],
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 40.908333333331655,
+    "shot": 1,
+    "phase": "volley",
+    "target": 272.8992027869591,
+    "paddle": {
+      "x": 193.55851862980768,
+      "target": 272.8992027869591,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 246000,
+    "catches": 11,
+    "ball": {
+      "x": 326.3381099951185,
+      "y": 569.22988689012,
+      "vx": 299.4929049804321,
+      "vy": 86.39896532277709,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 41.19166666666497,
+    "shot": 1,
+    "phase": "volley",
+    "target": 279.90774770883417,
+    "paddle": {
+      "x": 272.8992027869591,
+      "target": 279.90774770883417,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 246000,
+    "catches": 11,
+    "ball": {
+      "x": 362.5397224431996,
+      "y": 603.3429270649069,
+      "vx": -281.5233306816061,
+      "vy": 154.3989653227771,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 41.62499999999828,
+    "shot": 1,
+    "phase": "volley",
+    "target": 350,
+    "paddle": {
+      "x": 279.90774770883417,
+      "target": 350,
+      "width": 96,
+      "vx": 0,
+      "flash": 0.01666666666666669,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 286000,
+    "catches": 12,
+    "ball": {
+      "x": 242.92177267599305,
+      "y": 627.2085783743681,
+      "vx": 40.87252355044655,
+      "vy": -374.8339102676741,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 41.76666666666494,
+    "shot": 1,
+    "phase": "volley",
+    "target": 350,
+    "paddle": {
+      "x": 350,
+      "target": 350,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 286000,
+    "catches": 12,
+    "ball": {
+      "x": 248.7120468456399,
+      "y": 576.5154410864477,
+      "vx": 40.87252355044655,
+      "vy": -340.8339102676741,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 41.9083333333316,
+    "shot": 1,
+    "phase": "volley",
+    "target": 125.57972130408655,
+    "paddle": {
+      "x": 350,
+      "target": 125.57972130408655,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 286000,
+    "catches": 12,
+    "ball": {
+      "x": 215.21467008546946,
+      "y": 565.1123328014578,
+      "vx": -310.26962264180617,
+      "vy": 1.2794574376969194,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 42.60833333333156,
+    "shot": 1,
+    "phase": "volley",
+    "target": 117.86510291466347,
+    "paddle": {
+      "x": 125.57972130408655,
+      "target": 117.86510291466347,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 286000,
+    "catches": 12,
+    "ball": {
+      "x": 65.59578990569055,
+      "y": 624.8079530078455,
+      "vx": 291.6534452832978,
+      "vy": 169.27945743769692,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 42.88333333333154,
+    "shot": 1,
+    "phase": "volley",
+    "target": 76.20556053748498,
+    "paddle": {
+      "x": 117.86510291466347,
+      "target": 76.20556053748498,
+      "width": 96,
+      "vx": 0,
+      "flash": 0.05833333333333335,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 304000,
+    "catches": 13,
+    "ball": {
+      "x": 146.19407406288363,
+      "y": 638.5779732393946,
+      "vx": 295.94711842096694,
+      "vy": -211.85398345559207,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 43.16666666666486,
+    "shot": 1,
+    "phase": "volley",
+    "target": 91.23408977801984,
+    "paddle": {
+      "x": 76.20556053748498,
+      "target": 91.23408977801984,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 326000,
+    "catches": 13,
+    "ball": {
+      "x": 177.7616048207621,
+      "y": 562.0439348629458,
+      "vx": -67.3707612751699,
+      "vy": -325.5129233036609,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 43.30833333333152,
+    "shot": 1,
+    "phase": "volley",
+    "target": 350,
+    "paddle": {
+      "x": 91.23408977801984,
+      "target": 350,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 326000,
+    "catches": 13,
+    "ball": {
+      "x": 210.58388321994565,
+      "y": 567.65406637176,
+      "vx": 294.51460043658466,
+      "vy": 129.7349491294026,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 43.86666666666482,
+    "shot": 1,
+    "phase": "volley",
+    "target": 291.8527268629808,
+    "paddle": {
+      "x": 350,
+      "target": 291.8527268629808,
+      "width": 96,
+      "vx": 0,
+      "flash": 0.08333333333333334,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 344000,
+    "catches": 14,
+    "ball": {
+      "x": 376.44762891058843,
+      "y": 643.4362481843816,
+      "vx": 315.9110071398179,
+      "vy": -227.34551153323764,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 43.999999999998145,
+    "shot": 1,
+    "phase": "volley",
+    "target": 254.34224524864783,
+    "paddle": {
+      "x": 291.8527268629808,
+      "target": 254.34224524864783,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 344000,
+    "catches": 14,
+    "ball": {
+      "x": 356.30436532885733,
+      "y": 615.2568466466166,
+      "vx": -296.95634671142886,
+      "vy": -195.34551153323764,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 44.28333333333146,
+    "shot": 1,
+    "phase": "volley",
+    "target": 190.60756272536057,
+    "paddle": {
+      "x": 254.34224524864783,
+      "target": 190.60756272536057,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 344000,
+    "catches": 14,
+    "ball": {
+      "x": 273.51831522688985,
+      "y": 593.1969800140473,
+      "vx": -279.06223332024354,
+      "vy": 185.82820722786903,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 44.56666666666478,
+    "shot": 1,
+    "phase": "volley",
+    "target": 154.261474609375,
+    "paddle": {
+      "x": 190.60756272536057,
+      "target": 154.261474609375,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 366000,
+    "catches": 14,
+    "ball": {
+      "x": 289.35924095502344,
+      "y": 608.0273594775086,
+      "vx": 347.50367204841075,
+      "vy": -59.454745456458795,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 44.98333333333142,
+    "shot": 1,
+    "phase": "volley",
+    "target": 169.87528170072116,
+    "paddle": {
+      "x": 154.261474609375,
+      "target": 169.87528170072116,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 366000,
+    "catches": 14,
+    "ball": {
+      "x": 342.4462064365989,
+      "y": 604.087882203984,
+      "vx": -326.6534517255061,
+      "vy": 40.545254543541205,
+      "r": 16
+    },
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 45.399999999998066,
+    "shot": 1,
+    "phase": "volley",
+    "target": 70,
+    "paddle": {
+      "x": 169.87528170072116,
+      "target": 70,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 388000,
+    "catches": 14,
+    "ball": {
+      "x": 270.84982169560374,
+      "y": 609.5604615248095,
+      "vx": 295.3569029397194,
+      "vy": -170.45992278907303,
+      "r": 16
+    },
+    "bricks": [
+      {
+        "x": 145,
+        "y": 530,
+        "hp": 6,
+        "kind": "hexagon",
+        "size": 48,
+        "core": false,
+        "id": 2,
+        "maxHp": 8,
+        "flash": 0,
+        "vx": 0
+      },
+      {
+        "x": 279.72987971579903,
+        "y": 540,
+        "hp": 2,
+        "kind": "capacitor",
+        "size": 48,
+        "core": false,
+        "id": 3,
+        "maxHp": 12,
+        "flash": 0,
+        "motion": {
+          "baseX": 280,
+          "amplitude": 14,
+          "speed": 0.8999999999999999
+        },
+        "vx": -12.597654479146948
+      }
+    ],
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 45.82499999999804,
+    "shot": 1,
+    "phase": "volley",
+    "target": 70,
+    "paddle": {
+      "x": 70,
+      "target": 70,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 388000,
+    "catches": 14,
+    "ball": {
+      "x": 376.74548370788875,
+      "y": 558.7899943394535,
+      "vx": -277.6354887633362,
+      "vy": -68.45992278907303,
+      "r": 16
+    },
+    "bricks": [
+      {
+        "x": 145,
+        "y": 530,
+        "hp": 6,
+        "kind": "hexagon",
+        "size": 48,
+        "core": false,
+        "id": 2,
+        "maxHp": 8,
+        "flash": 0,
+        "vx": 0
+      },
+      {
+        "x": 274.52499925489445,
+        "y": 540,
+        "hp": 2,
+        "kind": "capacitor",
+        "size": 48,
+        "core": false,
+        "id": 3,
+        "maxHp": 12,
+        "flash": 0,
+        "motion": {
+          "baseX": 280,
+          "amplitude": 14,
+          "speed": 0.8999999999999999
+        },
+        "vx": -11.596539877967297
+      }
+    ],
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 46.099999999998026,
+    "shot": 1,
+    "phase": "volley",
+    "target": 331.48085374098554,
+    "paddle": {
+      "x": 70,
+      "target": 331.48085374098554,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 388000,
+    "catches": 14,
+    "ball": {
+      "x": 317.9381439701014,
+      "y": 553.3357368908678,
+      "vx": 216.39860713411025,
+      "vy": 118.55951971602245,
+      "r": 16
+    },
+    "bricks": [
+      {
+        "x": 145,
+        "y": 530,
+        "hp": 6,
+        "kind": "hexagon",
+        "size": 48,
+        "core": false,
+        "id": 2,
+        "maxHp": 8,
+        "flash": 0,
+        "vx": 0
+      },
+      {
+        "x": 271.5352441589714,
+        "y": 540,
+        "hp": 1,
+        "kind": "capacitor",
+        "size": 48,
+        "core": false,
+        "id": 3,
+        "maxHp": 12,
+        "flash": 0.08666666666666667,
+        "motion": {
+          "baseX": 280,
+          "amplitude": 14,
+          "speed": 0.8999999999999999
+        },
+        "vx": -10.036025404857035
+      }
+    ],
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 46.51666666666467,
+    "shot": 1,
+    "phase": "volley",
+    "target": 335.1885282076322,
+    "paddle": {
+      "x": 331.48085374098554,
+      "target": 335.1885282076322,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 388000,
+    "catches": 14,
+    "ball": {
+      "x": 365.6585309293937,
+      "y": 623.5688701058773,
+      "vx": -203.4146907060636,
+      "vy": 218.55951971602246,
+      "r": 16
+    },
+    "bricks": [
+      {
+        "x": 145,
+        "y": 530,
+        "hp": 6,
+        "kind": "hexagon",
+        "size": 48,
+        "core": false,
+        "id": 2,
+        "maxHp": 8,
+        "flash": 0,
+        "vx": 0
+      },
+      {
+        "x": 268.03912416450873,
+        "y": 540,
+        "hp": 1,
+        "kind": "capacitor",
+        "size": 48,
+        "core": false,
+        "id": 3,
+        "maxHp": 12,
+        "flash": 0,
+        "motion": {
+          "baseX": 280,
+          "amplitude": 14,
+          "speed": 0.8999999999999999
+        },
+        "vx": -6.548231355934834
+      }
+    ],
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 46.799999999997986,
+    "shot": 1,
+    "phase": "volley",
+    "target": 196.9916710486779,
+    "paddle": {
+      "x": 335.1885282076322,
+      "target": 196.9916710486779,
+      "width": 96,
+      "vx": 0,
+      "flash": 0.01666666666666669,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 406000,
+    "catches": 15,
+    "ball": {
+      "x": 308.00000582913276,
+      "y": 624.6583776838946,
+      "vx": -203.59741120763522,
+      "vy": -241.5622253432711,
+      "r": 16
+    },
+    "bricks": [
+      {
+        "x": 145,
+        "y": 530,
+        "hp": 6,
+        "kind": "hexagon",
+        "size": 48,
+        "core": false,
+        "id": 2,
+        "maxHp": 8,
+        "flash": 0,
+        "vx": 0
+      },
+      {
+        "x": 266.59060914280644,
+        "y": 540,
+        "hp": 1,
+        "kind": "capacitor",
+        "size": 48,
+        "core": false,
+        "id": 3,
+        "maxHp": 12,
+        "flash": 0,
+        "motion": {
+          "baseX": 280,
+          "amplitude": 14,
+          "speed": 0.8999999999999999
+        },
+        "vx": -3.62111472334161
+      }
+    ],
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 47.0833333333313,
+    "shot": 1,
+    "phase": "volley",
+    "target": 190.32010826697717,
+    "paddle": {
+      "x": 196.9916710486779,
+      "target": 190.32010826697717,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 406000,
+    "catches": 15,
+    "ball": {
+      "x": 249.96636894973676,
+      "y": 593.8067363948609,
+      "vx": -208.1579013313918,
+      "vy": 193.13106019560257,
+      "r": 16
+    },
+    "bricks": [
+      {
+        "x": 145,
+        "y": 530,
+        "hp": 6,
+        "kind": "hexagon",
+        "size": 48,
+        "core": false,
+        "id": 2,
+        "maxHp": 8,
+        "flash": 0,
+        "vx": 0
+      }
+    ],
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 47.49999999999795,
+    "shot": 1,
+    "phase": "volley",
+    "target": 350,
+    "paddle": {
+      "x": 190.32010826697717,
+      "target": 350,
+      "width": 96,
+      "vx": 0,
+      "flash": 0.025000000000000022,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 424000,
+    "catches": 16,
+    "ball": {
+      "x": 162.64152912314813,
+      "y": 626.1754981278241,
+      "vx": -212.89694883945782,
+      "vy": -247.63550588299864,
+      "r": 16
+    },
+    "bricks": [
+      {
+        "x": 145,
+        "y": 530,
+        "hp": 6,
+        "kind": "hexagon",
+        "size": 48,
+        "core": false,
+        "id": 2,
+        "maxHp": 8,
+        "flash": 0,
+        "vx": 0
+      }
+    ],
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 48.20833333333124,
+    "shot": 1,
+    "phase": "volley",
+    "target": 350,
+    "paddle": {
+      "x": 350,
+      "target": 350,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 424000,
+    "catches": 16,
+    "ball": {
+      "x": 54.012313190909055,
+      "y": 510.9753481273668,
+      "vx": 200.12313190909032,
+      "vy": -77.63550588299864,
+      "r": 16
+    },
+    "bricks": [
+      {
+        "x": 145,
+        "y": 530,
+        "hp": 6,
+        "kind": "hexagon",
+        "size": 48,
+        "core": false,
+        "id": 2,
+        "maxHp": 8,
+        "flash": 0,
+        "vx": 0
+      }
+    ],
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 48.62499999999788,
+    "shot": 1,
+    "phase": "volley",
+    "target": 323.6360896183894,
+    "paddle": {
+      "x": 350,
+      "target": 323.6360896183894,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 424000,
+    "catches": 16,
+    "ball": {
+      "x": 131.68689979539084,
+      "y": 489.57045436684206,
+      "vx": 94.35677518656499,
+      "vy": -160.82820945786668,
+      "r": 16
+    },
+    "bricks": [
+      {
+        "x": 145,
+        "y": 530,
+        "hp": 5,
+        "kind": "hexagon",
+        "size": 48,
+        "core": false,
+        "id": 2,
+        "maxHp": 8,
+        "flash": 0.07,
+        "vx": 0
+      }
+    ],
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 50.71666666666443,
+    "shot": 1,
+    "phase": "volley",
+    "target": 170.83844228891226,
+    "paddle": {
+      "x": 323.6360896183894,
+      "target": 170.83844228891226,
+      "width": 96,
+      "vx": 0,
+      "flash": 0.1,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 442000,
+    "catches": 17,
+    "ball": {
+      "x": 329.24434382897135,
+      "y": 642.3959642960499,
+      "vx": 98.24722722016956,
+      "vy": -326.12275113265525,
+      "r": 16
+    },
+    "bricks": [
+      {
+        "x": 145,
+        "y": 530,
+        "hp": 5,
+        "kind": "hexagon",
+        "size": 48,
+        "core": false,
+        "id": 2,
+        "maxHp": 8,
+        "flash": 0,
+        "vx": 0
+      }
+    ],
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 51.41666666666439,
+    "shot": 1,
+    "phase": "volley",
+    "target": 184.2700406588041,
+    "paddle": {
+      "x": 170.83844228891226,
+      "target": 184.2700406588041,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 442000,
+    "catches": 17,
+    "ball": {
+      "x": 375.2255540815214,
+      "y": 472.91003850319123,
+      "vx": -92.3523935869594,
+      "vy": -158.12275113265525,
+      "r": 16
+    },
+    "bricks": [
+      {
+        "x": 145,
+        "y": 530,
+        "hp": 5,
+        "kind": "hexagon",
+        "size": 48,
+        "core": false,
+        "id": 2,
+        "maxHp": 8,
+        "flash": 0,
+        "vx": 0
+      }
+    ],
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 53.524999999997604,
+    "shot": 1,
+    "phase": "volley",
+    "target": 163.35194044846756,
+    "paddle": {
+      "x": 184.2700406588041,
+      "target": 163.35194044846756,
+      "width": 96,
+      "vx": 0,
+      "flash": 0.11666666666666667,
+      "tilt": -0.18,
+      "boost": 22000
+    },
+    "energy": 460000,
+    "catches": 18,
+    "ball": {
+      "x": 180.3858915070145,
+      "y": 647.5431262877028,
+      "vx": -96.2533764469866,
+      "vy": -339.7656612269089,
+      "r": 16
+    },
+    "bricks": [
+      {
+        "x": 145,
+        "y": 530,
+        "hp": 5,
+        "kind": "hexagon",
+        "size": 48,
+        "core": false,
+        "id": 2,
+        "maxHp": 8,
+        "flash": 0,
+        "vx": 0
+      }
+    ],
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 53.79999999999759,
+    "shot": 1,
+    "phase": "volley",
+    "target": 222.51494187575122,
+    "paddle": {
+      "x": 163.35194044846756,
+      "target": 222.51494187575122,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 460000,
+    "catches": 18,
+    "ball": {
+      "x": 156.8484737649184,
+      "y": 568.2613941037341,
+      "vx": 182.0849772003017,
+      "vy": 208.3305089852662,
+      "r": 16
+    },
+    "bricks": [
+      {
+        "x": 145,
+        "y": 530,
+        "hp": 4,
+        "kind": "hexagon",
+        "size": 48,
+        "core": false,
+        "id": 2,
+        "maxHp": 8,
+        "flash": 0.11166666666666666,
+        "vx": 0
+      }
+    ],
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 54.224999999997564,
+    "shot": 1,
+    "phase": "volley",
+    "target": 70,
+    "paddle": {
+      "x": 222.51494187575122,
+      "target": 70,
+      "width": 96,
+      "vx": 0,
+      "flash": 0.09166666666666667,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 478000,
+    "catches": 19,
+    "ball": {
+      "x": 234.55559859584062,
+      "y": 641.5135446742784,
+      "vx": 187.58799755677353,
+      "vy": -292.85751210692786,
+      "r": 16
+    },
+    "bricks": [
+      {
+        "x": 145,
+        "y": 530,
+        "hp": 4,
+        "kind": "hexagon",
+        "size": 48,
+        "core": false,
+        "id": 2,
+        "maxHp": 8,
+        "flash": 0,
+        "vx": 0
+      }
+    ],
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 55.074999999997516,
+    "shot": 1,
+    "phase": "volley",
+    "target": 87.91620342548077,
+    "paddle": {
+      "x": 70,
+      "target": 87.91620342548077,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 478000,
+    "catches": 19,
+    "ball": {
+      "x": 378.6528034290263,
+      "y": 479.2846593833895,
+      "vx": -176.3327177033671,
+      "vy": -88.85751210692786,
+      "r": 16
+    },
+    "bricks": [
+      {
+        "x": 145,
+        "y": 530,
+        "hp": 4,
+        "kind": "hexagon",
+        "size": 48,
+        "core": false,
+        "id": 2,
+        "maxHp": 8,
+        "flash": 0,
+        "vx": 0
+      }
+    ],
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 56.33333333333078,
+    "shot": 1,
+    "phase": "volley",
+    "target": 270.00643451397235,
+    "paddle": {
+      "x": 87.91620342548077,
+      "target": 270.00643451397235,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 478000,
+    "catches": 19,
+    "ball": {
+      "x": 205.28624993165815,
+      "y": 557.4806233155051,
+      "vx": 165.7527546411651,
+      "vy": 213.14248789307214,
+      "r": 16
+    },
+    "bricks": [
+      {
+        "x": 145,
+        "y": 530,
+        "hp": 3,
+        "kind": "hexagon",
+        "size": 48,
+        "core": false,
+        "id": 2,
+        "maxHp": 8,
+        "flash": 0,
+        "vx": 0
+      }
+    ],
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 56.74999999999742,
+    "shot": 1,
+    "phase": "volley",
+    "target": 70,
+    "paddle": {
+      "x": 270.00643451397235,
+      "target": 70,
+      "width": 96,
+      "vx": 0,
+      "flash": 0.125,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 496000,
+    "catches": 20,
+    "ball": {
+      "x": 274.37595520135295,
+      "y": 651.0988305974346,
+      "vx": 166.79505474288595,
+      "vy": -313.05369586893875,
+      "r": 16
+    },
+    "bricks": [
+      {
+        "x": 145,
+        "y": 530,
+        "hp": 3,
+        "kind": "hexagon",
+        "size": 48,
+        "core": false,
+        "id": 2,
+        "maxHp": 8,
+        "flash": 0,
+        "vx": 0
+      }
+    ],
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 57.44999999999738,
+    "shot": 1,
+    "phase": "volley",
+    "target": 78.88803335336539,
+    "paddle": {
+      "x": 70,
+      "target": 78.88803335336539,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 496000,
+    "catches": 20,
+    "ball": {
+      "x": 382.0803162135421,
+      "y": 490.7612434891774,
+      "vx": -156.7873514583128,
+      "vy": -145.05369586893875,
+      "r": 16
+    },
+    "bricks": [
+      {
+        "x": 145,
+        "y": 530,
+        "hp": 3,
+        "kind": "hexagon",
+        "size": 48,
+        "core": false,
+        "id": 2,
+        "maxHp": 8,
+        "flash": 0,
+        "vx": 0
+      }
+    ],
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 58.858333333330634,
+    "shot": 1,
+    "phase": "volley",
+    "target": 294.2542771559495,
+    "paddle": {
+      "x": 78.88803335336539,
+      "target": 294.2542771559495,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 496000,
+    "catches": 20,
+    "ball": {
+      "x": 191.21878837229409,
+      "y": 493.5244753872874,
+      "vx": 155.9609759964755,
+      "vy": -130.3896402084963,
+      "r": 16
+    },
+    "bricks": [
+      {
+        "x": 145,
+        "y": 530,
+        "hp": 2,
+        "kind": "hexagon",
+        "size": 48,
+        "core": false,
+        "id": 2,
+        "maxHp": 8,
+        "flash": 0.02833333333333335,
+        "vx": 0
+      }
+    ],
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 60.24999999999722,
+    "shot": 1,
+    "phase": "volley",
+    "target": 299.91883732722357,
+    "paddle": {
+      "x": 294.2542771559495,
+      "target": 299.91883732722357,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 496000,
+    "catches": 20,
+    "ball": {
+      "x": 365.23119669646945,
+      "y": 544.4738927637965,
+      "vx": -146.60331743668695,
+      "vy": 203.6103597915037,
+      "r": 16
+    },
+    "bricks": [
+      {
+        "x": 145,
+        "y": 530,
+        "hp": 2,
+        "kind": "hexagon",
+        "size": 48,
+        "core": false,
+        "id": 2,
+        "maxHp": 8,
+        "flash": 0,
+        "vx": 0
+      }
+    ],
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 60.79999999999719,
+    "shot": 1,
+    "phase": "volley",
+    "target": 171.47448026216946,
+    "paddle": {
+      "x": 299.91883732722357,
+      "target": 171.47448026216946,
+      "width": 96,
+      "vx": 0,
+      "flash": 0.05000000000000002,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 514000,
+    "catches": 21,
+    "ball": {
+      "x": 284.25087113287594,
+      "y": 628.0020408084764,
+      "vx": -150.08832717084633,
+      "vy": -297.9984485532929,
+      "r": 16
+    },
+    "bricks": [
+      {
+        "x": 145,
+        "y": 530,
+        "hp": 2,
+        "kind": "hexagon",
+        "size": 48,
+        "core": false,
+        "id": 2,
+        "maxHp": 8,
+        "flash": 0,
+        "vx": 0
+      }
+    ],
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 62.62499999999709,
+    "shot": 1,
+    "phase": "volley",
+    "target": 162.14776376577524,
+    "paddle": {
+      "x": 171.47448026216946,
+      "target": 162.14776376577524,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 514000,
+    "catches": 21,
+    "ball": {
+      "x": 55.162454131089305,
+      "y": 483.829872198717,
+      "vx": 141.08302754059557,
+      "vy": 140.00155144670708,
+      "r": 16
+    },
+    "bricks": [
+      {
+        "x": 145,
+        "y": 530,
+        "hp": 2,
+        "kind": "hexagon",
+        "size": 48,
+        "core": false,
+        "id": 2,
+        "maxHp": 8,
+        "flash": 0,
+        "vx": 0
+      }
+    ],
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 63.45833333333037,
+    "shot": 1,
+    "phase": "volley",
+    "target": 72.22201655461238,
+    "paddle": {
+      "x": 162.14776376577524,
+      "target": 72.22201655461238,
+      "width": 96,
+      "vx": 0,
+      "flash": 0.07500000000000001,
+      "tilt": 0.26,
+      "boost": 28000
+    },
+    "energy": 532000,
+    "catches": 22,
+    "ball": {
+      "x": 159.89192389483162,
+      "y": 632.7972562785964,
+      "vx": -30.11323717167687,
+      "vy": -340.36071991397347,
+      "r": 16
+    },
+    "bricks": [
+      {
+        "x": 145,
+        "y": 530,
+        "hp": 2,
+        "kind": "hexagon",
+        "size": 48,
+        "core": false,
+        "id": 2,
+        "maxHp": 8,
+        "flash": 0,
+        "vx": 0
+      }
+    ],
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 63.74166666666369,
+    "shot": 1,
+    "phase": "volley",
+    "target": 253.5113994891827,
+    "paddle": {
+      "x": 72.22201655461238,
+      "target": 253.5113994891827,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 532000,
+    "catches": 22,
+    "ball": {
+      "x": 170.9331099615259,
+      "y": 579.8969502954599,
+      "vx": 228.40764977202582,
+      "vy": 175.41059109029084,
+      "r": 16
+    },
+    "bricks": [
+      {
+        "x": 145,
+        "y": 530,
+        "hp": 1,
+        "kind": "hexagon",
+        "size": 48,
+        "core": false,
+        "id": 2,
+        "maxHp": 8,
+        "flash": 0.04500000000000001,
+        "vx": 0
+      }
+    ],
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 64.15833333333046,
+    "shot": 1,
+    "phase": "volley",
+    "target": 90.26539963942308,
+    "paddle": {
+      "x": 253.5113994891827,
+      "target": 90.26539963942308,
+      "width": 96,
+      "vx": 0,
+      "flash": 0.1,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 550000,
+    "catches": 23,
+    "ball": {
+      "x": 266.3630643219591,
+      "y": 645.4472497447532,
+      "vx": 233.6096555471365,
+      "vy": -265.1740734562305,
+      "r": 16
+    },
+    "bricks": [
+      {
+        "x": 145,
+        "y": 530,
+        "hp": 1,
+        "kind": "hexagon",
+        "size": 48,
+        "core": false,
+        "id": 2,
+        "maxHp": 8,
+        "flash": 0,
+        "vx": 0
+      }
+    ],
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 64.71666666666424,
+    "shot": 1,
+    "phase": "volley",
+    "target": 70,
+    "paddle": {
+      "x": 90.26539963942308,
+      "target": 70,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 550000,
+    "catches": 23,
+    "ball": {
+      "x": 376.8502884910706,
+      "y": 534.800058731691,
+      "vx": -219.5930762143083,
+      "vy": -131.17407345623047,
+      "r": 16
+    },
+    "bricks": [
+      {
+        "x": 145,
+        "y": 530,
+        "hp": 1,
+        "kind": "hexagon",
+        "size": 48,
+        "core": false,
+        "id": 2,
+        "maxHp": 8,
+        "flash": 0,
+        "vx": 0
+      }
+    ],
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 65.68333333333167,
+    "shot": 1,
+    "phase": "volley",
+    "target": 303.30068734975964,
+    "paddle": {
+      "x": 70,
+      "target": 303.30068734975964,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 550000,
+    "catches": 23,
+    "ball": {
+      "x": 197.15605812032697,
+      "y": 509.98107917599054,
+      "vx": 214.35521560162854,
+      "vy": -34.379950660455705,
+      "r": 16
+    },
+    "bricks": [],
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 66.66666666666579,
+    "shot": 1,
+    "phase": "volley",
+    "target": 308.7356191781851,
+    "paddle": {
+      "x": 303.30068734975964,
+      "target": 308.7356191781851,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 550000,
+    "catches": 23,
+    "ball": {
+      "x": 365.8506097334466,
+      "y": 592.2074610265427,
+      "vx": -201.49390266553084,
+      "vy": 201.6200493395443,
+      "r": 16
+    },
+    "bricks": [],
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointermove",
+    "flight": 67.08333333333279,
+    "shot": 1,
+    "phase": "volley",
+    "target": 283.5739464393029,
+    "paddle": {
+      "x": 308.7356191781851,
+      "target": 283.5739464393029,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 550000,
+    "catches": 23,
+    "ball": {
+      "x": 281.89481695614086,
+      "y": 697.0491482513528,
+      "vx": -201.49390266553084,
+      "vy": 301.62004933954427,
+      "r": 16
+    },
+    "bricks": [],
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 8.06666666666685
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": 12.508333333333264
+      }
+    ],
+    "airZones": []
+  },
+  {
+    "event": "pointerup",
+    "flight": 67.12499999999949,
+    "shot": 1,
+    "phase": "won",
+    "target": 283.5739464393029,
+    "paddle": {
+      "x": 283.5739464393029,
+      "target": 283.5739464393029,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "energy": 550000,
+    "catches": 23,
+    "ball": null,
+    "bricks": [],
+    "gateStates": [],
+    "pegStates": [
+      {
+        "x": 176,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": -1
+      },
+      {
+        "x": 244,
+        "y": 340,
+        "r": 23,
+        "pressure": 0,
+        "lastContact": -1
+      }
+    ],
+    "airZones": []
+  }
+]

@@ -1,0 +1,11 @@
+npm warn Unknown env config "devdir". This will error in a future major version of npm. See `npm help npmrc` for supported config options.
+npm notice run flux-foundry@0.18.0 test:play
+npm notice run node scripts/paddle-play.mjs --pegs --level=21
+file:///D:/Work/games/flux-foundry/scripts/paddle-play.mjs:10
+ if(server?.exitCode!==null&&server?.exitCode!==undefined)throw new Error(`Game preview exited (${server.exitCode}); check port ${port} ownership`);
+                                                                ^
+
+Error: Game preview exited (1); check port 4196 ownership
+    at file:///D:/Work/games/flux-foundry/scripts/paddle-play.mjs:10:65
+
+Node.js v26.10.0

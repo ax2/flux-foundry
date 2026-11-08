@@ -1,0 +1,16 @@
+node:internal/child_process:486
+    throw new ErrnoException(err, 'spawn');
+          ^
+
+Error: spawn EBUSY
+    at ChildProcess.spawn (node:internal/child_process:486:11)
+    at spawn (node:child_process:813:9)
+    at launchPortable (file:///D:/Work/games/flux-foundry/scripts/desktop-smoke.mjs:14:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async file:///D:/Work/games/flux-foundry/scripts/desktop-smoke.mjs:19:20 {
+  errno: -4082,
+  code: 'EBUSY',
+  syscall: 'spawn'
+}
+
+Node.js v26.10.0
