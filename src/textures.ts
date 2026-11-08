@@ -17,7 +17,7 @@ export class TextureLoader{
  }
  private async loadOne(t:Texture){
   t.status='loading';t.received=0;this.emit();let objectURL:string|undefined;
-  const controller=new AbortController(),timeout=setTimeout(()=>controller.abort(),30000);
+  const controller=new AbortController(),timeout=setTimeout(()=>controller.abort(),120000);
   try{
    if(this.protocol==='file:'){
     // Local Electron files decode directly; completed-file bytes are reported after decode, never simulated.
@@ -27,7 +27,7 @@ export class TextureLoader{
     const parts:BlobPart[]=[];
     if(response.body){const reader=response.body.getReader();while(true){const {done,value}=await reader.read();if(done)break;parts.push(value);t.received+=value.byteLength;this.emit();}}
     else{const data=await response.arrayBuffer();parts.push(data);t.received=data.byteLength;this.emit();}
-    objectURL=URL.createObjectURL(new Blob(parts,{type:'image/webp'}));t.image.src=objectURL;await t.image.decode();
+    objectURL=URL.createObjectURL(new Blob(parts,{type:response.headers.get('content-type')||'image/png'}));t.image.src=objectURL;await t.image.decode();
    }
    t.received=t.bytes;t.status='ready';
   }catch{t.status='failed';}

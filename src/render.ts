@@ -1,5 +1,5 @@
-import arenaURL from './assets/arena.webp';
-import atlasURL from './assets/targets.webp';
+import arenaURL from './assets/arena.png';
+import atlasURL from './assets/targets.png';
 import {TEXTURE_BYTES} from './asset-manifest';
 import {TextureLoader} from './textures';
 import {PADDLE_Y} from './arcade';

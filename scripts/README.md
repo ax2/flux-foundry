@@ -16,6 +16,6 @@ Stage-10新增：
 - npm run test:active：1872组主动跟球/定向挡板首球，任何连续60模拟秒无命中都会失败并保存参数。
 - npm run test:full：120个完整引擎对局，含多发与稀疏末块；不把单球结果当整局。
 - npm run test:play -- --stress：第4/5/22关难例的触控UI；每约1秒记录墙钟、模拟、无命中、后台/暂停/帧信息，超限保留分类现场。
-- python scripts/compress-assets.py：需Pillow/WebP，从art/source重建WebP及字节清单；发行构建只使用已跟踪的生成资源，无需安装Python依赖。
+- Stage-11已按用户要求撤销压缩：当前使用原始PNG及原始分辨率，压缩脚本已移除。Stage-10的压缩记录仅为历史，不是当前规则。
 
 - npm run test:expedition：72局完整远征，保留300秒检查点后继续至900模拟秒观察；有效长回合与60秒无命中分开统计，不强制结束任何球。

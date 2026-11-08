@@ -11,7 +11,7 @@ try{
  await page.goto(`https://ax2.github.io/flux-foundry/?release=${version}`,{waitUntil:'domcontentloaded',timeout:45000});
  await page.waitForFunction(()=>{const c=document.querySelector('#game');return window.fluxSnapshot?.().power===1&&c?.width>0&&c.getContext('2d').getImageData(10,10,1,1).data[3]>0;},{},{timeout:30000});
  assert.ok((await page.locator('.intro small').textContent()).includes(`v${version}`));
- await page.waitForFunction(()=>window.fluxDiagnostics?.().loading.phase==='ready',null,{timeout:60000});const textureLoading=await page.evaluate(()=>window.fluxDiagnostics().loading);assert.equal(textureLoading.total,251682);assert.equal(textureLoading.failed,0);
+ await page.waitForFunction(()=>window.fluxDiagnostics?.().loading.phase==='ready',null,{timeout:150000});const textureLoading=await page.evaluate(()=>window.fluxDiagnostics().loading);assert.equal(textureLoading.total,3399692);assert.equal(textureLoading.failed,0);
  await page.locator('#workshop').click();assert.equal(await page.locator('[data-material]').count(),4);await page.locator('[data-material="brass"]').click();await page.locator('[data-size="large"]').click();await page.locator('#equip').click();
  await page.locator('#levels').click();assert.equal(await page.locator('[data-level]').count(),26);await page.locator('[data-level="16"]').click();await page.locator('#beginChallenge').click();
  await page.locator('#game').press('Space');

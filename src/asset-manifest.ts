@@ -1,1 +1,1 @@
-export const TEXTURE_BYTES={"arena": 115716, "targets": 135966} as const;
+export const TEXTURE_BYTES={"arena":1901268,"targets":1498424} as const;

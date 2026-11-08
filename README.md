@@ -4,15 +4,13 @@
 
 **[在线游玩](https://ax2.github.io/flux-foundry/)** · **[Windows 下载](https://github.com/ax2/flux-foundry/releases)** · MIT
 
-![手机画面](docs/iterations/Stage-10/390x844.png)
+![手机画面](docs/iterations/Stage-11/390x844.png)
 
-## v0.10.0 即刻开局与球路脱困
+## v0.10.1 恢复原画质
 
-v0.10.0已发布，验证与发布记录见[Stage-10日志](docs/iterations/Stage-10/worklog.md)。
+使用与v0.9.0逐字节一致的原始PNG：场地941×1672，图集2172×724。不压缩、不缩图、不转WebP。保留加载进度与重试，加载预览明确标注，完整画面以原图解码后为准。球路修复、玩法和已有存档继续保留。
 
-- 首屏图片由3.40MB压到约252KB，减少92.6%；场地先以可玩备用材质出现，贴图按真实字节显示进度，失败可重试。
-- 无进展时可见挡板参考气流与障碍调整机械面、准备有上限的供能，保持不限接球与自然落底。
-- 1Mbps/100ms、禁用缓存的受控对照：旧版约27.85秒才出场地，新版约0.6秒先出场地、2.7秒材质完成；不是所有网络/设备的保证。
+本地修复候选，发布记录见[Stage-11日志](docs/iterations/Stage-11/worklog.md)。
 
 ## 自然回放与稳定进度
 
@@ -41,11 +39,11 @@ v0.9.0为上一版；当前修复继续保留已存星级。Stage-08的简化挡
 
 ## 交付与验证
 
-Windows x64：`Flux-Foundry-0.10.0-Windows-x64.exe` 便携启动，本地保留 `releases/v0.10.0/win-unpacked/` 完整运行目录，无游戏ZIP。手机为触屏Web/PWA，首次联网加载后可离线重开；未交付APK/iOS原生包。Windows未签名，实体手机/低端性能仍待验收。
+Windows x64：`Flux-Foundry-0.10.1-Windows-x64.exe` 便携启动，本地保留 `releases/v0.10.1/win-unpacked/` 完整运行目录，无游戏ZIP。手机为触屏Web/PWA，首次联网加载后可离线重开；未交付APK/iOS原生包。Windows未签名，实体手机/低端性能仍待验收。
 
-本阶段：76项逻辑与构建、121项三视口、16项加载检查；52套自然三星回放、936居中首球、1872主动首球与120完整算法对局通过。触控UI 8局15颗全部通关，无观察超限，最长连续无命中23.30秒。Windows完整目录与便携EXE均启动并确认贴图加载。算法控制不代表真人胜率或实体手机性能；观察上限仅在工具中记录失败，不会结束球。
+本轮原图哈希和分辨率检查、78项逻辑、121项三视口界面、16项加载检查及Windows目录/EXE原图加载均通过；第14关触控自然通关。原有球路、库存、星级规则未变，936/1872首球、120挑战与72远征回归继续通过。当前原始PNG总3.40MB，低带宽完整加载会较慢；加载进度会持续显示。
 
-[当前设计](docs/iterations/Stage-10/design.md) · [本轮评估](docs/iterations/Stage-10/assessment.md) · [工作日志](docs/iterations/Stage-10/worklog.md)
+[本轮评估](docs/iterations/Stage-11/assessment.md) · [工作日志](docs/iterations/Stage-11/worklog.md)
 
 ## 开发
 
