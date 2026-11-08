@@ -1,0 +1,21 @@
+{
+  "error": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#checkUpdate')\u001b[22m\n\u001b[2m    - locator resolved to <button disabled id=\"checkUpdate\" class=\"secondary update-action\">检查更新</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    58 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not enabled\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n",
+  "checks": [
+    "current version is readable on mobile",
+    "first install does not claim a newer version"
+  ],
+  "pages": [
+    {
+      "version": "原创物理弹射 · v0.20.0WINDOWS / MOBILE WEB",
+      "phase": "volley",
+      "shots": 1,
+      "update": {
+        "status": "checking",
+        "available": false,
+        "applying": false,
+        "controlled": true
+      },
+      "card": "当前版本 v0.20.0正在检查更新…检查更新"
+    }
+  ]
+}

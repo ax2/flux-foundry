@@ -17,3 +17,4 @@ Windows packaging attempt 1/3 (installed Electron)
   • executable resource editing and code signing skipped — signAndEditExecutable is false. To skip only code signing while keeping icon and metadata applied, use signExecutable: false instead.  exe=releases\v0.20.0\win-unpacked\Flux Foundry.exe
   • building        target=portable file=releases\v0.20.0\Flux-Foundry-0.20.0-Windows-x64.exe archs=x64
   • default Electron icon is used  reason=application icon is not set
+  • no code signing certificate configured, signing is skipped  path=releases\v0.20.0\Flux-Foundry-0.20.0-Windows-x64.exe

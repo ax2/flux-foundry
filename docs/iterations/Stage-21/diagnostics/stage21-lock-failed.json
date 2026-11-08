@@ -1,0 +1,83 @@
+{
+  "error": "TimeoutError: page.waitForFunction: Timeout 30000ms exceeded.",
+  "checks": [
+    "controlled first-activation delay is exercised",
+    "current version is readable on mobile",
+    "first install does not claim a newer version"
+  ],
+  "requests": [
+    {
+      "root": 0,
+      "path": "index.html"
+    },
+    {
+      "root": 0,
+      "path": "assets/index-DTj7Ybrk.js"
+    },
+    {
+      "root": 0,
+      "path": "assets/index-B1_H6VJv.css"
+    },
+    {
+      "root": 0,
+      "path": "assets/arena-DPpudWct.png"
+    },
+    {
+      "root": 0,
+      "path": "assets/targets-Bs7NvsYu.png"
+    },
+    {
+      "root": 0,
+      "path": "icon.svg"
+    },
+    {
+      "root": 0,
+      "path": "sw.js"
+    },
+    {
+      "root": 0,
+      "path": "icon.svg"
+    },
+    {
+      "root": 0,
+      "path": "index.html"
+    },
+    {
+      "root": 0,
+      "path": "manifest.webmanifest"
+    },
+    {
+      "root": 0,
+      "path": "assets/arena-DPpudWct.png"
+    },
+    {
+      "root": 0,
+      "path": "assets/index-B1_H6VJv.css"
+    },
+    {
+      "root": 0,
+      "path": "assets/index-DTj7Ybrk.js"
+    },
+    {
+      "root": 0,
+      "path": "assets/targets-Bs7NvsYu.png"
+    }
+  ],
+  "pages": [
+    {
+      "version": "原创物理弹射 · v0.20.0WINDOWS / MOBILE WEB",
+      "phase": "volley",
+      "shots": 1,
+      "update": {
+        "status": "checking",
+        "available": false,
+        "applying": false,
+        "registered": true,
+        "active": "activated",
+        "controlled": true,
+        "checkPhase": "fetch"
+      },
+      "card": "当前版本 v0.20.0正在检查更新…检查更新"
+    }
+  ]
+}
