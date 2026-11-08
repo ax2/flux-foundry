@@ -1,0 +1,104 @@
+Refreshing run status every 10 seconds. Press Ctrl+C to quit.
+
+* v0.20.0 Release Windows · 42488834157
+Triggered via push about 1 minute ago
+
+JOBS
+* release (ID 128756519354)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  ✓ Run npm ci
+  ✓ Run npm test
+  ✓ Confirm version and stage notes
+  ✓ Run npm run build
+  * Package with installed Electron and bounded download retries
+  * Run node scripts/desktop-smoke.mjs
+  * Run node scripts/desktop-smoke.mjs --portable
+  * Publish EXE and checksums (no game ZIP)
+  * Post Run actions/setup-node@v4
+  * Post Run actions/checkout@v4
+Refreshing run status every 10 seconds. Press Ctrl+C to quit.
+
+* v0.20.0 Release Windows · 42488834157
+Triggered via push about 1 minute ago
+
+JOBS
+* release (ID 128756519354)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  ✓ Run npm ci
+  ✓ Run npm test
+  ✓ Confirm version and stage notes
+  ✓ Run npm run build
+  * Package with installed Electron and bounded download retries
+  * Run node scripts/desktop-smoke.mjs
+  * Run node scripts/desktop-smoke.mjs --portable
+  * Publish EXE and checksums (no game ZIP)
+  * Post Run actions/setup-node@v4
+  * Post Run actions/checkout@v4
+Refreshing run status every 10 seconds. Press Ctrl+C to quit.
+
+* v0.20.0 Release Windows · 42488834157
+Triggered via push about 2 minutes ago
+
+JOBS
+* release (ID 128756519354)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  ✓ Run npm ci
+  ✓ Run npm test
+  ✓ Confirm version and stage notes
+  ✓ Run npm run build
+  ✓ Package with installed Electron and bounded download retries
+  ✓ Run node scripts/desktop-smoke.mjs
+  * Run node scripts/desktop-smoke.mjs --portable
+  * Publish EXE and checksums (no game ZIP)
+  * Post Run actions/setup-node@v4
+  * Post Run actions/checkout@v4
+Refreshing run status every 10 seconds. Press Ctrl+C to quit.
+
+* v0.20.0 Release Windows · 42488834157
+Triggered via push about 2 minutes ago
+
+JOBS
+* release (ID 128756519354)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  ✓ Run npm ci
+  ✓ Run npm test
+  ✓ Confirm version and stage notes
+  ✓ Run npm run build
+  ✓ Package with installed Electron and bounded download retries
+  ✓ Run node scripts/desktop-smoke.mjs
+  ✓ Run node scripts/desktop-smoke.mjs --portable
+  * Publish EXE and checksums (no game ZIP)
+  * Post Run actions/setup-node@v4
+  * Post Run actions/checkout@v4
+✓ v0.20.0 Release Windows · 42488834157
+Triggered via push about 2 minutes ago
+
+JOBS
+✓ release in 2m16s (ID 128756519354)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  ✓ Run npm ci
+  ✓ Run npm test
+  ✓ Confirm version and stage notes
+  ✓ Run npm run build
+  ✓ Package with installed Electron and bounded download retries
+  ✓ Run node scripts/desktop-smoke.mjs
+  ✓ Run node scripts/desktop-smoke.mjs --portable
+  ✓ Publish EXE and checksums (no game ZIP)
+  ✓ Post Run actions/setup-node@v4
+  ✓ Post Run actions/checkout@v4
+  ✓ Complete job
+
+ANNOTATIONS
+! Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-node@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+release: .github#2
+
