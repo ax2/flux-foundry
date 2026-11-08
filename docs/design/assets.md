@@ -13,5 +13,8 @@
 
 Canvas uses source rectangles to sample the transparent atlas; original PNG retained. No generated screenshot is used as a fake interactive UI.
 
+## Stage-11 当前运行资源
+2026-11-08：原始生成路径如上，当前运行贴图位于src/assets/arena.png和src/assets/targets.png，生成原件归档于art/source/。两图与v0.9.0逐字节一致，分别941×1672和2172×724；按用户要求撤销Stage-10的WebP压缩与图集缩小，不再压缩或缩图。加载预览和最终原图画面需明确区分。
+
 ## 单球背景修订
 2026-11-06 使用内置 Image Gen 编辑 arena.png：保持机加工材质、视角、导轨和喷口，仅移除漏斗中全部静态钢珠，留空金属内腔。用户要求单颗活动弹珠，活动球仍由透明图集实时渲染。
