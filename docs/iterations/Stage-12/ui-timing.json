@@ -1,0 +1,71 @@
+{
+  "method": "Read-only samples from Chrome touch runs. Cumulative frame gaps include startup and menus; do not infer in-flight or phone FPS from their maxima. Compare first/last maxima and sim/wall ratios within each shot. UI-after.json retains complete maxNoHit.",
+  "rows": [
+    {
+      "trace": "trace-22-1.json",
+      "samples": 10,
+      "firstCumulativeMaxFrameGapMs": 191.7,
+      "lastCumulativeMaxFrameGapMs": 191.7,
+      "wallSeconds": 8.733,
+      "simulationSeconds": 8.733333333333476,
+      "simulationWallRatio": 1.0000381693957947,
+      "lastVisibility": "visible",
+      "maxObservedIdle": 3.491666666666657
+    },
+    {
+      "trace": "trace-22-2.json",
+      "samples": 7,
+      "firstCumulativeMaxFrameGapMs": 191.7,
+      "lastCumulativeMaxFrameGapMs": 191.7,
+      "wallSeconds": 5.827,
+      "simulationSeconds": 5.824999999999669,
+      "simulationWallRatio": 0.9996567702075972,
+      "lastVisibility": "visible",
+      "maxObservedIdle": 3.3749999999999907
+    },
+    {
+      "trace": "trace-22-3.json",
+      "samples": 163,
+      "firstCumulativeMaxFrameGapMs": 191.7,
+      "lastCumulativeMaxFrameGapMs": 191.7,
+      "wallSeconds": 157.457,
+      "simulationSeconds": 157.4500000000069,
+      "simulationWallRatio": 0.9999555434182469,
+      "lastVisibility": "visible",
+      "maxObservedIdle": 34.98333333333199
+    },
+    {
+      "trace": "trace-4-1.json",
+      "samples": 45,
+      "firstCumulativeMaxFrameGapMs": 241.60000000000002,
+      "lastCumulativeMaxFrameGapMs": 241.60000000000002,
+      "wallSeconds": 42.575,
+      "simulationSeconds": 42.541666666664895,
+      "simulationWallRatio": 0.9992170679193163,
+      "lastVisibility": "visible",
+      "maxObservedIdle": 9.658333333333426
+    },
+    {
+      "trace": "trace-5-1.json",
+      "samples": 16,
+      "firstCumulativeMaxFrameGapMs": 58.4,
+      "lastCumulativeMaxFrameGapMs": 58.4,
+      "wallSeconds": 14.578,
+      "simulationSeconds": 14.583333333333146,
+      "simulationWallRatio": 1.0003658480815714,
+      "lastVisibility": "visible",
+      "maxObservedIdle": 7.550000000000165
+    },
+    {
+      "trace": "trace-5-2.json",
+      "samples": 59,
+      "firstCumulativeMaxFrameGapMs": 58.4,
+      "lastCumulativeMaxFrameGapMs": 58.4,
+      "wallSeconds": 55.544,
+      "simulationSeconds": 55.541666666668895,
+      "simulationWallRatio": 0.9999579912622227,
+      "lastVisibility": "visible",
+      "maxObservedIdle": 17.233333333332997
+    }
+  ]
+}
