@@ -1,4 +1,6 @@
-import {test} from 'node:test';import assert from 'node:assert/strict';import {retryableDownload,retryPackaging} from '../scripts/package-windows.mjs';
+import {test} from 'node:test';import assert from 'node:assert/strict';import {retryableDownload,retryPackaging,builderArgs} from '../scripts/package-windows.mjs';
+test('a clean install uses builder-managed Electron instead of a nonexistent dist',()=>{const args=builderArgs(false);assert.ok(args.includes('--publish'));assert.ok(args.includes('never'));assert.ok(!args.some(a=>a.includes('electronDist')));});
+test('an actually installed Electron binary is reused without a second download',()=>{assert.ok(builderArgs(true).includes('--config.electronDist=node_modules/electron/dist'));});
 test('packaging retries an upstream504 on the same built input, then accepts a genuine success',async()=>{
  const calls:number[]=[],waits:number[]=[];const result=await retryPackaging(async n=>{calls.push(n);return n===1?{code:1,log:'HTTPError: Response code 504 (Gateway Time-out)'}:{code:0,log:'built'};},async n=>{waits.push(n);});assert.deepEqual(calls,[1,2]);assert.deepEqual(waits,[5000]);assert.equal(result.attempts,2);
 });
