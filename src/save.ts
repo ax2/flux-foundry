@@ -1,7 +1,7 @@
 export const SAVE_KEY='flux-save';
 export const RULESET='paddle-natural-1';
 export type RecordEntry={stars:number;shots:number};
-export type Rank={score:number;wave:number;shots:number;mode:string;date:string};
+export type Rank={score:number;wave:number;shots:number;mode:string;date:string;id?:string};
 type Records=Record<string,RecordEntry>;
 type Legacy={records:Records;ranks:Rank[]};
 export type Save={schema:1;rulesets:Record<string,{records:Records;ranks:Rank[]}>;legacy:Record<string,Legacy>;migrated:string[]};
@@ -14,7 +14,24 @@ function records(v:unknown):Records{
 }
 function ranks(v:unknown,modes:string[]):Rank[]{
  if(!Array.isArray(v))return [];
- return v.filter((r):r is Rank=>object(r)&&Number.isFinite(r.score)&&Number(r.score)>=0&&Number.isInteger(r.wave)&&Number(r.wave)>=1&&Number.isInteger(r.shots)&&Number(r.shots)>=1&&typeof r.mode==='string'&&modes.includes(r.mode)&&typeof r.date==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(r.date)).slice(0,10).map(r=>({score:r.score,wave:r.wave,shots:r.shots,mode:r.mode,date:r.date}));
+ return v.filter((r):r is Rank=>object(r)&&Number.isFinite(r.score)&&Number(r.score)>=0&&Number.isInteger(r.wave)&&Number(r.wave)>=1&&Number.isInteger(r.shots)&&Number(r.shots)>=1&&typeof r.mode==='string'&&modes.includes(r.mode)&&typeof r.date==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(r.date)).slice(0,10).map(r=>({score:r.score,wave:r.wave,shots:r.shots,mode:r.mode,date:r.date,...(typeof r.id==='string'&&/^[a-zA-Z0-9-]{1,80}$/.test(r.id)?{id:r.id}:{})}));
+}
+function mergeProgress(a:Legacy,b:Legacy):Legacy{
+ const merged:Records={...b.records};
+ for(const [key,r] of Object.entries(a.records)){const old=merged[key];merged[key]={stars:Math.max(r.stars,old?.stars||0),shots:Math.min(r.shots,old?.shots||Infinity)};}
+ // New sessions have IDs. Older identical rows use multiset union, retaining
+ // their existing multiplicity without duplicating a shared saved snapshot.
+ const rows=new Map<string,{row:Rank;count:number}>();
+ for(const list of [a.ranks,b.ranks]){
+  const counts=new Map<string,number>();
+  for(const row of list){const key=row.id?'id:'+row.id:JSON.stringify(row),count=(counts.get(key)||0)+1;counts.set(key,count);const old=rows.get(key);if(!old||count>old.count)rows.set(key,{row,count});}
+ }
+ return {records:merged,ranks:Array.from(rows.values()).flatMap(({row,count})=>Array.from({length:count},()=>({...row}))).sort((x,y)=>y.score-x.score).slice(0,10)};
+}
+export function mergeSaves(local:Save,stored:Save):Save{
+ const out:Save={schema:1,rulesets:{},legacy:{},migrated:Array.from(new Set([...stored.migrated,...local.migrated]))};
+ for(const field of ['rulesets','legacy'] as const)for(const key of new Set([...Object.keys(stored[field]),...Object.keys(local[field])]))out[field][key]=mergeProgress(local[field][key]||{records:{},ranks:[]},stored[field][key]||{records:{},ranks:[]});
+ return out;
 }
 export function loadSave(storage:StorageReader,modes:string[]):Save{
  const read=(key:string):unknown=>{try{return JSON.parse(storage.getItem(key)||'null');}catch{return null;}};

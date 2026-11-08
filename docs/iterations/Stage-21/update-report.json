@@ -1,0 +1,138 @@
+{
+  "method": "Two real Vite builds (current and -next-test) at one controlled origin; UI checks, legal aim/paddle input and natural collection. SW first-activation delay, install503 and localStorage failure are explicit non-gameplay fault fixtures. No ball/target/score/time injection. Other tab also uses a naturally collected shot. This test is not a human win rate.",
+  "version": "0.20.0",
+  "nextVersion": "0.20.0-next-test",
+  "checks": [
+    "controlled first-activation delay is exercised",
+    "current version is readable on mobile",
+    "first install does not claim a newer version",
+    "first offline install reuses the browser original PNG download",
+    "pending check keeps forward keyboard focus inside the dialog",
+    "pending check keeps reverse keyboard focus inside the dialog",
+    "failed install leaves the current ball and board untouched",
+    "notification does not pause, reload or replace the live game",
+    "update is unavailable during an unfinished whole run",
+    "waiting worker retains the paused body and scores",
+    "a real natural challenge win is recorded before update",
+    "the write-failure fixture really leaves the earned result unsaved",
+    "second tab naturally returns to aim with an unfinished run",
+    "between balls still protects the whole run",
+    "activation waits for a sibling held save lock",
+    "storage failure refuses update and keeps the completed game",
+    "accepted update loads the new version without closing the other tab",
+    "an idle sibling also waits for its own explicit choice",
+    "a sibling menu write merges the other tab earned stars",
+    "reload-needed branch keeps a sibling earned result",
+    "earned stars survive",
+    "sound and effect preferences survive",
+    "another tab does not refresh or discard its unfinished run",
+    "another tab can offer a deferred reload after controller takeover",
+    "no newer badge after the accepted upgrade",
+    "preceding immutable resources remain available to the old tab",
+    "offline reload uses the new shell and original PNG",
+    "update reused the original hashed PNG without downloading again",
+    "only complete current and preceding cache generations remain",
+    "no runtime exceptions in either actual page"
+  ],
+  "won": {
+    "level": 1,
+    "shots": 1,
+    "stars": 3,
+    "maxNoHit": 6.208333333333432
+  },
+  "requests": [
+    {
+      "root": 0,
+      "path": "index.html"
+    },
+    {
+      "root": 0,
+      "path": "assets/index-BBoyDkul.js"
+    },
+    {
+      "root": 0,
+      "path": "assets/index-B1_H6VJv.css"
+    },
+    {
+      "root": 0,
+      "path": "assets/arena-DPpudWct.png"
+    },
+    {
+      "root": 0,
+      "path": "assets/targets-Bs7NvsYu.png"
+    },
+    {
+      "root": 0,
+      "path": "icon.svg"
+    },
+    {
+      "root": 0,
+      "path": "sw.js"
+    },
+    {
+      "root": 0,
+      "path": "icon.svg"
+    },
+    {
+      "root": 0,
+      "path": "index.html"
+    },
+    {
+      "root": 0,
+      "path": "manifest.webmanifest"
+    },
+    {
+      "root": 1,
+      "path": "sw.js"
+    },
+    {
+      "root": 1,
+      "path": "icon.svg"
+    },
+    {
+      "root": 1,
+      "path": "index.html"
+    },
+    {
+      "root": 1,
+      "path": "manifest.webmanifest"
+    },
+    {
+      "root": 1,
+      "path": "assets/index-uKUdMw82.js"
+    },
+    {
+      "root": 1,
+      "path": "sw.js"
+    },
+    {
+      "root": 1,
+      "path": "icon.svg"
+    },
+    {
+      "root": 1,
+      "path": "index.html"
+    },
+    {
+      "root": 1,
+      "path": "manifest.webmanifest"
+    },
+    {
+      "root": 1,
+      "path": "assets/index-uKUdMw82.js"
+    },
+    {
+      "root": 1,
+      "path": "sw.js"
+    },
+    {
+      "root": 1,
+      "path": "sw.js"
+    },
+    {
+      "root": 1,
+      "path": "sw.js"
+    }
+  ],
+  "errors": []
+}

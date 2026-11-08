@@ -1,0 +1,31 @@
+{
+  "method": "Read-only local two-version probe, actual v0.19.0 packaged dist then current v0.20.0 dist at same origin. Request SW update, reload old controlled tab, then close all controlled tabs and open a new one. No gameplay/scoring injection or production server mutation.",
+  "before": "原创物理弹射 · v0.19.0WINDOWS / MOBILE WEB",
+  "waiting": true,
+  "afterReload": "原创物理弹射 · v0.19.0WINDOWS / MOBILE WEB",
+  "afterClosingAllTabs": "原创物理弹射 · v0.20.0WINDOWS / MOBILE WEB",
+  "visibleUpdatePrompt": false,
+  "fixture": "Explicit old storage/progress fixture only, not a victory route",
+  "newRecords": {
+    "0": {
+      "stars": 3,
+      "shots": 2
+    }
+  },
+  "newLegacy": {
+    "v3": {
+      "records": {
+        "0": {
+          "stars": 2,
+          "shots": 5
+        }
+      },
+      "ranks": []
+    }
+  },
+  "newLoadout": {
+    "material": "brass",
+    "size": "small",
+    "sound": "true"
+  }
+}

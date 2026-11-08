@@ -23,6 +23,9 @@ jobs:
       - run: npm run test:browser
         env:
           PLAYWRIGHT_CHANNEL: chrome
+      - run: npm run test:update
+        env:
+          PLAYWRIGHT_CHANNEL: chrome
       - run: npm run test:feedback
         env:
           PLAYWRIGHT_CHANNEL: chrome
@@ -39,3 +42,5 @@ jobs:
       - run: npm run test:touch
       - run: npm run test:residual
       - run: node scripts/compare-balance.mjs
+
+      - run: node scripts/compare-update-physics.mjs
