@@ -1,5 +1,5 @@
 import {Feedback} from './feedback';
-import {guidedRebound,GUIDE_TILT_STEP} from './paddle-assist';
+import {guidedRebound,forecastRebound,GUIDE_TILT_STEP} from './paddle-assist';
 import {advanceFree,collide,reflect,type Body,type Target,type Vec} from './physics';
 import {catchPaddle,sweptPickup,type Paddle,type Treasure,type TreasureKind} from './arcade';
 import {airStrength} from './air';
@@ -161,12 +161,20 @@ export class Game{
   const spec=this.spec,restitution=this.restitution;
   // Prepare the qualifying upcoming catch, rather than waiting one extra full flight.
   const falling=this.balls[0],misses=this.sparseEndgame?2:ASSIST_MISSES;
-  if(falling&&this.progress.sinceHit>=(this.sparseEndgame?4:ASSIST_DELAY)&&this.progress.catchesWithoutHit+1>=misses&&falling.vy>0&&falling.y>470&&falling.y<675-falling.r+10&&this.time-this.lastGuideTime>=(falling.y>620?.025:.08)){
+  const regularGuide=this.progress.sinceHit>=(this.sparseEndgame?4:ASSIST_DELAY)&&this.progress.catchesWithoutHit+1>=misses;
+  // At a side wall the ball cannot be centred on the paddle. After two empty
+  // rallies, allow a proven hit one catch earlier; retain the usual delay/fallback.
+  const edgeGuide=!this.sparseEndgame&&falling&&(falling.x<22+half||falling.x>398-half)&&this.progress.sinceHit>=ASSIST_DELAY&&this.progress.catchesWithoutHit>=2;
+  if(falling&&(regularGuide||edgeGuide)&&falling.vy>0&&falling.y>470&&falling.y<675-falling.r+10&&this.time-this.lastGuideTime>=(falling.y>620?.025:.08)){
    this.lastGuideTime=this.time;
-   const plan=guidedRebound(falling,{...this.paddle,x:oldPaddleX},this.targets,spec.mass,restitution,this.time-dt,{air:this.air,gates:this.gates,pegs:this.pegs,wind:this.windMultiplier,response:spec.windResponse,energyLimit:this.energyCapacity,allowLowerWork:this.progress.catchesWithoutHit>=misses},this.progress.sinceHit>=20||this.lowEndgame?.48:.32);
-   // A closest miss is not enough for early steering. Keep the existing later fallback.
-   if(plan.hit||this.progress.catchesWithoutHit>=misses){
-    this.paddle.boost=plan.boost;this.paddle.tilt=(this.paddle.tilt||0)+Math.max(-GUIDE_TILT_STEP,Math.min(GUIDE_TILT_STEP,plan.tilt-(this.paddle.tilt||0)));
+   const environment={air:this.air,gates:this.gates,pegs:this.pegs,wind:this.windMultiplier,response:spec.windResponse,energyLimit:this.energyCapacity,allowLowerWork:this.progress.catchesWithoutHit>=misses},paddle={...this.paddle,x:oldPaddleX};
+   // Preserve a useful ordinary rebound, including a previously prepared face.
+   if(regularGuide||!forecastRebound(falling,paddle,this.targets,spec.mass,restitution,this.time-dt,environment,this.paddle.tilt||0,false,this.paddle.boost??18000).hit){
+    const plan=guidedRebound(falling,paddle,this.targets,spec.mass,restitution,this.time-dt,environment,this.progress.sinceHit>=20||this.lowEndgame?.48:.32);
+    // A closest miss is not enough for early steering. Keep the existing later fallback.
+    if(plan.hit||(regularGuide&&this.progress.catchesWithoutHit>=misses)){
+     this.paddle.boost=plan.boost;this.paddle.tilt=(this.paddle.tilt||0)+Math.max(-GUIDE_TILT_STEP,Math.min(GUIDE_TILT_STEP,plan.tilt-(this.paddle.tilt||0)));
+    }
    }
   }
   for(const b of this.balls){

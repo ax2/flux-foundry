@@ -41,6 +41,5 @@ jobs:
       - run: npm run test:expedition
       - run: npm run test:touch
       - run: npm run test:residual
-      - run: node scripts/compare-balance.mjs
-
-      - run: node scripts/compare-update-physics.mjs
+      - run: npm run test:edge
+      - run: npm run test:balance

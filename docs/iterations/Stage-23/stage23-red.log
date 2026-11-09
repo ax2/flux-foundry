@@ -1,0 +1,76 @@
+npm warn Unknown env config "devdir". This will error in a future major version of npm. See `npm help npmrc` for supported config options.
+npm notice run flux-foundry@0.20.0 npx
+npm notice run tsx --test tests/stage23.test.ts
+✖ right-edge case cadence18 keeps gaps below12s and finishes through legal natural continuation (273.1819ms)
+✖ right-edge case cadence36 keeps gaps below12s and finishes through legal natural continuation (185.3351ms)
+✖ early edge preparation changes the visible paddle while the original midair ball follows free forces (103.609ms)
+✔ a closest forecast miss before the original fallback cannot adjust the paddle (9.2205ms)
+✔ an already useful ordinary catch retains the published natural one-ball win (76.5776ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 2
+ℹ fail 3
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 872.2758
+
+✖ failing tests:
+
+test at tests\stage23.test.ts:6:39
+✖ right-edge case cadence18 keeps gaps below12s and finishes through legal natural continuation (273.1819ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(r.maxNoHit<12)
+  
+      at TestContext.<anonymous> (D:\Work\games\flux-foundry\tests\stage23.test.ts:7:117)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.start (node:internal/test_runner/test:1262:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests\stage23.test.ts:6:39
+✖ right-edge case cadence36 keeps gaps below12s and finishes through legal natural continuation (185.3351ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(r.maxNoHit<12)
+  
+      at TestContext.<anonymous> (D:\Work\games\flux-foundry\tests\stage23.test.ts:7:117)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests\stage23.test.ts:9:1
+✖ early edge preparation changes the visible paddle while the original midair ball follows free forces (103.609ms)
+  AssertionError [ERR_ASSERTION]: a real earlier qualifying preparation must occur
+      at TestContext.<anonymous> (D:\Work\games\flux-foundry\tests\stage23.test.ts:22:9)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

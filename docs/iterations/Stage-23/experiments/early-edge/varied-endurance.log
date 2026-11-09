@@ -1,0 +1,20 @@
+{"samples":2496,"natural":2496,"unfinished":0,"longIdle":0,"over20":1,"over30":0,"maxNoHit":29.883333333332278,"maxBallSeconds":153.49166666666667}
+[]
+node:internal/modules/run_main:111
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: A varied first-ball no-hit interval reached20s; inspect seed/cadence/angle
+
+1 !== 0
+
+    at <anonymous> (D:\Work\games\flux-foundry\test-results\stage23-early-edge\scripts\varied-endurance.ts:18:8) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 1,
+  expected: 0,
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v26.10.0

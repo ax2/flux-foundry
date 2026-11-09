@@ -1,0 +1,253 @@
+{
+  "method": "Three explicit isolated alternatives derived from missed physical contact windows; original legal whole games, original-ball natural collection, same legal continuation. Production untouched.",
+  "variants": [
+    [
+      "two-misses",
+      "this.progress.sinceHit>=4&&this.progress.catchesWithoutHit>=2"
+    ],
+    [
+      "wide-only",
+      "this.wideTime>0&&this.progress.sinceHit>=4&&this.progress.catchesWithoutHit>=1"
+    ],
+    [
+      "eight-seconds",
+      "this.progress.sinceHit>=8&&this.progress.catchesWithoutHit>=2"
+    ]
+  ],
+  "rows": [
+    {
+      "name": "before",
+      "cadence": 18,
+      "result": "won",
+      "used": 4,
+      "stars": 3,
+      "maxNoHit": 18.49999999999959,
+      "shots": [
+        {
+          "phase": "aim",
+          "seconds": 53.61666666666667,
+          "maxNoHit": 18.49999999999959,
+          "hits": 23,
+          "catches": 10
+        },
+        {
+          "phase": "aim",
+          "seconds": 12.608333333333333,
+          "maxNoHit": 18.49999999999959,
+          "hits": 31,
+          "catches": 13
+        },
+        {
+          "phase": "aim",
+          "seconds": 5.675,
+          "maxNoHit": 18.49999999999959,
+          "hits": 36,
+          "catches": 14
+        },
+        {
+          "phase": "won",
+          "seconds": 31.075,
+          "maxNoHit": 18.49999999999959,
+          "hits": 46,
+          "catches": 23
+        }
+      ]
+    },
+    {
+      "name": "before",
+      "cadence": 36,
+      "result": "won",
+      "used": 2,
+      "stars": 3,
+      "maxNoHit": 18.49999999999959,
+      "shots": [
+        {
+          "phase": "aim",
+          "seconds": 40.75833333333333,
+          "maxNoHit": 18.49999999999959,
+          "hits": 16,
+          "catches": 6
+        },
+        {
+          "phase": "won",
+          "seconds": 56.35,
+          "maxNoHit": 18.49999999999959,
+          "hits": 46,
+          "catches": 16
+        }
+      ]
+    },
+    {
+      "name": "two-misses",
+      "cadence": 18,
+      "result": "won",
+      "used": 2,
+      "stars": 3,
+      "maxNoHit": 11.658333333333312,
+      "shots": [
+        {
+          "phase": "aim",
+          "seconds": 58.6,
+          "maxNoHit": 11.658333333333312,
+          "hits": 39,
+          "catches": 11
+        },
+        {
+          "phase": "won",
+          "seconds": 5.316666666666666,
+          "maxNoHit": 11.658333333333312,
+          "hits": 42,
+          "catches": 11
+        }
+      ]
+    },
+    {
+      "name": "two-misses",
+      "cadence": 36,
+      "result": "won",
+      "used": 3,
+      "stars": 3,
+      "maxNoHit": 11.658333333333312,
+      "shots": [
+        {
+          "phase": "aim",
+          "seconds": 38.3,
+          "maxNoHit": 11.658333333333312,
+          "hits": 25,
+          "catches": 6
+        },
+        {
+          "phase": "aim",
+          "seconds": 5.533333333333333,
+          "maxNoHit": 11.658333333333312,
+          "hits": 30,
+          "catches": 8
+        },
+        {
+          "phase": "won",
+          "seconds": 27.608333333333334,
+          "maxNoHit": 11.658333333333312,
+          "hits": 45,
+          "catches": 16
+        }
+      ]
+    },
+    {
+      "name": "wide-only",
+      "cadence": 18,
+      "result": "won",
+      "used": 3,
+      "stars": 3,
+      "maxNoHit": 8.333333333333501,
+      "shots": [
+        {
+          "phase": "aim",
+          "seconds": 73.9,
+          "maxNoHit": 8.333333333333501,
+          "hits": 41,
+          "catches": 18
+        },
+        {
+          "phase": "aim",
+          "seconds": 5.25,
+          "maxNoHit": 8.333333333333501,
+          "hits": 44,
+          "catches": 18
+        },
+        {
+          "phase": "won",
+          "seconds": 3.05,
+          "maxNoHit": 8.333333333333501,
+          "hits": 45,
+          "catches": 18
+        }
+      ]
+    },
+    {
+      "name": "wide-only",
+      "cadence": 36,
+      "result": "won",
+      "used": 3,
+      "stars": 3,
+      "maxNoHit": 7.8000000000001775,
+      "shots": [
+        {
+          "phase": "aim",
+          "seconds": 28.775,
+          "maxNoHit": 7.391666666666824,
+          "hits": 20,
+          "catches": 8
+        },
+        {
+          "phase": "aim",
+          "seconds": 33.983333333333334,
+          "maxNoHit": 7.8000000000001775,
+          "hits": 43,
+          "catches": 14
+        },
+        {
+          "phase": "won",
+          "seconds": 9.075,
+          "maxNoHit": 7.8000000000001775,
+          "hits": 46,
+          "catches": 15
+        }
+      ]
+    },
+    {
+      "name": "eight-seconds",
+      "cadence": 18,
+      "result": "won",
+      "used": 2,
+      "stars": 3,
+      "maxNoHit": 11.658333333333312,
+      "shots": [
+        {
+          "phase": "aim",
+          "seconds": 58.6,
+          "maxNoHit": 11.658333333333312,
+          "hits": 39,
+          "catches": 11
+        },
+        {
+          "phase": "won",
+          "seconds": 5.316666666666666,
+          "maxNoHit": 11.658333333333312,
+          "hits": 42,
+          "catches": 11
+        }
+      ]
+    },
+    {
+      "name": "eight-seconds",
+      "cadence": 36,
+      "result": "won",
+      "used": 3,
+      "stars": 3,
+      "maxNoHit": 11.658333333333312,
+      "shots": [
+        {
+          "phase": "aim",
+          "seconds": 38.3,
+          "maxNoHit": 11.658333333333312,
+          "hits": 25,
+          "catches": 6
+        },
+        {
+          "phase": "aim",
+          "seconds": 5.533333333333333,
+          "maxNoHit": 11.658333333333312,
+          "hits": 30,
+          "catches": 8
+        },
+        {
+          "phase": "won",
+          "seconds": 27.608333333333334,
+          "maxNoHit": 11.658333333333312,
+          "hits": 45,
+          "catches": 16
+        }
+      ]
+    }
+  ]
+}

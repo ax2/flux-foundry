@@ -1,0 +1,105 @@
+[
+  {
+    "wall": 1794150106771,
+    "diagnostics": {
+      "wall": 18214,
+      "frames": 4031,
+      "lastFrame": 18208.3,
+      "maxFrameGap": 95.9,
+      "visibility": "visible",
+      "loading": {
+        "phase": "ready",
+        "received": 3399692,
+        "total": 3399692,
+        "percent": 100,
+        "completed": 2,
+        "failed": 0
+      },
+      "audio": {
+        "enabled": true,
+        "state": "running",
+        "voices": 2,
+        "peakVoices": 4,
+        "played": {
+          "launch": 2,
+          "hit": 9,
+          "break": 1,
+          "catch": 8,
+          "boost": 4,
+          "pickup": 1,
+          "weak": 0,
+          "win": 0,
+          "lose": 0
+        },
+        "failures": 0
+      },
+      "updates": {
+        "status": "current",
+        "available": false,
+        "applying": false,
+        "registered": true,
+        "active": "activated",
+        "controlled": true,
+        "checkPhase": "register"
+      }
+    },
+    "progress": {
+      "sinceHit": 0.008333333333333333,
+      "maxNoHit": 8.283333333333504,
+      "catchesWithoutHit": 0,
+      "maxCatchesWithoutHit": 4
+    },
+    "paddle": {
+      "x": 297.75733360877405,
+      "target": 210,
+      "width": 96,
+      "vx": 433.36613581730717,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "flight": 17.341666666666324,
+    "hits": 10,
+    "catches": 8,
+    "orbitBreaks": 0,
+    "paused": false,
+    "ball": {
+      "x": 211.67622876921274,
+      "y": 139.350214568836,
+      "vx": 201.1474523055313,
+      "vy": 883.0257482603222,
+      "r": 12
+    },
+    "gateStates": [],
+    "pegStates": [],
+    "airZones": [
+      {
+        "x": 38,
+        "y": 355,
+        "w": 344,
+        "h": 200,
+        "fx": -95,
+        "fy": 0,
+        "plume": true
+      }
+    ],
+    "bricks": [
+      {
+        "id": 1,
+        "hp": 1
+      },
+      {
+        "id": 2,
+        "hp": 8
+      },
+      {
+        "id": 3,
+        "hp": 11
+      },
+      {
+        "id": 4,
+        "hp": 7
+      }
+    ]
+  }
+]

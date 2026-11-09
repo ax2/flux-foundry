@@ -1,0 +1,3 @@
+import {writeFile,mkdir} from 'node:fs/promises';import assert from 'node:assert/strict';import {runEdgeRoute} from './edge-route';
+const rows=([18,36] as const).map(runEdgeRoute);for(const r of rows){assert.equal(r.result,'won');assert.equal(r.stars,3);assert.ok(r.maxNoHit<12);}
+await mkdir('test-results',{recursive:true});await writeFile('test-results/edge-route.json',JSON.stringify({method:'Exact original first inputs plus legal same-loadout continuation, natural original balls only. New2/3 shots versus old4/2; not both fewer balls. Actual seed8148, not group8137.',rows},null,2));console.log(JSON.stringify(rows));

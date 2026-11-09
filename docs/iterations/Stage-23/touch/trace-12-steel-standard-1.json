@@ -1,0 +1,2658 @@
+[
+  {
+    "wall": 1794149972793,
+    "diagnostics": {
+      "wall": 1590.5999999642372,
+      "frames": 77,
+      "lastFrame": 1586.8,
+      "maxFrameGap": 362.5,
+      "visibility": "visible",
+      "loading": {
+        "phase": "ready",
+        "received": 3399692,
+        "total": 3399692,
+        "percent": 100,
+        "completed": 2,
+        "failed": 0
+      },
+      "audio": {
+        "enabled": true,
+        "state": "running",
+        "voices": 2,
+        "peakVoices": 2,
+        "played": {
+          "launch": 1,
+          "hit": 0,
+          "break": 0,
+          "catch": 0,
+          "boost": 0,
+          "pickup": 0,
+          "weak": 0,
+          "win": 0,
+          "lose": 0
+        },
+        "failures": 0
+      },
+      "updates": {
+        "status": "current",
+        "available": false,
+        "applying": false,
+        "registered": true,
+        "active": "activated",
+        "controlled": true,
+        "checkPhase": "register"
+      }
+    },
+    "progress": {
+      "sinceHit": 0.016666666666666666,
+      "maxNoHit": 0.016666666666666666,
+      "catchesWithoutHit": 0,
+      "maxCatchesWithoutHit": 0
+    },
+    "paddle": {
+      "x": 210,
+      "target": 210,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "flight": 0.016666666666666666,
+    "hits": 0,
+    "catches": 0,
+    "orbitBreaks": 0,
+    "paused": false,
+    "ball": {
+      "x": 205.4036443874611,
+      "y": 135.62517030915228,
+      "vx": -275.7813367523328,
+      "vy": 219.51021854913614,
+      "r": 12
+    },
+    "gateStates": [
+      {
+        "x": 210,
+        "y": 425,
+        "size": 114,
+        "open": false,
+        "pressure": 0,
+        "lastContact": -1
+      }
+    ],
+    "pegStates": [],
+    "airZones": [
+      {
+        "x": 38,
+        "y": 460,
+        "w": 344,
+        "h": 60,
+        "fx": -35,
+        "fy": 0,
+        "plume": true
+      }
+    ],
+    "bricks": [
+      {
+        "id": 0,
+        "hp": 2
+      },
+      {
+        "id": 1,
+        "hp": 3
+      },
+      {
+        "id": 2,
+        "hp": 16
+      },
+      {
+        "id": 3,
+        "hp": 8
+      },
+      {
+        "id": 4,
+        "hp": 11
+      },
+      {
+        "id": 5,
+        "hp": 6
+      }
+    ]
+  },
+  {
+    "wall": 1794149973821,
+    "diagnostics": {
+      "wall": 2619.199999988079,
+      "frames": 305,
+      "lastFrame": 2615.9,
+      "maxFrameGap": 362.5,
+      "visibility": "visible",
+      "loading": {
+        "phase": "ready",
+        "received": 3399692,
+        "total": 3399692,
+        "percent": 100,
+        "completed": 2,
+        "failed": 0
+      },
+      "audio": {
+        "enabled": true,
+        "state": "running",
+        "voices": 0,
+        "peakVoices": 2,
+        "played": {
+          "launch": 1,
+          "hit": 0,
+          "break": 0,
+          "catch": 0,
+          "boost": 0,
+          "pickup": 0,
+          "weak": 0,
+          "win": 0,
+          "lose": 0
+        },
+        "failures": 0
+      },
+      "updates": {
+        "status": "current",
+        "available": false,
+        "applying": false,
+        "registered": true,
+        "active": "activated",
+        "controlled": true,
+        "checkPhase": "register"
+      }
+    },
+    "progress": {
+      "sinceHit": 1.0416666666666654,
+      "maxNoHit": 1.0416666666666654,
+      "catchesWithoutHit": 0,
+      "maxCatchesWithoutHit": 0
+    },
+    "paddle": {
+      "x": 254.03904841496396,
+      "target": 254.03904841496396,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "flight": 1.0416666666666654,
+    "hits": 0,
+    "catches": 0,
+    "orbitBreaks": 0,
+    "paused": false,
+    "ball": {
+      "x": 129.35207847703995,
+      "y": 486.6981443220168,
+      "vx": 257.38022297675985,
+      "vy": 465.51021854913614,
+      "r": 12
+    },
+    "gateStates": [
+      {
+        "x": 210,
+        "y": 425,
+        "size": 114,
+        "open": false,
+        "pressure": 0,
+        "lastContact": -1
+      }
+    ],
+    "pegStates": [],
+    "airZones": [
+      {
+        "x": 38,
+        "y": 460,
+        "w": 344,
+        "h": 60,
+        "fx": -35,
+        "fy": 0,
+        "plume": true
+      }
+    ],
+    "bricks": [
+      {
+        "id": 0,
+        "hp": 2
+      },
+      {
+        "id": 1,
+        "hp": 3
+      },
+      {
+        "id": 2,
+        "hp": 16
+      },
+      {
+        "id": 3,
+        "hp": 8
+      },
+      {
+        "id": 4,
+        "hp": 11
+      },
+      {
+        "id": 5,
+        "hp": 6
+      }
+    ]
+  },
+  {
+    "wall": 1794149974821,
+    "diagnostics": {
+      "wall": 3619.199999988079,
+      "frames": 512,
+      "lastFrame": 3615.9,
+      "maxFrameGap": 362.5,
+      "visibility": "visible",
+      "loading": {
+        "phase": "ready",
+        "received": 3399692,
+        "total": 3399692,
+        "percent": 100,
+        "completed": 2,
+        "failed": 0
+      },
+      "audio": {
+        "enabled": true,
+        "state": "running",
+        "voices": 2,
+        "peakVoices": 5,
+        "played": {
+          "launch": 1,
+          "hit": 3,
+          "break": 0,
+          "catch": 0,
+          "boost": 4,
+          "pickup": 0,
+          "weak": 0,
+          "win": 0,
+          "lose": 0
+        },
+        "failures": 0
+      },
+      "updates": {
+        "status": "current",
+        "available": false,
+        "applying": false,
+        "registered": true,
+        "active": "activated",
+        "controlled": true,
+        "checkPhase": "register"
+      }
+    },
+    "progress": {
+      "sinceHit": 0.19166666666666665,
+      "maxNoHit": 1.2999999999999978,
+      "catchesWithoutHit": 0,
+      "maxCatchesWithoutHit": 0
+    },
+    "paddle": {
+      "x": 190,
+      "target": 350,
+      "width": 96,
+      "vx": 900,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "flight": 2.0249999999999955,
+    "hits": 3,
+    "catches": 0,
+    "orbitBreaks": 0,
+    "paused": false,
+    "ball": {
+      "x": 378.8117769178113,
+      "y": 511.1982789018906,
+      "vx": -447.52892328754916,
+      "vy": -363.6080553803594,
+      "r": 12
+    },
+    "gateStates": [
+      {
+        "x": 210,
+        "y": 425,
+        "size": 114,
+        "open": false,
+        "pressure": 0,
+        "lastContact": -1
+      }
+    ],
+    "pegStates": [],
+    "airZones": [
+      {
+        "x": 38,
+        "y": 460,
+        "w": 344,
+        "h": 60,
+        "fx": -35,
+        "fy": 0,
+        "plume": true
+      }
+    ],
+    "bricks": [
+      {
+        "id": 0,
+        "hp": 2
+      },
+      {
+        "id": 1,
+        "hp": 3
+      },
+      {
+        "id": 2,
+        "hp": 15
+      },
+      {
+        "id": 3,
+        "hp": 8
+      },
+      {
+        "id": 4,
+        "hp": 10
+      },
+      {
+        "id": 5,
+        "hp": 5
+      }
+    ]
+  },
+  {
+    "wall": 1794149975948,
+    "diagnostics": {
+      "wall": 4746,
+      "frames": 765,
+      "lastFrame": 4740.9,
+      "maxFrameGap": 362.5,
+      "visibility": "visible",
+      "loading": {
+        "phase": "ready",
+        "received": 3399692,
+        "total": 3399692,
+        "percent": 100,
+        "completed": 2,
+        "failed": 0
+      },
+      "audio": {
+        "enabled": true,
+        "state": "running",
+        "voices": 0,
+        "peakVoices": 5,
+        "played": {
+          "launch": 1,
+          "hit": 4,
+          "break": 0,
+          "catch": 0,
+          "boost": 4,
+          "pickup": 1,
+          "weak": 0,
+          "win": 0,
+          "lose": 0
+        },
+        "failures": 0
+      },
+      "updates": {
+        "status": "current",
+        "available": false,
+        "applying": false,
+        "registered": true,
+        "active": "activated",
+        "controlled": true,
+        "checkPhase": "register"
+      }
+    },
+    "progress": {
+      "sinceHit": 0.5583333333333338,
+      "maxNoHit": 1.2999999999999978,
+      "catchesWithoutHit": 0,
+      "maxCatchesWithoutHit": 0
+    },
+    "paddle": {
+      "x": 94,
+      "target": 94,
+      "width": 144,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "flight": 3.1499999999999915,
+    "hits": 4,
+    "catches": 0,
+    "orbitBreaks": 0,
+    "paused": false,
+    "ball": {
+      "x": 218.9456492110212,
+      "y": 254.0142165989862,
+      "vx": -353.9055533565081,
+      "vy": -93.60805538035942,
+      "r": 12
+    },
+    "gateStates": [
+      {
+        "x": 210,
+        "y": 425,
+        "size": 114,
+        "open": false,
+        "pressure": 0,
+        "lastContact": 2.2499999999999947
+      }
+    ],
+    "pegStates": [],
+    "airZones": [
+      {
+        "x": 38,
+        "y": 460,
+        "w": 344,
+        "h": 60,
+        "fx": -35,
+        "fy": 0,
+        "plume": true
+      }
+    ],
+    "bricks": [
+      {
+        "id": 0,
+        "hp": 2
+      },
+      {
+        "id": 1,
+        "hp": 2
+      },
+      {
+        "id": 2,
+        "hp": 15
+      },
+      {
+        "id": 3,
+        "hp": 8
+      },
+      {
+        "id": 4,
+        "hp": 10
+      },
+      {
+        "id": 5,
+        "hp": 5
+      }
+    ]
+  },
+  {
+    "wall": 1794149977508,
+    "diagnostics": {
+      "wall": 6259.5,
+      "frames": 1002,
+      "lastFrame": 6253.4,
+      "maxFrameGap": 362.5,
+      "visibility": "visible",
+      "loading": {
+        "phase": "ready",
+        "received": 3399692,
+        "total": 3399692,
+        "percent": 100,
+        "completed": 2,
+        "failed": 0
+      },
+      "audio": {
+        "enabled": true,
+        "state": "running",
+        "voices": 0,
+        "peakVoices": 5,
+        "played": {
+          "launch": 1,
+          "hit": 5,
+          "break": 0,
+          "catch": 0,
+          "boost": 4,
+          "pickup": 1,
+          "weak": 0,
+          "win": 0,
+          "lose": 0
+        },
+        "failures": 0
+      },
+      "updates": {
+        "status": "current",
+        "available": false,
+        "applying": false,
+        "registered": true,
+        "active": "activated",
+        "controlled": true,
+        "checkPhase": "register"
+      }
+    },
+    "progress": {
+      "sinceHit": 0.15833333333333333,
+      "maxNoHit": 1.908333333333329,
+      "catchesWithoutHit": 0,
+      "maxCatchesWithoutHit": 0
+    },
+    "paddle": {
+      "x": 224.5710965670072,
+      "target": 224.5710965670072,
+      "width": 144,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "flight": 4.6583333333333545,
+    "hits": 5,
+    "catches": 0,
+    "orbitBreaks": 0,
+    "paused": false,
+    "ball": {
+      "x": 247.6828237094204,
+      "y": 385.83039973361065,
+      "vx": -312.7109469458105,
+      "vy": 268.3919446196406,
+      "r": 12
+    },
+    "gateStates": [
+      {
+        "x": 210,
+        "y": 425,
+        "size": 114,
+        "open": false,
+        "pressure": 0,
+        "lastContact": 2.2499999999999947
+      }
+    ],
+    "pegStates": [],
+    "airZones": [
+      {
+        "x": 38,
+        "y": 460,
+        "w": 344,
+        "h": 60,
+        "fx": -35,
+        "fy": 0,
+        "plume": true
+      }
+    ],
+    "bricks": [
+      {
+        "id": 0,
+        "hp": 2
+      },
+      {
+        "id": 1,
+        "hp": 1
+      },
+      {
+        "id": 2,
+        "hp": 15
+      },
+      {
+        "id": 3,
+        "hp": 8
+      },
+      {
+        "id": 4,
+        "hp": 10
+      },
+      {
+        "id": 5,
+        "hp": 5
+      }
+    ]
+  },
+  {
+    "wall": 1794149978766,
+    "diagnostics": {
+      "wall": 7564.5,
+      "frames": 1217,
+      "lastFrame": 7561.8,
+      "maxFrameGap": 362.5,
+      "visibility": "visible",
+      "loading": {
+        "phase": "ready",
+        "received": 3399692,
+        "total": 3399692,
+        "percent": 100,
+        "completed": 2,
+        "failed": 0
+      },
+      "audio": {
+        "enabled": true,
+        "state": "running",
+        "voices": 0,
+        "peakVoices": 5,
+        "played": {
+          "launch": 1,
+          "hit": 6,
+          "break": 0,
+          "catch": 0,
+          "boost": 4,
+          "pickup": 1,
+          "weak": 0,
+          "win": 0,
+          "lose": 0
+        },
+        "failures": 0
+      },
+      "updates": {
+        "status": "current",
+        "available": false,
+        "applying": false,
+        "registered": true,
+        "active": "activated",
+        "controlled": true,
+        "checkPhase": "register"
+      }
+    },
+    "progress": {
+      "sinceHit": 0.8416666666666661,
+      "maxNoHit": 1.908333333333329,
+      "catchesWithoutHit": 0,
+      "maxCatchesWithoutHit": 0
+    },
+    "paddle": {
+      "x": 326,
+      "target": 326,
+      "width": 144,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "flight": 5.975000000000087,
+    "hits": 6,
+    "catches": 0,
+    "orbitBreaks": 0,
+    "paused": false,
+    "ball": {
+      "x": 95.05689220908691,
+      "y": 133.89364909955492,
+      "vx": 156.13654130180834,
+      "vy": -106.17667137571033,
+      "r": 12
+    },
+    "gateStates": [
+      {
+        "x": 210,
+        "y": 425,
+        "size": 114,
+        "open": false,
+        "pressure": 0,
+        "lastContact": 4.708333333333357
+      }
+    ],
+    "pegStates": [],
+    "airZones": [
+      {
+        "x": 38,
+        "y": 460,
+        "w": 344,
+        "h": 60,
+        "fx": -35,
+        "fy": 0,
+        "plume": true
+      }
+    ],
+    "bricks": [
+      {
+        "id": 0,
+        "hp": 1
+      },
+      {
+        "id": 1,
+        "hp": 1
+      },
+      {
+        "id": 2,
+        "hp": 15
+      },
+      {
+        "id": 3,
+        "hp": 8
+      },
+      {
+        "id": 4,
+        "hp": 10
+      },
+      {
+        "id": 5,
+        "hp": 5
+      }
+    ]
+  },
+  {
+    "wall": 1794149979735,
+    "diagnostics": {
+      "wall": 8535,
+      "frames": 1441,
+      "lastFrame": 8532.5,
+      "maxFrameGap": 362.5,
+      "visibility": "visible",
+      "loading": {
+        "phase": "ready",
+        "received": 3399692,
+        "total": 3399692,
+        "percent": 100,
+        "completed": 2,
+        "failed": 0
+      },
+      "audio": {
+        "enabled": true,
+        "state": "running",
+        "voices": 0,
+        "peakVoices": 5,
+        "played": {
+          "launch": 1,
+          "hit": 6,
+          "break": 0,
+          "catch": 0,
+          "boost": 4,
+          "pickup": 1,
+          "weak": 0,
+          "win": 0,
+          "lose": 0
+        },
+        "failures": 0
+      },
+      "updates": {
+        "status": "current",
+        "available": false,
+        "applying": false,
+        "registered": true,
+        "active": "activated",
+        "controlled": true,
+        "checkPhase": "register"
+      }
+    },
+    "progress": {
+      "sinceHit": 1.8083333333333294,
+      "maxNoHit": 1.908333333333329,
+      "catchesWithoutHit": 0,
+      "maxCatchesWithoutHit": 0
+    },
+    "paddle": {
+      "x": 326,
+      "target": 326,
+      "width": 144,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "flight": 6.941666666666801,
+    "hits": 6,
+    "catches": 0,
+    "orbitBreaks": 0,
+    "paused": false,
+    "ball": {
+      "x": 245.98888213416856,
+      "y": 277.09754435496893,
+      "vx": 156.13654130180834,
+      "vy": 281.3660710931677,
+      "r": 12
+    },
+    "gateStates": [
+      {
+        "x": 210,
+        "y": 425,
+        "size": 114,
+        "open": false,
+        "pressure": 0,
+        "lastContact": 4.708333333333357
+      }
+    ],
+    "pegStates": [],
+    "airZones": [
+      {
+        "x": 38,
+        "y": 460,
+        "w": 344,
+        "h": 60,
+        "fx": -35,
+        "fy": 0,
+        "plume": true
+      }
+    ],
+    "bricks": [
+      {
+        "id": 0,
+        "hp": 1
+      },
+      {
+        "id": 1,
+        "hp": 1
+      },
+      {
+        "id": 2,
+        "hp": 15
+      },
+      {
+        "id": 3,
+        "hp": 8
+      },
+      {
+        "id": 4,
+        "hp": 10
+      },
+      {
+        "id": 5,
+        "hp": 5
+      }
+    ]
+  },
+  {
+    "wall": 1794149980703,
+    "diagnostics": {
+      "wall": 9501.799999952316,
+      "frames": 1672,
+      "lastFrame": 9499.2,
+      "maxFrameGap": 362.5,
+      "visibility": "visible",
+      "loading": {
+        "phase": "ready",
+        "received": 3399692,
+        "total": 3399692,
+        "percent": 100,
+        "completed": 2,
+        "failed": 0
+      },
+      "audio": {
+        "enabled": true,
+        "state": "running",
+        "voices": 0,
+        "peakVoices": 5,
+        "played": {
+          "launch": 1,
+          "hit": 6,
+          "break": 0,
+          "catch": 0,
+          "boost": 4,
+          "pickup": 1,
+          "weak": 0,
+          "win": 0,
+          "lose": 0
+        },
+        "failures": 0
+      },
+      "updates": {
+        "status": "current",
+        "available": false,
+        "applying": false,
+        "registered": true,
+        "active": "activated",
+        "controlled": true,
+        "checkPhase": "register"
+      }
+    },
+    "progress": {
+      "sinceHit": 2.774999999999993,
+      "maxNoHit": 2.774999999999993,
+      "catchesWithoutHit": 0,
+      "maxCatchesWithoutHit": 0
+    },
+    "paddle": {
+      "x": 326,
+      "target": 326,
+      "width": 144,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "flight": 7.908333333333516,
+    "hits": 6,
+    "catches": 0,
+    "orbitBreaks": 0,
+    "paused": false,
+    "ball": {
+      "x": 386.45723974212035,
+      "y": 661.2180797450312,
+      "vx": -141.71041031518843,
+      "vy": 513.3660710931676,
+      "r": 12
+    },
+    "gateStates": [
+      {
+        "x": 210,
+        "y": 425,
+        "size": 114,
+        "open": false,
+        "pressure": 0,
+        "lastContact": 4.708333333333357
+      }
+    ],
+    "pegStates": [],
+    "airZones": [
+      {
+        "x": 38,
+        "y": 460,
+        "w": 344,
+        "h": 60,
+        "fx": -35,
+        "fy": 0,
+        "plume": true
+      }
+    ],
+    "bricks": [
+      {
+        "id": 0,
+        "hp": 1
+      },
+      {
+        "id": 1,
+        "hp": 1
+      },
+      {
+        "id": 2,
+        "hp": 15
+      },
+      {
+        "id": 3,
+        "hp": 8
+      },
+      {
+        "id": 4,
+        "hp": 10
+      },
+      {
+        "id": 5,
+        "hp": 5
+      }
+    ]
+  },
+  {
+    "wall": 1794149981678,
+    "diagnostics": {
+      "wall": 10475.199999988079,
+      "frames": 1880,
+      "lastFrame": 10465.9,
+      "maxFrameGap": 362.5,
+      "visibility": "visible",
+      "loading": {
+        "phase": "ready",
+        "received": 3399692,
+        "total": 3399692,
+        "percent": 100,
+        "completed": 2,
+        "failed": 0
+      },
+      "audio": {
+        "enabled": true,
+        "state": "running",
+        "voices": 0,
+        "peakVoices": 5,
+        "played": {
+          "launch": 1,
+          "hit": 6,
+          "break": 1,
+          "catch": 1,
+          "boost": 4,
+          "pickup": 1,
+          "weak": 0,
+          "win": 0,
+          "lose": 0
+        },
+        "failures": 0
+      },
+      "updates": {
+        "status": "current",
+        "available": false,
+        "applying": false,
+        "registered": true,
+        "active": "activated",
+        "controlled": true,
+        "checkPhase": "register"
+      }
+    },
+    "progress": {
+      "sinceHit": 0.3250000000000002,
+      "maxNoHit": 3.416666666666657,
+      "catchesWithoutHit": 0,
+      "maxCatchesWithoutHit": 1
+    },
+    "paddle": {
+      "x": 168.63539710411658,
+      "target": 168.63539710411658,
+      "width": 144,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "flight": 8.875000000000137,
+    "hits": 7,
+    "catches": 1,
+    "orbitBreaks": 0,
+    "paused": false,
+    "ball": {
+      "x": 347.64038300319976,
+      "y": 473.6665906511661,
+      "vx": -267.53442313768915,
+      "vy": 328.80299336280643,
+      "r": 12
+    },
+    "gateStates": [
+      {
+        "x": 210,
+        "y": 425,
+        "size": 114,
+        "open": false,
+        "pressure": 0,
+        "lastContact": 4.708333333333357
+      }
+    ],
+    "pegStates": [],
+    "airZones": [
+      {
+        "x": 38,
+        "y": 460,
+        "w": 344,
+        "h": 60,
+        "fx": -35,
+        "fy": 0,
+        "plume": true
+      }
+    ],
+    "bricks": [
+      {
+        "id": 0,
+        "hp": 1
+      },
+      {
+        "id": 2,
+        "hp": 15
+      },
+      {
+        "id": 3,
+        "hp": 8
+      },
+      {
+        "id": 4,
+        "hp": 10
+      },
+      {
+        "id": 5,
+        "hp": 5
+      }
+    ]
+  },
+  {
+    "wall": 1794149982705,
+    "diagnostics": {
+      "wall": 11501,
+      "frames": 2035,
+      "lastFrame": 11495.1,
+      "maxFrameGap": 362.5,
+      "visibility": "visible",
+      "loading": {
+        "phase": "ready",
+        "received": 3399692,
+        "total": 3399692,
+        "percent": 100,
+        "completed": 2,
+        "failed": 0
+      },
+      "audio": {
+        "enabled": true,
+        "state": "running",
+        "voices": 1,
+        "peakVoices": 5,
+        "played": {
+          "launch": 1,
+          "hit": 9,
+          "break": 1,
+          "catch": 1,
+          "boost": 5,
+          "pickup": 1,
+          "weak": 0,
+          "win": 0,
+          "lose": 0
+        },
+        "failures": 0
+      },
+      "updates": {
+        "status": "current",
+        "available": false,
+        "applying": false,
+        "registered": true,
+        "active": "activated",
+        "controlled": true,
+        "checkPhase": "register"
+      }
+    },
+    "progress": {
+      "sinceHit": 0.08333333333333333,
+      "maxNoHit": 3.416666666666657,
+      "catchesWithoutHit": 0,
+      "maxCatchesWithoutHit": 1
+    },
+    "paddle": {
+      "x": 94,
+      "target": 94,
+      "width": 144,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "flight": 9.900000000000079,
+    "hits": 10,
+    "catches": 1,
+    "orbitBreaks": 0,
+    "paused": false,
+    "ball": {
+      "x": 147.45242104476702,
+      "y": 501.977348596693,
+      "vx": -478.2247850134952,
+      "vy": 29.02233267111069,
+      "r": 12
+    },
+    "gateStates": [
+      {
+        "x": 210,
+        "y": 425,
+        "size": 114,
+        "open": false,
+        "pressure": 0,
+        "lastContact": 9.691666666666757
+      }
+    ],
+    "pegStates": [],
+    "airZones": [
+      {
+        "x": 38,
+        "y": 460,
+        "w": 344,
+        "h": 60,
+        "fx": -35,
+        "fy": 0,
+        "plume": true
+      }
+    ],
+    "bricks": [
+      {
+        "id": 0,
+        "hp": 1
+      },
+      {
+        "id": 2,
+        "hp": 14
+      },
+      {
+        "id": 3,
+        "hp": 8
+      },
+      {
+        "id": 4,
+        "hp": 9
+      },
+      {
+        "id": 5,
+        "hp": 4
+      }
+    ]
+  },
+  {
+    "wall": 1794149983690,
+    "diagnostics": {
+      "wall": 12488.799999952316,
+      "frames": 2260,
+      "lastFrame": 12486.6,
+      "maxFrameGap": 362.5,
+      "visibility": "visible",
+      "loading": {
+        "phase": "ready",
+        "received": 3399692,
+        "total": 3399692,
+        "percent": 100,
+        "completed": 2,
+        "failed": 0
+      },
+      "audio": {
+        "enabled": true,
+        "state": "running",
+        "voices": 2,
+        "peakVoices": 5,
+        "played": {
+          "launch": 1,
+          "hit": 11,
+          "break": 1,
+          "catch": 1,
+          "boost": 7,
+          "pickup": 1,
+          "weak": 0,
+          "win": 0,
+          "lose": 0
+        },
+        "failures": 0
+      },
+      "updates": {
+        "status": "current",
+        "available": false,
+        "applying": false,
+        "registered": true,
+        "active": "activated",
+        "controlled": true,
+        "checkPhase": "register"
+      }
+    },
+    "progress": {
+      "sinceHit": 0.049999999999999996,
+      "maxNoHit": 3.416666666666657,
+      "catchesWithoutHit": 0,
+      "maxCatchesWithoutHit": 1
+    },
+    "paddle": {
+      "x": 213.5,
+      "target": 201.97689349834735,
+      "width": 144,
+      "vx": -900,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "flight": 10.891666666666689,
+    "hits": 12,
+    "catches": 1,
+    "orbitBreaks": 0,
+    "paused": false,
+    "ball": {
+      "x": 215.9839202777441,
+      "y": 583.904155134799,
+      "vx": -49.626490597801194,
+      "vy": 524.241320638481,
+      "r": 12
+    },
+    "gateStates": [
+      {
+        "x": 210,
+        "y": 425,
+        "size": 114,
+        "open": false,
+        "pressure": 0,
+        "lastContact": 9.691666666666757
+      }
+    ],
+    "pegStates": [],
+    "airZones": [
+      {
+        "x": 38,
+        "y": 460,
+        "w": 344,
+        "h": 60,
+        "fx": -35,
+        "fy": 0,
+        "plume": true
+      }
+    ],
+    "bricks": [
+      {
+        "id": 0,
+        "hp": 1
+      },
+      {
+        "id": 2,
+        "hp": 13
+      },
+      {
+        "id": 3,
+        "hp": 8
+      },
+      {
+        "id": 4,
+        "hp": 8
+      },
+      {
+        "id": 5,
+        "hp": 4
+      }
+    ]
+  },
+  {
+    "wall": 1794149984682,
+    "diagnostics": {
+      "wall": 13479.799999952316,
+      "frames": 2446,
+      "lastFrame": 13474.2,
+      "maxFrameGap": 362.5,
+      "visibility": "visible",
+      "loading": {
+        "phase": "ready",
+        "received": 3399692,
+        "total": 3399692,
+        "percent": 100,
+        "completed": 2,
+        "failed": 0
+      },
+      "audio": {
+        "enabled": true,
+        "state": "running",
+        "voices": 0,
+        "peakVoices": 5,
+        "played": {
+          "launch": 1,
+          "hit": 16,
+          "break": 1,
+          "catch": 2,
+          "boost": 10,
+          "pickup": 1,
+          "weak": 0,
+          "win": 0,
+          "lose": 0
+        },
+        "failures": 0
+      },
+      "updates": {
+        "status": "current",
+        "available": false,
+        "applying": false,
+        "registered": true,
+        "active": "activated",
+        "controlled": true,
+        "checkPhase": "register"
+      }
+    },
+    "progress": {
+      "sinceHit": 0.275,
+      "maxNoHit": 3.416666666666657,
+      "catchesWithoutHit": 0,
+      "maxCatchesWithoutHit": 1
+    },
+    "paddle": {
+      "x": 288.9867600661058,
+      "target": 288.9867600661058,
+      "width": 144,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "flight": 11.883333333333299,
+    "hits": 17,
+    "catches": 2,
+    "orbitBreaks": 0,
+    "paused": false,
+    "ball": {
+      "x": 91.7255697440305,
+      "y": 481.4920652185158,
+      "vx": 304.93861311496806,
+      "vy": -406.60613353763364,
+      "r": 12
+    },
+    "gateStates": [
+      {
+        "x": 210,
+        "y": 425,
+        "size": 114,
+        "open": false,
+        "pressure": 0,
+        "lastContact": 9.691666666666757
+      }
+    ],
+    "pegStates": [],
+    "airZones": [
+      {
+        "x": 38,
+        "y": 460,
+        "w": 344,
+        "h": 60,
+        "fx": -35,
+        "fy": 0,
+        "plume": true
+      }
+    ],
+    "bricks": [
+      {
+        "id": 0,
+        "hp": 1
+      },
+      {
+        "id": 2,
+        "hp": 12
+      },
+      {
+        "id": 3,
+        "hp": 6
+      },
+      {
+        "id": 4,
+        "hp": 8
+      },
+      {
+        "id": 5,
+        "hp": 2
+      }
+    ]
+  },
+  {
+    "wall": 1794149985664,
+    "diagnostics": {
+      "wall": 14463.799999952316,
+      "frames": 2645,
+      "lastFrame": 14461.7,
+      "maxFrameGap": 362.5,
+      "visibility": "visible",
+      "loading": {
+        "phase": "ready",
+        "received": 3399692,
+        "total": 3399692,
+        "percent": 100,
+        "completed": 2,
+        "failed": 0
+      },
+      "audio": {
+        "enabled": true,
+        "state": "running",
+        "voices": 0,
+        "peakVoices": 5,
+        "played": {
+          "launch": 1,
+          "hit": 17,
+          "break": 2,
+          "catch": 2,
+          "boost": 10,
+          "pickup": 2,
+          "weak": 0,
+          "win": 0,
+          "lose": 0
+        },
+        "failures": 0
+      },
+      "updates": {
+        "status": "current",
+        "available": false,
+        "applying": false,
+        "registered": true,
+        "active": "activated",
+        "controlled": true,
+        "checkPhase": "register"
+      }
+    },
+    "progress": {
+      "sinceHit": 0.2583333333333333,
+      "maxNoHit": 3.416666666666657,
+      "catchesWithoutHit": 0,
+      "maxCatchesWithoutHit": 1
+    },
+    "paddle": {
+      "x": 213.5,
+      "target": 211.43134014423077,
+      "width": 144,
+      "vx": -900,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "flight": 12.866666666666577,
+    "hits": 19,
+    "catches": 2,
+    "orbitBreaks": 0,
+    "paused": false,
+    "ball": {
+      "x": 351.7847395134646,
+      "y": 531.9645573073789,
+      "vx": 458.30307510106303,
+      "vy": 153.22616169352762,
+      "r": 12
+    },
+    "gateStates": [
+      {
+        "x": 210,
+        "y": 425,
+        "size": 114,
+        "open": true,
+        "pressure": 0,
+        "lastContact": 12.049999999999956
+      }
+    ],
+    "pegStates": [],
+    "airZones": [
+      {
+        "x": 38,
+        "y": 460,
+        "w": 344,
+        "h": 60,
+        "fx": -35,
+        "fy": 0,
+        "plume": true
+      }
+    ],
+    "bricks": [
+      {
+        "id": 2,
+        "hp": 11
+      },
+      {
+        "id": 3,
+        "hp": 6
+      },
+      {
+        "id": 4,
+        "hp": 8
+      },
+      {
+        "id": 5,
+        "hp": 2
+      }
+    ]
+  },
+  {
+    "wall": 1794149986645,
+    "diagnostics": {
+      "wall": 15444.299999952316,
+      "frames": 2870,
+      "lastFrame": 15440.8,
+      "maxFrameGap": 362.5,
+      "visibility": "visible",
+      "loading": {
+        "phase": "ready",
+        "received": 3399692,
+        "total": 3399692,
+        "percent": 100,
+        "completed": 2,
+        "failed": 0
+      },
+      "audio": {
+        "enabled": true,
+        "state": "running",
+        "voices": 0,
+        "peakVoices": 5,
+        "played": {
+          "launch": 1,
+          "hit": 19,
+          "break": 2,
+          "catch": 2,
+          "boost": 12,
+          "pickup": 2,
+          "weak": 0,
+          "win": 0,
+          "lose": 0
+        },
+        "failures": 0
+      },
+      "updates": {
+        "status": "current",
+        "available": false,
+        "applying": false,
+        "registered": true,
+        "active": "activated",
+        "controlled": true,
+        "checkPhase": "register"
+      }
+    },
+    "progress": {
+      "sinceHit": 0.5750000000000004,
+      "maxNoHit": 3.416666666666657,
+      "catchesWithoutHit": 0,
+      "maxCatchesWithoutHit": 1
+    },
+    "paddle": {
+      "x": 133.9270254281851,
+      "target": 133.9270254281851,
+      "width": 144,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "flight": 13.849999999999854,
+    "hits": 21,
+    "catches": 2,
+    "orbitBreaks": 0,
+    "paused": false,
+    "ball": {
+      "x": 295.03529480784937,
+      "y": 423.7633198545618,
+      "vx": -406.99159368064375,
+      "vy": -127.0932176363774,
+      "r": 12
+    },
+    "gateStates": [
+      {
+        "x": 210,
+        "y": 425,
+        "size": 114,
+        "open": true,
+        "pressure": 0,
+        "lastContact": 12.049999999999956
+      }
+    ],
+    "pegStates": [],
+    "airZones": [
+      {
+        "x": 38,
+        "y": 460,
+        "w": 344,
+        "h": 60,
+        "fx": -35,
+        "fy": 0,
+        "plume": true
+      }
+    ],
+    "bricks": [
+      {
+        "id": 2,
+        "hp": 10
+      },
+      {
+        "id": 3,
+        "hp": 6
+      },
+      {
+        "id": 4,
+        "hp": 7
+      },
+      {
+        "id": 5,
+        "hp": 2
+      }
+    ]
+  },
+  {
+    "wall": 1794149987631,
+    "diagnostics": {
+      "wall": 16427.69999998808,
+      "frames": 3054,
+      "lastFrame": 16424.2,
+      "maxFrameGap": 362.5,
+      "visibility": "visible",
+      "loading": {
+        "phase": "ready",
+        "received": 3399692,
+        "total": 3399692,
+        "percent": 100,
+        "completed": 2,
+        "failed": 0
+      },
+      "audio": {
+        "enabled": true,
+        "state": "running",
+        "voices": 0,
+        "peakVoices": 5,
+        "played": {
+          "launch": 1,
+          "hit": 19,
+          "break": 2,
+          "catch": 2,
+          "boost": 12,
+          "pickup": 2,
+          "weak": 0,
+          "win": 0,
+          "lose": 0
+        },
+        "failures": 0
+      },
+      "updates": {
+        "status": "current",
+        "available": false,
+        "applying": false,
+        "registered": true,
+        "active": "activated",
+        "controlled": true,
+        "checkPhase": "register"
+      }
+    },
+    "progress": {
+      "sinceHit": 1.5583333333333302,
+      "maxNoHit": 3.416666666666657,
+      "catchesWithoutHit": 0,
+      "maxCatchesWithoutHit": 1
+    },
+    "paddle": {
+      "x": 274.18779343825116,
+      "target": 274.18779343825116,
+      "width": 144,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "flight": 14.833333333333131,
+    "hits": 21,
+    "catches": 2,
+    "orbitBreaks": 0,
+    "paused": false,
+    "ball": {
+      "x": 154.3359318694365,
+      "y": 414.82165584545726,
+      "vx": 382.57209805980506,
+      "vy": 108.9067823636226,
+      "r": 12
+    },
+    "gateStates": [
+      {
+        "x": 210,
+        "y": 425,
+        "size": 114,
+        "open": true,
+        "pressure": 0,
+        "lastContact": 12.049999999999956
+      }
+    ],
+    "pegStates": [],
+    "airZones": [
+      {
+        "x": 38,
+        "y": 460,
+        "w": 344,
+        "h": 60,
+        "fx": -35,
+        "fy": 0,
+        "plume": true
+      }
+    ],
+    "bricks": [
+      {
+        "id": 2,
+        "hp": 10
+      },
+      {
+        "id": 3,
+        "hp": 6
+      },
+      {
+        "id": 4,
+        "hp": 7
+      },
+      {
+        "id": 5,
+        "hp": 2
+      }
+    ]
+  },
+  {
+    "wall": 1794149988627,
+    "diagnostics": {
+      "wall": 17425.19999998808,
+      "frames": 3228,
+      "lastFrame": 17420,
+      "maxFrameGap": 362.5,
+      "visibility": "visible",
+      "loading": {
+        "phase": "ready",
+        "received": 3399692,
+        "total": 3399692,
+        "percent": 100,
+        "completed": 2,
+        "failed": 0
+      },
+      "audio": {
+        "enabled": true,
+        "state": "running",
+        "voices": 0,
+        "peakVoices": 5,
+        "played": {
+          "launch": 1,
+          "hit": 20,
+          "break": 2,
+          "catch": 2,
+          "boost": 13,
+          "pickup": 2,
+          "weak": 0,
+          "win": 0,
+          "lose": 0
+        },
+        "failures": 0
+      },
+      "updates": {
+        "status": "current",
+        "available": false,
+        "applying": false,
+        "registered": true,
+        "active": "activated",
+        "controlled": true,
+        "checkPhase": "register"
+      }
+    },
+    "progress": {
+      "sinceHit": 0.16666666666666666,
+      "maxNoHit": 3.416666666666657,
+      "catchesWithoutHit": 0,
+      "maxCatchesWithoutHit": 1
+    },
+    "paddle": {
+      "x": 293.1915024977464,
+      "target": 295.1059758112981,
+      "width": 144,
+      "vx": 900,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "flight": 15.824999999999742,
+    "hits": 22,
+    "catches": 2,
+    "orbitBreaks": 0,
+    "paused": false,
+    "ball": {
+      "x": 382.5581597888838,
+      "y": 571.7325908546619,
+      "vx": -446.5104126669694,
+      "vy": -65.29644011233046,
+      "r": 12
+    },
+    "gateStates": [
+      {
+        "x": 210,
+        "y": 425,
+        "size": 114,
+        "open": true,
+        "pressure": 0,
+        "lastContact": 12.049999999999956
+      }
+    ],
+    "pegStates": [],
+    "airZones": [
+      {
+        "x": 38,
+        "y": 460,
+        "w": 344,
+        "h": 60,
+        "fx": -35,
+        "fy": 0,
+        "plume": true
+      }
+    ],
+    "bricks": [
+      {
+        "id": 2,
+        "hp": 10
+      },
+      {
+        "id": 3,
+        "hp": 6
+      },
+      {
+        "id": 4,
+        "hp": 6
+      },
+      {
+        "id": 5,
+        "hp": 2
+      }
+    ]
+  },
+  {
+    "wall": 1794149989599,
+    "diagnostics": {
+      "wall": 18398.19999998808,
+      "frames": 3429,
+      "lastFrame": 18394.9,
+      "maxFrameGap": 362.5,
+      "visibility": "visible",
+      "loading": {
+        "phase": "ready",
+        "received": 3399692,
+        "total": 3399692,
+        "percent": 100,
+        "completed": 2,
+        "failed": 0
+      },
+      "audio": {
+        "enabled": true,
+        "state": "running",
+        "voices": 3,
+        "peakVoices": 5,
+        "played": {
+          "launch": 1,
+          "hit": 21,
+          "break": 2,
+          "catch": 2,
+          "boost": 14,
+          "pickup": 2,
+          "weak": 0,
+          "win": 0,
+          "lose": 0
+        },
+        "failures": 0
+      },
+      "updates": {
+        "status": "current",
+        "available": false,
+        "applying": false,
+        "registered": true,
+        "active": "activated",
+        "controlled": true,
+        "checkPhase": "register"
+      }
+    },
+    "progress": {
+      "sinceHit": 0.075,
+      "maxNoHit": 3.416666666666657,
+      "catchesWithoutHit": 0,
+      "maxCatchesWithoutHit": 1
+    },
+    "paddle": {
+      "x": 247.19154240534857,
+      "target": 247.19154240534857,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "flight": 16.799999999999688,
+    "hits": 23,
+    "catches": 2,
+    "orbitBreaks": 0,
+    "paused": false,
+    "ball": {
+      "x": 36.44417908374961,
+      "y": 611.8351968634657,
+      "vx": -486.23889896794174,
+      "vy": 36.2445039793946,
+      "r": 12
+    },
+    "gateStates": [
+      {
+        "x": 210,
+        "y": 425,
+        "size": 114,
+        "open": true,
+        "pressure": 0,
+        "lastContact": 12.049999999999956
+      }
+    ],
+    "pegStates": [],
+    "airZones": [
+      {
+        "x": 38,
+        "y": 460,
+        "w": 344,
+        "h": 60,
+        "fx": -35,
+        "fy": 0,
+        "plume": true
+      }
+    ],
+    "bricks": [
+      {
+        "id": 2,
+        "hp": 10
+      },
+      {
+        "id": 3,
+        "hp": 5
+      },
+      {
+        "id": 4,
+        "hp": 6
+      },
+      {
+        "id": 5,
+        "hp": 2
+      }
+    ]
+  },
+  {
+    "wall": 1794149990569,
+    "diagnostics": {
+      "wall": 19369,
+      "frames": 3648,
+      "lastFrame": 19365.8,
+      "maxFrameGap": 362.5,
+      "visibility": "visible",
+      "loading": {
+        "phase": "ready",
+        "received": 3399692,
+        "total": 3399692,
+        "percent": 100,
+        "completed": 2,
+        "failed": 0
+      },
+      "audio": {
+        "enabled": true,
+        "state": "running",
+        "voices": 1,
+        "peakVoices": 5,
+        "played": {
+          "launch": 1,
+          "hit": 25,
+          "break": 2,
+          "catch": 3,
+          "boost": 17,
+          "pickup": 2,
+          "weak": 0,
+          "win": 0,
+          "lose": 0
+        },
+        "failures": 0
+      },
+      "updates": {
+        "status": "current",
+        "available": false,
+        "applying": false,
+        "registered": true,
+        "active": "activated",
+        "controlled": true,
+        "checkPhase": "register"
+      }
+    },
+    "progress": {
+      "sinceHit": 0.13333333333333333,
+      "maxNoHit": 3.416666666666657,
+      "catchesWithoutHit": 0,
+      "maxCatchesWithoutHit": 1
+    },
+    "paddle": {
+      "x": 70,
+      "target": 70,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "flight": 17.774999999999633,
+    "hits": 27,
+    "catches": 3,
+    "orbitBreaks": 0,
+    "paused": false,
+    "ball": {
+      "x": 195.77354173095418,
+      "y": 586.0089069259552,
+      "vx": 495.91450045302037,
+      "vy": -77.94059920380082,
+      "r": 12
+    },
+    "gateStates": [
+      {
+        "x": 210,
+        "y": 425,
+        "size": 114,
+        "open": true,
+        "pressure": 0,
+        "lastContact": 12.049999999999956
+      }
+    ],
+    "pegStates": [],
+    "airZones": [
+      {
+        "x": 38,
+        "y": 460,
+        "w": 344,
+        "h": 60,
+        "fx": -35,
+        "fy": 0,
+        "plume": true
+      }
+    ],
+    "bricks": [
+      {
+        "id": 2,
+        "hp": 9
+      },
+      {
+        "id": 3,
+        "hp": 3
+      },
+      {
+        "id": 4,
+        "hp": 6
+      },
+      {
+        "id": 5,
+        "hp": 1
+      }
+    ]
+  },
+  {
+    "wall": 1794149991548,
+    "diagnostics": {
+      "wall": 20347,
+      "frames": 3882,
+      "lastFrame": 20344.9,
+      "maxFrameGap": 362.5,
+      "visibility": "visible",
+      "loading": {
+        "phase": "ready",
+        "received": 3399692,
+        "total": 3399692,
+        "percent": 100,
+        "completed": 2,
+        "failed": 0
+      },
+      "audio": {
+        "enabled": true,
+        "state": "running",
+        "voices": 0,
+        "peakVoices": 5,
+        "played": {
+          "launch": 1,
+          "hit": 27,
+          "break": 2,
+          "catch": 3,
+          "boost": 18,
+          "pickup": 2,
+          "weak": 0,
+          "win": 0,
+          "lose": 0
+        },
+        "failures": 0
+      },
+      "updates": {
+        "status": "current",
+        "available": false,
+        "applying": false,
+        "registered": true,
+        "active": "activated",
+        "controlled": true,
+        "checkPhase": "register"
+      }
+    },
+    "progress": {
+      "sinceHit": 0.2333333333333333,
+      "maxNoHit": 3.416666666666657,
+      "catchesWithoutHit": 0,
+      "maxCatchesWithoutHit": 1
+    },
+    "paddle": {
+      "x": 271.6036776029147,
+      "target": 271.6036776029147,
+      "width": 96,
+      "vx": 419.34138371394283,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "flight": 18.749999999999577,
+    "hits": 29,
+    "catches": 3,
+    "orbitBreaks": 0,
+    "paused": false,
+    "ball": {
+      "x": 325.58943267844006,
+      "y": 459.2852338818826,
+      "vx": 349.7460038160042,
+      "vy": -237.87092536898763,
+      "r": 12
+    },
+    "gateStates": [
+      {
+        "x": 210,
+        "y": 425,
+        "size": 114,
+        "open": true,
+        "pressure": 0,
+        "lastContact": 12.049999999999956
+      }
+    ],
+    "pegStates": [],
+    "airZones": [
+      {
+        "x": 38,
+        "y": 460,
+        "w": 344,
+        "h": 60,
+        "fx": -35,
+        "fy": 0,
+        "plume": true
+      }
+    ],
+    "bricks": [
+      {
+        "id": 2,
+        "hp": 8
+      },
+      {
+        "id": 3,
+        "hp": 3
+      },
+      {
+        "id": 4,
+        "hp": 5
+      },
+      {
+        "id": 5,
+        "hp": 1
+      }
+    ]
+  },
+  {
+    "wall": 1794149992520,
+    "diagnostics": {
+      "wall": 21319,
+      "frames": 4115,
+      "lastFrame": 21315.7,
+      "maxFrameGap": 362.5,
+      "visibility": "visible",
+      "loading": {
+        "phase": "ready",
+        "received": 3399692,
+        "total": 3399692,
+        "percent": 100,
+        "completed": 2,
+        "failed": 0
+      },
+      "audio": {
+        "enabled": true,
+        "state": "running",
+        "voices": 0,
+        "peakVoices": 5,
+        "played": {
+          "launch": 1,
+          "hit": 27,
+          "break": 2,
+          "catch": 3,
+          "boost": 18,
+          "pickup": 2,
+          "weak": 0,
+          "win": 0,
+          "lose": 0
+        },
+        "failures": 0
+      },
+      "updates": {
+        "status": "current",
+        "available": false,
+        "applying": false,
+        "registered": true,
+        "active": "activated",
+        "controlled": true,
+        "checkPhase": "register"
+      }
+    },
+    "progress": {
+      "sinceHit": 1.2083333333333315,
+      "maxNoHit": 3.416666666666657,
+      "catchesWithoutHit": 0,
+      "maxCatchesWithoutHit": 1
+    },
+    "paddle": {
+      "x": 274.4065434382512,
+      "target": 274.4065434382512,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "flight": 19.724999999999522,
+    "hits": 29,
+    "catches": 3,
+    "orbitBreaks": 0,
+    "paused": false,
+    "ball": {
+      "x": 132.4703591901486,
+      "y": 341.4360816471197,
+      "vx": -328.76124358704396,
+      "vy": -3.8709253689876277,
+      "r": 12
+    },
+    "gateStates": [
+      {
+        "x": 210,
+        "y": 425,
+        "size": 114,
+        "open": true,
+        "pressure": 0,
+        "lastContact": 12.049999999999956
+      }
+    ],
+    "pegStates": [],
+    "airZones": [
+      {
+        "x": 38,
+        "y": 460,
+        "w": 344,
+        "h": 60,
+        "fx": -35,
+        "fy": 0,
+        "plume": true
+      }
+    ],
+    "bricks": [
+      {
+        "id": 2,
+        "hp": 8
+      },
+      {
+        "id": 3,
+        "hp": 3
+      },
+      {
+        "id": 4,
+        "hp": 5
+      },
+      {
+        "id": 5,
+        "hp": 1
+      }
+    ]
+  },
+  {
+    "wall": 1794149993477,
+    "diagnostics": {
+      "wall": 22276.399999976158,
+      "frames": 4343,
+      "lastFrame": 22274.1,
+      "maxFrameGap": 362.5,
+      "visibility": "visible",
+      "loading": {
+        "phase": "ready",
+        "received": 3399692,
+        "total": 3399692,
+        "percent": 100,
+        "completed": 2,
+        "failed": 0
+      },
+      "audio": {
+        "enabled": true,
+        "state": "running",
+        "voices": 0,
+        "peakVoices": 5,
+        "played": {
+          "launch": 1,
+          "hit": 27,
+          "break": 2,
+          "catch": 3,
+          "boost": 18,
+          "pickup": 2,
+          "weak": 0,
+          "win": 0,
+          "lose": 0
+        },
+        "failures": 0
+      },
+      "updates": {
+        "status": "current",
+        "available": false,
+        "applying": false,
+        "registered": true,
+        "active": "activated",
+        "controlled": true,
+        "checkPhase": "register"
+      }
+    },
+    "progress": {
+      "sinceHit": 2.1666666666666616,
+      "maxNoHit": 3.416666666666657,
+      "catchesWithoutHit": 0,
+      "maxCatchesWithoutHit": 1
+    },
+    "paddle": {
+      "x": 350,
+      "target": 350,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "flight": 20.6833333333328,
+    "hits": 29,
+    "catches": 3,
+    "orbitBreaks": 0,
+    "paused": false,
+    "ball": {
+      "x": 228.29782342358578,
+      "y": 447.93477816850657,
+      "vx": 309.03556897182136,
+      "vy": 226.12907463101237,
+      "r": 12
+    },
+    "gateStates": [
+      {
+        "x": 210,
+        "y": 425,
+        "size": 114,
+        "open": true,
+        "pressure": 0,
+        "lastContact": 12.049999999999956
+      }
+    ],
+    "pegStates": [],
+    "airZones": [
+      {
+        "x": 38,
+        "y": 460,
+        "w": 344,
+        "h": 60,
+        "fx": -35,
+        "fy": 0,
+        "plume": true
+      }
+    ],
+    "bricks": [
+      {
+        "id": 2,
+        "hp": 8
+      },
+      {
+        "id": 3,
+        "hp": 3
+      },
+      {
+        "id": 4,
+        "hp": 5
+      },
+      {
+        "id": 5,
+        "hp": 1
+      }
+    ]
+  },
+  {
+    "wall": 1794149994449,
+    "diagnostics": {
+      "wall": 23248.599999964237,
+      "frames": 4576,
+      "lastFrame": 23244.9,
+      "maxFrameGap": 362.5,
+      "visibility": "visible",
+      "loading": {
+        "phase": "ready",
+        "received": 3399692,
+        "total": 3399692,
+        "percent": 100,
+        "completed": 2,
+        "failed": 0
+      },
+      "audio": {
+        "enabled": true,
+        "state": "running",
+        "voices": 1,
+        "peakVoices": 6,
+        "played": {
+          "launch": 1,
+          "hit": 28,
+          "break": 2,
+          "catch": 5,
+          "boost": 19,
+          "pickup": 3,
+          "weak": 0,
+          "win": 0,
+          "lose": 0
+        },
+        "failures": 0
+      },
+      "updates": {
+        "status": "current",
+        "available": false,
+        "applying": false,
+        "registered": true,
+        "active": "activated",
+        "controlled": true,
+        "checkPhase": "register"
+      }
+    },
+    "progress": {
+      "sinceHit": 0.22499999999999998,
+      "maxNoHit": 3.416666666666657,
+      "catchesWithoutHit": 1,
+      "maxCatchesWithoutHit": 1
+    },
+    "paddle": {
+      "x": 350,
+      "target": 350,
+      "width": 96,
+      "vx": 0,
+      "flash": 0.041666666666666685,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "flight": 21.649999999999412,
+    "hits": 30,
+    "catches": 5,
+    "orbitBreaks": 0,
+    "paused": false,
+    "ball": {
+      "x": 366.2929450576467,
+      "y": 574.1289205179509,
+      "vx": -96.48443558418654,
+      "vy": -868.8132507344765,
+      "r": 12
+    },
+    "gateStates": [
+      {
+        "x": 210,
+        "y": 425,
+        "size": 114,
+        "open": true,
+        "pressure": 0,
+        "lastContact": 12.049999999999956
+      }
+    ],
+    "pegStates": [],
+    "airZones": [
+      {
+        "x": 38,
+        "y": 460,
+        "w": 344,
+        "h": 60,
+        "fx": -35,
+        "fy": 0,
+        "plume": true
+      }
+    ],
+    "bricks": [
+      {
+        "id": 2,
+        "hp": 8
+      },
+      {
+        "id": 3,
+        "hp": 3
+      },
+      {
+        "id": 4,
+        "hp": 4
+      },
+      {
+        "id": 5,
+        "hp": 1
+      }
+    ]
+  },
+  {
+    "wall": 1794149995427,
+    "diagnostics": {
+      "wall": 24227,
+      "frames": 4808,
+      "lastFrame": 24224,
+      "maxFrameGap": 362.5,
+      "visibility": "visible",
+      "loading": {
+        "phase": "ready",
+        "received": 3399692,
+        "total": 3399692,
+        "percent": 100,
+        "completed": 2,
+        "failed": 0
+      },
+      "audio": {
+        "enabled": true,
+        "state": "running",
+        "voices": 0,
+        "peakVoices": 6,
+        "played": {
+          "launch": 1,
+          "hit": 28,
+          "break": 2,
+          "catch": 5,
+          "boost": 19,
+          "pickup": 3,
+          "weak": 0,
+          "win": 0,
+          "lose": 0
+        },
+        "failures": 0
+      },
+      "updates": {
+        "status": "current",
+        "available": false,
+        "applying": false,
+        "registered": true,
+        "active": "activated",
+        "controlled": true,
+        "checkPhase": "register"
+      }
+    },
+    "progress": {
+      "sinceHit": 1.2083333333333315,
+      "maxNoHit": 3.416666666666657,
+      "catchesWithoutHit": 1,
+      "maxCatchesWithoutHit": 1
+    },
+    "paddle": {
+      "x": 235.76001446063702,
+      "target": 235.76001446063702,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "flight": 22.63333333333269,
+    "hits": 30,
+    "catches": 5,
+    "orbitBreaks": 0,
+    "paused": false,
+    "ball": {
+      "x": 268.8207651894613,
+      "y": 435.5363751030466,
+      "vx": -99.42368422286816,
+      "vy": 790.7844556904079,
+      "r": 12
+    },
+    "gateStates": [
+      {
+        "x": 210,
+        "y": 425,
+        "size": 114,
+        "open": true,
+        "pressure": 0,
+        "lastContact": 12.049999999999956
+      }
+    ],
+    "pegStates": [],
+    "airZones": [
+      {
+        "x": 38,
+        "y": 460,
+        "w": 344,
+        "h": 60,
+        "fx": -35,
+        "fy": 0,
+        "plume": true
+      }
+    ],
+    "bricks": [
+      {
+        "id": 2,
+        "hp": 8
+      },
+      {
+        "id": 3,
+        "hp": 3
+      },
+      {
+        "id": 4,
+        "hp": 4
+      },
+      {
+        "id": 5,
+        "hp": 1
+      }
+    ]
+  }
+]

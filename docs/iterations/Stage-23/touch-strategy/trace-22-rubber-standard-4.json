@@ -1,0 +1,114 @@
+[
+  {
+    "wall": 1794150411036,
+    "diagnostics": {
+      "wall": 47581.19999998808,
+      "frames": 11188,
+      "lastFrame": 47578,
+      "maxFrameGap": 274.90000000000003,
+      "visibility": "visible",
+      "loading": {
+        "phase": "ready",
+        "received": 3399692,
+        "total": 3399692,
+        "percent": 100,
+        "completed": 2,
+        "failed": 0
+      },
+      "audio": {
+        "enabled": false,
+        "state": "locked",
+        "voices": 0,
+        "peakVoices": 0,
+        "played": {
+          "launch": 0,
+          "hit": 0,
+          "break": 0,
+          "catch": 0,
+          "boost": 0,
+          "pickup": 0,
+          "weak": 0,
+          "win": 0,
+          "lose": 0
+        },
+        "failures": 0
+      },
+      "updates": {
+        "status": "current",
+        "available": false,
+        "applying": false,
+        "registered": true,
+        "active": "activated",
+        "controlled": true,
+        "checkPhase": "idle"
+      }
+    },
+    "progress": {
+      "sinceHit": 0.008333333333333333,
+      "maxNoHit": 8.283333333333504,
+      "catchesWithoutHit": 0,
+      "maxCatchesWithoutHit": 4
+    },
+    "paddle": {
+      "x": 199.41738891601562,
+      "target": 210,
+      "width": 96,
+      "vx": -900,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "flight": 46.099999999998026,
+    "hits": 33,
+    "catches": 16,
+    "orbitBreaks": 0,
+    "paused": false,
+    "ball": {
+      "x": 211.67622876921274,
+      "y": 139.350214568836,
+      "vx": 201.1474523055313,
+      "vy": 883.0257482603222,
+      "r": 12
+    },
+    "gateStates": [],
+    "pegStates": [],
+    "airZones": [
+      {
+        "x": 38,
+        "y": 355,
+        "w": 344,
+        "h": 200,
+        "fx": -95,
+        "fy": 0,
+        "plume": true
+      }
+    ],
+    "bricks": [
+      {
+        "x": 310,
+        "y": 570,
+        "hp": 1,
+        "kind": "capacitor",
+        "size": 48,
+        "core": true,
+        "id": 3,
+        "maxHp": 14,
+        "flash": 0,
+        "vx": 0
+      },
+      {
+        "x": 100,
+        "y": 610,
+        "hp": 3,
+        "kind": "prism",
+        "size": 48,
+        "power": "spring",
+        "core": false,
+        "id": 4,
+        "maxHp": 8,
+        "flash": 0,
+        "vx": 0
+      }
+    ]
+  }
+]
