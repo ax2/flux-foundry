@@ -1,0 +1,1273 @@
+{
+  "method": "Route search for every old first-ball win changed to aim/over. Replay exact legal first inputs from launch, then named aiming strategies with the same loadout and paddle policy. Every original ball must wholly collect; observer failure only rejects a candidate. Successful routes are reachability certificates, not old one-ball wins or human win rate. Trials retained.",
+  "routes": [
+    {
+      "matrix": "active-endurance.json",
+      "index": 651,
+      "actualSeed": 1018,
+      "level": 19,
+      "material": "steel",
+      "size": "standard",
+      "mirror": false,
+      "angle": 0.55,
+      "cadence": 14,
+      "policy": "follow",
+      "strategy": "default",
+      "par": 6,
+      "used": 2,
+      "stars": 3,
+      "maxNoHit": 5.7833333333334105,
+      "moves": [
+        {
+          "material": "steel",
+          "size": "standard",
+          "angle": 0.55,
+          "steps": 4063
+        },
+        {
+          "material": "steel",
+          "size": "standard",
+          "angle": 1.3628092627027768,
+          "steps": 1877
+        }
+      ]
+    },
+    {
+      "matrix": "active-endurance.json",
+      "index": 657,
+      "actualSeed": 1018,
+      "level": 19,
+      "material": "brass",
+      "size": "small",
+      "mirror": false,
+      "angle": 0.55,
+      "cadence": 14,
+      "policy": "follow",
+      "strategy": "default",
+      "par": 6,
+      "used": 4,
+      "stars": 3,
+      "maxNoHit": 6.350000000000105,
+      "moves": [
+        {
+          "material": "brass",
+          "size": "small",
+          "angle": 0.55,
+          "steps": 3028
+        },
+        {
+          "material": "brass",
+          "size": "small",
+          "angle": 1.7287823730200154,
+          "steps": 1523
+        },
+        {
+          "material": "brass",
+          "size": "small",
+          "angle": 1.7287823730200154,
+          "steps": 465
+        },
+        {
+          "material": "brass",
+          "size": "small",
+          "angle": 1.7287823730200154,
+          "steps": 456
+        }
+      ]
+    },
+    {
+      "matrix": "active-endurance.json",
+      "index": 662,
+      "actualSeed": 1018,
+      "level": 19,
+      "material": "brass",
+      "size": "standard",
+      "mirror": false,
+      "angle": 2.59,
+      "cadence": 14,
+      "policy": "follow",
+      "strategy": "default",
+      "par": 6,
+      "used": 2,
+      "stars": 3,
+      "maxNoHit": 12.016666666666625,
+      "moves": [
+        {
+          "material": "brass",
+          "size": "standard",
+          "angle": 2.59,
+          "steps": 469
+        },
+        {
+          "material": "brass",
+          "size": "standard",
+          "angle": 1.3628092627027768,
+          "steps": 5315
+        }
+      ]
+    },
+    {
+      "matrix": "active-endurance.json",
+      "index": 664,
+      "actualSeed": 1018,
+      "level": 19,
+      "material": "brass",
+      "size": "large",
+      "mirror": false,
+      "angle": 1.5707963267948966,
+      "cadence": 14,
+      "policy": "follow",
+      "strategy": "default",
+      "par": 6,
+      "used": 2,
+      "stars": 3,
+      "maxNoHit": 8.908333333333468,
+      "moves": [
+        {
+          "material": "brass",
+          "size": "large",
+          "angle": 1.5707963267948966,
+          "steps": 1758
+        },
+        {
+          "material": "brass",
+          "size": "large",
+          "angle": 1.3628092627027768,
+          "steps": 6209
+        }
+      ]
+    },
+    {
+      "matrix": "active-endurance.json",
+      "index": 668,
+      "actualSeed": 1018,
+      "level": 19,
+      "material": "ceramic",
+      "size": "small",
+      "mirror": false,
+      "angle": 2.59,
+      "cadence": 14,
+      "policy": "follow",
+      "strategy": "default",
+      "par": 6,
+      "used": 2,
+      "stars": 3,
+      "maxNoHit": 3.716666666666656,
+      "moves": [
+        {
+          "material": "ceramic",
+          "size": "small",
+          "angle": 2.59,
+          "steps": 484
+        },
+        {
+          "material": "ceramic",
+          "size": "small",
+          "angle": 1.3628092627027768,
+          "steps": 2476
+        }
+      ]
+    },
+    {
+      "matrix": "active-endurance.json",
+      "index": 669,
+      "actualSeed": 1018,
+      "level": 19,
+      "material": "ceramic",
+      "size": "standard",
+      "mirror": false,
+      "angle": 0.55,
+      "cadence": 14,
+      "policy": "follow",
+      "strategy": "default",
+      "par": 6,
+      "used": 2,
+      "stars": 3,
+      "maxNoHit": 4.6916666666666895,
+      "moves": [
+        {
+          "material": "ceramic",
+          "size": "standard",
+          "angle": 0.55,
+          "steps": 2544
+        },
+        {
+          "material": "ceramic",
+          "size": "standard",
+          "angle": 1.7287823730200154,
+          "steps": 577
+        }
+      ]
+    },
+    {
+      "matrix": "active-endurance.json",
+      "index": 672,
+      "actualSeed": 1018,
+      "level": 19,
+      "material": "ceramic",
+      "size": "large",
+      "mirror": false,
+      "angle": 0.55,
+      "cadence": 14,
+      "policy": "follow",
+      "strategy": "default",
+      "par": 6,
+      "used": 2,
+      "stars": 3,
+      "maxNoHit": 4.174999999999997,
+      "moves": [
+        {
+          "material": "ceramic",
+          "size": "large",
+          "angle": 0.55,
+          "steps": 2249
+        },
+        {
+          "material": "ceramic",
+          "size": "large",
+          "angle": 1.3628092627027768,
+          "steps": 2693
+        }
+      ]
+    },
+    {
+      "matrix": "active-endurance.json",
+      "index": 678,
+      "actualSeed": 1018,
+      "level": 19,
+      "material": "rubber",
+      "size": "standard",
+      "mirror": false,
+      "angle": 0.55,
+      "cadence": 14,
+      "policy": "follow",
+      "strategy": "default",
+      "par": 6,
+      "used": 3,
+      "stars": 3,
+      "maxNoHit": 5.166666666666713,
+      "moves": [
+        {
+          "material": "rubber",
+          "size": "standard",
+          "angle": 0.55,
+          "steps": 3047
+        },
+        {
+          "material": "rubber",
+          "size": "standard",
+          "angle": 1.7287823730200154,
+          "steps": 471
+        },
+        {
+          "material": "rubber",
+          "size": "standard",
+          "angle": 1.7287823730200154,
+          "steps": 1610
+        }
+      ]
+    },
+    {
+      "matrix": "active-endurance.json",
+      "index": 679,
+      "actualSeed": 1018,
+      "level": 19,
+      "material": "rubber",
+      "size": "standard",
+      "mirror": false,
+      "angle": 1.5707963267948966,
+      "cadence": 14,
+      "policy": "follow",
+      "strategy": "default",
+      "par": 6,
+      "used": 2,
+      "stars": 3,
+      "maxNoHit": 6.141666666666762,
+      "moves": [
+        {
+          "material": "rubber",
+          "size": "standard",
+          "angle": 1.5707963267948966,
+          "steps": 3907
+        },
+        {
+          "material": "rubber",
+          "size": "standard",
+          "angle": 1.7287823730200154,
+          "steps": 982
+        }
+      ]
+    },
+    {
+      "matrix": "active-endurance.json",
+      "index": 682,
+      "actualSeed": 1018,
+      "level": 19,
+      "material": "rubber",
+      "size": "large",
+      "mirror": false,
+      "angle": 1.5707963267948966,
+      "cadence": 14,
+      "policy": "follow",
+      "strategy": "default",
+      "par": 6,
+      "used": 2,
+      "stars": 3,
+      "maxNoHit": 9.608333333333428,
+      "moves": [
+        {
+          "material": "rubber",
+          "size": "large",
+          "angle": 1.5707963267948966,
+          "steps": 976
+        },
+        {
+          "material": "rubber",
+          "size": "large",
+          "angle": 1.3628092627027768,
+          "steps": 4802
+        }
+      ]
+    },
+    {
+      "matrix": "active-endurance.json",
+      "index": 1590,
+      "actualSeed": 1018,
+      "level": 19,
+      "material": "steel",
+      "size": "large",
+      "mirror": false,
+      "angle": 0.55,
+      "cadence": 14,
+      "policy": "steer",
+      "strategy": "default",
+      "par": 6,
+      "used": 2,
+      "stars": 3,
+      "maxNoHit": 7.825000000000179,
+      "moves": [
+        {
+          "material": "steel",
+          "size": "large",
+          "angle": 0.55,
+          "steps": 242
+        },
+        {
+          "material": "steel",
+          "size": "large",
+          "angle": 1.3628092627027768,
+          "steps": 7663
+        }
+      ]
+    },
+    {
+      "matrix": "active-endurance.json",
+      "index": 1593,
+      "actualSeed": 1018,
+      "level": 19,
+      "material": "brass",
+      "size": "small",
+      "mirror": false,
+      "angle": 0.55,
+      "cadence": 14,
+      "policy": "steer",
+      "strategy": "default",
+      "par": 6,
+      "used": 2,
+      "stars": 3,
+      "maxNoHit": 8.750000000000144,
+      "moves": [
+        {
+          "material": "brass",
+          "size": "small",
+          "angle": 0.55,
+          "steps": 3373
+        },
+        {
+          "material": "brass",
+          "size": "small",
+          "angle": 1.7287823730200154,
+          "steps": 1191
+        }
+      ]
+    },
+    {
+      "matrix": "active-endurance.json",
+      "index": 1601,
+      "actualSeed": 1018,
+      "level": 19,
+      "material": "brass",
+      "size": "large",
+      "mirror": false,
+      "angle": 2.59,
+      "cadence": 14,
+      "policy": "steer",
+      "strategy": "default",
+      "par": 6,
+      "used": 2,
+      "stars": 3,
+      "maxNoHit": 9.650000000000093,
+      "moves": [
+        {
+          "material": "brass",
+          "size": "large",
+          "angle": 2.59,
+          "steps": 1732
+        },
+        {
+          "material": "brass",
+          "size": "large",
+          "angle": 1.3628092627027768,
+          "steps": 4466
+        }
+      ]
+    },
+    {
+      "matrix": "active-endurance.json",
+      "index": 1610,
+      "actualSeed": 1018,
+      "level": 19,
+      "material": "ceramic",
+      "size": "large",
+      "mirror": false,
+      "angle": 2.59,
+      "cadence": 14,
+      "policy": "steer",
+      "strategy": "default",
+      "par": 6,
+      "used": 2,
+      "stars": 3,
+      "maxNoHit": 3.708333333333323,
+      "moves": [
+        {
+          "material": "ceramic",
+          "size": "large",
+          "angle": 2.59,
+          "steps": 2204
+        },
+        {
+          "material": "ceramic",
+          "size": "large",
+          "angle": 1.3628092627027768,
+          "steps": 2905
+        }
+      ]
+    },
+    {
+      "matrix": "active-endurance.json",
+      "index": 1617,
+      "actualSeed": 1018,
+      "level": 19,
+      "material": "rubber",
+      "size": "large",
+      "mirror": false,
+      "angle": 0.55,
+      "cadence": 14,
+      "policy": "steer",
+      "strategy": "default",
+      "par": 6,
+      "used": 2,
+      "stars": 3,
+      "maxNoHit": 5.258333333333384,
+      "moves": [
+        {
+          "material": "rubber",
+          "size": "large",
+          "angle": 0.55,
+          "steps": 827
+        },
+        {
+          "material": "rubber",
+          "size": "large",
+          "angle": 1.3628092627027768,
+          "steps": 3842
+        }
+      ]
+    },
+    {
+      "matrix": "varied-endurance.json",
+      "index": 864,
+      "actualSeed": 8155,
+      "level": 19,
+      "material": "steel",
+      "size": "small",
+      "mirror": false,
+      "angle": 0.6962282702997525,
+      "cadence": 18,
+      "policy": "steer",
+      "strategy": "default",
+      "par": 6,
+      "used": 3,
+      "stars": 3,
+      "maxNoHit": 6.333333333333438,
+      "moves": [
+        {
+          "material": "steel",
+          "size": "small",
+          "angle": 0.6962282702997525,
+          "steps": 881
+        },
+        {
+          "material": "steel",
+          "size": "small",
+          "angle": 1.3628092627027768,
+          "steps": 1669
+        },
+        {
+          "material": "steel",
+          "size": "small",
+          "angle": 1.7287823730200154,
+          "steps": 3018
+        }
+      ]
+    },
+    {
+      "matrix": "varied-endurance.json",
+      "index": 865,
+      "actualSeed": 8155,
+      "level": 19,
+      "material": "steel",
+      "size": "small",
+      "mirror": false,
+      "angle": 0.6962282702997525,
+      "cadence": 36,
+      "policy": "steer",
+      "strategy": "default",
+      "par": 6,
+      "used": 2,
+      "stars": 3,
+      "maxNoHit": 6.141666666666762,
+      "moves": [
+        {
+          "material": "steel",
+          "size": "small",
+          "angle": 0.6962282702997525,
+          "steps": 881
+        },
+        {
+          "material": "steel",
+          "size": "small",
+          "angle": 1.3628092627027768,
+          "steps": 4318
+        }
+      ]
+    },
+    {
+      "matrix": "varied-endurance.json",
+      "index": 866,
+      "actualSeed": 8155,
+      "level": 19,
+      "material": "steel",
+      "size": "small",
+      "mirror": true,
+      "angle": 0.6962282702997525,
+      "cadence": 18,
+      "policy": "steer",
+      "strategy": "default",
+      "par": 6,
+      "used": 2,
+      "stars": 3,
+      "maxNoHit": 7.791666666666844,
+      "moves": [
+        {
+          "material": "steel",
+          "size": "small",
+          "angle": 0.6962282702997525,
+          "steps": 3728
+        },
+        {
+          "material": "steel",
+          "size": "small",
+          "angle": 1.412810280569778,
+          "steps": 3098
+        }
+      ]
+    },
+    {
+      "matrix": "varied-endurance.json",
+      "index": 867,
+      "actualSeed": 8155,
+      "level": 19,
+      "material": "steel",
+      "size": "small",
+      "mirror": true,
+      "angle": 0.6962282702997525,
+      "cadence": 36,
+      "policy": "steer",
+      "strategy": "default",
+      "par": 6,
+      "used": 2,
+      "stars": 3,
+      "maxNoHit": 2.5166666666666604,
+      "moves": [
+        {
+          "material": "steel",
+          "size": "small",
+          "angle": 0.6962282702997525,
+          "steps": 681
+        },
+        {
+          "material": "steel",
+          "size": "small",
+          "angle": 1.7787833908870165,
+          "steps": 2045
+        }
+      ]
+    },
+    {
+      "matrix": "varied-endurance.json",
+      "index": 881,
+      "actualSeed": 8155,
+      "level": 19,
+      "material": "brass",
+      "size": "standard",
+      "mirror": false,
+      "angle": 0.7538017160251382,
+      "cadence": 36,
+      "policy": "steer",
+      "strategy": "default",
+      "par": 6,
+      "used": 3,
+      "stars": 3,
+      "maxNoHit": 6.2500000000001,
+      "moves": [
+        {
+          "material": "brass",
+          "size": "standard",
+          "angle": 0.7538017160251382,
+          "steps": 402
+        },
+        {
+          "material": "brass",
+          "size": "standard",
+          "angle": 1.3628092627027768,
+          "steps": 1468
+        },
+        {
+          "material": "brass",
+          "size": "standard",
+          "angle": 1.3628092627027768,
+          "steps": 1473
+        }
+      ]
+    },
+    {
+      "matrix": "varied-endurance.json",
+      "index": 892,
+      "actualSeed": 8155,
+      "level": 19,
+      "material": "ceramic",
+      "size": "standard",
+      "mirror": false,
+      "angle": 0.8141167544041137,
+      "cadence": 18,
+      "policy": "steer",
+      "strategy": "default",
+      "par": 6,
+      "used": 2,
+      "stars": 3,
+      "maxNoHit": 3.8416666666666557,
+      "moves": [
+        {
+          "material": "ceramic",
+          "size": "standard",
+          "angle": 0.8141167544041137,
+          "steps": 1708
+        },
+        {
+          "material": "ceramic",
+          "size": "standard",
+          "angle": 1.3628092627027768,
+          "steps": 1300
+        }
+      ]
+    },
+    {
+      "matrix": "varied-endurance.json",
+      "index": 902,
+      "actualSeed": 8155,
+      "level": 19,
+      "material": "rubber",
+      "size": "small",
+      "mirror": true,
+      "angle": 0.7263857894892403,
+      "cadence": 18,
+      "policy": "steer",
+      "strategy": "default",
+      "par": 6,
+      "used": 2,
+      "stars": 3,
+      "maxNoHit": 3.9749999999999885,
+      "moves": [
+        {
+          "material": "rubber",
+          "size": "small",
+          "angle": 0.7263857894892403,
+          "steps": 631
+        },
+        {
+          "material": "rubber",
+          "size": "small",
+          "angle": 1.7787833908870165,
+          "steps": 1684
+        }
+      ]
+    },
+    {
+      "matrix": "varied-endurance.json",
+      "index": 906,
+      "actualSeed": 8155,
+      "level": 19,
+      "material": "rubber",
+      "size": "standard",
+      "mirror": true,
+      "angle": 0.7839592352146258,
+      "cadence": 18,
+      "policy": "steer",
+      "strategy": "default",
+      "par": 6,
+      "used": 2,
+      "stars": 3,
+      "maxNoHit": 3.6416666666666564,
+      "moves": [
+        {
+          "material": "rubber",
+          "size": "standard",
+          "angle": 0.7839592352146258,
+          "steps": 2332
+        },
+        {
+          "material": "rubber",
+          "size": "standard",
+          "angle": 1.7787833908870165,
+          "steps": 291
+        }
+      ]
+    },
+    {
+      "matrix": "varied-endurance.json",
+      "index": 907,
+      "actualSeed": 8155,
+      "level": 19,
+      "material": "rubber",
+      "size": "standard",
+      "mirror": true,
+      "angle": 0.7839592352146258,
+      "cadence": 36,
+      "policy": "steer",
+      "strategy": "default",
+      "par": 6,
+      "used": 2,
+      "stars": 3,
+      "maxNoHit": 8.82500000000014,
+      "moves": [
+        {
+          "material": "rubber",
+          "size": "standard",
+          "angle": 0.7839592352146258,
+          "steps": 431
+        },
+        {
+          "material": "rubber",
+          "size": "standard",
+          "angle": 1.7787833908870165,
+          "steps": 3882
+        }
+      ]
+    },
+    {
+      "matrix": "varied-endurance.json",
+      "index": 2123,
+      "actualSeed": 9067,
+      "level": 19,
+      "material": "steel",
+      "size": "large",
+      "mirror": true,
+      "angle": 0.4549681167838508,
+      "cadence": 36,
+      "policy": "steer",
+      "strategy": "default",
+      "par": 6,
+      "used": 2,
+      "stars": 3,
+      "maxNoHit": 3.4583333333333237,
+      "moves": [
+        {
+          "material": "steel",
+          "size": "large",
+          "angle": 0.4549681167838508,
+          "steps": 1897
+        },
+        {
+          "material": "steel",
+          "size": "large",
+          "angle": 1.7787833908870165,
+          "steps": 1209
+        }
+      ]
+    },
+    {
+      "matrix": "varied-endurance.json",
+      "index": 2128,
+      "actualSeed": 9067,
+      "level": 19,
+      "material": "brass",
+      "size": "standard",
+      "mirror": false,
+      "angle": 0.5125415625092364,
+      "cadence": 18,
+      "policy": "steer",
+      "strategy": "default",
+      "par": 6,
+      "used": 2,
+      "stars": 3,
+      "maxNoHit": 11.108333333333343,
+      "moves": [
+        {
+          "material": "brass",
+          "size": "standard",
+          "angle": 0.5125415625092364,
+          "steps": 4037
+        },
+        {
+          "material": "brass",
+          "size": "standard",
+          "angle": 1.7287823730200154,
+          "steps": 1735
+        }
+      ]
+    },
+    {
+      "matrix": "varied-endurance.json",
+      "index": 2134,
+      "actualSeed": 9067,
+      "level": 19,
+      "material": "brass",
+      "size": "large",
+      "mirror": true,
+      "angle": 0.4549681167838508,
+      "cadence": 18,
+      "policy": "steer",
+      "strategy": "default",
+      "par": 6,
+      "used": 2,
+      "stars": 3,
+      "maxNoHit": 5.216666666666716,
+      "moves": [
+        {
+          "material": "brass",
+          "size": "large",
+          "angle": 0.4549681167838508,
+          "steps": 3850
+        },
+        {
+          "material": "brass",
+          "size": "large",
+          "angle": 1.7787833908870165,
+          "steps": 1375
+        }
+      ]
+    },
+    {
+      "matrix": "varied-endurance.json",
+      "index": 2150,
+      "actualSeed": 9067,
+      "level": 19,
+      "material": "rubber",
+      "size": "small",
+      "mirror": true,
+      "angle": 0.48512563597333846,
+      "cadence": 18,
+      "policy": "steer",
+      "strategy": "default",
+      "par": 6,
+      "used": 3,
+      "stars": 3,
+      "maxNoHit": 3.7249999999999894,
+      "moves": [
+        {
+          "material": "rubber",
+          "size": "small",
+          "angle": 0.48512563597333846,
+          "steps": 305
+        },
+        {
+          "material": "rubber",
+          "size": "small",
+          "angle": 1.7787833908870165,
+          "steps": 1137
+        },
+        {
+          "material": "rubber",
+          "size": "small",
+          "angle": 1.7787833908870165,
+          "steps": 1027
+        }
+      ]
+    },
+    {
+      "matrix": "varied-endurance.json",
+      "index": 2156,
+      "actualSeed": 9067,
+      "level": 19,
+      "material": "rubber",
+      "size": "large",
+      "mirror": false,
+      "angle": 0.48512563597333846,
+      "cadence": 18,
+      "policy": "steer",
+      "strategy": "default",
+      "par": 6,
+      "used": 2,
+      "stars": 3,
+      "maxNoHit": 6.58333333333345,
+      "moves": [
+        {
+          "material": "rubber",
+          "size": "large",
+          "angle": 0.48512563597333846,
+          "steps": 3902
+        },
+        {
+          "material": "rubber",
+          "size": "large",
+          "angle": 1.7287823730200154,
+          "steps": 2135
+        }
+      ]
+    },
+    {
+      "matrix": "varied-endurance.json",
+      "index": 2157,
+      "actualSeed": 9067,
+      "level": 19,
+      "material": "rubber",
+      "size": "large",
+      "mirror": false,
+      "angle": 0.48512563597333846,
+      "cadence": 36,
+      "policy": "steer",
+      "strategy": "default",
+      "par": 6,
+      "used": 2,
+      "stars": 3,
+      "maxNoHit": 6.125000000000094,
+      "moves": [
+        {
+          "material": "rubber",
+          "size": "large",
+          "angle": 0.48512563597333846,
+          "steps": 3612
+        },
+        {
+          "material": "rubber",
+          "size": "large",
+          "angle": 1.7287823730200154,
+          "steps": 2213
+        }
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "matrix": "active-endurance.json",
+      "index": 651,
+      "strategy": "default",
+      "result": "won",
+      "used": 2,
+      "stars": 3,
+      "maxNoHit": 5.7833333333334105,
+      "observerFailed": false
+    },
+    {
+      "matrix": "active-endurance.json",
+      "index": 657,
+      "strategy": "default",
+      "result": "won",
+      "used": 4,
+      "stars": 3,
+      "maxNoHit": 6.350000000000105,
+      "observerFailed": false
+    },
+    {
+      "matrix": "active-endurance.json",
+      "index": 662,
+      "strategy": "default",
+      "result": "won",
+      "used": 2,
+      "stars": 3,
+      "maxNoHit": 12.016666666666625,
+      "observerFailed": false
+    },
+    {
+      "matrix": "active-endurance.json",
+      "index": 664,
+      "strategy": "default",
+      "result": "won",
+      "used": 2,
+      "stars": 3,
+      "maxNoHit": 8.908333333333468,
+      "observerFailed": false
+    },
+    {
+      "matrix": "active-endurance.json",
+      "index": 668,
+      "strategy": "default",
+      "result": "won",
+      "used": 2,
+      "stars": 3,
+      "maxNoHit": 3.716666666666656,
+      "observerFailed": false
+    },
+    {
+      "matrix": "active-endurance.json",
+      "index": 669,
+      "strategy": "default",
+      "result": "won",
+      "used": 2,
+      "stars": 3,
+      "maxNoHit": 4.6916666666666895,
+      "observerFailed": false
+    },
+    {
+      "matrix": "active-endurance.json",
+      "index": 672,
+      "strategy": "default",
+      "result": "won",
+      "used": 2,
+      "stars": 3,
+      "maxNoHit": 4.174999999999997,
+      "observerFailed": false
+    },
+    {
+      "matrix": "active-endurance.json",
+      "index": 678,
+      "strategy": "default",
+      "result": "won",
+      "used": 3,
+      "stars": 3,
+      "maxNoHit": 5.166666666666713,
+      "observerFailed": false
+    },
+    {
+      "matrix": "active-endurance.json",
+      "index": 679,
+      "strategy": "default",
+      "result": "won",
+      "used": 2,
+      "stars": 3,
+      "maxNoHit": 6.141666666666762,
+      "observerFailed": false
+    },
+    {
+      "matrix": "active-endurance.json",
+      "index": 682,
+      "strategy": "default",
+      "result": "won",
+      "used": 2,
+      "stars": 3,
+      "maxNoHit": 9.608333333333428,
+      "observerFailed": false
+    },
+    {
+      "matrix": "active-endurance.json",
+      "index": 1590,
+      "strategy": "default",
+      "result": "won",
+      "used": 2,
+      "stars": 3,
+      "maxNoHit": 7.825000000000179,
+      "observerFailed": false
+    },
+    {
+      "matrix": "active-endurance.json",
+      "index": 1593,
+      "strategy": "default",
+      "result": "won",
+      "used": 2,
+      "stars": 3,
+      "maxNoHit": 8.750000000000144,
+      "observerFailed": false
+    },
+    {
+      "matrix": "active-endurance.json",
+      "index": 1601,
+      "strategy": "default",
+      "result": "won",
+      "used": 2,
+      "stars": 3,
+      "maxNoHit": 9.650000000000093,
+      "observerFailed": false
+    },
+    {
+      "matrix": "active-endurance.json",
+      "index": 1610,
+      "strategy": "default",
+      "result": "won",
+      "used": 2,
+      "stars": 3,
+      "maxNoHit": 3.708333333333323,
+      "observerFailed": false
+    },
+    {
+      "matrix": "active-endurance.json",
+      "index": 1617,
+      "strategy": "default",
+      "result": "won",
+      "used": 2,
+      "stars": 3,
+      "maxNoHit": 5.258333333333384,
+      "observerFailed": false
+    },
+    {
+      "matrix": "varied-endurance.json",
+      "index": 864,
+      "strategy": "default",
+      "result": "won",
+      "used": 3,
+      "stars": 3,
+      "maxNoHit": 6.333333333333438,
+      "observerFailed": false
+    },
+    {
+      "matrix": "varied-endurance.json",
+      "index": 865,
+      "strategy": "default",
+      "result": "won",
+      "used": 2,
+      "stars": 3,
+      "maxNoHit": 6.141666666666762,
+      "observerFailed": false
+    },
+    {
+      "matrix": "varied-endurance.json",
+      "index": 866,
+      "strategy": "default",
+      "result": "won",
+      "used": 2,
+      "stars": 3,
+      "maxNoHit": 7.791666666666844,
+      "observerFailed": false
+    },
+    {
+      "matrix": "varied-endurance.json",
+      "index": 867,
+      "strategy": "default",
+      "result": "won",
+      "used": 2,
+      "stars": 3,
+      "maxNoHit": 2.5166666666666604,
+      "observerFailed": false
+    },
+    {
+      "matrix": "varied-endurance.json",
+      "index": 881,
+      "strategy": "default",
+      "result": "won",
+      "used": 3,
+      "stars": 3,
+      "maxNoHit": 6.2500000000001,
+      "observerFailed": false
+    },
+    {
+      "matrix": "varied-endurance.json",
+      "index": 892,
+      "strategy": "default",
+      "result": "won",
+      "used": 2,
+      "stars": 3,
+      "maxNoHit": 3.8416666666666557,
+      "observerFailed": false
+    },
+    {
+      "matrix": "varied-endurance.json",
+      "index": 902,
+      "strategy": "default",
+      "result": "won",
+      "used": 2,
+      "stars": 3,
+      "maxNoHit": 3.9749999999999885,
+      "observerFailed": false
+    },
+    {
+      "matrix": "varied-endurance.json",
+      "index": 906,
+      "strategy": "default",
+      "result": "won",
+      "used": 2,
+      "stars": 3,
+      "maxNoHit": 3.6416666666666564,
+      "observerFailed": false
+    },
+    {
+      "matrix": "varied-endurance.json",
+      "index": 907,
+      "strategy": "default",
+      "result": "won",
+      "used": 2,
+      "stars": 3,
+      "maxNoHit": 8.82500000000014,
+      "observerFailed": false
+    },
+    {
+      "matrix": "varied-endurance.json",
+      "index": 2123,
+      "strategy": "default",
+      "result": "won",
+      "used": 2,
+      "stars": 3,
+      "maxNoHit": 3.4583333333333237,
+      "observerFailed": false
+    },
+    {
+      "matrix": "varied-endurance.json",
+      "index": 2128,
+      "strategy": "default",
+      "result": "won",
+      "used": 2,
+      "stars": 3,
+      "maxNoHit": 11.108333333333343,
+      "observerFailed": false
+    },
+    {
+      "matrix": "varied-endurance.json",
+      "index": 2134,
+      "strategy": "default",
+      "result": "won",
+      "used": 2,
+      "stars": 3,
+      "maxNoHit": 5.216666666666716,
+      "observerFailed": false
+    },
+    {
+      "matrix": "varied-endurance.json",
+      "index": 2150,
+      "strategy": "default",
+      "result": "won",
+      "used": 3,
+      "stars": 3,
+      "maxNoHit": 3.7249999999999894,
+      "observerFailed": false
+    },
+    {
+      "matrix": "varied-endurance.json",
+      "index": 2156,
+      "strategy": "default",
+      "result": "won",
+      "used": 2,
+      "stars": 3,
+      "maxNoHit": 6.58333333333345,
+      "observerFailed": false
+    },
+    {
+      "matrix": "varied-endurance.json",
+      "index": 2157,
+      "strategy": "default",
+      "result": "won",
+      "used": 2,
+      "stars": 3,
+      "maxNoHit": 6.125000000000094,
+      "observerFailed": false
+    }
+  ]
+}

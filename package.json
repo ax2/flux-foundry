@@ -29,7 +29,7 @@
     "test:residual": "tsx scripts/replay-varied-residual.ts",
     "test:update": "node scripts/update-test.mjs",
     "test:edge": "tsx scripts/replay-edge-route.ts",
-    "test:balance": "tsx scripts/compare-edge-balance.ts"
+    "test:balance": "node scripts/compare-wind-balance.mjs"
   },
   "devDependencies": {
     "typescript": "~5.9.3",

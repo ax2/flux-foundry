@@ -9,8 +9,16 @@ for(let level=0;level<LEVELS.length;level++){
  for(let shot=0;shot<game.level.par&&game.phase!=='won';shot++){
   let best:{game:Game;move:Move;cost:number}|undefined;
   search:for(const [material,size] of combinations)for(let a=0;a<=48;a++){
-   // Clone all simulation state (including moving bricks, paddle, random generator and inventory).
-   const candidate=Object.assign(new Game(1000+level,level),structuredClone(game));
+   // Replay the prefix to reconstruct the live game and its feedback objects.
+   const candidate=new Game(1000+level,level);
+   if(mirrored)candidate.mirror();
+   for(const move of moves){
+    candidate.selectBall(move.material,move.size);
+    candidate.angle=move.angle;
+    candidate.fire();
+    for(let step=0;step<move.steps;step++)candidate.update(STEP);
+    if(candidate.phase!=='aim')throw new Error('Route prefix did not reach the next aim');
+   }
    candidate.selectBall(material,size);candidate.angle=.18+a*(Math.PI-.36)/48;candidate.fire();
    let steps=0;while(candidate.phase==='volley'&&steps<180/STEP){candidate.update(STEP);steps++;}
    // Observation ceiling only discards a candidate. It never ends a shot or carries it into the next turn.

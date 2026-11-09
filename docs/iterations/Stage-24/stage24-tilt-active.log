@@ -1,0 +1,23 @@
+npm warn Unknown env config "devdir". This will error in a future major version of npm. See `npm help npmrc` for supported config options.
+npm notice run flux-foundry@0.21.0 test:active
+npm notice run tsx scripts/active-endurance.ts
+{"samples":1872,"natural":1872,"ongoingAt300":0,"longIdle":0,"over20":1,"over25":0,"maxNoHit":21.424999999999425,"stagnantAtEnd":0}
+[]
+node:internal/modules/run_main:111
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: A sampled active first-ball no-hit interval reached20s; inspect idlePeak
+
+1 !== 0
+
+    at <anonymous> (D:\Work\games\flux-foundry\scripts\active-endurance.ts:20:8) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 1,
+  expected: 0,
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v26.10.0
