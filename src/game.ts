@@ -162,9 +162,10 @@ export class Game{
   // Prepare the qualifying upcoming catch, rather than waiting one extra full flight.
   const falling=this.balls[0],misses=this.sparseEndgame?2:ASSIST_MISSES;
   const regularGuide=this.progress.sinceHit>=(this.sparseEndgame?4:ASSIST_DELAY)&&this.progress.catchesWithoutHit+1>=misses;
-  // At a side wall the ball cannot be centred on the paddle. After two empty
-  // rallies, allow a proven hit one catch earlier; retain the usual delay/fallback.
-  const edgeGuide=!this.sparseEndgame&&falling&&(falling.x<22+half||falling.x>398-half)&&this.progress.sinceHit>=ASSIST_DELAY&&this.progress.catchesWithoutHit>=2;
+  // At a side wall the ball cannot be centred on the paddle. A low expedition
+  // row can already be reachable on the first catch after a long flight.
+  const edgeGuide=!this.sparseEndgame&&falling&&(falling.x<22+half||falling.x>398-half)&&this.progress.sinceHit>=ASSIST_DELAY&&
+   (this.progress.catchesWithoutHit>=2||(this.mode==='endless'&&this.targets.length>=3&&this.targets.every(t=>t.y>=580)));
   // In a strong crosswind, a wall-side catch can be the last useful opening
   // before the low core slips out of reach for another full flight.
   const lowCoreEdgeGuide=falling&&this.targets.length===1&&this.targets[0].core&&this.lowEndgame&&
