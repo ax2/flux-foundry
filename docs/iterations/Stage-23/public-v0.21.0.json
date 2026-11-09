@@ -1,0 +1,276 @@
+{
+  "url": "https://ax2.github.io/flux-foundry/?release=0.21.0",
+  "snapshot": {
+    "phase": "volley",
+    "wave": 1,
+    "score": 0,
+    "balls": 1,
+    "targets": 6,
+    "paused": false,
+    "count": 1,
+    "power": 1,
+    "material": "brass",
+    "size": "large",
+    "radius": 16,
+    "mode": "challenge",
+    "levelIndex": 16,
+    "shots": 1,
+    "remainingShots": 10,
+    "totalBalls": 11,
+    "queue": [
+      {
+        "material": "brass",
+        "size": "large"
+      },
+      {
+        "material": "ceramic",
+        "size": "small"
+      },
+      {
+        "material": "brass",
+        "size": "standard"
+      },
+      {
+        "material": "rubber",
+        "size": "large"
+      },
+      {
+        "material": "steel",
+        "size": "large"
+      },
+      {
+        "material": "ceramic",
+        "size": "standard"
+      },
+      {
+        "material": "steel",
+        "size": "standard"
+      },
+      {
+        "material": "ceramic",
+        "size": "small"
+      },
+      {
+        "material": "brass",
+        "size": "standard"
+      },
+      {
+        "material": "rubber",
+        "size": "large"
+      },
+      {
+        "material": "steel",
+        "size": "large"
+      }
+    ],
+    "dailyKey": null,
+    "goal": "core",
+    "goalComplete": false,
+    "safetyReturn": false,
+    "paddle": {
+      "x": 315,
+      "target": 315,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    },
+    "treasures": [],
+    "bonusLives": 0,
+    "wideTime": 0,
+    "bigTime": 0,
+    "windMultiplier": 2.4,
+    "rails": [],
+    "gates": 1,
+    "gateStates": [
+      {
+        "x": 210,
+        "y": 435,
+        "size": 114,
+        "open": false,
+        "pressure": 0,
+        "lastContact": -1
+      }
+    ],
+    "stats": {
+      "hits": 0,
+      "flight": 0.29166666666666674,
+      "boosts": 0,
+      "energy": 0,
+      "rescues": 0,
+      "returns": 0,
+      "rebounds": 0,
+      "recharges": 0,
+      "pulses": 0,
+      "pickups": 0,
+      "paddleHits": 0,
+      "orbitBreaks": 0,
+      "gateVents": 0,
+      "pegRetractions": 0
+    },
+    "feedback": {
+      "counts": {
+        "launch": 1,
+        "hit": 0,
+        "break": 0,
+        "catch": 0,
+        "boost": 0,
+        "pickup": 0,
+        "weak": 0,
+        "win": 0,
+        "lose": 0
+      },
+      "last": {
+        "type": "launch",
+        "x": 210,
+        "y": 132,
+        "variant": "brass",
+        "strength": 1.3333333333333333
+      },
+      "pending": 0,
+      "marks": []
+    },
+    "progress": {
+      "sinceHit": 0.29166666666666674,
+      "maxNoHit": 0.29166666666666674,
+      "catchesWithoutHit": 0,
+      "maxCatchesWithoutHit": 0
+    },
+    "stars": 0,
+    "records": {},
+    "legacy": {},
+    "ranks": [],
+    "pegs": 0,
+    "pegStates": [],
+    "air": 2,
+    "airZones": [
+      {
+        "x": 38,
+        "y": 380,
+        "w": 344,
+        "h": 60,
+        "fx": 60,
+        "fy": 0,
+        "plume": true
+      },
+      {
+        "x": 38,
+        "y": 545,
+        "w": 344,
+        "h": 60,
+        "fx": -45,
+        "fy": 0,
+        "plume": true
+      }
+    ],
+    "bricks": [
+      {
+        "x": 85,
+        "y": 340,
+        "hp": 3,
+        "kind": "diamond",
+        "size": 48,
+        "power": "switch",
+        "core": false,
+        "id": 0,
+        "maxHp": 3,
+        "flash": 0,
+        "vx": 0
+      },
+      {
+        "x": 325,
+        "y": 350,
+        "hp": 5,
+        "kind": "hexagon",
+        "size": 48,
+        "power": "switch",
+        "core": false,
+        "id": 1,
+        "maxHp": 5,
+        "flash": 0,
+        "vx": 0
+      },
+      {
+        "x": 110,
+        "y": 485,
+        "hp": 9,
+        "kind": "prism",
+        "size": 48,
+        "core": false,
+        "id": 2,
+        "maxHp": 9,
+        "flash": 0,
+        "vx": 0
+      },
+      {
+        "x": 275,
+        "y": 520,
+        "hp": 24,
+        "kind": "capacitor",
+        "size": 48,
+        "core": true,
+        "id": 3,
+        "maxHp": 24,
+        "flash": 0,
+        "vx": 0
+      },
+      {
+        "x": 95,
+        "y": 615,
+        "hp": 12,
+        "kind": "hexagon",
+        "size": 48,
+        "power": "spring",
+        "core": false,
+        "id": 4,
+        "maxHp": 12,
+        "flash": 0,
+        "vx": 0
+      },
+      {
+        "x": 290,
+        "y": 625,
+        "hp": 16,
+        "kind": "prism",
+        "size": 48,
+        "power": "spring",
+        "core": false,
+        "id": 5,
+        "maxHp": 16,
+        "flash": 0,
+        "vx": 0
+      }
+    ],
+    "activeBall": {
+      "x": 210,
+      "y": 206.01041666666669,
+      "vx": 1.3394574365674177e-14,
+      "vy": 288.75,
+      "r": 16
+    }
+  },
+  "textureLoading": {
+    "phase": "ready",
+    "received": 3399692,
+    "total": 3399692,
+    "percent": 100,
+    "completed": 2,
+    "failed": 0
+  },
+  "errors": [],
+  "checks": [
+    "live version matches release",
+    "workshop selection works",
+    "26 challenges available",
+    "wind and gate core mission runs",
+    "finite reserve decrements once",
+    "paddle responds to movement",
+    "top-only controls",
+    "stronger wind",
+    "live HTTPS page loads",
+    "single ball launches",
+    "fixed damage is one",
+    "no runtime errors"
+  ]
+}
