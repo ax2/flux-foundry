@@ -6,6 +6,8 @@ import {steer} from '../scripts/paddle-policy';
 const cases = [
  {name:'moving spring',seed:2217,material:'brass',size:'small',policy:'follow',limit:12},
  {name:'wall-side low row',seed:9011,material:'rubber',size:'large',policy:'steer',limit:13},
+ {name:'low row with a central gap',seed:42,material:'ceramic',size:'large',policy:'steer',limit:13},
+ {name:'two empty catches in a low row',seed:4039,material:'rubber',size:'large',policy:'follow',limit:11.1},
 ] as const;
 
 for (const {name, seed, material, size, policy, limit} of cases) {

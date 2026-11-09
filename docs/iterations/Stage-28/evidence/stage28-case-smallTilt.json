@@ -1,0 +1,109 @@
+{
+  "method": "72 complete expedition runs, seeds42/739/2217 ×12 loadouts ×2 legal paddle policies. Keep300-second checkpoints and continue productive shots up to900 simulation seconds, without ending the ball. A no-hit interval>=60 is flagged separately.",
+  "summary": {
+    "games": 1,
+    "naturallyConcluded": 1,
+    "unresolved": 0,
+    "longIdle": 0,
+    "maxNoHit": 12.941666666666572,
+    "checkpointsAt300": 1,
+    "maxBallSeconds": 329.725
+  },
+  "checkpoints": [
+    {
+      "seed": 42,
+      "material": "ceramic",
+      "size": "large",
+      "policy": "steer",
+      "wave": 12,
+      "shot": 12,
+      "hitsDuringShot": 145,
+      "progress": {
+        "sinceHit": 3.0749999999999917,
+        "maxNoHit": 12.941666666666572,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 8
+      },
+      "remainingHP": 22
+    }
+  ],
+  "rows": [
+    {
+      "seed": 42,
+      "material": "ceramic",
+      "size": "large",
+      "policy": "steer",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 71.35833333333333,
+          "hits": 55
+        },
+        {
+          "seconds": 38.6,
+          "hits": 18
+        },
+        {
+          "seconds": 64.15,
+          "hits": 30
+        },
+        {
+          "seconds": 114.89999999999999,
+          "hits": 56
+        },
+        {
+          "seconds": 20.666666666666668,
+          "hits": 9
+        },
+        {
+          "seconds": 1.6916666666666667,
+          "hits": 10
+        },
+        {
+          "seconds": 12.15,
+          "hits": 8
+        },
+        {
+          "seconds": 207.03333333333333,
+          "hits": 117
+        },
+        {
+          "seconds": 121.99166666666666,
+          "hits": 66
+        },
+        {
+          "seconds": 138.875,
+          "hits": 83
+        },
+        {
+          "seconds": 14.908333333333333,
+          "hits": 12
+        },
+        {
+          "seconds": 329.725,
+          "hits": 157
+        },
+        {
+          "seconds": 3.35,
+          "hits": 3
+        },
+        {
+          "seconds": 129.33333333333334,
+          "hits": 90
+        },
+        {
+          "seconds": 104.29166666666667,
+          "hits": 41
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.12499999999999999,
+        "maxNoHit": 12.941666666666572,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 8
+      }
+    }
+  ]
+}

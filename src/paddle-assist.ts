@@ -84,7 +84,7 @@ export function forecastRebound(ball:Body,p:Paddle,targets:Target[],mass:number,
      const impact=targetImpact(b,futureTarget(t,time+approach.frameEnd),restitution);
      if(impact>55){
       const elapsed=eta-approach.eta;
-      return {tilt,boost,hit:true,caughtAt,outgoing:inspect?{...b}:undefined,impact:inspect?{elapsed,target:t.id,ball:{...b}}:undefined,path,score:elapsed*2+12/impact+Math.abs(tilt-(p.tilt||0))*.2};
+      return {tilt,boost,hit:true,hitElapsed:elapsed,caughtAt,outgoing:inspect?{...b}:undefined,impact:inspect?{elapsed,target:t.id,ball:{...b}}:undefined,path,score:elapsed*2+12/impact+Math.abs(tilt-(p.tilt||0))*.2};
      }
     }
    }
@@ -100,7 +100,7 @@ export function forecastRebound(ball:Body,p:Paddle,targets:Target[],mass:number,
     score=Math.min(score,20+clearance(b,t));
     // Even a weak graze reflects the forecast ball; never predict through the solid block.
     const impact=targetImpact(b,t,restitution);
-    if(impact>55)return {tilt,boost,hit:true,caughtAt,outgoing,impact:inspect?{elapsed,target:t.id,ball:{...b}}:undefined,path,score:elapsed*2+12/impact+Math.abs(tilt-(p.tilt||0))*.2};
+    if(impact>55)return {tilt,boost,hit:true,hitElapsed:elapsed,caughtAt,outgoing,impact:inspect?{elapsed,target:t.id,ball:{...b}}:undefined,path,score:elapsed*2+12/impact+Math.abs(tilt-(p.tilt||0))*.2};
     if(impact>0)score=Math.max(score,22+(55-impact)*.1);
    }
   }
@@ -132,7 +132,7 @@ export function guidedRebound(ball:Body,p:Paddle,targets:Target[],mass:number,re
   // for moving blocks as well; the default search otherwise inherits that 40k.
   for(const work of lowMoving?[0,6000,12000,18000]:[0,6000,12000]){const candidate=search(work);if(candidate.hit){best=candidate;break;}}
  }
- return Number.isFinite(best.score)?{tilt:best.tilt,boost:best.boost,hit:best.hit}:{tilt:p.tilt||0,boost:p.boost??18000,hit:false};
+ return Number.isFinite(best.score)?{tilt:best.tilt,boost:best.boost,hit:best.hit,hitElapsed:best.hitElapsed}:{tilt:p.tilt||0,boost:p.boost??18000,hit:false};
 }
 
 // Retain the read-only angle API for existing diagnostics.
