@@ -8,6 +8,8 @@ const {routes} = await read('tests/fixtures/wind-continuations.json');
 const certificates = new Map(routes.map(route => [`${route.matrix}/${route.index}`, route]));
 const used = new Set();
 const reports = [];
+const crosswind = [];
+const crosswindRows = new Set([390, 402]);
 const matrices = {
  'active-endurance.json': 12,
  'varied-endurance.json': 12,
@@ -22,11 +24,27 @@ const gap = row => row.maxNoHit ?? row.maxNoHitSeconds ?? row.progress?.maxNoHit
 for (const [matrix, ceiling] of Object.entries(matrices)) {
  const before = await read(`${baseline}/${matrix}`);
  const after = await read(`test-results/${matrix}`);
+ const stage24 = await read(`docs/iterations/Stage-24/final/${matrix}`);
  assert.equal(after.rows.length, before.rows.length);
+ assert.equal(after.rows.length, stage24.rows.length);
  const affected = [];
  for (const [index, old] of before.rows.entries()) {
   const row = after.rows[index];
+  const previous = stage24.rows[index];
   const key = `${matrix}/${index}`;
+  if (matrix === 'multi-after.json' && crosswindRows.has(index)) {
+   assert.deepEqual(previous, old, key);
+   for (const field of ['level', 'material', 'size', 'mirror', 'cadence', 'result']) {
+    assert.equal(row[field], previous[field], `${key} ${field}`);
+   }
+   assert.equal(row.level, 22, key);
+   assert.equal(row.result, 'won', key);
+   assert.equal(row.shots.length, previous.shots.length, key);
+   assert.ok(gap(row) < Math.min(12, gap(previous)), key);
+   crosswind.push({index, before: previous, after: row});
+   continue;
+  }
+  assert.deepEqual(row, previous, key);
   if (old.level !== 19 || ceiling === 0) {
    assert.deepEqual(row, old, key);
    continue;
@@ -60,6 +78,7 @@ for (const [matrix, ceiling] of Object.entries(matrices)) {
  reports.push({matrix, rows: after.rows.length, affected, before: before.summary, after: after.summary});
 }
 assert.equal(used.size, certificates.size);
+assert.equal(crosswind.length, crosswindRows.size);
 assert.equal(reports.reduce((sum, report) => sum + report.rows, 0), 6336);
 assert.equal(reports.reduce((sum, report) => sum + report.affected.length, 0), 252);
 for (const [name, expected] of Object.entries({
@@ -68,5 +87,5 @@ for (const [name, expected] of Object.entries({
 })) {
  assert.equal(createHash('sha256').update(await readFile(`src/assets/${name}`)).digest('hex'), expected);
 }
-await writeFile('test-results/wind-balance-comparison.json', JSON.stringify({certifiedContinuations: used.size, reports}, null, 2));
+await writeFile('test-results/wind-balance-comparison.json', JSON.stringify({certifiedContinuations: used.size, crosswind, reports}, null, 2));
 console.log(JSON.stringify(reports.map(({matrix, rows, affected, after}) => ({matrix, rows, affected: affected.length, after}))));

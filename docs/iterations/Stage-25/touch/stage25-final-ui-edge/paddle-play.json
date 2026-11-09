@@ -1,0 +1,104 @@
+{
+  "policy": "mixed",
+  "method": "390×844 touch UI, complete selected challenge games after original PNG decode. Aim policy is recorded per session; paddle targets extrapolated landings every120ms with recorded follow/steer policy. Trace includes no-hit duration, simulation time, wall time, frame gaps, visibility, and loading; an inactive page is brought to front and resumed through its menu. No recall, speed change or state mutation. Algorithmic controller, not human win rate.",
+  "sessions": [
+    {
+      "policy": "steer",
+      "aimPolicy": "switch-core",
+      "initialSeed": 1021,
+      "mirror": false,
+      "level": 22,
+      "material": "rubber",
+      "size": "standard",
+      "result": "won",
+      "stars": 3,
+      "score": 745,
+      "shots": [
+        {
+          "hits": 22,
+          "catches": 18,
+          "pickups": 3,
+          "seconds": 37.44999999999852,
+          "moves": 250,
+          "remaining": 11,
+          "phase": "aim"
+        },
+        {
+          "hits": 15,
+          "catches": 23,
+          "pickups": 3,
+          "seconds": 48.71666666668279,
+          "moves": 334,
+          "remaining": 11,
+          "phase": "won"
+        }
+      ],
+      "bonusLives": 3,
+      "maxSparseGap": 9.141666666666788,
+      "maxMultiGap": 8.18333333333351,
+      "stats": {
+        "hits": 37,
+        "flight": 86.16666666668131,
+        "boosts": 59,
+        "energy": 1138000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 6,
+        "paddleHits": 41,
+        "orbitBreaks": 5,
+        "gateVents": 0,
+        "pegRetractions": 0
+      },
+      "feedback": {
+        "counts": {
+          "launch": 2,
+          "hit": 32,
+          "break": 5,
+          "catch": 41,
+          "boost": 18,
+          "pickup": 6,
+          "weak": 0,
+          "win": 1,
+          "lose": 0
+        },
+        "last": {
+          "type": "win",
+          "x": 210,
+          "y": 215,
+          "variant": "",
+          "strength": 1
+        },
+        "pending": 0,
+        "marks": []
+      },
+      "audio": {
+        "enabled": false,
+        "state": "locked",
+        "voices": 0,
+        "peakVoices": 0,
+        "played": {
+          "launch": 0,
+          "hit": 0,
+          "break": 0,
+          "catch": 0,
+          "boost": 0,
+          "pickup": 0,
+          "weak": 0,
+          "win": 0,
+          "lose": 0
+        },
+        "failures": 0
+      },
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 9.150000000000121,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 4
+      }
+    }
+  ],
+  "errors": []
+}

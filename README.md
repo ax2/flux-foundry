@@ -4,7 +4,11 @@
 
 **[在线游玩](https://ax2.github.io/flux-foundry/)** · **[Windows 下载](https://github.com/ax2/flux-foundry/releases)** · MIT
 
-![手机画面](docs/iterations/Stage-23/390x844.png)
+![手机画面](docs/iterations/Stage-25/screenshots/390x844-level22.png)
+
+## v0.22.0 风井与横风残局
+
+第 19 关的风井保留原风力并平移。第 22 关在只剩同侧低位核心时，挡板可为靠墙球提前准备能命中的真实反弹。两轮的取舍和验收见 [风井](docs/iterations/Stage-24/assessment.md) 与 [横风残局](docs/iterations/Stage-25/assessment.md)。
 
 ## v0.21.0 侧边回弹校正
 

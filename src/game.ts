@@ -165,7 +165,13 @@ export class Game{
   // At a side wall the ball cannot be centred on the paddle. After two empty
   // rallies, allow a proven hit one catch earlier; retain the usual delay/fallback.
   const edgeGuide=!this.sparseEndgame&&falling&&(falling.x<22+half||falling.x>398-half)&&this.progress.sinceHit>=ASSIST_DELAY&&this.progress.catchesWithoutHit>=2;
-  if(falling&&(regularGuide||edgeGuide)&&falling.vy>0&&falling.y>470&&falling.y<675-falling.r+10&&this.time-this.lastGuideTime>=(falling.y>620?.025:.08)){
+  // In a strong crosswind, a wall-side catch can be the last useful opening
+  // before the low core slips out of reach for another full flight.
+  const lowCoreEdgeGuide=falling&&this.targets.length===1&&this.targets[0].core&&this.lowEndgame&&
+   (falling.x<22+half||falling.x>398-half)&&this.progress.sinceHit>=3.5&&this.progress.catchesWithoutHit>=1&&
+   Math.abs(this.targets[0].x-falling.x)<=this.paddle.width&&
+   this.air.some(z=>z.fy===0&&Math.abs(z.fx)>=90);
+  if(falling&&(regularGuide||edgeGuide||lowCoreEdgeGuide)&&falling.vy>0&&falling.y>470&&falling.y<675-falling.r+10&&this.time-this.lastGuideTime>=(falling.y>620?.025:.08)){
    this.lastGuideTime=this.time;
    const environment={air:this.air,gates:this.gates,pegs:this.pegs,wind:this.windMultiplier,response:spec.windResponse,energyLimit:this.energyCapacity,allowLowerWork:this.progress.catchesWithoutHit>=misses},paddle={...this.paddle,x:oldPaddleX};
    // Preserve a useful ordinary rebound, including a previously prepared face.

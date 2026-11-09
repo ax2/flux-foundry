@@ -1,0 +1,6693 @@
+{
+  "method": "10 whole official challenge layouts ×12 loadouts ×mirror ×117/200ms legal paddle input. Track exact continuous no-hit maximum while3+ blocks remain before goal completion. No layout injection, recall, speed or forced collection.600s observer per ball only records failures.",
+  "summary": {
+    "games": 48,
+    "natural": 48,
+    "wins": 47,
+    "maxMultiGap": 14.09999999999984,
+    "over20": 0,
+    "over30": 0,
+    "maxNoHit": 14.108333333333173
+  },
+  "rows": [
+    {
+      "level": 22,
+      "material": "steel",
+      "size": "small",
+      "mirror": false,
+      "cadence": 14,
+      "result": "won",
+      "shots": [
+        9.708333333333334,
+        27.825
+      ],
+      "multiGap": 6.441666666666777,
+      "maxNoHit": 6.45000000000011,
+      "worst": {
+        "time": 26.42499999999914,
+        "shot": 2,
+        "ball": {
+          "x": 208.80433558604435,
+          "y": 528.0633750930459,
+          "vx": -4.590601088220751,
+          "vy": -690.5327310368342,
+          "r": 9
+        },
+        "paddle": {
+          "x": 191.01299898499292,
+          "target": 191.01299898499292,
+          "width": 144,
+          "vx": 0,
+          "flash": 0,
+          "tilt": 0,
+          "boost": 18000
+        },
+        "progress": {
+          "sinceHit": 6.441666666666777,
+          "maxNoHit": 6.441666666666777,
+          "catchesWithoutHit": 3,
+          "maxCatchesWithoutHit": 3
+        },
+        "targets": [
+          {
+            "x": 210,
+            "y": 490,
+            "hp": 8,
+            "kind": "hexagon",
+            "size": 48,
+            "core": false,
+            "id": 2,
+            "maxHp": 10,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 310,
+            "y": 570,
+            "hp": 4,
+            "kind": "capacitor",
+            "size": 48,
+            "core": true,
+            "id": 3,
+            "maxHp": 14,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 100,
+            "y": 610,
+            "hp": 3,
+            "kind": "prism",
+            "size": 48,
+            "power": "spring",
+            "core": false,
+            "id": 4,
+            "maxHp": 8,
+            "flash": 0,
+            "vx": 0
+          }
+        ],
+        "gates": [],
+        "pegs": [],
+        "rails": [
+          {
+            "side": "left",
+            "y": 440,
+            "h": 100,
+            "charges": 2,
+            "maxCharges": 3
+          },
+          {
+            "side": "right",
+            "y": 500,
+            "h": 110,
+            "charges": 2,
+            "maxCharges": 3
+          }
+        ],
+        "air": [
+          {
+            "x": 38,
+            "y": 355,
+            "w": 344,
+            "h": 200,
+            "fx": -95,
+            "fy": 0,
+            "plume": true
+          }
+        ],
+        "flow": [
+          {
+            "strength": 0,
+            "fx": -95,
+            "fy": 0
+          }
+        ],
+        "stats": {
+          "hits": 22,
+          "flight": 26.42499999999914,
+          "boosts": 17,
+          "energy": 346000,
+          "rescues": 0,
+          "returns": 0,
+          "rebounds": 0,
+          "recharges": 0,
+          "pulses": 0,
+          "pickups": 3,
+          "paddleHits": 7,
+          "orbitBreaks": 0,
+          "gateVents": 0,
+          "pegRetractions": 0
+        }
+      }
+    },
+    {
+      "level": 22,
+      "material": "steel",
+      "size": "small",
+      "mirror": false,
+      "cadence": 24,
+      "result": "won",
+      "shots": [
+        36.15,
+        10
+      ],
+      "multiGap": 5.800000000000078,
+      "maxNoHit": 5.808333333333412,
+      "worst": {
+        "time": 18.17499999999961,
+        "shot": 1,
+        "ball": {
+          "x": 204.17060537495746,
+          "y": 457.5547020462903,
+          "vx": -190.51478562032787,
+          "vy": 481.94966894032257,
+          "r": 9
+        },
+        "paddle": {
+          "x": 98.38908699991444,
+          "target": 98.38908699991444,
+          "width": 144,
+          "vx": 0,
+          "flash": 0,
+          "tilt": 0,
+          "boost": 18000
+        },
+        "progress": {
+          "sinceHit": 5.800000000000078,
+          "maxNoHit": 5.800000000000078,
+          "catchesWithoutHit": 1,
+          "maxCatchesWithoutHit": 1
+        },
+        "targets": [
+          {
+            "x": 210,
+            "y": 490,
+            "hp": 6,
+            "kind": "hexagon",
+            "size": 48,
+            "core": false,
+            "id": 2,
+            "maxHp": 10,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 310,
+            "y": 570,
+            "hp": 7,
+            "kind": "capacitor",
+            "size": 48,
+            "core": true,
+            "id": 3,
+            "maxHp": 14,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 100,
+            "y": 610,
+            "hp": 8,
+            "kind": "prism",
+            "size": 48,
+            "power": "spring",
+            "core": false,
+            "id": 4,
+            "maxHp": 8,
+            "flash": 0,
+            "vx": 0
+          }
+        ],
+        "gates": [],
+        "pegs": [],
+        "rails": [
+          {
+            "side": "left",
+            "y": 440,
+            "h": 100,
+            "charges": 2,
+            "maxCharges": 3
+          },
+          {
+            "side": "right",
+            "y": 500,
+            "h": 110,
+            "charges": 0,
+            "maxCharges": 3
+          }
+        ],
+        "air": [
+          {
+            "x": 38,
+            "y": 355,
+            "w": 344,
+            "h": 200,
+            "fx": -95,
+            "fy": 0,
+            "plume": true
+          }
+        ],
+        "flow": [
+          {
+            "strength": 1,
+            "fx": -95,
+            "fy": 0
+          }
+        ],
+        "stats": {
+          "hits": 16,
+          "flight": 18.17499999999961,
+          "boosts": 8,
+          "energy": 160000,
+          "rescues": 0,
+          "returns": 0,
+          "rebounds": 0,
+          "recharges": 0,
+          "pulses": 0,
+          "pickups": 2,
+          "paddleHits": 4,
+          "orbitBreaks": 0,
+          "gateVents": 0,
+          "pegRetractions": 0
+        }
+      }
+    },
+    {
+      "level": 22,
+      "material": "steel",
+      "size": "small",
+      "mirror": true,
+      "cadence": 14,
+      "result": "won",
+      "shots": [
+        41.94166666666666,
+        20.35
+      ],
+      "multiGap": 6.108333333333427,
+      "maxNoHit": 6.325000000000104,
+      "worst": {
+        "time": 26.441666666665807,
+        "shot": 1,
+        "ball": {
+          "x": 87.37924596855757,
+          "y": 381.4822224653092,
+          "vx": 17.305035612203625,
+          "vy": 584.842297409027,
+          "r": 9
+        },
+        "paddle": {
+          "x": 95.90587707507392,
+          "target": 95.90587707507392,
+          "width": 144,
+          "vx": 0,
+          "flash": 0,
+          "tilt": 0,
+          "boost": 18000
+        },
+        "progress": {
+          "sinceHit": 6.108333333333427,
+          "maxNoHit": 6.108333333333427,
+          "catchesWithoutHit": 3,
+          "maxCatchesWithoutHit": 3
+        },
+        "targets": [
+          {
+            "x": 110,
+            "y": 400,
+            "hp": 2,
+            "kind": "diamond",
+            "size": 48,
+            "core": false,
+            "id": 1,
+            "maxHp": 3,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 210,
+            "y": 490,
+            "hp": 6,
+            "kind": "hexagon",
+            "size": 48,
+            "core": false,
+            "id": 2,
+            "maxHp": 10,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 110,
+            "y": 570,
+            "hp": 10,
+            "kind": "capacitor",
+            "size": 48,
+            "core": true,
+            "id": 3,
+            "maxHp": 14,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 320,
+            "y": 610,
+            "hp": 2,
+            "kind": "prism",
+            "size": 48,
+            "power": "spring",
+            "core": false,
+            "id": 4,
+            "maxHp": 8,
+            "flash": 0,
+            "vx": 0
+          }
+        ],
+        "gates": [],
+        "pegs": [],
+        "rails": [
+          {
+            "side": "right",
+            "y": 440,
+            "h": 100,
+            "charges": 0,
+            "maxCharges": 3
+          },
+          {
+            "side": "left",
+            "y": 500,
+            "h": 110,
+            "charges": 2,
+            "maxCharges": 3
+          }
+        ],
+        "air": [
+          {
+            "x": 38,
+            "y": 355,
+            "w": 344,
+            "h": 200,
+            "fx": 95,
+            "fy": 0,
+            "plume": true
+          }
+        ],
+        "flow": [
+          {
+            "strength": 0,
+            "fx": 95,
+            "fy": 0
+          }
+        ],
+        "stats": {
+          "hits": 17,
+          "flight": 26.441666666665807,
+          "boosts": 22,
+          "energy": 436000,
+          "rescues": 0,
+          "returns": 0,
+          "rebounds": 0,
+          "recharges": 0,
+          "pulses": 0,
+          "pickups": 3,
+          "paddleHits": 12,
+          "orbitBreaks": 0,
+          "gateVents": 0,
+          "pegRetractions": 0
+        }
+      }
+    },
+    {
+      "level": 22,
+      "material": "steel",
+      "size": "small",
+      "mirror": true,
+      "cadence": 24,
+      "result": "won",
+      "shots": [
+        33.63333333333333,
+        21.683333333333334,
+        13.141666666666666
+      ],
+      "multiGap": 5.116666666666711,
+      "maxNoHit": 8.491666666666825,
+      "worst": {
+        "time": 15.691666666666416,
+        "shot": 1,
+        "ball": {
+          "x": 315.6903678678833,
+          "y": 574.859470140331,
+          "vx": -96.4381627625876,
+          "vy": 540.4413165435798,
+          "r": 9
+        },
+        "paddle": {
+          "x": 309.179503201659,
+          "target": 309.179503201659,
+          "width": 144,
+          "vx": 0,
+          "flash": 0,
+          "tilt": 0,
+          "boost": 18000
+        },
+        "progress": {
+          "sinceHit": 5.116666666666711,
+          "maxNoHit": 5.116666666666711,
+          "catchesWithoutHit": 1,
+          "maxCatchesWithoutHit": 1
+        },
+        "targets": [
+          {
+            "x": 110,
+            "y": 400,
+            "hp": 3,
+            "kind": "diamond",
+            "size": 48,
+            "core": false,
+            "id": 1,
+            "maxHp": 3,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 210,
+            "y": 490,
+            "hp": 4,
+            "kind": "hexagon",
+            "size": 48,
+            "core": false,
+            "id": 2,
+            "maxHp": 10,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 110,
+            "y": 570,
+            "hp": 14,
+            "kind": "capacitor",
+            "size": 48,
+            "core": true,
+            "id": 3,
+            "maxHp": 14,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 320,
+            "y": 610,
+            "hp": 6,
+            "kind": "prism",
+            "size": 48,
+            "power": "spring",
+            "core": false,
+            "id": 4,
+            "maxHp": 8,
+            "flash": 0,
+            "vx": 0
+          }
+        ],
+        "gates": [],
+        "pegs": [],
+        "rails": [
+          {
+            "side": "right",
+            "y": 440,
+            "h": 100,
+            "charges": 1,
+            "maxCharges": 3
+          },
+          {
+            "side": "left",
+            "y": 500,
+            "h": 110,
+            "charges": 2,
+            "maxCharges": 3
+          }
+        ],
+        "air": [
+          {
+            "x": 38,
+            "y": 355,
+            "w": 344,
+            "h": 200,
+            "fx": 95,
+            "fy": 0,
+            "plume": true
+          }
+        ],
+        "flow": [
+          {
+            "strength": 0,
+            "fx": 95,
+            "fy": 0
+          }
+        ],
+        "stats": {
+          "hits": 10,
+          "flight": 15.691666666666416,
+          "boosts": 8,
+          "energy": 164000,
+          "rescues": 0,
+          "returns": 0,
+          "rebounds": 0,
+          "recharges": 0,
+          "pulses": 0,
+          "pickups": 1,
+          "paddleHits": 3,
+          "orbitBreaks": 0,
+          "gateVents": 0,
+          "pegRetractions": 0
+        }
+      }
+    },
+    {
+      "level": 22,
+      "material": "steel",
+      "size": "standard",
+      "mirror": false,
+      "cadence": 14,
+      "result": "won",
+      "shots": [
+        78.73333333333333
+      ],
+      "multiGap": 2.9083333333333257,
+      "maxNoHit": 8.033333333333518,
+      "worst": {
+        "time": 15.158333333333113,
+        "shot": 1,
+        "ball": {
+          "x": 72.9918086632352,
+          "y": 321.5512428987189,
+          "vx": 95.53735258496684,
+          "vy": 346.1930760409178,
+          "r": 12
+        },
+        "paddle": {
+          "x": 134.1470646600939,
+          "target": 134.1470646600939,
+          "width": 144,
+          "vx": 0,
+          "flash": 0,
+          "tilt": 0,
+          "boost": 18000
+        },
+        "progress": {
+          "sinceHit": 2.9083333333333257,
+          "maxNoHit": 2.9083333333333257,
+          "catchesWithoutHit": 1,
+          "maxCatchesWithoutHit": 1
+        },
+        "targets": [
+          {
+            "x": 105,
+            "y": 340,
+            "hp": 1,
+            "kind": "bar",
+            "size": 48,
+            "core": false,
+            "id": 0,
+            "maxHp": 2,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 310,
+            "y": 400,
+            "hp": 1,
+            "kind": "diamond",
+            "size": 48,
+            "core": false,
+            "id": 1,
+            "maxHp": 3,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 210,
+            "y": 490,
+            "hp": 5,
+            "kind": "hexagon",
+            "size": 48,
+            "core": false,
+            "id": 2,
+            "maxHp": 10,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 310,
+            "y": 570,
+            "hp": 13,
+            "kind": "capacitor",
+            "size": 48,
+            "core": true,
+            "id": 3,
+            "maxHp": 14,
+            "flash": 0,
+            "vx": 0
+          }
+        ],
+        "gates": [],
+        "pegs": [],
+        "rails": [
+          {
+            "side": "left",
+            "y": 440,
+            "h": 100,
+            "charges": 3,
+            "maxCharges": 3
+          },
+          {
+            "side": "right",
+            "y": 500,
+            "h": 110,
+            "charges": 2,
+            "maxCharges": 3
+          }
+        ],
+        "air": [
+          {
+            "x": 38,
+            "y": 355,
+            "w": 344,
+            "h": 200,
+            "fx": -95,
+            "fy": 0,
+            "plume": true
+          }
+        ],
+        "flow": [
+          {
+            "strength": 0,
+            "fx": -95,
+            "fy": 0
+          }
+        ],
+        "stats": {
+          "hits": 17,
+          "flight": 15.158333333333113,
+          "boosts": 18,
+          "energy": 360000,
+          "rescues": 0,
+          "returns": 0,
+          "rebounds": 0,
+          "recharges": 0,
+          "pulses": 0,
+          "pickups": 1,
+          "paddleHits": 9,
+          "orbitBreaks": 0,
+          "gateVents": 0,
+          "pegRetractions": 0
+        }
+      }
+    },
+    {
+      "level": 22,
+      "material": "steel",
+      "size": "standard",
+      "mirror": false,
+      "cadence": 24,
+      "result": "won",
+      "shots": [
+        25.675,
+        3.0666666666666664,
+        3.0666666666666664,
+        35.516666666666666
+      ],
+      "multiGap": 7.71666666666684,
+      "maxNoHit": 12.433333333333268,
+      "worst": {
+        "time": 15.61666666666642,
+        "shot": 1,
+        "ball": {
+          "x": 189.17333154791226,
+          "y": 519.9855849583734,
+          "vx": 144.32476354611217,
+          "vy": -488.649093996681,
+          "r": 12
+        },
+        "paddle": {
+          "x": 99.00392835657689,
+          "target": 99.00392835657689,
+          "width": 96,
+          "vx": 0,
+          "flash": 0,
+          "tilt": 0,
+          "boost": 18000
+        },
+        "progress": {
+          "sinceHit": 7.71666666666684,
+          "maxNoHit": 7.71666666666684,
+          "catchesWithoutHit": 3,
+          "maxCatchesWithoutHit": 3
+        },
+        "targets": [
+          {
+            "x": 310,
+            "y": 400,
+            "hp": 3,
+            "kind": "diamond",
+            "size": 48,
+            "core": false,
+            "id": 1,
+            "maxHp": 3,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 210,
+            "y": 490,
+            "hp": 9,
+            "kind": "hexagon",
+            "size": 48,
+            "core": false,
+            "id": 2,
+            "maxHp": 10,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 310,
+            "y": 570,
+            "hp": 13,
+            "kind": "capacitor",
+            "size": 48,
+            "core": true,
+            "id": 3,
+            "maxHp": 14,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 100,
+            "y": 610,
+            "hp": 6,
+            "kind": "prism",
+            "size": 48,
+            "power": "spring",
+            "core": false,
+            "id": 4,
+            "maxHp": 8,
+            "flash": 0,
+            "vx": 0
+          }
+        ],
+        "gates": [],
+        "pegs": [],
+        "rails": [
+          {
+            "side": "left",
+            "y": 440,
+            "h": 100,
+            "charges": 3,
+            "maxCharges": 3
+          },
+          {
+            "side": "right",
+            "y": 500,
+            "h": 110,
+            "charges": 3,
+            "maxCharges": 3
+          }
+        ],
+        "air": [
+          {
+            "x": 38,
+            "y": 355,
+            "w": 344,
+            "h": 200,
+            "fx": -95,
+            "fy": 0,
+            "plume": true
+          }
+        ],
+        "flow": [
+          {
+            "strength": 0.7091941646106374,
+            "fx": -95,
+            "fy": 0
+          }
+        ],
+        "stats": {
+          "hits": 6,
+          "flight": 15.61666666666642,
+          "boosts": 9,
+          "energy": 170000,
+          "rescues": 0,
+          "returns": 0,
+          "rebounds": 0,
+          "recharges": 0,
+          "pulses": 0,
+          "pickups": 0,
+          "paddleHits": 7,
+          "orbitBreaks": 0,
+          "gateVents": 0,
+          "pegRetractions": 0
+        }
+      }
+    },
+    {
+      "level": 22,
+      "material": "steel",
+      "size": "standard",
+      "mirror": true,
+      "cadence": 14,
+      "result": "won",
+      "shots": [
+        44.391666666666666,
+        33.63333333333333
+      ],
+      "multiGap": 11.874999999999966,
+      "maxNoHit": 11.883333333333299,
+      "worst": {
+        "time": 37.68333333333184,
+        "shot": 1,
+        "ball": {
+          "x": 229.67776053560547,
+          "y": 520.6173489956689,
+          "vx": -249.64324101289722,
+          "vy": -398.3418741295273,
+          "r": 12
+        },
+        "paddle": {
+          "x": 97.60788343937537,
+          "target": 70,
+          "width": 96,
+          "vx": -900,
+          "flash": 0,
+          "tilt": 0.08249999999999999,
+          "boost": 40000
+        },
+        "progress": {
+          "sinceHit": 11.874999999999966,
+          "maxNoHit": 11.874999999999966,
+          "catchesWithoutHit": 4,
+          "maxCatchesWithoutHit": 4
+        },
+        "targets": [
+          {
+            "x": 110,
+            "y": 400,
+            "hp": 2,
+            "kind": "diamond",
+            "size": 48,
+            "core": false,
+            "id": 1,
+            "maxHp": 3,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 210,
+            "y": 490,
+            "hp": 4,
+            "kind": "hexagon",
+            "size": 48,
+            "core": false,
+            "id": 2,
+            "maxHp": 10,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 110,
+            "y": 570,
+            "hp": 12,
+            "kind": "capacitor",
+            "size": 48,
+            "core": true,
+            "id": 3,
+            "maxHp": 14,
+            "flash": 0,
+            "vx": 0
+          }
+        ],
+        "gates": [],
+        "pegs": [],
+        "rails": [
+          {
+            "side": "right",
+            "y": 440,
+            "h": 100,
+            "charges": 0,
+            "maxCharges": 3
+          },
+          {
+            "side": "left",
+            "y": 500,
+            "h": 110,
+            "charges": 3,
+            "maxCharges": 3
+          }
+        ],
+        "air": [
+          {
+            "x": 38,
+            "y": 355,
+            "w": 344,
+            "h": 200,
+            "fx": 95,
+            "fy": 0,
+            "plume": true
+          }
+        ],
+        "flow": [
+          {
+            "strength": 0.642533321842146,
+            "fx": 95,
+            "fy": 0
+          }
+        ],
+        "stats": {
+          "hits": 19,
+          "flight": 37.68333333333184,
+          "boosts": 23,
+          "energy": 458000,
+          "rescues": 0,
+          "returns": 0,
+          "rebounds": 0,
+          "recharges": 0,
+          "pulses": 0,
+          "pickups": 2,
+          "paddleHits": 12,
+          "orbitBreaks": 1,
+          "gateVents": 0,
+          "pegRetractions": 0
+        }
+      }
+    },
+    {
+      "level": 22,
+      "material": "steel",
+      "size": "standard",
+      "mirror": true,
+      "cadence": 24,
+      "result": "won",
+      "shots": [
+        18.516666666666666,
+        3.0666666666666664,
+        18.1,
+        17.566666666666666
+      ],
+      "multiGap": 3.59999999999999,
+      "maxNoHit": 9.650000000000093,
+      "worst": {
+        "time": 4.450000000000011,
+        "shot": 1,
+        "ball": {
+          "x": 301.11908971252393,
+          "y": 360.38348493084845,
+          "vx": 135.86150866864511,
+          "vy": -431.05017403394334,
+          "r": 12
+        },
+        "paddle": {
+          "x": 115,
+          "target": 150.68399302507376,
+          "width": 96,
+          "vx": 900,
+          "flash": 0,
+          "tilt": 0,
+          "boost": 18000
+        },
+        "progress": {
+          "sinceHit": 3.59999999999999,
+          "maxNoHit": 3.59999999999999,
+          "catchesWithoutHit": 1,
+          "maxCatchesWithoutHit": 1
+        },
+        "targets": [
+          {
+            "x": 315,
+            "y": 340,
+            "hp": 2,
+            "kind": "bar",
+            "size": 48,
+            "core": false,
+            "id": 0,
+            "maxHp": 2,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 110,
+            "y": 400,
+            "hp": 2,
+            "kind": "diamond",
+            "size": 48,
+            "core": false,
+            "id": 1,
+            "maxHp": 3,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 210,
+            "y": 490,
+            "hp": 10,
+            "kind": "hexagon",
+            "size": 48,
+            "core": false,
+            "id": 2,
+            "maxHp": 10,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 110,
+            "y": 570,
+            "hp": 14,
+            "kind": "capacitor",
+            "size": 48,
+            "core": true,
+            "id": 3,
+            "maxHp": 14,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 320,
+            "y": 610,
+            "hp": 8,
+            "kind": "prism",
+            "size": 48,
+            "power": "spring",
+            "core": false,
+            "id": 4,
+            "maxHp": 8,
+            "flash": 0,
+            "vx": 0
+          }
+        ],
+        "gates": [],
+        "pegs": [],
+        "rails": [
+          {
+            "side": "right",
+            "y": 440,
+            "h": 100,
+            "charges": 3,
+            "maxCharges": 3
+          },
+          {
+            "side": "left",
+            "y": 500,
+            "h": 110,
+            "charges": 3,
+            "maxCharges": 3
+          }
+        ],
+        "air": [
+          {
+            "x": 38,
+            "y": 355,
+            "w": 344,
+            "h": 200,
+            "fx": 95,
+            "fy": 0,
+            "plume": true
+          }
+        ],
+        "flow": [
+          {
+            "strength": 0,
+            "fx": 95,
+            "fy": 0
+          }
+        ],
+        "stats": {
+          "hits": 1,
+          "flight": 4.450000000000011,
+          "boosts": 1,
+          "energy": 18000,
+          "rescues": 0,
+          "returns": 0,
+          "rebounds": 0,
+          "recharges": 0,
+          "pulses": 0,
+          "pickups": 0,
+          "paddleHits": 1,
+          "orbitBreaks": 0,
+          "gateVents": 0,
+          "pegRetractions": 0
+        }
+      }
+    },
+    {
+      "level": 22,
+      "material": "steel",
+      "size": "large",
+      "mirror": false,
+      "cadence": 14,
+      "result": "won",
+      "shots": [
+        46.775,
+        23.03333333333333,
+        5
+      ],
+      "multiGap": 9.35000000000011,
+      "maxNoHit": 9.358333333333443,
+      "worst": {
+        "time": 28.133333333332377,
+        "shot": 1,
+        "ball": {
+          "x": 187.09604609222475,
+          "y": 458.60667982558783,
+          "vx": -72.50307427540264,
+          "vy": 317.61702171832997,
+          "r": 16
+        },
+        "paddle": {
+          "x": 115.90256318620033,
+          "target": 115.90256318620033,
+          "width": 96,
+          "vx": -659.6236293122297,
+          "flash": 0,
+          "tilt": 0,
+          "boost": 18000
+        },
+        "progress": {
+          "sinceHit": 9.35000000000011,
+          "maxNoHit": 9.35000000000011,
+          "catchesWithoutHit": 2,
+          "maxCatchesWithoutHit": 2
+        },
+        "targets": [
+          {
+            "x": 210,
+            "y": 490,
+            "hp": 8,
+            "kind": "hexagon",
+            "size": 48,
+            "core": false,
+            "id": 2,
+            "maxHp": 10,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 310,
+            "y": 570,
+            "hp": 7,
+            "kind": "capacitor",
+            "size": 48,
+            "core": true,
+            "id": 3,
+            "maxHp": 14,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 100,
+            "y": 610,
+            "hp": 3,
+            "kind": "prism",
+            "size": 48,
+            "power": "spring",
+            "core": false,
+            "id": 4,
+            "maxHp": 8,
+            "flash": 0,
+            "vx": 0
+          }
+        ],
+        "gates": [],
+        "pegs": [],
+        "rails": [
+          {
+            "side": "left",
+            "y": 440,
+            "h": 100,
+            "charges": 1,
+            "maxCharges": 3
+          },
+          {
+            "side": "right",
+            "y": 500,
+            "h": 110,
+            "charges": 3,
+            "maxCharges": 3
+          }
+        ],
+        "air": [
+          {
+            "x": 38,
+            "y": 355,
+            "w": 344,
+            "h": 200,
+            "fx": -95,
+            "fy": 0,
+            "plume": true
+          }
+        ],
+        "flow": [
+          {
+            "strength": 1,
+            "fx": -95,
+            "fy": 0
+          }
+        ],
+        "stats": {
+          "hits": 19,
+          "flight": 28.133333333332377,
+          "boosts": 13,
+          "energy": 207870.55346684647,
+          "rescues": 0,
+          "returns": 0,
+          "rebounds": 0,
+          "recharges": 0,
+          "pulses": 0,
+          "pickups": 3,
+          "paddleHits": 12,
+          "orbitBreaks": 0,
+          "gateVents": 0,
+          "pegRetractions": 0
+        }
+      }
+    },
+    {
+      "level": 22,
+      "material": "steel",
+      "size": "large",
+      "mirror": false,
+      "cadence": 24,
+      "result": "won",
+      "shots": [
+        3.2583333333333333,
+        36.15833333333333
+      ],
+      "multiGap": 4.541666666666682,
+      "maxNoHit": 4.550000000000016,
+      "worst": {
+        "time": 11.724999999999975,
+        "shot": 2,
+        "ball": {
+          "x": 306.5347007750434,
+          "y": 440.06536987188036,
+          "vx": -173.41044871102332,
+          "vy": -256.43671429675595,
+          "r": 16
+        },
+        "paddle": {
+          "x": 167.2433202321676,
+          "target": 178.6524796119349,
+          "width": 96,
+          "vx": 900,
+          "flash": 0,
+          "tilt": 0,
+          "boost": 18000
+        },
+        "progress": {
+          "sinceHit": 4.541666666666682,
+          "maxNoHit": 4.541666666666682,
+          "catchesWithoutHit": 2,
+          "maxCatchesWithoutHit": 2
+        },
+        "targets": [
+          {
+            "x": 105,
+            "y": 340,
+            "hp": 2,
+            "kind": "bar",
+            "size": 48,
+            "core": false,
+            "id": 0,
+            "maxHp": 2,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 310,
+            "y": 400,
+            "hp": 2,
+            "kind": "diamond",
+            "size": 48,
+            "core": false,
+            "id": 1,
+            "maxHp": 3,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 210,
+            "y": 490,
+            "hp": 9,
+            "kind": "hexagon",
+            "size": 48,
+            "core": false,
+            "id": 2,
+            "maxHp": 10,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 310,
+            "y": 570,
+            "hp": 11,
+            "kind": "capacitor",
+            "size": 48,
+            "core": true,
+            "id": 3,
+            "maxHp": 14,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 100,
+            "y": 610,
+            "hp": 7,
+            "kind": "prism",
+            "size": 48,
+            "power": "spring",
+            "core": false,
+            "id": 4,
+            "maxHp": 8,
+            "flash": 0,
+            "vx": 0
+          }
+        ],
+        "gates": [],
+        "pegs": [],
+        "rails": [
+          {
+            "side": "left",
+            "y": 440,
+            "h": 100,
+            "charges": 3,
+            "maxCharges": 3
+          },
+          {
+            "side": "right",
+            "y": 500,
+            "h": 110,
+            "charges": 1,
+            "maxCharges": 3
+          }
+        ],
+        "air": [
+          {
+            "x": 38,
+            "y": 355,
+            "w": 344,
+            "h": 200,
+            "fx": -95,
+            "fy": 0,
+            "plume": true
+          }
+        ],
+        "flow": [
+          {
+            "strength": 1,
+            "fx": -95,
+            "fy": 0
+          }
+        ],
+        "stats": {
+          "hits": 6,
+          "flight": 11.724999999999975,
+          "boosts": 5,
+          "energy": 88353.40994916047,
+          "rescues": 0,
+          "returns": 0,
+          "rebounds": 0,
+          "recharges": 0,
+          "pulses": 0,
+          "pickups": 0,
+          "paddleHits": 5,
+          "orbitBreaks": 0,
+          "gateVents": 0,
+          "pegRetractions": 0
+        }
+      }
+    },
+    {
+      "level": 22,
+      "material": "steel",
+      "size": "large",
+      "mirror": true,
+      "cadence": 14,
+      "result": "won",
+      "shots": [
+        46.86666666666667
+      ],
+      "multiGap": 3.166666666666658,
+      "maxNoHit": 7.25000000000015,
+      "worst": {
+        "time": 6.466666666666778,
+        "shot": 1,
+        "ball": {
+          "x": 96.71329224687801,
+          "y": 609.3789159016038,
+          "vx": 141.18509027659027,
+          "vy": -384.82204266983996,
+          "r": 16
+        },
+        "paddle": {
+          "x": 115,
+          "target": 211.82270181202526,
+          "width": 96,
+          "vx": 900,
+          "flash": 0.025000000000000022,
+          "tilt": 0,
+          "boost": 18000
+        },
+        "progress": {
+          "sinceHit": 3.166666666666658,
+          "maxNoHit": 3.166666666666658,
+          "catchesWithoutHit": 1,
+          "maxCatchesWithoutHit": 1
+        },
+        "targets": [
+          {
+            "x": 315,
+            "y": 340,
+            "hp": 2,
+            "kind": "bar",
+            "size": 48,
+            "core": false,
+            "id": 0,
+            "maxHp": 2,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 110,
+            "y": 400,
+            "hp": 3,
+            "kind": "diamond",
+            "size": 48,
+            "core": false,
+            "id": 1,
+            "maxHp": 3,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 210,
+            "y": 490,
+            "hp": 8,
+            "kind": "hexagon",
+            "size": 48,
+            "core": false,
+            "id": 2,
+            "maxHp": 10,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 110,
+            "y": 570,
+            "hp": 13,
+            "kind": "capacitor",
+            "size": 48,
+            "core": true,
+            "id": 3,
+            "maxHp": 14,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 320,
+            "y": 610,
+            "hp": 7,
+            "kind": "prism",
+            "size": 48,
+            "power": "spring",
+            "core": false,
+            "id": 4,
+            "maxHp": 8,
+            "flash": 0,
+            "vx": 0
+          }
+        ],
+        "gates": [],
+        "pegs": [],
+        "rails": [
+          {
+            "side": "right",
+            "y": 440,
+            "h": 100,
+            "charges": 2,
+            "maxCharges": 3
+          },
+          {
+            "side": "left",
+            "y": 500,
+            "h": 110,
+            "charges": 3,
+            "maxCharges": 3
+          }
+        ],
+        "air": [
+          {
+            "x": 38,
+            "y": 355,
+            "w": 344,
+            "h": 200,
+            "fx": 95,
+            "fy": 0,
+            "plume": true
+          }
+        ],
+        "flow": [
+          {
+            "strength": 0,
+            "fx": 95,
+            "fy": 0
+          }
+        ],
+        "stats": {
+          "hits": 4,
+          "flight": 6.466666666666778,
+          "boosts": 2,
+          "energy": 40000,
+          "rescues": 0,
+          "returns": 0,
+          "rebounds": 0,
+          "recharges": 0,
+          "pulses": 0,
+          "pickups": 0,
+          "paddleHits": 1,
+          "orbitBreaks": 0,
+          "gateVents": 0,
+          "pegRetractions": 0
+        }
+      }
+    },
+    {
+      "level": 22,
+      "material": "steel",
+      "size": "large",
+      "mirror": true,
+      "cadence": 24,
+      "result": "won",
+      "shots": [
+        6.733333333333333,
+        40.5,
+        4.891666666666667
+      ],
+      "multiGap": 6.041666666666757,
+      "maxNoHit": 6.05000000000009,
+      "worst": {
+        "time": 46.61666666666466,
+        "shot": 2,
+        "ball": {
+          "x": 288.74278362287254,
+          "y": 611.5374188455249,
+          "vx": 58.598020691185674,
+          "vy": 381.2439704399814,
+          "r": 16
+        },
+        "paddle": {
+          "x": 328.55060696498236,
+          "target": 328.55060696498236,
+          "width": 96,
+          "vx": 0,
+          "flash": 0,
+          "tilt": 0,
+          "boost": 18000
+        },
+        "progress": {
+          "sinceHit": 6.041666666666757,
+          "maxNoHit": 6.041666666666757,
+          "catchesWithoutHit": 1,
+          "maxCatchesWithoutHit": 2
+        },
+        "targets": [
+          {
+            "x": 210,
+            "y": 490,
+            "hp": 1,
+            "kind": "hexagon",
+            "size": 48,
+            "core": false,
+            "id": 2,
+            "maxHp": 10,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 110,
+            "y": 570,
+            "hp": 2,
+            "kind": "capacitor",
+            "size": 48,
+            "core": true,
+            "id": 3,
+            "maxHp": 14,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 320,
+            "y": 610,
+            "hp": 1,
+            "kind": "prism",
+            "size": 48,
+            "power": "spring",
+            "core": false,
+            "id": 4,
+            "maxHp": 8,
+            "flash": 0,
+            "vx": 0
+          }
+        ],
+        "gates": [],
+        "pegs": [],
+        "rails": [
+          {
+            "side": "right",
+            "y": 440,
+            "h": 100,
+            "charges": 2,
+            "maxCharges": 3
+          },
+          {
+            "side": "left",
+            "y": 500,
+            "h": 110,
+            "charges": 0,
+            "maxCharges": 3
+          }
+        ],
+        "air": [
+          {
+            "x": 38,
+            "y": 355,
+            "w": 344,
+            "h": 200,
+            "fx": 95,
+            "fy": 0,
+            "plume": true
+          }
+        ],
+        "flow": [
+          {
+            "strength": 0,
+            "fx": 95,
+            "fy": 0
+          }
+        ],
+        "stats": {
+          "hits": 33,
+          "flight": 46.61666666666466,
+          "boosts": 20,
+          "energy": 396744.16958274145,
+          "rescues": 0,
+          "returns": 0,
+          "rebounds": 0,
+          "recharges": 0,
+          "pulses": 0,
+          "pickups": 0,
+          "paddleHits": 12,
+          "orbitBreaks": 0,
+          "gateVents": 0,
+          "pegRetractions": 0
+        }
+      }
+    },
+    {
+      "level": 22,
+      "material": "brass",
+      "size": "small",
+      "mirror": false,
+      "cadence": 14,
+      "result": "won",
+      "shots": [
+        69.56666666666666
+      ],
+      "multiGap": 12.216666666666613,
+      "maxNoHit": 12.224999999999946,
+      "worst": {
+        "time": 52.741666666664315,
+        "shot": 1,
+        "ball": {
+          "x": 288.52370280986617,
+          "y": 596.2852822011122,
+          "vx": 352.1883876028799,
+          "vy": -476.915583485875,
+          "r": 9
+        },
+        "paddle": {
+          "x": 308.5012027460578,
+          "target": 308.5012027460578,
+          "width": 96,
+          "vx": 5.4569682106375694e-11,
+          "flash": 2.42861286636753e-17,
+          "tilt": -0.31,
+          "boost": 40000
+        },
+        "progress": {
+          "sinceHit": 12.216666666666613,
+          "maxNoHit": 12.216666666666613,
+          "catchesWithoutHit": 4,
+          "maxCatchesWithoutHit": 4
+        },
+        "targets": [
+          {
+            "x": 310,
+            "y": 400,
+            "hp": 2,
+            "kind": "diamond",
+            "size": 48,
+            "core": false,
+            "id": 1,
+            "maxHp": 3,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 310,
+            "y": 570,
+            "hp": 4,
+            "kind": "capacitor",
+            "size": 48,
+            "core": true,
+            "id": 3,
+            "maxHp": 14,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 100,
+            "y": 610,
+            "hp": 1,
+            "kind": "prism",
+            "size": 48,
+            "power": "spring",
+            "core": false,
+            "id": 4,
+            "maxHp": 8,
+            "flash": 0,
+            "vx": 0
+          }
+        ],
+        "gates": [],
+        "pegs": [],
+        "rails": [
+          {
+            "side": "left",
+            "y": 440,
+            "h": 100,
+            "charges": 0,
+            "maxCharges": 3
+          },
+          {
+            "side": "right",
+            "y": 500,
+            "h": 110,
+            "charges": 0,
+            "maxCharges": 3
+          }
+        ],
+        "air": [
+          {
+            "x": 38,
+            "y": 355,
+            "w": 344,
+            "h": 200,
+            "fx": -95,
+            "fy": 0,
+            "plume": true
+          }
+        ],
+        "flow": [
+          {
+            "strength": 0,
+            "fx": -95,
+            "fy": 0
+          }
+        ],
+        "stats": {
+          "hits": 30,
+          "flight": 52.741666666664315,
+          "boosts": 30,
+          "energy": 592000,
+          "rescues": 0,
+          "returns": 0,
+          "rebounds": 0,
+          "recharges": 0,
+          "pulses": 0,
+          "pickups": 3,
+          "paddleHits": 17,
+          "orbitBreaks": 1,
+          "gateVents": 0,
+          "pegRetractions": 0
+        }
+      }
+    },
+    {
+      "level": 22,
+      "material": "brass",
+      "size": "small",
+      "mirror": false,
+      "cadence": 24,
+      "result": "won",
+      "shots": [
+        102.09166666666667
+      ],
+      "multiGap": 4.733333333333358,
+      "maxNoHit": 11.15833333333334,
+      "worst": {
+        "time": 23.808333333332623,
+        "shot": 1,
+        "ball": {
+          "x": 112.32352360524942,
+          "y": 589.583940397197,
+          "vx": 49.93075280416962,
+          "vy": 457.39865975160325,
+          "r": 9
+        },
+        "paddle": {
+          "x": 107.88788994199258,
+          "target": 107.88788994199258,
+          "width": 144,
+          "vx": 122.44166858976769,
+          "flash": 0,
+          "tilt": 0,
+          "boost": 18000
+        },
+        "progress": {
+          "sinceHit": 4.733333333333358,
+          "maxNoHit": 4.733333333333358,
+          "catchesWithoutHit": 1,
+          "maxCatchesWithoutHit": 1
+        },
+        "targets": [
+          {
+            "x": 310,
+            "y": 400,
+            "hp": 2,
+            "kind": "diamond",
+            "size": 48,
+            "core": false,
+            "id": 1,
+            "maxHp": 3,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 210,
+            "y": 490,
+            "hp": 8,
+            "kind": "hexagon",
+            "size": 48,
+            "core": false,
+            "id": 2,
+            "maxHp": 10,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 310,
+            "y": 570,
+            "hp": 11,
+            "kind": "capacitor",
+            "size": 48,
+            "core": true,
+            "id": 3,
+            "maxHp": 14,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 100,
+            "y": 610,
+            "hp": 6,
+            "kind": "prism",
+            "size": 48,
+            "power": "spring",
+            "core": false,
+            "id": 4,
+            "maxHp": 8,
+            "flash": 0,
+            "vx": 0
+          }
+        ],
+        "gates": [],
+        "pegs": [],
+        "rails": [
+          {
+            "side": "left",
+            "y": 440,
+            "h": 100,
+            "charges": 1,
+            "maxCharges": 3
+          },
+          {
+            "side": "right",
+            "y": 500,
+            "h": 110,
+            "charges": 0,
+            "maxCharges": 3
+          }
+        ],
+        "air": [
+          {
+            "x": 38,
+            "y": 355,
+            "w": 344,
+            "h": 200,
+            "fx": -95,
+            "fy": 0,
+            "plume": true
+          }
+        ],
+        "flow": [
+          {
+            "strength": 0,
+            "fx": -95,
+            "fy": 0
+          }
+        ],
+        "stats": {
+          "hits": 10,
+          "flight": 23.808333333332623,
+          "boosts": 10,
+          "energy": 208000,
+          "rescues": 0,
+          "returns": 0,
+          "rebounds": 0,
+          "recharges": 0,
+          "pulses": 0,
+          "pickups": 2,
+          "paddleHits": 3,
+          "orbitBreaks": 0,
+          "gateVents": 0,
+          "pegRetractions": 0
+        }
+      }
+    },
+    {
+      "level": 22,
+      "material": "brass",
+      "size": "small",
+      "mirror": true,
+      "cadence": 14,
+      "result": "won",
+      "shots": [
+        97.65833333333333
+      ],
+      "multiGap": 9.483333333333436,
+      "maxNoHit": 12.224999999999946,
+      "worst": {
+        "time": 23.083333333332664,
+        "shot": 1,
+        "ball": {
+          "x": 290.7839136960984,
+          "y": 645.2910612445738,
+          "vx": -47.57294165733899,
+          "vy": -605.2334993588253,
+          "r": 9
+        },
+        "paddle": {
+          "x": 326,
+          "target": 326,
+          "width": 144,
+          "vx": 0,
+          "flash": 0.11666666666666667,
+          "tilt": 0,
+          "boost": 18000
+        },
+        "progress": {
+          "sinceHit": 9.483333333333436,
+          "maxNoHit": 9.483333333333436,
+          "catchesWithoutHit": 3,
+          "maxCatchesWithoutHit": 3
+        },
+        "targets": [
+          {
+            "x": 110,
+            "y": 400,
+            "hp": 2,
+            "kind": "diamond",
+            "size": 48,
+            "core": false,
+            "id": 1,
+            "maxHp": 3,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 210,
+            "y": 490,
+            "hp": 7,
+            "kind": "hexagon",
+            "size": 48,
+            "core": false,
+            "id": 2,
+            "maxHp": 10,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 110,
+            "y": 570,
+            "hp": 11,
+            "kind": "capacitor",
+            "size": 48,
+            "core": true,
+            "id": 3,
+            "maxHp": 14,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 320,
+            "y": 610,
+            "hp": 2,
+            "kind": "prism",
+            "size": 48,
+            "power": "spring",
+            "core": false,
+            "id": 4,
+            "maxHp": 8,
+            "flash": 0,
+            "vx": 0
+          }
+        ],
+        "gates": [],
+        "pegs": [],
+        "rails": [
+          {
+            "side": "right",
+            "y": 440,
+            "h": 100,
+            "charges": 2,
+            "maxCharges": 3
+          },
+          {
+            "side": "left",
+            "y": 500,
+            "h": 110,
+            "charges": 3,
+            "maxCharges": 3
+          }
+        ],
+        "air": [
+          {
+            "x": 38,
+            "y": 355,
+            "w": 344,
+            "h": 200,
+            "fx": 95,
+            "fy": 0,
+            "plume": true
+          }
+        ],
+        "flow": [
+          {
+            "strength": 0,
+            "fx": 95,
+            "fy": 0
+          }
+        ],
+        "stats": {
+          "hits": 15,
+          "flight": 23.083333333332664,
+          "boosts": 17,
+          "energy": 334000,
+          "rescues": 0,
+          "returns": 0,
+          "rebounds": 0,
+          "recharges": 0,
+          "pulses": 0,
+          "pickups": 1,
+          "paddleHits": 10,
+          "orbitBreaks": 0,
+          "gateVents": 0,
+          "pegRetractions": 0
+        }
+      }
+    },
+    {
+      "level": 22,
+      "material": "brass",
+      "size": "small",
+      "mirror": true,
+      "cadence": 24,
+      "result": "won",
+      "shots": [
+        15.325,
+        51.05833333333333
+      ],
+      "multiGap": 5.191666666666714,
+      "maxNoHit": 8.141666666666845,
+      "worst": {
+        "time": 26.766666666665788,
+        "shot": 2,
+        "ball": {
+          "x": 230.7154749670792,
+          "y": 512.5562286897374,
+          "vx": -98.36105634199184,
+          "vy": -517.1760198587937,
+          "r": 9
+        },
+        "paddle": {
+          "x": 302.585241875488,
+          "target": 302.585241875488,
+          "width": 96,
+          "vx": 0,
+          "flash": 0,
+          "tilt": 0,
+          "boost": 18000
+        },
+        "progress": {
+          "sinceHit": 5.191666666666714,
+          "maxNoHit": 5.191666666666714,
+          "catchesWithoutHit": 2,
+          "maxCatchesWithoutHit": 2
+        },
+        "targets": [
+          {
+            "x": 210,
+            "y": 490,
+            "hp": 4,
+            "kind": "hexagon",
+            "size": 48,
+            "core": false,
+            "id": 2,
+            "maxHp": 10,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 110,
+            "y": 570,
+            "hp": 7,
+            "kind": "capacitor",
+            "size": 48,
+            "core": true,
+            "id": 3,
+            "maxHp": 14,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 320,
+            "y": 610,
+            "hp": 4,
+            "kind": "prism",
+            "size": 48,
+            "power": "spring",
+            "core": false,
+            "id": 4,
+            "maxHp": 8,
+            "flash": 0,
+            "vx": 0
+          }
+        ],
+        "gates": [],
+        "pegs": [],
+        "rails": [
+          {
+            "side": "right",
+            "y": 440,
+            "h": 100,
+            "charges": 2,
+            "maxCharges": 3
+          },
+          {
+            "side": "left",
+            "y": 500,
+            "h": 110,
+            "charges": 3,
+            "maxCharges": 3
+          }
+        ],
+        "air": [
+          {
+            "x": 38,
+            "y": 355,
+            "w": 344,
+            "h": 200,
+            "fx": 95,
+            "fy": 0,
+            "plume": true
+          }
+        ],
+        "flow": [
+          {
+            "strength": 0.9999643720346594,
+            "fx": 95,
+            "fy": 0
+          }
+        ],
+        "stats": {
+          "hits": 22,
+          "flight": 26.766666666665788,
+          "boosts": 23,
+          "energy": 450000,
+          "rescues": 0,
+          "returns": 0,
+          "rebounds": 0,
+          "recharges": 0,
+          "pulses": 0,
+          "pickups": 1,
+          "paddleHits": 14,
+          "orbitBreaks": 0,
+          "gateVents": 0,
+          "pegRetractions": 0
+        }
+      }
+    },
+    {
+      "level": 22,
+      "material": "brass",
+      "size": "standard",
+      "mirror": false,
+      "cadence": 14,
+      "result": "won",
+      "shots": [
+        16.966666666666665,
+        15.033333333333333,
+        18.041666666666668
+      ],
+      "multiGap": 6.491666666666779,
+      "maxNoHit": 6.500000000000113,
+      "worst": {
+        "time": 30.783333333332227,
+        "shot": 2,
+        "ball": {
+          "x": 133.69900260357227,
+          "y": 623.7663236114953,
+          "vx": -35.67134048511363,
+          "vy": 446.55798713714836,
+          "r": 12
+        },
+        "paddle": {
+          "x": 130.46455406135289,
+          "target": 130.46455406135289,
+          "width": 96,
+          "vx": 0,
+          "flash": 0,
+          "tilt": 0,
+          "boost": 18000
+        },
+        "progress": {
+          "sinceHit": 6.491666666666779,
+          "maxNoHit": 6.491666666666779,
+          "catchesWithoutHit": 1,
+          "maxCatchesWithoutHit": 1
+        },
+        "targets": [
+          {
+            "x": 310,
+            "y": 400,
+            "hp": 2,
+            "kind": "diamond",
+            "size": 48,
+            "core": false,
+            "id": 1,
+            "maxHp": 3,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 210,
+            "y": 490,
+            "hp": 3,
+            "kind": "hexagon",
+            "size": 48,
+            "core": false,
+            "id": 2,
+            "maxHp": 10,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 310,
+            "y": 570,
+            "hp": 4,
+            "kind": "capacitor",
+            "size": 48,
+            "core": true,
+            "id": 3,
+            "maxHp": 14,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 100,
+            "y": 610,
+            "hp": 3,
+            "kind": "prism",
+            "size": 48,
+            "power": "spring",
+            "core": false,
+            "id": 4,
+            "maxHp": 8,
+            "flash": 0,
+            "vx": 0
+          }
+        ],
+        "gates": [],
+        "pegs": [],
+        "rails": [
+          {
+            "side": "left",
+            "y": 440,
+            "h": 100,
+            "charges": 3,
+            "maxCharges": 3
+          },
+          {
+            "side": "right",
+            "y": 500,
+            "h": 110,
+            "charges": 3,
+            "maxCharges": 3
+          }
+        ],
+        "air": [
+          {
+            "x": 38,
+            "y": 355,
+            "w": 344,
+            "h": 200,
+            "fx": -95,
+            "fy": 0,
+            "plume": true
+          }
+        ],
+        "flow": [
+          {
+            "strength": 0,
+            "fx": -95,
+            "fy": 0
+          }
+        ],
+        "stats": {
+          "hits": 25,
+          "flight": 30.783333333332227,
+          "boosts": 16,
+          "energy": 316000,
+          "rescues": 0,
+          "returns": 0,
+          "rebounds": 0,
+          "recharges": 0,
+          "pulses": 0,
+          "pickups": 1,
+          "paddleHits": 10,
+          "orbitBreaks": 0,
+          "gateVents": 0,
+          "pegRetractions": 0
+        }
+      }
+    },
+    {
+      "level": 22,
+      "material": "brass",
+      "size": "standard",
+      "mirror": false,
+      "cadence": 24,
+      "result": "won",
+      "shots": [
+        61.516666666666666
+      ],
+      "multiGap": 7.8333333333335124,
+      "maxNoHit": 7.841666666666846,
+      "worst": {
+        "time": 33.591666666665404,
+        "shot": 1,
+        "ball": {
+          "x": 142.39927275108215,
+          "y": 343.7431075204042,
+          "vx": -184.5471258998139,
+          "vy": 332.291396201897,
+          "r": 12
+        },
+        "paddle": {
+          "x": 70,
+          "target": 70,
+          "width": 96,
+          "vx": 0,
+          "flash": 0,
+          "tilt": 0,
+          "boost": 18000
+        },
+        "progress": {
+          "sinceHit": 7.8333333333335124,
+          "maxNoHit": 7.8333333333335124,
+          "catchesWithoutHit": 3,
+          "maxCatchesWithoutHit": 3
+        },
+        "targets": [
+          {
+            "x": 105,
+            "y": 340,
+            "hp": 1,
+            "kind": "bar",
+            "size": 48,
+            "core": false,
+            "id": 0,
+            "maxHp": 2,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 310,
+            "y": 400,
+            "hp": 2,
+            "kind": "diamond",
+            "size": 48,
+            "core": false,
+            "id": 1,
+            "maxHp": 3,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 210,
+            "y": 490,
+            "hp": 5,
+            "kind": "hexagon",
+            "size": 48,
+            "core": false,
+            "id": 2,
+            "maxHp": 10,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 310,
+            "y": 570,
+            "hp": 7,
+            "kind": "capacitor",
+            "size": 48,
+            "core": true,
+            "id": 3,
+            "maxHp": 14,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 100,
+            "y": 610,
+            "hp": 1,
+            "kind": "prism",
+            "size": 48,
+            "power": "spring",
+            "core": false,
+            "id": 4,
+            "maxHp": 8,
+            "flash": 0,
+            "vx": 0
+          }
+        ],
+        "gates": [],
+        "pegs": [],
+        "rails": [
+          {
+            "side": "left",
+            "y": 440,
+            "h": 100,
+            "charges": 0,
+            "maxCharges": 3
+          },
+          {
+            "side": "right",
+            "y": 500,
+            "h": 110,
+            "charges": 2,
+            "maxCharges": 3
+          }
+        ],
+        "air": [
+          {
+            "x": 38,
+            "y": 355,
+            "w": 344,
+            "h": 200,
+            "fx": -95,
+            "fy": 0,
+            "plume": true
+          }
+        ],
+        "flow": [
+          {
+            "strength": 0,
+            "fx": -95,
+            "fy": 0
+          }
+        ],
+        "stats": {
+          "hits": 21,
+          "flight": 33.591666666665404,
+          "boosts": 22,
+          "energy": 440000,
+          "rescues": 0,
+          "returns": 0,
+          "rebounds": 0,
+          "recharges": 0,
+          "pulses": 0,
+          "pickups": 2,
+          "paddleHits": 12,
+          "orbitBreaks": 0,
+          "gateVents": 0,
+          "pegRetractions": 0
+        }
+      }
+    },
+    {
+      "level": 22,
+      "material": "brass",
+      "size": "standard",
+      "mirror": true,
+      "cadence": 14,
+      "result": "won",
+      "shots": [
+        82.5
+      ],
+      "multiGap": 4.833333333333363,
+      "maxNoHit": 8.04166666666685,
+      "worst": {
+        "time": 12.99166666666657,
+        "shot": 1,
+        "ball": {
+          "x": 195.68923360248002,
+          "y": 459.4223320920935,
+          "vx": 129.5680523516627,
+          "vy": 269.02781101385466,
+          "r": 12
+        },
+        "paddle": {
+          "x": 296.32238766250754,
+          "target": 296.32238766250754,
+          "width": 144,
+          "vx": 0,
+          "flash": 0,
+          "tilt": 0,
+          "boost": 18000
+        },
+        "progress": {
+          "sinceHit": 4.833333333333363,
+          "maxNoHit": 4.833333333333363,
+          "catchesWithoutHit": 1,
+          "maxCatchesWithoutHit": 1
+        },
+        "targets": [
+          {
+            "x": 315,
+            "y": 340,
+            "hp": 1,
+            "kind": "bar",
+            "size": 48,
+            "core": false,
+            "id": 0,
+            "maxHp": 2,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 110,
+            "y": 400,
+            "hp": 1,
+            "kind": "diamond",
+            "size": 48,
+            "core": false,
+            "id": 1,
+            "maxHp": 3,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 210,
+            "y": 490,
+            "hp": 9,
+            "kind": "hexagon",
+            "size": 48,
+            "core": false,
+            "id": 2,
+            "maxHp": 10,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 110,
+            "y": 570,
+            "hp": 14,
+            "kind": "capacitor",
+            "size": 48,
+            "core": true,
+            "id": 3,
+            "maxHp": 14,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 320,
+            "y": 610,
+            "hp": 6,
+            "kind": "prism",
+            "size": 48,
+            "power": "spring",
+            "core": false,
+            "id": 4,
+            "maxHp": 8,
+            "flash": 0,
+            "vx": 0
+          }
+        ],
+        "gates": [],
+        "pegs": [],
+        "rails": [
+          {
+            "side": "right",
+            "y": 440,
+            "h": 100,
+            "charges": 3,
+            "maxCharges": 3
+          },
+          {
+            "side": "left",
+            "y": 500,
+            "h": 110,
+            "charges": 3,
+            "maxCharges": 3
+          }
+        ],
+        "air": [
+          {
+            "x": 38,
+            "y": 355,
+            "w": 344,
+            "h": 200,
+            "fx": 95,
+            "fy": 0,
+            "plume": true
+          }
+        ],
+        "flow": [
+          {
+            "strength": 1,
+            "fx": 95,
+            "fy": 0
+          }
+        ],
+        "stats": {
+          "hits": 6,
+          "flight": 12.99166666666657,
+          "boosts": 4,
+          "energy": 80000,
+          "rescues": 0,
+          "returns": 0,
+          "rebounds": 0,
+          "recharges": 0,
+          "pulses": 0,
+          "pickups": 1,
+          "paddleHits": 2,
+          "orbitBreaks": 0,
+          "gateVents": 0,
+          "pegRetractions": 0
+        }
+      }
+    },
+    {
+      "level": 22,
+      "material": "brass",
+      "size": "standard",
+      "mirror": true,
+      "cadence": 24,
+      "result": "won",
+      "shots": [
+        73.71666666666667,
+        17.075,
+        10.008333333333333
+      ],
+      "multiGap": 4.833333333333363,
+      "maxNoHit": 12.274999999999944,
+      "worst": {
+        "time": 12.99166666666657,
+        "shot": 1,
+        "ball": {
+          "x": 195.68923360248002,
+          "y": 459.4223320920935,
+          "vx": 129.5680523516627,
+          "vy": 269.02781101385466,
+          "r": 12
+        },
+        "paddle": {
+          "x": 259.210172351131,
+          "target": 259.210172351131,
+          "width": 144,
+          "vx": 0,
+          "flash": 0,
+          "tilt": 0,
+          "boost": 18000
+        },
+        "progress": {
+          "sinceHit": 4.833333333333363,
+          "maxNoHit": 4.833333333333363,
+          "catchesWithoutHit": 1,
+          "maxCatchesWithoutHit": 1
+        },
+        "targets": [
+          {
+            "x": 315,
+            "y": 340,
+            "hp": 1,
+            "kind": "bar",
+            "size": 48,
+            "core": false,
+            "id": 0,
+            "maxHp": 2,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 110,
+            "y": 400,
+            "hp": 1,
+            "kind": "diamond",
+            "size": 48,
+            "core": false,
+            "id": 1,
+            "maxHp": 3,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 210,
+            "y": 490,
+            "hp": 9,
+            "kind": "hexagon",
+            "size": 48,
+            "core": false,
+            "id": 2,
+            "maxHp": 10,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 110,
+            "y": 570,
+            "hp": 14,
+            "kind": "capacitor",
+            "size": 48,
+            "core": true,
+            "id": 3,
+            "maxHp": 14,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 320,
+            "y": 610,
+            "hp": 6,
+            "kind": "prism",
+            "size": 48,
+            "power": "spring",
+            "core": false,
+            "id": 4,
+            "maxHp": 8,
+            "flash": 0,
+            "vx": 0
+          }
+        ],
+        "gates": [],
+        "pegs": [],
+        "rails": [
+          {
+            "side": "right",
+            "y": 440,
+            "h": 100,
+            "charges": 3,
+            "maxCharges": 3
+          },
+          {
+            "side": "left",
+            "y": 500,
+            "h": 110,
+            "charges": 3,
+            "maxCharges": 3
+          }
+        ],
+        "air": [
+          {
+            "x": 38,
+            "y": 355,
+            "w": 344,
+            "h": 200,
+            "fx": 95,
+            "fy": 0,
+            "plume": true
+          }
+        ],
+        "flow": [
+          {
+            "strength": 1,
+            "fx": 95,
+            "fy": 0
+          }
+        ],
+        "stats": {
+          "hits": 6,
+          "flight": 12.99166666666657,
+          "boosts": 4,
+          "energy": 80000,
+          "rescues": 0,
+          "returns": 0,
+          "rebounds": 0,
+          "recharges": 0,
+          "pulses": 0,
+          "pickups": 1,
+          "paddleHits": 2,
+          "orbitBreaks": 0,
+          "gateVents": 0,
+          "pegRetractions": 0
+        }
+      }
+    },
+    {
+      "level": 22,
+      "material": "brass",
+      "size": "large",
+      "mirror": false,
+      "cadence": 14,
+      "result": "won",
+      "shots": [
+        97
+      ],
+      "multiGap": 10.991666666666683,
+      "maxNoHit": 11.000000000000016,
+      "worst": {
+        "time": 46.941666666664645,
+        "shot": 1,
+        "ball": {
+          "x": 269.765372600399,
+          "y": 575.0546816587748,
+          "vx": 305.6899333727822,
+          "vy": -212.53210080100047,
+          "r": 16
+        },
+        "paddle": {
+          "x": 243.3871499502721,
+          "target": 243.3871499502721,
+          "width": 96,
+          "vx": 0,
+          "flash": 0,
+          "tilt": -0.32,
+          "boost": 40000
+        },
+        "progress": {
+          "sinceHit": 10.991666666666683,
+          "maxNoHit": 10.991666666666683,
+          "catchesWithoutHit": 4,
+          "maxCatchesWithoutHit": 4
+        },
+        "targets": [
+          {
+            "x": 105,
+            "y": 340,
+            "hp": 2,
+            "kind": "bar",
+            "size": 48,
+            "core": false,
+            "id": 0,
+            "maxHp": 2,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 310,
+            "y": 400,
+            "hp": 1,
+            "kind": "diamond",
+            "size": 48,
+            "core": false,
+            "id": 1,
+            "maxHp": 3,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 310,
+            "y": 570,
+            "hp": 10,
+            "kind": "capacitor",
+            "size": 48,
+            "core": true,
+            "id": 3,
+            "maxHp": 14,
+            "flash": 0,
+            "vx": 0
+          }
+        ],
+        "gates": [],
+        "pegs": [],
+        "rails": [
+          {
+            "side": "left",
+            "y": 440,
+            "h": 100,
+            "charges": 1,
+            "maxCharges": 3
+          },
+          {
+            "side": "right",
+            "y": 500,
+            "h": 110,
+            "charges": 2,
+            "maxCharges": 3
+          }
+        ],
+        "air": [
+          {
+            "x": 38,
+            "y": 355,
+            "w": 344,
+            "h": 200,
+            "fx": -95,
+            "fy": 0,
+            "plume": true
+          }
+        ],
+        "flow": [
+          {
+            "strength": 0,
+            "fx": -95,
+            "fy": 0
+          }
+        ],
+        "stats": {
+          "hits": 24,
+          "flight": 46.941666666664645,
+          "boosts": 24,
+          "energy": 467668.6677575013,
+          "rescues": 0,
+          "returns": 0,
+          "rebounds": 0,
+          "recharges": 0,
+          "pulses": 0,
+          "pickups": 2,
+          "paddleHits": 17,
+          "orbitBreaks": 1,
+          "gateVents": 0,
+          "pegRetractions": 0
+        }
+      }
+    },
+    {
+      "level": 22,
+      "material": "brass",
+      "size": "large",
+      "mirror": false,
+      "cadence": 24,
+      "result": "won",
+      "shots": [
+        16.241666666666667,
+        77.425
+      ],
+      "multiGap": 7.7666666666668425,
+      "maxNoHit": 8.558333333333488,
+      "worst": {
+        "time": 42.67499999999822,
+        "shot": 2,
+        "ball": {
+          "x": 269.58331771201426,
+          "y": 401.29289112817366,
+          "vx": 61.51246008811923,
+          "vy": -105.3813263778747,
+          "r": 16
+        },
+        "paddle": {
+          "x": 350,
+          "target": 350,
+          "width": 96,
+          "vx": 0,
+          "flash": 0,
+          "tilt": 0,
+          "boost": 18000
+        },
+        "progress": {
+          "sinceHit": 7.7666666666668425,
+          "maxNoHit": 7.7666666666668425,
+          "catchesWithoutHit": 3,
+          "maxCatchesWithoutHit": 3
+        },
+        "targets": [
+          {
+            "x": 105,
+            "y": 340,
+            "hp": 1,
+            "kind": "bar",
+            "size": 48,
+            "core": false,
+            "id": 0,
+            "maxHp": 2,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 310,
+            "y": 400,
+            "hp": 2,
+            "kind": "diamond",
+            "size": 48,
+            "core": false,
+            "id": 1,
+            "maxHp": 3,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 310,
+            "y": 570,
+            "hp": 10,
+            "kind": "capacitor",
+            "size": 48,
+            "core": true,
+            "id": 3,
+            "maxHp": 14,
+            "flash": 0,
+            "vx": 0
+          }
+        ],
+        "gates": [],
+        "pegs": [],
+        "rails": [
+          {
+            "side": "left",
+            "y": 440,
+            "h": 100,
+            "charges": 1,
+            "maxCharges": 3
+          },
+          {
+            "side": "right",
+            "y": 500,
+            "h": 110,
+            "charges": 3,
+            "maxCharges": 3
+          }
+        ],
+        "air": [
+          {
+            "x": 38,
+            "y": 355,
+            "w": 344,
+            "h": 200,
+            "fx": -95,
+            "fy": 0,
+            "plume": true
+          }
+        ],
+        "flow": [
+          {
+            "strength": 1,
+            "fx": -95,
+            "fy": 0
+          }
+        ],
+        "stats": {
+          "hits": 24,
+          "flight": 42.67499999999822,
+          "boosts": 28,
+          "energy": 542513.4558319921,
+          "rescues": 0,
+          "returns": 0,
+          "rebounds": 0,
+          "recharges": 0,
+          "pulses": 0,
+          "pickups": 3,
+          "paddleHits": 19,
+          "orbitBreaks": 0,
+          "gateVents": 0,
+          "pegRetractions": 0
+        }
+      }
+    },
+    {
+      "level": 22,
+      "material": "brass",
+      "size": "large",
+      "mirror": true,
+      "cadence": 14,
+      "result": "won",
+      "shots": [
+        73.81666666666666,
+        11.058333333333334
+      ],
+      "multiGap": 4.600000000000018,
+      "maxNoHit": 7.066666666666808,
+      "worst": {
+        "time": 26.749999999999122,
+        "shot": 1,
+        "ball": {
+          "x": 341.80902789586077,
+          "y": 590.3138058352108,
+          "vx": -196.40432046283829,
+          "vy": 262.8481289650524,
+          "r": 16
+        },
+        "paddle": {
+          "x": 280.466161270518,
+          "target": 280.466161270518,
+          "width": 96,
+          "vx": 0,
+          "flash": 0,
+          "tilt": 0,
+          "boost": 18000
+        },
+        "progress": {
+          "sinceHit": 4.600000000000018,
+          "maxNoHit": 4.600000000000018,
+          "catchesWithoutHit": 1,
+          "maxCatchesWithoutHit": 1
+        },
+        "targets": [
+          {
+            "x": 315,
+            "y": 340,
+            "hp": 1,
+            "kind": "bar",
+            "size": 48,
+            "core": false,
+            "id": 0,
+            "maxHp": 2,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 210,
+            "y": 490,
+            "hp": 4,
+            "kind": "hexagon",
+            "size": 48,
+            "core": false,
+            "id": 2,
+            "maxHp": 10,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 110,
+            "y": 570,
+            "hp": 11,
+            "kind": "capacitor",
+            "size": 48,
+            "core": true,
+            "id": 3,
+            "maxHp": 14,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 320,
+            "y": 610,
+            "hp": 1,
+            "kind": "prism",
+            "size": 48,
+            "power": "spring",
+            "core": false,
+            "id": 4,
+            "maxHp": 8,
+            "flash": 0,
+            "vx": 0
+          }
+        ],
+        "gates": [],
+        "pegs": [],
+        "rails": [
+          {
+            "side": "right",
+            "y": 440,
+            "h": 100,
+            "charges": 0,
+            "maxCharges": 3
+          },
+          {
+            "side": "left",
+            "y": 500,
+            "h": 110,
+            "charges": 1,
+            "maxCharges": 3
+          }
+        ],
+        "air": [
+          {
+            "x": 38,
+            "y": 355,
+            "w": 344,
+            "h": 200,
+            "fx": 95,
+            "fy": 0,
+            "plume": true
+          }
+        ],
+        "flow": [
+          {
+            "strength": 0,
+            "fx": 95,
+            "fy": 0
+          }
+        ],
+        "stats": {
+          "hits": 20,
+          "flight": 26.749999999999122,
+          "boosts": 17,
+          "energy": 350000,
+          "rescues": 0,
+          "returns": 0,
+          "rebounds": 0,
+          "recharges": 0,
+          "pulses": 0,
+          "pickups": 1,
+          "paddleHits": 8,
+          "orbitBreaks": 0,
+          "gateVents": 0,
+          "pegRetractions": 0
+        }
+      }
+    },
+    {
+      "level": 22,
+      "material": "brass",
+      "size": "large",
+      "mirror": true,
+      "cadence": 24,
+      "result": "won",
+      "shots": [
+        57.40833333333333
+      ],
+      "multiGap": 9.966666666666741,
+      "maxNoHit": 9.975000000000074,
+      "worst": {
+        "time": 46.591666666664665,
+        "shot": 1,
+        "ball": {
+          "x": 147.90209026804897,
+          "y": 583.5339768892253,
+          "vx": -333.84550783087275,
+          "vy": -66.06569370946508,
+          "r": 16
+        },
+        "paddle": {
+          "x": 257.6800064221952,
+          "target": 257.6800064221952,
+          "width": 96,
+          "vx": 0,
+          "flash": 0,
+          "tilt": 0.32,
+          "boost": 40000
+        },
+        "progress": {
+          "sinceHit": 9.966666666666741,
+          "maxNoHit": 9.966666666666741,
+          "catchesWithoutHit": 4,
+          "maxCatchesWithoutHit": 4
+        },
+        "targets": [
+          {
+            "x": 315,
+            "y": 340,
+            "hp": 1,
+            "kind": "bar",
+            "size": 48,
+            "core": false,
+            "id": 0,
+            "maxHp": 2,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 110,
+            "y": 400,
+            "hp": 3,
+            "kind": "diamond",
+            "size": 48,
+            "core": false,
+            "id": 1,
+            "maxHp": 3,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 110,
+            "y": 570,
+            "hp": 2,
+            "kind": "capacitor",
+            "size": 48,
+            "core": true,
+            "id": 3,
+            "maxHp": 14,
+            "flash": 0,
+            "vx": 0
+          }
+        ],
+        "gates": [],
+        "pegs": [],
+        "rails": [
+          {
+            "side": "right",
+            "y": 440,
+            "h": 100,
+            "charges": 0,
+            "maxCharges": 3
+          },
+          {
+            "side": "left",
+            "y": 500,
+            "h": 110,
+            "charges": 2,
+            "maxCharges": 3
+          }
+        ],
+        "air": [
+          {
+            "x": 38,
+            "y": 355,
+            "w": 344,
+            "h": 200,
+            "fx": 95,
+            "fy": 0,
+            "plume": true
+          }
+        ],
+        "flow": [
+          {
+            "strength": 0,
+            "fx": 95,
+            "fy": 0
+          }
+        ],
+        "stats": {
+          "hits": 31,
+          "flight": 46.591666666664665,
+          "boosts": 28,
+          "energy": 548000,
+          "rescues": 0,
+          "returns": 0,
+          "rebounds": 0,
+          "recharges": 0,
+          "pulses": 0,
+          "pickups": 1,
+          "paddleHits": 17,
+          "orbitBreaks": 1,
+          "gateVents": 0,
+          "pegRetractions": 0
+        }
+      }
+    },
+    {
+      "level": 22,
+      "material": "ceramic",
+      "size": "small",
+      "mirror": false,
+      "cadence": 14,
+      "result": "won",
+      "shots": [
+        13.966666666666667,
+        20.691666666666666
+      ],
+      "multiGap": 2.233333333333328,
+      "maxNoHit": 4.766666666666693,
+      "worst": {
+        "time": 10.425000000000049,
+        "shot": 1,
+        "ball": {
+          "x": 278.56950406102794,
+          "y": 587.7765525702642,
+          "vx": 577.7389661935383,
+          "vy": -1048.412695552213,
+          "r": 9
+        },
+        "paddle": {
+          "x": 286.3083381353695,
+          "target": 286.3083381353695,
+          "width": 144,
+          "vx": 0,
+          "flash": 0.07500000000000001,
+          "tilt": 0,
+          "boost": 18000
+        },
+        "progress": {
+          "sinceHit": 2.233333333333328,
+          "maxNoHit": 2.233333333333328,
+          "catchesWithoutHit": 2,
+          "maxCatchesWithoutHit": 2
+        },
+        "targets": [
+          {
+            "x": 210,
+            "y": 490,
+            "hp": 4,
+            "kind": "hexagon",
+            "size": 48,
+            "core": false,
+            "id": 2,
+            "maxHp": 10,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 310,
+            "y": 570,
+            "hp": 9,
+            "kind": "capacitor",
+            "size": 48,
+            "core": true,
+            "id": 3,
+            "maxHp": 14,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 100,
+            "y": 610,
+            "hp": 6,
+            "kind": "prism",
+            "size": 48,
+            "power": "spring",
+            "core": false,
+            "id": 4,
+            "maxHp": 8,
+            "flash": 0,
+            "vx": 0
+          }
+        ],
+        "gates": [],
+        "pegs": [],
+        "rails": [
+          {
+            "side": "left",
+            "y": 440,
+            "h": 100,
+            "charges": 0,
+            "maxCharges": 3
+          },
+          {
+            "side": "right",
+            "y": 500,
+            "h": 110,
+            "charges": 1,
+            "maxCharges": 3
+          }
+        ],
+        "air": [
+          {
+            "x": 38,
+            "y": 355,
+            "w": 344,
+            "h": 200,
+            "fx": -95,
+            "fy": 0,
+            "plume": true
+          }
+        ],
+        "flow": [
+          {
+            "strength": 0,
+            "fx": -95,
+            "fy": 0
+          }
+        ],
+        "stats": {
+          "hits": 18,
+          "flight": 10.425000000000049,
+          "boosts": 15,
+          "energy": 298000,
+          "rescues": 0,
+          "returns": 0,
+          "rebounds": 0,
+          "recharges": 0,
+          "pulses": 0,
+          "pickups": 1,
+          "paddleHits": 8,
+          "orbitBreaks": 0,
+          "gateVents": 0,
+          "pegRetractions": 0
+        }
+      }
+    },
+    {
+      "level": 22,
+      "material": "ceramic",
+      "size": "small",
+      "mirror": false,
+      "cadence": 24,
+      "result": "won",
+      "shots": [
+        17.391666666666666,
+        1.2666666666666666,
+        1.2666666666666666,
+        1.2666666666666666
+      ],
+      "multiGap": 3.133333333333325,
+      "maxNoHit": 3.141666666666658,
+      "worst": {
+        "time": 11.324999999999998,
+        "shot": 1,
+        "ball": {
+          "x": 224.4646097546129,
+          "y": 516.5179426961934,
+          "vx": -617.9982337879322,
+          "vy": -1063.1960279204145,
+          "r": 9
+        },
+        "paddle": {
+          "x": 213.5,
+          "target": 189.30852979691568,
+          "width": 144,
+          "vx": -900,
+          "flash": 0.01666666666666669,
+          "tilt": 0,
+          "boost": 18000
+        },
+        "progress": {
+          "sinceHit": 3.133333333333325,
+          "maxNoHit": 3.133333333333325,
+          "catchesWithoutHit": 3,
+          "maxCatchesWithoutHit": 3
+        },
+        "targets": [
+          {
+            "x": 310,
+            "y": 400,
+            "hp": 2,
+            "kind": "diamond",
+            "size": 48,
+            "core": false,
+            "id": 1,
+            "maxHp": 3,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 210,
+            "y": 490,
+            "hp": 8,
+            "kind": "hexagon",
+            "size": 48,
+            "core": false,
+            "id": 2,
+            "maxHp": 10,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 310,
+            "y": 570,
+            "hp": 10,
+            "kind": "capacitor",
+            "size": 48,
+            "core": true,
+            "id": 3,
+            "maxHp": 14,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 100,
+            "y": 610,
+            "hp": 6,
+            "kind": "prism",
+            "size": 48,
+            "power": "spring",
+            "core": false,
+            "id": 4,
+            "maxHp": 8,
+            "flash": 0,
+            "vx": 0
+          }
+        ],
+        "gates": [],
+        "pegs": [],
+        "rails": [
+          {
+            "side": "left",
+            "y": 440,
+            "h": 100,
+            "charges": 0,
+            "maxCharges": 3
+          },
+          {
+            "side": "right",
+            "y": 500,
+            "h": 110,
+            "charges": 2,
+            "maxCharges": 3
+          }
+        ],
+        "air": [
+          {
+            "x": 38,
+            "y": 355,
+            "w": 344,
+            "h": 200,
+            "fx": -95,
+            "fy": 0,
+            "plume": true
+          }
+        ],
+        "flow": [
+          {
+            "strength": 0.8023618220889145,
+            "fx": -95,
+            "fy": 0
+          }
+        ],
+        "stats": {
+          "hits": 11,
+          "flight": 11.324999999999998,
+          "boosts": 14,
+          "energy": 276000,
+          "rescues": 0,
+          "returns": 0,
+          "rebounds": 0,
+          "recharges": 0,
+          "pulses": 0,
+          "pickups": 2,
+          "paddleHits": 8,
+          "orbitBreaks": 0,
+          "gateVents": 0,
+          "pegRetractions": 0
+        }
+      }
+    },
+    {
+      "level": 22,
+      "material": "ceramic",
+      "size": "small",
+      "mirror": true,
+      "cadence": 14,
+      "result": "won",
+      "shots": [
+        11.408333333333333,
+        6.891666666666667,
+        20.316666666666666
+      ],
+      "multiGap": 1.7916666666666627,
+      "maxNoHit": 8.608333333333485,
+      "worst": {
+        "time": 10.475000000000046,
+        "shot": 1,
+        "ball": {
+          "x": 197.9144975912512,
+          "y": 526.008380857001,
+          "vx": -160.74534741832187,
+          "vy": -1392.1483750639743,
+          "r": 9
+        },
+        "paddle": {
+          "x": 271.1908592782622,
+          "target": 271.1908592782622,
+          "width": 144,
+          "vx": 0,
+          "flash": 0.05000000000000002,
+          "tilt": 0,
+          "boost": 18000
+        },
+        "progress": {
+          "sinceHit": 1.7916666666666627,
+          "maxNoHit": 1.7916666666666627,
+          "catchesWithoutHit": 2,
+          "maxCatchesWithoutHit": 2
+        },
+        "targets": [
+          {
+            "x": 210,
+            "y": 490,
+            "hp": 4,
+            "kind": "hexagon",
+            "size": 48,
+            "core": false,
+            "id": 2,
+            "maxHp": 10,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 110,
+            "y": 570,
+            "hp": 14,
+            "kind": "capacitor",
+            "size": 48,
+            "core": true,
+            "id": 3,
+            "maxHp": 14,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 320,
+            "y": 610,
+            "hp": 1,
+            "kind": "prism",
+            "size": 48,
+            "power": "spring",
+            "core": false,
+            "id": 4,
+            "maxHp": 8,
+            "flash": 0,
+            "vx": 0
+          }
+        ],
+        "gates": [],
+        "pegs": [],
+        "rails": [
+          {
+            "side": "right",
+            "y": 440,
+            "h": 100,
+            "charges": 2,
+            "maxCharges": 3
+          },
+          {
+            "side": "left",
+            "y": 500,
+            "h": 110,
+            "charges": 1,
+            "maxCharges": 3
+          }
+        ],
+        "air": [
+          {
+            "x": 38,
+            "y": 355,
+            "w": 344,
+            "h": 200,
+            "fx": 95,
+            "fy": 0,
+            "plume": true
+          }
+        ],
+        "flow": [
+          {
+            "strength": 0.13048031263801263,
+            "fx": 95,
+            "fy": 0
+          }
+        ],
+        "stats": {
+          "hits": 18,
+          "flight": 10.475000000000046,
+          "boosts": 17,
+          "energy": 346000,
+          "rescues": 0,
+          "returns": 0,
+          "rebounds": 0,
+          "recharges": 0,
+          "pulses": 0,
+          "pickups": 2,
+          "paddleHits": 7,
+          "orbitBreaks": 0,
+          "gateVents": 0,
+          "pegRetractions": 0
+        }
+      }
+    },
+    {
+      "level": 22,
+      "material": "ceramic",
+      "size": "small",
+      "mirror": true,
+      "cadence": 24,
+      "result": "won",
+      "shots": [
+        12.183333333333334,
+        1.2666666666666666,
+        1.2666666666666666,
+        1.2666666666666666,
+        1.2666666666666666,
+        1.2666666666666666,
+        1.2666666666666666,
+        1.6416666666666666
+      ],
+      "multiGap": 2.1666666666666616,
+      "maxNoHit": 2.174999999999995,
+      "worst": {
+        "time": 11.366666666666662,
+        "shot": 1,
+        "ball": {
+          "x": 98.90464180878577,
+          "y": 607.3263395912819,
+          "vx": 1125.463958746211,
+          "vy": -550.5645720522833,
+          "r": 9
+        },
+        "paddle": {
+          "x": 94,
+          "target": 94,
+          "width": 144,
+          "vx": 0,
+          "flash": 0.05000000000000002,
+          "tilt": 0,
+          "boost": 18000
+        },
+        "progress": {
+          "sinceHit": 2.1666666666666616,
+          "maxNoHit": 2.1666666666666616,
+          "catchesWithoutHit": 1,
+          "maxCatchesWithoutHit": 1
+        },
+        "targets": [
+          {
+            "x": 210,
+            "y": 490,
+            "hp": 4,
+            "kind": "hexagon",
+            "size": 48,
+            "core": false,
+            "id": 2,
+            "maxHp": 10,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 110,
+            "y": 570,
+            "hp": 14,
+            "kind": "capacitor",
+            "size": 48,
+            "core": true,
+            "id": 3,
+            "maxHp": 14,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 320,
+            "y": 610,
+            "hp": 4,
+            "kind": "prism",
+            "size": 48,
+            "power": "spring",
+            "core": false,
+            "id": 4,
+            "maxHp": 8,
+            "flash": 0,
+            "vx": 0
+          }
+        ],
+        "gates": [],
+        "pegs": [],
+        "rails": [
+          {
+            "side": "right",
+            "y": 440,
+            "h": 100,
+            "charges": 2,
+            "maxCharges": 3
+          },
+          {
+            "side": "left",
+            "y": 500,
+            "h": 110,
+            "charges": 1,
+            "maxCharges": 3
+          }
+        ],
+        "air": [
+          {
+            "x": 38,
+            "y": 355,
+            "w": 344,
+            "h": 200,
+            "fx": 95,
+            "fy": 0,
+            "plume": true
+          }
+        ],
+        "flow": [
+          {
+            "strength": 0,
+            "fx": 95,
+            "fy": 0
+          }
+        ],
+        "stats": {
+          "hits": 15,
+          "flight": 11.366666666666662,
+          "boosts": 10,
+          "energy": 208000,
+          "rescues": 0,
+          "returns": 0,
+          "rebounds": 0,
+          "recharges": 0,
+          "pulses": 0,
+          "pickups": 1,
+          "paddleHits": 3,
+          "orbitBreaks": 0,
+          "gateVents": 0,
+          "pegRetractions": 0
+        }
+      }
+    },
+    {
+      "level": 22,
+      "material": "ceramic",
+      "size": "standard",
+      "mirror": false,
+      "cadence": 14,
+      "result": "won",
+      "shots": [
+        37.35,
+        17.425
+      ],
+      "multiGap": 6.858333333333464,
+      "maxNoHit": 6.866666666666798,
+      "worst": {
+        "time": 27.049999999999105,
+        "shot": 1,
+        "ball": {
+          "x": 301.3905967939089,
+          "y": 608.2065204339974,
+          "vx": 112.99320875486882,
+          "vy": -661.8884631123497,
+          "r": 12
+        },
+        "paddle": {
+          "x": 322.01489756476764,
+          "target": 322.01489756476764,
+          "width": 96,
+          "vx": 0,
+          "flash": 0.06666666666666668,
+          "tilt": 0,
+          "boost": 18000
+        },
+        "progress": {
+          "sinceHit": 6.858333333333464,
+          "maxNoHit": 6.858333333333464,
+          "catchesWithoutHit": 2,
+          "maxCatchesWithoutHit": 2
+        },
+        "targets": [
+          {
+            "x": 210,
+            "y": 490,
+            "hp": 3,
+            "kind": "hexagon",
+            "size": 48,
+            "core": false,
+            "id": 2,
+            "maxHp": 10,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 310,
+            "y": 570,
+            "hp": 8,
+            "kind": "capacitor",
+            "size": 48,
+            "core": true,
+            "id": 3,
+            "maxHp": 14,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 100,
+            "y": 610,
+            "hp": 5,
+            "kind": "prism",
+            "size": 48,
+            "power": "spring",
+            "core": false,
+            "id": 4,
+            "maxHp": 8,
+            "flash": 0,
+            "vx": 0
+          }
+        ],
+        "gates": [],
+        "pegs": [],
+        "rails": [
+          {
+            "side": "left",
+            "y": 440,
+            "h": 100,
+            "charges": 0,
+            "maxCharges": 3
+          },
+          {
+            "side": "right",
+            "y": 500,
+            "h": 110,
+            "charges": 0,
+            "maxCharges": 3
+          }
+        ],
+        "air": [
+          {
+            "x": 38,
+            "y": 355,
+            "w": 344,
+            "h": 200,
+            "fx": -95,
+            "fy": 0,
+            "plume": true
+          }
+        ],
+        "flow": [
+          {
+            "strength": 0,
+            "fx": -95,
+            "fy": 0
+          }
+        ],
+        "stats": {
+          "hits": 21,
+          "flight": 27.049999999999105,
+          "boosts": 14,
+          "energy": 288000,
+          "rescues": 0,
+          "returns": 0,
+          "rebounds": 0,
+          "recharges": 0,
+          "pulses": 0,
+          "pickups": 3,
+          "paddleHits": 5,
+          "orbitBreaks": 0,
+          "gateVents": 0,
+          "pegRetractions": 0
+        }
+      }
+    },
+    {
+      "level": 22,
+      "material": "ceramic",
+      "size": "standard",
+      "mirror": false,
+      "cadence": 24,
+      "result": "won",
+      "shots": [
+        21.308333333333334,
+        46.666666666666664
+      ],
+      "multiGap": 2.858333333333326,
+      "maxNoHit": 6.666666666666788,
+      "worst": {
+        "time": 9.950000000000076,
+        "shot": 1,
+        "ball": {
+          "x": 275.8318919611738,
+          "y": 558.3768089310819,
+          "vx": 37.66725587108655,
+          "vy": 509.07899346288593,
+          "r": 12
+        },
+        "paddle": {
+          "x": 324.49620978151944,
+          "target": 324.49620978151944,
+          "width": 96,
+          "vx": 0,
+          "flash": 0,
+          "tilt": 0,
+          "boost": 18000
+        },
+        "progress": {
+          "sinceHit": 2.858333333333326,
+          "maxNoHit": 2.858333333333326,
+          "catchesWithoutHit": 1,
+          "maxCatchesWithoutHit": 1
+        },
+        "targets": [
+          {
+            "x": 310,
+            "y": 400,
+            "hp": 1,
+            "kind": "diamond",
+            "size": 48,
+            "core": false,
+            "id": 1,
+            "maxHp": 3,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 210,
+            "y": 490,
+            "hp": 5,
+            "kind": "hexagon",
+            "size": 48,
+            "core": false,
+            "id": 2,
+            "maxHp": 10,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 310,
+            "y": 570,
+            "hp": 12,
+            "kind": "capacitor",
+            "size": 48,
+            "core": true,
+            "id": 3,
+            "maxHp": 14,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 100,
+            "y": 610,
+            "hp": 7,
+            "kind": "prism",
+            "size": 48,
+            "power": "spring",
+            "core": false,
+            "id": 4,
+            "maxHp": 8,
+            "flash": 0,
+            "vx": 0
+          }
+        ],
+        "gates": [],
+        "pegs": [],
+        "rails": [
+          {
+            "side": "left",
+            "y": 440,
+            "h": 100,
+            "charges": 2,
+            "maxCharges": 3
+          },
+          {
+            "side": "right",
+            "y": 500,
+            "h": 110,
+            "charges": 3,
+            "maxCharges": 3
+          }
+        ],
+        "air": [
+          {
+            "x": 38,
+            "y": 355,
+            "w": 344,
+            "h": 200,
+            "fx": -95,
+            "fy": 0,
+            "plume": true
+          }
+        ],
+        "flow": [
+          {
+            "strength": 0,
+            "fx": -95,
+            "fy": 0
+          }
+        ],
+        "stats": {
+          "hits": 12,
+          "flight": 9.950000000000076,
+          "boosts": 4,
+          "energy": 80000,
+          "rescues": 0,
+          "returns": 0,
+          "rebounds": 0,
+          "recharges": 0,
+          "pulses": 0,
+          "pickups": 0,
+          "paddleHits": 2,
+          "orbitBreaks": 0,
+          "gateVents": 0,
+          "pegRetractions": 0
+        }
+      }
+    },
+    {
+      "level": 22,
+      "material": "ceramic",
+      "size": "standard",
+      "mirror": true,
+      "cadence": 14,
+      "result": "won",
+      "shots": [
+        4.391666666666667,
+        52.925
+      ],
+      "multiGap": 3.2583333333333244,
+      "maxNoHit": 5.066666666666708,
+      "worst": {
+        "time": 21.224999999999437,
+        "shot": 2,
+        "ball": {
+          "x": 236.70930780377836,
+          "y": 463.8009652502461,
+          "vx": -144.83679810375438,
+          "vy": 631.5769291784868,
+          "r": 12
+        },
+        "paddle": {
+          "x": 172.59301098336064,
+          "target": 172.59301098336064,
+          "width": 144,
+          "vx": 639.6344191958235,
+          "flash": 0,
+          "tilt": 0,
+          "boost": 18000
+        },
+        "progress": {
+          "sinceHit": 3.2583333333333244,
+          "maxNoHit": 3.2583333333333244,
+          "catchesWithoutHit": 1,
+          "maxCatchesWithoutHit": 1
+        },
+        "targets": [
+          {
+            "x": 210,
+            "y": 490,
+            "hp": 1,
+            "kind": "hexagon",
+            "size": 48,
+            "core": false,
+            "id": 2,
+            "maxHp": 10,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 110,
+            "y": 570,
+            "hp": 11,
+            "kind": "capacitor",
+            "size": 48,
+            "core": true,
+            "id": 3,
+            "maxHp": 14,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 320,
+            "y": 610,
+            "hp": 2,
+            "kind": "prism",
+            "size": 48,
+            "power": "spring",
+            "core": false,
+            "id": 4,
+            "maxHp": 8,
+            "flash": 0,
+            "vx": 0
+          }
+        ],
+        "gates": [],
+        "pegs": [],
+        "rails": [
+          {
+            "side": "right",
+            "y": 440,
+            "h": 100,
+            "charges": 3,
+            "maxCharges": 3
+          },
+          {
+            "side": "left",
+            "y": 500,
+            "h": 110,
+            "charges": 3,
+            "maxCharges": 3
+          }
+        ],
+        "air": [
+          {
+            "x": 38,
+            "y": 355,
+            "w": 344,
+            "h": 200,
+            "fx": 95,
+            "fy": 0,
+            "plume": true
+          }
+        ],
+        "flow": [
+          {
+            "strength": 1,
+            "fx": 95,
+            "fy": 0
+          }
+        ],
+        "stats": {
+          "hits": 23,
+          "flight": 21.224999999999437,
+          "boosts": 16,
+          "energy": 307063.54400127125,
+          "rescues": 0,
+          "returns": 0,
+          "rebounds": 0,
+          "recharges": 0,
+          "pulses": 0,
+          "pickups": 1,
+          "paddleHits": 8,
+          "orbitBreaks": 0,
+          "gateVents": 0,
+          "pegRetractions": 0
+        }
+      }
+    },
+    {
+      "level": 22,
+      "material": "ceramic",
+      "size": "standard",
+      "mirror": true,
+      "cadence": 24,
+      "result": "won",
+      "shots": [
+        4.1,
+        7.908333333333333,
+        54.425
+      ],
+      "multiGap": 8.866666666666804,
+      "maxNoHit": 8.875000000000137,
+      "worst": {
+        "time": 24.46666666666592,
+        "shot": 3,
+        "ball": {
+          "x": 221.11686545346356,
+          "y": 530.2304177839134,
+          "vx": -276.0852404908609,
+          "vy": -479.777545544296,
+          "r": 16.200000000000003
+        },
+        "paddle": {
+          "x": 298.40050854092055,
+          "target": 298.40050854092055,
+          "width": 144,
+          "vx": 0,
+          "flash": 0,
+          "tilt": 0.15,
+          "boost": 40000
+        },
+        "progress": {
+          "sinceHit": 8.866666666666804,
+          "maxNoHit": 8.866666666666804,
+          "catchesWithoutHit": 5,
+          "maxCatchesWithoutHit": 5
+        },
+        "targets": [
+          {
+            "x": 110,
+            "y": 400,
+            "hp": 3,
+            "kind": "diamond",
+            "size": 48,
+            "core": false,
+            "id": 1,
+            "maxHp": 3,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 210,
+            "y": 490,
+            "hp": 2,
+            "kind": "hexagon",
+            "size": 48,
+            "core": false,
+            "id": 2,
+            "maxHp": 10,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 110,
+            "y": 570,
+            "hp": 8,
+            "kind": "capacitor",
+            "size": 48,
+            "core": true,
+            "id": 3,
+            "maxHp": 14,
+            "flash": 0,
+            "vx": 0
+          }
+        ],
+        "gates": [],
+        "pegs": [],
+        "rails": [
+          {
+            "side": "right",
+            "y": 440,
+            "h": 100,
+            "charges": 3,
+            "maxCharges": 3
+          },
+          {
+            "side": "left",
+            "y": 500,
+            "h": 110,
+            "charges": 3,
+            "maxCharges": 3
+          }
+        ],
+        "air": [
+          {
+            "x": 38,
+            "y": 355,
+            "w": 344,
+            "h": 200,
+            "fx": 95,
+            "fy": 0,
+            "plume": true
+          }
+        ],
+        "flow": [
+          {
+            "strength": 0.00031900128448825757,
+            "fx": 95,
+            "fy": 0
+          }
+        ],
+        "stats": {
+          "hits": 24,
+          "flight": 24.46666666666592,
+          "boosts": 24,
+          "energy": 476000,
+          "rescues": 0,
+          "returns": 0,
+          "rebounds": 0,
+          "recharges": 0,
+          "pulses": 0,
+          "pickups": 3,
+          "paddleHits": 13,
+          "orbitBreaks": 1,
+          "gateVents": 0,
+          "pegRetractions": 0
+        }
+      }
+    },
+    {
+      "level": 22,
+      "material": "ceramic",
+      "size": "large",
+      "mirror": false,
+      "cadence": 14,
+      "result": "won",
+      "shots": [
+        84.2
+      ],
+      "multiGap": 3.9749999999999885,
+      "maxNoHit": 11.56666666666665,
+      "worst": {
+        "time": 17.716666666666303,
+        "shot": 1,
+        "ball": {
+          "x": 344.8992766233985,
+          "y": 596.006807022359,
+          "vx": -290.12275324659674,
+          "vy": -418.2140287710751,
+          "r": 16
+        },
+        "paddle": {
+          "x": 236,
+          "target": 94,
+          "width": 144,
+          "vx": -900,
+          "flash": 0,
+          "tilt": 0,
+          "boost": 18000
+        },
+        "progress": {
+          "sinceHit": 3.9749999999999885,
+          "maxNoHit": 3.9749999999999885,
+          "catchesWithoutHit": 2,
+          "maxCatchesWithoutHit": 2
+        },
+        "targets": [
+          {
+            "x": 210,
+            "y": 490,
+            "hp": 5,
+            "kind": "hexagon",
+            "size": 48,
+            "core": false,
+            "id": 2,
+            "maxHp": 10,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 310,
+            "y": 570,
+            "hp": 10,
+            "kind": "capacitor",
+            "size": 48,
+            "core": true,
+            "id": 3,
+            "maxHp": 14,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 100,
+            "y": 610,
+            "hp": 8,
+            "kind": "prism",
+            "size": 48,
+            "power": "spring",
+            "core": false,
+            "id": 4,
+            "maxHp": 8,
+            "flash": 0,
+            "vx": 0
+          }
+        ],
+        "gates": [],
+        "pegs": [],
+        "rails": [
+          {
+            "side": "left",
+            "y": 440,
+            "h": 100,
+            "charges": 2,
+            "maxCharges": 3
+          },
+          {
+            "side": "right",
+            "y": 500,
+            "h": 110,
+            "charges": 3,
+            "maxCharges": 3
+          }
+        ],
+        "air": [
+          {
+            "x": 38,
+            "y": 355,
+            "w": 344,
+            "h": 200,
+            "fx": -95,
+            "fy": 0,
+            "plume": true
+          }
+        ],
+        "flow": [
+          {
+            "strength": 0,
+            "fx": -95,
+            "fy": 0
+          }
+        ],
+        "stats": {
+          "hits": 14,
+          "flight": 17.716666666666303,
+          "boosts": 6,
+          "energy": 112000,
+          "rescues": 0,
+          "returns": 0,
+          "rebounds": 0,
+          "recharges": 0,
+          "pulses": 0,
+          "pickups": 3,
+          "paddleHits": 5,
+          "orbitBreaks": 0,
+          "gateVents": 0,
+          "pegRetractions": 0
+        }
+      }
+    },
+    {
+      "level": 22,
+      "material": "ceramic",
+      "size": "large",
+      "mirror": false,
+      "cadence": 24,
+      "result": "won",
+      "shots": [
+        20.03333333333333,
+        28.441666666666666
+      ],
+      "multiGap": 2.9249999999999923,
+      "maxNoHit": 8.366666666666832,
+      "worst": {
+        "time": 11.075000000000012,
+        "shot": 1,
+        "ball": {
+          "x": 348.64207295507964,
+          "y": 390.53083896397305,
+          "vx": -640.4216064843476,
+          "vy": 339.67055794857447,
+          "r": 16
+        },
+        "paddle": {
+          "x": 197.59951565797505,
+          "target": 197.59951565797505,
+          "width": 144,
+          "vx": 0,
+          "flash": 0,
+          "tilt": 0,
+          "boost": 18000
+        },
+        "progress": {
+          "sinceHit": 2.9249999999999923,
+          "maxNoHit": 2.9249999999999923,
+          "catchesWithoutHit": 0,
+          "maxCatchesWithoutHit": 1
+        },
+        "targets": [
+          {
+            "x": 310,
+            "y": 400,
+            "hp": 1,
+            "kind": "diamond",
+            "size": 48,
+            "core": false,
+            "id": 1,
+            "maxHp": 3,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 210,
+            "y": 490,
+            "hp": 6,
+            "kind": "hexagon",
+            "size": 48,
+            "core": false,
+            "id": 2,
+            "maxHp": 10,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 310,
+            "y": 570,
+            "hp": 8,
+            "kind": "capacitor",
+            "size": 48,
+            "core": true,
+            "id": 3,
+            "maxHp": 14,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 100,
+            "y": 610,
+            "hp": 5,
+            "kind": "prism",
+            "size": 48,
+            "power": "spring",
+            "core": false,
+            "id": 4,
+            "maxHp": 8,
+            "flash": 0,
+            "vx": 0
+          }
+        ],
+        "gates": [],
+        "pegs": [],
+        "rails": [
+          {
+            "side": "left",
+            "y": 440,
+            "h": 100,
+            "charges": 3,
+            "maxCharges": 3
+          },
+          {
+            "side": "right",
+            "y": 500,
+            "h": 110,
+            "charges": 3,
+            "maxCharges": 3
+          }
+        ],
+        "air": [
+          {
+            "x": 38,
+            "y": 355,
+            "w": 344,
+            "h": 200,
+            "fx": -95,
+            "fy": 0,
+            "plume": true
+          }
+        ],
+        "flow": [
+          {
+            "strength": 0,
+            "fx": -95,
+            "fy": 0
+          }
+        ],
+        "stats": {
+          "hits": 17,
+          "flight": 11.075000000000012,
+          "boosts": 2,
+          "energy": 40000,
+          "rescues": 0,
+          "returns": 0,
+          "rebounds": 0,
+          "recharges": 0,
+          "pulses": 0,
+          "pickups": 2,
+          "paddleHits": 5,
+          "orbitBreaks": 0,
+          "gateVents": 0,
+          "pegRetractions": 0
+        }
+      }
+    },
+    {
+      "level": 22,
+      "material": "ceramic",
+      "size": "large",
+      "mirror": true,
+      "cadence": 14,
+      "result": "won",
+      "shots": [
+        16.258333333333333,
+        46.358333333333334,
+        9.15
+      ],
+      "multiGap": 7.625000000000169,
+      "maxNoHit": 7.8000000000001775,
+      "worst": {
+        "time": 32.141666666665486,
+        "shot": 2,
+        "ball": {
+          "x": 177.72221448901607,
+          "y": 521.4885204300709,
+          "vx": -159.54773319978852,
+          "vy": -377.32135538537005,
+          "r": 21.6
+        },
+        "paddle": {
+          "x": 297.64597469930294,
+          "target": 297.64597469930294,
+          "width": 144,
+          "vx": 0,
+          "flash": 0,
+          "tilt": 0,
+          "boost": 18000
+        },
+        "progress": {
+          "sinceHit": 7.625000000000169,
+          "maxNoHit": 7.625000000000169,
+          "catchesWithoutHit": 2,
+          "maxCatchesWithoutHit": 2
+        },
+        "targets": [
+          {
+            "x": 210,
+            "y": 490,
+            "hp": 4,
+            "kind": "hexagon",
+            "size": 48,
+            "core": false,
+            "id": 2,
+            "maxHp": 10,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 110,
+            "y": 570,
+            "hp": 8,
+            "kind": "capacitor",
+            "size": 48,
+            "core": true,
+            "id": 3,
+            "maxHp": 14,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 320,
+            "y": 610,
+            "hp": 3,
+            "kind": "prism",
+            "size": 48,
+            "power": "spring",
+            "core": false,
+            "id": 4,
+            "maxHp": 8,
+            "flash": 0,
+            "vx": 0
+          }
+        ],
+        "gates": [],
+        "pegs": [],
+        "rails": [
+          {
+            "side": "right",
+            "y": 440,
+            "h": 100,
+            "charges": 1,
+            "maxCharges": 3
+          },
+          {
+            "side": "left",
+            "y": 500,
+            "h": 110,
+            "charges": 2,
+            "maxCharges": 3
+          }
+        ],
+        "air": [
+          {
+            "x": 38,
+            "y": 355,
+            "w": 344,
+            "h": 200,
+            "fx": 95,
+            "fy": 0,
+            "plume": true
+          }
+        ],
+        "flow": [
+          {
+            "strength": 0.8337241324389421,
+            "fx": 95,
+            "fy": 0
+          }
+        ],
+        "stats": {
+          "hits": 22,
+          "flight": 32.141666666665486,
+          "boosts": 11,
+          "energy": 224822.8130423389,
+          "rescues": 0,
+          "returns": 0,
+          "rebounds": 0,
+          "recharges": 0,
+          "pulses": 0,
+          "pickups": 3,
+          "paddleHits": 11,
+          "orbitBreaks": 0,
+          "gateVents": 0,
+          "pegRetractions": 0
+        }
+      }
+    },
+    {
+      "level": 22,
+      "material": "ceramic",
+      "size": "large",
+      "mirror": true,
+      "cadence": 24,
+      "result": "won",
+      "shots": [
+        6.691666666666666,
+        5.858333333333333,
+        5.858333333333333,
+        28.90833333333333,
+        3.658333333333333,
+        3.658333333333333,
+        25.225
+      ],
+      "multiGap": 7.100000000000143,
+      "maxNoHit": 7.866666666666847,
+      "worst": {
+        "time": 46.13333333333136,
+        "shot": 4,
+        "ball": {
+          "x": 351.7373033839918,
+          "y": 612.2520093869123,
+          "vx": 2.382830092139997,
+          "vy": 450.8770569919361,
+          "r": 16
+        },
+        "paddle": {
+          "x": 350,
+          "target": 350,
+          "width": 96,
+          "vx": 0,
+          "flash": 0,
+          "tilt": 0,
+          "boost": 18000
+        },
+        "progress": {
+          "sinceHit": 7.100000000000143,
+          "maxNoHit": 7.100000000000143,
+          "catchesWithoutHit": 1,
+          "maxCatchesWithoutHit": 1
+        },
+        "targets": [
+          {
+            "x": 315,
+            "y": 340,
+            "hp": 2,
+            "kind": "bar",
+            "size": 48,
+            "core": false,
+            "id": 0,
+            "maxHp": 2,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 110,
+            "y": 570,
+            "hp": 4,
+            "kind": "capacitor",
+            "size": 48,
+            "core": true,
+            "id": 3,
+            "maxHp": 14,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 320,
+            "y": 610,
+            "hp": 4,
+            "kind": "prism",
+            "size": 48,
+            "power": "spring",
+            "core": false,
+            "id": 4,
+            "maxHp": 8,
+            "flash": 0,
+            "vx": 0
+          }
+        ],
+        "gates": [],
+        "pegs": [],
+        "rails": [
+          {
+            "side": "right",
+            "y": 440,
+            "h": 100,
+            "charges": 2,
+            "maxCharges": 3
+          },
+          {
+            "side": "left",
+            "y": 500,
+            "h": 110,
+            "charges": 0,
+            "maxCharges": 3
+          }
+        ],
+        "air": [
+          {
+            "x": 38,
+            "y": 355,
+            "w": 344,
+            "h": 200,
+            "fx": 95,
+            "fy": 0,
+            "plume": true
+          }
+        ],
+        "flow": [
+          {
+            "strength": 0,
+            "fx": 95,
+            "fy": 0
+          }
+        ],
+        "stats": {
+          "hits": 27,
+          "flight": 46.13333333333136,
+          "boosts": 18,
+          "energy": 344894.7080239251,
+          "rescues": 0,
+          "returns": 0,
+          "rebounds": 0,
+          "recharges": 0,
+          "pulses": 0,
+          "pickups": 1,
+          "paddleHits": 8,
+          "orbitBreaks": 0,
+          "gateVents": 0,
+          "pegRetractions": 0
+        }
+      }
+    },
+    {
+      "level": 22,
+      "material": "rubber",
+      "size": "small",
+      "mirror": false,
+      "cadence": 14,
+      "result": "won",
+      "shots": [
+        1.7833333333333332,
+        3.0666666666666664,
+        5.958333333333333,
+        11.95,
+        14.358333333333333
+      ],
+      "multiGap": 1.6499999999999966,
+      "maxNoHit": 5.691666666666739,
+      "worst": {
+        "time": 12.75833333333325,
+        "shot": 4,
+        "ball": {
+          "x": 84.18381818461133,
+          "y": 582.742300411532,
+          "vx": 895.0510672373948,
+          "vy": 221.26171914403412,
+          "r": 9
+        },
+        "paddle": {
+          "x": 291.23332909786853,
+          "target": 291.23332909786853,
+          "width": 96,
+          "vx": 0,
+          "flash": 0,
+          "tilt": 0,
+          "boost": 18000
+        },
+        "progress": {
+          "sinceHit": 1.6499999999999966,
+          "maxNoHit": 1.6499999999999966,
+          "catchesWithoutHit": 0,
+          "maxCatchesWithoutHit": 2
+        },
+        "targets": [
+          {
+            "x": 105,
+            "y": 340,
+            "hp": 1,
+            "kind": "bar",
+            "size": 48,
+            "core": false,
+            "id": 0,
+            "maxHp": 2,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 310,
+            "y": 570,
+            "hp": 7,
+            "kind": "capacitor",
+            "size": 48,
+            "core": true,
+            "id": 3,
+            "maxHp": 14,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 100,
+            "y": 610,
+            "hp": 2,
+            "kind": "prism",
+            "size": 48,
+            "power": "spring",
+            "core": false,
+            "id": 4,
+            "maxHp": 8,
+            "flash": 0,
+            "vx": 0
+          }
+        ],
+        "gates": [],
+        "pegs": [],
+        "rails": [
+          {
+            "side": "left",
+            "y": 440,
+            "h": 100,
+            "charges": 1,
+            "maxCharges": 3
+          },
+          {
+            "side": "right",
+            "y": 500,
+            "h": 110,
+            "charges": 2,
+            "maxCharges": 3
+          }
+        ],
+        "air": [
+          {
+            "x": 38,
+            "y": 355,
+            "w": 344,
+            "h": 200,
+            "fx": -95,
+            "fy": 0,
+            "plume": true
+          }
+        ],
+        "flow": [
+          {
+            "strength": 0,
+            "fx": -95,
+            "fy": 0
+          }
+        ],
+        "stats": {
+          "hits": 27,
+          "flight": 12.75833333333325,
+          "boosts": 26,
+          "energy": 536000,
+          "rescues": 0,
+          "returns": 0,
+          "rebounds": 0,
+          "recharges": 0,
+          "pulses": 0,
+          "pickups": 1,
+          "paddleHits": 9,
+          "orbitBreaks": 0,
+          "gateVents": 0,
+          "pegRetractions": 0
+        }
+      }
+    },
+    {
+      "level": 22,
+      "material": "rubber",
+      "size": "small",
+      "mirror": false,
+      "cadence": 24,
+      "result": "won",
+      "shots": [
+        1.7833333333333332,
+        3.0666666666666664,
+        4.2,
+        12.808333333333334,
+        10.625,
+        15.783333333333333
+      ],
+      "multiGap": 1.6499999999999966,
+      "maxNoHit": 7.191666666666814,
+      "worst": {
+        "time": 11.000000000000016,
+        "shot": 4,
+        "ball": {
+          "x": 84.18381818461133,
+          "y": 582.742300411532,
+          "vx": 895.0510672373948,
+          "vy": 221.26171914403412,
+          "r": 9
+        },
+        "paddle": {
+          "x": 291.23332909786876,
+          "target": 291.23332909786876,
+          "width": 96,
+          "vx": 0,
+          "flash": 0,
+          "tilt": 0,
+          "boost": 18000
+        },
+        "progress": {
+          "sinceHit": 1.6499999999999966,
+          "maxNoHit": 1.6499999999999966,
+          "catchesWithoutHit": 0,
+          "maxCatchesWithoutHit": 1
+        },
+        "targets": [
+          {
+            "x": 105,
+            "y": 340,
+            "hp": 1,
+            "kind": "bar",
+            "size": 48,
+            "core": false,
+            "id": 0,
+            "maxHp": 2,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 310,
+            "y": 570,
+            "hp": 8,
+            "kind": "capacitor",
+            "size": 48,
+            "core": true,
+            "id": 3,
+            "maxHp": 14,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 100,
+            "y": 610,
+            "hp": 6,
+            "kind": "prism",
+            "size": 48,
+            "power": "spring",
+            "core": false,
+            "id": 4,
+            "maxHp": 8,
+            "flash": 0,
+            "vx": 0
+          }
+        ],
+        "gates": [],
+        "pegs": [],
+        "rails": [
+          {
+            "side": "left",
+            "y": 440,
+            "h": 100,
+            "charges": 1,
+            "maxCharges": 3
+          },
+          {
+            "side": "right",
+            "y": 500,
+            "h": 110,
+            "charges": 2,
+            "maxCharges": 3
+          }
+        ],
+        "air": [
+          {
+            "x": 38,
+            "y": 355,
+            "w": 344,
+            "h": 200,
+            "fx": -95,
+            "fy": 0,
+            "plume": true
+          }
+        ],
+        "flow": [
+          {
+            "strength": 0,
+            "fx": -95,
+            "fy": 0
+          }
+        ],
+        "stats": {
+          "hits": 22,
+          "flight": 11.000000000000016,
+          "boosts": 16,
+          "energy": 340000,
+          "rescues": 0,
+          "returns": 0,
+          "rebounds": 0,
+          "recharges": 0,
+          "pulses": 0,
+          "pickups": 0,
+          "paddleHits": 3,
+          "orbitBreaks": 0,
+          "gateVents": 0,
+          "pegRetractions": 0
+        }
+      }
+    },
+    {
+      "level": 22,
+      "material": "rubber",
+      "size": "small",
+      "mirror": true,
+      "cadence": 14,
+      "result": "won",
+      "shots": [
+        5.05,
+        3.0666666666666664,
+        37.7
+      ],
+      "multiGap": 2.2166666666666615,
+      "maxNoHit": 6.441666666666777,
+      "worst": {
+        "time": 4.7250000000000245,
+        "shot": 1,
+        "ball": {
+          "x": 95.25455807392389,
+          "y": 428.51634466586523,
+          "vx": 1078.5593845766607,
+          "vy": -1145.6239806021943,
+          "r": 9
+        },
+        "paddle": {
+          "x": 252.97221181608478,
+          "target": 350,
+          "width": 96,
+          "vx": 900,
+          "flash": 0,
+          "tilt": 0,
+          "boost": 18000
+        },
+        "progress": {
+          "sinceHit": 2.2166666666666615,
+          "maxNoHit": 2.2166666666666615,
+          "catchesWithoutHit": 1,
+          "maxCatchesWithoutHit": 1
+        },
+        "targets": [
+          {
+            "x": 110,
+            "y": 400,
+            "hp": 3,
+            "kind": "diamond",
+            "size": 48,
+            "core": false,
+            "id": 1,
+            "maxHp": 3,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 210,
+            "y": 490,
+            "hp": 10,
+            "kind": "hexagon",
+            "size": 48,
+            "core": false,
+            "id": 2,
+            "maxHp": 10,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 110,
+            "y": 570,
+            "hp": 14,
+            "kind": "capacitor",
+            "size": 48,
+            "core": true,
+            "id": 3,
+            "maxHp": 14,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 320,
+            "y": 610,
+            "hp": 7,
+            "kind": "prism",
+            "size": 48,
+            "power": "spring",
+            "core": false,
+            "id": 4,
+            "maxHp": 8,
+            "flash": 0,
+            "vx": 0
+          }
+        ],
+        "gates": [],
+        "pegs": [],
+        "rails": [
+          {
+            "side": "right",
+            "y": 440,
+            "h": 100,
+            "charges": 0,
+            "maxCharges": 3
+          },
+          {
+            "side": "left",
+            "y": 500,
+            "h": 110,
+            "charges": 2,
+            "maxCharges": 3
+          }
+        ],
+        "air": [
+          {
+            "x": 38,
+            "y": 355,
+            "w": 344,
+            "h": 200,
+            "fx": 95,
+            "fy": 0,
+            "plume": true
+          }
+        ],
+        "flow": [
+          {
+            "strength": 1,
+            "fx": 95,
+            "fy": 0
+          }
+        ],
+        "stats": {
+          "hits": 3,
+          "flight": 4.7250000000000245,
+          "boosts": 6,
+          "energy": 128000,
+          "rescues": 0,
+          "returns": 0,
+          "rebounds": 0,
+          "recharges": 0,
+          "pulses": 0,
+          "pickups": 0,
+          "paddleHits": 1,
+          "orbitBreaks": 0,
+          "gateVents": 0,
+          "pegRetractions": 0
+        }
+      }
+    },
+    {
+      "level": 22,
+      "material": "rubber",
+      "size": "small",
+      "mirror": true,
+      "cadence": 24,
+      "result": "won",
+      "shots": [
+        43.25833333333333
+      ],
+      "multiGap": 3.658333333333323,
+      "maxNoHit": 5.966666666666753,
+      "worst": {
+        "time": 6.166666666666763,
+        "shot": 1,
+        "ball": {
+          "x": 136.24394611137512,
+          "y": 411.79566797118997,
+          "vx": -68.00854289750463,
+          "vy": -1137.6586396066944,
+          "r": 9
+        },
+        "paddle": {
+          "x": 287.38616739525526,
+          "target": 321.693088316771,
+          "width": 144,
+          "vx": 900,
+          "flash": 0,
+          "tilt": 0,
+          "boost": 18000
+        },
+        "progress": {
+          "sinceHit": 3.658333333333323,
+          "maxNoHit": 3.658333333333323,
+          "catchesWithoutHit": 2,
+          "maxCatchesWithoutHit": 2
+        },
+        "targets": [
+          {
+            "x": 110,
+            "y": 400,
+            "hp": 3,
+            "kind": "diamond",
+            "size": 48,
+            "core": false,
+            "id": 1,
+            "maxHp": 3,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 210,
+            "y": 490,
+            "hp": 10,
+            "kind": "hexagon",
+            "size": 48,
+            "core": false,
+            "id": 2,
+            "maxHp": 10,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 110,
+            "y": 570,
+            "hp": 14,
+            "kind": "capacitor",
+            "size": 48,
+            "core": true,
+            "id": 3,
+            "maxHp": 14,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 320,
+            "y": 610,
+            "hp": 7,
+            "kind": "prism",
+            "size": 48,
+            "power": "spring",
+            "core": false,
+            "id": 4,
+            "maxHp": 8,
+            "flash": 0,
+            "vx": 0
+          }
+        ],
+        "gates": [],
+        "pegs": [],
+        "rails": [
+          {
+            "side": "right",
+            "y": 440,
+            "h": 100,
+            "charges": 0,
+            "maxCharges": 3
+          },
+          {
+            "side": "left",
+            "y": 500,
+            "h": 110,
+            "charges": 2,
+            "maxCharges": 3
+          }
+        ],
+        "air": [
+          {
+            "x": 38,
+            "y": 355,
+            "w": 344,
+            "h": 200,
+            "fx": 95,
+            "fy": 0,
+            "plume": true
+          }
+        ],
+        "flow": [
+          {
+            "strength": 1,
+            "fx": 95,
+            "fy": 0
+          }
+        ],
+        "stats": {
+          "hits": 3,
+          "flight": 6.166666666666763,
+          "boosts": 7,
+          "energy": 146000,
+          "rescues": 0,
+          "returns": 0,
+          "rebounds": 0,
+          "recharges": 0,
+          "pulses": 0,
+          "pickups": 1,
+          "paddleHits": 2,
+          "orbitBreaks": 0,
+          "gateVents": 0,
+          "pegRetractions": 0
+        }
+      }
+    },
+    {
+      "level": 22,
+      "material": "rubber",
+      "size": "standard",
+      "mirror": false,
+      "cadence": 14,
+      "result": "won",
+      "shots": [
+        63.05,
+        15.075
+      ],
+      "multiGap": 8.641666666666817,
+      "maxNoHit": 8.65000000000015,
+      "worst": {
+        "time": 12.32499999999994,
+        "shot": 1,
+        "ball": {
+          "x": 75.75020642679159,
+          "y": 604.6153354618698,
+          "vx": -147.0955658286758,
+          "vy": 696.7691693273371,
+          "r": 12
+        },
+        "paddle": {
+          "x": 94,
+          "target": 94,
+          "width": 144,
+          "vx": 0,
+          "flash": 0,
+          "tilt": 0,
+          "boost": 18000
+        },
+        "progress": {
+          "sinceHit": 8.641666666666817,
+          "maxNoHit": 8.641666666666817,
+          "catchesWithoutHit": 3,
+          "maxCatchesWithoutHit": 3
+        },
+        "targets": [
+          {
+            "x": 310,
+            "y": 400,
+            "hp": 2,
+            "kind": "diamond",
+            "size": 48,
+            "core": false,
+            "id": 1,
+            "maxHp": 3,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 210,
+            "y": 490,
+            "hp": 8,
+            "kind": "hexagon",
+            "size": 48,
+            "core": false,
+            "id": 2,
+            "maxHp": 10,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 310,
+            "y": 570,
+            "hp": 14,
+            "kind": "capacitor",
+            "size": 48,
+            "core": true,
+            "id": 3,
+            "maxHp": 14,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 100,
+            "y": 610,
+            "hp": 8,
+            "kind": "prism",
+            "size": 48,
+            "power": "spring",
+            "core": false,
+            "id": 4,
+            "maxHp": 8,
+            "flash": 0,
+            "vx": 0
+          }
+        ],
+        "gates": [],
+        "pegs": [],
+        "rails": [
+          {
+            "side": "left",
+            "y": 440,
+            "h": 100,
+            "charges": 2,
+            "maxCharges": 3
+          },
+          {
+            "side": "right",
+            "y": 500,
+            "h": 110,
+            "charges": 3,
+            "maxCharges": 3
+          }
+        ],
+        "air": [
+          {
+            "x": 38,
+            "y": 355,
+            "w": 344,
+            "h": 200,
+            "fx": -95,
+            "fy": 0,
+            "plume": true
+          }
+        ],
+        "flow": [
+          {
+            "strength": 0,
+            "fx": -95,
+            "fy": 0
+          }
+        ],
+        "stats": {
+          "hits": 5,
+          "flight": 12.32499999999994,
+          "boosts": 5,
+          "energy": 94000,
+          "rescues": 0,
+          "returns": 0,
+          "rebounds": 0,
+          "recharges": 0,
+          "pulses": 0,
+          "pickups": 1,
+          "paddleHits": 4,
+          "orbitBreaks": 0,
+          "gateVents": 0,
+          "pegRetractions": 0
+        }
+      }
+    },
+    {
+      "level": 22,
+      "material": "rubber",
+      "size": "standard",
+      "mirror": false,
+      "cadence": 24,
+      "result": "won",
+      "shots": [
+        24.441666666666666,
+        0.65,
+        0.65,
+        0.65,
+        0.65,
+        0.65,
+        0.65,
+        0.65,
+        0.65,
+        0.65
+      ],
+      "multiGap": 3.166666666666658,
+      "maxNoHit": 3.1749999999999914,
+      "worst": {
+        "time": 24.12499999999927,
+        "shot": 1,
+        "ball": {
+          "x": 69.9729781176477,
+          "y": 618.0212183397017,
+          "vx": -59.30626887534619,
+          "vy": 406.1109315642475,
+          "r": 12
+        },
+        "paddle": {
+          "x": 94,
+          "target": 94,
+          "width": 144,
+          "vx": 0,
+          "flash": 0,
+          "tilt": 0,
+          "boost": 18000
+        },
+        "progress": {
+          "sinceHit": 3.166666666666658,
+          "maxNoHit": 3.166666666666658,
+          "catchesWithoutHit": 0,
+          "maxCatchesWithoutHit": 1
+        },
+        "targets": [
+          {
+            "x": 210,
+            "y": 490,
+            "hp": 3,
+            "kind": "hexagon",
+            "size": 48,
+            "core": false,
+            "id": 2,
+            "maxHp": 10,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 310,
+            "y": 570,
+            "hp": 9,
+            "kind": "capacitor",
+            "size": 48,
+            "core": true,
+            "id": 3,
+            "maxHp": 14,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 100,
+            "y": 610,
+            "hp": 4,
+            "kind": "prism",
+            "size": 48,
+            "power": "spring",
+            "core": false,
+            "id": 4,
+            "maxHp": 8,
+            "flash": 0,
+            "vx": 0
+          }
+        ],
+        "gates": [],
+        "pegs": [],
+        "rails": [
+          {
+            "side": "left",
+            "y": 440,
+            "h": 100,
+            "charges": 1,
+            "maxCharges": 3
+          },
+          {
+            "side": "right",
+            "y": 500,
+            "h": 110,
+            "charges": 2,
+            "maxCharges": 3
+          }
+        ],
+        "air": [
+          {
+            "x": 38,
+            "y": 355,
+            "w": 344,
+            "h": 200,
+            "fx": -95,
+            "fy": 0,
+            "plume": true
+          }
+        ],
+        "flow": [
+          {
+            "strength": 0,
+            "fx": -95,
+            "fy": 0
+          }
+        ],
+        "stats": {
+          "hits": 21,
+          "flight": 24.12499999999927,
+          "boosts": 11,
+          "energy": 226000,
+          "rescues": 0,
+          "returns": 0,
+          "rebounds": 0,
+          "recharges": 0,
+          "pulses": 0,
+          "pickups": 3,
+          "paddleHits": 4,
+          "orbitBreaks": 0,
+          "gateVents": 0,
+          "pegRetractions": 0
+        }
+      }
+    },
+    {
+      "level": 22,
+      "material": "rubber",
+      "size": "standard",
+      "mirror": true,
+      "cadence": 14,
+      "result": "won",
+      "shots": [
+        3.3833333333333333,
+        84.64166666666667
+      ],
+      "multiGap": 3.4583333333333237,
+      "maxNoHit": 9.383333333333441,
+      "worst": {
+        "time": 17.166666666666334,
+        "shot": 2,
+        "ball": {
+          "x": 84.43024778955457,
+          "y": 419.65313236328575,
+          "vx": -245.91788327641763,
+          "vy": -754.2078107077164,
+          "r": 12
+        },
+        "paddle": {
+          "x": 263.6985762140773,
+          "target": 312.6024677099482,
+          "width": 144,
+          "vx": 900,
+          "flash": 0,
+          "tilt": 0,
+          "boost": 18000
+        },
+        "progress": {
+          "sinceHit": 3.4583333333333237,
+          "maxNoHit": 3.4583333333333237,
+          "catchesWithoutHit": 1,
+          "maxCatchesWithoutHit": 1
+        },
+        "targets": [
+          {
+            "x": 110,
+            "y": 400,
+            "hp": 1,
+            "kind": "diamond",
+            "size": 48,
+            "core": false,
+            "id": 1,
+            "maxHp": 3,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 210,
+            "y": 490,
+            "hp": 10,
+            "kind": "hexagon",
+            "size": 48,
+            "core": false,
+            "id": 2,
+            "maxHp": 10,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 110,
+            "y": 570,
+            "hp": 11,
+            "kind": "capacitor",
+            "size": 48,
+            "core": true,
+            "id": 3,
+            "maxHp": 14,
+            "flash": 0,
+            "vx": 0
+          }
+        ],
+        "gates": [],
+        "pegs": [],
+        "rails": [
+          {
+            "side": "right",
+            "y": 440,
+            "h": 100,
+            "charges": 0,
+            "maxCharges": 3
+          },
+          {
+            "side": "left",
+            "y": 500,
+            "h": 110,
+            "charges": 3,
+            "maxCharges": 3
+          }
+        ],
+        "air": [
+          {
+            "x": 38,
+            "y": 355,
+            "w": 344,
+            "h": 200,
+            "fx": 95,
+            "fy": 0,
+            "plume": true
+          }
+        ],
+        "flow": [
+          {
+            "strength": 0.9911793916841342,
+            "fx": 95,
+            "fy": 0
+          }
+        ],
+        "stats": {
+          "hits": 15,
+          "flight": 17.166666666666334,
+          "boosts": 15,
+          "energy": 322000,
+          "rescues": 0,
+          "returns": 0,
+          "rebounds": 0,
+          "recharges": 0,
+          "pulses": 0,
+          "pickups": 2,
+          "paddleHits": 2,
+          "orbitBreaks": 0,
+          "gateVents": 0,
+          "pegRetractions": 0
+        }
+      }
+    },
+    {
+      "level": 22,
+      "material": "rubber",
+      "size": "standard",
+      "mirror": true,
+      "cadence": 24,
+      "result": "over",
+      "shots": [
+        3.3833333333333333,
+        0.65,
+        0.65,
+        0.65,
+        0.65,
+        0.65,
+        0.65,
+        0.65,
+        0.65,
+        0.65
+      ],
+      "multiGap": 1.3999999999999975,
+      "maxNoHit": 1.4083333333333308,
+      "worst": {
+        "time": 3.0749999999999917,
+        "shot": 1,
+        "ball": {
+          "x": 76.73575308693795,
+          "y": 555.5831618743215,
+          "vx": 560.8290370432552,
+          "vy": 668.1589879879172,
+          "r": 12
+        },
+        "paddle": {
+          "x": 137.5,
+          "target": 198.99467810733762,
+          "width": 96,
+          "vx": 900,
+          "flash": 0,
+          "tilt": 0,
+          "boost": 18000
+        },
+        "progress": {
+          "sinceHit": 1.3999999999999975,
+          "maxNoHit": 1.3999999999999975,
+          "catchesWithoutHit": 0,
+          "maxCatchesWithoutHit": 0
+        },
+        "targets": [
+          {
+            "x": 315,
+            "y": 340,
+            "hp": 1,
+            "kind": "bar",
+            "size": 48,
+            "core": false,
+            "id": 0,
+            "maxHp": 2,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 110,
+            "y": 400,
+            "hp": 3,
+            "kind": "diamond",
+            "size": 48,
+            "core": false,
+            "id": 1,
+            "maxHp": 3,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 210,
+            "y": 490,
+            "hp": 10,
+            "kind": "hexagon",
+            "size": 48,
+            "core": false,
+            "id": 2,
+            "maxHp": 10,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 110,
+            "y": 570,
+            "hp": 14,
+            "kind": "capacitor",
+            "size": 48,
+            "core": true,
+            "id": 3,
+            "maxHp": 14,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 320,
+            "y": 610,
+            "hp": 4,
+            "kind": "prism",
+            "size": 48,
+            "power": "spring",
+            "core": false,
+            "id": 4,
+            "maxHp": 8,
+            "flash": 0,
+            "vx": 0
+          }
+        ],
+        "gates": [],
+        "pegs": [],
+        "rails": [
+          {
+            "side": "right",
+            "y": 440,
+            "h": 100,
+            "charges": 3,
+            "maxCharges": 3
+          },
+          {
+            "side": "left",
+            "y": 500,
+            "h": 110,
+            "charges": 2,
+            "maxCharges": 3
+          }
+        ],
+        "air": [
+          {
+            "x": 38,
+            "y": 355,
+            "w": 344,
+            "h": 200,
+            "fx": 95,
+            "fy": 0,
+            "plume": true
+          }
+        ],
+        "flow": [
+          {
+            "strength": 0,
+            "fx": 95,
+            "fy": 0
+          }
+        ],
+        "stats": {
+          "hits": 5,
+          "flight": 3.0749999999999917,
+          "boosts": 5,
+          "energy": 110000,
+          "rescues": 0,
+          "returns": 0,
+          "rebounds": 0,
+          "recharges": 0,
+          "pulses": 0,
+          "pickups": 0,
+          "paddleHits": 0,
+          "orbitBreaks": 0,
+          "gateVents": 0,
+          "pegRetractions": 0
+        }
+      }
+    },
+    {
+      "level": 22,
+      "material": "rubber",
+      "size": "large",
+      "mirror": false,
+      "cadence": 14,
+      "result": "won",
+      "shots": [
+        90.825
+      ],
+      "multiGap": 3.8083333333333225,
+      "maxNoHit": 8.341666666666834,
+      "worst": {
+        "time": 13.266666666666554,
+        "shot": 1,
+        "ball": {
+          "x": 308.34434172886097,
+          "y": 358.5614129645409,
+          "vx": 274.3443417288611,
+          "vy": 308.9521270404196,
+          "r": 16
+        },
+        "paddle": {
+          "x": 309.050778172956,
+          "target": 309.050778172956,
+          "width": 144,
+          "vx": 0,
+          "flash": 0,
+          "tilt": 0,
+          "boost": 18000
+        },
+        "progress": {
+          "sinceHit": 3.8083333333333225,
+          "maxNoHit": 3.8083333333333225,
+          "catchesWithoutHit": 1,
+          "maxCatchesWithoutHit": 1
+        },
+        "targets": [
+          {
+            "x": 310,
+            "y": 400,
+            "hp": 3,
+            "kind": "diamond",
+            "size": 48,
+            "core": false,
+            "id": 1,
+            "maxHp": 3,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 210,
+            "y": 490,
+            "hp": 10,
+            "kind": "hexagon",
+            "size": 48,
+            "core": false,
+            "id": 2,
+            "maxHp": 10,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 310,
+            "y": 570,
+            "hp": 11,
+            "kind": "capacitor",
+            "size": 48,
+            "core": true,
+            "id": 3,
+            "maxHp": 14,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 100,
+            "y": 610,
+            "hp": 6,
+            "kind": "prism",
+            "size": 48,
+            "power": "spring",
+            "core": false,
+            "id": 4,
+            "maxHp": 8,
+            "flash": 0,
+            "vx": 0
+          }
+        ],
+        "gates": [],
+        "pegs": [],
+        "rails": [
+          {
+            "side": "left",
+            "y": 440,
+            "h": 100,
+            "charges": 1,
+            "maxCharges": 3
+          },
+          {
+            "side": "right",
+            "y": 500,
+            "h": 110,
+            "charges": 1,
+            "maxCharges": 3
+          }
+        ],
+        "air": [
+          {
+            "x": 38,
+            "y": 355,
+            "w": 344,
+            "h": 200,
+            "fx": -95,
+            "fy": 0,
+            "plume": true
+          }
+        ],
+        "flow": [
+          {
+            "strength": 0,
+            "fx": -95,
+            "fy": 0
+          }
+        ],
+        "stats": {
+          "hits": 7,
+          "flight": 13.266666666666554,
+          "boosts": 8,
+          "energy": 168000,
+          "rescues": 0,
+          "returns": 0,
+          "rebounds": 0,
+          "recharges": 0,
+          "pulses": 0,
+          "pickups": 2,
+          "paddleHits": 2,
+          "orbitBreaks": 0,
+          "gateVents": 0,
+          "pegRetractions": 0
+        }
+      }
+    },
+    {
+      "level": 22,
+      "material": "rubber",
+      "size": "large",
+      "mirror": false,
+      "cadence": 24,
+      "result": "won",
+      "shots": [
+        9.45,
+        62.81666666666666,
+        6.233333333333333,
+        8.875,
+        11.241666666666667
+      ],
+      "multiGap": 14.09999999999984,
+      "maxNoHit": 14.108333333333173,
+      "worst": {
+        "time": 41.94999999999826,
+        "shot": 2,
+        "ball": {
+          "x": 202.53676751491741,
+          "y": 449.837655353,
+          "vx": 21.503228401442442,
+          "vy": 578.5651771735063,
+          "r": 16
+        },
+        "paddle": {
+          "x": 266.7026249147149,
+          "target": 266.7026249147149,
+          "width": 144,
+          "vx": 0,
+          "flash": 0,
+          "tilt": 0.01635742187499998,
+          "boost": 18000
+        },
+        "progress": {
+          "sinceHit": 14.09999999999984,
+          "maxNoHit": 14.09999999999984,
+          "catchesWithoutHit": 5,
+          "maxCatchesWithoutHit": 5
+        },
+        "targets": [
+          {
+            "x": 310,
+            "y": 400,
+            "hp": 2,
+            "kind": "diamond",
+            "size": 48,
+            "core": false,
+            "id": 1,
+            "maxHp": 3,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 210,
+            "y": 490,
+            "hp": 6,
+            "kind": "hexagon",
+            "size": 48,
+            "core": false,
+            "id": 2,
+            "maxHp": 10,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 310,
+            "y": 570,
+            "hp": 10,
+            "kind": "capacitor",
+            "size": 48,
+            "core": true,
+            "id": 3,
+            "maxHp": 14,
+            "flash": 0,
+            "vx": 0
+          }
+        ],
+        "gates": [],
+        "pegs": [],
+        "rails": [
+          {
+            "side": "left",
+            "y": 440,
+            "h": 100,
+            "charges": 0,
+            "maxCharges": 3
+          },
+          {
+            "side": "right",
+            "y": 500,
+            "h": 110,
+            "charges": 2,
+            "maxCharges": 3
+          }
+        ],
+        "air": [
+          {
+            "x": 38,
+            "y": 355,
+            "w": 344,
+            "h": 200,
+            "fx": -95,
+            "fy": 0,
+            "plume": true
+          }
+        ],
+        "flow": [
+          {
+            "strength": 1,
+            "fx": -95,
+            "fy": 0
+          }
+        ],
+        "stats": {
+          "hits": 19,
+          "flight": 41.94999999999826,
+          "boosts": 26,
+          "energy": 546000,
+          "rescues": 0,
+          "returns": 0,
+          "rebounds": 0,
+          "recharges": 0,
+          "pulses": 0,
+          "pickups": 1,
+          "paddleHits": 12,
+          "orbitBreaks": 1,
+          "gateVents": 0,
+          "pegRetractions": 0
+        }
+      }
+    },
+    {
+      "level": 22,
+      "material": "rubber",
+      "size": "large",
+      "mirror": true,
+      "cadence": 14,
+      "result": "won",
+      "shots": [
+        1.7,
+        69.525
+      ],
+      "multiGap": 5.216666666666716,
+      "maxNoHit": 7.7000000000001725,
+      "worst": {
+        "time": 30.26666666666559,
+        "shot": 2,
+        "ball": {
+          "x": 142.84156479403896,
+          "y": 593.7807383720785,
+          "vx": -353.57747042109816,
+          "vy": -623.0587014925541,
+          "r": 16
+        },
+        "paddle": {
+          "x": 227.42632772317043,
+          "target": 326,
+          "width": 144,
+          "vx": 900,
+          "flash": 0.041666666666666685,
+          "tilt": 0,
+          "boost": 18000
+        },
+        "progress": {
+          "sinceHit": 5.216666666666716,
+          "maxNoHit": 5.216666666666716,
+          "catchesWithoutHit": 2,
+          "maxCatchesWithoutHit": 2
+        },
+        "targets": [
+          {
+            "x": 110,
+            "y": 400,
+            "hp": 3,
+            "kind": "diamond",
+            "size": 48,
+            "core": false,
+            "id": 1,
+            "maxHp": 3,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 210,
+            "y": 490,
+            "hp": 3,
+            "kind": "hexagon",
+            "size": 48,
+            "core": false,
+            "id": 2,
+            "maxHp": 10,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 110,
+            "y": 570,
+            "hp": 8,
+            "kind": "capacitor",
+            "size": 48,
+            "core": true,
+            "id": 3,
+            "maxHp": 14,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 320,
+            "y": 610,
+            "hp": 4,
+            "kind": "prism",
+            "size": 48,
+            "power": "spring",
+            "core": false,
+            "id": 4,
+            "maxHp": 8,
+            "flash": 0,
+            "vx": 0
+          }
+        ],
+        "gates": [],
+        "pegs": [],
+        "rails": [
+          {
+            "side": "right",
+            "y": 440,
+            "h": 100,
+            "charges": 0,
+            "maxCharges": 3
+          },
+          {
+            "side": "left",
+            "y": 500,
+            "h": 110,
+            "charges": 1,
+            "maxCharges": 3
+          }
+        ],
+        "air": [
+          {
+            "x": 38,
+            "y": 355,
+            "w": 344,
+            "h": 200,
+            "fx": 95,
+            "fy": 0,
+            "plume": true
+          }
+        ],
+        "flow": [
+          {
+            "strength": 0,
+            "fx": 95,
+            "fy": 0
+          }
+        ],
+        "stats": {
+          "hits": 19,
+          "flight": 30.26666666666559,
+          "boosts": 20,
+          "energy": 400000,
+          "rescues": 0,
+          "returns": 0,
+          "rebounds": 0,
+          "recharges": 0,
+          "pulses": 0,
+          "pickups": 3,
+          "paddleHits": 10,
+          "orbitBreaks": 0,
+          "gateVents": 0,
+          "pegRetractions": 0
+        }
+      }
+    },
+    {
+      "level": 22,
+      "material": "rubber",
+      "size": "large",
+      "mirror": true,
+      "cadence": 24,
+      "result": "won",
+      "shots": [
+        59.93333333333333,
+        50.93333333333333
+      ],
+      "multiGap": 9.941666666666743,
+      "maxNoHit": 10.666666666666702,
+      "worst": {
+        "time": 58.69999999999731,
+        "shot": 1,
+        "ball": {
+          "x": 245.24445946983815,
+          "y": 513.7367103683856,
+          "vx": -352.71669432609474,
+          "vy": -455.5075381287634,
+          "r": 16
+        },
+        "paddle": {
+          "x": 260,
+          "target": 70,
+          "width": 96,
+          "vx": -900,
+          "flash": 0,
+          "tilt": 0.3,
+          "boost": 22000
+        },
+        "progress": {
+          "sinceHit": 9.941666666666743,
+          "maxNoHit": 9.941666666666743,
+          "catchesWithoutHit": 4,
+          "maxCatchesWithoutHit": 4
+        },
+        "targets": [
+          {
+            "x": 110,
+            "y": 400,
+            "hp": 1,
+            "kind": "diamond",
+            "size": 48,
+            "core": false,
+            "id": 1,
+            "maxHp": 3,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 210,
+            "y": 490,
+            "hp": 1,
+            "kind": "hexagon",
+            "size": 48,
+            "core": false,
+            "id": 2,
+            "maxHp": 10,
+            "flash": 0,
+            "vx": 0
+          },
+          {
+            "x": 110,
+            "y": 570,
+            "hp": 9,
+            "kind": "capacitor",
+            "size": 48,
+            "core": true,
+            "id": 3,
+            "maxHp": 14,
+            "flash": 0,
+            "vx": 0
+          }
+        ],
+        "gates": [],
+        "pegs": [],
+        "rails": [
+          {
+            "side": "right",
+            "y": 440,
+            "h": 100,
+            "charges": 0,
+            "maxCharges": 3
+          },
+          {
+            "side": "left",
+            "y": 500,
+            "h": 110,
+            "charges": 3,
+            "maxCharges": 3
+          }
+        ],
+        "air": [
+          {
+            "x": 38,
+            "y": 355,
+            "w": 344,
+            "h": 200,
+            "fx": 95,
+            "fy": 0,
+            "plume": true
+          }
+        ],
+        "flow": [
+          {
+            "strength": 1,
+            "fx": 95,
+            "fy": 0
+          }
+        ],
+        "stats": {
+          "hits": 26,
+          "flight": 58.69999999999731,
+          "boosts": 35,
+          "energy": 674000,
+          "rescues": 0,
+          "returns": 0,
+          "rebounds": 0,
+          "recharges": 0,
+          "pulses": 0,
+          "pickups": 3,
+          "paddleHits": 24,
+          "orbitBreaks": 2,
+          "gateVents": 0,
+          "pegRetractions": 0
+        }
+      }
+    }
+  ]
+}

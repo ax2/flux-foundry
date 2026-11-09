@@ -1,0 +1,15 @@
+{
+  "method": "Actual old release build and current production build at an isolated loopback origin; real legal UI win, native SW and explicit settings update.",
+  "injection": "No injected storage, network faults or game state.",
+  "url": "http://127.0.0.1:50179/",
+  "from": "0.21.0",
+  "to": "0.22.0",
+  "oldScript": "./assets/index-BTFPyUgV.js",
+  "deployedScript": "./assets/index-DOIiczkk.js",
+  "checks": [
+    "real public old version earns a natural one-ball three-star result",
+    "public new worker waits for explicit user choice with old result intact",
+    "actual public new version loads full original PNG and keeps the earned result"
+  ],
+  "errors": []
+}

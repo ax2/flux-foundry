@@ -1,0 +1,21 @@
+npm warn Unknown env config "devdir". This will error in a future major version of npm. See `npm help npmrc` for supported config options.
+npm notice run flux-foundry@0.22.0 test:play
+npm notice run node scripts/paddle-play.mjs --sparse --level=22
+{"output":"test-results/stage25-final-ui-sparse"}
+{"level":22,"flight":0.03333333333333333,"hits":0,"catches":0,"noHit":0.03333333333333333,"paused":false,"visibility":"visible"}
+{"level":22,"flight":9.941666666666743,"hits":7,"catches":2,"noHit":0.483333333333334,"paused":false,"visibility":"visible"}
+{"level":22,"flight":20.874999999999456,"hits":12,"catches":2,"noHit":1.8499999999999959,"paused":false,"visibility":"visible"}
+{"level":22,"flight":31.283333333332198,"hits":19,"catches":5,"noHit":1.4499999999999973,"paused":false,"visibility":"visible"}
+{"level":22,"flight":41.44166666666496,"hits":22,"catches":8,"noHit":4.7583333333333595,"paused":false,"visibility":"visible"}
+{"level":22,"flight":51.32499999999773,"hits":28,"catches":13,"noHit":4.833333333333363,"paused":false,"visibility":"visible"}
+{"level":22,"flight":61.508333333330484,"hits":36,"catches":19,"noHit":0,"paused":false,"visibility":"visible"}
+{"level":22,"shot":1,"hits":36,"catches":19,"pickups":1,"seconds":61.90833333333046,"moves":423,"remaining":9,"phase":"won"}
+{"level":22,"flight":0.016666666666666666,"hits":0,"catches":0,"noHit":0.016666666666666666,"paused":false,"visibility":"visible"}
+{"level":22,"flight":9.866666666666747,"hits":5,"catches":2,"noHit":4.316666666666671,"paused":false,"visibility":"visible"}
+{"level":22,"flight":20.79999999999946,"hits":10,"catches":3,"noHit":0.10833333333333332,"paused":false,"visibility":"visible"}
+{"level":22,"flight":30.76666666666556,"hits":16,"catches":4,"noHit":4.283333333333336,"paused":false,"visibility":"visible"}
+{"level":22,"shot":1,"hits":25,"catches":11,"pickups":3,"seconds":39.98333333333171,"moves":275,"remaining":11,"phase":"aim"}
+{"level":22,"flight":39.99999999999837,"hits":25,"catches":11,"noHit":0.016666666666666666,"paused":false,"visibility":"visible"}
+{"level":22,"flight":49.90833333333114,"hits":31,"catches":15,"noHit":4.275000000000002,"paused":false,"visibility":"visible"}
+{"level":22,"flight":59.674999999997254,"hits":35,"catches":20,"noHit":4.166666666666663,"paused":false,"visibility":"visible"}
+{"level":22,"shot":2,"hits":12,"catches":9,"pickups":2,"seconds":27.883333333335038,"moves":199,"remaining":11,"phase":"won"}
