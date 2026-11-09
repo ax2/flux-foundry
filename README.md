@@ -10,6 +10,8 @@
 
 第 19 关的风井保留原风力并平移。第 22 关在只剩同侧低位核心时，挡板可为靠墙球提前准备能命中的真实反弹。两轮的取舍和验收见 [风井](docs/iterations/Stage-24/assessment.md) 与 [横风残局](docs/iterations/Stage-25/assessment.md)。
 
+[v0.22.0 Windows 下载](https://github.com/ax2/flux-foundry/releases/tag/v0.22.0) · [手机与浏览器试玩](https://ax2.github.io/flux-foundry/)
+
 ## v0.21.0 侧边回弹校正
 
 贴边连续空接时，只有普通反弹预测会落空、另一条真实反弹能扣数，才提前准备挡板。第12关两条18.50秒路线降至11.66秒，合法续打仍三星，耗珠4/2→2/3。原PNG、无限接球、自然完整落底和现有进度保持。144逻辑、6336固定输入、原52套自然三星、8套新增续打与4局触控通过。[v0.21.0已公开](https://github.com/ax2/flux-foundry/releases/tag/v0.21.0)，完整源码CI、Pages、Windows及公开EXE下载校验/实际启动通过。[实际取舍与验证](docs/iterations/Stage-23/assessment.md)。
@@ -53,9 +55,9 @@ v0.20.0为上一公开版；当前修复继续保留已存星级。Stage-08的�
 
 ## 交付与验证
 
-Windows x64：最新公开`Flux-Foundry-0.21.0-Windows-x64.exe`便携启动，本地位于`releases/v0.21.0/`，保留win-unpacked完整运行目录与EXE，无游戏ZIP。手机为触屏Web/PWA，首次联网加载后可离线重开；未交付APK/iOS原生包。Windows未签名，实体手机/低端性能仍待验收。
+Windows x64 便携版为 `Flux-Foundry-0.22.0-Windows-x64.exe`。本地 `releases/v0.22.0/` 保留完整 `win-unpacked` 运行目录和 EXE。手机为触屏 Web/PWA，首次联网加载后可离线重开。Windows 未签名，实体手机及低端性能仍待验收。
 
-当前验证见Stage-23，历史发布资格见各Stage评估。PCM渲染和自动触控不代表实体手机、真实扬声器或人耳听感验收。旧v0.17.0标签是未发布尝试；17.1干净安装的下载分支已通过云端验证。历史远征附件更正见阶段评估，旧文件保留。完整原图3.40MB，低带宽就绪仍会较慢，进度持续显示。
+当前验证见 Stage-25，历史发布资格见各阶段评估。PCM 渲染和自动触控覆盖软件层。实体手机、真实扬声器与人耳听感待验。完整原图约 3.40 MB，低带宽下会逐步显示加载进度。
 
 [本轮评估](docs/iterations/Stage-18/assessment.md) · [工作日志](docs/iterations/Stage-18/worklog.md) · [音效预览](docs/iterations/Stage-18/cue-preview.wav)
 
