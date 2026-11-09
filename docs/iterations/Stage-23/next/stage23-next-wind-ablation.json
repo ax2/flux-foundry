@@ -1,0 +1,287 @@
+{
+  "method": "Separate diagnostic Games replay identical legal input to the same real shot3 last-hit state. Only nonproduction branches suppress one airflow component from that frame. Stop observation at next hit/collection/30s, never alter ball or certify win. No production source change.",
+  "rows": [
+    {
+      "variant": "actual",
+      "start": {
+        "time": 22.016666666666058,
+        "ball": {
+          "x": 167.39793433958405,
+          "y": 513.826179233454,
+          "vx": 404.5626418162481,
+          "vy": -118.05738100516261,
+          "r": 9
+        },
+        "paddle": {
+          "x": 127.81974399925063,
+          "target": 127.81974399925063,
+          "width": 96,
+          "vx": 0,
+          "flash": 0,
+          "tilt": 0,
+          "boost": 18000
+        },
+        "air": [
+          {
+            "x": 95,
+            "y": 360,
+            "w": 230,
+            "h": 270,
+            "fx": 12,
+            "fy": -48,
+            "plume": true
+          }
+        ],
+        "targets": [
+          {
+            "x": 145,
+            "y": 540,
+            "hp": 2,
+            "kind": "capacitor",
+            "size": 48,
+            "core": true,
+            "id": 2,
+            "maxHp": 8,
+            "flash": 0.12,
+            "vx": 0
+          },
+          {
+            "x": 296.5122238156104,
+            "y": 610,
+            "hp": 5,
+            "kind": "prism",
+            "size": 48,
+            "power": "spring",
+            "core": false,
+            "id": 3,
+            "maxHp": 9,
+            "flash": 0,
+            "motion": {
+              "baseX": 285,
+              "amplitude": 14,
+              "speed": 0.8999999999999999
+            },
+            "vx": 7.170052251108563
+          },
+          {
+            "x": 210,
+            "y": 630,
+            "hp": 4,
+            "kind": "bar",
+            "size": 48,
+            "power": "spring",
+            "core": false,
+            "id": 4,
+            "maxHp": 6,
+            "flash": 0,
+            "vx": 0
+          }
+        ],
+        "hits": 20,
+        "catches": 4
+      },
+      "final": {
+        "seconds": 17.608333333332336,
+        "phase": "volley",
+        "hits": 1,
+        "catches": 1,
+        "ball": {
+          "x": 284.08456672856113,
+          "y": 580.1565194020776,
+          "vx": 1030.7370413148287,
+          "vy": -129.78651646851927,
+          "r": 9
+        },
+        "natural": false
+      }
+    },
+    {
+      "variant": "diagnostic-no-vertical",
+      "start": {
+        "time": 22.016666666666058,
+        "ball": {
+          "x": 167.39793433958405,
+          "y": 513.826179233454,
+          "vx": 404.5626418162481,
+          "vy": -118.05738100516261,
+          "r": 9
+        },
+        "paddle": {
+          "x": 127.81974399925063,
+          "target": 127.81974399925063,
+          "width": 96,
+          "vx": 0,
+          "flash": 0,
+          "tilt": 0,
+          "boost": 18000
+        },
+        "air": [
+          {
+            "x": 95,
+            "y": 360,
+            "w": 230,
+            "h": 270,
+            "fx": 12,
+            "fy": -48,
+            "plume": true
+          }
+        ],
+        "targets": [
+          {
+            "x": 145,
+            "y": 540,
+            "hp": 2,
+            "kind": "capacitor",
+            "size": 48,
+            "core": true,
+            "id": 2,
+            "maxHp": 8,
+            "flash": 0.12,
+            "vx": 0
+          },
+          {
+            "x": 296.5122238156104,
+            "y": 610,
+            "hp": 5,
+            "kind": "prism",
+            "size": 48,
+            "power": "spring",
+            "core": false,
+            "id": 3,
+            "maxHp": 9,
+            "flash": 0,
+            "motion": {
+              "baseX": 285,
+              "amplitude": 14,
+              "speed": 0.8999999999999999
+            },
+            "vx": 7.170052251108563
+          },
+          {
+            "x": 210,
+            "y": 630,
+            "hp": 4,
+            "kind": "bar",
+            "size": 48,
+            "power": "spring",
+            "core": false,
+            "id": 4,
+            "maxHp": 6,
+            "flash": 0,
+            "vx": 0
+          }
+        ],
+        "hits": 20,
+        "catches": 4
+      },
+      "final": {
+        "seconds": 1.0999999999999375,
+        "phase": "volley",
+        "hits": 1,
+        "catches": 0,
+        "ball": {
+          "x": 176.1197073902797,
+          "y": 529.0198446302718,
+          "vx": 255.83640025515888,
+          "vy": -46.178316681525416,
+          "r": 9
+        },
+        "natural": false
+      }
+    },
+    {
+      "variant": "diagnostic-no-horizontal",
+      "start": {
+        "time": 22.016666666666058,
+        "ball": {
+          "x": 167.39793433958405,
+          "y": 513.826179233454,
+          "vx": 404.5626418162481,
+          "vy": -118.05738100516261,
+          "r": 9
+        },
+        "paddle": {
+          "x": 127.81974399925063,
+          "target": 127.81974399925063,
+          "width": 96,
+          "vx": 0,
+          "flash": 0,
+          "tilt": 0,
+          "boost": 18000
+        },
+        "air": [
+          {
+            "x": 95,
+            "y": 360,
+            "w": 230,
+            "h": 270,
+            "fx": 12,
+            "fy": -48,
+            "plume": true
+          }
+        ],
+        "targets": [
+          {
+            "x": 145,
+            "y": 540,
+            "hp": 2,
+            "kind": "capacitor",
+            "size": 48,
+            "core": true,
+            "id": 2,
+            "maxHp": 8,
+            "flash": 0.12,
+            "vx": 0
+          },
+          {
+            "x": 296.5122238156104,
+            "y": 610,
+            "hp": 5,
+            "kind": "prism",
+            "size": 48,
+            "power": "spring",
+            "core": false,
+            "id": 3,
+            "maxHp": 9,
+            "flash": 0,
+            "motion": {
+              "baseX": 285,
+              "amplitude": 14,
+              "speed": 0.8999999999999999
+            },
+            "vx": 7.170052251108563
+          },
+          {
+            "x": 210,
+            "y": 630,
+            "hp": 4,
+            "kind": "bar",
+            "size": 48,
+            "power": "spring",
+            "core": false,
+            "id": 4,
+            "maxHp": 6,
+            "flash": 0,
+            "vx": 0
+          }
+        ],
+        "hits": 20,
+        "catches": 4
+      },
+      "final": {
+        "seconds": 3.5999999999997954,
+        "phase": "volley",
+        "hits": 1,
+        "catches": 0,
+        "ball": {
+          "x": 295.963786035079,
+          "y": 603.990591764139,
+          "vx": 928.1831081602095,
+          "vy": -122.20721047193558,
+          "r": 9
+        },
+        "natural": false
+      }
+    }
+  ]
+}
