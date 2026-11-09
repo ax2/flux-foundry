@@ -1,6 +1,6 @@
 import {Feedback} from './feedback';
 import {guidedRebound,forecastRebound,GUIDE_TILT_STEP} from './paddle-assist';
-import {advanceFree,collide,reflect,type Body,type Target,type Vec} from './physics';
+import {advanceFree,ballSubsteps,collide,reflect,type Body,type Target,type Vec} from './physics';
 import {catchPaddle,sweptPickup,type Paddle,type Treasure,type TreasureKind} from './arcade';
 import {airStrength} from './air';
 import {ballProperties,LEVELS,MATERIALS,SIZES,type Material,type BallSize,type Peg,type AirZone,type Gate,type Rail,type Choice} from './content';
@@ -173,7 +173,8 @@ export class Game{
    this.air.some(z=>z.fy===0&&Math.abs(z.fx)>=90);
   if(falling&&(regularGuide||edgeGuide||lowCoreEdgeGuide)&&falling.vy>0&&falling.y>470&&falling.y<675-falling.r+10&&this.time-this.lastGuideTime>=(falling.y>620?.025:.08)){
    this.lastGuideTime=this.time;
-   const environment={air:this.air,gates:this.gates,pegs:this.pegs,wind:this.windMultiplier,response:spec.windResponse,energyLimit:this.energyCapacity,allowLowerWork:this.progress.catchesWithoutHit>=misses},paddle={...this.paddle,x:oldPaddleX};
+   const movingEndgame=this.mode==='endless'&&this.targets.length===1&&this.lowEndgame&&this.targets[0].motion&&this.progress.sinceHit>=ASSIST_DELAY;
+   const environment={air:this.air,gates:this.gates,pegs:this.pegs,wind:this.windMultiplier,response:spec.windResponse,energyLimit:this.energyCapacity,allowLowerWork:this.progress.catchesWithoutHit>=misses,catchFrame:movingEndgame?dt:undefined},paddle={...this.paddle,x:oldPaddleX};
    // Preserve a useful ordinary rebound, including a previously prepared face.
    if(regularGuide||!forecastRebound(falling,paddle,this.targets,spec.mass,restitution,this.time-dt,environment,this.paddle.tilt||0,false,this.paddle.boost??18000).hit){
     const plan=guidedRebound(falling,paddle,this.targets,spec.mass,restitution,this.time-dt,environment,this.progress.sinceHit>=20||this.lowEndgame?.48:.32);
@@ -185,7 +186,7 @@ export class Game{
   }
   for(const b of this.balls){
    let supported=false;
-   const steps=Math.max(1,Math.ceil((Math.hypot(b.vx,b.vy)+2000*dt)*dt/(b.r*.45))),h=dt/steps;
+   const steps=ballSubsteps(b,dt),h=dt/steps;
    for(let sub=0;sub<steps;sub++){
     let ax=0,ay=GRAVITY;
     if(!this.safetyReturn){for(const z of this.air){const strength=airStrength(z,b);ax+=z.fx*spec.windResponse*strength*this.windMultiplier;ay+=z.fy*spec.windResponse*strength*this.windMultiplier;}

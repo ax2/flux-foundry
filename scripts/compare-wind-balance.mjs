@@ -10,6 +10,8 @@ const used = new Set();
 const reports = [];
 const crosswind = [];
 const crosswindRows = new Set([390, 402]);
+const expedition = [];
+const expeditionRows = new Map([[51, 13], [54, 12]]);
 const matrices = {
  'active-endurance.json': 12,
  'varied-endurance.json': 12,
@@ -42,6 +44,17 @@ for (const [matrix, ceiling] of Object.entries(matrices)) {
    assert.equal(row.shots.length, previous.shots.length, key);
    assert.ok(gap(row) < Math.min(12, gap(previous)), key);
    crosswind.push({index, before: previous, after: row});
+   continue;
+  }
+  if (matrix === 'endless-audit-extended.json' && expeditionRows.has(index)) {
+   assert.deepEqual(previous, old, key);
+   for (const field of ['seed', 'material', 'size', 'policy', 'phase', 'wave']) {
+    assert.equal(row[field], previous[field], `${key} ${field}`);
+   }
+   assert.equal(row.unresolved, false, key);
+   assert.equal(row.shots.length, previous.shots.length, key);
+   assert.ok(gap(row) < Math.min(expeditionRows.get(index), gap(previous)), key);
+   expedition.push({index, before: previous, after: row});
    continue;
   }
   assert.deepEqual(row, previous, key);
@@ -79,6 +92,7 @@ for (const [matrix, ceiling] of Object.entries(matrices)) {
 }
 assert.equal(used.size, certificates.size);
 assert.equal(crosswind.length, crosswindRows.size);
+assert.equal(expedition.length, expeditionRows.size);
 assert.equal(reports.reduce((sum, report) => sum + report.rows, 0), 6336);
 assert.equal(reports.reduce((sum, report) => sum + report.affected.length, 0), 252);
 for (const [name, expected] of Object.entries({
@@ -87,5 +101,5 @@ for (const [name, expected] of Object.entries({
 })) {
  assert.equal(createHash('sha256').update(await readFile(`src/assets/${name}`)).digest('hex'), expected);
 }
-await writeFile('test-results/wind-balance-comparison.json', JSON.stringify({certifiedContinuations: used.size, crosswind, reports}, null, 2));
+await writeFile('test-results/wind-balance-comparison.json', JSON.stringify({certifiedContinuations: used.size, crosswind, expedition, reports}, null, 2));
 console.log(JSON.stringify(reports.map(({matrix, rows, affected, after}) => ({matrix, rows, affected: affected.length, after}))));

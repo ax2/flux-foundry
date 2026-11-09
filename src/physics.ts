@@ -3,6 +3,9 @@ export type Body=Vec&{vx:number;vy:number;r:number};
 export type BlockKind='steel'|'prism'|'capacitor'|'diamond'|'hexagon'|'bar';
 export type Target=Vec&{id:number;kind:BlockKind;size:number;hp:number;maxHp:number;flash:number;power?:'spring'|'switch'|'valve';core?:boolean;anchor?:boolean;row?:number;motion?:{baseX:number;amplitude:number;speed:number};vx?:number};
 export const dot=(a:Vec,b:Vec)=>a.x*b.x+a.y*b.y;
+export function ballSubsteps(ball:Body,dt:number){
+ return Math.max(1,Math.ceil((Math.hypot(ball.vx,ball.vy)+2000*dt)*dt/(ball.r*.45)));
+}
 export function vertices(t:Target):Vec[]{
  const r=t.size/2;
  if(t.kind==='diamond')return [{x:t.x,y:t.y-r},{x:t.x+r,y:t.y},{x:t.x,y:t.y+r},{x:t.x-r,y:t.y}];

@@ -1,13 +1,16 @@
-import {type Body,reflect,advanceFree,collide,vertices,type Target} from './physics';
+import {type Body,reflect,advanceFree,ballSubsteps,collide,vertices,type Target} from './physics';
 import {catchPaddle,type Paddle} from './arcade';
 import {airStrength} from './air';
 import {type AirZone,type Gate,type Peg} from './content';
 export const GUIDE_TILT_STEP=.32;
-export type Environment={air:AirZone[];gates:Gate[];pegs:Peg[];wind:number;response:number;energyLimit?:number;allowLowerWork?:boolean};
-function advance(b:Body,dt:number,e:Environment,restitution:number){
+export type Environment={air:AirZone[];gates:Gate[];pegs:Peg[];wind:number;response:number;energyLimit?:number;allowLowerWork?:boolean;catchFrame?:number};
+function advanceWind(b:Body,dt:number,e:Environment){
  let ax=0,ay=240;for(const zone of e.air){const strength=airStrength(zone,b);ax+=zone.fx*e.response*strength*e.wind;ay+=zone.fy*e.response*strength*e.wind;}advanceFree(b,dt,ax,ay);
+}
+function reflectWalls(b:Body,restitution:number){
  if(b.x<18+b.r){b.x=18+b.r;reflect(b,{x:1,y:0},restitution);}if(b.x>402-b.r){b.x=402-b.r;reflect(b,{x:-1,y:0},restitution);}if(b.y<112+b.r){b.y=112+b.r;reflect(b,{x:0,y:1},restitution);}
 }
+function advance(b:Body,dt:number,e:Environment,restitution:number){advanceWind(b,dt,e);reflectWalls(b,restitution);}
 function reflectPassive(b:Body,e:Environment,restitution:number){
  for(const g of e.gates)if(!g.open&&!g.venting&&Math.abs(b.x-g.x)<g.size/2+b.r&&Math.abs(b.y-g.y)<g.size/8+b.r&&collide(b,{...g,id:-1,kind:'bar',hp:1,maxHp:1,flash:0},restitution))return true;
  for(const p of e.pegs)if(!p.retractedFrom&&Math.hypot(b.x-p.x,b.y-p.y)<p.r+b.r&&collide(b,{...p,id:-2,kind:'capacitor',size:p.r*2,hp:1,maxHp:1,flash:0},restitution))return true;
@@ -33,9 +36,31 @@ function targetImpact(b:Body,t:Target,restitution:number){
  const vx=b.vx,vy=b.vy;b.vx-=t.vx||0;const hit=collide(b,t,restitution);b.vx+=t.vx||0;
  return hit?Math.hypot(b.vx-vx,b.vy-vy)/(1+restitution):0;
 }
+
+// Use the live frame subdivision and contact order at the paddle.
+function approachInFrames(b:Body,p:Paddle,targets:Target[],restitution:number,time:number,environment:Environment,tilt:number,frame:number){
+ let eta=0,px=p.x;
+ const half=p.width/2;
+ while(eta<1.5&&b.y-b.r<692){
+  const start=px,delta=Math.max(-900*frame,Math.min(900*frame,p.target-px));
+  px=Math.max(22+half,Math.min(398-half,px+delta));
+  const vx=(px-start)/frame,steps=ballSubsteps(b,frame),dt=frame/steps,frameEnd=eta+frame;
+  for(let sub=0;sub<steps;sub++){
+   const previous={...b},x=start+vx*dt*(sub+1);
+   advanceWind(b,dt,environment);eta+=dt;
+   if(catchPaddle(b,previous,{...p,x,vx,tilt},dt))return {eta,x,dt,frameEnd,remaining:steps-sub-1};
+   reflectWalls(b,restitution);reflectPassive(b,environment,restitution);
+   for(const t of targets)if(t.hp>0&&targetImpact(b,futureTarget(t,time+frameEnd),restitution)>55)return 'target';
+  }
+ }
+}
+
 export function forecastRebound(ball:Body,p:Paddle,targets:Target[],mass:number,restitution:number,time:number,environment:Environment,tilt:number,inspect=false,workOverride?:number){
   const b={...ball};let eta=0,px=p.x,caught=false;const path:Body[]|undefined=inspect?[]:undefined;
-  while(eta<1.5&&b.y-b.r<692){
+  const approach=environment.catchFrame?approachInFrames(b,p,targets,restitution,time,environment,tilt,environment.catchFrame):undefined;
+  if(approach==='target')return {tilt,boost:p.boost??18000,hit:false,score:10000+Math.abs(tilt-(p.tilt||0))};
+  if(approach){eta=approach.eta;px=approach.x;caught=true;}
+  if(!environment.catchFrame)while(eta<1.5&&b.y-b.r<692){
    const dt=Math.min(1/120,b.r*.45/Math.max(1,Math.hypot(b.vx,b.vy))),previous={...b},delta=Math.max(-900*dt,Math.min(900*dt,p.target-px));
    px+=delta;advance(b,dt,environment,restitution);eta+=dt;
    reflectPassive(b,environment,restitution);
@@ -50,6 +75,21 @@ export function forecastRebound(ball:Body,p:Paddle,targets:Target[],mass:number,
   const height=heights.length?Math.min(...heights):0,required=mass*(240*height+90*90/2),vertical=.5*mass*b.vy*b.vy;
   const boost=workOverride===undefined?Math.ceil(Math.min(40000,Math.max(18000,p.boost||0,required-vertical))):Math.max(0,Math.min(40000,workOverride));
   const energy=.5*mass*(b.vx*b.vx+b.vy*b.vy),added=Math.min(boost,Math.max(0,(environment.energyLimit??240000)-energy));b.vy=-Math.sqrt(b.vy*b.vy+2*added/mass);
+  if(approach){
+   for(let sub=0;sub<=approach.remaining;sub++){
+    if(sub>0){advanceWind(b,approach.dt,environment);eta+=approach.dt;}
+    reflectWalls(b,restitution);reflectPassive(b,environment,restitution);
+    for(const t of targets){
+     if(t.hp<=0)continue;
+     const impact=targetImpact(b,futureTarget(t,time+approach.frameEnd),restitution);
+     if(impact>55){
+      const elapsed=eta-approach.eta;
+      return {tilt,boost,hit:true,caughtAt,outgoing:inspect?{...b}:undefined,impact:inspect?{elapsed,target:t.id,ball:{...b}}:undefined,path,score:elapsed*2+12/impact+Math.abs(tilt-(p.tilt||0))*.2};
+     }
+    }
+   }
+   eta=approach.frameEnd;
+  }
   const outgoing=inspect?{...b}:undefined;
   let elapsed=0,score=10000;
   while(elapsed<2.5&&b.y-b.r<692){
