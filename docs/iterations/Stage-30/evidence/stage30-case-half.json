@@ -1,0 +1,92 @@
+{
+  "method": "72 complete expedition runs, seeds42/739/2217 ×12 loadouts ×2 legal paddle policies. Keep300-second checkpoints and continue productive shots up to900 simulation seconds, without ending the ball. A no-hit interval>=60 is flagged separately.",
+  "summary": {
+    "games": 1,
+    "naturallyConcluded": 1,
+    "unresolved": 0,
+    "longIdle": 0,
+    "maxNoHit": 12.274999999999944,
+    "checkpointsAt300": 0,
+    "maxBallSeconds": 123.15833333333333
+  },
+  "checkpoints": [],
+  "rows": [
+    {
+      "seed": 2026,
+      "material": "brass",
+      "size": "standard",
+      "policy": "follow",
+      "phase": "over",
+      "wave": 15,
+      "shots": [
+        {
+          "seconds": 8.633333333333333,
+          "hits": 12
+        },
+        {
+          "seconds": 123.15833333333333,
+          "hits": 80
+        },
+        {
+          "seconds": 29.591666666666665,
+          "hits": 15
+        },
+        {
+          "seconds": 50.608333333333334,
+          "hits": 29
+        },
+        {
+          "seconds": 37.68333333333333,
+          "hits": 14
+        },
+        {
+          "seconds": 28.641666666666666,
+          "hits": 21
+        },
+        {
+          "seconds": 19.341666666666665,
+          "hits": 21
+        },
+        {
+          "seconds": 27.316666666666666,
+          "hits": 50
+        },
+        {
+          "seconds": 12.308333333333334,
+          "hits": 12
+        },
+        {
+          "seconds": 107.425,
+          "hits": 74
+        },
+        {
+          "seconds": 39.475,
+          "hits": 27
+        },
+        {
+          "seconds": 118.58333333333333,
+          "hits": 83
+        },
+        {
+          "seconds": 37.05,
+          "hits": 16
+        },
+        {
+          "seconds": 73.45833333333333,
+          "hits": 94
+        },
+        {
+          "seconds": 6.325,
+          "hits": 6
+        }
+      ],
+      "unresolved": false,
+      "progress": {
+        "sinceHit": 0.15,
+        "maxNoHit": 12.274999999999944,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 3
+      }
+    }
+  ]
+}

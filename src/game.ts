@@ -185,15 +185,22 @@ export class Game{
    this.targets.every(t=>!t.motion)&&
    (this.targets.every(t=>t.x<falling.x-half-falling.r)||this.targets.every(t=>t.x>falling.x+half+falling.r))&&
    this.targets.some(t=>Math.abs(t.x-falling.x)<=96);
-  if(falling&&(regularGuide||edgeGuide||lowCoreEdgeGuide||lowGapGuide||oneSidedRowGuide)&&falling.vy>0&&falling.y>470&&falling.y<675-falling.r+10&&this.time-this.lastGuideTime>=(falling.y>620?.025:.08)){
+  // A centered ball can keep missing a moving brick beside the central gap.
+  const centralMovingGuide=this.mode==='endless'&&falling&&falling.y>=610&&
+   this.progress.sinceHit>=ASSIST_DELAY&&this.progress.catchesWithoutHit===2&&
+   this.targets.length>=5&&this.air.length===0&&
+   Math.abs(falling.x-W/2)<falling.r/4&&Math.abs(falling.x-this.paddle.x)<falling.r/4&&
+   Math.abs(falling.vx)<falling.vy*.03&&
+   this.targets.some(t=>t.motion&&t.y>=580&&Math.abs(t.x-falling.x)<this.paddle.width*.7);
+  if(falling&&(regularGuide||edgeGuide||lowCoreEdgeGuide||lowGapGuide||oneSidedRowGuide||centralMovingGuide)&&falling.vy>0&&falling.y>470&&falling.y<675-falling.r+10&&this.time-this.lastGuideTime>=(falling.y>620?.025:.08)){
    this.lastGuideTime=this.time;
    const movingEndgame=this.mode==='endless'&&this.targets.length===1&&this.lowEndgame&&this.targets[0].motion&&this.progress.sinceHit>=ASSIST_DELAY;
    const environment={air:this.air,gates:this.gates,pegs:this.pegs,wind:this.windMultiplier,response:spec.windResponse,energyLimit:this.energyCapacity,allowLowerWork:this.progress.catchesWithoutHit>=misses,catchFrame:movingEndgame?dt:undefined},paddle={...this.paddle,x:oldPaddleX};
    // Preserve a useful ordinary rebound, including a previously prepared face.
    if(regularGuide||!forecastRebound(falling,paddle,this.targets,spec.mass,restitution,this.time-dt,environment,this.paddle.tilt||0,false,this.paddle.boost??18000).hit){
-    const gentle=(lowGapGuide||oneSidedRowGuide)&&!regularGuide&&!edgeGuide;
+    const gentle=(lowGapGuide||oneSidedRowGuide||centralMovingGuide)&&!regularGuide&&!edgeGuide;
     let maxTilt=this.progress.sinceHit>=20||this.lowEndgame?.48:.32;
-    if(gentle)maxTilt=oneSidedRowGuide?.2:.22;
+    if(gentle)maxTilt=lowGapGuide?.22:.2;
     const plan=guidedRebound(falling,paddle,this.targets,spec.mass,restitution,this.time-dt,environment,maxTilt);
     // A closest miss is not enough for early steering. Keep the existing later fallback.
     const directHit=plan.hit&&(!gentle||(plan.hitElapsed??Infinity)<.45);

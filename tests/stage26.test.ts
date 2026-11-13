@@ -8,14 +8,15 @@ const cases = [
  {name:'wall-side low row',seed:9011,material:'rubber',size:'large',policy:'steer',limit:13},
  {name:'low row with a central gap',seed:42,material:'ceramic',size:'large',policy:'steer',limit:13},
  {name:'two empty catches in a low row',seed:4039,material:'rubber',size:'large',policy:'follow',limit:11.1},
- {name:'low row entirely to one side',seed:815,material:'steel',size:'large',policy:'steer',limit:15.3,hits:585,lastShotHits:44,lastShotGap:12},
+ {name:'low row entirely to one side',seed:815,material:'steel',size:'large',policy:'steer',limit:15.3,hits:585,shot:{number:15,hits:44,gap:12}},
+ {name:'central gap with a moving brick',seed:2026,material:'brass',size:'standard',policy:'follow',limit:15.7,hits:686,shot:{number:2,hits:97,gap:12.5}},
 ] as const;
 
 for (const scenario of cases) {
  const {name, seed, material, size, policy, limit} = scenario;
  test(`the ${name} expedition advances without repeating the long empty rally`, () => {
   const game = new Game(seed);
-  let lastShotHits = 0, lastShotGap = 0;
+  let observedShot: {hits:number;gap:number} | undefined;
   while (game.phase === 'aim') {
    assert.ok(game.selectBall(material, size));
    const target = game.targets.slice().sort((a, b) => a.hp - b.hp)[0];
@@ -23,19 +24,21 @@ for (const scenario of cases) {
    assert.ok(game.fire());
    const previousHits = game.stats.hits;
    const original = game.balls[0];
-   lastShotGap = 0;
+   let shotGap = 0;
    let step = 0;
    while (game.phase === 'volley' && step < 900 / STEP) {
     if (step % 14 === 0) steer(game, policy);
     const nextGap = game.progress.sinceHit + STEP;
     game.update(STEP);
-    lastShotGap = Math.max(lastShotGap, nextGap);
+    shotGap = Math.max(shotGap, nextGap);
     if (game.phase === 'volley') assert.equal(game.balls[0], original);
     step++;
    }
    assert.notEqual(game.phase, 'volley');
    assert.ok(original.y - original.r >= 692);
-   lastShotHits = game.stats.hits - previousHits;
+   if ('shot' in scenario && game.shots === scenario.shot.number) {
+    observedShot = {hits:game.stats.hits - previousHits,gap:shotGap};
+   }
   }
   assert.equal(game.phase, 'over');
   assert.equal(game.wave, 15);
@@ -43,8 +46,9 @@ for (const scenario of cases) {
   assert.ok(game.progress.maxNoHit < limit);
   if ('hits' in scenario) {
    assert.ok(game.stats.hits >= scenario.hits);
-   assert.ok(lastShotHits >= scenario.lastShotHits);
-   assert.ok(lastShotGap < scenario.lastShotGap);
+   assert.ok(observedShot);
+   assert.ok(observedShot.hits >= scenario.shot.hits);
+   assert.ok(observedShot.gap < scenario.shot.gap);
   }
  });
 }
