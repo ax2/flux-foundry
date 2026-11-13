@@ -1,0 +1,30 @@
+✖ the wall-side row with a moving spring expedition advances without repeating the long empty rally (2580.6516ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 0
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2963.3449
+
+✖ failing tests:
+
+test at test-results\stage31-old-regression.test.ts:1:1085
+✖ the wall-side row with a moving spring expedition advances without repeating the long empty rally (2580.6516ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+    assert.ok(game.progress.maxNoHit < limit)
+
+      at TestContext.<anonymous> (D:\Work\games\flux-foundry\test-results\stage31-old-regression.test.ts:47:10)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.start (node:internal/test_runner/test:1262:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

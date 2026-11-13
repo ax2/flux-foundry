@@ -6,6 +6,10 @@
 
 ![手机画面](docs/iterations/Stage-29/screenshots/390x844-steel.png)
 
+## 本地开发
+
+第 30 阶段缩短了中号黄铜珠在第 2 波的无命中间隔。第 31 阶段针对中号钢珠第 9 波的靠墙接球，缩短无命中并保留有效命中。详见 [Stage-30 验收](docs/iterations/Stage-30/assessment.md) 和 [Stage-31 验收](docs/iterations/Stage-31/assessment.md)。
+
 ## v0.24.0 远征低位反弹
 
 第 8 波大号陶瓷和第 15 波大号钢珠的固定回放缩短了无命中间隔。钢珠保留该波 44 次与整局 585 次有效命中。详见 [Stage-28 验收](docs/iterations/Stage-28/assessment.md) 和 [Stage-29 验收](docs/iterations/Stage-29/assessment.md)。
