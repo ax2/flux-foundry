@@ -4,7 +4,13 @@
 
 **[在线游玩](https://ax2.github.io/flux-foundry/)** · **[Windows 下载](https://github.com/ax2/flux-foundry/releases)** · MIT
 
-![手机画面](docs/iterations/Stage-27/screenshots/390x844.png)
+![手机画面](docs/iterations/Stage-29/screenshots/390x844-steel.png)
+
+## v0.24.0 远征低位反弹
+
+第 8 波大号陶瓷和第 15 波大号钢珠的固定回放缩短了无命中间隔。钢珠保留该波 44 次与整局 585 次有效命中。详见 [Stage-28 验收](docs/iterations/Stage-28/assessment.md) 和 [Stage-29 验收](docs/iterations/Stage-29/assessment.md)。
+
+[v0.24.0 Windows 下载](https://github.com/ax2/flux-foundry/releases/tag/v0.24.0) · [手机与浏览器试玩](https://ax2.github.io/flux-foundry/)
 
 ## v0.23.0 远征低位积木
 
@@ -61,9 +67,9 @@ v0.20.0为上一公开版；当前修复继续保留已存星级。Stage-08的�
 
 ## 交付与验证
 
-Windows x64 便携版为 `Flux-Foundry-0.23.0-Windows-x64.exe`。本地 `releases/v0.23.0/` 保留完整 `win-unpacked` 运行目录和 EXE。手机为触屏 Web/PWA，首次联网加载后可离线重开。Windows 未签名，实体手机及低端性能仍待验收。
+Windows x64 便携版为 `Flux-Foundry-0.24.0-Windows-x64.exe`。本地 `releases/v0.24.0/` 保留完整 `win-unpacked` 运行目录和 EXE。手机为触屏 Web/PWA，首次联网加载后可离线重开。Windows 未签名，实体手机及低端性能仍待验收。
 
-当前验证见 Stage-27，历史发布资格见各阶段评估。PCM 渲染和自动触控覆盖软件层。实体手机、真实扬声器与人耳听感待验。完整原图约 3.40 MB，低带宽下会逐步显示加载进度。
+当前验证见 Stage-29，历史发布资格见各阶段评估。PCM 渲染和自动触控覆盖软件层。实体手机、真实扬声器与人耳听感待验。完整原图约 3.40 MB，低带宽下会逐步显示加载进度。
 
 [本轮评估](docs/iterations/Stage-18/assessment.md) · [工作日志](docs/iterations/Stage-18/worklog.md) · [音效预览](docs/iterations/Stage-18/cue-preview.wav)
 
