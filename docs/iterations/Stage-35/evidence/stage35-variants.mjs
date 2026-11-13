@@ -26,3 +26,9 @@ for(const catches of [0,1,2])for(const cap of [.21,.22,.23,.24,.25,.26,.27,.28,.
  names.push(name);
 }
 writeFileSync(dir+'stage35-variants.json',JSON.stringify(names)+'\n');
+const baseCandidate=readFileSync(dir+'stage35-game-catch2-22.ts','utf8');
+const gapSides='this.targets.some(t=>t.x<falling.x-falling.r)&&this.targets.some(t=>t.x>falling.x+falling.r);';
+const flatSides=`this.targets.some(t=>t.kind==='steel'&&t.x<falling.x&&falling.x-t.x<=this.paddle.width*.8)&&
+   this.targets.some(t=>t.kind==='steel'&&t.x>falling.x&&t.x-falling.x<=this.paddle.width*.8);`;
+if(!baseCandidate.includes(gapSides))throw Error('Missing flat-face anchor');
+writeFileSync(dir+'stage35-game-catch2-22-flat.ts',baseCandidate.replace(gapSides,flatSides));
