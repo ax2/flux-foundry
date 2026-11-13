@@ -1,0 +1,11 @@
+npm warn Unknown env config "devdir". This will error in a future major version of npm. See `npm help npmrc` for supported config options.
+npm notice run flux-foundry@0.27.0 test:play
+npm notice run node scripts/paddle-play.mjs --level=19
+{"output":"test-results/stage39-challenge-retry"}
+{"level":19,"flight":0.03333333333333333,"hits":0,"catches":0,"noHit":0.03333333333333333,"paused":false,"visibility":"visible"}
+{"level":19,"shot":1,"hits":8,"catches":2,"pickups":1,"seconds":6.5750000000001165,"moves":43,"remaining":7,"phase":"aim"}
+{"level":19,"flight":6.591666666666784,"hits":8,"catches":2,"noHit":0.016666666666666666,"paused":false,"visibility":"visible"}
+{"level":19,"flight":16.941666666666347,"hits":18,"catches":5,"noHit":0.05833333333333333,"paused":false,"visibility":"visible"}
+{"level":19,"shot":2,"hits":10,"catches":3,"pickups":0,"seconds":10.433333333332893,"moves":71,"remaining":6,"phase":"aim"}
+{"level":19,"flight":17.024999999999675,"hits":18,"catches":5,"noHit":0.016666666666666666,"paused":false,"visibility":"visible"}
+{"level":19,"shot":3,"hits":4,"catches":2,"pickups":0,"seconds":5.04166666666638,"moves":35,"remaining":5,"phase":"won"}

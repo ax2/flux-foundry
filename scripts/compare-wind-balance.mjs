@@ -11,7 +11,7 @@ const reports = [];
 const crosswind = [];
 const crosswindRows = new Set([390, 402]);
 const expedition = [];
-const expeditionRows = new Map([[9, 13.5], [17, 13], [26, 12], [41, 10], [50, 9], [51, 13], [54, 12], [56, 10], [70, 12]]);
+const expeditionRows = new Map([[9, 13.5], [17, 13], [26, 12], [32, 12.5], [41, 10], [50, 9], [51, 13], [54, 12], [56, 10], [70, 12]]);
 const matrices = {
  'active-endurance.json': 12,
  'varied-endurance.json': 12,
