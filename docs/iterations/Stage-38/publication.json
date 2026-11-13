@@ -1,0 +1,105 @@
+{
+  "tag": "v0.27.0",
+  "tagCommit": "cc4e8516862620590b1e13859abbece4ab055f30",
+  "actions": [
+    {
+      "conclusion": "success",
+      "databaseId": 43444205356,
+      "headSha": "cc4e8516862620590b1e13859abbece4ab055f30",
+      "status": "completed",
+      "url": "https://github.com/ax2/flux-foundry/actions/runs/43444205356",
+      "workflowName": "Deploy web game"
+    },
+    {
+      "conclusion": "success",
+      "databaseId": 43444205623,
+      "headSha": "cc4e8516862620590b1e13859abbece4ab055f30",
+      "status": "completed",
+      "url": "https://github.com/ax2/flux-foundry/actions/runs/43444205623",
+      "workflowName": "Release Windows"
+    },
+    {
+      "conclusion": "success",
+      "databaseId": 43444205203,
+      "headSha": "cc4e8516862620590b1e13859abbece4ab055f30",
+      "status": "completed",
+      "url": "https://github.com/ax2/flux-foundry/actions/runs/43444205203",
+      "workflowName": "Validate"
+    }
+  ],
+  "release": {
+    "assets": [
+      {
+        "apiUrl": "https://api.github.com/repos/ax2/flux-foundry/releases/assets/743984831",
+        "contentType": "application/x-msdownload",
+        "createdAt": "2026-11-13T14:38:00Z",
+        "digest": "sha256:a44cb32bb3f2dcb1f4b1b0ff6ae4833d37c15ff2063000eb21b21dc30399d604",
+        "downloadCount": 0,
+        "id": "RA_kwDOVlLYCM4sWE6_",
+        "label": "",
+        "name": "Flux-Foundry-0.27.0-Windows-x64.exe",
+        "size": 137350371,
+        "state": "uploaded",
+        "updatedAt": "2026-11-13T14:38:09Z",
+        "url": "https://github.com/ax2/flux-foundry/releases/download/v0.27.0/Flux-Foundry-0.27.0-Windows-x64.exe"
+      },
+      {
+        "apiUrl": "https://api.github.com/repos/ax2/flux-foundry/releases/assets/743984829",
+        "contentType": "text/plain; charset=utf-8",
+        "createdAt": "2026-11-13T14:38:00Z",
+        "digest": "sha256:5355f300e089d6cc1f0e1d720e57c8cb7465af824e9d6dce207e94e545c9ed2d",
+        "downloadCount": 0,
+        "id": "RA_kwDOVlLYCM4sWE69",
+        "label": "",
+        "name": "SHA256SUMS.txt",
+        "size": 103,
+        "state": "uploaded",
+        "updatedAt": "2026-11-13T14:38:00Z",
+        "url": "https://github.com/ax2/flux-foundry/releases/download/v0.27.0/SHA256SUMS.txt"
+      }
+    ],
+    "isDraft": false,
+    "isPrerelease": false,
+    "publishedAt": "2026-11-13T14:38:09Z",
+    "tagName": "v0.27.0",
+    "url": "https://github.com/ax2/flux-foundry/releases/tag/v0.27.0"
+  },
+  "publicWeb": {
+    "url": "https://ax2.github.io/flux-foundry/?release=0.27.0",
+    "assets": [
+      {
+        "path": "assets/arena-DPpudWct.png",
+        "sha256": "1ad2a8e14e4029eb64fdc29ad1f113985db8abac50e4f375f4bea45413735f54",
+        "bytes": 1901268
+      },
+      {
+        "path": "assets/index-B1_H6VJv.css",
+        "sha256": "5237f718cdeae87a81bee89b77299b2c112a9f0a896bc81b8a2c81406d8d2904",
+        "bytes": 17799
+      },
+      {
+        "path": "assets/index-OQSvhfqf.js",
+        "sha256": "23abdc55378cb40d5e9159d52f9d3c1dff82edd95dcb9a455ca03a838c2c5eab",
+        "bytes": 90408
+      },
+      {
+        "path": "assets/targets-Bs7NvsYu.png",
+        "sha256": "3d755f3ba04ba8a8620bd4c7bf5c0a809958df0d4e33c1cf3ec0b5f2e2fab44a",
+        "bytes": 1498424
+      }
+    ],
+    "errors": []
+  },
+  "downloadedEXE": {
+    "bytes": 137350371,
+    "sha256": "a44cb32bb3f2dcb1f4b1b0ff6ae4833d37c15ff2063000eb21b21dc30399d604",
+    "path": "test-results/stage38-public/Flux-Foundry-0.27.0-Windows-x64.exe",
+    "started": true,
+    "checksumMatched": true
+  },
+  "localEXE": {
+    "path": "releases/v0.27.0/Flux-Foundry-0.27.0-Windows-x64.exe",
+    "sha256": "764547ac7619f5d3b81bf02f284a9e0d34ceb6003a521e127305f2fc8847dc10",
+    "bytes": 137432969
+  }
+}
