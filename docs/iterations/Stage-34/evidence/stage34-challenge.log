@@ -1,0 +1,11 @@
+npm warn Unknown env config "devdir". This will error in a future major version of npm. See `npm help npmrc` for supported config options.
+npm notice run flux-foundry@0.25.0 test:play
+npm notice run node scripts/paddle-play.mjs --level=19
+file:///D:/Work/games/flux-foundry/scripts/paddle-play.mjs:14
+if(!ready){server?.kill();throw new Error(`Game preview unavailable at ${url}`);}
+                                ^
+
+Error: Game preview unavailable at http://127.0.0.1:4616
+    at file:///D:/Work/games/flux-foundry/scripts/paddle-play.mjs:14:33
+
+Node.js v26.10.0

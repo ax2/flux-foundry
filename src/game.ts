@@ -211,16 +211,33 @@ export class Game{
    Math.abs(falling.x-this.paddle.x)<=this.paddle.width/8&&Math.abs(falling.vx)<=falling.vy*.2&&
    this.targets.some(t=>t.motion&&t.power==='spring'&&t.y>=560)&&
    (this.targets.every(t=>t.x<falling.x)||this.targets.every(t=>t.x>falling.x));
-  if(falling&&(regularGuide||edgeGuide||lowCoreEdgeGuide||lowGapGuide||oneSidedRowGuide||centralMovingGuide||movingSpringEdgeGuide||splitRowGuide||widePaddleGuide)&&falling.vy>0&&falling.y>470&&falling.y<675-falling.r+10&&this.time-this.lastGuideTime>=(falling.y>620?.025:.08)){
+  // A nearly vertical enlarged ball can miss a moving spring on an ordinary paddle.
+  const enlargedBallGuide=this.mode==='endless'&&falling&&falling.y>=610&&this.bigTime>0&&this.wideTime===0&&
+   this.progress.sinceHit>=6.5&&this.progress.catchesWithoutHit===1&&this.targets.length>=4&&
+   Math.abs(falling.x-this.paddle.x)<=this.paddle.width/8&&Math.abs(falling.vx)<=falling.vy*.05&&
+   this.targets.some(t=>t.motion&&t.power==='spring'&&t.y>=560&&Math.abs(t.x-falling.x)<=this.paddle.width*.75)&&
+   (this.targets.every(t=>t.x<falling.x)||this.targets.every(t=>t.x>falling.x));
+  // Check the next short rally when a near spring borders a wide low-row gap.
+  const lowSplitGuide=this.mode==='endless'&&falling&&falling.y>=610&&this.targets.length===3&&
+   this.progress.sinceHit>=3.5&&this.progress.sinceHit<5&&this.progress.catchesWithoutHit===1&&
+   Math.abs(falling.x-this.paddle.x)<=this.paddle.width/8&&Math.abs(falling.vx)<=falling.vy*.03&&
+   this.targets.every(t=>!t.motion&&t.y>=600&&Math.abs(t.y-this.targets[0].y)<=1)&&
+   this.rails.every(r=>r.charges===0)&&
+   this.targets.some(t=>t.power==='spring'&&Math.abs(t.x-falling.x)<=this.paddle.width*.65&&(t.x-falling.x)*falling.vx>0&&
+    this.targets.some(other=>Math.abs(other.x-t.x)>=this.paddle.width*2&&(other.x-falling.x)*(t.x-falling.x)<0))&&
+   this.targets.every(t=>Math.abs(t.x-falling.x)>falling.r);
+  if(falling&&(regularGuide||edgeGuide||lowCoreEdgeGuide||lowGapGuide||oneSidedRowGuide||centralMovingGuide||movingSpringEdgeGuide||splitRowGuide||widePaddleGuide||enlargedBallGuide||lowSplitGuide)&&falling.vy>0&&falling.y>470&&falling.y<675-falling.r+10&&this.time-this.lastGuideTime>=(falling.y>620?.025:.08)){
    this.lastGuideTime=this.time;
    const movingEndgame=this.mode==='endless'&&this.targets.length===1&&this.lowEndgame&&this.targets[0].motion&&this.progress.sinceHit>=ASSIST_DELAY;
-   const environment={air:this.air,gates:this.gates,pegs:this.pegs,wind:this.windMultiplier,response:spec.windResponse,energyLimit:this.energyCapacity,allowLowerWork:this.progress.catchesWithoutHit>=misses,catchFrame:(movingEndgame||splitRowGuide||widePaddleGuide)?dt:undefined},paddle={...this.paddle,x:oldPaddleX};
+   const environment={air:this.air,gates:this.gates,pegs:this.pegs,wind:this.windMultiplier,response:spec.windResponse,energyLimit:this.energyCapacity,allowLowerWork:this.progress.catchesWithoutHit>=misses,catchFrame:(movingEndgame||splitRowGuide||widePaddleGuide||enlargedBallGuide||lowSplitGuide)?dt:undefined},paddle={...this.paddle,x:oldPaddleX};
    // Preserve a useful ordinary rebound, including a previously prepared face.
    if(regularGuide||!forecastRebound(falling,paddle,this.targets,spec.mass,restitution,this.time-dt,environment,this.paddle.tilt||0,false,this.paddle.boost??18000).hit){
-    const gentle=(lowGapGuide||oneSidedRowGuide||centralMovingGuide||movingSpringEdgeGuide||splitRowGuide||widePaddleGuide)&&!regularGuide&&!edgeGuide;
+    const gentle=(lowGapGuide||oneSidedRowGuide||centralMovingGuide||movingSpringEdgeGuide||splitRowGuide||widePaddleGuide||enlargedBallGuide||lowSplitGuide)&&!regularGuide&&!edgeGuide;
     let maxTilt=this.progress.sinceHit>=20||this.lowEndgame?.48:.32;
     if(gentle){
-     if(widePaddleGuide)maxTilt=.10;
+     if(lowSplitGuide)maxTilt=.11;
+     else if(enlargedBallGuide)maxTilt=.06;
+     else if(widePaddleGuide)maxTilt=.10;
      else maxTilt=splitRowGuide?0.29:movingSpringEdgeGuide?0.18:lowGapGuide?.22:.2;
     }
     const plan=guidedRebound(falling,paddle,this.targets,spec.mass,restitution,this.time-dt,environment,maxTilt);
