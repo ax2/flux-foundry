@@ -22,6 +22,10 @@ const cases = [
  {name:'central gap beside a moving spring',seed:10103,material:'brass',size:'standard',policy:'follow',limit:12,hits:591,shot:{number:2,hits:32,gap:12}},
  {name:'central gap across two low rows',seed:2217,material:'brass',size:'standard',policy:'follow',limit:10,hits:530,shot:{number:2,hits:19,gap:10}},
  {name:'central gap between a moving spring and a diamond',seed:739,material:'brass',size:'standard',policy:'follow',limit:12.5,hits:603,shot:{number:2,hits:28,gap:9}},
+ {name:'moving spring opposite a fixed bar',seed:42,material:'brass',size:'standard',policy:'follow',limit:10,hits:674,shot:{number:2,hits:13,gap:10}},
+ {name:'fixed spring opposite a moving square',seed:934,material:'brass',size:'standard',policy:'follow',limit:15.5,hits:665,shot:{number:2,hits:44,gap:14}},
+ {name:'fixed spring opposite a moving triangle',seed:2931,material:'brass',size:'standard',policy:'follow',limit:12,hits:566,shot:{number:2,hits:26,gap:12}},
+ {name:'fixed spring opposite a moving bar',seed:87,material:'brass',size:'standard',policy:'follow',limit:10,hits:593,shot:{number:2,hits:22,gap:10}},
 ] as const;
 
 for (const scenario of cases) {
