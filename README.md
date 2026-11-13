@@ -6,9 +6,11 @@
 
 ![手机画面](docs/iterations/Stage-29/screenshots/390x844-steel.png)
 
-## 本地开发
+## v0.25.0 远征接球与低位积木
 
-第 30 阶段缩短了中号黄铜珠在第 2 波的无命中间隔。第 31 阶段针对中号钢珠第 9 波的靠墙接球，缩短无命中并保留有效命中。详见 [Stage-30 验收](docs/iterations/Stage-30/assessment.md) 和 [Stage-31 验收](docs/iterations/Stage-31/assessment.md)。
+三条固定回放缩短无命中间隔：第 2 波中号黄铜、第 9 波中号钢珠，以及第 9 波另一条中号黄铜路线。详见 [Stage-30](docs/iterations/Stage-30/assessment.md)、[Stage-31](docs/iterations/Stage-31/assessment.md) 与 [Stage-32](docs/iterations/Stage-32/assessment.md)。
+
+[Windows 下载](https://github.com/ax2/flux-foundry/releases) · [手机与浏览器试玩](https://ax2.github.io/flux-foundry/)
 
 ## v0.24.0 远征低位反弹
 
@@ -71,7 +73,7 @@ v0.20.0为上一公开版；当前修复继续保留已存星级。Stage-08的�
 
 ## 交付与验证
 
-Windows x64 便携版为 `Flux-Foundry-0.24.0-Windows-x64.exe`。本地 `releases/v0.24.0/` 保留完整 `win-unpacked` 运行目录和 EXE。手机为触屏 Web/PWA，首次联网加载后可离线重开。Windows 未签名，实体手机及低端性能仍待验收。
+Windows x64 便携版为 `Flux-Foundry-0.25.0-Windows-x64.exe`。本地 `releases/v0.25.0/` 保留完整 `win-unpacked` 运行目录和 EXE。手机为触屏 Web/PWA，首次联网加载后可离线重开。Windows 未签名，实体手机及低端性能仍待验收。
 
 当前验证见 Stage-29，历史发布资格见各阶段评估。PCM 渲染和自动触控覆盖软件层。实体手机、真实扬声器与人耳听感待验。完整原图约 3.40 MB，低带宽下会逐步显示加载进度。
 

@@ -11,6 +11,7 @@ const cases = [
  {name:'low row entirely to one side',seed:815,material:'steel',size:'large',policy:'steer',limit:15.3,hits:585,shot:{number:15,hits:44,gap:12}},
  {name:'central gap with a moving brick',seed:2026,material:'brass',size:'standard',policy:'follow',limit:15.7,hits:686,shot:{number:2,hits:97,gap:12.5}},
  {name:'wall-side row with a moving spring',seed:739,material:'steel',size:'standard',policy:'follow',limit:12,hits:454,shot:{number:9,hits:28,gap:7}},
+ {name:'wide gap between fixed bricks',seed:7429,material:'brass',size:'standard',policy:'steer',limit:14.5,hits:462,shot:{number:9,hits:61,gap:14.5}},
 ] as const;
 
 for (const scenario of cases) {
