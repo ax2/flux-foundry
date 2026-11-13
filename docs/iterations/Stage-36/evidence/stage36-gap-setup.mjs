@@ -1,0 +1,11 @@
+import {readFileSync,writeFileSync} from 'node:fs';
+const name='second24-gap',source=readFileSync('test-results/stage36-game-second24.ts','utf8');
+const start=source.indexOf('  const centralSpringGuide='),end=source.indexOf('  if(falling&&(regularGuide',start);
+const original=source.slice(start,end);
+const guide=original.replace("this.targets.every(t=>t.y>=600&&Math.abs(t.y-this.targets[0].y)<=1)&&","this.targets.every(t=>t.y>=600&&Math.abs(t.y-this.targets[0].y)<=1&&\n    Math.abs(t.x-falling.x)-t.size/2>=falling.r*3)&&");
+if(guide===original)throw Error('Guide anchor missing');
+writeFileSync('test-results/stage36-game-'+name+'.ts',source.slice(0,start)+guide+source.slice(end));
+const trial=readFileSync('test-results/stage36-case-second24.ts','utf8');
+writeFileSync('test-results/stage36-case-'+name+'.ts',trial.replaceAll('second24',name));
+const matrix=readFileSync('test-results/stage36-matrix.mjs','utf8').replace('(?:second|third)\\d+','(?:(?:second|third)\\d+(?:-gap)?|production)');
+writeFileSync('test-results/stage36-matrix.mjs',matrix);

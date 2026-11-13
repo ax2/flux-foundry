@@ -16,6 +16,9 @@ const cases = [
  {name:'low split row beside a spring',seed:7429,material:'steel',size:'large',policy:'steer',limit:13,hits:599,shot:{number:12,hits:81,gap:13}},
  {name:'enlarged ball below a moving spring',seed:10103,material:'steel',size:'small',policy:'steer',limit:14.5,hits:511,shot:{number:11,hits:18,gap:12}},
  {name:'central gap between fixed low bricks',seed:42,material:'brass',size:'standard',policy:'steer',limit:13.5,hits:695,shot:{number:4,hits:58,gap:12.5}},
+ {name:'central spring beside a moving hexagon',seed:9011,material:'brass',size:'standard',policy:'follow',limit:13,hits:610,shot:{number:2,hits:16,gap:9}},
+ {name:'central spring beside a fixed hexagon while following',seed:815,material:'brass',size:'standard',policy:'follow',limit:15.5,hits:544,shot:{number:2,hits:28,gap:9}},
+ {name:'central spring beside a fixed hexagon while steering',seed:815,material:'brass',size:'standard',policy:'steer',limit:12.5,hits:474,shot:{number:2,hits:29,gap:12.5}},
 ] as const;
 
 for (const scenario of cases) {

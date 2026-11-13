@@ -1,0 +1,19 @@
+npm warn Unknown env config "devdir". This will error in a future major version of npm. See `npm help npmrc` for supported config options.
+npm notice run flux-foundry@0.26.0 test:loading
+npm notice run node scripts/loading-test.mjs
+node:internal/modules/run_main:111
+    triggerUncaughtException(
+    ^
+
+page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:4189/
+Call log:
+  - navigating to "http://127.0.0.1:4189/", waiting until "commit"
+
+    at D:\Work\games\flux-foundry\scripts\loading-test.mjs:12:102 {
+  log: [
+    '  - navigating to "http://127.0.0.1:4189/", waiting until "commit"'
+  ],
+  name: 'Error'
+}
+
+Node.js v26.10.0
