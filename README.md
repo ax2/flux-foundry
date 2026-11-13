@@ -6,6 +6,10 @@
 
 ![手机画面](docs/iterations/Stage-29/screenshots/390x844-steel.png)
 
+## v0.27.0 远征中央空隙
+
+挡板更早处理固定弹簧、移动弹簧及双排积木之间的重复直弹。五条中号黄铜的固定回放均缩短第 2 发无命中时间并增加有效命中。详见 [Stage-36](docs/iterations/Stage-36/assessment.md)、[Stage-37](docs/iterations/Stage-37/assessment.md) 与 [Stage-38](docs/iterations/Stage-38/assessment.md)。
+
 ## v0.26.0 远征低排反弹
 
 缩短三种尺寸钢珠和中号黄铜珠的低位空转。原始画质、接球规则及已有进度继续沿用。详见 [Stage-33](docs/iterations/Stage-33/assessment.md)、[Stage-34](docs/iterations/Stage-34/assessment.md) 与 [Stage-35](docs/iterations/Stage-35/assessment.md)。
@@ -79,7 +83,7 @@ v0.20.0为上一公开版；当前修复继续保留已存星级。Stage-08的�
 
 ## 交付与验证
 
-Windows x64 便携版为 `Flux-Foundry-0.26.0-Windows-x64.exe`。本地 `releases/v0.26.0/` 保留完整 `win-unpacked` 运行目录和 EXE。手机为触屏 Web/PWA，首次联网加载后可离线重开。Windows 未签名，实体手机及低端性能仍待验收。
+Windows x64 便携版为 `Flux-Foundry-0.27.0-Windows-x64.exe`。本地 `releases/v0.27.0/` 保留完整 `win-unpacked` 运行目录和 EXE。手机为触屏 Web/PWA，首次联网加载后可离线重开。Windows 未签名，实体手机及低端性能仍待验收。
 
 当前验证见 Stage-29，历史发布资格见各阶段评估。PCM 渲染和自动触控覆盖软件层。实体手机、真实扬声器与人耳听感待验。完整原图约 3.40 MB，低带宽下会逐步显示加载进度。
 

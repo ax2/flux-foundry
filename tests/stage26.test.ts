@@ -20,6 +20,7 @@ const cases = [
  {name:'central spring beside a fixed hexagon while following',seed:815,material:'brass',size:'standard',policy:'follow',limit:15.5,hits:544,shot:{number:2,hits:28,gap:9}},
  {name:'central spring beside a fixed hexagon while steering',seed:815,material:'brass',size:'standard',policy:'steer',limit:12.5,hits:474,shot:{number:2,hits:29,gap:12.5}},
  {name:'central gap beside a moving spring',seed:10103,material:'brass',size:'standard',policy:'follow',limit:12,hits:591,shot:{number:2,hits:32,gap:12}},
+ {name:'central gap across two low rows',seed:2217,material:'brass',size:'standard',policy:'follow',limit:10,hits:530,shot:{number:2,hits:19,gap:10}},
 ] as const;
 
 for (const scenario of cases) {
