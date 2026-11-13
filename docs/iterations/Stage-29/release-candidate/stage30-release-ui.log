@@ -1,0 +1,9 @@
+npm warn Unknown env config "devdir". This will error in a future major version of npm. See `npm help npmrc` for supported config options.
+npm notice run flux-foundry@0.24.0 test:play
+npm notice run node scripts/paddle-play.mjs --multi --level=19
+{"output":"test-results/stage30-release-ui"}
+{"level":19,"flight":0.016666666666666666,"hits":0,"catches":0,"noHit":0.016666666666666666,"paused":false,"visibility":"visible"}
+{"level":19,"shot":1,"hits":9,"catches":0,"pickups":1,"seconds":4.966666666666703,"moves":34,"remaining":7,"phase":"aim"}
+{"level":19,"flight":4.983333333333371,"hits":9,"catches":0,"noHit":0.016666666666666666,"paused":false,"visibility":"visible"}
+{"level":19,"flight":14.666666666666474,"hits":18,"catches":2,"noHit":1.4249999999999974,"paused":false,"visibility":"visible"}
+{"level":19,"shot":2,"hits":18,"catches":8,"pickups":2,"seconds":13.516666666666222,"moves":98,"remaining":7,"phase":"won"}
