@@ -1,0 +1,171 @@
+{
+  "summary": {
+    "games": 360,
+    "naturallyConcluded": 360,
+    "unresolved": 0,
+    "longIdle": 0,
+    "maxNoHit": 15.933333333333069,
+    "checkpointsAt300": 17,
+    "maxBallSeconds": 467.3666666666667
+  },
+  "identical": 359,
+  "changed": [
+    {
+      "index": 339,
+      "baseline": {
+        "seed": 7429,
+        "material": "steel",
+        "size": "standard",
+        "policy": "steer",
+        "phase": "over",
+        "wave": 15,
+        "shots": [
+          {
+            "seconds": 69.45,
+            "hits": 52
+          },
+          {
+            "seconds": 4.466666666666667,
+            "hits": 7
+          },
+          {
+            "seconds": 44.30833333333333,
+            "hits": 23
+          },
+          {
+            "seconds": 72.69166666666666,
+            "hits": 38
+          },
+          {
+            "seconds": 56.949999999999996,
+            "hits": 37
+          },
+          {
+            "seconds": 81.90833333333333,
+            "hits": 48
+          },
+          {
+            "seconds": 17.1,
+            "hits": 7
+          },
+          {
+            "seconds": 58.63333333333333,
+            "hits": 41
+          },
+          {
+            "seconds": 9.641666666666666,
+            "hits": 5
+          },
+          {
+            "seconds": 104.125,
+            "hits": 68
+          },
+          {
+            "seconds": 99.08333333333333,
+            "hits": 56
+          },
+          {
+            "seconds": 100.23333333333333,
+            "hits": 76
+          },
+          {
+            "seconds": 91.53333333333333,
+            "hits": 27
+          },
+          {
+            "seconds": 115.23333333333333,
+            "hits": 61
+          },
+          {
+            "seconds": 34.28333333333333,
+            "hits": 23
+          }
+        ],
+        "unresolved": false,
+        "progress": {
+          "sinceHit": 0.19999999999999998,
+          "maxNoHit": 16.733333333333025,
+          "catchesWithoutHit": 0,
+          "maxCatchesWithoutHit": 3
+        }
+      },
+      "candidate": {
+        "seed": 7429,
+        "material": "steel",
+        "size": "standard",
+        "policy": "steer",
+        "phase": "over",
+        "wave": 15,
+        "shots": [
+          {
+            "seconds": 69.45,
+            "hits": 52
+          },
+          {
+            "seconds": 4.466666666666667,
+            "hits": 7
+          },
+          {
+            "seconds": 44.30833333333333,
+            "hits": 23
+          },
+          {
+            "seconds": 72.69166666666666,
+            "hits": 38
+          },
+          {
+            "seconds": 56.949999999999996,
+            "hits": 37
+          },
+          {
+            "seconds": 81.90833333333333,
+            "hits": 48
+          },
+          {
+            "seconds": 17.1,
+            "hits": 7
+          },
+          {
+            "seconds": 58.63333333333333,
+            "hits": 41
+          },
+          {
+            "seconds": 9.641666666666666,
+            "hits": 5
+          },
+          {
+            "seconds": 104.125,
+            "hits": 68
+          },
+          {
+            "seconds": 122.91666666666667,
+            "hits": 69
+          },
+          {
+            "seconds": 110.44166666666666,
+            "hits": 68
+          },
+          {
+            "seconds": 10.241666666666667,
+            "hits": 5
+          },
+          {
+            "seconds": 80.075,
+            "hits": 88
+          },
+          {
+            "seconds": 91.9,
+            "hits": 46
+          }
+        ],
+        "unresolved": false,
+        "progress": {
+          "sinceHit": 0.26666666666666666,
+          "maxNoHit": 11.15833333333334,
+          "catchesWithoutHit": 0,
+          "maxCatchesWithoutHit": 3
+        }
+      }
+    }
+  ]
+}
