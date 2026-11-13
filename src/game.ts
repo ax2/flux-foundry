@@ -174,19 +174,26 @@ export class Game{
    this.air.some(z=>z.fy===0&&Math.abs(z.fx)>=90);
   // A nearly vertical rebound through a gap in a low row can repeat an empty
   // flight. After the first empty catch, prepare only a small direct correction.
-  const lowGapGuide=this.mode==='endless'&&falling&&this.targets.length===3&&falling.y>=610&&
-   this.progress.sinceHit>=ASSIST_DELAY&&this.progress.catchesWithoutHit===1&&
+  const lowRow=this.mode==='endless'&&falling&&this.targets.length===3&&falling.y>=610&&
+   this.progress.sinceHit>=ASSIST_DELAY&&this.targets.every(t=>t.y>=580&&Math.abs(t.y-this.targets[0].y)<=1);
+  const lowGapGuide=lowRow&&this.progress.catchesWithoutHit===1&&
    Math.abs(falling.x-this.paddle.x)<=this.paddle.width/6&&Math.abs(falling.vx)<=falling.vy*.15&&
-   this.targets.every(t=>t.y>=580&&Math.abs(t.y-this.targets[0].y)<=1)&&
    this.targets.some(t=>t.x<falling.x)&&this.targets.some(t=>t.x>falling.x);
-  if(falling&&(regularGuide||edgeGuide||lowCoreEdgeGuide||lowGapGuide)&&falling.vy>0&&falling.y>470&&falling.y<675-falling.r+10&&this.time-this.lastGuideTime>=(falling.y>620?.025:.08)){
+  // A nearly vertical rebound can miss a low row entirely on one side.
+  const oneSidedRowGuide=lowRow&&this.progress.catchesWithoutHit===2&&
+   Math.abs(falling.x-this.paddle.x)<=this.paddle.width/4&&Math.abs(falling.vx)<=falling.vy*.2&&
+   this.targets.every(t=>!t.motion)&&
+   (this.targets.every(t=>t.x<falling.x-half-falling.r)||this.targets.every(t=>t.x>falling.x+half+falling.r))&&
+   this.targets.some(t=>Math.abs(t.x-falling.x)<=96);
+  if(falling&&(regularGuide||edgeGuide||lowCoreEdgeGuide||lowGapGuide||oneSidedRowGuide)&&falling.vy>0&&falling.y>470&&falling.y<675-falling.r+10&&this.time-this.lastGuideTime>=(falling.y>620?.025:.08)){
    this.lastGuideTime=this.time;
    const movingEndgame=this.mode==='endless'&&this.targets.length===1&&this.lowEndgame&&this.targets[0].motion&&this.progress.sinceHit>=ASSIST_DELAY;
    const environment={air:this.air,gates:this.gates,pegs:this.pegs,wind:this.windMultiplier,response:spec.windResponse,energyLimit:this.energyCapacity,allowLowerWork:this.progress.catchesWithoutHit>=misses,catchFrame:movingEndgame?dt:undefined},paddle={...this.paddle,x:oldPaddleX};
    // Preserve a useful ordinary rebound, including a previously prepared face.
    if(regularGuide||!forecastRebound(falling,paddle,this.targets,spec.mass,restitution,this.time-dt,environment,this.paddle.tilt||0,false,this.paddle.boost??18000).hit){
-    const gentle=lowGapGuide&&!regularGuide&&!edgeGuide;
-    const maxTilt=gentle?.22:this.progress.sinceHit>=20||this.lowEndgame?.48:.32;
+    const gentle=(lowGapGuide||oneSidedRowGuide)&&!regularGuide&&!edgeGuide;
+    let maxTilt=this.progress.sinceHit>=20||this.lowEndgame?.48:.32;
+    if(gentle)maxTilt=oneSidedRowGuide?.2:.22;
     const plan=guidedRebound(falling,paddle,this.targets,spec.mass,restitution,this.time-dt,environment,maxTilt);
     // A closest miss is not enough for early steering. Keep the existing later fallback.
     const directHit=plan.hit&&(!gentle||(plan.hitElapsed??Infinity)<.45);
