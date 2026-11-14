@@ -9,7 +9,7 @@ const cases = [
  {name:'low row with a central gap',seed:42,material:'ceramic',size:'large',policy:'steer',limit:13},
  {name:'two empty catches in a low row',seed:4039,material:'rubber',size:'large',policy:'follow',limit:11.1},
  {name:'low row entirely to one side',seed:815,material:'steel',size:'large',policy:'steer',limit:15.3,hits:585,shot:{number:15,hits:44,gap:12}},
- {name:'central gap with a moving brick',seed:2026,material:'brass',size:'standard',policy:'follow',limit:13.4,hits:968,shot:{number:2,hits:97,gap:12.5},laterShot:{number:5,hits:45,gap:12.5}},
+ {name:'central gap with a moving brick',seed:2026,material:'brass',size:'standard',policy:'follow',limit:13.4,hits:968,shot:{number:2,hits:97,gap:12.5},extraShot:{number:5,hits:45,gap:12.5}},
  {name:'wall-side row with a moving spring',seed:739,material:'steel',size:'standard',policy:'follow',limit:12,hits:454,shot:{number:9,hits:28,gap:7}},
  {name:'wide gap between fixed bricks',seed:7429,material:'brass',size:'standard',policy:'steer',limit:14.5,hits:462,shot:{number:9,hits:61,gap:14.5}},
  {name:'widened paddle below a moving spring',seed:7429,material:'steel',size:'standard',policy:'steer',limit:12,hits:569,shot:{number:11,hits:56,gap:12}},
@@ -23,7 +23,7 @@ const cases = [
  {name:'central gap across two low rows',seed:2217,material:'brass',size:'standard',policy:'follow',limit:10,hits:530,shot:{number:2,hits:19,gap:10}},
  {name:'central gap between a moving spring and a diamond',seed:739,material:'brass',size:'standard',policy:'follow',limit:12.5,hits:603,shot:{number:2,hits:28,gap:9}},
  {name:'moving spring opposite a fixed bar',seed:42,material:'brass',size:'standard',policy:'follow',limit:10,hits:674,shot:{number:2,hits:13,gap:10}},
- {name:'fixed spring opposite a moving square',seed:934,material:'brass',size:'standard',policy:'follow',limit:15.5,hits:665,shot:{number:2,hits:44,gap:14}},
+ {name:'fixed spring opposite a moving square',seed:934,material:'brass',size:'standard',policy:'follow',limit:15.47,hits:838,shot:{number:2,hits:44,gap:8.52},extraShot:{number:1,hits:63,gap:9.2}},
  {name:'fixed spring opposite a moving triangle',seed:2931,material:'brass',size:'standard',policy:'follow',limit:12,hits:566,shot:{number:2,hits:26,gap:12}},
  {name:'fixed spring opposite a moving bar',seed:87,material:'brass',size:'standard',policy:'follow',limit:10,hits:593,shot:{number:2,hits:22,gap:10}},
  {name:'moving spring opposite a fixed low triangle',seed:137,material:'brass',size:'standard',policy:'follow',limit:12,hits:544,shot:{number:2,hits:20,gap:11.2}},
@@ -65,7 +65,7 @@ for (const scenario of cases) {
   assert.ok(game.progress.maxNoHit < limit);
   if ('hits' in scenario) {
    assert.ok(game.stats.hits >= scenario.hits);
-   const expectedShots = 'laterShot' in scenario ? [scenario.shot,scenario.laterShot] : [scenario.shot];
+   const expectedShots = 'extraShot' in scenario ? [scenario.shot,scenario.extraShot] : [scenario.shot];
    for (const expected of expectedShots) {
     const observed = observedShots.get(expected.number);
     assert.ok(observed);
