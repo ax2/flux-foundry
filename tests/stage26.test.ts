@@ -9,7 +9,7 @@ const cases = [
  {name:'low row with a central gap',seed:42,material:'ceramic',size:'large',policy:'steer',limit:13},
  {name:'two empty catches in a low row',seed:4039,material:'rubber',size:'large',policy:'follow',limit:11.1},
  {name:'low row entirely to one side',seed:815,material:'steel',size:'large',policy:'steer',limit:15.3,hits:585,shot:{number:15,hits:44,gap:12}},
- {name:'central gap with a moving brick',seed:2026,material:'brass',size:'standard',policy:'follow',limit:15.7,hits:686,shot:{number:2,hits:97,gap:12.5}},
+ {name:'central gap with a moving brick',seed:2026,material:'brass',size:'standard',policy:'follow',limit:13.4,hits:968,shot:{number:2,hits:97,gap:12.5},laterShot:{number:5,hits:45,gap:12.5}},
  {name:'wall-side row with a moving spring',seed:739,material:'steel',size:'standard',policy:'follow',limit:12,hits:454,shot:{number:9,hits:28,gap:7}},
  {name:'wide gap between fixed bricks',seed:7429,material:'brass',size:'standard',policy:'steer',limit:14.5,hits:462,shot:{number:9,hits:61,gap:14.5}},
  {name:'widened paddle below a moving spring',seed:7429,material:'steel',size:'standard',policy:'steer',limit:12,hits:569,shot:{number:11,hits:56,gap:12}},
@@ -37,7 +37,7 @@ for (const scenario of cases) {
  const {name, seed, material, size, policy, limit} = scenario;
  test(`the ${name} expedition advances without repeating the long empty rally`, () => {
   const game = new Game(seed);
-  let observedShot: {hits:number;gap:number} | undefined;
+  const observedShots = new Map<number, {hits:number;gap:number}>();
   while (game.phase === 'aim') {
    assert.ok(game.selectBall(material, size));
    const target = game.targets.slice().sort((a, b) => a.hp - b.hp)[0];
@@ -57,9 +57,7 @@ for (const scenario of cases) {
    }
    assert.notEqual(game.phase, 'volley');
    assert.ok(original.y - original.r >= 692);
-   if ('shot' in scenario && game.shots === scenario.shot.number) {
-    observedShot = {hits:game.stats.hits - previousHits,gap:shotGap};
-   }
+   observedShots.set(game.shots,{hits:game.stats.hits - previousHits,gap:shotGap});
   }
   assert.equal(game.phase, 'over');
   assert.equal(game.wave, 15);
@@ -67,9 +65,13 @@ for (const scenario of cases) {
   assert.ok(game.progress.maxNoHit < limit);
   if ('hits' in scenario) {
    assert.ok(game.stats.hits >= scenario.hits);
-   assert.ok(observedShot);
-   assert.ok(observedShot.hits >= scenario.shot.hits);
-   assert.ok(observedShot.gap < scenario.shot.gap);
+   const expectedShots = 'laterShot' in scenario ? [scenario.shot,scenario.laterShot] : [scenario.shot];
+   for (const expected of expectedShots) {
+    const observed = observedShots.get(expected.number);
+    assert.ok(observed);
+    assert.ok(observed.hits >= expected.hits);
+    assert.ok(observed.gap < expected.gap);
+   }
   }
  });
 }
