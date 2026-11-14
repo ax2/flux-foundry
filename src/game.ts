@@ -338,13 +338,31 @@ export class Game{
    this.targets.length===1&&Math.abs(falling.x-this.paddle.x)<falling.r/2&&Math.abs(falling.vx)<falling.vy*.08&&
    this.targets.some(t=>!t.motion&&t.kind==='hexagon'&&t.power==='spring'&&t.y>=540&&t.y<575&&
     Math.abs(t.x-falling.x)>=t.size/2+falling.r&&Math.abs(t.x-falling.x)<this.paddle.width);
-  if(falling&&(regularGuide||edgeGuide||lowCoreEdgeGuide||lowGapGuide||oneSidedRowGuide||centralMovingGuide||movingSpringEdgeGuide||splitRowGuide||widePaddleGuide||enlargedBallGuide||lowSplitGuide||centralFixedGuide||centralSpringGuide||centralMovingSpringGuide||centralTwoRowGuide||centralDiamondGuide||lowRowGuide||sideBarGuide||raisedSquareGuide||offCenterBarGuide||fixedBarGapGuide||singleSpringGuide)&&falling.vy>0&&falling.y>470&&falling.y<675-falling.r+10&&this.time-this.lastGuideTime>=(falling.y>620?.025:.08)){
+  // Across from a moving spring, the fixed bar can catch the next rebound.
+  const movingHexGapGuide=this.mode==='endless'&&falling&&falling.y>=610&&this.material==='brass'&&this.size==='standard'&&
+   this.bigTime===0&&this.wideTime===0&&this.air.length===0&&this.progress.sinceHit>=6.75&&this.progress.catchesWithoutHit===1&&
+   this.targets.length===3&&Math.abs(falling.x-W/2)<falling.r/4&&
+   Math.abs(falling.x-this.paddle.x)<falling.r/4&&Math.abs(falling.vx)<falling.vy*.03&&
+   this.targets.every(t=>t.y>=600&&Math.abs(t.y-this.targets[0].y)<=1)&&
+   this.targets.some(t=>t.motion&&t.kind==='hexagon'&&t.power==='spring'&&Math.abs(t.x-falling.x)<this.paddle.width&&
+    this.targets.some(b=>!b.motion&&b.kind==='bar'&&!b.power&&(b.x-falling.x)*(t.x-falling.x)<0&&Math.abs(b.x-falling.x)<this.paddle.width))&&
+   this.targets.some(t=>!t.motion&&t.kind==='steel'&&!t.power);
+  // A low spring can be reached from a side catch below the upper airflow.
+  const wallHexGuide=this.mode==='endless'&&falling&&falling.y>=610&&this.material==='brass'&&this.size==='standard'&&
+   this.bigTime===0&&this.wideTime===0&&this.progress.sinceHit>=5.5&&this.progress.catchesWithoutHit===1&&
+   this.air.length>0&&this.air.every(zone=>zone.y+zone.h<470)&&
+   this.targets.length===4&&(falling.x<this.paddle.width||falling.x>W-this.paddle.width)&&
+   this.targets.every(t=>t.y>=580&&t.y<600&&Math.abs(t.y-this.targets[0].y)<=1)&&
+   (this.targets.every(t=>t.x>falling.x)||this.targets.every(t=>t.x<falling.x))&&
+   this.targets.some(t=>!t.motion&&t.kind==='hexagon'&&t.power==='spring'&&Math.abs(t.x-falling.x)<this.paddle.width*1.2)&&
+   this.targets.some(t=>!t.motion&&t.kind==='bar'&&t.power==='spring')&&this.targets.some(t=>t.motion&&t.kind==='diamond');
+  if(falling&&(regularGuide||edgeGuide||lowCoreEdgeGuide||lowGapGuide||oneSidedRowGuide||centralMovingGuide||movingSpringEdgeGuide||splitRowGuide||widePaddleGuide||enlargedBallGuide||lowSplitGuide||centralFixedGuide||centralSpringGuide||centralMovingSpringGuide||centralTwoRowGuide||centralDiamondGuide||lowRowGuide||sideBarGuide||raisedSquareGuide||offCenterBarGuide||fixedBarGapGuide||singleSpringGuide||movingHexGapGuide||wallHexGuide)&&falling.vy>0&&falling.y>470&&falling.y<675-falling.r+10&&this.time-this.lastGuideTime>=(falling.y>620?.025:.08)){
    this.lastGuideTime=this.time;
    const movingEndgame=this.mode==='endless'&&this.targets.length===1&&this.lowEndgame&&this.targets[0].motion&&this.progress.sinceHit>=ASSIST_DELAY;
-   const environment={air:this.air,gates:this.gates,pegs:this.pegs,wind:this.windMultiplier,response:spec.windResponse,energyLimit:this.energyCapacity,allowLowerWork:this.progress.catchesWithoutHit>=misses,catchFrame:(movingEndgame||splitRowGuide||widePaddleGuide||enlargedBallGuide||lowSplitGuide||centralFixedGuide||centralSpringGuide||centralMovingSpringGuide||centralTwoRowGuide||centralDiamondGuide||lowRowGuide||sideBarGuide||raisedSquareGuide||offCenterBarGuide||fixedBarGapGuide||singleSpringGuide)?dt:undefined},paddle={...this.paddle,x:oldPaddleX};
+   const environment={air:this.air,gates:this.gates,pegs:this.pegs,wind:this.windMultiplier,response:spec.windResponse,energyLimit:this.energyCapacity,allowLowerWork:this.progress.catchesWithoutHit>=misses,catchFrame:(movingEndgame||splitRowGuide||widePaddleGuide||enlargedBallGuide||lowSplitGuide||centralFixedGuide||centralSpringGuide||centralMovingSpringGuide||centralTwoRowGuide||centralDiamondGuide||lowRowGuide||sideBarGuide||raisedSquareGuide||offCenterBarGuide||fixedBarGapGuide||singleSpringGuide||movingHexGapGuide||wallHexGuide)?dt:undefined},paddle={...this.paddle,x:oldPaddleX};
    // Preserve a useful ordinary rebound, including a previously prepared face.
    if(regularGuide||!forecastRebound(falling,paddle,this.targets,spec.mass,restitution,this.time-dt,environment,this.paddle.tilt||0,false,this.paddle.boost??18000).hit){
-    const gentle=(lowGapGuide||oneSidedRowGuide||centralMovingGuide||movingSpringEdgeGuide||splitRowGuide||widePaddleGuide||enlargedBallGuide||lowSplitGuide||centralFixedGuide||centralSpringGuide||centralMovingSpringGuide||centralTwoRowGuide||centralDiamondGuide||lowRowGuide||sideBarGuide||raisedSquareGuide||offCenterBarGuide||fixedBarGapGuide||singleSpringGuide)&&!regularGuide&&!edgeGuide;
+    const gentle=(lowGapGuide||oneSidedRowGuide||centralMovingGuide||movingSpringEdgeGuide||splitRowGuide||widePaddleGuide||enlargedBallGuide||lowSplitGuide||centralFixedGuide||centralSpringGuide||centralMovingSpringGuide||centralTwoRowGuide||centralDiamondGuide||lowRowGuide||sideBarGuide||raisedSquareGuide||offCenterBarGuide||fixedBarGapGuide||singleSpringGuide||movingHexGapGuide||wallHexGuide)&&!regularGuide&&!edgeGuide;
     let maxTilt=this.progress.sinceHit>=20||this.lowEndgame?.48:.32;
     if(gentle){
      if(centralFixedGuide)maxTilt=0.22;
@@ -353,6 +371,8 @@ export class Game{
      else if(centralTwoRowGuide||centralDiamondGuide)maxTilt=.32;
      else if(sideBarGuide)maxTilt=.10;
      else if(raisedSquareGuide)maxTilt=.16;
+     else if(movingHexGapGuide)maxTilt=.264;
+     else if(wallHexGuide)maxTilt=.30;
      else if(singleSpringGuide)maxTilt=.155;
      else if(fixedBarGapGuide)maxTilt=.302;
      else if(offCenterBarGuide)maxTilt=.23;

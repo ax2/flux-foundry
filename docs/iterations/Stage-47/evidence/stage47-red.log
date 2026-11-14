@@ -1,0 +1,54 @@
+✖ the central spring beside a fixed hexagon while following expedition advances without repeating the long empty rally (2059.6851ms)
+✖ the fixed spring opposite a moving square expedition advances without repeating the long empty rally (2079.1252ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 0
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4599.5698
+
+✖ failing tests:
+
+test at tests\stage26.test.ts:1:4369
+✖ the central spring beside a fixed hexagon while following expedition advances without repeating the long empty rally (2059.6851ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+    assert.ok(game.progress.maxNoHit < limit)
+
+      at TestContext.<anonymous> (D:\Work\games\flux-foundry\tests\stage26.test.ts:65:10)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.start (node:internal/test_runner/test:1262:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests\stage26.test.ts:1:4369
+✖ the fixed spring opposite a moving square expedition advances without repeating the long empty rally (2079.1252ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+    assert.ok(game.progress.maxNoHit < limit)
+
+      at TestContext.<anonymous> (D:\Work\games\flux-foundry\tests\stage26.test.ts:65:10)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at node:internal/test_runner/test:1305:31
+      at node:internal/process/task_queues:151:7
+      at AsyncResource.runInAsyncScope (node:async_hooks:226:14)
+      at AsyncResource.runMicrotask (node:internal/process/task_queues:148:8) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

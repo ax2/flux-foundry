@@ -1,0 +1,20 @@
+Windows packaging attempt 1/3 (installed Electron)
+  • electron-builder  version=26.18.0 os=10.0.26300
+  • loaded configuration  file=package.json ("build" field)
+  • executing @electron/rebuild  electronVersion=45.2.3 arch=x64 buildFromSource=false workspaceRoot=D:\Work\games\flux-foundry projectDir=./ appDir=./
+  • installing native dependencies  arch=x64
+  • completed installing native dependencies
+  • packaging       platform=win32 arch=x64 electron=45.2.3 appOutDir=releases\v0.29.0\win-unpacked
+  • using custom unpacked Electron distribution  electronDist=node_modules\electron\dist
+  • copying unpacked Electron  source=D:\Work\games\flux-foundry\node_modules\electron\dist destination=D:\Work\games\flux-foundry\releases\v0.29.0\win-unpacked
+  • searching for node modules  pm=npm searchDir=D:\Work\games\flux-foundry
+  • no node modules found in collection, trying next search directory  pm=npm searchDir=D:\Work\games\flux-foundry
+  • searching for node modules  pm=traversal searchDir=D:\Work\games\flux-foundry
+  • using manual traversal of node_modules to build dependency tree
+  • no node modules found in collection, trying next search directory  pm=traversal searchDir=D:\Work\games\flux-foundry
+  • no node modules returned while searching directories  searchDirectories=[""]
+  • updating asar integrity executable resource  executablePath=releases\v0.29.0\win-unpacked\Flux Foundry.exe
+  • executable resource editing and code signing skipped — signAndEditExecutable is false. To skip only code signing while keeping icon and metadata applied, use signExecutable: false instead.  exe=releases\v0.29.0\win-unpacked\Flux Foundry.exe
+  • building        target=portable file=releases\v0.29.0\Flux-Foundry-0.29.0-Windows-x64.exe archs=x64
+  • default Electron icon is used  reason=application icon is not set
+  • no code signing certificate configured, signing is skipped  path=releases\v0.29.0\Flux-Foundry-0.29.0-Windows-x64.exe

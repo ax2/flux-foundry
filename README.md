@@ -6,9 +6,9 @@
 
 ![手机画面](docs/iterations/Stage-29/screenshots/390x844-steel.png)
 
-## v0.28.0 远征低排反弹
+## v0.29.0 远征低排与侧壁反弹
 
-挡板更早处理低排组合之间的重复直弹。七条中号黄铜路线和一条大号陶瓷路线缩短目标发的空转。大号陶瓷第 4 发最长无命中由 15.67 秒降至 7.69 秒，有效命中由 72 增至 96。详见 [Stage-39](docs/iterations/Stage-39/assessment.md)、[Stage-40](docs/iterations/Stage-40/assessment.md)、[Stage-41](docs/iterations/Stage-41/assessment.md) 与 [Stage-42](docs/iterations/Stage-42/assessment.md)。
+挡板更早处理低排空列、加宽挡板与靠墙接球的空转。两条中号黄铜目标发最长无命中由 15.46 秒降至 8.86 和 6.80 秒，有效命中从 30 次增至 71 次、从 23 次增至 53 次。详见 [Stage-43](docs/iterations/Stage-43/assessment.md) 至 [Stage-47](docs/iterations/Stage-47/assessment.md)。
 
 ## v0.26.0 远征低排反弹
 
@@ -83,7 +83,7 @@ v0.20.0为上一公开版；当前修复继续保留已存星级。Stage-08的�
 
 ## 交付与验证
 
-Windows x64 便携版为 `Flux-Foundry-0.28.0-Windows-x64.exe`。本地 `releases/v0.28.0/` 保留完整 `win-unpacked` 运行目录和 EXE。手机为触屏 Web/PWA，首次联网加载后可离线重开。Windows 未签名，实体手机及低端性能仍待验收。
+Windows x64 便携版为 `Flux-Foundry-0.29.0-Windows-x64.exe`。本地 `releases/v0.29.0/` 保留完整 `win-unpacked` 运行目录和 EXE。手机为触屏 Web/PWA，首次联网加载后可离线重开。Windows 未签名，实体手机及低端性能仍待验收。
 
 当前验证见 Stage-29，历史发布资格见各阶段评估。PCM 渲染和自动触控覆盖软件层。实体手机、真实扬声器与人耳听感待验。完整原图约 3.40 MB，低带宽下会逐步显示加载进度。
 
