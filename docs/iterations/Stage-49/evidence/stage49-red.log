@@ -1,0 +1,27 @@
+✖ large steel catches the low row during the captured touch rally without losing hits (183.9787ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 0
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 515.7845
+
+✖ failing tests:
+
+test at tests\stage49.test.ts:1:392
+✖ large steel catches the low row during the captured touch rally without losing hits (183.9787ms)
+  AssertionError [ERR_ASSERTION]: second shot went 15.274999999999773 seconds without a hit
+      at TestContext.<anonymous> (D:\Work\games\flux-foundry\tests\stage49.test.ts:42:11)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.start (node:internal/test_runner/test:1262:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
