@@ -1,0 +1,266 @@
+[
+  {
+    "shot": 1,
+    "event": "aim",
+    "point": {
+      "x": 249.39500902356457,
+      "y": 307.6360818967255
+    },
+    "flight": 0,
+    "bricks": [
+      {
+        "id": 0,
+        "x": 66,
+        "y": 453,
+        "size": 52,
+        "kind": "hexagon",
+        "hp": 3,
+        "maxHp": 3,
+        "flash": 0,
+        "anchor": false,
+        "row": 1
+      },
+      {
+        "id": 1,
+        "x": 138,
+        "y": 453,
+        "size": 52,
+        "kind": "hexagon",
+        "hp": 4,
+        "maxHp": 4,
+        "flash": 0,
+        "anchor": false,
+        "row": 1
+      },
+      {
+        "id": 2,
+        "x": 210,
+        "y": 453,
+        "size": 52,
+        "kind": "steel",
+        "hp": 12,
+        "maxHp": 12,
+        "flash": 0,
+        "power": "spring",
+        "anchor": true,
+        "row": 1
+      },
+      {
+        "id": 3,
+        "x": 282,
+        "y": 453,
+        "size": 52,
+        "kind": "diamond",
+        "hp": 2,
+        "maxHp": 2,
+        "flash": 0,
+        "anchor": false,
+        "row": 1,
+        "motion": {
+          "baseX": 282,
+          "amplitude": 14,
+          "speed": 0.8999999999999999
+        }
+      },
+      {
+        "id": 4,
+        "x": 354,
+        "y": 453,
+        "size": 52,
+        "kind": "hexagon",
+        "hp": 3,
+        "maxHp": 3,
+        "flash": 0,
+        "anchor": false,
+        "row": 1
+      },
+      {
+        "id": 5,
+        "x": 66,
+        "y": 550,
+        "size": 52,
+        "kind": "diamond",
+        "hp": 6,
+        "maxHp": 6,
+        "flash": 0,
+        "anchor": false,
+        "row": 2
+      },
+      {
+        "id": 6,
+        "x": 138,
+        "y": 550,
+        "size": 52,
+        "kind": "prism",
+        "hp": 7,
+        "maxHp": 7,
+        "flash": 0,
+        "anchor": false,
+        "row": 2,
+        "motion": {
+          "baseX": 138,
+          "amplitude": 14,
+          "speed": 0.7
+        }
+      },
+      {
+        "id": 7,
+        "x": 210,
+        "y": 550,
+        "size": 52,
+        "kind": "hexagon",
+        "hp": 4,
+        "maxHp": 4,
+        "flash": 0,
+        "power": "spring",
+        "anchor": false,
+        "row": 2
+      },
+      {
+        "id": 8,
+        "x": 282,
+        "y": 550,
+        "size": 52,
+        "kind": "hexagon",
+        "hp": 16,
+        "maxHp": 16,
+        "flash": 0,
+        "power": "spring",
+        "anchor": true,
+        "row": 2
+      },
+      {
+        "id": 9,
+        "x": 354,
+        "y": 550,
+        "size": 52,
+        "kind": "prism",
+        "hp": 6,
+        "maxHp": 6,
+        "flash": 0,
+        "anchor": false,
+        "row": 2
+      }
+    ]
+  },
+  {
+    "shot": 1,
+    "event": "launch",
+    "flight": 0,
+    "ball": {
+      "x": 210,
+      "y": 132,
+      "vx": 49.75408003122724,
+      "vy": 221.82024033042217,
+      "r": 16
+    },
+    "paddle": {
+      "x": 210,
+      "target": 210,
+      "width": 96,
+      "vx": 0,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    }
+  },
+  {
+    "shot": 2,
+    "event": "aim",
+    "point": {
+      "x": 210,
+      "y": 312
+    },
+    "flight": 75.54166666667285,
+    "bricks": [
+      {
+        "id": 13,
+        "x": 66,
+        "y": 609,
+        "size": 52,
+        "kind": "capacitor",
+        "hp": 9,
+        "maxHp": 9,
+        "flash": 0,
+        "anchor": false,
+        "row": 3
+      },
+      {
+        "id": 14,
+        "x": 138,
+        "y": 609,
+        "size": 52,
+        "kind": "steel",
+        "hp": 20,
+        "maxHp": 20,
+        "flash": 0,
+        "power": "spring",
+        "anchor": true,
+        "row": 3
+      },
+      {
+        "id": 15,
+        "x": 210,
+        "y": 609,
+        "size": 52,
+        "kind": "steel",
+        "hp": 7,
+        "maxHp": 7,
+        "flash": 0,
+        "power": "spring",
+        "anchor": false,
+        "row": 3,
+        "motion": {
+          "baseX": 210,
+          "amplitude": 14,
+          "speed": 0.8999999999999999
+        }
+      },
+      {
+        "id": 16,
+        "x": 282,
+        "y": 609,
+        "size": 52,
+        "kind": "prism",
+        "hp": 8,
+        "maxHp": 8,
+        "flash": 0,
+        "anchor": false,
+        "row": 3
+      },
+      {
+        "id": 17,
+        "x": 354,
+        "y": 609,
+        "size": 52,
+        "kind": "diamond",
+        "hp": 9,
+        "maxHp": 9,
+        "flash": 0,
+        "anchor": false,
+        "row": 3
+      }
+    ]
+  },
+  {
+    "shot": 2,
+    "event": "launch",
+    "flight": 75.54166666667285,
+    "ball": {
+      "x": 210,
+      "y": 132,
+      "vx": 1.3920050008264404e-14,
+      "vy": 227.33166849341518,
+      "r": 16
+    },
+    "paddle": {
+      "x": 245.81519963191107,
+      "target": 255.45990459735577,
+      "width": 96,
+      "vx": 900,
+      "flash": 0,
+      "tilt": 0,
+      "boost": 18000
+    }
+  }
+]
