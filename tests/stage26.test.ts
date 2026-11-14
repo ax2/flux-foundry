@@ -29,6 +29,7 @@ const cases = [
  {name:'moving spring opposite a fixed low triangle',seed:137,material:'brass',size:'standard',policy:'follow',limit:12,hits:544,shot:{number:2,hits:20,gap:11.2}},
  {name:'fixed spring opposite a moving low capacitor',seed:1229,material:'brass',size:'standard',policy:'follow',limit:11,hits:770,shot:{number:2,hits:53,gap:11}},
  {name:'low fixed bar beyond a side rally',seed:7429,material:'ceramic',size:'large',policy:'follow',limit:9.5,hits:620,shot:{number:4,hits:72,gap:8}},
+ {name:'fixed spring opposite a higher moving square',seed:934,material:'ceramic',size:'large',policy:'follow',limit:9.3,hits:493,shot:{number:3,hits:15,gap:8}},
 ] as const;
 
 for (const scenario of cases) {
