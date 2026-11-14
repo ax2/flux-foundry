@@ -315,13 +315,21 @@ export class Game{
    this.targets.every(t=>t.kind==='steel'&&t.y>=580&&t.y<600&&Math.abs(t.y-this.targets[0].y)<=1)&&
    this.targets.some(t=>!t.motion&&t.power==='spring'&&Math.abs(t.x-falling.x)<this.paddle.width)&&
    this.targets.some(t=>t.motion&&!t.power&&Math.abs(t.x-falling.x)<this.paddle.width);
-  if(falling&&(regularGuide||edgeGuide||lowCoreEdgeGuide||lowGapGuide||oneSidedRowGuide||centralMovingGuide||movingSpringEdgeGuide||splitRowGuide||widePaddleGuide||enlargedBallGuide||lowSplitGuide||centralFixedGuide||centralSpringGuide||centralMovingSpringGuide||centralTwoRowGuide||centralDiamondGuide||lowRowGuide||sideBarGuide||raisedSquareGuide)&&falling.vy>0&&falling.y>470&&falling.y<675-falling.r+10&&this.time-this.lastGuideTime>=(falling.y>620?.025:.08)){
+  // An off-centre catch on the wider paddle can still repeat a central miss.
+  const offCenterBarGuide=this.mode==='endless'&&falling&&falling.y>=610&&this.material==='brass'&&this.size==='standard'&&
+   this.bigTime===0&&this.wideTime>0&&this.air.length===0&&this.progress.sinceHit>=7&&this.progress.catchesWithoutHit===1&&
+   this.targets.length===4&&Math.abs(falling.x-W/2)<falling.r*1.5&&
+   Math.abs(falling.x-this.paddle.x)<falling.r/2&&Math.abs(falling.vx)<falling.vy*.05&&
+   this.targets.every(t=>t.y>=560&&t.y<580&&Math.abs(t.y-this.targets[0].y)<=1)&&
+   this.targets.some(t=>!t.motion&&t.kind==='steel'&&t.power==='spring'&&Math.abs(t.x-falling.x)<this.paddle.width)&&
+   this.targets.some(t=>t.motion&&t.kind==='bar'&&Math.abs(t.x-falling.x)<this.paddle.width);
+  if(falling&&(regularGuide||edgeGuide||lowCoreEdgeGuide||lowGapGuide||oneSidedRowGuide||centralMovingGuide||movingSpringEdgeGuide||splitRowGuide||widePaddleGuide||enlargedBallGuide||lowSplitGuide||centralFixedGuide||centralSpringGuide||centralMovingSpringGuide||centralTwoRowGuide||centralDiamondGuide||lowRowGuide||sideBarGuide||raisedSquareGuide||offCenterBarGuide)&&falling.vy>0&&falling.y>470&&falling.y<675-falling.r+10&&this.time-this.lastGuideTime>=(falling.y>620?.025:.08)){
    this.lastGuideTime=this.time;
    const movingEndgame=this.mode==='endless'&&this.targets.length===1&&this.lowEndgame&&this.targets[0].motion&&this.progress.sinceHit>=ASSIST_DELAY;
-   const environment={air:this.air,gates:this.gates,pegs:this.pegs,wind:this.windMultiplier,response:spec.windResponse,energyLimit:this.energyCapacity,allowLowerWork:this.progress.catchesWithoutHit>=misses,catchFrame:(movingEndgame||splitRowGuide||widePaddleGuide||enlargedBallGuide||lowSplitGuide||centralFixedGuide||centralSpringGuide||centralMovingSpringGuide||centralTwoRowGuide||centralDiamondGuide||lowRowGuide||sideBarGuide||raisedSquareGuide)?dt:undefined},paddle={...this.paddle,x:oldPaddleX};
+   const environment={air:this.air,gates:this.gates,pegs:this.pegs,wind:this.windMultiplier,response:spec.windResponse,energyLimit:this.energyCapacity,allowLowerWork:this.progress.catchesWithoutHit>=misses,catchFrame:(movingEndgame||splitRowGuide||widePaddleGuide||enlargedBallGuide||lowSplitGuide||centralFixedGuide||centralSpringGuide||centralMovingSpringGuide||centralTwoRowGuide||centralDiamondGuide||lowRowGuide||sideBarGuide||raisedSquareGuide||offCenterBarGuide)?dt:undefined},paddle={...this.paddle,x:oldPaddleX};
    // Preserve a useful ordinary rebound, including a previously prepared face.
    if(regularGuide||!forecastRebound(falling,paddle,this.targets,spec.mass,restitution,this.time-dt,environment,this.paddle.tilt||0,false,this.paddle.boost??18000).hit){
-    const gentle=(lowGapGuide||oneSidedRowGuide||centralMovingGuide||movingSpringEdgeGuide||splitRowGuide||widePaddleGuide||enlargedBallGuide||lowSplitGuide||centralFixedGuide||centralSpringGuide||centralMovingSpringGuide||centralTwoRowGuide||centralDiamondGuide||lowRowGuide||sideBarGuide||raisedSquareGuide)&&!regularGuide&&!edgeGuide;
+    const gentle=(lowGapGuide||oneSidedRowGuide||centralMovingGuide||movingSpringEdgeGuide||splitRowGuide||widePaddleGuide||enlargedBallGuide||lowSplitGuide||centralFixedGuide||centralSpringGuide||centralMovingSpringGuide||centralTwoRowGuide||centralDiamondGuide||lowRowGuide||sideBarGuide||raisedSquareGuide||offCenterBarGuide)&&!regularGuide&&!edgeGuide;
     let maxTilt=this.progress.sinceHit>=20||this.lowEndgame?.48:.32;
     if(gentle){
      if(centralFixedGuide)maxTilt=0.22;
@@ -330,6 +338,7 @@ export class Game{
      else if(centralTwoRowGuide||centralDiamondGuide)maxTilt=.32;
      else if(sideBarGuide)maxTilt=.10;
      else if(raisedSquareGuide)maxTilt=.16;
+     else if(offCenterBarGuide)maxTilt=.23;
      else if(lowRowTilt!==undefined)maxTilt=lowRowTilt;
      else if(lowSplitGuide)maxTilt=.11;
      else if(enlargedBallGuide)maxTilt=.06;
