@@ -6,6 +6,10 @@
 
 ![手机画面](docs/iterations/Stage-29/screenshots/390x844-steel.png)
 
+## v0.31.0 低排与横风反弹
+
+部分低排布局里，挡板更早把钢珠和黄铜珠送回有效碰撞。放大黄铜珠的目标发最长空转由 16.34 秒降至 3.96 秒，横风钢珠的目标发由 16.12 秒降至 12.61 秒。两发的有效命中都增加了。详见 [Stage-53](docs/iterations/Stage-53/assessment.md) 至 [Stage-55](docs/iterations/Stage-55/assessment.md)。
+
 ## v0.30.0 钢珠中央反弹
 
 大号钢珠在常见的低排和交错弹簧布局里更早恢复命中。三个目标回放最长空转从约 15.27 秒缩短到 10.28、7.97 和 3.91 秒。详见 [Stage-51](docs/iterations/Stage-51/assessment.md) 与 [Stage-52](docs/iterations/Stage-52/assessment.md)。
@@ -87,7 +91,7 @@ v0.20.0为上一公开版；当前修复继续保留已存星级。Stage-08的�
 
 ## 交付与验证
 
-Windows x64 便携版为 `Flux-Foundry-0.30.0-Windows-x64.exe`。本地 `releases/v0.30.0/` 保留完整 `win-unpacked` 运行目录和 EXE。手机为触屏 Web/PWA，首次联网加载后可离线重开。Windows 未签名，实体手机及低端性能仍待验收。
+Windows x64 便携版为 `Flux-Foundry-0.31.0-Windows-x64.exe`。本地 `releases/v0.31.0/` 保留完整 `win-unpacked` 运行目录和 EXE。手机为触屏 Web/PWA，首次联网加载后可离线重开。Windows 未签名，实体手机及低端性能仍待验收。
 
 当前验证见 Stage-29，历史发布资格见各阶段评估。PCM 渲染和自动触控覆盖软件层。实体手机、真实扬声器与人耳听感待验。完整原图约 3.40 MB，低带宽下会逐步显示加载进度。
 
