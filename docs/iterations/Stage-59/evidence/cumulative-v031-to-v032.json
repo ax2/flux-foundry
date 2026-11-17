@@ -1,0 +1,98 @@
+{
+  "main": {
+    "size": 456,
+    "identical": 454,
+    "changes": [
+      {
+        "seed": 1907,
+        "material": "brass",
+        "size": "standard",
+        "policy": "steer",
+        "before": 15.099999999999783,
+        "after": 10.733333333333364,
+        "hitsBefore": 644,
+        "hitsAfter": 706,
+        "waves": 15,
+        "shots": 15
+      },
+      {
+        "seed": 6119,
+        "material": "steel",
+        "size": "large",
+        "policy": "steer",
+        "before": 15.116666666666449,
+        "after": 11.783333333333305,
+        "hitsBefore": 731,
+        "hitsAfter": 770,
+        "waves": 15,
+        "shots": 15
+      }
+    ]
+  },
+  "independent": {
+    "size": 120,
+    "identical": 115,
+    "changes": [
+      {
+        "seed": 1763,
+        "material": "steel",
+        "size": "large",
+        "policy": "follow",
+        "before": 15.274999999999773,
+        "after": 10.291666666666723,
+        "hitsBefore": 502,
+        "hitsAfter": 611,
+        "waves": 15,
+        "shots": 15
+      },
+      {
+        "seed": 1763,
+        "material": "rubber",
+        "size": "large",
+        "policy": "follow",
+        "before": 15.424999999999764,
+        "after": 12.241666666666612,
+        "hitsBefore": 657,
+        "hitsAfter": 680,
+        "waves": 15,
+        "shots": 15
+      },
+      {
+        "seed": 5167,
+        "material": "brass",
+        "size": "standard",
+        "policy": "follow",
+        "before": 15.666666666666417,
+        "after": 11.933333333333296,
+        "hitsBefore": 677,
+        "hitsAfter": 725,
+        "waves": 15,
+        "shots": 15
+      },
+      {
+        "seed": 5167,
+        "material": "brass",
+        "size": "standard",
+        "policy": "steer",
+        "before": 15.708333333333082,
+        "after": 11.291666666666666,
+        "hitsBefore": 605,
+        "hitsAfter": 704,
+        "waves": 15,
+        "shots": 15
+      },
+      {
+        "seed": 7817,
+        "material": "steel",
+        "size": "large",
+        "policy": "follow",
+        "before": 15.241666666666442,
+        "after": 12.23333333333328,
+        "hitsBefore": 598,
+        "hitsAfter": 728,
+        "waves": 15,
+        "shots": 15
+      }
+    ]
+  }
+}

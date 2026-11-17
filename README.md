@@ -6,6 +6,10 @@
 
 ![手机画面](docs/iterations/Stage-29/screenshots/390x844-steel.png)
 
+## v0.32.0 远征反弹
+
+加宽挡板下的中号黄铜珠和低排空列里的大号钢珠能更早恢复命中。第二波三条固定回放的最长空转从约 15 秒降到 5.58、3.93 和 7.18 秒。详见 [Stage-56](docs/iterations/Stage-56/assessment.md) 至 [Stage-58](docs/iterations/Stage-58/assessment.md)。
+
 ## v0.31.0 低排与横风反弹
 
 部分低排布局里，挡板更早把钢珠和黄铜珠送回有效碰撞。放大黄铜珠的目标发最长空转由 16.34 秒降至 3.96 秒，横风钢珠的目标发由 16.12 秒降至 12.61 秒。两发的有效命中都增加了。详见 [Stage-53](docs/iterations/Stage-53/assessment.md) 至 [Stage-55](docs/iterations/Stage-55/assessment.md)。
