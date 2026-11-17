@@ -1,0 +1,76 @@
+✖ the Stage-54 fixed hexagon across from the steel spring expedition advances without repeating the long empty rally (2033.5937ms)
+✖ the Stage-54 sliding steel square across from the steel spring expedition advances without repeating the long empty rally (806.6078ms)
+✖ the Stage-54 brass clearing the low row below crosswind expedition advances without repeating the long empty rally (1749.0485ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 0
+ℹ fail 3
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4916.8366
+
+✖ failing tests:
+
+test at tests\stage26.test.ts:1:6457
+✖ the Stage-54 fixed hexagon across from the steel spring expedition advances without repeating the long empty rally (2033.5937ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+    assert.ok(game.progress.maxNoHit < limit)
+
+      at TestContext.<anonymous> (D:\Work\games\flux-foundry\tests\stage26.test.ts:77:10)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.start (node:internal/test_runner/test:1262:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests\stage26.test.ts:1:6457
+✖ the Stage-54 sliding steel square across from the steel spring expedition advances without repeating the long empty rally (806.6078ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+    assert.ok(game.progress.maxNoHit < limit)
+
+      at TestContext.<anonymous> (D:\Work\games\flux-foundry\tests\stage26.test.ts:77:10)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at node:internal/test_runner/test:1305:31
+      at node:internal/process/task_queues:151:7
+      at AsyncResource.runInAsyncScope (node:async_hooks:226:14)
+      at AsyncResource.runMicrotask (node:internal/process/task_queues:148:8) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests\stage26.test.ts:1:6457
+✖ the Stage-54 brass clearing the low row below crosswind expedition advances without repeating the long empty rally (1749.0485ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+    assert.ok(game.progress.maxNoHit < limit)
+
+      at TestContext.<anonymous> (D:\Work\games\flux-foundry\tests\stage26.test.ts:77:10)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

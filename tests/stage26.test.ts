@@ -8,7 +8,7 @@ const cases = [
  {name:'wall-side low row',seed:9011,material:'rubber',size:'large',policy:'steer',limit:13},
  {name:'low row with a central gap',seed:42,material:'ceramic',size:'large',policy:'steer',limit:13},
  {name:'two empty catches in a low row',seed:4039,material:'rubber',size:'large',policy:'follow',limit:11.1},
- {name:'low row entirely to one side',seed:815,material:'steel',size:'large',policy:'steer',limit:15.3,hits:585,shot:{number:15,hits:44,gap:12}},
+ {name:'Stage-54 fixed hexagon across from the steel spring',seed:815,material:'steel',size:'large',policy:'steer',limit:12.4,hits:585,shot:{number:15,hits:44,gap:12},extraShot:{number:2,hits:18,gap:7.8}},
  {name:'central gap with a moving brick',seed:2026,material:'brass',size:'standard',policy:'follow',limit:13.4,hits:968,shot:{number:2,hits:97,gap:12.5},extraShot:{number:5,hits:45,gap:12.5}},
  {name:'wall-side row with a moving spring',seed:739,material:'steel',size:'standard',policy:'follow',limit:12,hits:454,shot:{number:9,hits:28,gap:7}},
  {name:'wide gap between fixed bricks',seed:7429,material:'brass',size:'standard',policy:'steer',limit:14.5,hits:462,shot:{number:9,hits:61,gap:14.5}},
@@ -40,6 +40,8 @@ const cases = [
  {name:'large steel in a spring and bar row with outer capacitors',seed:42,material:'steel',size:'large',policy:'follow',limit:11,hits:887,shot:{number:2,hits:13,gap:7.8}},
  {name:'large steel in a spring and bar row with outer diamonds',seed:739,material:'steel',size:'large',policy:'follow',limit:9,hits:632,shot:{number:2,hits:14,gap:7.8}},
  {name:'large steel in a spring and bar row with a moving bar',seed:2217,material:'steel',size:'large',policy:'follow',limit:11,hits:689,shot:{number:2,hits:53,gap:7.8}},
+ {name:'Stage-54 sliding steel square across from the steel spring',seed:87,material:'steel',size:'large',policy:'follow',limit:10.8,hits:612,shot:{number:2,hits:23,gap:7.8}},
+ {name:'Stage-54 brass clearing the low row below crosswind',seed:9157,material:'brass',size:'standard',policy:'steer',limit:11.2,hits:595,shot:{number:6,hits:51,gap:10.2}},
  {name:'medium steel crossing to the last low bar',seed:223,material:'steel',size:'standard',policy:'steer',limit:12.1,hits:600,shot:{number:3,hits:18,gap:12.1}},
 ] as const;
 

@@ -2,11 +2,11 @@ import {readFileSync,writeFileSync} from 'node:fs';
 import {spawn} from 'node:child_process';
 import assert from 'node:assert/strict';
 const [name]=process.argv.slice(2),dir='test-results/';
-assert.match(name,/^(?:combined|production|independent-combined)$/);
+assert.match(name,/^(?:combined|production|independent-combined|independent-production)$/);
 const read=p=>JSON.parse(readFileSync(p,'utf8'));
-const baseline=read(name==='independent-combined'?dir+'stage53-independent-src-matrix.json':'docs/iterations/Stage-53/evidence/stage53-production-matrix.json');
+const baseline=read(name.startsWith('independent-')?dir+'stage53-independent-src-matrix.json':'docs/iterations/Stage-53/evidence/stage53-production-matrix.json');
 const audit=readFileSync('docs/iterations/Stage-32/evidence/stage32-matrix-production.ts','utf8');
-const source=name==='production'?'../src/game':'./stage54-game-combined';
+const source=name.endsWith('production')?'../src/game':'./stage54-game-combined';
 const jobs=baseline.seeds.map((seed,i)=>{
  const stem='stage54-'+name+'-seed-'+i;
  const runner=audit.replace('../src/game',source).replace(/of \[42,[^\]]+\]/,'of ['+seed+']').replace('stage32-matrix-production.json',stem+'.json');
