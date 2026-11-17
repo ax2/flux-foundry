@@ -1,0 +1,528 @@
+{
+  "policy": "steer",
+  "method": "390×844 touch UI, complete selected challenge games after original PNG decode. Aim policy is recorded per session; paddle targets extrapolated landings every120ms with recorded follow/steer policy. Trace includes no-hit duration, simulation time, wall time, frame gaps, visibility, and loading; an inactive page is brought to front and resumed through its menu. No recall, speed change or state mutation. Algorithmic controller, not human win rate.",
+  "sessions": [
+    {
+      "policy": "steer",
+      "aimPolicy": "switch-core",
+      "initialSeed": 1000,
+      "mirror": false,
+      "level": 1,
+      "material": "steel",
+      "size": "standard",
+      "result": "won",
+      "stars": 3,
+      "score": 325,
+      "shots": [
+        {
+          "hits": 10,
+          "catches": 8,
+          "pickups": 3,
+          "seconds": 26.633333333332462,
+          "moves": 189,
+          "remaining": 4,
+          "phase": "won"
+        }
+      ],
+      "bonusLives": 0,
+      "maxSparseGap": 6.7083333333334565,
+      "maxMultiGap": 0.483333333333334,
+      "stats": {
+        "hits": 10,
+        "flight": 26.633333333332462,
+        "boosts": 12,
+        "energy": 240000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 3,
+        "paddleHits": 8,
+        "orbitBreaks": 2,
+        "gateVents": 0,
+        "pegRetractions": 0
+      },
+      "feedback": {
+        "counts": {
+          "launch": 1,
+          "hit": 7,
+          "break": 3,
+          "catch": 8,
+          "boost": 6,
+          "pickup": 3,
+          "weak": 0,
+          "win": 1,
+          "lose": 0
+        },
+        "last": {
+          "type": "win",
+          "x": 210,
+          "y": 215,
+          "variant": "",
+          "strength": 1
+        },
+        "pending": 0,
+        "marks": []
+      },
+      "audio": {
+        "enabled": false,
+        "state": "locked",
+        "voices": 0,
+        "peakVoices": 0,
+        "played": {
+          "launch": 0,
+          "hit": 0,
+          "break": 0,
+          "catch": 0,
+          "boost": 0,
+          "pickup": 0,
+          "weak": 0,
+          "win": 0,
+          "lose": 0
+        },
+        "failures": 0
+      },
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 6.800000000000128,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 2
+      }
+    },
+    {
+      "policy": "steer",
+      "aimPolicy": "switch-core",
+      "initialSeed": 1006,
+      "mirror": false,
+      "level": 7,
+      "material": "rubber",
+      "size": "large",
+      "result": "won",
+      "stars": 3,
+      "score": 740,
+      "shots": [
+        {
+          "hits": 4,
+          "catches": 1,
+          "pickups": 1,
+          "seconds": 4.141666666666662,
+          "moves": 28,
+          "remaining": 6,
+          "phase": "aim"
+        },
+        {
+          "hits": 8,
+          "catches": 2,
+          "pickups": 0,
+          "seconds": 8.066666666666618,
+          "moves": 58,
+          "remaining": 5,
+          "phase": "aim"
+        },
+        {
+          "hits": 17,
+          "catches": 18,
+          "pickups": 1,
+          "seconds": 52.974999999998,
+          "moves": 371,
+          "remaining": 4,
+          "phase": "won"
+        }
+      ],
+      "bonusLives": 0,
+      "maxSparseGap": 6.966666666666803,
+      "maxMultiGap": 10.800000000000027,
+      "stats": {
+        "hits": 29,
+        "flight": 65.18333333333128,
+        "boosts": 33,
+        "energy": 642000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 2,
+        "paddleHits": 21,
+        "orbitBreaks": 4,
+        "gateVents": 0,
+        "pegRetractions": 0
+      },
+      "feedback": {
+        "counts": {
+          "launch": 3,
+          "hit": 23,
+          "break": 6,
+          "catch": 21,
+          "boost": 12,
+          "pickup": 2,
+          "weak": 0,
+          "win": 1,
+          "lose": 0
+        },
+        "last": {
+          "type": "win",
+          "x": 210,
+          "y": 215,
+          "variant": "",
+          "strength": 1
+        },
+        "pending": 0,
+        "marks": []
+      },
+      "audio": {
+        "enabled": false,
+        "state": "locked",
+        "voices": 0,
+        "peakVoices": 0,
+        "played": {
+          "launch": 0,
+          "hit": 0,
+          "break": 0,
+          "catch": 0,
+          "boost": 0,
+          "pickup": 0,
+          "weak": 0,
+          "win": 0,
+          "lose": 0
+        },
+        "failures": 0
+      },
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 10.816666666666693,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 4
+      }
+    },
+    {
+      "policy": "steer",
+      "aimPolicy": "switch-core",
+      "initialSeed": 1013,
+      "mirror": false,
+      "level": 14,
+      "material": "brass",
+      "size": "small",
+      "result": "won",
+      "stars": 3,
+      "score": 960,
+      "shots": [
+        {
+          "hits": 23,
+          "catches": 8,
+          "pickups": 2,
+          "seconds": 39.19999999999842,
+          "moves": 264,
+          "remaining": 10,
+          "phase": "aim"
+        },
+        {
+          "hits": 24,
+          "catches": 23,
+          "pickups": 2,
+          "seconds": 68.10833333336637,
+          "moves": 472,
+          "remaining": 9,
+          "phase": "aim"
+        },
+        {
+          "hits": 1,
+          "catches": 0,
+          "pickups": 0,
+          "seconds": 3.141666666669167,
+          "moves": 22,
+          "remaining": 8,
+          "phase": "aim"
+        },
+        {
+          "hits": 3,
+          "catches": 2,
+          "pickups": 0,
+          "seconds": 14.816666666678458,
+          "moves": 102,
+          "remaining": 7,
+          "phase": "won"
+        }
+      ],
+      "bonusLives": 1,
+      "maxSparseGap": 11.516666666666653,
+      "maxMultiGap": 6.625000000000119,
+      "stats": {
+        "hits": 51,
+        "flight": 125.26666666671242,
+        "boosts": 68,
+        "energy": 1364000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 4,
+        "paddleHits": 33,
+        "orbitBreaks": 6,
+        "gateVents": 0,
+        "pegRetractions": 0
+      },
+      "feedback": {
+        "counts": {
+          "launch": 4,
+          "hit": 45,
+          "break": 6,
+          "catch": 33,
+          "boost": 35,
+          "pickup": 4,
+          "weak": 1,
+          "win": 1,
+          "lose": 0
+        },
+        "last": {
+          "type": "win",
+          "x": 210,
+          "y": 215,
+          "variant": "",
+          "strength": 1
+        },
+        "pending": 0,
+        "marks": []
+      },
+      "audio": {
+        "enabled": false,
+        "state": "locked",
+        "voices": 0,
+        "peakVoices": 0,
+        "played": {
+          "launch": 0,
+          "hit": 0,
+          "break": 0,
+          "catch": 0,
+          "boost": 0,
+          "pickup": 0,
+          "weak": 0,
+          "win": 0,
+          "lose": 0
+        },
+        "failures": 0
+      },
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 11.616666666666648,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 2
+      }
+    },
+    {
+      "policy": "steer",
+      "aimPolicy": "switch-core",
+      "initialSeed": 1018,
+      "mirror": false,
+      "level": 19,
+      "material": "ceramic",
+      "size": "small",
+      "result": "won",
+      "stars": 3,
+      "score": 445,
+      "shots": [
+        {
+          "hits": 16,
+          "catches": 7,
+          "pickups": 1,
+          "seconds": 11.68333333333331,
+          "moves": 76,
+          "remaining": 7,
+          "phase": "aim"
+        },
+        {
+          "hits": 6,
+          "catches": 2,
+          "pickups": 0,
+          "seconds": 6.691666666666288,
+          "moves": 44,
+          "remaining": 6,
+          "phase": "won"
+        }
+      ],
+      "bonusLives": 0,
+      "maxSparseGap": 0,
+      "maxMultiGap": 2.5749999999999935,
+      "stats": {
+        "hits": 22,
+        "flight": 18.3749999999996,
+        "boosts": 22,
+        "energy": 448000,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 1,
+        "paddleHits": 9,
+        "orbitBreaks": 0,
+        "gateVents": 0,
+        "pegRetractions": 0
+      },
+      "feedback": {
+        "counts": {
+          "launch": 2,
+          "hit": 19,
+          "break": 3,
+          "catch": 9,
+          "boost": 13,
+          "pickup": 1,
+          "weak": 0,
+          "win": 1,
+          "lose": 0
+        },
+        "last": {
+          "type": "win",
+          "x": 210,
+          "y": 215,
+          "variant": "",
+          "strength": 1
+        },
+        "pending": 0,
+        "marks": []
+      },
+      "audio": {
+        "enabled": false,
+        "state": "locked",
+        "voices": 0,
+        "peakVoices": 0,
+        "played": {
+          "launch": 0,
+          "hit": 0,
+          "break": 0,
+          "catch": 0,
+          "boost": 0,
+          "pickup": 0,
+          "weak": 0,
+          "win": 0,
+          "lose": 0
+        },
+        "failures": 0
+      },
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 2.583333333333327,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 1
+      }
+    },
+    {
+      "policy": "steer",
+      "aimPolicy": "switch-core",
+      "initialSeed": 1025,
+      "mirror": false,
+      "level": 26,
+      "material": "brass",
+      "size": "large",
+      "result": "won",
+      "stars": 3,
+      "score": 885,
+      "shots": [
+        {
+          "hits": 20,
+          "catches": 4,
+          "pickups": 0,
+          "seconds": 18.683333333332914,
+          "moves": 128,
+          "remaining": 9,
+          "phase": "aim"
+        },
+        {
+          "hits": 5,
+          "catches": 2,
+          "pickups": 1,
+          "seconds": 10.383333333332743,
+          "moves": 68,
+          "remaining": 8,
+          "phase": "aim"
+        },
+        {
+          "hits": 18,
+          "catches": 17,
+          "pickups": 2,
+          "seconds": 41.04166666666954,
+          "moves": 284,
+          "remaining": 8,
+          "phase": "aim"
+        },
+        {
+          "hits": 8,
+          "catches": 7,
+          "pickups": 1,
+          "seconds": 28.8166666666896,
+          "moves": 202,
+          "remaining": 8,
+          "phase": "won"
+        }
+      ],
+      "bonusLives": 2,
+      "maxSparseGap": 8.641666666666817,
+      "maxMultiGap": 5.058333333333374,
+      "stats": {
+        "hits": 51,
+        "flight": 98.9250000000248,
+        "boosts": 60,
+        "energy": 1191055.868088303,
+        "rescues": 0,
+        "returns": 0,
+        "rebounds": 0,
+        "recharges": 0,
+        "pulses": 0,
+        "pickups": 4,
+        "paddleHits": 30,
+        "orbitBreaks": 6,
+        "gateVents": 0,
+        "pegRetractions": 0
+      },
+      "feedback": {
+        "counts": {
+          "launch": 4,
+          "hit": 46,
+          "break": 5,
+          "catch": 30,
+          "boost": 30,
+          "pickup": 4,
+          "weak": 1,
+          "win": 1,
+          "lose": 0
+        },
+        "last": {
+          "type": "win",
+          "x": 210,
+          "y": 215,
+          "variant": "",
+          "strength": 1
+        },
+        "pending": 0,
+        "marks": []
+      },
+      "audio": {
+        "enabled": false,
+        "state": "locked",
+        "voices": 0,
+        "peakVoices": 0,
+        "played": {
+          "launch": 0,
+          "hit": 0,
+          "break": 0,
+          "catch": 0,
+          "boost": 0,
+          "pickup": 0,
+          "weak": 0,
+          "win": 0,
+          "lose": 0
+        },
+        "failures": 0
+      },
+      "progress": {
+        "sinceHit": 0,
+        "maxNoHit": 8.725000000000145,
+        "catchesWithoutHit": 0,
+        "maxCatchesWithoutHit": 3
+      }
+    }
+  ],
+  "errors": []
+}
