@@ -490,13 +490,31 @@ export class Game{
     this.targets.filter(u=>!u.motion&&u.kind==='bar'&&!u.power&&Math.abs(u.y-t.y)<=1&&(u.x-falling.x)*(t.x-falling.x)<0).length===2&&
     this.targets.some(u=>!u.motion&&u.kind==='hexagon'&&!u.power&&Math.abs(u.y-t.y)<=1&&(u.x-falling.x)*(t.x-falling.x)>0)&&
     this.targets.some(u=>u.motion&&u.kind==='hexagon'&&u.power==='spring'&&t.y-u.y>=70&&(u.x-falling.x)*(t.x-falling.x)<0));
-  if(falling&&(regularGuide||edgeGuide||lowCoreEdgeGuide||lowGapGuide||oneSidedRowGuide||centralMovingGuide||movingSpringEdgeGuide||splitRowGuide||widePaddleGuide||enlargedBallGuide||lowSplitGuide||centralFixedGuide||centralSpringGuide||centralMovingSpringGuide||centralTwoRowGuide||centralDiamondGuide||lowRowGuide||sideBarGuide||raisedSquareGuide||offCenterBarGuide||fixedBarGapGuide||singleSpringGuide||movingHexGapGuide||wallHexGuide||wideSteelGapGuide||largeCeramicGapGuide||fixedSteelGapGuide||lastBarGuide||staggeredSpringGuide||springGapTilt||barRowTilt||fixedSpringAcrossGap||upperWindRowGuide||enlargedHexRowGuide||sideWindSteelGuide||wideCapacitorRowGuide||enlargedRubberSideGuide||raisedSteelSpringGuide)&&falling.vy>0&&falling.y>470&&falling.y<675-falling.r+10&&this.time-this.lastGuideTime>=(falling.y>620?.025:.08)){
+  const steelLowBarRowGuide=this.mode==='endless'&&falling&&falling.y>=610&&this.material==='steel'&&this.size==='large'&&
+   this.bigTime===0&&this.wideTime===0&&this.targets.length===4&&this.air.length===0&&
+   this.progress.sinceHit>=3.55&&this.progress.catchesWithoutHit===0&&
+   Math.abs(falling.x-W/2)<falling.r/4&&Math.abs(falling.x-this.paddle.x)<falling.r/4&&Math.abs(falling.vx)<falling.vy*.03&&
+   this.targets.every(t=>t.y>=600&&Math.abs(t.y-this.targets[0].y)<=1)&&
+   this.targets.some(t=>t.kind==='steel'&&t.power==='spring'&&Math.abs(t.x-falling.x)<this.paddle.width&&
+    this.targets.some(u=>!u.motion&&!u.power&&u.kind==='bar'&&(u.x-falling.x)*(t.x-falling.x)>0)&&
+    this.targets.filter(u=>!u.power&&(u.kind==='hexagon'||u.kind==='diamond')&&(u.x-falling.x)*(t.x-falling.x)<0).length===2&&
+    this.targets.filter(u=>u.motion).length===1);
+  const driftingBrassSpringGuide=this.mode==='endless'&&falling&&falling.y>=610&&this.material==='brass'&&this.size==='standard'&&
+   this.bigTime===0&&this.wideTime===0&&this.targets.length===4&&this.air.length===0&&
+   this.progress.sinceHit>=6.85&&this.progress.catchesWithoutHit===1&&
+   Math.abs(falling.x-W/2)<this.paddle.width*.48&&Math.abs(falling.x-this.paddle.x)<this.paddle.width*.55&&Math.abs(falling.vx)<falling.vy*.12&&
+   this.targets.some(t=>t.motion&&t.kind==='steel'&&t.power==='spring'&&t.y>=600&&Math.abs(t.x-falling.x)<this.paddle.width*1.25&&
+    this.targets.some(u=>!u.motion&&u.kind==='hexagon'&&!u.power&&Math.abs(u.y-t.y)<=1&&(u.x-falling.x)*(t.x-falling.x)>0)&&
+    this.targets.some(u=>!u.motion&&u.kind==='bar'&&!u.power&&Math.abs(u.y-t.y)<=1&&(u.x-falling.x)*(t.x-falling.x)<0)&&
+    this.targets.some(u=>u.motion&&u.kind==='hexagon'&&u.power==='spring'&&t.y-u.y>=70&&(u.x-falling.x)*(t.x-falling.x)<0));
+  const fourBrickGuide=steelLowBarRowGuide||driftingBrassSpringGuide;
+  if(falling&&(regularGuide||edgeGuide||lowCoreEdgeGuide||lowGapGuide||oneSidedRowGuide||centralMovingGuide||movingSpringEdgeGuide||splitRowGuide||widePaddleGuide||enlargedBallGuide||lowSplitGuide||centralFixedGuide||centralSpringGuide||centralMovingSpringGuide||centralTwoRowGuide||centralDiamondGuide||lowRowGuide||sideBarGuide||raisedSquareGuide||offCenterBarGuide||fixedBarGapGuide||singleSpringGuide||movingHexGapGuide||wallHexGuide||wideSteelGapGuide||largeCeramicGapGuide||fixedSteelGapGuide||lastBarGuide||staggeredSpringGuide||springGapTilt||barRowTilt||fixedSpringAcrossGap||upperWindRowGuide||enlargedHexRowGuide||sideWindSteelGuide||wideCapacitorRowGuide||enlargedRubberSideGuide||raisedSteelSpringGuide||fourBrickGuide)&&falling.vy>0&&falling.y>470&&falling.y<675-falling.r+10&&this.time-this.lastGuideTime>=(falling.y>620?.025:.08)){
    this.lastGuideTime=this.time;
    const movingEndgame=this.mode==='endless'&&this.targets.length===1&&this.lowEndgame&&this.targets[0].motion&&this.progress.sinceHit>=ASSIST_DELAY;
-   const environment={air:this.air,gates:this.gates,pegs:this.pegs,wind:this.windMultiplier,response:spec.windResponse,energyLimit:this.energyCapacity,allowLowerWork:this.progress.catchesWithoutHit>=misses,catchFrame:(movingEndgame||splitRowGuide||widePaddleGuide||enlargedBallGuide||lowSplitGuide||centralFixedGuide||centralSpringGuide||centralMovingSpringGuide||centralTwoRowGuide||centralDiamondGuide||lowRowGuide||sideBarGuide||raisedSquareGuide||offCenterBarGuide||fixedBarGapGuide||singleSpringGuide||movingHexGapGuide||wallHexGuide||wideSteelGapGuide||largeCeramicGapGuide||fixedSteelGapGuide||lastBarGuide||staggeredSpringGuide||springGapTilt||barRowTilt||fixedSpringAcrossGap||upperWindRowGuide||enlargedHexRowGuide||sideWindSteelGuide||wideCapacitorRowGuide||enlargedRubberSideGuide||raisedSteelSpringGuide)?dt:undefined},paddle={...this.paddle,x:oldPaddleX};
+   const environment={air:this.air,gates:this.gates,pegs:this.pegs,wind:this.windMultiplier,response:spec.windResponse,energyLimit:this.energyCapacity,allowLowerWork:this.progress.catchesWithoutHit>=misses,catchFrame:(movingEndgame||splitRowGuide||widePaddleGuide||enlargedBallGuide||lowSplitGuide||centralFixedGuide||centralSpringGuide||centralMovingSpringGuide||centralTwoRowGuide||centralDiamondGuide||lowRowGuide||sideBarGuide||raisedSquareGuide||offCenterBarGuide||fixedBarGapGuide||singleSpringGuide||movingHexGapGuide||wallHexGuide||wideSteelGapGuide||largeCeramicGapGuide||fixedSteelGapGuide||lastBarGuide||staggeredSpringGuide||springGapTilt||barRowTilt||fixedSpringAcrossGap||upperWindRowGuide||enlargedHexRowGuide||sideWindSteelGuide||wideCapacitorRowGuide||enlargedRubberSideGuide||raisedSteelSpringGuide||fourBrickGuide)?dt:undefined},paddle={...this.paddle,x:oldPaddleX};
    // Preserve a useful ordinary rebound, including a previously prepared face.
    if((regularGuide&&!lastBarGuide)||!forecastRebound(falling,paddle,this.targets,spec.mass,restitution,this.time-dt,environment,this.paddle.tilt||0,false,this.paddle.boost??18000).hit){
-    const gentle=(lowGapGuide||oneSidedRowGuide||centralMovingGuide||movingSpringEdgeGuide||splitRowGuide||widePaddleGuide||enlargedBallGuide||lowSplitGuide||centralFixedGuide||centralSpringGuide||centralMovingSpringGuide||centralTwoRowGuide||centralDiamondGuide||lowRowGuide||sideBarGuide||raisedSquareGuide||offCenterBarGuide||fixedBarGapGuide||singleSpringGuide||movingHexGapGuide||wallHexGuide||wideSteelGapGuide||largeCeramicGapGuide||fixedSteelGapGuide||lastBarGuide||staggeredSpringGuide||springGapTilt||barRowTilt||fixedSpringAcrossGap||upperWindRowGuide||enlargedHexRowGuide||sideWindSteelGuide||wideCapacitorRowGuide||enlargedRubberSideGuide||raisedSteelSpringGuide)&&(!regularGuide||lastBarGuide)&&!edgeGuide;
+    const gentle=(lowGapGuide||oneSidedRowGuide||centralMovingGuide||movingSpringEdgeGuide||splitRowGuide||widePaddleGuide||enlargedBallGuide||lowSplitGuide||centralFixedGuide||centralSpringGuide||centralMovingSpringGuide||centralTwoRowGuide||centralDiamondGuide||lowRowGuide||sideBarGuide||raisedSquareGuide||offCenterBarGuide||fixedBarGapGuide||singleSpringGuide||movingHexGapGuide||wallHexGuide||wideSteelGapGuide||largeCeramicGapGuide||fixedSteelGapGuide||lastBarGuide||staggeredSpringGuide||springGapTilt||barRowTilt||fixedSpringAcrossGap||upperWindRowGuide||enlargedHexRowGuide||sideWindSteelGuide||wideCapacitorRowGuide||enlargedRubberSideGuide||raisedSteelSpringGuide||fourBrickGuide)&&(!regularGuide||lastBarGuide)&&!edgeGuide;
     let maxTilt=this.progress.sinceHit>=20||this.lowEndgame?.48:.32;
     if(gentle){
      if(centralFixedGuide)maxTilt=0.22;
@@ -509,6 +527,8 @@ export class Game{
      else if(wideSteelGapGuide)maxTilt=.18;
      else if(largeCeramicGapGuide)maxTilt=.188;
      else if(enlargedRubberSideGuide)maxTilt=0.287;
+     else if(steelLowBarRowGuide)maxTilt=0.32;
+     else if(driftingBrassSpringGuide)maxTilt=0.157;
      else if(raisedSteelSpringGuide)maxTilt=0.24;
      else if(wideCapacitorRowGuide)maxTilt=0.226;
      else if(sideWindSteelGuide)maxTilt=.241;

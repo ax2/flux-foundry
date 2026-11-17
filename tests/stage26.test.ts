@@ -48,6 +48,9 @@ const cases = [
  {name:'Stage-56 wide paddle recovering a brass steering rally',seed:5167,material:'brass',size:'standard',policy:'steer',limit:11.5,hits:605,shot:{number:2,hits:16,gap:8}},
  {name:'Stage-57 enlarged rubber returning to a low spring through crosswind',seed:1763,material:'rubber',size:'large',policy:'follow',limit:13,hits:657,shot:{number:9,hits:23,gap:10.5}},
  {name:'Stage-57 large steel returning below a raised spring',seed:6119,material:'steel',size:'large',policy:'steer',limit:12,hits:731,shot:{number:2,hits:53,gap:11.5}},
+ {name:'Stage-58 large steel between a fixed spring and a moving hexagon',seed:1763,material:'steel',size:'large',policy:'follow',limit:10.5,hits:502,shot:{number:2,hits:20,gap:5.7}},
+ {name:'Stage-58 large steel between a moving spring and two diamonds',seed:7817,material:'steel',size:'large',policy:'follow',limit:12.4,hits:598,shot:{number:2,hits:15,gap:4}},
+ {name:'Stage-58 drifting brass between staggered moving springs',seed:1907,material:'brass',size:'standard',policy:'steer',limit:10.9,hits:644,shot:{number:2,hits:33,gap:7.3}},
  {name:'medium steel crossing to the last low bar',seed:223,material:'steel',size:'standard',policy:'steer',limit:12.1,hits:600,shot:{number:3,hits:18,gap:12.1}},
 ] as const;
 

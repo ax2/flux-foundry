@@ -1,0 +1,8831 @@
+{
+  "seed": 1907,
+  "material": "brass",
+  "size": "standard",
+  "policy": "steer",
+  "cadence": 14,
+  "peak": {
+    "gap": 15.099999999999783,
+    "shot": 2,
+    "time": 117.1083333333726
+  },
+  "shots": [
+    {
+      "seconds": 65.63333333333333,
+      "wave": 2,
+      "wholeBallBottom": 693.9268132140504,
+      "shotGap": 10.725000000000032,
+      "hits": 40
+    },
+    {
+      "seconds": 73.71666666666667,
+      "wave": 3,
+      "wholeBallBottom": 694.2740537175921,
+      "shotGap": 15.09166666666645,
+      "hits": 33
+    },
+    {
+      "seconds": 62.625,
+      "wave": 4,
+      "wholeBallBottom": 694.3637101853487,
+      "shotGap": 6.8083333333334615,
+      "hits": 21
+    },
+    {
+      "seconds": 2.591666666666667,
+      "wave": 5,
+      "wholeBallBottom": 693.8208603701958,
+      "shotGap": 1.083333333333332,
+      "hits": 9
+    },
+    {
+      "seconds": 90.01666666666667,
+      "wave": 6,
+      "wholeBallBottom": 696.3310399952984,
+      "shotGap": 10.525000000000043,
+      "hits": 43
+    },
+    {
+      "seconds": 1.625,
+      "wave": 7,
+      "wholeBallBottom": 692.4170209092457,
+      "shotGap": 1.083333333333332,
+      "hits": 3
+    },
+    {
+      "seconds": 22.166666666666668,
+      "wave": 8,
+      "wholeBallBottom": 695.7483661468459,
+      "shotGap": 4.049999999999991,
+      "hits": 20
+    },
+    {
+      "seconds": 155.19166666666666,
+      "wave": 9,
+      "wholeBallBottom": 694.278048485173,
+      "shotGap": 7.966666666666852,
+      "hits": 125
+    },
+    {
+      "seconds": 36.333333333333336,
+      "wave": 10,
+      "wholeBallBottom": 695.6120135648313,
+      "shotGap": 13.291666666666552,
+      "hits": 19
+    },
+    {
+      "seconds": 41.06666666666666,
+      "wave": 11,
+      "wholeBallBottom": 695.2147930689068,
+      "shotGap": 3.799999999999989,
+      "hits": 42
+    },
+    {
+      "seconds": 34.69166666666666,
+      "wave": 12,
+      "wholeBallBottom": 695.0025345195547,
+      "shotGap": 3.516666666666657,
+      "hits": 29
+    },
+    {
+      "seconds": 61.266666666666666,
+      "wave": 13,
+      "wholeBallBottom": 693.5733088672425,
+      "shotGap": 3.57499999999999,
+      "hits": 108
+    },
+    {
+      "seconds": 9.741666666666667,
+      "wave": 14,
+      "wholeBallBottom": 696.3903162721622,
+      "shotGap": 2.783333333333326,
+      "hits": 17
+    },
+    {
+      "seconds": 111.95833333333333,
+      "wave": 15,
+      "wholeBallBottom": 694.3144197653306,
+      "shotGap": 5.300000000000053,
+      "hits": 115
+    },
+    {
+      "seconds": 9.308333333333334,
+      "wave": 15,
+      "wholeBallBottom": 694.9108569493882,
+      "shotGap": 2.366666666666661,
+      "hits": 20
+    }
+  ],
+  "window": [
+    {
+      "time": 102.00833333336058,
+      "shot": 2,
+      "wave": 2,
+      "gap": 0,
+      "ball": {
+        "x": 315.9916006830775,
+        "y": 593.5214300402438,
+        "vx": 231.78054502029232,
+        "vy": -365.6302209742475,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 0,
+      "paddle": {
+        "x": 205.5550088405559,
+        "target": 205.5550088405559,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 23,
+      "energy": 1368000,
+      "targets": [
+        {
+          "x": 292.5252928772816,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 148.5252928772816,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 102.0333333333606,
+      "shot": 2,
+      "wave": 2,
+      "gap": 0.025,
+      "ball": {
+        "x": 321.78611430858473,
+        "y": 584.4556745158877,
+        "vx": 231.78054502029232,
+        "vy": -359.6302209742475,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 0,
+      "paddle": {
+        "x": 205.5550088405559,
+        "target": 205.5550088405559,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 23,
+      "energy": 1368000,
+      "targets": [
+        {
+          "x": 292.3621404867004,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 148.3621404867004,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 102.15000000002736,
+      "shot": 2,
+      "wave": 2,
+      "gap": 0.14166666666666666,
+      "ball": {
+        "x": 348.8271778942852,
+        "y": 544.1321487355589,
+        "vx": 231.78054502029232,
+        "vy": -331.6302209742475,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 0,
+      "paddle": {
+        "x": 310.5550088405559,
+        "target": 350,
+        "width": 96,
+        "vx": 900,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 23,
+      "energy": 1368000,
+      "targets": [
+        {
+          "x": 291.55963765655565,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 147.55963765655562,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 102.26666666669412,
+      "shot": 2,
+      "wave": 2,
+      "gap": 0.2583333333333333,
+      "ball": {
+        "x": 375.8682414799857,
+        "y": 507.0752896218967,
+        "vx": 231.78054502029232,
+        "vy": -303.6302209742475,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 0,
+      "paddle": {
+        "x": 350,
+        "target": 350,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 23,
+      "energy": 1368000,
+      "targets": [
+        {
+          "x": 290.693412781851,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 146.693412781851,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 102.38333333336088,
+      "shot": 2,
+      "wave": 2,
+      "gap": 0.37500000000000033,
+      "ball": {
+        "x": 380.03343656412744,
+        "y": 473.2850971749011,
+        "vx": -199.3312687174514,
+        "vy": -275.6302209742475,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 0,
+      "paddle": {
+        "x": 350,
+        "target": 350,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 23,
+      "energy": 1368000,
+      "targets": [
+        {
+          "x": 289.76923989106433,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 145.76923989106436,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 102.50000000002764,
+      "shot": 2,
+      "wave": 2,
+      "gap": 0.49166666666666736,
+      "ball": {
+        "x": 356.7781218804248,
+        "y": 442.76157139457223,
+        "vx": -199.3312687174514,
+        "vy": -247.6302209742475,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 0,
+      "paddle": {
+        "x": 245,
+        "target": 213.77441704422398,
+        "width": 96,
+        "vx": -900,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 23,
+      "energy": 1368000,
+      "targets": [
+        {
+          "x": 288.79327927899345,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 144.79327927899345,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 102.6166666666944,
+      "shot": 2,
+      "wave": 2,
+      "gap": 0.6083333333333336,
+      "ball": {
+        "x": 333.52280719672217,
+        "y": 415.50471228091004,
+        "vx": -199.3312687174514,
+        "vy": -219.6302209742475,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 0,
+      "paddle": {
+        "x": 213.77441704422398,
+        "target": 213.77441704422398,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 23,
+      "energy": 1368000,
+      "targets": [
+        {
+          "x": 287.77203644384304,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 143.77203644384304,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 102.73333333336116,
+      "shot": 2,
+      "wave": 2,
+      "gap": 0.7249999999999999,
+      "ball": {
+        "x": 310.26749251301953,
+        "y": 391.5145198339145,
+        "vx": -199.3312687174514,
+        "vy": -191.6302209742475,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 0,
+      "paddle": {
+        "x": 213.77441704422387,
+        "target": 213.77441704422387,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 23,
+      "energy": 1368000,
+      "targets": [
+        {
+          "x": 286.7123187232744,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 142.7123187232744,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 102.85000000002792,
+      "shot": 2,
+      "wave": 2,
+      "gap": 0.8416666666666661,
+      "ball": {
+        "x": 287.0121778293169,
+        "y": 370.7909940535856,
+        "vx": -199.3312687174514,
+        "vy": -163.6302209742475,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 0,
+      "paddle": {
+        "x": 213.7744170442238,
+        "target": 213.7744170442238,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 23,
+      "energy": 1368000,
+      "targets": [
+        {
+          "x": 285.621189918473,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 141.62118991847302,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 102.96666666669468,
+      "shot": 2,
+      "wave": 2,
+      "gap": 0.9583333333333324,
+      "ball": {
+        "x": 263.75686314561426,
+        "y": 353.3341349399234,
+        "vx": -199.3312687174514,
+        "vy": -135.6302209742475,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 0,
+      "paddle": {
+        "x": 213.77441704422375,
+        "target": 213.77441704422375,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 23,
+      "energy": 1368000,
+      "targets": [
+        {
+          "x": 284.5059232086973,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 140.50592320869734,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 103.08333333336144,
+      "shot": 2,
+      "wave": 2,
+      "gap": 1.0749999999999986,
+      "ball": {
+        "x": 240.50154846191163,
+        "y": 339.14394249292786,
+        "vx": -199.3312687174514,
+        "vy": -107.6302209742475,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 0,
+      "paddle": {
+        "x": 213.7744170442238,
+        "target": 213.7744170442238,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 23,
+      "energy": 1368000,
+      "targets": [
+        {
+          "x": 283.37395267016717,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 139.37395267016717,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 103.2000000000282,
+      "shot": 2,
+      "wave": 2,
+      "gap": 1.1916666666666649,
+      "ball": {
+        "x": 217.246233778209,
+        "y": 328.220416712599,
+        "vx": -199.3312687174514,
+        "vy": -79.6302209742475,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 0,
+      "paddle": {
+        "x": 213.7744170442237,
+        "target": 213.7744170442237,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 23,
+      "energy": 1368000,
+      "targets": [
+        {
+          "x": 282.232823722457,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 138.23282372245697,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 103.31666666669496,
+      "shot": 2,
+      "wave": 2,
+      "gap": 1.3083333333333311,
+      "ball": {
+        "x": 193.99091909450635,
+        "y": 320.56355759893677,
+        "vx": -199.3312687174514,
+        "vy": -51.63022097424749,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 0,
+      "paddle": {
+        "x": 213.77441704422387,
+        "target": 213.77441704422387,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 23,
+      "energy": 1368000,
+      "targets": [
+        {
+          "x": 281.0901428327015,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 137.0901428327015,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 103.43333333336172,
+      "shot": 2,
+      "wave": 2,
+      "gap": 1.4249999999999974,
+      "ball": {
+        "x": 170.73560441080372,
+        "y": 316.1733651519412,
+        "vx": -199.3312687174514,
+        "vy": -23.630220974247493,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 0,
+      "paddle": {
+        "x": 213.77441704422375,
+        "target": 213.77441704422375,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 23,
+      "energy": 1368000,
+      "targets": [
+        {
+          "x": 279.9535268128753,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 135.95352681287525,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 103.55000000002848,
+      "shot": 2,
+      "wave": 2,
+      "gap": 1.5416666666666636,
+      "ball": {
+        "x": 147.48028972710108,
+        "y": 315.04983937161234,
+        "vx": -199.3312687174514,
+        "vy": 4.369779025752507,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 0,
+      "paddle": {
+        "x": 213.77441704422375,
+        "target": 213.77441704422375,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 23,
+      "energy": 1368000,
+      "targets": [
+        {
+          "x": 278.83055204811615,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 134.83055204811615,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 103.66666666669524,
+      "shot": 2,
+      "wave": 2,
+      "gap": 1.6583333333333299,
+      "ball": {
+        "x": 124.22497504339844,
+        "y": 317.1929802579501,
+        "vx": -199.3312687174514,
+        "vy": 32.36977902575251,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 0,
+      "paddle": {
+        "x": 213.7744170442237,
+        "target": 213.7744170442237,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 23,
+      "energy": 1368000,
+      "targets": [
+        {
+          "x": 277.7287039945226,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 133.72870399452265,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 103.783333333362,
+      "shot": 2,
+      "wave": 2,
+      "gap": 1.7749999999999961,
+      "ball": {
+        "x": 100.96966035969581,
+        "y": 322.60278781095457,
+        "vx": -199.3312687174514,
+        "vy": 60.36977902575251,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 0,
+      "paddle": {
+        "x": 213.7744170442237,
+        "target": 213.7744170442237,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 23,
+      "energy": 1368000,
+      "targets": [
+        {
+          "x": 276.6553272830624,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 132.65532728306238,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 103.90000000002875,
+      "shot": 2,
+      "wave": 2,
+      "gap": 1.8916666666666624,
+      "ball": {
+        "x": 77.71434567599317,
+        "y": 331.27926203062566,
+        "vx": -199.3312687174514,
+        "vy": 88.3697790257525,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 0,
+      "paddle": {
+        "x": 213.7744170442237,
+        "target": 213.7744170442237,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 23,
+      "energy": 1368000,
+      "targets": [
+        {
+          "x": 275.6175767621819,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 131.6175767621819,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 104.01666666669551,
+      "shot": 2,
+      "wave": 2,
+      "gap": 2.008333333333329,
+      "ball": {
+        "x": 54.459030992290536,
+        "y": 343.22240291696346,
+        "vx": -199.3312687174514,
+        "vy": 116.3697790257525,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 0,
+      "paddle": {
+        "x": 213.7744170442237,
+        "target": 213.7744170442237,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 23,
+      "energy": 1368000,
+      "targets": [
+        {
+          "x": 274.6223698054585,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 130.6223698054585,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 104.13333333336227,
+      "shot": 2,
+      "wave": 2,
+      "gap": 2.124999999999995,
+      "ball": {
+        "x": 31.2037163085879,
+        "y": 358.4322104699679,
+        "vx": -199.3312687174514,
+        "vy": 144.3697790257525,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 0,
+      "paddle": {
+        "x": 213.77441704422364,
+        "target": 213.77441704422364,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 23,
+      "energy": 1368000,
+      "targets": [
+        {
+          "x": 273.676340202197,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 129.67634020219703,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 104.25000000002903,
+      "shot": 2,
+      "wave": 2,
+      "gap": 2.2416666666666614,
+      "ball": {
+        "x": 48.57102986884253,
+        "y": 376.908684689639,
+        "vx": 171.42489109700819,
+        "vy": 172.3697790257525,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 0,
+      "paddle": {
+        "x": 213.77441704422364,
+        "target": 213.77441704422364,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 23,
+      "energy": 1368000,
+      "targets": [
+        {
+          "x": 272.78579393832456,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 128.7857939383246,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 104.36666666669579,
+      "shot": 2,
+      "wave": 2,
+      "gap": 2.3583333333333276,
+      "ball": {
+        "x": 68.57060049682681,
+        "y": 398.65182557597683,
+        "vx": 171.42489109700819,
+        "vy": 200.3697790257525,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 0,
+      "paddle": {
+        "x": 251.93425392427622,
+        "target": 251.93425392427622,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 23,
+      "energy": 1368000,
+      "targets": [
+        {
+          "x": 271.9566671623386,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 127.95666716233859,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 104.48333333336255,
+      "shot": 2,
+      "wave": 2,
+      "gap": 2.474999999999994,
+      "ball": {
+        "x": 88.57017112481117,
+        "y": 423.6616331289813,
+        "vx": 171.42489109700819,
+        "vy": 228.3697790257525,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 0,
+      "paddle": {
+        "x": 251.93425392427622,
+        "target": 251.93425392427622,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 23,
+      "energy": 1368000,
+      "targets": [
+        {
+          "x": 271.1944866164926,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 127.19448661649258,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 104.60000000002931,
+      "shot": 2,
+      "wave": 2,
+      "gap": 2.59166666666666,
+      "ball": {
+        "x": 108.56974175279552,
+        "y": 451.9381073486524,
+        "vx": 171.42489109700819,
+        "vy": 256.3697790257525,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 0,
+      "paddle": {
+        "x": 251.93425392427622,
+        "target": 251.93425392427622,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 23,
+      "energy": 1368000,
+      "targets": [
+        {
+          "x": 270.50433279697796,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 126.50433279697796,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 104.71666666669607,
+      "shot": 2,
+      "wave": 2,
+      "gap": 2.7083333333333264,
+      "ball": {
+        "x": 128.56931238077988,
+        "y": 483.4812482349902,
+        "vx": 171.42489109700819,
+        "vy": 284.3697790257525,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 0,
+      "paddle": {
+        "x": 251.93425392427622,
+        "target": 251.93425392427622,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 23,
+      "energy": 1368000,
+      "targets": [
+        {
+          "x": 269.89080608866504,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 125.89080608866506,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 104.83333333336283,
+      "shot": 2,
+      "wave": 2,
+      "gap": 2.8249999999999926,
+      "ball": {
+        "x": 148.56888300876403,
+        "y": 518.2910557879947,
+        "vx": 171.42489109700819,
+        "vy": 312.3697790257525,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 0,
+      "paddle": {
+        "x": 251.93425392427633,
+        "target": 251.93425392427633,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 23,
+      "energy": 1368000,
+      "targets": [
+        {
+          "x": 269.3579961001403,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 125.35799610014034,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 104.95000000002959,
+      "shot": 2,
+      "wave": 2,
+      "gap": 2.941666666666659,
+      "ball": {
+        "x": 168.5684536367482,
+        "y": 556.3675300076658,
+        "vx": 171.42489109700819,
+        "vy": 340.3697790257525,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 0,
+      "paddle": {
+        "x": 249.8127850943318,
+        "target": 249.8127850943318,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 23,
+      "energy": 1368000,
+      "targets": [
+        {
+          "x": 268.9094544034457,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 124.90945440344571,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 105.06666666669635,
+      "shot": 2,
+      "wave": 2,
+      "gap": 3.058333333333325,
+      "ball": {
+        "x": 188.56802426473234,
+        "y": 597.7106708940037,
+        "vx": 171.42489109700819,
+        "vy": 368.3697790257525,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 0,
+      "paddle": {
+        "x": 247.14427887335825,
+        "target": 247.14427887335825,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 23,
+      "energy": 1368000,
+      "targets": [
+        {
+          "x": 268.5481708602277,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 124.54817086022767,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 105.18333333336311,
+      "shot": 2,
+      "wave": 2,
+      "gap": 3.1749999999999914,
+      "ball": {
+        "x": 208.5675948927165,
+        "y": 642.3204784470082,
+        "vx": 171.42489109700819,
+        "vy": 396.3697790257525,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 0,
+      "paddle": {
+        "x": 244.88144205547664,
+        "target": 244.88144205547664,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 23,
+      "energy": 1368000,
+      "targets": [
+        {
+          "x": 268.2765536921016,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 124.27655369210159,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 105.24166666669649,
+      "shot": 2,
+      "wave": 2,
+      "gap": 3.2333333333333245,
+      "ball": {
+        "x": 218.56738020670858,
+        "y": 665.577872909815,
+        "vx": -5.83653272943684,
+        "vy": -464.88665552881633,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 1,
+      "paddle": {
+        "x": 242.93830383346895,
+        "target": 242.93830383346895,
+        "width": 96,
+        "vx": 0,
+        "flash": 0.15,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 24,
+      "energy": 1386000,
+      "targets": [
+        {
+          "x": 268.17495949400444,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 124.17495949400444,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 105.30000000002987,
+      "shot": 2,
+      "wave": 2,
+      "gap": 3.2916666666666576,
+      "ball": {
+        "x": 218.22691579749142,
+        "y": 638.8678180039674,
+        "vx": -5.83653272943684,
+        "vy": -450.88665552881633,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 1,
+      "paddle": {
+        "x": 242.93830383346895,
+        "target": 242.93830383346895,
+        "width": 96,
+        "vx": 0,
+        "flash": 0.09166666666666667,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 24,
+      "energy": 1386000,
+      "targets": [
+        {
+          "x": 268.0964134280763,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 124.09641342807626,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 105.41666666669663,
+      "shot": 2,
+      "wave": 2,
+      "gap": 3.408333333333324,
+      "ball": {
+        "x": 217.5459869790571,
+        "y": 587.8977081922721,
+        "vx": -5.83653272943684,
+        "vy": -422.88665552881633,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 1,
+      "paddle": {
+        "x": 193.8284830071131,
+        "target": 193.8284830071131,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 24,
+      "energy": 1386000,
+      "targets": [
+        {
+          "x": 268.0089508360409,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 124.00895083604092,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 105.53333333336339,
+      "shot": 2,
+      "wave": 2,
+      "gap": 3.52499999999999,
+      "ball": {
+        "x": 216.86505816062277,
+        "y": 540.1942650472437,
+        "vx": -5.83653272943684,
+        "vy": -394.88665552881633,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 1,
+      "paddle": {
+        "x": 193.68544896607128,
+        "target": 193.68544896607128,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 24,
+      "energy": 1386000,
+      "targets": [
+        {
+          "x": 268.0147489187607,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 124.01474891876069,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 105.65000000003015,
+      "shot": 2,
+      "wave": 2,
+      "gap": 3.6416666666666564,
+      "ball": {
+        "x": 216.18412934218844,
+        "y": 495.75748856888174,
+        "vx": -5.83653272943684,
+        "vy": -366.88665552881633,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 1,
+      "paddle": {
+        "x": 193.52213086076395,
+        "target": 193.52213086076395,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 24,
+      "energy": 1386000,
+      "targets": [
+        {
+          "x": 268.1137690277325,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 124.11376902773249,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 105.7666666666969,
+      "shot": 2,
+      "wave": 2,
+      "gap": 3.7583333333333226,
+      "ball": {
+        "x": 215.50320052375412,
+        "y": 454.5873787571865,
+        "vx": -5.83653272943684,
+        "vy": -338.88665552881633,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 1,
+      "paddle": {
+        "x": 193.33388458279242,
+        "target": 193.33388458279242,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 24,
+      "energy": 1386000,
+      "targets": [
+        {
+          "x": 268.3053511208059,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 124.30535112080588,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 105.88333333336367,
+      "shot": 2,
+      "wave": 2,
+      "gap": 3.874999999999989,
+      "ball": {
+        "x": 214.8222717053198,
+        "y": 416.68393561215794,
+        "vx": -5.836532729436838,
+        "vy": -310.88665552881633,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 1,
+      "paddle": {
+        "x": 193.11453117388356,
+        "target": 193.11453117388356,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 24,
+      "energy": 1386000,
+      "targets": [
+        {
+          "x": 268.5882181618514,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 124.58821816185139,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 106.00000000003043,
+      "shot": 2,
+      "wave": 2,
+      "gap": 3.991666666666655,
+      "ball": {
+        "x": 214.14134288688547,
+        "y": 382.047159133796,
+        "vx": -5.836532729436838,
+        "vy": -282.88665552881633,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 1,
+      "paddle": {
+        "x": 192.8556656447843,
+        "target": 192.8556656447843,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 24,
+      "energy": 1386000,
+      "targets": [
+        {
+          "x": 268.9604846331495,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 124.96048463314952,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 106.11666666669718,
+      "shot": 2,
+      "wave": 2,
+      "gap": 4.108333333333327,
+      "ball": {
+        "x": 213.46041406845114,
+        "y": 350.67704932210074,
+        "vx": -5.836532729436839,
+        "vy": -254.88665552881633,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 1,
+      "paddle": {
+        "x": 192.54555531729588,
+        "target": 192.54555531729588,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 24,
+      "energy": 1386000,
+      "targets": [
+        {
+          "x": 269.41966910375857,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 125.41966910375858,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 106.23333333336394,
+      "shot": 2,
+      "wave": 2,
+      "gap": 4.225,
+      "ball": {
+        "x": 212.77948525001682,
+        "y": 322.5736061770722,
+        "vx": -5.836532729436837,
+        "vy": -226.88665552881633,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 1,
+      "paddle": {
+        "x": 192.16731204536845,
+        "target": 192.16731204536845,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 24,
+      "energy": 1386000,
+      "targets": [
+        {
+          "x": 269.96271077008447,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 125.96271077008448,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 106.3500000000307,
+      "shot": 2,
+      "wave": 2,
+      "gap": 4.341666666666672,
+      "ball": {
+        "x": 212.0985564315825,
+        "y": 297.73682969871027,
+        "vx": -5.83653272943684,
+        "vy": -198.88665552881633,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 1,
+      "paddle": {
+        "x": 191.69571104299834,
+        "target": 191.69571104299834,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 24,
+      "energy": 1386000,
+      "targets": [
+        {
+          "x": 270.58598985839706,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 126.58598985839703,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 106.46666666669746,
+      "shot": 2,
+      "wave": 2,
+      "gap": 4.458333333333345,
+      "ball": {
+        "x": 211.41762761314817,
+        "y": 276.166719887015,
+        "vx": -5.8365327294368425,
+        "vy": -170.88665552881633,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 1,
+      "paddle": {
+        "x": 191.0913225689776,
+        "target": 191.0913225689776,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 24,
+      "energy": 1386000,
+      "targets": [
+        {
+          "x": 271.2853517532948,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 127.28535175329479,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 106.58333333336422,
+      "shot": 2,
+      "wave": 2,
+      "gap": 4.575000000000017,
+      "ball": {
+        "x": 210.73669879471385,
+        "y": 257.86327674198645,
+        "vx": -5.836532729436844,
+        "vy": -142.88665552881633,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 1,
+      "paddle": {
+        "x": 190.2888744252862,
+        "target": 190.2888744252862,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 24,
+      "energy": 1386000,
+      "targets": [
+        {
+          "x": 272.05613469128537,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 128.05613469128537,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 106.70000000003098,
+      "shot": 2,
+      "wave": 2,
+      "gap": 4.6916666666666895,
+      "ball": {
+        "x": 210.05576997627952,
+        "y": 242.82650026362452,
+        "vx": -5.836532729436846,
+        "vy": -114.88665552881633,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 1,
+      "paddle": {
+        "x": 189.17193158031978,
+        "target": 189.17193158031978,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 24,
+      "energy": 1386000,
+      "targets": [
+        {
+          "x": 272.893200834881,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 128.893200834881,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 106.81666666669774,
+      "shot": 2,
+      "wave": 2,
+      "gap": 4.808333333333362,
+      "ball": {
+        "x": 209.3748411578452,
+        "y": 231.05639045192927,
+        "vx": -5.836532729436852,
+        "vy": -86.88665552881633,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 1,
+      "paddle": {
+        "x": 187.5105495310765,
+        "target": 187.5105495310765,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 24,
+      "energy": 1386000,
+      "targets": [
+        {
+          "x": 273.7909705200799,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 129.7909705200799,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 106.9333333333645,
+      "shot": 2,
+      "wave": 2,
+      "gap": 4.9250000000000345,
+      "ball": {
+        "x": 208.69391233941087,
+        "y": 222.5529473069007,
+        "vx": -5.836532729436852,
+        "vy": -58.886655528816334,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 1,
+      "paddle": {
+        "x": 186.24843056639037,
+        "target": 186.24843056639037,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 24,
+      "energy": 1386000,
+      "targets": [
+        {
+          "x": 274.7434594489474,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 130.7434594489474,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 107.05000000003126,
+      "shot": 2,
+      "wave": 2,
+      "gap": 5.041666666666707,
+      "ball": {
+        "x": 208.01298352097655,
+        "y": 217.3161708285388,
+        "vx": -5.836532729436852,
+        "vy": -30.886655528816334,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 1,
+      "paddle": {
+        "x": 186.24843056639037,
+        "target": 186.24843056639037,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 24,
+      "energy": 1386000,
+      "targets": [
+        {
+          "x": 275.7443185793806,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 131.7443185793806,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 107.16666666669802,
+      "shot": 2,
+      "wave": 2,
+      "gap": 5.158333333333379,
+      "ball": {
+        "x": 207.33205470254222,
+        "y": 215.34606101684355,
+        "vx": -5.836532729436852,
+        "vy": -2.886655528816334,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 1,
+      "paddle": {
+        "x": 186.2484305663902,
+        "target": 186.2484305663902,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 24,
+      "energy": 1386000,
+      "targets": [
+        {
+          "x": 276.78687644616343,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 132.78687644616343,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 107.28333333336478,
+      "shot": 2,
+      "wave": 2,
+      "gap": 5.275000000000052,
+      "ball": {
+        "x": 206.6511258841079,
+        "y": 216.64261787181496,
+        "vx": -5.836532729436852,
+        "vy": 25.113344471183666,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 1,
+      "paddle": {
+        "x": 186.2484305663902,
+        "target": 186.2484305663902,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 24,
+      "energy": 1386000,
+      "targets": [
+        {
+          "x": 277.8641836312079,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 133.8641836312079,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 107.40000000003154,
+      "shot": 2,
+      "wave": 2,
+      "gap": 5.391666666666724,
+      "ball": {
+        "x": 205.97019706567357,
+        "y": 221.20584139345306,
+        "vx": -5.836532729436852,
+        "vy": 53.113344471183666,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 1,
+      "paddle": {
+        "x": 186.2484305663902,
+        "target": 186.2484305663902,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 24,
+      "energy": 1386000,
+      "targets": [
+        {
+          "x": 278.9690590865584,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 134.9690590865584,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 107.5166666666983,
+      "shot": 2,
+      "wave": 2,
+      "gap": 5.508333333333397,
+      "ball": {
+        "x": 205.28926824723925,
+        "y": 229.0357315817578,
+        "vx": -5.836532729436852,
+        "vy": 81.11334447118367,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 1,
+      "paddle": {
+        "x": 186.2484305663902,
+        "target": 186.2484305663902,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 24,
+      "energy": 1386000,
+      "targets": [
+        {
+          "x": 280.0941380013791,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 136.09413800137912,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 107.63333333336506,
+      "shot": 2,
+      "wave": 2,
+      "gap": 5.625000000000069,
+      "ball": {
+        "x": 204.60833942880492,
+        "y": 240.13228843672923,
+        "vx": -5.836532729436852,
+        "vy": 109.11334447118367,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 1,
+      "paddle": {
+        "x": 186.2484305663902,
+        "target": 186.2484305663902,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 24,
+      "energy": 1386000,
+      "targets": [
+        {
+          "x": 281.23192089385697,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 137.23192089385697,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 107.75000000003182,
+      "shot": 2,
+      "wave": 2,
+      "gap": 5.741666666666742,
+      "ball": {
+        "x": 203.9274106103706,
+        "y": 254.4955119583673,
+        "vx": -5.836532729436852,
+        "vy": 137.11334447118367,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 1,
+      "paddle": {
+        "x": 187.06195885451297,
+        "target": 187.06195885451297,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 24,
+      "energy": 1386000,
+      "targets": [
+        {
+          "x": 282.3748236007867,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 138.37482360078675,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 107.86666666669858,
+      "shot": 2,
+      "wave": 2,
+      "gap": 5.858333333333414,
+      "ball": {
+        "x": 203.24648179193628,
+        "y": 272.12540214667206,
+        "vx": -5.836532729436852,
+        "vy": 165.11334447118367,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 1,
+      "paddle": {
+        "x": 188.88490223380063,
+        "target": 188.88490223380063,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 24,
+      "energy": 1386000,
+      "targets": [
+        {
+          "x": 283.5152278316184,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 139.5152278316184,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 107.98333333336534,
+      "shot": 2,
+      "wave": 2,
+      "gap": 5.975000000000087,
+      "ball": {
+        "x": 202.56555297350195,
+        "y": 293.0219590016435,
+        "vx": -5.836532729436852,
+        "vy": 193.11334447118367,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 1,
+      "paddle": {
+        "x": 190.0895743911767,
+        "target": 190.0895743911767,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 24,
+      "energy": 1386000,
+      "targets": [
+        {
+          "x": 284.6455319499904,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 140.6455319499904,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 108.1000000000321,
+      "shot": 2,
+      "wave": 2,
+      "gap": 6.091666666666759,
+      "ball": {
+        "x": 201.88462415506763,
+        "y": 317.1851825232816,
+        "vx": -5.836532729436852,
+        "vy": 221.11334447118367,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 1,
+      "paddle": {
+        "x": 190.94490952579136,
+        "target": 190.94490952579136,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 24,
+      "energy": 1386000,
+      "targets": [
+        {
+          "x": 285.7582016442495,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 141.7582016442495,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 108.21666666669886,
+      "shot": 2,
+      "wave": 2,
+      "gap": 6.208333333333432,
+      "ball": {
+        "x": 201.2036953366333,
+        "y": 344.6150727115863,
+        "vx": -5.836532729436852,
+        "vy": 249.11334447118367,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 1,
+      "paddle": {
+        "x": 191.58361925657522,
+        "target": 191.58361925657522,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 24,
+      "energy": 1386000,
+      "targets": [
+        {
+          "x": 286.8458201492015,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 142.8458201492015,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 108.33333333336562,
+      "shot": 2,
+      "wave": 2,
+      "gap": 6.325000000000104,
+      "ball": {
+        "x": 200.52276651819898,
+        "y": 375.31162956655777,
+        "vx": -5.836532729436852,
+        "vy": 277.11334447118367,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 1,
+      "paddle": {
+        "x": 192.07874878293526,
+        "target": 192.07874878293526,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 24,
+      "energy": 1386000,
+      "targets": [
+        {
+          "x": 287.9011376843293,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 143.90113768432929,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 108.45000000003238,
+      "shot": 2,
+      "wave": 2,
+      "gap": 6.441666666666777,
+      "ball": {
+        "x": 199.84183769976465,
+        "y": 409.27485308819587,
+        "vx": -5.836532729436852,
+        "vy": 305.11334447118367,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 1,
+      "paddle": {
+        "x": 192.47382086338246,
+        "target": 192.47382086338246,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 24,
+      "energy": 1386000,
+      "targets": [
+        {
+          "x": 288.91711977893266,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 144.91711977893266,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 108.56666666669913,
+      "shot": 2,
+      "wave": 2,
+      "gap": 6.558333333333449,
+      "ball": {
+        "x": 199.16090888133033,
+        "y": 446.5047432765006,
+        "vx": -5.836532729436852,
+        "vy": 333.11334447118367,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 1,
+      "paddle": {
+        "x": 192.79638206580367,
+        "target": 192.79638206580367,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 24,
+      "energy": 1386000,
+      "targets": [
+        {
+          "x": 289.88699416207095,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 145.88699416207098,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 108.6833333333659,
+      "shot": 2,
+      "wave": 2,
+      "gap": 6.6750000000001215,
+      "ball": {
+        "x": 198.479980062896,
+        "y": 487.001300131472,
+        "vx": -5.836532729436852,
+        "vy": 361.11334447118367,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 1,
+      "paddle": {
+        "x": 193.06471719882418,
+        "target": 193.06471719882418,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 24,
+      "energy": 1386000,
+      "targets": [
+        {
+          "x": 290.80429590475006,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 146.80429590475003,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 108.80000000003265,
+      "shot": 2,
+      "wave": 2,
+      "gap": 6.791666666666794,
+      "ball": {
+        "x": 197.79905124446168,
+        "y": 530.76452365311,
+        "vx": -5.836532729436854,
+        "vy": 389.11334447118367,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 1,
+      "paddle": {
+        "x": 193.29144000242167,
+        "target": 193.29144000242167,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 24,
+      "energy": 1386000,
+      "targets": [
+        {
+          "x": 291.6629105134479,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 147.66291051344794,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 108.91666666669941,
+      "shot": 2,
+      "wave": 2,
+      "gap": 6.908333333333466,
+      "ball": {
+        "x": 197.11812242602736,
+        "y": 577.7944138414148,
+        "vx": -5.836532729436852,
+        "vy": 417.11334447118367,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 1,
+      "paddle": {
+        "x": 193.48553355497492,
+        "target": 193.48553355497492,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 24,
+      "energy": 1386000,
+      "targets": [
+        {
+          "x": 292.45711468773027,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 148.45711468773024,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 109.03333333336617,
+      "shot": 2,
+      "wave": 2,
+      "gap": 7.025000000000139,
+      "ball": {
+        "x": 196.43719360759303,
+        "y": 628.0909706963863,
+        "vx": -5.836532729436853,
+        "vy": 445.11334447118367,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 1,
+      "paddle": {
+        "x": 193.65356886919304,
+        "target": 193.65356886919304,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 24,
+      "energy": 1386000,
+      "targets": [
+        {
+          "x": 293.1816144702732,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 149.1816144702732,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 109.11666666669957,
+      "shot": 2,
+      "wave": 2,
+      "gap": 7.108333333333476,
+      "ball": {
+        "x": 195.95081588013994,
+        "y": 663.0200695101538,
+        "vx": 11.178094429317717,
+        "vy": -482.29713921834804,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 2,
+      "paddle": {
+        "x": 193.80046355100126,
+        "target": 193.80046355100126,
+        "width": 96,
+        "vx": 0,
+        "flash": 0.15,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 25,
+      "energy": 1404000,
+      "targets": [
+        {
+          "x": 293.6537436692328,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 149.65374366923282,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 109.15000000003293,
+      "shot": 2,
+      "wave": 2,
+      "gap": 7.141666666666811,
+      "ball": {
+        "x": 196.3234190277838,
+        "y": 647.0768315362088,
+        "vx": 11.178094429317717,
+        "vy": -474.29713921834804,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 2,
+      "paddle": {
+        "x": 193.80046355100126,
+        "target": 193.80046355100126,
+        "width": 96,
+        "vx": 0,
+        "flash": 0.11666666666666667,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 25,
+      "energy": 1404000,
+      "targets": [
+        {
+          "x": 293.8315805349992,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 149.83158053499923,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 109.26666666669969,
+      "shot": 2,
+      "wave": 2,
+      "gap": 7.258333333333484,
+      "ball": {
+        "x": 197.62753004453737,
+        "y": 593.3754986274015,
+        "vx": 11.178094429317717,
+        "vy": -446.29713921834804,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 2,
+      "paddle": {
+        "x": 245.19943132332656,
+        "target": 245.19943132332656,
+        "width": 96,
+        "vx": 0,
+        "flash": 2.42861286636753e-17,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 25,
+      "energy": 1404000,
+      "targets": [
+        {
+          "x": 294.40268037810154,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 150.4026803781015,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 109.38333333336645,
+      "shot": 2,
+      "wave": 2,
+      "gap": 7.375000000000156,
+      "ball": {
+        "x": 198.93164106129092,
+        "y": 542.9408323852609,
+        "vx": 11.178094429317717,
+        "vy": -418.29713921834804,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 2,
+      "paddle": {
+        "x": 245.47063232554268,
+        "target": 245.47063232554268,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 25,
+      "energy": 1404000,
+      "targets": [
+        {
+          "x": 294.89110719738125,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 150.89110719738122,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 109.50000000003321,
+      "shot": 2,
+      "wave": 2,
+      "gap": 7.491666666666829,
+      "ball": {
+        "x": 200.23575207804447,
+        "y": 495.7728328097869,
+        "vx": 11.178094429317717,
+        "vy": -390.29713921834804,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 2,
+      "paddle": {
+        "x": 245.7781406669685,
+        "target": 245.7781406669685,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 25,
+      "energy": 1404000,
+      "targets": [
+        {
+          "x": 295.2936052673957,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 151.29360526739575,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 109.61666666669997,
+      "shot": 2,
+      "wave": 2,
+      "gap": 7.608333333333501,
+      "ball": {
+        "x": 201.53986309479802,
+        "y": 451.87149990097964,
+        "vx": 11.178094429317717,
+        "vy": -362.29713921834804,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 2,
+      "paddle": {
+        "x": 246.12977043637716,
+        "target": 246.12977043637716,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 25,
+      "energy": 1404000,
+      "targets": [
+        {
+          "x": 295.6074916412725,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 151.60749164127247,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 109.73333333336673,
+      "shot": 2,
+      "wave": 2,
+      "gap": 7.725000000000174,
+      "ball": {
+        "x": 202.84397411155157,
+        "y": 411.23683365883903,
+        "vx": 11.178094429317717,
+        "vy": -334.29713921834804,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 2,
+      "paddle": {
+        "x": 246.53575135834893,
+        "target": 246.53575135834893,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 25,
+      "energy": 1404000,
+      "targets": [
+        {
+          "x": 295.83067403453146,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 151.83067403453148,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 109.85000000003349,
+      "shot": 2,
+      "wave": 2,
+      "gap": 7.841666666666846,
+      "ball": {
+        "x": 204.14808512830513,
+        "y": 373.8688340833651,
+        "vx": 11.178094429317717,
+        "vy": -306.29713921834804,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 2,
+      "paddle": {
+        "x": 247.00974043523217,
+        "target": 247.00974043523217,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 25,
+      "energy": 1404000,
+      "targets": [
+        {
+          "x": 295.96166477170647,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 151.96166477170644,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 109.96666666670025,
+      "shot": 2,
+      "wave": 2,
+      "gap": 7.958333333333519,
+      "ball": {
+        "x": 205.45219614505868,
+        "y": 339.7675011745578,
+        "vx": 11.178094429317717,
+        "vy": -278.29713921834804,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 2,
+      "paddle": {
+        "x": 247.57038846156973,
+        "target": 247.57038846156973,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 25,
+      "energy": 1404000,
+      "targets": [
+        {
+          "x": 295.9995907028004,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 151.9995907028004,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 110.08333333336701,
+      "shot": 2,
+      "wave": 2,
+      "gap": 8.075000000000182,
+      "ball": {
+        "x": 206.75630716181223,
+        "y": 308.9328349324172,
+        "vx": 11.178094429317717,
+        "vy": -250.29713921834804,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 2,
+      "paddle": {
+        "x": 248.2438521983492,
+        "target": 248.2438521983492,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 25,
+      "energy": 1404000,
+      "targets": [
+        {
+          "x": 295.9441990234751,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 151.94419902347514,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 110.20000000003377,
+      "shot": 2,
+      "wave": 2,
+      "gap": 8.191666666666842,
+      "ball": {
+        "x": 208.06041817856578,
+        "y": 281.3648353569433,
+        "vx": 11.178094429317717,
+        "vy": -222.29713921834804,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 2,
+      "paddle": {
+        "x": 249.0679927242341,
+        "target": 249.0679927242341,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 25,
+      "energy": 1404000,
+      "targets": [
+        {
+          "x": 295.79585896017886,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 151.79585896017886,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 110.31666666670053,
+      "shot": 2,
+      "wave": 2,
+      "gap": 8.308333333333502,
+      "ball": {
+        "x": 209.36452919531934,
+        "y": 257.063502448136,
+        "vx": 11.178094429317717,
+        "vy": -194.29713921834804,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 2,
+      "paddle": {
+        "x": 250.0997466706597,
+        "target": 250.0997466706597,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 25,
+      "energy": 1404000,
+      "targets": [
+        {
+          "x": 295.5555593089793,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 151.55555930897927,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 110.43333333336729,
+      "shot": 2,
+      "wave": 2,
+      "gap": 8.425000000000162,
+      "ball": {
+        "x": 210.6686402120729,
+        "y": 236.02883620599536,
+        "vx": 11.178094429317717,
+        "vy": -166.29713921834804,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 2,
+      "paddle": {
+        "x": 251.42887103248248,
+        "target": 251.42887103248248,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 25,
+      "energy": 1404000,
+      "targets": [
+        {
+          "x": 295.22490184450754,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 151.22490184450757,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 110.55000000003405,
+      "shot": 2,
+      "wave": 2,
+      "gap": 8.541666666666822,
+      "ball": {
+        "x": 211.97275122882644,
+        "y": 218.26083663052142,
+        "vx": 11.178094429317717,
+        "vy": -138.29713921834804,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 2,
+      "paddle": {
+        "x": 253.205573534326,
+        "target": 253.205573534326,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 25,
+      "energy": 1404000,
+      "targets": [
+        {
+          "x": 294.80609064294765,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 150.80609064294765,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 110.6666666667008,
+      "shot": 2,
+      "wave": 2,
+      "gap": 8.658333333333482,
+      "ball": {
+        "x": 213.27686224558,
+        "y": 203.75950372171414,
+        "vx": 11.178094429317717,
+        "vy": -110.29713921834804,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 2,
+      "paddle": {
+        "x": 255.7017076937263,
+        "target": 255.7017076937263,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 25,
+      "energy": 1404000,
+      "targets": [
+        {
+          "x": 294.3019173902405,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 150.3019173902405,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 110.78333333336757,
+      "shot": 2,
+      "wave": 2,
+      "gap": 8.775000000000142,
+      "ball": {
+        "x": 214.58097326233354,
+        "y": 192.52483747957353,
+        "vx": 11.178094429317719,
+        "vy": -82.29713921834804,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 2,
+      "paddle": {
+        "x": 259.4651776509275,
+        "target": 259.4651776509275,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 25,
+      "energy": 1404000,
+      "targets": [
+        {
+          "x": 293.71574277343615,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 149.71574277343615,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 110.90000000003432,
+      "shot": 2,
+      "wave": 2,
+      "gap": 8.891666666666802,
+      "ball": {
+        "x": 215.8850842790871,
+        "y": 184.55683790409958,
+        "vx": 11.178094429317724,
+        "vy": -54.297139218348036,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 2,
+      "paddle": {
+        "x": 261.3792581699687,
+        "target": 261.3792581699687,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 25,
+      "energy": 1404000,
+      "targets": [
+        {
+          "x": 293.0514740792325,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 149.0514740792325,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 111.01666666670108,
+      "shot": 2,
+      "wave": 2,
+      "gap": 9.008333333333463,
+      "ball": {
+        "x": 217.18919529584065,
+        "y": 179.8555049952923,
+        "vx": 11.178094429317722,
+        "vy": -26.297139218348036,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 2,
+      "paddle": {
+        "x": 261.3792581699684,
+        "target": 261.3792581699684,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 25,
+      "energy": 1404000,
+      "targets": [
+        {
+          "x": 292.313539149024,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 148.31353914902397,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 111.13333333336784,
+      "shot": 2,
+      "wave": 2,
+      "gap": 9.125000000000123,
+      "ball": {
+        "x": 218.4933063125942,
+        "y": 178.42083875315168,
+        "vx": 11.178094429317726,
+        "vy": 1.7028607816519639,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 2,
+      "paddle": {
+        "x": 261.37925816996824,
+        "target": 261.37925816996824,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 25,
+      "energy": 1404000,
+      "targets": [
+        {
+          "x": 291.50685686406905,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 147.50685686406905,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 111.2500000000346,
+      "shot": 2,
+      "wave": 2,
+      "gap": 9.241666666666783,
+      "ball": {
+        "x": 219.79741732934775,
+        "y": 180.25283917767774,
+        "vx": 11.178094429317719,
+        "vy": 29.702860781651964,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 2,
+      "paddle": {
+        "x": 261.37925816996807,
+        "target": 261.37925816996807,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 25,
+      "energy": 1404000,
+      "targets": [
+        {
+          "x": 290.6368043575135,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 146.63680435751348,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 111.36666666670136,
+      "shot": 2,
+      "wave": 2,
+      "gap": 9.358333333333443,
+      "ball": {
+        "x": 221.1015283461013,
+        "y": 185.35150626887045,
+        "vx": 11.178094429317719,
+        "vy": 57.702860781651964,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 2,
+      "paddle": {
+        "x": 261.3792581699677,
+        "target": 261.3792581699677,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 25,
+      "energy": 1404000,
+      "targets": [
+        {
+          "x": 289.709181171828,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 145.709181171828,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 111.48333333336812,
+      "shot": 2,
+      "wave": 2,
+      "gap": 9.475000000000103,
+      "ball": {
+        "x": 222.40563936285486,
+        "y": 193.71684002672984,
+        "vx": 11.178094429317715,
+        "vy": 85.70286078165196,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 2,
+      "paddle": {
+        "x": 261.3792581699674,
+        "target": 261.3792581699674,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 25,
+      "energy": 1404000,
+      "targets": [
+        {
+          "x": 288.7301706005741,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 144.73017060057416,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 111.60000000003488,
+      "shot": 2,
+      "wave": 2,
+      "gap": 9.591666666666763,
+      "ball": {
+        "x": 223.7097503796084,
+        "y": 205.3488404512559,
+        "vx": 11.178094429317719,
+        "vy": 113.70286078165196,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 2,
+      "paddle": {
+        "x": 261.37925816996704,
+        "target": 261.37925816996704,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 25,
+      "energy": 1404000,
+      "targets": [
+        {
+          "x": 287.7062984721868,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 143.7062984721868,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 111.71666666670164,
+      "shot": 2,
+      "wave": 2,
+      "gap": 9.708333333333423,
+      "ball": {
+        "x": 225.01386139636196,
+        "y": 220.24750754244863,
+        "vx": 11.17809442931772,
+        "vy": 141.70286078165196,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 2,
+      "paddle": {
+        "x": 258.90840054914287,
+        "target": 258.90840054914287,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 25,
+      "energy": 1404000,
+      "targets": [
+        {
+          "x": 286.6443896505085,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 142.64438965050854,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 111.8333333333684,
+      "shot": 2,
+      "wave": 2,
+      "gap": 9.825000000000083,
+      "ball": {
+        "x": 226.3179724131155,
+        "y": 238.41284130030803,
+        "vx": 11.178094429317719,
+        "vy": 169.70286078165196,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 2,
+      "paddle": {
+        "x": 255.345400007162,
+        "target": 255.345400007162,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 25,
+      "energy": 1404000,
+      "targets": [
+        {
+          "x": 285.5515225420314,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 141.55152254203145,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 111.95000000003516,
+      "shot": 2,
+      "wave": 2,
+      "gap": 9.941666666666743,
+      "ball": {
+        "x": 227.62208342986906,
+        "y": 259.8448417248341,
+        "vx": 11.178094429317717,
+        "vy": 197.70286078165196,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 2,
+      "paddle": {
+        "x": 252.958148827519,
+        "target": 252.958148827519,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 25,
+      "energy": 1404000,
+      "targets": [
+        {
+          "x": 284.43498191309163,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 140.4349819130916,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 112.06666666670192,
+      "shot": 2,
+      "wave": 2,
+      "gap": 10.058333333333403,
+      "ball": {
+        "x": 228.92619444662262,
+        "y": 284.5435088160268,
+        "vx": 11.178094429317724,
+        "vy": 225.70286078165196,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 2,
+      "paddle": {
+        "x": 251.24709457052762,
+        "target": 251.24709457052762,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 25,
+      "energy": 1404000,
+      "targets": [
+        {
+          "x": 283.3022103315213,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 139.30221033152128,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 112.18333333336868,
+      "shot": 2,
+      "wave": 2,
+      "gap": 10.175000000000063,
+      "ball": {
+        "x": 230.23030546337617,
+        "y": 312.5088425738862,
+        "vx": 11.178094429317722,
+        "vy": 253.70286078165196,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 2,
+      "paddle": {
+        "x": 249.96057652924776,
+        "target": 249.96057652924776,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 25,
+      "energy": 1404000,
+      "targets": [
+        {
+          "x": 282.1607585564381,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 138.1607585564381,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 112.30000000003544,
+      "shot": 2,
+      "wave": 2,
+      "gap": 10.291666666666723,
+      "ball": {
+        "x": 231.53441648012972,
+        "y": 343.7408429984123,
+        "vx": 11.178094429317719,
+        "vy": 281.70286078165196,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 2,
+      "paddle": {
+        "x": 248.95803246480727,
+        "target": 248.95803246480727,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 25,
+      "energy": 1404000,
+      "targets": [
+        {
+          "x": 281.01823520685986,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 137.01823520685988,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 112.4166666667022,
+      "shot": 2,
+      "wave": 2,
+      "gap": 10.408333333333383,
+      "ball": {
+        "x": 232.83852749688327,
+        "y": 378.239510089605,
+        "vx": 11.178094429317717,
+        "vy": 309.70286078165196,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 2,
+      "paddle": {
+        "x": 248.15478516097772,
+        "target": 248.15478516097772,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 25,
+      "energy": 1404000,
+      "targets": [
+        {
+          "x": 279.8822560446391,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 135.8822560446391,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 112.53333333336896,
+      "shot": 2,
+      "wave": 2,
+      "gap": 10.525000000000043,
+      "ball": {
+        "x": 234.14263851363683,
+        "y": 416.0048438474644,
+        "vx": 11.17809442931771,
+        "vy": 337.70286078165196,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 2,
+      "paddle": {
+        "x": 247.496779812295,
+        "target": 247.496779812295,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 25,
+      "energy": 1404000,
+      "targets": [
+        {
+          "x": 278.7603932097874,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 134.76039320978742,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 112.65000000003572,
+      "shot": 2,
+      "wave": 2,
+      "gap": 10.641666666666703,
+      "ball": {
+        "x": 235.44674953039038,
+        "y": 457.03684427199045,
+        "vx": 11.178094429317712,
+        "vy": 365.70286078165196,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 2,
+      "paddle": {
+        "x": 246.9478890249781,
+        "target": 246.9478890249781,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 25,
+      "energy": 1404000,
+      "targets": [
+        {
+          "x": 277.66012474656975,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 133.66012474656975,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 112.76666666670248,
+      "shot": 2,
+      "wave": 2,
+      "gap": 10.758333333333363,
+      "ball": {
+        "x": 236.75086054714393,
+        "y": 501.3355113631832,
+        "vx": 11.178094429317728,
+        "vy": 393.70286078165196,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 2,
+      "paddle": {
+        "x": 246.48304976524304,
+        "target": 246.48304976524304,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 25,
+      "energy": 1404000,
+      "targets": [
+        {
+          "x": 276.5887847568171,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 132.58878475681715,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 112.88333333336924,
+      "shot": 2,
+      "wave": 2,
+      "gap": 10.875000000000023,
+      "ball": {
+        "x": 238.05497156389748,
+        "y": 548.9008451210425,
+        "vx": 11.178094429317719,
+        "vy": 421.70286078165196,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 2,
+      "paddle": {
+        "x": 246.08432889360785,
+        "target": 246.08432889360785,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 25,
+      "energy": 1404000,
+      "targets": [
+        {
+          "x": 275.55351451272213,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 131.55351451272213,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 113.000000000036,
+      "shot": 2,
+      "wave": 2,
+      "gap": 10.991666666666683,
+      "ball": {
+        "x": 239.35908258065103,
+        "y": 599.7328455455686,
+        "vx": 11.178094429317712,
+        "vy": 449.70286078165196,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 2,
+      "paddle": {
+        "x": 245.73855613043492,
+        "target": 245.73855613043492,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 25,
+      "energy": 1404000,
+      "targets": [
+        {
+          "x": 274.56121485498517,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 130.5612148549852,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 113.11666666670276,
+      "shot": 2,
+      "wave": 2,
+      "gap": 11.108333333333343,
+      "ball": {
+        "x": 240.6631935974046,
+        "y": 653.8315126367613,
+        "vx": 11.178094429317714,
+        "vy": 477.70286078165196,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 2,
+      "paddle": {
+        "x": 245.4358412982346,
+        "target": 245.4358412982346,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 25,
+      "energy": 1404000,
+      "targets": [
+        {
+          "x": 273.61850019361646,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 129.61850019361646,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 113.14166666670278,
+      "shot": 2,
+      "wave": 2,
+      "gap": 11.133333333333342,
+      "ball": {
+        "x": 240.9426459581375,
+        "y": 663.0775121425687,
+        "vx": -23.582911317627833,
+        "vy": -498.5188453984703,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 245.16861302471938,
+        "target": 245.16861302471938,
+        "width": 96,
+        "vx": 0,
+        "flash": 0.15,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 26,
+      "energy": 1422000,
+      "targets": [
+        {
+          "x": 273.42355119664296,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 129.423551196643,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 113.23333333336952,
+      "shot": 2,
+      "wave": 2,
+      "gap": 11.225000000000003,
+      "ball": {
+        "x": 238.780879087355,
+        "y": 618.3882846477089,
+        "vx": -23.582911317627833,
+        "vy": -476.5188453984703,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 245.16861302471938,
+        "target": 245.16861302471938,
+        "width": 96,
+        "vx": 0,
+        "flash": 0.05833333333333335,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 26,
+      "energy": 1422000,
+      "targets": [
+        {
+          "x": 272.7316544180077,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 128.7316544180077,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 113.35000000003627,
+      "shot": 2,
+      "wave": 2,
+      "gap": 11.341666666666663,
+      "ball": {
+        "x": 236.02953943363184,
+        "y": 564.4277526845541,
+        "vx": -23.582911317627833,
+        "vy": -448.5188453984703,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 140.16861302471938,
+        "target": 133.71732535339723,
+        "width": 96,
+        "vx": -900,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 26,
+      "energy": 1422000,
+      "targets": [
+        {
+          "x": 271.9065890101691,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 127.90658901016911,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 113.46666666670303,
+      "shot": 2,
+      "wave": 2,
+      "gap": 11.458333333333323,
+      "ball": {
+        "x": 233.27819977990868,
+        "y": 513.7338873880659,
+        "vx": -23.582911317627833,
+        "vy": -420.5188453984703,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 133.13937346018196,
+        "target": 133.13937346018196,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 26,
+      "energy": 1422000,
+      "targets": [
+        {
+          "x": 271.14880364033644,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 127.14880364033647,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 113.5833333333698,
+      "shot": 2,
+      "wave": 2,
+      "gap": 11.574999999999983,
+      "ball": {
+        "x": 230.5268601261855,
+        "y": 466.3066887582444,
+        "vx": -23.582911317627833,
+        "vy": -392.5188453984703,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 132.4844563931718,
+        "target": 132.4844563931718,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 26,
+      "energy": 1422000,
+      "targets": [
+        {
+          "x": 270.463349507607,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 126.46334950760698,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 113.70000000003655,
+      "shot": 2,
+      "wave": 2,
+      "gap": 11.691666666666643,
+      "ball": {
+        "x": 227.77552047246235,
+        "y": 422.14615679508955,
+        "vx": -23.582911317627833,
+        "vy": -364.5188453984703,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 131.7361034155488,
+        "target": 131.7361034155488,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 26,
+      "energy": 1422000,
+      "targets": [
+        {
+          "x": 269.85479566996804,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 125.85479566996803,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 113.81666666670331,
+      "shot": 2,
+      "wave": 2,
+      "gap": 11.808333333333303,
+      "ball": {
+        "x": 225.02418081873918,
+        "y": 381.2522914986014,
+        "vx": -23.582911317627833,
+        "vy": -336.5188453984703,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 130.87278308500035,
+        "target": 130.87278308500035,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 26,
+      "energy": 1422000,
+      "targets": [
+        {
+          "x": 269.32719858815085,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 125.32719858815088,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 113.93333333337007,
+      "shot": 2,
+      "wave": 2,
+      "gap": 11.924999999999963,
+      "ball": {
+        "x": 222.27284116501602,
+        "y": 343.62509286877986,
+        "vx": -23.582911317627833,
+        "vy": -308.5188453984703,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 129.86579787751606,
+        "target": 129.86579787751606,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 26,
+      "energy": 1422000,
+      "targets": [
+        {
+          "x": 268.8840750863245,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 124.8840750863245,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 114.05000000003683,
+      "shot": 2,
+      "wave": 2,
+      "gap": 12.041666666666623,
+      "ball": {
+        "x": 219.52150151129285,
+        "y": 309.264560905625,
+        "vx": -23.582911317627833,
+        "vy": -280.5188453984703,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 128.67603235544112,
+        "target": 128.67603235544112,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 26,
+      "energy": 1422000,
+      "targets": [
+        {
+          "x": 268.5283789098654,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 124.52837890986542,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 114.16666666670359,
+      "shot": 2,
+      "wave": 2,
+      "gap": 12.158333333333283,
+      "ball": {
+        "x": 216.7701618575697,
+        "y": 278.1706956091368,
+        "vx": -23.582911317627833,
+        "vy": -252.51884539847032,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 127.24875384509772,
+        "target": 127.24875384509772,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 26,
+      "energy": 1422000,
+      "targets": [
+        {
+          "x": 268.2624810364633,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 124.26248103646333,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 114.28333333337035,
+      "shot": 2,
+      "wave": 2,
+      "gap": 12.274999999999944,
+      "ball": {
+        "x": 214.01882220384653,
+        "y": 250.34349697931532,
+        "vx": -23.582911317627833,
+        "vy": -224.51884539847032,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 125.50495402145137,
+        "target": 125.50495402145137,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 26,
+      "energy": 1422000,
+      "targets": [
+        {
+          "x": 268.08815387180414,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 124.08815387180414,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 114.40000000003711,
+      "shot": 2,
+      "wave": 2,
+      "gap": 12.391666666666604,
+      "ball": {
+        "x": 211.26748255012336,
+        "y": 225.78296501616043,
+        "vx": -23.582911317627833,
+        "vy": -196.51884539847032,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 123.32621168796439,
+        "target": 123.32621168796439,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 26,
+      "energy": 1422000,
+      "targets": [
+        {
+          "x": 268.006559435177,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 124.00655943517702,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 114.51666666670387,
+      "shot": 2,
+      "wave": 2,
+      "gap": 12.508333333333264,
+      "ball": {
+        "x": 208.5161428964002,
+        "y": 204.48909971967223,
+        "vx": -23.582911317627833,
+        "vy": -168.51884539847032,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 120.52661505204168,
+        "target": 120.52661505204168,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 26,
+      "energy": 1422000,
+      "targets": [
+        {
+          "x": 268.01824161375777,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 124.01824161375777,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 114.63333333337063,
+      "shot": 2,
+      "wave": 2,
+      "gap": 12.624999999999924,
+      "ball": {
+        "x": 205.76480324267703,
+        "y": 186.46190108985067,
+        "vx": -23.582911317627833,
+        "vy": -140.51884539847032,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 116.7966927232213,
+        "target": 116.7966927232213,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 26,
+      "energy": 1422000,
+      "targets": [
+        {
+          "x": 268.1231225371991,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 124.1231225371991,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 114.75000000003739,
+      "shot": 2,
+      "wave": 2,
+      "gap": 12.741666666666584,
+      "ball": {
+        "x": 203.01346358895387,
+        "y": 171.7013691266958,
+        "vx": -23.582911317627833,
+        "vy": -112.51884539847032,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 111.58031034114873,
+        "target": 111.58031034114873,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 26,
+      "energy": 1422000,
+      "targets": [
+        {
+          "x": 268.32050309669404,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 124.32050309669405,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 114.86666666670415,
+      "shot": 2,
+      "wave": 2,
+      "gap": 12.858333333333244,
+      "ball": {
+        "x": 200.2621239352307,
+        "y": 160.20750383020757,
+        "vx": -23.582911317627833,
+        "vy": -84.51884539847032,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 108.41526520485644,
+        "target": 108.41526520485644,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 26,
+      "energy": 1422000,
+      "targets": [
+        {
+          "x": 268.6090676050525,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 124.6090676050525,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 114.98333333337091,
+      "shot": 2,
+      "wave": 2,
+      "gap": 12.974999999999904,
+      "ball": {
+        "x": 197.51078428150754,
+        "y": 151.98030520038603,
+        "vx": -23.582911317627833,
+        "vy": -56.51884539847032,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 108.41526520485655,
+        "target": 108.41526520485655,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 26,
+      "energy": 1422000,
+      "targets": [
+        {
+          "x": 268.98689256672776,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 124.98689256672775,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 115.10000000003767,
+      "shot": 2,
+      "wave": 2,
+      "gap": 13.091666666666564,
+      "ball": {
+        "x": 194.75944462778438,
+        "y": 147.01977323723116,
+        "vx": -23.582911317627833,
+        "vy": -28.51884539847032,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 108.41526520485667,
+        "target": 108.41526520485667,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 26,
+      "energy": 1422000,
+      "targets": [
+        {
+          "x": 269.451459499335,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 125.45145949933496,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 115.21666666670443,
+      "shot": 2,
+      "wave": 2,
+      "gap": 13.208333333333224,
+      "ball": {
+        "x": 192.0081049740612,
+        "y": 145.32590794074295,
+        "vx": -23.582911317627833,
+        "vy": -0.5188453984703187,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 108.41526520485667,
+        "target": 108.41526520485667,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 26,
+      "energy": 1422000,
+      "targets": [
+        {
+          "x": 269.9996717211959,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 125.99967172119591,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 115.33333333337119,
+      "shot": 2,
+      "wave": 2,
+      "gap": 13.324999999999884,
+      "ball": {
+        "x": 189.25676532033805,
+        "y": 146.89870931092142,
+        "vx": -23.582911317627833,
+        "vy": 27.48115460152968,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 108.41526520485678,
+        "target": 108.41526520485678,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 26,
+      "energy": 1422000,
+      "targets": [
+        {
+          "x": 270.6278749930096,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 126.62787499300957,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 115.45000000003795,
+      "shot": 2,
+      "wave": 2,
+      "gap": 13.441666666666544,
+      "ball": {
+        "x": 186.50542566661488,
+        "y": 151.73817734776654,
+        "vx": -23.582911317627833,
+        "vy": 55.48115460152968,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 108.4152652048569,
+        "target": 108.4152652048569,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 26,
+      "energy": 1422000,
+      "targets": [
+        {
+          "x": 271.33188187605515,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 127.33188187605515,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 115.5666666667047,
+      "shot": 2,
+      "wave": 2,
+      "gap": 13.558333333333204,
+      "ball": {
+        "x": 183.75408601289172,
+        "y": 159.84431205127834,
+        "vx": -23.582911317627833,
+        "vy": 83.48115460152968,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 108.41526520485701,
+        "target": 108.41526520485701,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 26,
+      "energy": 1422000,
+      "targets": [
+        {
+          "x": 272.1069996445638,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 128.10699964456379,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 115.68333333337146,
+      "shot": 2,
+      "wave": 2,
+      "gap": 13.674999999999864,
+      "ball": {
+        "x": 181.00274635916855,
+        "y": 171.2171134214568,
+        "vx": -23.582911317627833,
+        "vy": 111.48115460152968,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 108.41526520485712,
+        "target": 108.41526520485712,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 26,
+      "energy": 1422000,
+      "targets": [
+        {
+          "x": 272.9480615662012,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 128.94806156620123,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 115.80000000003822,
+      "shot": 2,
+      "wave": 2,
+      "gap": 13.791666666666524,
+      "ball": {
+        "x": 178.2514067054454,
+        "y": 185.85658145830192,
+        "vx": -23.582911317627833,
+        "vy": 139.48115460152968,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 108.41526520485712,
+        "target": 108.41526520485712,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 26,
+      "energy": 1422000,
+      "targets": [
+        {
+          "x": 273.84946134215414,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 129.84946134215411,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 115.91666666670498,
+      "shot": 2,
+      "wave": 2,
+      "gap": 13.908333333333184,
+      "ball": {
+        "x": 175.50006705172223,
+        "y": 203.7627161618137,
+        "vx": -23.582911317627833,
+        "vy": 167.48115460152968,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 111.34674290456307,
+        "target": 111.34674290456307,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 26,
+      "energy": 1422000,
+      "targets": [
+        {
+          "x": 274.8051904772525,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 130.80519047725247,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 116.03333333337174,
+      "shot": 2,
+      "wave": 2,
+      "gap": 14.024999999999844,
+      "ball": {
+        "x": 172.74872739799906,
+        "y": 224.93551753199216,
+        "vx": -23.58291131762782,
+        "vy": 195.48115460152968,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 116.63449379519476,
+        "target": 116.63449379519476,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 26,
+      "energy": 1422000,
+      "targets": [
+        {
+          "x": 275.8088783310261,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 131.80887833102608,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 116.1500000000385,
+      "shot": 2,
+      "wave": 2,
+      "gap": 14.141666666666504,
+      "ball": {
+        "x": 169.9973877442759,
+        "y": 249.37498556883727,
+        "vx": -23.582911317627815,
+        "vy": 223.48115460152968,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 120.40744879422759,
+        "target": 120.40744879422759,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 26,
+      "energy": 1422000,
+      "targets": [
+        {
+          "x": 276.8538345827285,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 132.85383458272847,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 116.26666666670526,
+      "shot": 2,
+      "wave": 2,
+      "gap": 14.258333333333164,
+      "ball": {
+        "x": 167.24604809055273,
+        "y": 277.0811202723491,
+        "vx": -23.58291131762781,
+        "vy": 251.48115460152968,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 123.23497517167249,
+        "target": 123.23497517167249,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 26,
+      "energy": 1422000,
+      "targets": [
+        {
+          "x": 277.9330938272652,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 133.93309382726522,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 116.38333333337202,
+      "shot": 2,
+      "wave": 2,
+      "gap": 14.374999999999824,
+      "ball": {
+        "x": 164.49470843682957,
+        "y": 308.0539216425276,
+        "vx": -23.582911317627804,
+        "vy": 279.4811546015297,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 125.43286599098658,
+        "target": 125.43286599098658,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 26,
+      "energy": 1422000,
+      "targets": [
+        {
+          "x": 279.0394620047624,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 135.0394620047624,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 116.50000000003878,
+      "shot": 2,
+      "wave": 2,
+      "gap": 14.491666666666484,
+      "ball": {
+        "x": 161.7433687831064,
+        "y": 342.29338967937275,
+        "vx": -23.582911317627797,
+        "vy": 307.4811546015297,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 127.19036258745204,
+        "target": 127.19036258745204,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 26,
+      "energy": 1422000,
+      "targets": [
+        {
+          "x": 280.16556435428924,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 136.16556435428922,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 116.61666666670554,
+      "shot": 2,
+      "wave": 2,
+      "gap": 14.608333333333144,
+      "ball": {
+        "x": 158.99202912938324,
+        "y": 379.79952438288456,
+        "vx": -23.582911317627797,
+        "vy": 335.4811546015297,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 128.62777514647593,
+        "target": 128.62777514647593,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 26,
+      "energy": 1422000,
+      "targets": [
+        {
+          "x": 281.30389457208446,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 137.30389457208446,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 116.7333333333723,
+      "shot": 2,
+      "wave": 2,
+      "gap": 14.724999999999804,
+      "ball": {
+        "x": 156.24068947566008,
+        "y": 420.572325753063,
+        "vx": -23.582911317627804,
+        "vy": 363.4811546015297,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 129.82524843558465,
+        "target": 129.82524843558465,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 26,
+      "energy": 1422000,
+      "targets": [
+        {
+          "x": 282.4468648466151,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 138.44686484661509,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 116.85000000003906,
+      "shot": 2,
+      "wave": 2,
+      "gap": 14.841666666666464,
+      "ball": {
+        "x": 153.4893498219369,
+        "y": 464.6117937899082,
+        "vx": -23.5829113176278,
+        "vy": 391.4811546015297,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 130.83823209341236,
+        "target": 130.83823209341236,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 26,
+      "energy": 1422000,
+      "targets": [
+        {
+          "x": 283.58685643694326,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 139.5868564369433,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 116.96666666670582,
+      "shot": 2,
+      "wave": 2,
+      "gap": 14.958333333333124,
+      "ball": {
+        "x": 150.73801016821375,
+        "y": 511.91792849342,
+        "vx": -23.582911317627797,
+        "vy": 419.4811546015297,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 131.70631200767141,
+        "target": 131.70631200767141,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 26,
+      "energy": 1422000,
+      "targets": [
+        {
+          "x": 284.71627045726103,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 140.71627045726103,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 117.08333333337258,
+      "shot": 2,
+      "wave": 2,
+      "gap": 15.074999999999784,
+      "ball": {
+        "x": 147.98667051449058,
+        "y": 562.4907298635984,
+        "vx": -23.582911317627804,
+        "vy": 447.4811546015297,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 132.45850477261445,
+        "target": 132.45850477261445,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 57,
+      "catches": 26,
+      "energy": 1422000,
+      "targets": [
+        {
+          "x": 285.8275785290763,
+          "y": 511,
+          "hp": 3,
+          "id": 6,
+          "kind": "hexagon",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 8,
+          "id": 11,
+          "kind": "hexagon",
+          "moving": false
+        },
+        {
+          "x": 141.82757852907628,
+          "y": 609,
+          "hp": 19,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 7,
+          "id": 14,
+          "kind": "bar",
+          "moving": false
+        }
+      ],
+      "flow": []
+    }
+  ]
+}
