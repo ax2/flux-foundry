@@ -11,6 +11,8 @@ const reports = [];
 const crosswind = [];
 const crosswindRows = new Set([390, 402]);
 const expedition = [];
+// Stage-53 expeditions also protect hit counts from the published baseline.
+const springBarRows = new Map([[4, 11], [28, 9], [52, 11]]);
 const expeditionRows = new Map([[8, 10], [9, 13.5], [17, 13], [26, 12], [32, 12.5], [41, 10], [50, 9], [51, 13], [54, 12], [56, 10], [70, 12]]);
 const matrices = {
  'active-endurance.json': 12,
@@ -46,14 +48,21 @@ for (const [matrix, ceiling] of Object.entries(matrices)) {
    crosswind.push({index, before: previous, after: row});
    continue;
   }
-  if (matrix === 'endless-audit-extended.json' && expeditionRows.has(index)) {
+  const springBarLimit = springBarRows.get(index);
+  const expeditionLimit = springBarLimit ?? expeditionRows.get(index);
+  if (matrix === 'endless-audit-extended.json' && expeditionLimit !== undefined) {
    assert.deepEqual(previous, old, key);
    for (const field of ['seed', 'material', 'size', 'policy', 'phase', 'wave']) {
     assert.equal(row[field], previous[field], `${key} ${field}`);
    }
    assert.equal(row.unresolved, false, key);
    assert.equal(row.shots.length, previous.shots.length, key);
-   assert.ok(gap(row) < Math.min(expeditionRows.get(index), gap(previous)), key);
+   assert.ok(gap(row) < Math.min(expeditionLimit, gap(previous)), key);
+   if (springBarLimit !== undefined) {
+    const totalHits = route => route.shots.reduce((total, shot) => total + shot.hits, 0);
+    assert.ok(totalHits(row) >= totalHits(previous), key);
+    assert.ok(row.shots[1].hits >= previous.shots[1].hits, key);
+   }
    expedition.push({index, before: previous, after: row});
    continue;
   }
@@ -92,7 +101,7 @@ for (const [matrix, ceiling] of Object.entries(matrices)) {
 }
 assert.equal(used.size, certificates.size);
 assert.equal(crosswind.length, crosswindRows.size);
-assert.equal(expedition.length, expeditionRows.size);
+assert.equal(expedition.length, expeditionRows.size + springBarRows.size);
 assert.equal(reports.reduce((sum, report) => sum + report.rows, 0), 6336);
 assert.equal(reports.reduce((sum, report) => sum + report.affected.length, 0), 252);
 for (const [name, expected] of Object.entries({

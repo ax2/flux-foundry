@@ -1,0 +1,37 @@
+{
+  "baseline": "bf18a10",
+  "seeds": [
+    1763,
+    2843,
+    5167,
+    7817,
+    9157
+  ],
+  "identical": 120,
+  "naturallyConcluded": 120,
+  "baselineSha256": "812bc0a948dcb66aeffe1e37a054e0862f752ed53edb385f132db1491ca46c57",
+  "currentSha256": "812bc0a948dcb66aeffe1e37a054e0862f752ed53edb385f132db1491ca46c57",
+  "highest": [
+    {
+      "seed": 9157,
+      "material": "brass",
+      "size": "standard",
+      "policy": "steer",
+      "maxNoHit": 17.64999999999964
+    },
+    {
+      "seed": 7817,
+      "material": "brass",
+      "size": "small",
+      "policy": "follow",
+      "maxNoHit": 16.34166666666638
+    },
+    {
+      "seed": 2843,
+      "material": "steel",
+      "size": "standard",
+      "policy": "steer",
+      "maxNoHit": 16.124999999999726
+    }
+  ]
+}

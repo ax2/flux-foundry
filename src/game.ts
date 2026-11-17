@@ -23,6 +23,19 @@ function fixedSpringGapTilt(targets:Target[],x:number,paddleWidth:number){
   flanks.every(t=>t.kind==='capacitor')&&flanks.filter(t=>t.motion).length===1)return .26;
  return 0;
 }
+function springBarGapTilt(targets:Target[],x:number,paddleWidth:number){
+ const spring=targets.find(t=>t.kind==='steel'&&t.power==='spring'&&Math.abs(t.x-x)<=paddleWidth*.9);
+ if(!spring||targets.some(t=>t.y<600||Math.abs(t.y-spring.y)>1))return 0;
+ const bar=targets.find(t=>t.kind==='bar'&&!t.power&&(t.x-x)*(spring.x-x)<0&&Boolean(t.motion)!==Boolean(spring.motion));
+ if(!bar)return 0;
+ const outer=targets.filter(t=>t!==spring&&t!==bar);
+ if(!outer.every(t=>!t.motion&&!t.power)||(outer[0].x-x)*(outer[1].x-x)>=0)return 0;
+ if(spring.motion&&outer.every(t=>t.kind==='capacitor'))return .187;
+ if(spring.motion&&outer.every(t=>t.kind==='diamond'))return .265;
+ if(bar.motion&&outer.some(t=>t.kind==='hexagon'&&(t.x-x)*(spring.x-x)>0)&&
+  outer.some(t=>t.kind==='diamond'&&(t.x-x)*(bar.x-x)>0))return .181;
+ return 0;
+}
 export class Game{
  feedback=new Feedback();time=0;paddleEnabled=true;paddle:Paddle={x:210,target:210,width:96,vx:0,flash:0,tilt:0,boost:18000};treasures:Treasure[]=[];spawnCount=0;nextTreasure=2.5;treasureClock=0;bonusLives=0;wideTime=0;bigTime=0;ballScale=1;motionEnabled=true;windMultiplier=2.4;
  paddleOrbits:{x:number;vx:number;vy:number}[]=[];orbitRepeats=0;lastOrbitAdjustmentCatch=0;lastGuideTime=-1;
@@ -412,13 +425,17 @@ export class Game{
    this.progress.sinceHit>=3.65&&this.progress.catchesWithoutHit===0&&
    Math.abs(falling.x-W/2)<falling.r/4&&Math.abs(falling.x-this.paddle.x)<falling.r/4&&Math.abs(falling.vx)<falling.vy*.03
    ?fixedSpringGapTilt(this.targets,falling.x,this.paddle.width):0;
-  if(falling&&(regularGuide||edgeGuide||lowCoreEdgeGuide||lowGapGuide||oneSidedRowGuide||centralMovingGuide||movingSpringEdgeGuide||splitRowGuide||widePaddleGuide||enlargedBallGuide||lowSplitGuide||centralFixedGuide||centralSpringGuide||centralMovingSpringGuide||centralTwoRowGuide||centralDiamondGuide||lowRowGuide||sideBarGuide||raisedSquareGuide||offCenterBarGuide||fixedBarGapGuide||singleSpringGuide||movingHexGapGuide||wallHexGuide||wideSteelGapGuide||largeCeramicGapGuide||fixedSteelGapGuide||lastBarGuide||staggeredSpringGuide||springGapTilt)&&falling.vy>0&&falling.y>470&&falling.y<675-falling.r+10&&this.time-this.lastGuideTime>=(falling.y>620?.025:.08)){
+  const barRowTilt=falling&&this.targets.length===4&&this.mode==='endless'&&falling.y>=610&&this.material==='steel'&&this.size==='large'&&
+   this.bigTime===0&&this.wideTime===0&&this.air.length===0&&this.progress.sinceHit>=7.4&&this.progress.catchesWithoutHit===1&&
+   Math.abs(falling.x-W/2)<falling.r/4&&Math.abs(falling.x-this.paddle.x)<falling.r/4&&Math.abs(falling.vx)<falling.vy*.03
+   ?springBarGapTilt(this.targets,falling.x,this.paddle.width):0;
+  if(falling&&(regularGuide||edgeGuide||lowCoreEdgeGuide||lowGapGuide||oneSidedRowGuide||centralMovingGuide||movingSpringEdgeGuide||splitRowGuide||widePaddleGuide||enlargedBallGuide||lowSplitGuide||centralFixedGuide||centralSpringGuide||centralMovingSpringGuide||centralTwoRowGuide||centralDiamondGuide||lowRowGuide||sideBarGuide||raisedSquareGuide||offCenterBarGuide||fixedBarGapGuide||singleSpringGuide||movingHexGapGuide||wallHexGuide||wideSteelGapGuide||largeCeramicGapGuide||fixedSteelGapGuide||lastBarGuide||staggeredSpringGuide||springGapTilt||barRowTilt)&&falling.vy>0&&falling.y>470&&falling.y<675-falling.r+10&&this.time-this.lastGuideTime>=(falling.y>620?.025:.08)){
    this.lastGuideTime=this.time;
    const movingEndgame=this.mode==='endless'&&this.targets.length===1&&this.lowEndgame&&this.targets[0].motion&&this.progress.sinceHit>=ASSIST_DELAY;
-   const environment={air:this.air,gates:this.gates,pegs:this.pegs,wind:this.windMultiplier,response:spec.windResponse,energyLimit:this.energyCapacity,allowLowerWork:this.progress.catchesWithoutHit>=misses,catchFrame:(movingEndgame||splitRowGuide||widePaddleGuide||enlargedBallGuide||lowSplitGuide||centralFixedGuide||centralSpringGuide||centralMovingSpringGuide||centralTwoRowGuide||centralDiamondGuide||lowRowGuide||sideBarGuide||raisedSquareGuide||offCenterBarGuide||fixedBarGapGuide||singleSpringGuide||movingHexGapGuide||wallHexGuide||wideSteelGapGuide||largeCeramicGapGuide||fixedSteelGapGuide||lastBarGuide||staggeredSpringGuide||springGapTilt)?dt:undefined},paddle={...this.paddle,x:oldPaddleX};
+   const environment={air:this.air,gates:this.gates,pegs:this.pegs,wind:this.windMultiplier,response:spec.windResponse,energyLimit:this.energyCapacity,allowLowerWork:this.progress.catchesWithoutHit>=misses,catchFrame:(movingEndgame||splitRowGuide||widePaddleGuide||enlargedBallGuide||lowSplitGuide||centralFixedGuide||centralSpringGuide||centralMovingSpringGuide||centralTwoRowGuide||centralDiamondGuide||lowRowGuide||sideBarGuide||raisedSquareGuide||offCenterBarGuide||fixedBarGapGuide||singleSpringGuide||movingHexGapGuide||wallHexGuide||wideSteelGapGuide||largeCeramicGapGuide||fixedSteelGapGuide||lastBarGuide||staggeredSpringGuide||springGapTilt||barRowTilt)?dt:undefined},paddle={...this.paddle,x:oldPaddleX};
    // Preserve a useful ordinary rebound, including a previously prepared face.
    if((regularGuide&&!lastBarGuide)||!forecastRebound(falling,paddle,this.targets,spec.mass,restitution,this.time-dt,environment,this.paddle.tilt||0,false,this.paddle.boost??18000).hit){
-    const gentle=(lowGapGuide||oneSidedRowGuide||centralMovingGuide||movingSpringEdgeGuide||splitRowGuide||widePaddleGuide||enlargedBallGuide||lowSplitGuide||centralFixedGuide||centralSpringGuide||centralMovingSpringGuide||centralTwoRowGuide||centralDiamondGuide||lowRowGuide||sideBarGuide||raisedSquareGuide||offCenterBarGuide||fixedBarGapGuide||singleSpringGuide||movingHexGapGuide||wallHexGuide||wideSteelGapGuide||largeCeramicGapGuide||fixedSteelGapGuide||lastBarGuide||staggeredSpringGuide||springGapTilt)&&(!regularGuide||lastBarGuide)&&!edgeGuide;
+    const gentle=(lowGapGuide||oneSidedRowGuide||centralMovingGuide||movingSpringEdgeGuide||splitRowGuide||widePaddleGuide||enlargedBallGuide||lowSplitGuide||centralFixedGuide||centralSpringGuide||centralMovingSpringGuide||centralTwoRowGuide||centralDiamondGuide||lowRowGuide||sideBarGuide||raisedSquareGuide||offCenterBarGuide||fixedBarGapGuide||singleSpringGuide||movingHexGapGuide||wallHexGuide||wideSteelGapGuide||largeCeramicGapGuide||fixedSteelGapGuide||lastBarGuide||staggeredSpringGuide||springGapTilt||barRowTilt)&&(!regularGuide||lastBarGuide)&&!edgeGuide;
     let maxTilt=this.progress.sinceHit>=20||this.lowEndgame?.48:.32;
     if(gentle){
      if(centralFixedGuide)maxTilt=0.22;
@@ -430,6 +447,7 @@ export class Game{
      else if(movingHexGapGuide)maxTilt=.264;
      else if(wideSteelGapGuide)maxTilt=.18;
      else if(largeCeramicGapGuide)maxTilt=.188;
+     else if(barRowTilt)maxTilt=barRowTilt;
      else if(springGapTilt)maxTilt=springGapTilt;
      else if(staggeredSpringGuide)maxTilt=0.221;
      else if(lastBarGuide)maxTilt=.475;
