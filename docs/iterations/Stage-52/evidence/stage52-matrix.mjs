@@ -2,7 +2,7 @@ import {readFileSync,writeFileSync} from 'node:fs';
 import {spawn} from 'node:child_process';
 import assert from 'node:assert/strict';
 const [name]=process.argv.slice(2),dir='test-results/';
-assert.match(name,/^(?:m0f1mixed)$/);
+assert.match(name,/^(?:m0f1mixed|production)$/);
 const read=p=>JSON.parse(readFileSync(p,'utf8'));
 const baseline=read('docs/iterations/Stage-51/evidence/stage51-production-matrix.json');
 const audit=readFileSync('docs/iterations/Stage-32/evidence/stage32-matrix-production.ts','utf8');

@@ -34,6 +34,9 @@ const cases = [
  {name:'large steel across two rows with a wide paddle',seed:1571,material:'steel',size:'large',policy:'follow',limit:12.6,hits:815,shot:{number:3,hits:30,gap:8}},
  {name:'enlarged ceramic between a moving spring and a bar',seed:1907,material:'ceramic',size:'large',policy:'follow',limit:10.5,hits:649,shot:{number:2,hits:12,gap:8.4}},
  {name:'large steel on the center lane between staggered moving springs',seed:7429,material:'steel',size:'large',policy:'follow',limit:11,hits:660,shot:{number:3,hits:8,gap:4}},
+ {name:'large steel beside a fixed spring and sliding capacitor',seed:1229,material:'steel',size:'large',policy:'follow',limit:11,hits:678,shot:{number:2,hits:53,gap:11}},
+ {name:'large steel beside a fixed spring and two outer prisms',seed:421,material:'steel',size:'large',policy:'follow',limit:14.5,hits:683,shot:{number:2,hits:45,gap:8}},
+ {name:'large steel beside a fixed spring and sliding square',seed:934,material:'steel',size:'large',policy:'follow',limit:10,hits:612,shot:{number:2,hits:30,gap:4}},
  {name:'medium steel crossing to the last low bar',seed:223,material:'steel',size:'standard',policy:'steer',limit:12.1,hits:600,shot:{number:3,hits:18,gap:12.1}},
 ] as const;
 
