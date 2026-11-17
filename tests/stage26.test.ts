@@ -33,6 +33,7 @@ const cases = [
  {name:'widened paddle between a fixed spring and a moving bar',seed:87,material:'brass',size:'standard',policy:'steer',limit:13.4,hits:588,shot:{number:3,hits:25,gap:11.9}},
  {name:'large steel across two rows with a wide paddle',seed:1571,material:'steel',size:'large',policy:'follow',limit:12.6,hits:815,shot:{number:3,hits:30,gap:8}},
  {name:'enlarged ceramic between a moving spring and a bar',seed:1907,material:'ceramic',size:'large',policy:'follow',limit:10.5,hits:649,shot:{number:2,hits:12,gap:8.4}},
+ {name:'medium steel crossing to the last low bar',seed:223,material:'steel',size:'standard',policy:'steer',limit:12.1,hits:600,shot:{number:3,hits:18,gap:12.1}},
 ] as const;
 
 for (const scenario of cases) {

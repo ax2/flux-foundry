@@ -378,13 +378,18 @@ export class Game{
    this.targets.every(t=>!t.motion&&t.y>=600&&Math.abs(t.y-this.targets[0].y)<=1)&&
    this.targets.some(t=>t.kind==='steel'&&t.power==='spring'&&Math.abs(t.x-falling.x)<this.paddle.width&&
     this.targets.some(b=>b.kind==='prism'&&!b.power&&(b.x-falling.x)*(t.x-falling.x)<0&&Math.abs(b.x-falling.x)<this.paddle.width));
-  if(falling&&(regularGuide||edgeGuide||lowCoreEdgeGuide||lowGapGuide||oneSidedRowGuide||centralMovingGuide||movingSpringEdgeGuide||splitRowGuide||widePaddleGuide||enlargedBallGuide||lowSplitGuide||centralFixedGuide||centralSpringGuide||centralMovingSpringGuide||centralTwoRowGuide||centralDiamondGuide||lowRowGuide||sideBarGuide||raisedSquareGuide||offCenterBarGuide||fixedBarGapGuide||singleSpringGuide||movingHexGapGuide||wallHexGuide||wideSteelGapGuide||largeCeramicGapGuide||fixedSteelGapGuide)&&falling.vy>0&&falling.y>470&&falling.y<675-falling.r+10&&this.time-this.lastGuideTime>=(falling.y>620?.025:.08)){
+  // Use the live catch geometry when crossing to a last, far-side bar.
+  const lastBarGuide=this.mode==='endless'&&falling&&falling.y>=550&&this.material==='steel'&&this.size==='standard'&&
+   this.bigTime===0&&this.wideTime===0&&this.air.length===0&&this.progress.catchesWithoutHit===2&&
+   this.targets.length===1&&this.targets.some(t=>!t.motion&&t.kind==='bar'&&t.hp===1&&t.y>=560&&
+    Math.abs(t.x-W/2)>this.paddle.width);
+  if(falling&&(regularGuide||edgeGuide||lowCoreEdgeGuide||lowGapGuide||oneSidedRowGuide||centralMovingGuide||movingSpringEdgeGuide||splitRowGuide||widePaddleGuide||enlargedBallGuide||lowSplitGuide||centralFixedGuide||centralSpringGuide||centralMovingSpringGuide||centralTwoRowGuide||centralDiamondGuide||lowRowGuide||sideBarGuide||raisedSquareGuide||offCenterBarGuide||fixedBarGapGuide||singleSpringGuide||movingHexGapGuide||wallHexGuide||wideSteelGapGuide||largeCeramicGapGuide||fixedSteelGapGuide||lastBarGuide)&&falling.vy>0&&falling.y>470&&falling.y<675-falling.r+10&&this.time-this.lastGuideTime>=(falling.y>620?.025:.08)){
    this.lastGuideTime=this.time;
    const movingEndgame=this.mode==='endless'&&this.targets.length===1&&this.lowEndgame&&this.targets[0].motion&&this.progress.sinceHit>=ASSIST_DELAY;
-   const environment={air:this.air,gates:this.gates,pegs:this.pegs,wind:this.windMultiplier,response:spec.windResponse,energyLimit:this.energyCapacity,allowLowerWork:this.progress.catchesWithoutHit>=misses,catchFrame:(movingEndgame||splitRowGuide||widePaddleGuide||enlargedBallGuide||lowSplitGuide||centralFixedGuide||centralSpringGuide||centralMovingSpringGuide||centralTwoRowGuide||centralDiamondGuide||lowRowGuide||sideBarGuide||raisedSquareGuide||offCenterBarGuide||fixedBarGapGuide||singleSpringGuide||movingHexGapGuide||wallHexGuide||wideSteelGapGuide||largeCeramicGapGuide||fixedSteelGapGuide)?dt:undefined},paddle={...this.paddle,x:oldPaddleX};
+   const environment={air:this.air,gates:this.gates,pegs:this.pegs,wind:this.windMultiplier,response:spec.windResponse,energyLimit:this.energyCapacity,allowLowerWork:this.progress.catchesWithoutHit>=misses,catchFrame:(movingEndgame||splitRowGuide||widePaddleGuide||enlargedBallGuide||lowSplitGuide||centralFixedGuide||centralSpringGuide||centralMovingSpringGuide||centralTwoRowGuide||centralDiamondGuide||lowRowGuide||sideBarGuide||raisedSquareGuide||offCenterBarGuide||fixedBarGapGuide||singleSpringGuide||movingHexGapGuide||wallHexGuide||wideSteelGapGuide||largeCeramicGapGuide||fixedSteelGapGuide||lastBarGuide)?dt:undefined},paddle={...this.paddle,x:oldPaddleX};
    // Preserve a useful ordinary rebound, including a previously prepared face.
-   if(regularGuide||!forecastRebound(falling,paddle,this.targets,spec.mass,restitution,this.time-dt,environment,this.paddle.tilt||0,false,this.paddle.boost??18000).hit){
-    const gentle=(lowGapGuide||oneSidedRowGuide||centralMovingGuide||movingSpringEdgeGuide||splitRowGuide||widePaddleGuide||enlargedBallGuide||lowSplitGuide||centralFixedGuide||centralSpringGuide||centralMovingSpringGuide||centralTwoRowGuide||centralDiamondGuide||lowRowGuide||sideBarGuide||raisedSquareGuide||offCenterBarGuide||fixedBarGapGuide||singleSpringGuide||movingHexGapGuide||wallHexGuide||wideSteelGapGuide||largeCeramicGapGuide||fixedSteelGapGuide)&&!regularGuide&&!edgeGuide;
+   if((regularGuide&&!lastBarGuide)||!forecastRebound(falling,paddle,this.targets,spec.mass,restitution,this.time-dt,environment,this.paddle.tilt||0,false,this.paddle.boost??18000).hit){
+    const gentle=(lowGapGuide||oneSidedRowGuide||centralMovingGuide||movingSpringEdgeGuide||splitRowGuide||widePaddleGuide||enlargedBallGuide||lowSplitGuide||centralFixedGuide||centralSpringGuide||centralMovingSpringGuide||centralTwoRowGuide||centralDiamondGuide||lowRowGuide||sideBarGuide||raisedSquareGuide||offCenterBarGuide||fixedBarGapGuide||singleSpringGuide||movingHexGapGuide||wallHexGuide||wideSteelGapGuide||largeCeramicGapGuide||fixedSteelGapGuide||lastBarGuide)&&(!regularGuide||lastBarGuide)&&!edgeGuide;
     let maxTilt=this.progress.sinceHit>=20||this.lowEndgame?.48:.32;
     if(gentle){
      if(centralFixedGuide)maxTilt=0.22;
@@ -396,6 +401,7 @@ export class Game{
      else if(movingHexGapGuide)maxTilt=.264;
      else if(wideSteelGapGuide)maxTilt=.18;
      else if(largeCeramicGapGuide)maxTilt=.188;
+     else if(lastBarGuide)maxTilt=.475;
      else if(fixedSteelGapGuide)maxTilt=0.285;
      else if(wallHexGuide)maxTilt=.30;
      else if(singleSpringGuide)maxTilt=.155;
@@ -409,7 +415,7 @@ export class Game{
     }
     const plan=guidedRebound(falling,paddle,this.targets,spec.mass,restitution,this.time-dt,environment,maxTilt);
     // A closest miss is not enough for early steering. Keep the existing later fallback.
-    const directHit=plan.hit&&(!gentle||(plan.hitElapsed??Infinity)<.45);
+    const directHit=plan.hit&&(!gentle||(plan.hitElapsed??Infinity)<(lastBarGuide?1.3:.45));
     if(directHit||(regularGuide&&this.progress.catchesWithoutHit>=misses)){
      this.paddle.boost=plan.boost;this.paddle.tilt=(this.paddle.tilt||0)+Math.max(-GUIDE_TILT_STEP,Math.min(GUIDE_TILT_STEP,plan.tilt-(this.paddle.tilt||0)));
     }
