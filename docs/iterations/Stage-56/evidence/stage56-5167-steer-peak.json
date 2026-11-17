@@ -1,0 +1,9017 @@
+{
+  "seed": 5167,
+  "material": "brass",
+  "size": "standard",
+  "policy": "steer",
+  "cadence": 14,
+  "peak": {
+    "gap": 15.708333333333082,
+    "shot": 2,
+    "time": 116.68333333337226
+  },
+  "shots": [
+    {
+      "seconds": 80.05833333333334,
+      "wave": 2,
+      "wholeBallBottom": 693.57744913344,
+      "shotGap": 8.366666666666832,
+      "hits": 55
+    },
+    {
+      "seconds": 52.358333333333334,
+      "wave": 3,
+      "wholeBallBottom": 692.724570738585,
+      "shotGap": 15.699999999999749,
+      "hits": 16
+    },
+    {
+      "seconds": 70.8,
+      "wave": 4,
+      "wholeBallBottom": 694.0437022939334,
+      "shotGap": 12.433333333333268,
+      "hits": 37
+    },
+    {
+      "seconds": 10.533333333333333,
+      "wave": 5,
+      "wholeBallBottom": 694.0607052562231,
+      "shotGap": 3.024999999999992,
+      "hits": 5
+    },
+    {
+      "seconds": 114.39999999999999,
+      "wave": 6,
+      "wholeBallBottom": 693.213295944169,
+      "shotGap": 6.4750000000001116,
+      "hits": 47
+    },
+    {
+      "seconds": 159.35,
+      "wave": 7,
+      "wholeBallBottom": 693.6062615716513,
+      "shotGap": 10.008333333333406,
+      "hits": 64
+    },
+    {
+      "seconds": 27.025,
+      "wave": 8,
+      "wholeBallBottom": 693.7925172825076,
+      "shotGap": 3.8583333333333223,
+      "hits": 15
+    },
+    {
+      "seconds": 75.85833333333333,
+      "wave": 9,
+      "wholeBallBottom": 693.8058442995094,
+      "shotGap": 6.433333333333443,
+      "hits": 67
+    },
+    {
+      "seconds": 32.825,
+      "wave": 10,
+      "wholeBallBottom": 696.3570101096004,
+      "shotGap": 3.491666666666657,
+      "hits": 39
+    },
+    {
+      "seconds": 17.866666666666667,
+      "wave": 11,
+      "wholeBallBottom": 692.3076384635116,
+      "shotGap": 3.441666666666657,
+      "hits": 34
+    },
+    {
+      "seconds": 5.425,
+      "wave": 12,
+      "wholeBallBottom": 695.0399280587553,
+      "shotGap": 2.258333333333328,
+      "hits": 22
+    },
+    {
+      "seconds": 36.4,
+      "wave": 13,
+      "wholeBallBottom": 693.6377814966684,
+      "shotGap": 3.333333333333324,
+      "hits": 45
+    },
+    {
+      "seconds": 92.30833333333334,
+      "wave": 14,
+      "wholeBallBottom": 693.8124869006948,
+      "shotGap": 3.1499999999999915,
+      "hits": 90
+    },
+    {
+      "seconds": 94.55833333333334,
+      "wave": 15,
+      "wholeBallBottom": 695.5341138932663,
+      "shotGap": 3.216666666666658,
+      "hits": 62
+    },
+    {
+      "seconds": 7.675,
+      "wave": 15,
+      "wholeBallBottom": 694.1557695956883,
+      "shotGap": 2.4916666666666605,
+      "hits": 7
+    }
+  ],
+  "window": [
+    {
+      "time": 100.97500000002643,
+      "shot": 2,
+      "wave": 2,
+      "gap": 0,
+      "ball": {
+        "x": 210,
+        "y": 570.98,
+        "vx": 2.1316282072803006e-14,
+        "vy": -416.9472131997971,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 9.841666666666903,
+      "missed": 0,
+      "paddle": {
+        "x": 187.5928486118391,
+        "target": 187.5928486118391,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 16,
+      "energy": 1253628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 151.99992215823497,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 101.05833333335983,
+      "shot": 2,
+      "wave": 2,
+      "gap": 0.08333333333333333,
+      "ball": {
+        "x": 210,
+        "y": 537.0677322333503,
+        "vx": 2.1316282072803006e-14,
+        "vy": -396.9472131997971,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 9.758333333333574,
+      "missed": 0,
+      "paddle": {
+        "x": 187.5928486118391,
+        "target": 187.5928486118391,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 16,
+      "energy": 1253628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 151.97883139354275,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 101.17500000002659,
+      "shot": 2,
+      "wave": 2,
+      "gap": 0.19999999999999998,
+      "ball": {
+        "x": 210,
+        "y": 492.3905573600406,
+        "vx": 2.1316282072803006e-14,
+        "vy": -368.9472131997971,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 9.641666666666914,
+      "missed": 0,
+      "paddle": {
+        "x": 186.50457481374255,
+        "target": 186.50457481374255,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 16,
+      "energy": 1253628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 151.86946154792014,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 101.29166666669335,
+      "shot": 2,
+      "wave": 2,
+      "gap": 0.3166666666666668,
+      "ball": {
+        "x": 210,
+        "y": 450.9800491533976,
+        "vx": 2.1316282072803006e-14,
+        "vy": -340.9472131997971,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 9.525000000000254,
+      "missed": 0,
+      "paddle": {
+        "x": 184.72146904229726,
+        "target": 184.72146904229726,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 16,
+      "energy": 1253628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 151.66764149879305,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 101.4083333333601,
+      "shot": 2,
+      "wave": 2,
+      "gap": 0.43333333333333385,
+      "ball": {
+        "x": 210,
+        "y": 412.83620761342127,
+        "vx": 2.1316282072803006e-14,
+        "vy": -312.9472131997971,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 9.408333333333594,
+      "missed": 0,
+      "paddle": {
+        "x": 182.64549117999718,
+        "target": 182.64549117999718,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 16,
+      "energy": 1253628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 151.37471652582857,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 101.52500000002686,
+      "shot": 2,
+      "wave": 2,
+      "gap": 0.5500000000000005,
+      "ball": {
+        "x": 210,
+        "y": 377.9590327401116,
+        "vx": 2.1316282072803006e-14,
+        "vy": -284.9472131997971,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 9.291666666666934,
+      "missed": 0,
+      "paddle": {
+        "x": 180.19802970836832,
+        "target": 180.19802970836832,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 16,
+      "energy": 1253628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 150.99263919029,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 101.64166666669362,
+      "shot": 2,
+      "wave": 2,
+      "gap": 0.6666666666666667,
+      "ball": {
+        "x": 210,
+        "y": 346.34852453346855,
+        "vx": 2.1316282072803006e-14,
+        "vy": -256.9472131997971,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 9.175000000000274,
+      "missed": 0,
+      "paddle": {
+        "x": 177.2695744383721,
+        "target": 177.2695744383721,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 16,
+      "energy": 1253628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 150.52395631977427,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 101.75833333336038,
+      "shot": 2,
+      "wave": 2,
+      "gap": 0.783333333333333,
+      "ball": {
+        "x": 210,
+        "y": 318.0046829934922,
+        "vx": 2.1316282072803006e-14,
+        "vy": -228.9472131997971,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 9.058333333333614,
+      "missed": 0,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 16,
+      "energy": 1253628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 149.97179203172522,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 101.87500000002714,
+      "shot": 2,
+      "wave": 2,
+      "gap": 0.8999999999999992,
+      "ball": {
+        "x": 210,
+        "y": 292.92750812018255,
+        "vx": 2.1316282072803006e-14,
+        "vy": -200.9472131997971,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 8.941666666666954,
+      "missed": 0,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 16,
+      "energy": 1253628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 149.33982690888368,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 101.9916666666939,
+      "shot": 2,
+      "wave": 2,
+      "gap": 1.0166666666666655,
+      "ball": {
+        "x": 210,
+        "y": 271.11699991353953,
+        "vx": 2.1316282072803006e-14,
+        "vy": -172.9472131997971,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 8.825000000000294,
+      "missed": 0,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 16,
+      "energy": 1253628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 148.6322734654857,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 102.10833333336066,
+      "shot": 2,
+      "wave": 2,
+      "gap": 1.1333333333333317,
+      "ball": {
+        "x": 210,
+        "y": 252.5731583735632,
+        "vx": 2.1316282072803006e-14,
+        "vy": -144.9472131997971,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 8.708333333333634,
+      "missed": 0,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 16,
+      "energy": 1253628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 147.8538480677436,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 102.22500000002742,
+      "shot": 2,
+      "wave": 2,
+      "gap": 1.249999999999998,
+      "ball": {
+        "x": 210,
+        "y": 237.29598350025353,
+        "vx": 2.1316282072803006e-14,
+        "vy": -116.94721319979709,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 8.591666666666974,
+      "missed": 0,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 16,
+      "energy": 1253628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 147.0097394957833,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 102.34166666669418,
+      "shot": 2,
+      "wave": 2,
+      "gap": 1.3666666666666643,
+      "ball": {
+        "x": 210,
+        "y": 225.28547529361055,
+        "vx": 2.1316282072803006e-14,
+        "vy": -88.94721319979709,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 8.475000000000314,
+      "missed": 0,
+      "paddle": {
+        "x": 210.00000000000003,
+        "target": 210.00000000000003,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 16,
+      "energy": 1253628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 146.10557435659223,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 102.45833333336094,
+      "shot": 2,
+      "wave": 2,
+      "gap": 1.4833333333333305,
+      "ball": {
+        "x": 210,
+        "y": 216.54163375363422,
+        "vx": 2.1316282072803006e-14,
+        "vy": -60.94721319979709,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 8.358333333333654,
+      "missed": 0,
+      "paddle": {
+        "x": 210.00000000000003,
+        "target": 210.00000000000003,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 16,
+      "energy": 1253628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 145.1473795785288,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 102.5750000000277,
+      "shot": 2,
+      "wave": 2,
+      "gap": 1.5999999999999968,
+      "ball": {
+        "x": 210,
+        "y": 211.06445888032457,
+        "vx": 2.1316282072803006e-14,
+        "vy": -32.94721319979709,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 8.241666666666994,
+      "missed": 0,
+      "paddle": {
+        "x": 210.00000000000003,
+        "target": 210.00000000000003,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 16,
+      "energy": 1253628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 144.1415422373945,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 102.69166666669446,
+      "shot": 2,
+      "wave": 2,
+      "gap": 1.716666666666663,
+      "ball": {
+        "x": 210,
+        "y": 208.85395067368157,
+        "vx": 2.1316282072803006e-14,
+        "vy": -4.9472131997970905,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 8.125000000000334,
+      "missed": 0,
+      "paddle": {
+        "x": 210.00000000000003,
+        "target": 210.00000000000003,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 16,
+      "energy": 1253628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 143.09476698185603,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 102.80833333336122,
+      "shot": 2,
+      "wave": 2,
+      "gap": 1.8333333333333293,
+      "ball": {
+        "x": 210,
+        "y": 209.91010913370525,
+        "vx": 2.1316282072803006e-14,
+        "vy": 23.05278680020291,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 8.008333333333674,
+      "missed": 0,
+      "paddle": {
+        "x": 210.00000000000003,
+        "target": 210.00000000000003,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 16,
+      "energy": 1253628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 142.01403134201186,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 102.92500000002798,
+      "shot": 2,
+      "wave": 2,
+      "gap": 1.9499999999999955,
+      "ball": {
+        "x": 210,
+        "y": 214.23293426039558,
+        "vx": 2.1316282072803006e-14,
+        "vy": 51.05278680020291,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 7.891666666667002,
+      "missed": 0,
+      "paddle": {
+        "x": 210.00000000000003,
+        "target": 210.00000000000003,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 16,
+      "energy": 1253628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 140.90653921900068,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 103.04166666669474,
+      "shot": 2,
+      "wave": 2,
+      "gap": 2.066666666666662,
+      "ball": {
+        "x": 210,
+        "y": 221.8224260537526,
+        "vx": 2.1316282072803006e-14,
+        "vy": 79.05278680020291,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 7.77500000000033,
+      "missed": 0,
+      "paddle": {
+        "x": 210.00000000000003,
+        "target": 210.00000000000003,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 16,
+      "energy": 1253628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 139.77967286568054,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 103.1583333333615,
+      "shot": 2,
+      "wave": 2,
+      "gap": 2.1833333333333282,
+      "ball": {
+        "x": 210,
+        "y": 232.6785845137763,
+        "vx": 2.1316282072803006e-14,
+        "vy": 107.05278680020291,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 7.658333333333657,
+      "missed": 0,
+      "paddle": {
+        "x": 210.00000000000003,
+        "target": 210.00000000000003,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 16,
+      "energy": 1253628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 138.6409436784622,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 103.27500000002826,
+      "shot": 2,
+      "wave": 2,
+      "gap": 2.2999999999999945,
+      "ball": {
+        "x": 210,
+        "y": 246.80140964046663,
+        "vx": 2.1316282072803006e-14,
+        "vy": 135.0527868002029,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 7.541666666666985,
+      "missed": 0,
+      "paddle": {
+        "x": 210.00000000000003,
+        "target": 210.00000000000003,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 16,
+      "energy": 1253628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 137.49794212830412,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 103.39166666669502,
+      "shot": 2,
+      "wave": 2,
+      "gap": 2.4166666666666607,
+      "ball": {
+        "x": 210,
+        "y": 264.1909014338236,
+        "vx": 2.1316282072803006e-14,
+        "vy": 163.0527868002029,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 7.4250000000003125,
+      "missed": 0,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 16,
+      "energy": 1253628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 136.3582871646194,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 103.50833333336178,
+      "shot": 2,
+      "wave": 2,
+      "gap": 2.533333333333327,
+      "ball": {
+        "x": 210,
+        "y": 284.8470598938473,
+        "vx": 2.1316282072803006e-14,
+        "vy": 191.0527868002029,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 7.30833333333364,
+      "missed": 0,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 16,
+      "energy": 1253628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 135.22957542935077,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 103.62500000002854,
+      "shot": 2,
+      "wave": 2,
+      "gap": 2.6499999999999932,
+      "ball": {
+        "x": 210,
+        "y": 308.76988502053763,
+        "vx": 2.1316282072803006e-14,
+        "vy": 219.0527868002029,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 7.1916666666669675,
+      "missed": 0,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 16,
+      "energy": 1253628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 134.1193306197422,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 103.7416666666953,
+      "shot": 2,
+      "wave": 2,
+      "gap": 2.7666666666666595,
+      "ball": {
+        "x": 210,
+        "y": 335.9593768138946,
+        "vx": 2.1316282072803006e-14,
+        "vy": 247.0527868002029,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 7.075000000000295,
+      "missed": 0,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 16,
+      "energy": 1253628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 133.03495333734088,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 103.85833333336205,
+      "shot": 2,
+      "wave": 2,
+      "gap": 2.8833333333333258,
+      "ball": {
+        "x": 210,
+        "y": 366.41553527391824,
+        "vx": 2.1316282072803006e-14,
+        "vy": 275.0527868002029,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 6.958333333333623,
+      "missed": 0,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 16,
+      "energy": 1253628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 131.98367175752207,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 103.97500000002881,
+      "shot": 2,
+      "wave": 2,
+      "gap": 2.999999999999992,
+      "ball": {
+        "x": 210,
+        "y": 400.1383604006086,
+        "vx": 2.1316282072803006e-14,
+        "vy": 303.0527868002029,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 6.84166666666695,
+      "missed": 0,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 16,
+      "energy": 1253628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 130.9724934483634,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 104.09166666669557,
+      "shot": 2,
+      "wave": 2,
+      "gap": 3.1166666666666583,
+      "ball": {
+        "x": 210,
+        "y": 437.12785219396557,
+        "vx": 2.1316282072803006e-14,
+        "vy": 331.0527868002029,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 6.725000000000278,
+      "missed": 0,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 16,
+      "energy": 1253628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 130.00815866002802,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 104.20833333336233,
+      "shot": 2,
+      "wave": 2,
+      "gap": 3.2333333333333245,
+      "ball": {
+        "x": 210,
+        "y": 477.3840106539892,
+        "vx": 2.1316282072803006e-14,
+        "vy": 359.0527868002029,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 6.608333333333605,
+      "missed": 0,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 16,
+      "energy": 1253628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 129.09709539601988,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 104.32500000002909,
+      "shot": 2,
+      "wave": 2,
+      "gap": 3.3499999999999908,
+      "ball": {
+        "x": 210,
+        "y": 520.9068357806794,
+        "vx": 2.1316282072803006e-14,
+        "vy": 387.0527868002029,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 6.491666666666933,
+      "missed": 0,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 16,
+      "energy": 1253628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 128.24537656579363,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 104.44166666669585,
+      "shot": 2,
+      "wave": 2,
+      "gap": 3.466666666666657,
+      "ball": {
+        "x": 210,
+        "y": 567.6963275740364,
+        "vx": 2.1316282072803006e-14,
+        "vy": 415.0527868002029,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 6.37500000000026,
+      "missed": 0,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 16,
+      "energy": 1253628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 127.45867950432776,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 104.55833333336261,
+      "shot": 2,
+      "wave": 2,
+      "gap": 3.5833333333333233,
+      "ball": {
+        "x": 210,
+        "y": 617.7524860340601,
+        "vx": 2.1316282072803006e-14,
+        "vy": 443.0527868002029,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 6.258333333333588,
+      "missed": 0,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 16,
+      "energy": 1253628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 126.74224812849529,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 104.65833333336269,
+      "shot": 2,
+      "wave": 2,
+      "gap": 3.683333333333323,
+      "ball": {
+        "x": 210,
+        "y": 663,
+        "vx": 2.1316282072803006e-14,
+        "vy": -484.11733683849286,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 6.158333333333583,
+      "missed": 1,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 144,
+        "vx": 0,
+        "flash": 0.15,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 17,
+      "energy": 1271628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 126.1877231455163,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 104.67500000002937,
+      "shot": 2,
+      "wave": 2,
+      "gap": 3.6999999999999895,
+      "ball": {
+        "x": 210,
+        "y": 654.9647110526919,
+        "vx": 2.1316282072803006e-14,
+        "vy": -480.11733683849286,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 6.141666666666915,
+      "missed": 1,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 144,
+        "vx": 0,
+        "flash": 0.13333333333333333,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 17,
+      "energy": 1271628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 126.10085798248471,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 104.79166666669613,
+      "shot": 2,
+      "wave": 2,
+      "gap": 3.8166666666666558,
+      "ball": {
+        "x": 210,
+        "y": 600.584355088201,
+        "vx": 2.1316282072803006e-14,
+        "vy": -452.11733683849286,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 6.025000000000243,
+      "missed": 1,
+      "paddle": {
+        "x": 210.00000000000014,
+        "target": 210.00000000000014,
+        "width": 144,
+        "vx": 0,
+        "flash": 0.01666666666666669,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 17,
+      "energy": 1271628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 125.5387844052715,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 104.90833333336289,
+      "shot": 2,
+      "wave": 2,
+      "gap": 3.933333333333322,
+      "ball": {
+        "x": 210,
+        "y": 549.4706657903769,
+        "vx": 2.1316282072803006e-14,
+        "vy": -424.11733683849286,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 5.90833333333357,
+      "missed": 1,
+      "paddle": {
+        "x": 210.00000000000014,
+        "target": 210.00000000000014,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 17,
+      "energy": 1271628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 125.05977403232663,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 105.02500000002965,
+      "shot": 2,
+      "wave": 2,
+      "gap": 4.049999999999991,
+      "ball": {
+        "x": 210,
+        "y": 501.62364315921945,
+        "vx": 2.1316282072803006e-14,
+        "vy": -396.11733683849286,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 5.791666666666898,
+      "missed": 1,
+      "paddle": {
+        "x": 210.00000000000014,
+        "target": 210.00000000000014,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 17,
+      "energy": 1271628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 124.66701982152406,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 105.14166666669641,
+      "shot": 2,
+      "wave": 2,
+      "gap": 4.166666666666663,
+      "ball": {
+        "x": 210,
+        "y": 457.04328719472863,
+        "vx": 2.1316282072803006e-14,
+        "vy": -368.11733683849286,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 5.675000000000225,
+      "missed": 1,
+      "paddle": {
+        "x": 210.00000000000014,
+        "target": 210.00000000000014,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 17,
+      "energy": 1271628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 124.36313976971911,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 105.25833333336317,
+      "shot": 2,
+      "wave": 2,
+      "gap": 4.283333333333336,
+      "ball": {
+        "x": 210,
+        "y": 415.72959789690447,
+        "vx": 2.1316282072803006e-14,
+        "vy": -340.11733683849286,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 5.558333333333553,
+      "missed": 1,
+      "paddle": {
+        "x": 210.00000000000014,
+        "target": 210.00000000000014,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 17,
+      "energy": 1271628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 124.15015946186571,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 105.37500000002993,
+      "shot": 2,
+      "wave": 2,
+      "gap": 4.400000000000008,
+      "ball": {
+        "x": 210,
+        "y": 377.68257526574695,
+        "vx": 2.1316282072803006e-14,
+        "vy": -312.11733683849286,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 5.4416666666668805,
+      "missed": 1,
+      "paddle": {
+        "x": 210.00000000000014,
+        "target": 210.00000000000014,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 17,
+      "energy": 1271628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 124.02949856899686,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 105.49166666669669,
+      "shot": 2,
+      "wave": 2,
+      "gap": 4.516666666666681,
+      "ball": {
+        "x": 210,
+        "y": 342.9022193012561,
+        "vx": 2.1316282072803006e-14,
+        "vy": -284.11733683849286,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 5.325000000000208,
+      "missed": 1,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 17,
+      "energy": 1271628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 124.00196138506894,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 105.60833333336345,
+      "shot": 2,
+      "wave": 2,
+      "gap": 4.633333333333353,
+      "ball": {
+        "x": 210,
+        "y": 311.3885300034319,
+        "vx": 2.1316282072803006e-14,
+        "vy": -256.11733683849286,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 5.2083333333335355,
+      "missed": 1,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 17,
+      "energy": 1271628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 124.06773146574838,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 105.7250000000302,
+      "shot": 2,
+      "wave": 2,
+      "gap": 4.750000000000026,
+      "ball": {
+        "x": 210,
+        "y": 283.1415073722744,
+        "vx": 2.1316282072803006e-14,
+        "vy": -228.11733683849286,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 5.091666666666863,
+      "missed": 1,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 17,
+      "energy": 1271628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 124.22637040487777,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 105.84166666669697,
+      "shot": 2,
+      "wave": 2,
+      "gap": 4.866666666666698,
+      "ball": {
+        "x": 210,
+        "y": 258.16115140778356,
+        "vx": 2.1316282072803006e-14,
+        "vy": -200.11733683849286,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 4.975000000000191,
+      "missed": 1,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 17,
+      "energy": 1271628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 124.47682075677646,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 105.95833333336373,
+      "shot": 2,
+      "wave": 2,
+      "gap": 4.983333333333371,
+      "ball": {
+        "x": 210,
+        "y": 236.4474621099594,
+        "vx": 2.1316282072803006e-14,
+        "vy": -172.11733683849286,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 4.858333333333518,
+      "missed": 1,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 17,
+      "energy": 1271628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 124.81741308489708,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 106.07500000003049,
+      "shot": 2,
+      "wave": 2,
+      "gap": 5.100000000000043,
+      "ball": {
+        "x": 210,
+        "y": 218.00043947880187,
+        "vx": 2.1316282072803006e-14,
+        "vy": -144.11733683849286,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 4.741666666666846,
+      "missed": 1,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 17,
+      "energy": 1271628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 125.24587708985278,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 106.19166666669724,
+      "shot": 2,
+      "wave": 2,
+      "gap": 5.216666666666716,
+      "ball": {
+        "x": 210,
+        "y": 202.82008351431102,
+        "vx": 2.1316282072803006e-14,
+        "vy": -116.11733683849286,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 4.625000000000173,
+      "missed": 1,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 17,
+      "energy": 1271628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 125.7593567426396,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 106.308333333364,
+      "shot": 2,
+      "wave": 2,
+      "gap": 5.333333333333388,
+      "ball": {
+        "x": 210,
+        "y": 190.90639421648683,
+        "vx": 2.1316282072803006e-14,
+        "vy": -88.11733683849286,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 4.508333333333501,
+      "missed": 1,
+      "paddle": {
+        "x": 210.00000000000003,
+        "target": 210.00000000000003,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 17,
+      "energy": 1271628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 126.35442932217838,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 106.42500000003076,
+      "shot": 2,
+      "wave": 2,
+      "gap": 5.450000000000061,
+      "ball": {
+        "x": 210,
+        "y": 182.25937158532932,
+        "vx": 2.1316282072803006e-14,
+        "vy": -60.11733683849286,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 4.391666666666828,
+      "missed": 1,
+      "paddle": {
+        "x": 210.00000000000003,
+        "target": 210.00000000000003,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 17,
+      "energy": 1271628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 127.02712823027869,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 106.54166666669752,
+      "shot": 2,
+      "wave": 2,
+      "gap": 5.566666666666733,
+      "ball": {
+        "x": 210,
+        "y": 176.8790156208385,
+        "vx": 2.1316282072803006e-14,
+        "vy": -32.11733683849286,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 4.275000000000156,
+      "missed": 1,
+      "paddle": {
+        "x": 210.00000000000003,
+        "target": 210.00000000000003,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 17,
+      "energy": 1271628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 127.77296943194492,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 106.65833333336428,
+      "shot": 2,
+      "wave": 2,
+      "gap": 5.6833333333334055,
+      "ball": {
+        "x": 210,
+        "y": 174.76532632301434,
+        "vx": 2.1316282072803006e-14,
+        "vy": -4.117336838492861,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 4.158333333333483,
+      "missed": 1,
+      "paddle": {
+        "x": 210.00000000000003,
+        "target": 210.00000000000003,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 17,
+      "energy": 1271628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 128.58698134478072,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 106.77500000003104,
+      "shot": 2,
+      "wave": 2,
+      "gap": 5.800000000000078,
+      "ball": {
+        "x": 210,
+        "y": 175.91830369185683,
+        "vx": 2.1316282072803006e-14,
+        "vy": 23.88266316150714,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 4.041666666666811,
+      "missed": 1,
+      "paddle": {
+        "x": 210.00000000000003,
+        "target": 210.00000000000003,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 17,
+      "energy": 1271628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 129.46373797825777,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 106.8916666666978,
+      "shot": 2,
+      "wave": 2,
+      "gap": 5.9166666666667505,
+      "ball": {
+        "x": 210,
+        "y": 180.337947727366,
+        "vx": 2.1316282072803006e-14,
+        "vy": 51.88266316150714,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 3.9250000000001424,
+      "missed": 1,
+      "paddle": {
+        "x": 210.00000000000003,
+        "target": 210.00000000000003,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 17,
+      "energy": 1271628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 130.39739510194858,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 107.00833333336456,
+      "shot": 2,
+      "wave": 2,
+      "gap": 6.033333333333423,
+      "ball": {
+        "x": 210,
+        "y": 188.02425842954182,
+        "vx": 2.1316282072803006e-14,
+        "vy": 79.88266316150714,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 3.808333333333476,
+      "missed": 1,
+      "paddle": {
+        "x": 210.00000000000003,
+        "target": 210.00000000000003,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 17,
+      "energy": 1271628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 131.3817292016388,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 107.12500000003132,
+      "shot": 2,
+      "wave": 2,
+      "gap": 6.150000000000095,
+      "ball": {
+        "x": 210,
+        "y": 198.9772357983843,
+        "vx": 2.1316282072803006e-14,
+        "vy": 107.88266316150714,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 3.69166666666681,
+      "missed": 1,
+      "paddle": {
+        "x": 210.00000000000003,
+        "target": 210.00000000000003,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 17,
+      "energy": 1271628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 132.41017896364528,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 107.24166666669808,
+      "shot": 2,
+      "wave": 2,
+      "gap": 6.266666666666768,
+      "ball": {
+        "x": 210,
+        "y": 213.19687983389346,
+        "vx": 2.1316282072803006e-14,
+        "vy": 135.88266316150714,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 3.5750000000001436,
+      "missed": 1,
+      "paddle": {
+        "x": 210.00000000000003,
+        "target": 210.00000000000003,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 17,
+      "energy": 1271628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 133.47588901081684,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 107.35833333336484,
+      "shot": 2,
+      "wave": 2,
+      "gap": 6.38333333333344,
+      "ball": {
+        "x": 210,
+        "y": 230.68319053606928,
+        "vx": 2.1316282072803006e-14,
+        "vy": 163.88266316150714,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 3.4583333333334774,
+      "missed": 1,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 17,
+      "energy": 1271628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 134.57175559868645,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 107.4750000000316,
+      "shot": 2,
+      "wave": 2,
+      "gap": 6.500000000000113,
+      "ball": {
+        "x": 210,
+        "y": 251.43616790491177,
+        "vx": 2.1316282072803006e-14,
+        "vy": 191.88266316150714,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 3.341666666666811,
+      "missed": 1,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 17,
+      "energy": 1271628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 135.6904739671727,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 107.59166666669836,
+      "shot": 2,
+      "wave": 2,
+      "gap": 6.616666666666785,
+      "ball": {
+        "x": 210,
+        "y": 275.4558119404209,
+        "vx": 2.1316282072803006e-14,
+        "vy": 219.88266316150714,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 3.225000000000145,
+      "missed": 1,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 17,
+      "energy": 1271628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 136.82458703220115,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 107.70833333336512,
+      "shot": 2,
+      "wave": 2,
+      "gap": 6.733333333333458,
+      "ball": {
+        "x": 210,
+        "y": 302.7421226425967,
+        "vx": 2.1316282072803006e-14,
+        "vy": 247.88266316150714,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 3.1083333333334786,
+      "missed": 1,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 17,
+      "energy": 1271628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 137.9665350926762,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 107.82500000003188,
+      "shot": 2,
+      "wave": 2,
+      "gap": 6.85000000000013,
+      "ball": {
+        "x": 210,
+        "y": 333.2951000114392,
+        "vx": 2.1316282072803006e-14,
+        "vy": 275.88266316150714,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 2.9916666666668124,
+      "missed": 1,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 17,
+      "energy": 1271628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 139.10870622147146,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 107.94166666669864,
+      "shot": 2,
+      "wave": 2,
+      "gap": 6.966666666666803,
+      "ball": {
+        "x": 210,
+        "y": 367.1147440469484,
+        "vx": 2.1316282072803006e-14,
+        "vy": 303.88266316150714,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 2.875000000000146,
+      "missed": 1,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 17,
+      "energy": 1271628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 140.24348700454604,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 108.0583333333654,
+      "shot": 2,
+      "wave": 2,
+      "gap": 7.083333333333475,
+      "ball": {
+        "x": 210,
+        "y": 404.2010547491242,
+        "vx": 2.1316282072803006e-14,
+        "vy": 331.88266316150714,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 2.75833333333348,
+      "missed": 1,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 17,
+      "energy": 1271628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 141.36331328997025,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 108.17500000003216,
+      "shot": 2,
+      "wave": 2,
+      "gap": 7.200000000000148,
+      "ball": {
+        "x": 210,
+        "y": 444.55403211796664,
+        "vx": 2.1316282072803006e-14,
+        "vy": 359.88266316150714,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 2.6416666666668136,
+      "missed": 1,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 17,
+      "energy": 1271628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 142.46072060858506,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 108.29166666669892,
+      "shot": 2,
+      "wave": 2,
+      "gap": 7.31666666666682,
+      "ball": {
+        "x": 210,
+        "y": 488.1736761534758,
+        "vx": 2.1316282072803006e-14,
+        "vy": 387.88266316150714,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 2.5250000000001473,
+      "missed": 1,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 17,
+      "energy": 1271628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 143.52839393020113,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 108.40833333336568,
+      "shot": 2,
+      "wave": 2,
+      "gap": 7.4333333333334926,
+      "ball": {
+        "x": 210,
+        "y": 535.0599868556517,
+        "vx": 2.1316282072803006e-14,
+        "vy": 415.88266316150714,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 2.408333333333481,
+      "missed": 1,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 17,
+      "energy": 1271628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 144.5592164236768,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 108.52500000003243,
+      "shot": 2,
+      "wave": 2,
+      "gap": 7.550000000000165,
+      "ball": {
+        "x": 210,
+        "y": 585.2129642244943,
+        "vx": 2.1316282072803006e-14,
+        "vy": 443.88266316150714,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 2.291666666666815,
+      "missed": 1,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 17,
+      "energy": 1271628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 145.54631689585398,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 108.6416666666992,
+      "shot": 2,
+      "wave": 2,
+      "gap": 7.6666666666668375,
+      "ball": {
+        "x": 210,
+        "y": 638.6326082600035,
+        "vx": 2.1316282072803006e-14,
+        "vy": 471.88266316150714,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 2.1750000000001486,
+      "missed": 1,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 17,
+      "energy": 1271628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 146.48311559313385,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 108.70000000003257,
+      "shot": 2,
+      "wave": 2,
+      "gap": 7.725000000000174,
+      "ball": {
+        "x": 210,
+        "y": 663,
+        "vx": 2.1316282072803006e-14,
+        "vy": -500.90564964387846,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 2.1166666666668155,
+      "missed": 2,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 144,
+        "vx": 0,
+        "flash": 0.15,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 18,
+      "energy": 1289628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 146.93068613169143,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 108.75833333336595,
+      "shot": 2,
+      "wave": 2,
+      "gap": 7.78333333333351,
+      "ball": {
+        "x": 210,
+        "y": 634.188837104107,
+        "vx": 2.1316282072803006e-14,
+        "vy": -486.90564964387846,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 2.0583333333334823,
+      "missed": 2,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 144,
+        "vx": 0,
+        "flash": 0.09166666666666667,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 18,
+      "energy": 1289628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 147.36336806039404,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 108.87500000003271,
+      "shot": 2,
+      "wave": 2,
+      "gap": 7.900000000000182,
+      "ball": {
+        "x": 210,
+        "y": 579.0165113123212,
+        "vx": 2.1316282072803006e-14,
+        "vy": -458.90564964387846,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 1.941666666666816,
+      "missed": 2,
+      "paddle": {
+        "x": 210.00000000000014,
+        "target": 210.00000000000014,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 18,
+      "energy": 1289628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 148.18120676489355,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 108.99166666669947,
+      "shot": 2,
+      "wave": 2,
+      "gap": 8.016666666666852,
+      "ball": {
+        "x": 210,
+        "y": 527.110852187202,
+        "vx": 2.1316282072803006e-14,
+        "vy": -430.90564964387846,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 1.8250000000001498,
+      "missed": 2,
+      "paddle": {
+        "x": 210.00000000000014,
+        "target": 210.00000000000014,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 18,
+      "energy": 1289628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 148.9311802077111,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 109.10833333336623,
+      "shot": 2,
+      "wave": 2,
+      "gap": 8.133333333333512,
+      "ball": {
+        "x": 210,
+        "y": 478.4718597287494,
+        "vx": 2.1316282072803006e-14,
+        "vy": -402.90564964387846,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 1.7083333333334836,
+      "missed": 2,
+      "paddle": {
+        "x": 210.00000000000014,
+        "target": 210.00000000000014,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 18,
+      "energy": 1289628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 149.60828926201197,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 109.22500000003299,
+      "shot": 2,
+      "wave": 2,
+      "gap": 8.250000000000172,
+      "ball": {
+        "x": 210,
+        "y": 433.09953393696355,
+        "vx": 2.1316282072803006e-14,
+        "vy": -374.90564964387846,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 1.5916666666668173,
+      "missed": 2,
+      "paddle": {
+        "x": 210.00000000000014,
+        "target": 210.00000000000014,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 18,
+      "energy": 1289628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 150.20802049591916,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 109.34166666669975,
+      "shot": 2,
+      "wave": 2,
+      "gap": 8.366666666666832,
+      "ball": {
+        "x": 210,
+        "y": 390.9938748118444,
+        "vx": 2.1316282072803006e-14,
+        "vy": -346.90564964387846,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 1.475000000000151,
+      "missed": 2,
+      "paddle": {
+        "x": 210.00000000000014,
+        "target": 210.00000000000014,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 18,
+      "energy": 1289628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 150.72637625787058,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 109.45833333336651,
+      "shot": 2,
+      "wave": 2,
+      "gap": 8.483333333333492,
+      "ball": {
+        "x": 210,
+        "y": 352.15488235339194,
+        "vx": 2.1316282072803006e-14,
+        "vy": -318.90564964387846,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 1.3583333333334848,
+      "missed": 2,
+      "paddle": {
+        "x": 210.00000000000014,
+        "target": 210.00000000000014,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 18,
+      "energy": 1289628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 151.15990132391866,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 109.57500000003327,
+      "shot": 2,
+      "wave": 2,
+      "gap": 8.600000000000152,
+      "ball": {
+        "x": 210,
+        "y": 316.5825565616061,
+        "vx": 2.1316282072803006e-14,
+        "vy": -290.90564964387846,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 1.2416666666668186,
+      "missed": 2,
+      "paddle": {
+        "x": 210.00000000000014,
+        "target": 210.00000000000014,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 18,
+      "energy": 1289628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 151.50570592934957,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 109.69166666670003,
+      "shot": 2,
+      "wave": 2,
+      "gap": 8.716666666666812,
+      "ball": {
+        "x": 210,
+        "y": 284.276897436487,
+        "vx": 2.1316282072803006e-14,
+        "vy": -262.90564964387846,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 1.1250000000001523,
+      "missed": 2,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 18,
+      "energy": 1289628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 151.76148503109926,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 109.80833333336679,
+      "shot": 2,
+      "wave": 2,
+      "gap": 8.833333333333472,
+      "ball": {
+        "x": 210,
+        "y": 255.23790497803452,
+        "vx": 2.1316282072803006e-14,
+        "vy": -234.90564964387846,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 1.008333333333486,
+      "missed": 2,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 18,
+      "energy": 1289628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 151.9255336725673,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 109.92500000003355,
+      "shot": 2,
+      "wave": 2,
+      "gap": 8.950000000000133,
+      "ball": {
+        "x": 210,
+        "y": 229.4655791862487,
+        "vx": 2.1316282072803006e-14,
+        "vy": -206.90564964387846,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0.8916666666668198,
+      "missed": 2,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 18,
+      "energy": 1289628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 151.9967583484121,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 110.04166666670031,
+      "shot": 2,
+      "wave": 2,
+      "gap": 9.066666666666793,
+      "ball": {
+        "x": 210,
+        "y": 206.95992006112957,
+        "vx": 2.1316282072803006e-14,
+        "vy": -178.90564964387846,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0.7750000000001536,
+      "missed": 2,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 18,
+      "energy": 1289628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 151.97468429357133,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 110.15833333336707,
+      "shot": 2,
+      "wave": 2,
+      "gap": 9.183333333333453,
+      "ball": {
+        "x": 210,
+        "y": 187.72092760267708,
+        "vx": 2.1316282072803006e-14,
+        "vy": -150.90564964387846,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0.6583333333334873,
+      "missed": 2,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 18,
+      "energy": 1289628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 151.85945864792166,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 110.27500000003383,
+      "shot": 2,
+      "wave": 2,
+      "gap": 9.300000000000113,
+      "ball": {
+        "x": 210,
+        "y": 171.74860181089127,
+        "vx": 2.1316282072803006e-14,
+        "vy": -122.90564964387846,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0.5416666666668211,
+      "missed": 2,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 18,
+      "energy": 1289628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 151.65184947548295,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 110.39166666670059,
+      "shot": 2,
+      "wave": 2,
+      "gap": 9.416666666666773,
+      "ball": {
+        "x": 210,
+        "y": 159.04294268577212,
+        "vx": 2.1316282072803006e-14,
+        "vy": -94.90564964387846,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0.4250000000001543,
+      "missed": 2,
+      "paddle": {
+        "x": 210.00000000000003,
+        "target": 210.00000000000003,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 18,
+      "energy": 1289628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 151.3532406447042,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 110.50833333336735,
+      "shot": 2,
+      "wave": 2,
+      "gap": 9.533333333333433,
+      "ball": {
+        "x": 210,
+        "y": 149.60395022731964,
+        "vx": 2.1316282072803006e-14,
+        "vy": -66.90564964387846,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0.3083333333334873,
+      "missed": 2,
+      "paddle": {
+        "x": 210.00000000000003,
+        "target": 210.00000000000003,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 18,
+      "energy": 1289628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 150.9656226039585,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 110.6250000000341,
+      "shot": 2,
+      "wave": 2,
+      "gap": 9.650000000000093,
+      "ball": {
+        "x": 210,
+        "y": 143.43162443553382,
+        "vx": 2.1316282072803006e-14,
+        "vy": -38.90564964387846,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0.19166666666682045,
+      "missed": 2,
+      "paddle": {
+        "x": 210.00000000000003,
+        "target": 210.00000000000003,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 18,
+      "energy": 1289628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 150.49157911373476,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 110.74166666670087,
+      "shot": 2,
+      "wave": 2,
+      "gap": 9.766666666666753,
+      "ball": {
+        "x": 210,
+        "y": 140.52596531041468,
+        "vx": 2.1316282072803006e-14,
+        "vy": -10.905649643878462,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0.0750000000001538,
+      "missed": 2,
+      "paddle": {
+        "x": 210.00000000000003,
+        "target": 210.00000000000003,
+        "width": 144,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 18,
+      "energy": 1289628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 149.93427002396587,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 110.85833333336763,
+      "shot": 2,
+      "wave": 2,
+      "gap": 9.883333333333413,
+      "ball": {
+        "x": 210,
+        "y": 140.88697285196218,
+        "vx": 2.1316282072803006e-14,
+        "vy": 17.094350356121538,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 2,
+      "paddle": {
+        "x": 210.00000000000003,
+        "target": 210.00000000000003,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 18,
+      "energy": 1289628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 149.29741021129527,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 110.97500000003438,
+      "shot": 2,
+      "wave": 2,
+      "gap": 10.000000000000073,
+      "ball": {
+        "x": 210,
+        "y": 144.51464706017637,
+        "vx": 2.1316282072803006e-14,
+        "vy": 45.09435035612154,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 2,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 18,
+      "energy": 1289628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 148.5852448166813,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 111.09166666670114,
+      "shot": 2,
+      "wave": 2,
+      "gap": 10.116666666666733,
+      "ball": {
+        "x": 210,
+        "y": 151.4089879350572,
+        "vx": 2.1316282072803006e-14,
+        "vy": 73.09435035612154,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 2,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 18,
+      "energy": 1289628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 147.80252094839724,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 111.2083333333679,
+      "shot": 2,
+      "wave": 2,
+      "gap": 10.233333333333393,
+      "ball": {
+        "x": 210,
+        "y": 161.56999547660473,
+        "vx": 2.1316282072803006e-14,
+        "vy": 101.09435035612154,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 2,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 18,
+      "energy": 1289628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 146.95445603904935,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 111.32500000003466,
+      "shot": 2,
+      "wave": 2,
+      "gap": 10.350000000000053,
+      "ball": {
+        "x": 210,
+        "y": 174.99766968481893,
+        "vx": 2.1316282072803006e-14,
+        "vy": 129.09435035612154,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 2,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 18,
+      "energy": 1289628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 146.04670306753556,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 111.44166666670142,
+      "shot": 2,
+      "wave": 2,
+      "gap": 10.466666666666713,
+      "ball": {
+        "x": 210,
+        "y": 191.69201055969978,
+        "vx": 2.1316282072803006e-14,
+        "vy": 157.09435035612154,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 2,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 18,
+      "energy": 1289628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 145.085312877766,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 111.55833333336818,
+      "shot": 2,
+      "wave": 2,
+      "gap": 10.583333333333373,
+      "ball": {
+        "x": 210,
+        "y": 211.6530181012473,
+        "vx": 2.1316282072803006e-14,
+        "vy": 185.09435035612154,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 2,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 18,
+      "energy": 1289628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 144.07669384532082,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 111.67500000003494,
+      "shot": 2,
+      "wave": 2,
+      "gap": 10.700000000000033,
+      "ball": {
+        "x": 210,
+        "y": 234.8806923094615,
+        "vx": 2.1316282072803006e-14,
+        "vy": 213.09435035612154,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 2,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 18,
+      "energy": 1289628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 143.0275691608939,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 111.7916666667017,
+      "shot": 2,
+      "wave": 2,
+      "gap": 10.816666666666693,
+      "ball": {
+        "x": 210,
+        "y": 261.3750331843423,
+        "vx": 2.1316282072803006e-14,
+        "vy": 241.09435035612154,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 2,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 18,
+      "energy": 1289628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 141.94493201526205,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 111.90833333336846,
+      "shot": 2,
+      "wave": 2,
+      "gap": 10.933333333333353,
+      "ball": {
+        "x": 210,
+        "y": 291.13604072588987,
+        "vx": 2.1316282072803006e-14,
+        "vy": 269.09435035612154,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 2,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 18,
+      "energy": 1289628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 140.83599898450453,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 112.02500000003522,
+      "shot": 2,
+      "wave": 2,
+      "gap": 11.050000000000013,
+      "ball": {
+        "x": 210,
+        "y": 324.16371493410406,
+        "vx": 2.1316282072803006e-14,
+        "vy": 297.09435035612154,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 2,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 18,
+      "energy": 1289628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 139.70816192619316,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 112.14166666670198,
+      "shot": 2,
+      "wave": 2,
+      "gap": 11.166666666666673,
+      "ball": {
+        "x": 210,
+        "y": 360.4580558089849,
+        "vx": 2.1316282072803006e-14,
+        "vy": 325.09435035612154,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 2,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 18,
+      "energy": 1289628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 138.5689387072043,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 112.25833333336874,
+      "shot": 2,
+      "wave": 2,
+      "gap": 11.283333333333333,
+      "ball": {
+        "x": 210,
+        "y": 400.0190633505324,
+        "vx": 2.1316282072803006e-14,
+        "vy": 353.09435035612154,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 2,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 18,
+      "energy": 1289628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 137.4259230915834,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 112.3750000000355,
+      "shot": 2,
+      "wave": 2,
+      "gap": 11.399999999999993,
+      "ball": {
+        "x": 210,
+        "y": 442.8467375587466,
+        "vx": 2.1316282072803006e-14,
+        "vy": 381.09435035612154,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 2,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 18,
+      "energy": 1289628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 136.28673412250004,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 112.49166666670226,
+      "shot": 2,
+      "wave": 2,
+      "gap": 11.516666666666653,
+      "ball": {
+        "x": 210,
+        "y": 488.94107843362747,
+        "vx": 2.1316282072803006e-14,
+        "vy": 409.09435035612154,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 2,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 18,
+      "energy": 1289628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 135.158965335699,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 112.60833333336902,
+      "shot": 2,
+      "wave": 2,
+      "gap": 11.633333333333313,
+      "ball": {
+        "x": 210,
+        "y": 538.3020859751749,
+        "vx": 2.1316282072803006e-14,
+        "vy": 437.09435035612154,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 2,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 18,
+      "energy": 1289628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 134.05013414297602,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 112.72500000003578,
+      "shot": 2,
+      "wave": 2,
+      "gap": 11.749999999999973,
+      "ball": {
+        "x": 210,
+        "y": 590.929760183389,
+        "vx": 2.1316282072803006e-14,
+        "vy": 465.09435035612154,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 2,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 18,
+      "energy": 1289628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 132.96763172307777,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 112.84166666670254,
+      "shot": 2,
+      "wave": 2,
+      "gap": 11.866666666666633,
+      "ball": {
+        "x": 210,
+        "y": 646.8241010582699,
+        "vx": 2.1316282072803006e-14,
+        "vy": 493.09435035612154,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 2,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 18,
+      "energy": 1289628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 131.91867375403683,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 112.8750000000359,
+      "shot": 2,
+      "wave": 2,
+      "gap": 11.899999999999965,
+      "ball": {
+        "x": 210,
+        "y": 663,
+        "vx": 2.1316282072803006e-14,
+        "vy": -514.531816637402,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 96,
+        "vx": 0,
+        "flash": 0.15,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 19,
+      "energy": 1307628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 131.62611754716886,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 112.9583333333693,
+      "shot": 2,
+      "wave": 2,
+      "gap": 11.983333333333293,
+      "ball": {
+        "x": 210,
+        "y": 620.9556819468831,
+        "vx": 2.1316282072803006e-14,
+        "vy": -494.531816637402,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 96,
+        "vx": 0,
+        "flash": 0.06666666666666668,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 19,
+      "energy": 1307628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 130.9102523153488,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 113.07500000003606,
+      "shot": 2,
+      "wave": 2,
+      "gap": 12.099999999999953,
+      "ball": {
+        "x": 210,
+        "y": 564.8936366725196,
+        "vx": 2.1316282072803006e-14,
+        "vy": -466.531816637402,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 210.0000000000001,
+        "target": 210.0000000000001,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 19,
+      "energy": 1307628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 129.94908928059948,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 113.19166666670282,
+      "shot": 2,
+      "wave": 2,
+      "gap": 12.216666666666613,
+      "ball": {
+        "x": 210,
+        "y": 512.0982580648227,
+        "vx": 2.1316282072803006e-14,
+        "vy": -438.531816637402,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 210.0000000000001,
+        "target": 210.0000000000001,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 19,
+      "energy": 1307628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 129.04159151121254,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 113.30833333336957,
+      "shot": 2,
+      "wave": 2,
+      "gap": 12.333333333333274,
+      "ball": {
+        "x": 210,
+        "y": 462.56954612379246,
+        "vx": 2.1316282072803006e-14,
+        "vy": -410.531816637402,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 210.00000000000014,
+        "target": 210.00000000000014,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 19,
+      "energy": 1307628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 128.19380814998794,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 113.42500000003633,
+      "shot": 2,
+      "wave": 2,
+      "gap": 12.449999999999934,
+      "ball": {
+        "x": 210,
+        "y": 416.30750084942895,
+        "vx": 2.1316282072803006e-14,
+        "vy": -382.531816637402,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 210.00000000000014,
+        "target": 210.00000000000014,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 19,
+      "energy": 1307628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 127.41139029909735,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 113.5416666667031,
+      "shot": 2,
+      "wave": 2,
+      "gap": 12.566666666666594,
+      "ball": {
+        "x": 210,
+        "y": 373.3121222417321,
+        "vx": 2.1316282072803006e-14,
+        "vy": -354.531816637402,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 210.00000000000014,
+        "target": 210.00000000000014,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 19,
+      "energy": 1307628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 126.69955335131505,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 113.65833333336985,
+      "shot": 2,
+      "wave": 2,
+      "gap": 12.683333333333254,
+      "ball": {
+        "x": 210,
+        "y": 333.58341030070187,
+        "vx": 2.1316282072803006e-14,
+        "vy": -326.531816637402,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 210.00000000000014,
+        "target": 210.00000000000014,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 19,
+      "energy": 1307628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 126.06304222557378,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 113.77500000003661,
+      "shot": 2,
+      "wave": 2,
+      "gap": 12.799999999999914,
+      "ball": {
+        "x": 210,
+        "y": 297.1213650263383,
+        "vx": 2.1316282072803006e-14,
+        "vy": -298.531816637402,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 210.00000000000014,
+        "target": 210.00000000000014,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 19,
+      "energy": 1307628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 125.50609973857567,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 113.89166666670337,
+      "shot": 2,
+      "wave": 2,
+      "gap": 12.916666666666574,
+      "ball": {
+        "x": 210,
+        "y": 263.92598641864146,
+        "vx": 2.1316282072803006e-14,
+        "vy": -270.531816637402,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 210.00000000000014,
+        "target": 210.00000000000014,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 19,
+      "energy": 1307628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 125.03243832328624,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 114.00833333337013,
+      "shot": 2,
+      "wave": 2,
+      "gap": 13.033333333333234,
+      "ball": {
+        "x": 210,
+        "y": 233.99727447761123,
+        "vx": 2.1316282072803006e-14,
+        "vy": -242.53181663740202,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 19,
+      "energy": 1307628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 124.64521528282678,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 114.12500000003689,
+      "shot": 2,
+      "wave": 2,
+      "gap": 13.149999999999894,
+      "ball": {
+        "x": 210,
+        "y": 207.33522920324765,
+        "vx": 2.1316282072803006e-14,
+        "vy": -214.53181663740202,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 19,
+      "energy": 1307628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 124.34701174471753,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 114.24166666670365,
+      "shot": 2,
+      "wave": 2,
+      "gap": 13.266666666666554,
+      "ball": {
+        "x": 210,
+        "y": 183.93985059555075,
+        "vx": 2.1316282072803006e-14,
+        "vy": -186.53181663740202,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 19,
+      "energy": 1307628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 124.13981545575665,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 114.35833333337041,
+      "shot": 2,
+      "wave": 2,
+      "gap": 13.383333333333214,
+      "ball": {
+        "x": 210,
+        "y": 163.8111386545205,
+        "vx": 2.1316282072803006e-14,
+        "vy": -158.53181663740202,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 19,
+      "energy": 1307628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 124.02500753221983,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 114.47500000003717,
+      "shot": 2,
+      "wave": 2,
+      "gap": 13.499999999999874,
+      "ball": {
+        "x": 210,
+        "y": 146.94909338015694,
+        "vx": 2.1316282072803006e-14,
+        "vy": -130.53181663740202,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 19,
+      "energy": 1307628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 124.0033532537006,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 114.59166666670393,
+      "shot": 2,
+      "wave": 2,
+      "gap": 13.616666666666534,
+      "ball": {
+        "x": 210,
+        "y": 133.35371477246002,
+        "vx": 2.1316282072803006e-14,
+        "vy": -102.53181663740202,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 19,
+      "energy": 1307628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 124.07499696195644,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 114.70833333337069,
+      "shot": 2,
+      "wave": 2,
+      "gap": 13.733333333333194,
+      "ball": {
+        "x": 210,
+        "y": 124.55681135256805,
+        "vx": 2.1316282072803006e-14,
+        "vy": 67.81736230816571,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 19,
+      "energy": 1307628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 124.2394610987646,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 114.82500000003745,
+      "shot": 2,
+      "wave": 2,
+      "gap": 13.849999999999854,
+      "ball": {
+        "x": 210,
+        "y": 134.10217028852068,
+        "vx": 2.1316282072803006e-14,
+        "vy": 95.81736230816571,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 19,
+      "energy": 1307628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 124.49564938920005,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 114.94166666670421,
+      "shot": 2,
+      "wave": 2,
+      "gap": 13.966666666666514,
+      "ball": {
+        "x": 210,
+        "y": 146.91419589114003,
+        "vx": 2.1316282072803006e-14,
+        "vy": 123.81736230816571,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 19,
+      "energy": 1307628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 124.84185414911785,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 115.05833333337097,
+      "shot": 2,
+      "wave": 2,
+      "gap": 14.083333333333174,
+      "ball": {
+        "x": 210,
+        "y": 162.99288816042602,
+        "vx": 2.1316282072803006e-14,
+        "vy": 151.8173623081657,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 19,
+      "energy": 1307628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 125.27576766812861,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 115.17500000003773,
+      "shot": 2,
+      "wave": 2,
+      "gap": 14.199999999999834,
+      "ball": {
+        "x": 210,
+        "y": 182.3382470963787,
+        "vx": 2.1316282072803006e-14,
+        "vy": 179.8173623081657,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 19,
+      "energy": 1307628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 125.79449759219268,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 115.29166666670449,
+      "shot": 2,
+      "wave": 2,
+      "gap": 14.316666666666494,
+      "ball": {
+        "x": 210,
+        "y": 204.95027269899802,
+        "vx": 2.1316282072803006e-14,
+        "vy": 207.8173623081657,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 19,
+      "energy": 1307628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 126.3945862032957,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 115.40833333337125,
+      "shot": 2,
+      "wave": 2,
+      "gap": 14.433333333333154,
+      "ball": {
+        "x": 210,
+        "y": 230.82896496828403,
+        "vx": 2.1316282072803006e-14,
+        "vy": 235.8173623081657,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 19,
+      "energy": 1307628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 127.07203346769253,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 115.525000000038,
+      "shot": 2,
+      "wave": 2,
+      "gap": 14.549999999999814,
+      "ball": {
+        "x": 210,
+        "y": 259.97432390423666,
+        "vx": 2.1316282072803006e-14,
+        "vy": 263.8173623081657,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 19,
+      "energy": 1307628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 127.82232369908651,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 115.64166666670477,
+      "shot": 2,
+      "wave": 2,
+      "gap": 14.666666666666474,
+      "ball": {
+        "x": 210,
+        "y": 292.386349506856,
+        "vx": 2.1316282072803006e-14,
+        "vy": 291.8173623081657,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 19,
+      "energy": 1307628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 128.6404556590127,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 115.75833333337152,
+      "shot": 2,
+      "wave": 2,
+      "gap": 14.783333333333134,
+      "ball": {
+        "x": 210,
+        "y": 328.065041776142,
+        "vx": 2.1316282072803006e-14,
+        "vy": 319.8173623081657,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 19,
+      "energy": 1307628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 129.52097589378604,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 115.87500000003828,
+      "shot": 2,
+      "wave": 2,
+      "gap": 14.899999999999794,
+      "ball": {
+        "x": 210,
+        "y": 367.0104007120946,
+        "vx": 2.1316282072803006e-14,
+        "vy": 347.8173623081657,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 19,
+      "energy": 1307628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 130.45801508579723,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 115.99166666670504,
+      "shot": 2,
+      "wave": 2,
+      "gap": 15.016666666666454,
+      "ball": {
+        "x": 210,
+        "y": 409.22242631471397,
+        "vx": 2.1316282072803006e-14,
+        "vy": 375.8173623081657,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 19,
+      "energy": 1307628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 131.4453271768488,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 116.1083333333718,
+      "shot": 2,
+      "wave": 2,
+      "gap": 15.133333333333114,
+      "ball": {
+        "x": 210,
+        "y": 454.70111858399997,
+        "vx": 2.1316282072803006e-14,
+        "vy": 403.8173623081657,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": 0,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 19,
+      "energy": 1307628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 132.47633100274632,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 116.22500000003856,
+      "shot": 2,
+      "wave": 2,
+      "gap": 15.249999999999774,
+      "ball": {
+        "x": 210,
+        "y": 503.4464775199526,
+        "vx": 2.1316282072803006e-14,
+        "vy": 431.8173623081657,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": -0.32,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 19,
+      "energy": 1307628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 133.54415416161672,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 116.34166666670532,
+      "shot": 2,
+      "wave": 2,
+      "gap": 15.366666666666434,
+      "ball": {
+        "x": 210,
+        "y": 555.458503122572,
+        "vx": 2.1316282072803006e-14,
+        "vy": 459.8173623081657,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": -0.32,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 19,
+      "energy": 1307628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 134.6416788235426,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 116.45833333337208,
+      "shot": 2,
+      "wave": 2,
+      "gap": 15.483333333333094,
+      "ball": {
+        "x": 210,
+        "y": 610.737195391858,
+        "vx": 2.1316282072803006e-14,
+        "vy": 487.8173623081657,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 3,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 96,
+        "vx": 0,
+        "flash": 0,
+        "tilt": -0.32,
+        "boost": 18000
+      },
+      "hits": 62,
+      "catches": 19,
+      "energy": 1307628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 135.76158917615473,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 116.5666666667055,
+      "shot": 2,
+      "wave": 2,
+      "gap": 15.591666666666422,
+      "ball": {
+        "x": 210,
+        "y": 663,
+        "vx": -292.3315036644426,
+        "vy": -439.44087411321306,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 4,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 96,
+        "vx": 0,
+        "flash": 0.15,
+        "tilt": 0.32,
+        "boost": 28000
+      },
+      "hits": 62,
+      "catches": 20,
+      "energy": 1325628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 136.81502688322757,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    },
+    {
+      "time": 116.57500000003884,
+      "shot": 2,
+      "wave": 2,
+      "gap": 15.599999999999755,
+      "ball": {
+        "x": 207.56390413612965,
+        "y": 659.3463260490565,
+        "vx": -292.3315036644426,
+        "vy": -437.44087411321306,
+        "r": 12
+      },
+      "bigTime": 0,
+      "wideTime": 0,
+      "missed": 4,
+      "paddle": {
+        "x": 210,
+        "target": 210,
+        "width": 96,
+        "vx": 0,
+        "flash": 0.14166666666666666,
+        "tilt": 0.32,
+        "boost": 28000
+      },
+      "hits": 62,
+      "catches": 20,
+      "energy": 1325628.6369431838,
+      "targets": [
+        {
+          "x": 66,
+          "y": 609,
+          "hp": 9,
+          "id": 11,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 136.896420189924,
+          "y": 609,
+          "hp": 20,
+          "id": 12,
+          "kind": "steel",
+          "power": "spring",
+          "moving": true
+        },
+        {
+          "x": 282,
+          "y": 609,
+          "hp": 8,
+          "id": 14,
+          "kind": "capacitor",
+          "moving": false
+        },
+        {
+          "x": 354,
+          "y": 609,
+          "hp": 9,
+          "id": 15,
+          "kind": "capacitor",
+          "moving": false
+        }
+      ],
+      "flow": []
+    }
+  ]
+}

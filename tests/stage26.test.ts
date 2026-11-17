@@ -44,6 +44,8 @@ const cases = [
  {name:'Stage-54 brass clearing the low row below crosswind',seed:9157,material:'brass',size:'standard',policy:'steer',limit:11.2,hits:595,shot:{number:6,hits:51,gap:10.2}},
  {name:'Stage-55 enlarged brass returning to the middle spring',seed:7817,material:'brass',size:'small',policy:'follow',limit:8.4,hits:485,shot:{number:4,hits:25,gap:4.1}},
  {name:'Stage-55 steel returning across the upper crosswind',seed:2843,material:'steel',size:'standard',policy:'steer',limit:12.8,hits:793,shot:{number:6,hits:104,gap:12.8}},
+ {name:'Stage-56 wide paddle recovering a brass follow rally',seed:5167,material:'brass',size:'standard',policy:'follow',limit:12.1,hits:677,shot:{number:2,hits:25,gap:8}},
+ {name:'Stage-56 wide paddle recovering a brass steering rally',seed:5167,material:'brass',size:'standard',policy:'steer',limit:11.5,hits:605,shot:{number:2,hits:16,gap:8}},
  {name:'medium steel crossing to the last low bar',seed:223,material:'steel',size:'standard',policy:'steer',limit:12.1,hits:600,shot:{number:3,hits:18,gap:12.1}},
 ] as const;
 
